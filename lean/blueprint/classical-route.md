@@ -1,20 +1,20 @@
 # Classical/external route for the first ver503 torus pair
 
-Authorized by the human on 2026-10-09. The current ultimate declaration is `exists_noncongruent_isometric_tight_tori_pair_of_classical (background : ClassicalExternalResults)`. Its sole parameter contains exactly two retained statements. Smooth equal-image reparametrization and ellipse-axis recognition are now proved and supplied internally. The conclusion remains two actual smooth embedded tight tori with the same positive smooth induced metric, noncongruent images, nonempty open agreement and no open planar patches.
+Authorized by the human on 2026-10-09, with later steering to prove every background statement. The current ultimate declaration is `exists_noncongruent_isometric_tight_tori_pair_of_classical (positiveGaussTightness : ClassicalPositiveGaussTightnessClaim)`. Only this one classical statement remains assumed. Smooth equal-image reparametrization, ellipse-axis recognition and coincident-embedding fixed-open rigidity are proved and supplied internally. All original first-pair constructions are closed.
 
 The authoritative integration checkout is `C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-integration`. Its [precise blueprint](interfaces.md), [classical registry](../classical-external-results.json), [typed external statements](../TightVer401/ClassicalExternal.lean), and [same-object positive Gauss interface](../TightVer401/ClassicalExternalApplications.lean) define the route.
 
 ## Current certification boundary
 
-Full current-source verification **PASS** at `771b0d3e0e394d9801e36df54c8448ea5321497b` on `2026-10-09T19:06:01.685090+00:00` (Audit: 166.869 seconds). Both EXACT closed proof inhabitants and ONLY `ClassicalExternalResults` before the ultimate first existential are checked. The closure has no admissions or custom axioms; exactly two external statements remain. Historical source `07a2980` certified the earlier four-statement theorem.
+Full current-source verification **PASS** at `d967b0f234254d936cd036e67602d4103a3d40ac` on `2026-10-09T19:25:53.830362+00:00` (Audit: 171.835 seconds). All THREE exact closed background proof inhabitants and ONLY `ClassicalPositiveGaussTightnessClaim` before the ultimate first existential are checked. The closure has no admissions or custom axioms; only positive-Gauss tightness remains an external assumption. Historical source `07a2980` certified the earlier four-statement theorem.
 
 The current trust boundary is:
 
-- **Retained external assumptions**: `ClassicalPositiveGaussTightnessClaim` and `ClassicalCoincidentEmbeddingFixedOpenClaim`, the two fields of `ClassicalExternalResults`. Defining their propositions and checking conditional applications does not prove their truth.
-- **Internally proved claims**: `ClassicalEmbeddedReparamProof.lean` / `classicalEmbeddedImageReparametrization_proved` and `MarkerEllipseAxesRecognitionProof.lean` / `markerEllipseAxesRecognition_proved`. These proofs replace the former separate ultimate parameters.
-- **Actual original construction**: the premise-free corrected seed/selected geometry, universal D-only ordinary family, filling, reflected saddle, once-chosen full meridian, protected placement, marking and final pair assembly are closed in source. They are not granted packages. The unchanged construction had a combined certificate at `07a2980`; the newly integrated reduction has its own combined PASS certificate.
+- **Remaining external assumption**: `ClassicalPositiveGaussTightnessClaim` only. The fresh private worker is proving its exact closed inhabitant; unverified source receives no credit.
+- **Internally proved claims**: `classicalEmbeddedImageReparametrization_proved`, `markerEllipseAxesRecognition_proved`, and `classicalCoincidentEmbeddingFixedOpen_proved`. The current source-bound audit checks all three EXACT closed types and the sole positive-Gauss ultimate header.
+- **Actual original construction**: premise-free corrected seed/selected geometry, universal D-only ordinary family, full filling/reflected saddle, protected placement, once-chosen full meridian, marking and pair assembly. None is granted.
 
-Further external grants require an exact named statement, hypotheses and final consumer recorded in the registry. Prefer existing pinned OpenAI/Mathlib/engine proofs. Do not replace an original construction with an assumed desired-data package.
+No new external grants or conditional replacements count toward the active request. Deadline: 2026-10-10 04:43:29 UTC; stop early only after the unconditional pair, audit, organization and formalization report have been published.
 
 ## Actual construction chain
 
@@ -28,14 +28,13 @@ The retained downstream chain is actual visible connectors → full quadratic fi
 
 Degree and relative smoothing are shared producers. The convex meridian is chosen once from the same RN,mu,h and remains the literal `D.meridian` in every final torus/marking consumer. The completed `Gtilde/E/beta/Q/Cdata` tuple is retained unchanged. Final maps are the same affine marked base plus/minus the same transported bending; open agreement is exactly outside the same chart image of `tsupport Y`. Native inverse e, raw Cartesian source E and final H gradient inverse remain distinct.
 
-## Retained background and exact applications
+## Remaining background and proved rigidity
 
-1. **Positive-Gauss criterion**: `ClassicalPositiveGaussTightnessClaim`. An actual compact smooth embedded torus, actual global smooth orthogonal unit normal, and genuine smooth Gauss inverse whose source is the ENTIRE intrinsic K>0 locus and target is the sphere minus finitely many points imply `IsTightImage`. Actual saddle signs and both zero-curvature seams identify the whole locus. No positive-area or tightness conclusion is a producer premise.
-2. **Equal-image fixed-open corollary**: `ClassicalCoincidentEmbeddingFixedOpenClaim`. Actual smooth embedded immersions on the same connected compact torus, equal actual native induced forms, equal entire images and nonempty open map agreement imply equality. The marking consumer reduces alleged ambient congruence before applying this statement and contradicts the actual nonzero bending at positive amplitude.
+`ClassicalPositiveGaussTightnessClaim` says an actual smooth embedded native torus with an actual smooth orthogonal unit normal and a smooth Gauss diffeomorphism from its ENTIRE actual positive-curvature locus to the sphere minus finitely many points has the open-halfspace two-piece property. All application hypotheses are constructed. The claim itself remains the sole assumption until its exact closed proof passes current-source validation.
 
-The second statement remains assumed even though its smooth reparametrization ingredient is now proved. Removing it next requires the actual induced metric's compatible intrinsic-distance instances and a differential-isometry-to-distance-isometry bridge before applying the existing `FixedOpenCompact.isometry_eq_id_of_fixed_open_compact`. The torus product/chord distance must not be silently identified with induced intrinsic distance.
+`ClassicalCoincidentEmbeddingFixedOpenClaim` is now proved. One actual smooth reparametrization relates the same embeddings. Equality of actual induced forms makes its differential preserve tangent norms. Actual C1 path integrals and the intrinsic distance infimum are preserved. The constructed finite intrinsic metric retains the original topology and has genuine `IsRiemannianManifold` compatibility. The existing compact fixed-open rigidity theorem gives equality. Product/chord distance does not enter this argument.
 
-[Banchoff–Kühnel](https://library.slmath.org/books/Book32/files/banchoff.pdf), [Cohen's embedded-submanifold reference](https://math.stanford.edu/~ralph/math215b/book.pdf), and retained `FixedOpenCompact.lean` explain the mathematical background; they do not construct this torus. General Gauss-area/Gauss–Bonnet infrastructure and numerical 8π applications remain separate optional work.
+The active Gauss proof uses regular height directions, actual curvature at maxima, one normal sign on the connected positive source, Gauss injectivity and connected strict superlevels. Generic topology and necessary second derivative helpers are audited; the remaining actual Gauss proof chain is still private work in progress. [Banchoff–Kühnel](https://library.slmath.org/books/Book32/files/banchoff.pdf) supplies mathematical context, not a proof grant. A broad surface-area/Gauss–Bonnet framework is unnecessary for this height route and remains separate work.
 
 ## Scope and coordination
 

@@ -11,7 +11,7 @@ The existing Lean types below are frozen under coordinator ownership. Workers ad
 - `visibleConnectorWitnessAssembly_of_ordinary` and `visibleConnectorGradientInverseApplication_charts`: construct native/source/gradient inverse and collars from actual final scalar. Original raw-G inverse is not final H's gradient inverse.
 - `exists_markedTorus_pair_of_negative_gradient_order`: consumes actual selected source strict nesting, protected c0''tsupport Y inside source band, open O with original-potential agreement, SAME e0/Ge selected trace/homotopy and ordinary connector family. Root supplies unchanged actual seed/correction/clock/field and invokes pair consumer once, preserving completed tuple and full meridian.
 
-The certified final theorem retains only `ClassicalExternalResults` (positive-Gauss tightness and coincident-embedding fixed-open uniqueness). Smooth equal-image reparametrization and ellipse-axis recognition are internally proved. Every original construction input is produced in the audited actual first-pair theorem. The active follow-up now proves both remaining backgrounds and will introduce an unconditional canonical theorem only after exact source validation.
+The certified final theorem retains only `positiveGaussTightness : ClassicalPositiveGaussTightnessClaim`. Smooth equal-image reparametrization, ellipse-axis recognition and coincident-embedding fixed-open rigidity are internally proved. All original construction inputs are produced. The active final background worker must prove the exact positive-Gauss claim before root can construct the unconditional canonical theorem and publish the broad reusable-infrastructure report.
 
 ## Concrete raw scalar and height classifier
 

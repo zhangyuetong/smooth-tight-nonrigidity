@@ -2,14 +2,14 @@
   "target": "ver503",
   "active_engine": "lean",
   "manuscript": "paper/paper.tex",
-  "source_snapshot_commit": "771b0d3e0e394d9801e36df54c8448ea5321497b",
-  "audit_utc": "2026-10-09T19:06:01.685090+00:00",
+  "source_snapshot_commit": "d967b0f234254d936cd036e67602d4103a3d40ac",
+  "audit_utc": "2026-10-09T19:25:53.830362+00:00",
   "result": "PASS",
   "full_construction": "FIRST_PAIR_CONDITIONAL_PROVED",
-  "final_existence_theorem": "conditional on two exact registered classical statements",
+  "final_existence_theorem": "conditional on the sole exact positive-Gauss tightness statement",
   "conditional_final_existence_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-  "kernel_report_sha256": "3d3d116df4b3c89576745f2dc032d84f8d50214f9ebcfd07f9032b5d82bb0b4a",
-  "source_closure_sha256": "51d26392c48ade537f43ad392ca0a3b62cfa6bd6a611aabed0e4cf5e1d467fc0",
+  "kernel_report_sha256": "faed3170ba1840d7983420e39600c15d5416ca9949e57102b832fac983a645d0",
+  "source_closure_sha256": "e8522d6d4f6a3531b12866da01f4cf0b5624cfbbdbb3398d757128ed256e8c63",
   "target_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
@@ -17,8 +17,8 @@
   "schoenflies_lock_sha256": "98384b576a7b97e0332f63fea83aa2f9ae6636813c7a303cd988e1f6b8e242e2",
   "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
   "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
-  "modules": 1507,
-  "declarations": 18241,
+  "modules": 1512,
+  "declarations": 18264,
   "admissions": [],
   "custom_axioms": [],
   "historical_ver500": {
@@ -33,12 +33,8 @@
   "first_pair_status": "conditional-proved",
   "explicit_assumptions": [
     {
-      "parameter": "background.positiveGaussTightness",
+      "parameter": "positiveGaussTightness",
       "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-    },
-    {
-      "parameter": "background.coincidentEmbeddingFixedOpen",
-      "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
     }
   ],
   "original_construction_assumptions": [],
@@ -76,5 +72,11 @@
     "audit_utc": "2026-10-09T18:31:19.661370+00:00",
     "kernel_report_sha256": "64b6a28389bd8efb63628134ddc2a2f327045c17bd9bde8969f9d81368f40e83",
     "source_closure_sha256": "89bf2dab0e0e2d6924ebbc2c78c5288153be5e7e522c387ee31402bf1aca3095"
+  },
+  "historical_two_statement_topology_checkpoint": {
+    "source_snapshot_commit": "771b0d3e0e394d9801e36df54c8448ea5321497b",
+    "audit_utc": "2026-10-09T19:06:01.685090+00:00",
+    "kernel_report_sha256": "3d3d116df4b3c89576745f2dc032d84f8d50214f9ebcfd07f9032b5d82bb0b4a",
+    "source_closure_sha256": "51d26392c48ade537f43ad392ca0a3b62cfa6bd6a611aabed0e4cf5e1d467fc0"
   }
 }

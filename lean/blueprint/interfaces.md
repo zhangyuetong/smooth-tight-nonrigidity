@@ -2,7 +2,7 @@
 
 The first objective is two noncongruent smooth embedded tight tori with exactly the same induced metric, agreement on a nonempty open set, and no open planar patch. The full Cantor-family assertion is deferred.
 
-The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 The checked core retains the TightVer401 namespace in the publication engine lean. Exact current audit declarations control every completion status.
 
@@ -21,29 +21,29 @@ flowchart TD
   Selected --> Consumer
   Consumer --> Completion[Same completed scalar beta Q Cdata FULL meridian]
   Completion --> Pair[Conditional-proved first pair under two statements]
-  Classical[Two explicit classical statements] --> Pair
+  Classical[One explicit positive-Gauss statement] --> Pair
 ```
 
 ## Objects and exact interfaces
 
 ## Authorized classical and external results
 
-The user authorized granting classical and published external results on 2026-10-09. The reduced first-pair target retains ONLY `background : ClassicalExternalResults`. Equal-image reparameterization and ellipse recognition are supplied internally by their exact closed kernel proof inhabitants and are no longer external assumptions. Certification requires both proofs and the reduced ultimate header in the current audit. The exact registry is [classical-external-results.json](../classical-external-results.json); checked interfaces are [ClassicalExternal.lean](../TightVer401/ClassicalExternal.lean). External premises are explicitly assumed, while applications and novel constructions are kernel checked. There is no asserted inhabitant of the background bundle, custom axiom, or grant of the desired torus.
+The user authorized granting classical and published external results on 2026-10-09. The reduced first-pair target retains ONLY `positiveGaussTightness : ClassicalPositiveGaussTightnessClaim`. Fixed-open rigidity, equal-image reparameterization and ellipse recognition are supplied internally by their exact closed kernel proof inhabitants and are no longer external assumptions. Certification requires all three proofs and the reduced ultimate header in the current audit. The exact registry is [classical-external-results.json](../classical-external-results.json); checked interfaces are [ClassicalExternal.lean](../TightVer401/ClassicalExternal.lean). External premises are explicitly assumed, while applications and novel constructions are kernel checked. There is no asserted inhabitant of the background bundle, custom axiom, or grant of the desired torus.
 
 - `E.positive-gauss-tightness`: `TightVer401.ClassicalPositiveGaussTightnessClaim`. Consumers: R.positive-gauss, R.classical-tightness, R.stability. Finite omitted sphere points have zero spherical area, so the positive curvature integral is 4π. The published equality characterization gives tightness directly; Gauss–Bonnet is not required for this conclusion.
   Source: [Banchoff and Kühnel, Tight Submanifolds, Smooth and Polyhedral (1997), §1.1 pp.56–57](https://library.slmath.org/books/Book32/files/banchoff.pdf).
-- `E.coincident-embedding-fixed-open`: `TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim`. Consumers: R.image-separation. Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence.
-  Source: [Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4](https://math.stanford.edu/~ralph/math215b/book.pdf).
-  Source: [John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness](https://link.springer.com/book/10.1007/978-3-319-91755-9).
 - `E.embedded-image-reparametrization`: `TightVer401.ClassicalEmbeddedImageReparametrizationClaim`. Consumers: R.image-separation. Construct range homeomorphisms for the actual embeddings; local coordinate smoothness is recovered through the actual injective differential by a continuous-linear left inverse and the pinned inverse function theorem. Both directions are proved smooth. No external result parameter remains.
   Source: [Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4](https://math.stanford.edu/~ralph/math215b/book.pdf).
 - `E.noncircular-ellipse-axes-recognition`: `TightVer401.MarkerEllipseAxesRecognition`. Consumers: R.marking, torusAffineMarkerEllipse_pair_stabilizer, torusAffineMarker_open_annulus_rigid, torusAffineMarker_actual_meridian_rigid. Elementary coordinate proof using the unique enclosing-ball center, longest-axis endpoints and preservation of norms and inner products. Unequal positive semiaxes force all three coordinate signs. No recognition assumption remains.
   Source: [OpenStax College Algebra, section8.1 The Ellipse](https://openstax.org/books/college-algebra/pages/8-1-the-ellipse).
   Source: [TU Delft Linear algebra, section8.2 Proposition8.2.5](https://interactivetextbooks.tudelft.nl/linear-algebra/Chapter8/QuadraticForms.html).
+- `E.coincident-embedding-fixed-open`: `TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim`. Consumers: R.image-separation. The actual common induced metric and the proved smooth equal-image reparametrization give tangent norm preservation. Actual C1 path integrals and intrinsic infima are preserved. A finite compatible intrinsic metric retains the original topology; compact fixed-open isometry rigidity gives X=Y. No external assumption remains.
+  Source: [Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4](https://math.stanford.edu/~ralph/math215b/book.pdf).
+  Source: [John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness](https://link.springer.com/book/10.1007/978-3-319-91755-9).
 
 ## Work removed from the blocking route
 
-General height/component topology, native intrinsic-distance instance packaging, and a general surface-area/Gauss–Bonnet development are parked alternatives. Completed helpers are retained. Neither the external premises nor retained conditional helpers discharge the actual exits, full filling/completion, saddle annulus, exact torus positive locus, affine marking or final image noncongruence.
+Native intrinsic metric-space and distance-preservation packaging is now proved. Generic height/component topology and second derivative helpers are also proved and support the active final positive-Gauss proof. General surface-area/Gauss–Bonnet development remains separate optional infrastructure. Neither the external premises nor retained conditional helpers discharge the actual exits, full filling/completion, saddle annulus, exact torus positive locus, affine marking or final image noncongruence.
 
 ## Construction milestones
 
@@ -428,7 +428,7 @@ Additional required audited interface: `TightVer401.protectedTorusActualGraphCyl
                                                 TightVer401.ProtectedTorusActualGraphCylinderData S
 ```
 
-### E.embedded-image-reparametrization: Proved smooth equal-image reparameterization (audited)
+### E.embedded-image-reparametrization: Proved E.embedded-image-reparametrization (audited)
 
 Prove the EXACT closed claim TightVer401.ClassicalEmbeddedImageReparametrizationClaim with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.classicalEmbeddedImageReparametrization_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.
 
@@ -488,36 +488,23 @@ TightVer401.ClassicalExternalResults →
                             TightVer401.IsTightImage X
 ```
 
-### E.coincident-embedding-fixed-open: Granted equal-image fixed-open rigidity corollary (external_assumed)
+### E.coincident-embedding-fixed-open: Proved E.coincident-embedding-fixed-open (audited)
 
-Actual smooth embedded immersions on the same connected native torus with equal pointwise induced forms, equal entire images and agreement on a nonempty open set are equal maps. This packages the classical smooth embedded-submanifold inverse and connected Riemannian isometry uniqueness; it grants neither affine markedness nor image noncongruence.
+Prove the EXACT closed claim TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.classicalCoincidentEmbeddingFixedOpen_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open.
+Route scope: `primary`. External dependencies: none.
 
 Dependencies: `O.torus`, `R.model-transport`.
 
-Lean target: `TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim`; source: `TightVer401/ClassicalExternal.lean`.
+Lean target: `TightVer401.classicalCoincidentEmbeddingFixedOpen_proved`; source: `TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean`.
 
 Interface origin: `kernel_audit`.
 
 ```lean
-Prop
+TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim
 ```
 
-Additional required audited interface: `TightVer401.classicalCoincidentEmbeddings_eq`.
-
-```lean
-TightVer401.ClassicalExternalResults →
-  ∀ (X Y : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),
-    TightVer401.NativeTorusSmoothEmbedding X →
-      TightVer401.NativeTorusSmoothEmbedding Y →
-        (∀ (p : TightVer401.NonrigidTorusSource) (v w : ℝ × ℝ),
-            TightVer401.nativeProductInducedForm X p v w = TightVer401.nativeProductInducedForm Y p v w) →
-          Set.range X = Set.range Y →
-            ∀ (U : Set TightVer401.NonrigidTorusSource), IsOpen U → U.Nonempty → Set.EqOn X Y U → X = Y
-```
-
-### E.noncircular-ellipse-axes-recognition: Proved elementary noncircular ellipse axes recognition (audited)
+### E.noncircular-ellipse-axes-recognition: Proved E.noncircular-ellipse-axes-recognition (audited)
 
 Prove the EXACT closed claim TightVer401.MarkerEllipseAxesRecognition with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.markerEllipseAxesRecognition_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.
 
@@ -2883,7 +2870,7 @@ The mathematical interface is specified here; a complete Lean signature still ne
 
 Assume an actual ambient congruence between opposite branch images. Prove it preserves the SAME unchanged entire K>0 image; actual affine marking forces it to be identity. Equal images, actual equal induced forms and open agreement then meet the granted coincident-embedding fixed-open corollary. Nonzero bending at the chosen nonzero amplitude contradicts equality. Image noncongruence itself is proved, never granted.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.stability`, `R.metric-application`, `R.marking`, `E.coincident-embedding-fixed-open`, `E.embedded-image-reparametrization`, `O.noncongruence`.
 
@@ -2895,9 +2882,9 @@ The mathematical interface is specified here; a complete Lean signature still ne
 
 ### R.pair-goal: Two noncongruent isometric tight tori (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.ultimate-classical-first-pair-production`.
 
@@ -2908,7 +2895,7 @@ Lean target: `TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_class
 Interface origin: `kernel_audit`.
 
 ```lean
-TightVer401.ClassicalExternalResults →
+TightVer401.ClassicalPositiveGaussTightnessClaim →
   ∃ T,
     ∃ (hT : 0 < T),
       ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,
@@ -3225,7 +3212,7 @@ Additional required audited interface: `TightVer401.nativeTorusPositiveImage_aff
 
 For the SAME actual protected bending, smooth baseline immersion, derived common metric and open agreement, actual embedding of both branches and nonzero amplitude, apply the explicit coincident-embedding fixed-open theorem and contradict derived map separation. This proves image inequality; ambient noncongruence additionally needs the original affine marker and source curvature transport.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open.
+Route scope: `primary`. External dependencies: none.
 
 Dependencies: `R.metric-application`, `E.coincident-embedding-fixed-open`.
 
@@ -3482,7 +3469,7 @@ Additional required audited interface: `TightVer401.nativeTorusChartCurvature_of
 
 Actual branch embeddings, equal forms, open agreement, unequal maps and the same entire positive image with its ORIGINAL trivial stabilizer imply image noncongruence. Generic reparameterization and fixed-open rigidity remain explicit classical parameters. This does not prove the marker or original pair existence.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.native-source-curvature-connection`, `R.rigid-curvature-connection`, `R.protected-image-inequality-connection`, `R.marking`, `E.embedded-image-reparametrization`.
 
@@ -4398,7 +4385,7 @@ Additional required audited interface: `TightVer401.protectedTorus_marked_positi
 
 Given SAME actual Q/Cdata and once-chosen FULLD plus original compact nonzero protected bending, derive all coordinate inputs, choose one nonzero amplitude, build the NEW common positive smooth metric, both tight smooth embeddings, actual image noncongruence, nonempty open agreement and no open planar patches. All three named classical parameters remain explicit. The original completed Q exists only after original exits/full connector/completion; this theorem is NOT the ultimate original-existence target.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.same-completed-scalar-graph-witness-connection`, `R.actual-marked-same-cylinder-stability-application`, `R.actual-marked-same-cylinder-application`, `R.marked-image-noncongruence-connection`, `R.same-cylinder-no-planar-connection`, `E.coincident-embedding-fixed-open`, `E.embedded-image-reparametrization`.
 
@@ -4583,7 +4570,7 @@ Additional required audited interface: `TightVer401.affineMarkedTorus_actualCyli
 
 From the actual ordinary completed G/e/end formulas and original protected c0/open scalar germ, construct SAME beta/Q/Cdata and choose FULLD ONCE, then derive all literal marked-pair conclusions with the original compact nonzero bending. No completed geometry or torus witness is a caller premise. Production of ordinary G/e from actual exits/connector remains an original obligation.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.completed-saddle-marked-pair-application`, `R.same-completed-scalar-graph-witness-connection`.
 
@@ -5282,7 +5269,7 @@ Additional required audited interface: `TightVer401.dualRadialCompletionExitAppl
 
 From SAME actual Gexit/e0, four positive Jordan traces, actual source/reversed-gradient nesting, ENTIRE closed source annulus in e0.source, protected core placement and original open G0 germ, apply actual completion ONCE and construct SAME beta/Q/Cdata/FULLD and both literal marked branches. The original full visible-connector producer and all original geometry remain explicit. Full-X native positive-exit charts and Fermi-return packaging are not first-pair premises; connector-native charts are distinct original obligations.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.completion-visible-connector-application`, `R.ordinary-completed-support-marked-pair-application`, `R.actual-flow-protected-neighborhood-application`.
 
@@ -5360,7 +5347,7 @@ Interface origin: `kernel_audit`.
 
 From actual SAME selected exit X and explicit original visible-connector production plus original c0/bending facts, construct the ordinary completed scalar/end/inverse tuple and retain G0 germs; select SAME beta/Q/Cdata/FULLD once and derive all literal marked-pair conclusions. No completed potential, torus, metric, Gauss/stabilizer or pair premise. This does not prove production of X or the connector.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.actual-exit-completion-application`, `R.ordinary-completed-support-marked-pair-application`.
 
@@ -6341,7 +6328,7 @@ Additional required audited interface: `TightVer401.visibleConnectorGradientInve
 
 Use SAME normalized inner-to-outer closedloop homotopy and derive boundary membership by periodicity, then whole closed source band containment. Apply the ordinary marked-pair caller ONCE retaining all original source/core/reversed-gradient nesting, Gin connector, protected field and registered background premises. No second graph, inverse, potential or full meridian choice.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.selected-homotopy-domain-application`, `R.ordinary-exit-traces-marked-pair-application`.
 
@@ -6497,7 +6484,7 @@ Additional required audited interface: `TightVer401.exists_dual_radial_support_c
 
 Derive the canonical connector statement from the existing ordinary data family, then apply SAME homotopy/trace first-pair caller once. Actual universal family, original source/core and gradient nesting remain explicit; G/e/beta/Q/Cdata and full meridian are chosen once. This is a conditional connection, not the family construction.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.canonical-ordinary-connector-assembly-application`, `R.homotopy-exit-traces-marked-pair-application`.
 
@@ -6659,7 +6646,7 @@ Additional required audited interface: `TightVer401.visibleConnectorGradientOrde
 
 The checked final ordinary-family consumer retains hOrdinary quantified over ALL Gin/Uin/R/D and positive etaMax, SAME selected e0/Ge/trace/homotopy, actual source nesting, both gradient origin enclosures, protected source/core hCore and original G0 open agreement. It derives reverse gradient order and invokes the marked-pair producer ONCE, retaining completed scalar/beta/Q/Cdata and ONE full meridian. This export already provides every pair conclusion conditionally; constructing hOrdinary and the actual selected source/core inputs is still original work.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.negative-gradient-order-application`, `R.ordinary-connector-data-marked-pair-application`.
 
@@ -7047,7 +7034,7 @@ Additional required audited interface: `TightVer401.visibleConnector_jordan_encl
 
 ### R.firstpair-selected-geometry: Actual selected source core and protected geometry from one seed (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.actualSeed_exists_selected_single_prefix. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.actualSeed_exists_selected_single_prefix. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Route scope: `primary`. External dependencies: none.
 
@@ -7514,7 +7501,7 @@ Additional required audited interface: `TightVer401.completedSaddleTorusBendingF
 
 ### R.compatible-displacement-production: Construct one compatible eta/rho family with native e and Cartesian E distinguished (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorIncomingParametersChoice_nonempty. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorIncomingParametersChoice_nonempty. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Route scope: `primary`. External dependencies: none.
 
@@ -7532,7 +7519,7 @@ Interface origin: `kernel_audit`.
 
 ### R.full-incoming-gin-production: Prove the full Gin open germ for the SAME incoming seam (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Route scope: `primary`. External dependencies: none.
 
@@ -7599,7 +7586,7 @@ Interface origin: `kernel_audit`.
 
 ### R.final-smoothed-h-production: Construct final H once on the full fixed smoothing domain (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Route scope: `primary`. External dependencies: none.
 
@@ -7666,7 +7653,7 @@ Interface origin: `kernel_audit`.
 
 ### R.ordinary-connector-family-production: Populate the actual universal OrdinaryData family (audited)
 
-CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Route scope: `primary`. External dependencies: none.
 
@@ -14104,7 +14091,7 @@ TightVer401.DualRadialCompletionClaim
 
 ActualSeedPair applies SAME actual seed/single-prefix projections to exact final negative-gradient-order caller. Its ONLY construction hypothesis is universal hOrdinary, alongside four exact classical statements background/reparam/axes. Returns actual smooth tight embeddings/common positive smooth metric/native form equality/noncongruent images/nonempty open agreement/no planar patches and retained completed Gtilde/E/beta/Q/Cdata/ONE full D.meridian; actual maps are marked base plus/minus SAME bending. No original selected geometry assumptions remain.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.actual-seed-selected-existence-production`, `R.ordinary-d-only-inhabitant-production`, `R.negative-gradient-order-marked-pair-application`, `R.ver503-literal-negation-application`.
 
@@ -14147,11 +14134,11 @@ TightVer401.ClassicalExternalResults →
                                             0 < A ∧ A < RN ∧ 0 < mu ∧ ⋯
 ```
 
-### R.ultimate-classical-first-pair-production: Produce actual global first pair under ONLY the two ClassicalExternalResults fields (audited)
+### R.ultimate-classical-first-pair-production: Produce actual global first pair under ONLY the single positive-Gauss tightness statement (audited)
 
-The exact ultimate theorem header is ONLY ClassicalExternalResults → before its first existential. Supply kernel-proved closed ellipse recognition and equal-image reparameterization inhabitants internally, alongside the D-only ordinary family. Retain SAME actual seed/FINAL Y/clocks/scalar/OWN H gradient inverse/completed tuple/FULL meridian and all pair conclusions. Current certification additionally checks BOTH closed proof types and reduced ultimate header; no source-only or historical credit. Full-paper/Cantor scope remains deferred. Current exact audit certifies the concrete original producers and ultimate theorem; this helper retains only its explicitly stated hypotheses.
+The exact ultimate theorem header is ONLY ClassicalPositiveGaussTightnessClaim → before its first existential. Supply kernel-proved closed ellipse recognition and equal-image reparameterization inhabitants internally, alongside the D-only ordinary family. Retain SAME actual seed/FINAL Y/clocks/scalar/OWN H gradient inverse/completed tuple/FULL meridian and all pair conclusions. Current certification additionally checks ALL THREE closed proof types and reduced ultimate header; no source-only or historical credit. Full-paper/Cantor scope remains deferred. Current exact audit certifies the concrete original producers and ultimate theorem; this helper retains only its explicitly stated hypotheses.
 
-Route scope: `primary`. External dependencies: E.coincident-embedding-fixed-open, E.positive-gauss-tightness.
+Route scope: `primary`. External dependencies: E.positive-gauss-tightness.
 
 Dependencies: `R.actual-seed-pair-projection-application`, `R.ordinary-d-only-inhabitant-production`.
 
@@ -14160,7 +14147,7 @@ Lean target: `TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_class
 Interface origin: `kernel_audit`.
 
 ```lean
-TightVer401.ClassicalExternalResults →
+TightVer401.ClassicalPositiveGaussTightnessClaim →
   ∃ T,
     ∃ (hT : 0 < T),
       ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,
@@ -14199,7 +14186,7 @@ Complete cylinders, linking/Han–Khuri applications, general ruled extensions, 
 
 ## Honest completion gates
 
-The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
+The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.
 
 Original gate statuses are derived independently from exact current-audit declarations. The ultimate theorem supplies its universal family locally and retains precisely two classical statements and internally supplies the proved background inhabitants; no original construction grant is introduced.
 

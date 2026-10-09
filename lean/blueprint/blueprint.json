@@ -8,35 +8,32 @@
     "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
     "explicit_assumptions": [
       {
-        "parameter": "background.positiveGaussTightness",
+        "parameter": "positiveGaussTightness",
         "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-      },
-      {
-        "parameter": "background.coincidentEmbeddingFixedOpen",
-        "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
       }
     ],
     "original_construction_assumptions": [],
-    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only the two ClassicalExternalResults fields remain assumptions; both exact closed background proof inhabitants and the reduced ultimate header must also be audited",
+    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only positive-Gauss tightness remains an assumption; all three exact closed background proof inhabitants and the reduced ultimate header must also be audited",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-    "accepted_background": "TightVer401.ClassicalExternalResults",
+    "accepted_background": "TightVer401.ClassicalPositiveGaussTightnessClaim",
     "additional_explicit_background": [],
     "proved_background": {
+      "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
       "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
       "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
     }
   },
   "certificate": {
-    "audit_sha256": "3d3d116df4b3c89576745f2dc032d84f8d50214f9ebcfd07f9032b5d82bb0b4a",
-    "audit_generated_at_utc": "2026-10-09T19:06:01.685090+00:00",
+    "audit_sha256": "faed3170ba1840d7983420e39600c15d5416ca9949e57102b832fac983a645d0",
+    "audit_generated_at_utc": "2026-10-09T19:25:53.830362+00:00",
     "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
     "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
     "upstream_lock_sha256": "003537806bb19cbf8eeea531fdf310d9abf25df43b4e3cc497b2ea35af4c3827",
     "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
     "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
-    "compiled_modules": 1507,
-    "audited_declarations": 18241
+    "compiled_modules": 1512,
+    "audited_declarations": 18264
   },
   "numbered_claim_counts": {
     "pending": 20,
@@ -637,7 +634,7 @@
     },
     {
       "id": "E.embedded-image-reparametrization",
-      "title": "Proved smooth equal-image reparameterization",
+      "title": "Proved E.embedded-image-reparametrization",
       "kind": "background_theorem",
       "statement": "Prove the EXACT closed claim TightVer401.ClassicalEmbeddedImageReparametrizationClaim with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.classicalEmbeddedImageReparametrization_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.",
       "depends_on": [
@@ -801,30 +798,27 @@
     },
     {
       "id": "E.coincident-embedding-fixed-open",
-      "title": "Granted equal-image fixed-open rigidity corollary",
-      "kind": "external_result",
-      "statement": "Actual smooth embedded immersions on the same connected native torus with equal pointwise induced forms, equal entire images and agreement on a nonempty open set are equal maps. This packages the classical smooth embedded-submanifold inverse and connected Riemannian isometry uniqueness; it grants neither affine markedness nor image noncongruence.",
+      "title": "Proved E.coincident-embedding-fixed-open",
+      "kind": "background_theorem",
+      "statement": "Prove the EXACT closed claim TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.classicalCoincidentEmbeddingFixedOpen_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.",
       "depends_on": [
         "O.torus",
         "R.model-transport"
       ],
-      "lean_target": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-      "lean_file": "TightVer401/ClassicalExternal.lean",
+      "lean_target": "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved",
+      "lean_file": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
       "lean_targets": [
-        "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-        "TightVer401.classicalCoincidentEmbeddings_eq"
+        "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved"
       ],
       "proposed_interface": null,
       "manuscript_labels": [],
       "proof_sketch": "",
-      "interface_status": "audited",
-      "status": "external_assumed",
-      "scope": "primary",
-      "external_reference": {
+      "expected_closed_type": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
+      "background_reference": {
         "id": "E.coincident-embedding-fixed-open",
         "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
         "field": "coincidentEmbeddingFixedOpen",
-        "status": "external_assumed",
+        "status": "kernel_proved",
         "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
         "sources": [
           {
@@ -856,37 +850,38 @@
         "replaces": [
           "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
         ],
-        "proof_note": "Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence."
+        "proof_note": "The actual common induced metric and the proved smooth equal-image reparametrization give tangent norm preservation. Actual C1 path integrals and intrinsic infima are preserved. A finite compatible intrinsic metric retains the original topology; compact fixed-open isometry rigidity gives X=Y. No external assumption remains.",
+        "proof_declaration": "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved",
+        "lean_proof_source": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
+        "certification_rule": "Exact closed proof inhabitant must occur in current source-bound kernel audit; no new premise header."
       },
-      "audit_scope": "Only this external premise TYPE and conditional application are kernel checked. Its mathematical truth is externally assumed by human authorization, not proved by these declarations.",
+      "interface_status": "audited",
+      "status": "audited",
+      "scope": "primary",
       "lean_declarations": [
-        "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-        "TightVer401.classicalCoincidentEmbeddings_eq"
+        "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved"
       ],
-      "additional_signatures": {
-        "TightVer401.classicalCoincidentEmbeddings_eq": "TightVer401.ClassicalExternalResults →\n  ∀ (X Y : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n    TightVer401.NativeTorusSmoothEmbedding X →\n      TightVer401.NativeTorusSmoothEmbedding Y →\n        (∀ (p : TightVer401.NonrigidTorusSource) (v w : ℝ × ℝ),\n            TightVer401.nativeProductInducedForm X p v w = TightVer401.nativeProductInducedForm Y p v w) →\n          Set.range X = Set.range Y →\n            ∀ (U : Set TightVer401.NonrigidTorusSource), IsOpen U → U.Nonempty → Set.EqOn X Y U → X = Y"
-      },
+      "additional_signatures": {},
       "missing_declarations": [],
-      "target_signature": "Prop",
+      "audit_scope": "Only the explicit types of the bound declarations are certified. A conditional application never proves its producer premises or external hypotheses.",
+      "target_signature": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
       "signature_origin": "kernel_audit",
-      "external_dependencies": [
-        "E.coincident-embedding-fixed-open"
-      ],
-      "conditional_on_external_results": true,
+      "external_dependencies": [],
+      "conditional_on_external_results": false,
       "mathematical_prerequisites_checked": true,
       "mathematical_prerequisites_available": true,
       "ready_to_formalize": false,
       "source_locations": [
         {
-          "module": "TightVer401.ClassicalExternal",
-          "file": "TightVer401/ClassicalExternal.lean",
-          "line": 54
+          "module": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof",
+          "file": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
+          "line": 18
         }
       ]
     },
     {
       "id": "E.noncircular-ellipse-axes-recognition",
-      "title": "Proved elementary noncircular ellipse axes recognition",
+      "title": "Proved E.noncircular-ellipse-axes-recognition",
       "kind": "background_theorem",
       "statement": "Prove the EXACT closed claim TightVer401.MarkerEllipseAxesRecognition with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem TightVer401.markerEllipseAxesRecognition_proved with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.",
       "depends_on": [
@@ -2671,7 +2666,6 @@
       ],
       "audit_scope": "Only the explicit types of the bound declarations are certified. A conditional application never proves its producer premises or external hypotheses.",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -2683,7 +2677,7 @@
       "id": "R.pair-goal",
       "title": "Two noncongruent isometric tight tori",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.ultimate-classical-first-pair-production"
       ],
@@ -2706,10 +2700,9 @@
       "additional_signatures": {},
       "missing_declarations": [],
       "audit_scope": "Only the explicit types of the bound declarations are certified. A conditional application never proves its producer premises or external hypotheses.",
-      "target_signature": "TightVer401.ClassicalExternalResults →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
+      "target_signature": "TightVer401.ClassicalPositiveGaussTightnessClaim →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -2720,7 +2713,7 @@
         {
           "module": "TightVer401.NonrigidTorusPair",
           "file": "TightVer401/NonrigidTorusPair.lean",
-          "line": 29
+          "line": 30
         }
       ]
     },
@@ -2988,11 +2981,9 @@
       "audit_scope": "Only the explicit types of the bound declarations are certified. A conditional application never proves its producer premises or external hypotheses.",
       "target_signature": "TightVer401.ClassicalExternalResults →\n  ∀ {T w : ℝ} [inst : Fact (0 < T)] {X Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient},\n    ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) X →\n      TightVer401.IsBandBending X Y →\n        HasCompactSupport Y →\n          (∃ p, Y p ≠ 0) →\n            ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) TightVer401.NonrigidTorusSource),\n              tsupport Y ⊆ e.source →\n                ContMDiffOn TightVer401.nativeProductModel TightVer401.nativeProductModel (↑⊤) (↑e.symm) e.target →\n                  ∀ (A : OAI.SmoothLocal.Geometry.Ambient ≃ᵃⁱ[ℝ] OAI.SmoothLocal.Geometry.Ambient)\n                    (F : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n                    (∀ p ∈ e.source, F (↑e p) = A (X p)) →\n                      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                          (↑⊤) F →\n                        (∀ (p : TightVer401.NonrigidTorusSource), Function.Injective ⇑(mfderiv% F p)) →\n                          (∃ q, q ∉ ↑e '' tsupport Y) →\n                            ∀ {ε : ℝ},\n                              ε ≠ 0 →\n                                Topology.IsEmbedding (F + ε • TightVer401.protectedTorusBendingField e A Y) →\n                                  Topology.IsEmbedding (F - ε • TightVer401.protectedTorusBendingField e A Y) →\n                                    Set.range (F + ε • TightVer401.protectedTorusBendingField e A Y) ≠\n                                      Set.range (F - ε • TightVer401.protectedTorusBendingField e A Y)",
       "signature_origin": "kernel_audit",
-      "external_dependencies": [
-        "E.coincident-embedding-fixed-open"
-      ],
-      "conditional_on_external_results": true,
-      "mathematical_prerequisites_checked": false,
+      "external_dependencies": [],
+      "conditional_on_external_results": false,
+      "mathematical_prerequisites_checked": true,
       "mathematical_prerequisites_available": true,
       "ready_to_formalize": false,
       "source_locations": [
@@ -3218,7 +3209,6 @@
       "target_signature": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n  TightVer401.ClassicalExternalResults →\n    ∀ (X Y : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n      TightVer401.NativeTorusSmoothEmbedding X →\n        TightVer401.NativeTorusSmoothEmbedding Y →\n          (∀ (p : TightVer401.NonrigidTorusSource) (v w : ℝ × ℝ),\n              TightVer401.nativeProductInducedForm X p v w = TightVer401.nativeProductInducedForm Y p v w) →\n            ∀ (U : Set TightVer401.NonrigidTorusSource),\n              IsOpen U →\n                U.Nonempty →\n                  Set.EqOn X Y U →\n                    X ≠ Y →\n                      ∀ (P : Set OAI.SmoothLocal.Geometry.Ambient),\n                        X '' TightVer401.nativeTorusPositiveRegion X = P →\n                          Y '' TightVer401.nativeTorusPositiveRegion Y = P →\n                            (∀ (A : OAI.SmoothLocal.Geometry.Ambient ≃ᵃⁱ[ℝ] OAI.SmoothLocal.Geometry.Ambient),\n                                ⇑A '' P = P → ∀ (x : OAI.SmoothLocal.Geometry.Ambient), A x = x) →\n                              TightVer401.ImageNoncongruent X Y",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -3894,11 +3884,10 @@
       "target_signature": "∀ {T w RN μ h : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T}\n  {K : Set (AddCircle T × ↑(Set.Ioo 0 w))},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        ∀ (Q : TightVer401.CompletedSaddleAnnulusGeometryOutput d K RN μ h)\n          (Cdata : TightVer401.ProtectedTorusActualGraphCylinderData Q.cylinder)\n          (D : TightVer401.ParabolicConvexClosureData RN μ h),\n          0 < w →\n            ∀ {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient},\n              ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                  d.bandMap →\n                TightVer401.IsBandBending d.bandMap Y →\n                  HasCompactSupport Y →\n                    (∃ p, Y p ≠ 0) →\n                      tsupport Y ⊆ K →\n                        have F := TightVer401.protectedTorusMap Q.cylinder.saddle D.meridian h;\n                        have e := TightVer401.completedSaddleTorusBandChart Q;\n                        have Z :=\n                          TightVer401.protectedTorusBendingField e (TightVer401.completedSaddleTorusBandAffine Q) Y;\n                        have G := TightVer401.affineMarkedTorusLinearBase F;\n                        have W := TightVer401.affineMarkedTorusLinearBending Z;\n                        have U := (↑e '' tsupport Y)ᶜ;\n                        ∃ a,\n                          0 < a ∧\n                            ∃ g,\n                              TightVer401.NativeTorusSmoothEmbedding (G + a • W) ∧\n                                TightVer401.NativeTorusSmoothEmbedding (G - a • W) ∧\n                                  TightVer401.IsTightImage (G + a • W) ∧\n                                    TightVer401.IsTightImage (G - a • W) ∧\n                                      ContMDiff OAI.ClosedSurfaceR4.planeModel\n                                          (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) (G + a • W) ∧\n                                        ContMDiff OAI.ClosedSurfaceR4.planeModel\n                                            (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) (G - a • W) ∧\n                                          (∀ (p : TightVer401.NonrigidTorusSource)\n                                              (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                                              ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm (G + a • W) p v z ∧\n                                                ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm (G - a • W) p v z) ∧\n                                            (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                                                TightVer401.nativeProductInducedForm (G + a • W) p v z =\n                                                  TightVer401.nativeProductInducedForm (G - a • W) p v z) ∧\n                                              TightVer401.ImageNoncongruent (G + a • W) (G - a • W) ∧\n                                                IsOpen U ∧\n                                                  U.Nonempty ∧\n                                                    Set.EqOn (G + a • W) (G - a • W) U ∧\n                                                      TightVer401.HasNoOpenPlanarPatch (G + a • W) ∧\n                                                        TightVer401.HasNoOpenPlanarPatch (G - a • W)",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
-      "mathematical_prerequisites_checked": false,
+      "mathematical_prerequisites_checked": true,
       "mathematical_prerequisites_available": true,
       "ready_to_formalize": false,
       "source_locations": [
@@ -3938,7 +3927,6 @@
       "target_signature": "∀ {T w : ℝ} [inst : Fact (0 < T)],\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        ∀ (d : TightVer401.PeriodicRuledFrame T) (K : Set (AddCircle T × ↑(Set.Ioo 0 w)))\n          {G G0 : OAI.SmoothLocal.Geometry.Coord → ℝ}\n          (e : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord)\n          {A RN μ B ε L d0 dInfinity : ℝ},\n          0 < A →\n            A < RN →\n              0 < μ →\n                0 < B →\n                  0 < ε →\n                    0 < L →\n                      e.source = {p | 0 < TightVer401.planarRadius p} →\n                        e.target = TightVer401.quadraticRadialFillingOpenAnnulus A RN →\n                          ContDiffOn ℝ (↑⊤) G e.source →\n                            ContDiffOn ℝ (↑⊤) (↑e.symm) e.target →\n                              (∀ p ∈ e.source, ↑e p = TightVer401.planarGradient G p) →\n                                (∀ p ∈ e.source, (TightVer401.planarHessian G p).det < 0) →\n                                  (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                                      0 < TightVer401.planarRadius p →\n                                        TightVer401.planarRadius p < ε →\n                                          G p =\n                                            RN * TightVer401.planarRadius p - μ * TightVer401.planarRadius p ^ 2 / 2 +\n                                              d0) →\n                                    (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                                        L < TightVer401.planarRadius p →\n                                          G p =\n                                            A * TightVer401.planarRadius p - B / TightVer401.planarRadius p +\n                                              dInfinity) →\n                                      ∀\n                                        (c0 :\n                                          OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w))\n                                            OAI.SmoothLocal.Geometry.Coord),\n                                        ContMDiffOn TightVer401.nativeProductModel\n                                            (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) (↑⊤) (↑c0)\n                                            c0.source →\n                                          ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)\n                                              TightVer401.nativeProductModel (↑⊤) (↑c0.symm) c0.target →\n                                            (∀ p ∈ c0.source, TightVer401.planarSupportMap G0 (↑c0 p) = d.bandMap p) →\n                                              K ⊆ c0.source →\n                                                ∀ {W : Set OAI.SmoothLocal.Geometry.Coord},\n                                                  IsOpen W →\n                                                    W ⊆ e.source →\n                                                      ↑c0 '' K ⊆ W →\n                                                        Set.EqOn G G0 W →\n                                                          0 < w →\n                                                            ∀\n                                                              {Y :\n                                                                AddCircle T × ↑(Set.Ioo 0 w) →\n                                                                  OAI.SmoothLocal.Geometry.Ambient},\n                                                              TightVer401.IsBandBending d.bandMap Y →\n                                                                HasCompactSupport Y →\n                                                                  (∃ p, Y p ≠ 0) →\n                                                                    tsupport Y ⊆ K →\n                                                                      d0 < dInfinity ∧\n                                                                        ∃ Xplus Xminus g V,\n                                                                          TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n                                                                            TightVer401.NativeTorusSmoothEmbedding\n                                                                                Xminus ∧\n                                                                              TightVer401.IsTightImage Xplus ∧\n                                                                                TightVer401.IsTightImage Xminus ∧\n                                                                                  ContMDiff\n                                                                                      OAI.ClosedSurfaceR4.planeModel ⋯\n                                                                                      (↑⊤) Xplus ∧\n                                                                                    ⋯ ∧ ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4185,7 +4173,6 @@
       "target_signature": "∀ {T w : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {G0 Gexit : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient} {HpPlus HpMinus HgPlus HgMinus : ℂ ≃ₜ ℂ}\n  {pPlus pMinus gammaPlus gammaMinus : ℝ → ℂ} {RPlus RMinus : ℝ} {O : Set OAI.SmoothLocal.Geometry.Coord},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n            (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R),\n            TightVer401.VisibleConnectorConstructionStatement D) →\n          ∀ (e0 : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord),\n            ContDiffOn ℝ (↑⊤) Gexit e0.source →\n              (∀ p ∈ e0.source, (TightVer401.planarHessian Gexit p).det < 0) →\n                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Gexit p) →\n                  ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target →\n                    TightVer401.DualRadialCompletionPositiveTrace HpPlus pPlus →\n                      TightVer401.DualRadialCompletionPositiveTrace HpMinus pMinus →\n                        TightVer401.DualRadialCompletionPositiveTrace HgPlus gammaPlus →\n                          TightVer401.DualRadialCompletionPositiveTrace HgMinus gammaMinus →\n                            closure (⇑HpMinus '' Metric.ball 0 1) ⊆ ⇑HpPlus '' Metric.ball 0 1 →\n                              closure (⇑HgPlus '' Metric.ball 0 1) ⊆ ⇑HgMinus '' Metric.ball 0 1 →\n                                0 ∈ ⇑HpMinus '' Metric.ball 0 1 →\n                                  0 ∈ ⇑HgPlus '' Metric.ball 0 1 →\n                                    ⇑TightVer401.seamComplexCoord ''\n                                          (closure (⇑HpPlus '' Metric.ball 0 1) \\ ⇑HpMinus '' Metric.ball 0 1) ⊆\n                                        e0.source →\n                                      (∀ (t : ℝ),\n                                          ↑e0 (TightVer401.seamComplexCoord (pPlus t)) =\n                                            TightVer401.seamComplexCoord (gammaPlus t)) →\n                                        (∀ (t : ℝ),\n                                            ↑e0 (TightVer401.seamComplexCoord (pMinus t)) =\n                                              TightVer401.seamComplexCoord (gammaMinus t)) →\n                                          (∀ (t : ℝ), 0 < inner ℝ (deriv pPlus t) (deriv gammaPlus t)) →\n                                            (∀ (t : ℝ), 0 < inner ℝ (deriv pMinus t) (deriv gammaMinus t)) →\n                                              0 < RPlus →\n                                                0 < RMinus →\n                                                  (TightVer401.ComplexVisiblePair RPlus pPlus fun t =>\n                                                      Complex.I * gammaPlus t) →\n                                                    (TightVer401.ComplexVisiblePair RMinus\n                                                        (TightVer401.corrugatedReverseReflect gammaMinus) fun t =>\n                                                        Complex.I * TightVer401.corrugatedReverseReflect pMinus t) →\n                                                      ↑c0 '' tsupport Y ⊆\n                                                          ⇑TightVer401.seamComplexCoord ''\n                                                            (⇑HpPlus '' Metric.ball 0 1 \\\n                                                              closure (⇑HpMinus '' Metric.ball 0 1)) →\n                                                        0 < w →\n                                                          ContMDiffOn TightVer401.nativeProductModel\n                                                              (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)\n                                                              (↑⊤) (↑c0) c0.source →\n                                                            ContMDiffOn\n                                                                (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)\n                                                                TightVer401.nativeProductModel (↑⊤) (↑c0.symm)\n                                                                c0.target →\n                                                              (∀ p ∈ c0.source,\n                                                                  TightVer401.planarSupportMap G0 (↑c0 p) =\n                                                                    d.bandMap p) →\n                                                                TightVer401.IsBandBending d.bandMap Y →\n                                                                  HasCompactSupport Y →\n                                                                    (∃ p, Y p ≠ 0) →\n                                                                      tsupport Y ⊆ c0.source →\n                                                                        IsOpen O →\n                                                                          ↑c0 '' tsupport Y ⊆ O →\n                                                                            Set.EqOn Gexit G0 O → ∃ Xplus Xminus g, ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4229,7 +4216,6 @@
       "target_signature": "∀ {T w delta : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {G0 : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {U0 : Set OAI.SmoothLocal.Geometry.Coord}\n  {c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord} {he : c0.source = Set.univ}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient}\n  {hbalance : ∫ (s : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ s = 0}\n  {hinside :\n    ∀ v ∈ Set.Ioo 0 delta,\n      ∀ (t : ℝ),\n        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v t ∈ Set.Ioo 0 w}\n  {O : Set OAI.SmoothLocal.Geometry.Coord} {xi : ℝ},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n            (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R),\n            TightVer401.VisibleConnectorConstructionStatement D) →\n          ∀ (X : TightVer401.PositiveExitConstructionData d G0 U0 c0 he Y hbalance hinside O xi),\n            0 < w →\n              ContMDiffOn TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) (↑⊤)\n                  (↑c0) c0.source →\n                ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)\n                    (↑c0.symm) c0.target →\n                  (∀ p ∈ c0.source, TightVer401.planarSupportMap G0 (↑c0 p) = d.bandMap p) →\n                    TightVer401.IsBandBending d.bandMap Y →\n                      ∃ Xplus Xminus g V,\n                        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n                          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n                            TightVer401.IsTightImage Xplus ∧\n                              TightVer401.IsTightImage Xminus ∧\n                                ContMDiff OAI.ClosedSurfaceR4.planeModel\n                                    (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) Xplus ∧\n                                  ContMDiff OAI.ClosedSurfaceR4.planeModel\n                                      (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) Xminus ∧\n                                    (∀ (p : TightVer401.NonrigidTorusSource)\n                                        (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                                          TightVer401.nativeProductInducedForm Xplus p v z =\n                                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                                          IsOpen V ∧\n                                            V.Nonempty ∧\n                                              Set.EqOn Xplus Xminus V ∧\n                                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E, ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4563,7 +4549,6 @@
       "target_signature": "∀ {T w : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {G0 Gexit : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient} {HpPlus HpMinus HgPlus HgMinus : ℂ ≃ₜ ℂ}\n  {pPlus pMinus gammaPlus gammaMinus : ℝ → ℂ} {RPlus RMinus : ℝ} {O : Set OAI.SmoothLocal.Geometry.Coord},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n            (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R),\n            TightVer401.VisibleConnectorConstructionStatement D) →\n          ∀ (e0 : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord),\n            ContDiffOn ℝ (↑⊤) Gexit e0.source →\n              (∀ p ∈ e0.source, (TightVer401.planarHessian Gexit p).det < 0) →\n                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Gexit p) →\n                  ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target →\n                    TightVer401.DualRadialCompletionPositiveTrace HpPlus pPlus →\n                      TightVer401.DualRadialCompletionPositiveTrace HpMinus pMinus →\n                        TightVer401.DualRadialCompletionPositiveTrace HgPlus gammaPlus →\n                          TightVer401.DualRadialCompletionPositiveTrace HgMinus gammaMinus →\n                            closure (⇑HpMinus '' Metric.ball 0 1) ⊆ ⇑HpPlus '' Metric.ball 0 1 →\n                              closure (⇑HgPlus '' Metric.ball 0 1) ⊆ ⇑HgMinus '' Metric.ball 0 1 →\n                                0 ∈ ⇑HpMinus '' Metric.ball 0 1 →\n                                  0 ∈ ⇑HgPlus '' Metric.ball 0 1 →\n                                    ∀ (H : C(↑unitInterval, C(↑unitInterval, ℂ))),\n                                      (∀ (t : ↑unitInterval), (H 0) t = pMinus ↑t) →\n                                        (∀ (t : ↑unitInterval), (H 1) t = pPlus ↑t) →\n                                          (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →\n                                            (∀ (a t : ↑unitInterval),\n                                                (H a) t ∈ TightVer401.angularDescentComplex '' e0.source) →\n                                              (∀ (t : ℝ),\n                                                  ↑e0 (TightVer401.seamComplexCoord (pPlus t)) =\n                                                    TightVer401.seamComplexCoord (gammaPlus t)) →\n                                                (∀ (t : ℝ),\n                                                    ↑e0 (TightVer401.seamComplexCoord (pMinus t)) =\n                                                      TightVer401.seamComplexCoord (gammaMinus t)) →\n                                                  (∀ (t : ℝ), 0 < inner ℝ (deriv pPlus t) (deriv gammaPlus t)) →\n                                                    (∀ (t : ℝ), 0 < inner ℝ (deriv pMinus t) (deriv gammaMinus t)) →\n                                                      0 < RPlus →\n                                                        0 < RMinus →\n                                                          (TightVer401.ComplexVisiblePair RPlus pPlus fun t =>\n                                                              Complex.I * gammaPlus t) →\n                                                            (TightVer401.ComplexVisiblePair RMinus\n                                                                (TightVer401.corrugatedReverseReflect gammaMinus)\n                                                                fun t =>\n                                                                Complex.I *\n                                                                  TightVer401.corrugatedReverseReflect pMinus t) →\n                                                              ↑c0 '' tsupport Y ⊆\n                                                                  ⇑TightVer401.seamComplexCoord ''\n                                                                    (⇑HpPlus '' Metric.ball 0 1 \\\n                                                                      closure (⇑HpMinus '' Metric.ball 0 1)) →\n                                                                0 < w →\n                                                                  ContMDiffOn TightVer401.nativeProductModel\n                                                                      (modelWithCornersSelf ℝ\n                                                                        OAI.SmoothLocal.Geometry.Coord)\n                                                                      (↑⊤) (↑c0) c0.source →\n                                                                    ContMDiffOn\n                                                                        (modelWithCornersSelf ℝ\n                                                                          OAI.SmoothLocal.Geometry.Coord)\n                                                                        TightVer401.nativeProductModel (↑⊤) (↑c0.symm)\n                                                                        c0.target →\n                                                                      (∀ p ∈ c0.source,\n                                                                          TightVer401.planarSupportMap G0 (↑c0 p) =\n                                                                            d.bandMap p) →\n                                                                        TightVer401.IsBandBending d.bandMap Y →\n                                                                          HasCompactSupport Y →\n                                                                            (∃ p, Y p ≠ 0) →\n                                                                              tsupport Y ⊆ ⋯.source → IsOpen O → ⋯ → ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4657,7 +4642,6 @@
       "target_signature": "∀ {T w : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {G0 Gexit : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient} {HpPlus HpMinus HgPlus HgMinus : ℂ ≃ₜ ℂ}\n  {pPlus pMinus gammaPlus gammaMinus : ℝ → ℂ} {RPlus RMinus : ℝ} {O : Set OAI.SmoothLocal.Geometry.Coord},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n            (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R) (etaMax : ℝ),\n            0 < etaMax → Nonempty (TightVer401.VisibleConnectorWitnessAssemblyOrdinaryData D etaMax)) →\n          ∀ (e0 : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord),\n            ContDiffOn ℝ (↑⊤) Gexit e0.source →\n              (∀ p ∈ e0.source, (TightVer401.planarHessian Gexit p).det < 0) →\n                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Gexit p) →\n                  ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target →\n                    TightVer401.DualRadialCompletionPositiveTrace HpPlus pPlus →\n                      TightVer401.DualRadialCompletionPositiveTrace HpMinus pMinus →\n                        TightVer401.DualRadialCompletionPositiveTrace HgPlus gammaPlus →\n                          TightVer401.DualRadialCompletionPositiveTrace HgMinus gammaMinus →\n                            closure (⇑HpMinus '' Metric.ball 0 1) ⊆ ⇑HpPlus '' Metric.ball 0 1 →\n                              closure (⇑HgPlus '' Metric.ball 0 1) ⊆ ⇑HgMinus '' Metric.ball 0 1 →\n                                0 ∈ ⇑HpMinus '' Metric.ball 0 1 →\n                                  0 ∈ ⇑HgPlus '' Metric.ball 0 1 →\n                                    ∀ (H : C(↑unitInterval, C(↑unitInterval, ℂ))),\n                                      (∀ (t : ↑unitInterval), (H 0) t = pMinus ↑t) →\n                                        (∀ (t : ↑unitInterval), (H 1) t = pPlus ↑t) →\n                                          (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →\n                                            (∀ (a t : ↑unitInterval),\n                                                (H a) t ∈ TightVer401.angularDescentComplex '' e0.source) →\n                                              (∀ (t : ℝ),\n                                                  ↑e0 (TightVer401.seamComplexCoord (pPlus t)) =\n                                                    TightVer401.seamComplexCoord (gammaPlus t)) →\n                                                (∀ (t : ℝ),\n                                                    ↑e0 (TightVer401.seamComplexCoord (pMinus t)) =\n                                                      TightVer401.seamComplexCoord (gammaMinus t)) →\n                                                  (∀ (t : ℝ), 0 < inner ℝ (deriv pPlus t) (deriv gammaPlus t)) →\n                                                    (∀ (t : ℝ), 0 < inner ℝ (deriv pMinus t) (deriv gammaMinus t)) →\n                                                      0 < RPlus →\n                                                        0 < RMinus →\n                                                          (TightVer401.ComplexVisiblePair RPlus pPlus fun t =>\n                                                              Complex.I * gammaPlus t) →\n                                                            (TightVer401.ComplexVisiblePair RMinus\n                                                                (TightVer401.corrugatedReverseReflect gammaMinus)\n                                                                fun t =>\n                                                                Complex.I *\n                                                                  TightVer401.corrugatedReverseReflect pMinus t) →\n                                                              ↑c0 '' tsupport Y ⊆\n                                                                  ⇑TightVer401.seamComplexCoord ''\n                                                                    (⇑HpPlus '' Metric.ball 0 1 \\\n                                                                      closure (⇑HpMinus '' Metric.ball 0 1)) →\n                                                                0 < w →\n                                                                  ContMDiffOn TightVer401.nativeProductModel\n                                                                      (modelWithCornersSelf ℝ\n                                                                        OAI.SmoothLocal.Geometry.Coord)\n                                                                      (↑⊤) (↑c0) c0.source →\n                                                                    ContMDiffOn\n                                                                        (modelWithCornersSelf ℝ\n                                                                          OAI.SmoothLocal.Geometry.Coord)\n                                                                        TightVer401.nativeProductModel (↑⊤) (↑c0.symm)\n                                                                        c0.target →\n                                                                      (∀ p ∈ c0.source,\n                                                                          TightVer401.planarSupportMap G0 (↑c0 p) =\n                                                                            d.bandMap p) →\n                                                                        TightVer401.IsBandBending d.bandMap Y →\n                                                                          HasCompactSupport Y →\n                                                                            (∃ p, Y p ≠ 0) →\n                                                                              tsupport Y ⊆ ⋯.source → IsOpen O → ⋯ → ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4746,7 +4730,6 @@
       "target_signature": "∀ {T w : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {G0 Gexit : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient} {HpPlus HpMinus HgPlus HgMinus : ℂ ≃ₜ ℂ}\n  {pPlus pMinus gammaPlus gammaMinus : ℝ → ℂ} {RPlus RMinus : ℝ} {O : Set OAI.SmoothLocal.Geometry.Coord},\n  TightVer401.ClassicalExternalResults →\n    TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n      TightVer401.MarkerEllipseAxesRecognition →\n        (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n            (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R) (etaMax : ℝ),\n            0 < etaMax → Nonempty (TightVer401.VisibleConnectorWitnessAssemblyOrdinaryData D etaMax)) →\n          ∀ (e0 : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord),\n            ContDiffOn ℝ (↑⊤) Gexit e0.source →\n              (∀ p ∈ e0.source, (TightVer401.planarHessian Gexit p).det < 0) →\n                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Gexit p) →\n                  ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target →\n                    TightVer401.DualRadialCompletionPositiveTrace HpPlus pPlus →\n                      TightVer401.DualRadialCompletionPositiveTrace HpMinus pMinus →\n                        TightVer401.DualRadialCompletionPositiveTrace HgPlus gammaPlus →\n                          TightVer401.DualRadialCompletionPositiveTrace HgMinus gammaMinus →\n                            closure (⇑HpMinus '' Metric.ball 0 1) ⊆ ⇑HpPlus '' Metric.ball 0 1 →\n                              0 ∈ ⇑HpMinus '' Metric.ball 0 1 →\n                                0 ∈ ⇑HgPlus '' Metric.ball 0 1 →\n                                  0 ∈ ⇑HgMinus '' Metric.ball 0 1 →\n                                    ∀ (H : C(↑unitInterval, C(↑unitInterval, ℂ))),\n                                      (∀ (t : ↑unitInterval), (H 0) t = pMinus ↑t) →\n                                        (∀ (t : ↑unitInterval), (H 1) t = pPlus ↑t) →\n                                          (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →\n                                            (∀ (a t : ↑unitInterval),\n                                                (H a) t ∈ TightVer401.angularDescentComplex '' e0.source) →\n                                              (∀ (t : ℝ),\n                                                  ↑e0 (TightVer401.seamComplexCoord (pPlus t)) =\n                                                    TightVer401.seamComplexCoord (gammaPlus t)) →\n                                                (∀ (t : ℝ),\n                                                    ↑e0 (TightVer401.seamComplexCoord (pMinus t)) =\n                                                      TightVer401.seamComplexCoord (gammaMinus t)) →\n                                                  (∀ (t : ℝ), 0 < inner ℝ (deriv pPlus t) (deriv gammaPlus t)) →\n                                                    (∀ (t : ℝ), 0 < inner ℝ (deriv pMinus t) (deriv gammaMinus t)) →\n                                                      0 < RPlus →\n                                                        0 < RMinus →\n                                                          (TightVer401.ComplexVisiblePair RPlus pPlus fun t =>\n                                                              Complex.I * gammaPlus t) →\n                                                            (TightVer401.ComplexVisiblePair RMinus\n                                                                (TightVer401.corrugatedReverseReflect gammaMinus)\n                                                                fun t =>\n                                                                Complex.I *\n                                                                  TightVer401.corrugatedReverseReflect pMinus t) →\n                                                              ↑c0 '' tsupport Y ⊆\n                                                                  ⇑TightVer401.seamComplexCoord ''\n                                                                    (⇑HpPlus '' Metric.ball 0 1 \\\n                                                                      closure (⇑HpMinus '' Metric.ball 0 1)) →\n                                                                0 < w →\n                                                                  ContMDiffOn TightVer401.nativeProductModel\n                                                                      (modelWithCornersSelf ℝ\n                                                                        OAI.SmoothLocal.Geometry.Coord)\n                                                                      (↑⊤) (↑c0) c0.source →\n                                                                    ContMDiffOn\n                                                                        (modelWithCornersSelf ℝ\n                                                                          OAI.SmoothLocal.Geometry.Coord)\n                                                                        TightVer401.nativeProductModel (↑⊤) (↑c0.symm)\n                                                                        c0.target →\n                                                                      (∀ p ∈ c0.source,\n                                                                          TightVer401.planarSupportMap G0 (↑c0 p) =\n                                                                            d.bandMap p) →\n                                                                        TightVer401.IsBandBending d.bandMap Y →\n                                                                          HasCompactSupport Y →\n                                                                            (∃ p, Y p ≠ 0) →\n                                                                              tsupport Y ⊆ ⋯.source → IsOpen O → ⋯ → ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -4857,7 +4840,7 @@
       "id": "R.firstpair-selected-geometry",
       "title": "Actual selected source core and protected geometry from one seed",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.actualSeed_exists_selected_single_prefix. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.actualSeed_exists_selected_single_prefix. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.selected-patches-budget-application",
         "R.selected-homotopy-domain-application",
@@ -5154,7 +5137,7 @@
       "id": "R.compatible-displacement-production",
       "title": "Construct one compatible eta/rho family with native e and Cartesian E distinguished",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorIncomingParametersChoice_nonempty. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorIncomingParametersChoice_nonempty. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.incoming-d-only-coherent-choice-production"
       ],
@@ -5194,7 +5177,7 @@
       "id": "R.full-incoming-gin-production",
       "title": "Prove the full Gin open germ for the SAME incoming seam",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.ordinary-d-only-final-scalar-production"
       ],
@@ -5234,7 +5217,7 @@
       "id": "R.final-smoothed-h-production",
       "title": "Construct final H once on the full fixed smoothing domain",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.ordinary-d-only-final-scalar-production"
       ],
@@ -5274,7 +5257,7 @@
       "id": "R.ordinary-connector-family-production",
       "title": "Populate the actual universal OrdinaryData family",
       "kind": "construction",
-      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
+      "statement": "CLOSED by CURRENT exact kernel-audited producer TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming. The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the positiveGaussTightness statement. Ellipse recognition, equal-image reparameterization and fixed-open rigidity have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.",
       "depends_on": [
         "R.ordinary-d-only-inhabitant-production"
       ],
@@ -9587,7 +9570,6 @@
       "target_signature": "TightVer401.ClassicalExternalResults →\n  TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n    TightVer401.MarkerEllipseAxesRecognition →\n      (∀ (Gin : OAI.SmoothLocal.Geometry.Coord → ℝ) (Uin : Set OAI.SmoothLocal.Geometry.Coord) (R : ℝ)\n          (D : TightVer401.VisibleConnectorIncomingData Gin Uin 1 R) (etaMax : ℝ),\n          0 < etaMax → Nonempty (TightVer401.VisibleConnectorWitnessAssemblyOrdinaryData D etaMax)) →\n        ∃ T,\n          ∃ (hT : 0 < T),\n            ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n              TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n                TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n                  TightVer401.IsTightImage Xplus ∧\n                    TightVer401.IsTightImage Xminus ∧\n                      ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                          (↑⊤) Xplus ∧\n                        ContMDiff OAI.ClosedSurfaceR4.planeModel\n                            (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) Xminus ∧\n                          (∀ (p : TightVer401.NonrigidTorusSource)\n                              (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                              ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                                ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                            (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                                TightVer401.nativeProductInducedForm Xplus p v z =\n                                  TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                              TightVer401.ImageNoncongruent Xplus Xminus ∧\n                                IsOpen V ∧\n                                  V.Nonempty ∧\n                                    Set.EqOn Xplus Xminus V ∧\n                                      TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                        TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                          ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                            0 < A ∧ A < RN ∧ 0 < mu ∧ ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -9604,9 +9586,9 @@
     },
     {
       "id": "R.ultimate-classical-first-pair-production",
-      "title": "Produce actual global first pair under ONLY the two ClassicalExternalResults fields",
+      "title": "Produce actual global first pair under ONLY the single positive-Gauss tightness statement",
       "kind": "construction",
-      "statement": "The exact ultimate theorem header is ONLY ClassicalExternalResults → before its first existential. Supply kernel-proved closed ellipse recognition and equal-image reparameterization inhabitants internally, alongside the D-only ordinary family. Retain SAME actual seed/FINAL Y/clocks/scalar/OWN H gradient inverse/completed tuple/FULL meridian and all pair conclusions. Current certification additionally checks BOTH closed proof types and reduced ultimate header; no source-only or historical credit. Full-paper/Cantor scope remains deferred. Current exact audit certifies the concrete original producers and ultimate theorem; this helper retains only its explicitly stated hypotheses.",
+      "statement": "The exact ultimate theorem header is ONLY ClassicalPositiveGaussTightnessClaim → before its first existential. Supply kernel-proved closed ellipse recognition and equal-image reparameterization inhabitants internally, alongside the D-only ordinary family. Retain SAME actual seed/FINAL Y/clocks/scalar/OWN H gradient inverse/completed tuple/FULL meridian and all pair conclusions. Current certification additionally checks ALL THREE closed proof types and reduced ultimate header; no source-only or historical credit. Full-paper/Cantor scope remains deferred. Current exact audit certifies the concrete original producers and ultimate theorem; this helper retains only its explicitly stated hypotheses.",
       "depends_on": [
         "R.actual-seed-pair-projection-application",
         "R.ordinary-d-only-inhabitant-production"
@@ -9630,10 +9612,9 @@
       "additional_signatures": {},
       "missing_declarations": [],
       "audit_scope": "Only the explicit types of the bound declarations are certified. A conditional application never proves its producer premises or external hypotheses.",
-      "target_signature": "TightVer401.ClassicalExternalResults →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
+      "target_signature": "TightVer401.ClassicalPositiveGaussTightnessClaim →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
       "signature_origin": "kernel_audit",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ],
       "conditional_on_external_results": true,
@@ -9644,7 +9625,7 @@
         {
           "module": "TightVer401.NonrigidTorusPair",
           "file": "TightVer401/NonrigidTorusPair.lean",
-          "line": 29
+          "line": 30
         }
       ]
     }
@@ -10197,37 +10178,20 @@
         }
       ]
     },
-    "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim": {
-      "axioms": [
-        "propext",
-        "Classical.choice",
-        "Quot.sound"
-      ],
-      "kind": "definition",
-      "name": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-      "type": "Prop",
-      "source_candidates": [
-        {
-          "module": "TightVer401.ClassicalExternal",
-          "file": "TightVer401/ClassicalExternal.lean",
-          "line": 54
-        }
-      ]
-    },
-    "TightVer401.classicalCoincidentEmbeddings_eq": {
+    "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": {
       "axioms": [
         "propext",
         "Classical.choice",
         "Quot.sound"
       ],
       "kind": "theorem",
-      "name": "TightVer401.classicalCoincidentEmbeddings_eq",
-      "type": "TightVer401.ClassicalExternalResults →\n  ∀ (X Y : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n    TightVer401.NativeTorusSmoothEmbedding X →\n      TightVer401.NativeTorusSmoothEmbedding Y →\n        (∀ (p : TightVer401.NonrigidTorusSource) (v w : ℝ × ℝ),\n            TightVer401.nativeProductInducedForm X p v w = TightVer401.nativeProductInducedForm Y p v w) →\n          Set.range X = Set.range Y →\n            ∀ (U : Set TightVer401.NonrigidTorusSource), IsOpen U → U.Nonempty → Set.EqOn X Y U → X = Y",
+      "name": "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved",
+      "type": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
       "source_candidates": [
         {
-          "module": "TightVer401.ClassicalExternal",
-          "file": "TightVer401/ClassicalExternal.lean",
-          "line": 84
+          "module": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof",
+          "file": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
+          "line": 18
         }
       ]
     },
@@ -11796,12 +11760,12 @@
       ],
       "kind": "theorem",
       "name": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-      "type": "TightVer401.ClassicalExternalResults →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
+      "type": "TightVer401.ClassicalPositiveGaussTightnessClaim →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯",
       "source_candidates": [
         {
           "module": "TightVer401.NonrigidTorusPair",
           "file": "TightVer401/NonrigidTorusPair.lean",
-          "line": 29
+          "line": 30
         }
       ]
     },
@@ -18830,6 +18794,7 @@
   ],
   "proof_scope_clarification": "At the quadratic-filling seam, relative smoothing preserves negative Hessian determinant. Auxiliary radial diagonal signs need only hold in the explicit filler and its retained radial germ.",
   "proved_background": {
+    "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
     "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
     "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
   },
@@ -18840,7 +18805,7 @@
     "mode": "explicit_classical_external_theorem_parameters",
     "lean_bundle": "TightVer401.ClassicalExternalResults",
     "lean_source": "TightVer401/ClassicalExternal.lean",
-    "certification_rule": "Kernel checks the two remaining explicit external statement parameters and their conditional applications, and separately verifies the exact closed proof inhabitants in proved_background. No inhabitant of ClassicalExternalResults, custom axiom, admission or circular construction grant is introduced.",
+    "certification_rule": "Kernel checks one remaining positive-Gauss statement parameter and separately verifies three exact closed proof inhabitants in proved_background. No admissions, custom axioms or construction grants.",
     "primary_goal": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
     "grants": [
       {
@@ -18879,44 +18844,6 @@
           "Surface-area measure/change-of-variables framework as a prerequisite of the first pair"
         ],
         "proof_note": "Finite omitted sphere points have zero spherical area, so the positive curvature integral is 4π. The published equality characterization gives tightness directly; Gauss–Bonnet is not required for this conclusion."
-      },
-      {
-        "id": "E.coincident-embedding-fixed-open",
-        "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-        "field": "coincidentEmbeddingFixedOpen",
-        "status": "external_assumed",
-        "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
-        "sources": [
-          {
-            "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
-            "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
-            "location": "Smooth embedding and induced embedded-submanifold inverse"
-          },
-          {
-            "title": "John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness",
-            "url": "https://link.springer.com/book/10.1007/978-3-319-91755-9",
-            "location": "Uniqueness of isometries from their value and differential; also see engine FixedOpenCompact.isometry_eq_id_of_fixed_open_compact"
-          }
-        ],
-        "hypotheses": [
-          "Two actual infinity-smooth embedded immersions on the same fixed connected compact native torus",
-          "Equality of actual nativeProductInducedForm at every point on every tangent-vector pair",
-          "Equal entire embedded images",
-          "The two actual maps agree on a nonempty open subset of that same source"
-        ],
-        "conclusion": "X=Y as parametrized maps",
-        "consumers": [
-          "R.image-separation"
-        ],
-        "still_owned": [
-          "Actual affine marking and trivial stabilizer of the unchanged positive image",
-          "An alleged ambient congruence preserves that exact positive image and hence is the identity",
-          "Actual opposite-branch common metric, protected open agreement, nonzero field and chosen nonzero amplitude"
-        ],
-        "replaces": [
-          "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
-        ],
-        "proof_note": "Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence."
       }
     ],
     "already_proved_background": [
@@ -19054,10 +18981,51 @@
         "proof_declaration": "TightVer401.markerEllipseAxesRecognition_proved",
         "lean_proof_source": "TightVer401/MarkerEllipseAxesRecognitionProof.lean",
         "certification_rule": "Exact closed proof inhabitant must occur in the current source-bound kernel audit; historical statement/application checks alone do not prove the claim."
+      },
+      {
+        "id": "E.coincident-embedding-fixed-open",
+        "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
+        "field": "coincidentEmbeddingFixedOpen",
+        "status": "kernel_proved",
+        "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
+        "sources": [
+          {
+            "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
+            "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
+            "location": "Smooth embedding and induced embedded-submanifold inverse"
+          },
+          {
+            "title": "John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness",
+            "url": "https://link.springer.com/book/10.1007/978-3-319-91755-9",
+            "location": "Uniqueness of isometries from their value and differential; also see engine FixedOpenCompact.isometry_eq_id_of_fixed_open_compact"
+          }
+        ],
+        "hypotheses": [
+          "Two actual infinity-smooth embedded immersions on the same fixed connected compact native torus",
+          "Equality of actual nativeProductInducedForm at every point on every tangent-vector pair",
+          "Equal entire embedded images",
+          "The two actual maps agree on a nonempty open subset of that same source"
+        ],
+        "conclusion": "X=Y as parametrized maps",
+        "consumers": [
+          "R.image-separation"
+        ],
+        "still_owned": [
+          "Actual affine marking and trivial stabilizer of the unchanged positive image",
+          "An alleged ambient congruence preserves that exact positive image and hence is the identity",
+          "Actual opposite-branch common metric, protected open agreement, nonzero field and chosen nonzero amplitude"
+        ],
+        "replaces": [
+          "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
+        ],
+        "proof_note": "The actual common induced metric and the proved smooth equal-image reparametrization give tangent norm preservation. Actual C1 path integrals and intrinsic infima are preserved. A finite compatible intrinsic metric retains the original topology; compact fixed-open isometry rigidity gives X=Y. No external assumption remains.",
+        "proof_declaration": "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved",
+        "lean_proof_source": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
+        "certification_rule": "Exact closed proof inhabitant must occur in current source-bound kernel audit; no new premise header."
       }
     ]
   },
-  "classical_external_registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b",
+  "classical_external_registry_sha256": "f9f2b08f69b88f1a81afc04d079860314d1b049db677399e9fa04b2aa6d5bfbf",
   "primary_route": [
     "O.plane",
     "O.frame",
@@ -19302,7 +19270,6 @@
       "title": "Two noncongruent isometric tight tori",
       "status": "audited",
       "external_dependencies": [
-        "E.coincident-embedding-fixed-open",
         "E.positive-gauss-tightness"
       ]
     }
