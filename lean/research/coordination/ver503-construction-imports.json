@@ -1,0 +1,143 @@
+{
+  "last_published_checked_checkpoint": "bcfc915",
+  "records": [
+    {
+      "worker": "final-smoothing",
+      "commit": "d463e00e900aee569599f8cea18fe6a614844b41",
+      "source": "lean/TightVer401/VisibleConnectorFinalSmoothingBoundary.lean",
+      "git_blob": "94a7837a2181fa71de8252c4d9fb79e0b780bc9f",
+      "sha256": "6bbb41a276bdb0712ecc2e5b2365a31ff371a78a70808b59e09759da408ebbf9"
+    },
+    {
+      "worker": "final-smoothing",
+      "commit": "d463e00e900aee569599f8cea18fe6a614844b41",
+      "source": "lean/TightVer401/VisibleConnectorFinalSmoothingCarrier.lean",
+      "git_blob": "ff50639d36796f5a0d03cba1847e05296fa55fdb",
+      "sha256": "4b5f85775435b0ad419867e18048afada1c62bf254f0d069180396832ba58acc"
+    },
+    {
+      "worker": "final-smoothing",
+      "commit": "d463e00e900aee569599f8cea18fe6a614844b41",
+      "source": "lean/TightVer401/VisibleConnectorFinalSmoothingSide.lean",
+      "git_blob": "81711441388c24061798dee4c39cc1080a88772c",
+      "sha256": "fe2307eea77d7ac83c740c76a167f1ff4c34ce38ae2f029d70eae9cf5216aab4"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "76722ec5e326e479e8e894cb306408220a3a5802",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyGradientSeparation.lean",
+      "git_blob": "79dc2e545fdfed6add861327d3599a9b3ab25255",
+      "sha256": "b3ab17f47257e4d4cba4127f59c7c24a7d031aa26695fa22f01d56a3215ba9ef"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "76722ec5e326e479e8e894cb306408220a3a5802",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilySourceChart.lean",
+      "git_blob": "8cb23326ca2c45882eb7431a37e5eb5cd0639839",
+      "sha256": "083d087436735055776fce6736dc5a7851c6dbac5a4f834a4775d6e4e9b465f3"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "76722ec5e326e479e8e894cb306408220a3a5802",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilySourceSeparation.lean",
+      "git_blob": "4b0d0ea0d6e2fc2d1cad6d458375cc54c982f9f7",
+      "sha256": "8330cdcd45424ce7e8e80133cf82855a638bffa9c15f23f753e5ea7c345ff53b"
+    },
+    {
+      "worker": "final-smoothing",
+      "commit": "fb6dab8c3f07e5a3b0a55367c12d00d4641f08d2",
+      "source": "lean/TightVer401/VisibleConnectorFinalSmoothingConstruction.lean",
+      "git_blob": "1c4ed3e42215c7fd4ed52de3e30c1c6fed936e3a",
+      "sha256": "e6e8f4f26d61d28d9fff20a80ee89f90d0390b32df779e24eb7f7d536a52a191"
+    },
+    {
+      "worker": "final-smoothing",
+      "commit": "fb6dab8c3f07e5a3b0a55367c12d00d4641f08d2",
+      "source": "lean/TightVer401/VisibleConnectorFinalSmoothingGerms.lean",
+      "git_blob": "6fbc12b4ccad51110b2c675ed8a01ba0dec80e56",
+      "sha256": "68baac30ac36b0444bc11937c3596f095dc0a419bfb2974ab7a81f6a24083b67"
+    },
+    {
+      "worker": "incoming-rebase",
+      "commit": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+      "source": "lean/TightVer401/VisibleConnectorIncomingRebaseMatching.lean",
+      "git_blob": "b9277fa7e841e104caae35e0015836ce565ac3f0",
+      "sha256": "16b153ae063fedb166b2f8fa91600443c4a67133517c1cd0ea8a538e26f294fb"
+    },
+    {
+      "worker": "incoming-rebase",
+      "commit": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+      "source": "lean/TightVer401/VisibleConnectorIncomingSeamEmbedding.lean",
+      "git_blob": "a351540f870a9c7d370d2eab06c806e2dfd30ed3",
+      "sha256": "70452fa23e5ee8d49f162a7397727a2560ecb9cebc5e5f8ddf2446d8453b78ae"
+    },
+    {
+      "worker": "incoming-rebase",
+      "commit": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+      "source": "lean/TightVer401/VisibleConnectorIncomingSeamJets.lean",
+      "git_blob": "fa13466207330b0c2152145f4b77ddd9463b1d2a",
+      "sha256": "cb94a4b3c7f9763a48a88085d5d222b3ee96a8dda955473d0de2d88cf2369bd5"
+    },
+    {
+      "worker": "incoming-rebase",
+      "commit": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+      "source": "lean/TightVer401/VisibleConnectorIncomingTerminalMargins.lean",
+      "git_blob": "6513f4530b7b69dc1ba0c6d699d9e3ee704cc51e",
+      "sha256": "da2eb84f1a012a4dd0e4a8a8eda464d98470873fd9eae83f8e0199edeb4f97ae"
+    },
+    {
+      "worker": "incoming-rebase",
+      "commit": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+      "source": "lean/TightVer401/VisibleConnectorIncomingTerminalRebase.lean",
+      "git_blob": "9c6660f621a9acf8f3b38e35414ab28776bca7dd",
+      "sha256": "6e88172986a73058b27aaf4100496807506bff930e2296c27ad9c8b20bb549fe"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyCoefficientContinuity.lean",
+      "git_blob": "e3fb964988a8323e8083098124ce281e19a5f66c",
+      "sha256": "844af0eb87fcd0d48e21737e8c92976c2dd1cd51e2464caeeb3b2ed7a38d03a7"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyGradientEnclosure.lean",
+      "git_blob": "a2c11e0b2335f509ce4615185c886072782a44b8",
+      "sha256": "447fe4609f9fe021c41f3fd948048935361548357132132e251d66f39273ff5f"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyLowerDelta.lean",
+      "git_blob": "db2c300affbba6a993ed13792513942cb1548dd1",
+      "sha256": "340ff9bd8685e61c68f079af6f55deb136fd1ac908089ca5f4e931391a31a4c0"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyRawPotential.lean",
+      "git_blob": "9624a828c426b1b9782f36d66a9f9f24d1d478f7",
+      "sha256": "7493da64ae98d830a2fc9a837867950aace2d7b30313e28fa96ccba2bd62099c"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilySourceEnclosure.lean",
+      "git_blob": "e32c5043958f32f28d3678f6b83c1706b31aecf3",
+      "sha256": "b46863d68ef42846206160c82f0fb6bc6f1e4f5d5ef0528c33d5a15baa55831c"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "6c4a0964de8f8a9e96a21bb916646a2c038ecd37",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyTerminalEscape.lean",
+      "git_blob": "d575de26316d3cd45d0d762904397bf61ebd3bde",
+      "sha256": "6b099ee26d7b1f21b5e17ae29e8b590d605ad5ce3238afdb7df45034388feb58"
+    }
+  ],
+  "note": "Exact frozen blobs; full integration audit determines certification. Original construction gates remain pending.",
+  "audit_source_commit": "1a33fdf7a5d6202a33fff5c2d7279e002764866a",
+  "kernel_report_sha256": "070c4bcb0f21aec1fbc1cf9a09d19cc3c648b12caef9771d9d56215e693f1ba2",
+  "source_closure_sha256": "e7b892ac40e0c7a42ffcd896058ee90cc029f2e17117e58b764b101dc7ff82fc",
+  "status": "current_integration_PASS"
+}

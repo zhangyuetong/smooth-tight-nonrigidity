@@ -12,3 +12,9 @@ The existing Lean types below are frozen under coordinator ownership. Workers ad
 - `exists_markedTorus_pair_of_negative_gradient_order`: consumes actual selected source strict nesting, protected c0''tsupport Y inside source band, open O with original-potential agreement, SAME e0/Ge selected trace/homotopy and ordinary connector family. Root supplies unchanged actual seed/correction/clock/field and invokes pair consumer once, preserving completed tuple and full meridian.
 
 Final theorem retains `ClassicalExternalResults`, `ClassicalEmbeddedImageReparametrizationClaim`, `MarkerEllipseAxesRecognition` (four statements total). Every original construction input must be produced; no final existence credit until audited actual first-pair theorem.
+
+## Concrete raw scalar and height classifier
+
+The raw scalar returned under the binder `B` by `visibleConnectorOrdinaryFamilyRawPotential_global` is the support potential. It is distinct from the signed OLD ruling height called `B` by `visibleConnectorFinalSmoothing_exists_full_scalar`. Retain them as `Graw` and `heightSign` in assembly. The height classifier must use the SAME raw Cartesian inverse E and satisfy the literal physical pullback `heightSign(rebasedSource(s,u)) = b(s)+u*d(s)`. Its zero seam is the displaced original-height-zero trace pc(a(s)); the lower original incoming trace corresponds to b(s)<0 and is protected K. The checked rebase seam matching gives Gin/raw value and gradient at pc(a(s)), not an open equality germ at the original lower trace. The full Gin lower strip and constructed carrier supply that original incoming neighborhood.
+
+The concrete classifier producer is owned by final-smoothing (`VisibleConnectorFinalSmoothingHeight*`); ordinary-family must consume the identical definition or prove a literal equality to it. Final H obtains its own gradient inverse after smoothing; raw E supplies coordinates and height only.

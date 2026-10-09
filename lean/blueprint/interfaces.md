@@ -59,14 +59,36 @@ General height/component topology, native intrinsic-distance instance packaging,
 
 These interface statuses come from the current local audit. An audited conditional consumer proves its stated implication and does not construct the pending source/core or universal ordinary-family inputs.
 
-- `R.final-margin-raw-leaf-connection`: pending — Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin.
-- `R.incoming-local-seam-jets-application`: pending — Derive actual Gin trace derivative and construct a LOCAL matched raw scalar.
-- `R.incoming-cartesian-seam-matching-application`: pending — Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO.
-- `R.incoming-displaced-seam-embedding-application`: pending — Derive closed embedding of the displaced central slice from SAME native e.
-- `R.incoming-terminal-margins-production-application`: pending — Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds.
-- `R.incoming-terminal-literal-rebase-application`: pending — Transport the exact old terminal through SAME a and d=tc(a)-b.
-- `R.final-smoothing-full-scalar-application`: pending — Construct ONE final scalar on the full carrier from actual primitive seam and branch facts.
-- `R.final-smoothing-open-derivatives-application`: pending — Recover actual final-H gradient and Hessian on true open equality domains.
+- `R.selected-core-label-gap-production`: pending — Construct uniform core label margins for SAME already selected leaves.
+- `R.selected-phase-label-tubes-production`: pending — Construct actual Fermi label tubes and a COMMON later graph-amplitude budget.
+- `R.selected-flow-initial-value-derivative-production`: pending — Derive genuine positive initial-value derivative of SAME complete ruled flow.
+- `R.selected-core-flow-placement-production`: pending — Place SAME protected support between original selected leaves in the actual FLOW image.
+- `R.selected-central-gauss-orientation-production`: pending — Compute actual central negative signed Gauss orientation.
+- `R.selected-gnomonic-jacobian-production`: pending — Derive exact actual projected Gauss Jacobian from the triple product.
+- `R.selected-full-band-gauss-orientation-production`: pending — Prove actual negative signed Gauss area on the ENTIRE original raw band.
+- `R.final-smoothing-physical-full-band-application`: pending — Identify the ENTIRE Cartesian closed image with SAME rebased physical band.
+- `R.incoming-eta-first-margins-production`: pending — Choose ONE eta before the displaced family with actual original coefficient and terminal geometry.
+- `R.incoming-joint-actual-coefficients-production`: pending — Derive continuity periodicity and actual identities of joint A B C.
+- `R.incoming-joint-coefficient-sign-threshold-production`: pending — Construct uniform A B C positivity from genuine central signs.
+- `R.incoming-same-inverse-height-threshold-production`: pending — Produce uniform small SAME inverse height from zero-axis smoothness.
+- `R.incoming-same-inverse-general-delta-threshold-production`: pending — Derive positive lower A+b(B-C) on SAME inverse phase domain.
+- `R.incoming-same-inverse-actual-delta-threshold-production`: pending — Construct SAME-e lower Delta threshold for actual joint source gradient ruling.
+- `R.incoming-same-inverse-gin-delta-threshold-production`: pending — Produce lower Delta of the literal SAME Gin displaced family.
+- `R.incoming-rho-below-retained-margins-application`: pending — Select ONE positive rho below all supplied same-object margins and derived height bound.
+- `R.ordinary-coefficient-continuity-application`: audited — Derive joint continuity of the actual source coefficients.
+- `R.ordinary-lower-delta-threshold-production`: audited — Construct uniform actual Delta positivity at SAME lower inverse graph.
+- `R.ordinary-terminal-escape-production`: audited — Produce actual full-phase norm escape and source boundary separation.
+- `R.ordinary-fixed-source-enclosure-production`: audited — Construct one terminal filling strictly enclosing the retained incoming Jordan fill.
+- `R.ordinary-round-gradient-enclosure-production`: audited — Enclose the full closed terminal gradient disk in SAME incoming gradient filling.
+- `R.ordinary-global-raw-potential-production`: audited — Construct SAME global raw source inverse scalar and full closed-band saddle carrier from endpoint geometry.
+- `R.final-margin-raw-leaf-connection`: audited — Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin.
+- `R.incoming-local-seam-jets-application`: audited — Derive actual Gin trace derivative and construct a LOCAL matched raw scalar.
+- `R.incoming-cartesian-seam-matching-application`: audited — Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO.
+- `R.incoming-displaced-seam-embedding-application`: audited — Derive closed embedding of the displaced central slice from SAME native e.
+- `R.incoming-terminal-margins-production-application`: audited — Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds.
+- `R.incoming-terminal-literal-rebase-application`: audited — Transport the exact old terminal through SAME a and d=tc(a)-b.
+- `R.final-smoothing-full-scalar-application`: audited — Construct ONE final scalar on the full carrier from actual primitive seam and branch facts.
+- `R.final-smoothing-open-derivatives-application`: audited — Recover actual final-H gradient and Hessian on true open equality domains.
 - `R.final-seed-support-connection`: audited — Connect FINAL margin-selected Y to the SAME original scalar and native chart.
 - `R.final-selected-gradient-cartesian-connection`: audited — Flatten the ALREADY CHOSEN final selected-gradient inverse without reselection.
 - `R.final-smoothing-carrier-application`: audited — Keep the ENTIRE rebased closed band in the SAME full smoothing carrier.
@@ -6974,11 +6996,11 @@ Additional required audited interface: `TightVer401.visibleConnector_jordan_encl
 
 ### R.firstpair-selected-geometry: Original same-seed nested selected geometry for the first pair (pending)
 
-Instantiate SAME corrected seed/Ge/final Y and final graphs ONCE below a proved geometric tolerance. Construct actual source strict Jordan nesting and hCore : c0 '' tsupport Y ⊆ seamComplexCoord '' ((HpPlus '' ball 0 1) \ closure (HpMinus '' ball 0 1)). Retain original G0 equality on open O containing that support, SAME e0/Ge selected trace/homotopy, both gradient origin enclosures and actual visibility/pairing. Signed gradient degree derives reverse target order but does not prove source/core placement. This ORIGINAL selected geometry/hCore producer remains PENDING.
+Instantiate SAME corrected seed/Ge/FINAL Y and already retained selected leaves/clocks/patches ONCE. Uniform core label gaps, Fermi label tubes/amplitude budgets, actual graph/core and pair separation, positive flow initial-value derivative, full-band negative projected Gauss orientation and genuine protected FLOW placement now have substantive producers. Still construct the positive full-round Cartesian map with INCREASING vin-to-vout initial value, its raw Jordan annulus image and winding transport through the SAME disjoint selected homotopies. Final selected strict source Jordan nesting and hCore : c0 image tsupport Y inside the FINAL selected Jordan annulus remain ORIGINAL PENDING. Keep SAME e0/Ge traces/homotopy, actual gradient origin enclosures and existing original G0 open agreement. Never reselect leaves using the optional core-band existence helper.
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`, `R.final-seed-support-connection`, `R.final-selected-gradient-cartesian-connection`.
+Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`, `R.final-seed-support-connection`, `R.final-selected-gradient-cartesian-connection`, `R.selected-core-label-gap-production`, `R.selected-phase-label-tubes-production`, `R.selected-core-flow-placement-production`, `R.selected-full-band-gauss-orientation-production`.
 
 Lean target: `TightVer401.exists_same_seed_nested_selected_exit_geometry`; source: `TightVer401/PositiveExitConstructionSelectedGeometryApplication.lean`.
 
@@ -7324,11 +7346,11 @@ Additional required audited interface: `TightVer401.completedSaddleTorusBendingF
 
 ### R.compatible-displacement-production: Construct one compatible eta/rho family with native e and Cartesian E distinguished (pending)
 
-Choose eta before eta-dependent pc/w0, then choose rho only after intersecting ALL same-e carrier, coefficient, smallness and terminal C1/Jordan/nonzero/norm bounds. Retain the strengthened central source and phase/height fields of ONE native e; construct the actual displaced seam embedding and identify the SAME original curve/scalar. Cartesian E is a distinct source inverse with explicit retained identities. This is an ORIGINAL PENDING producer, not a premise granted by frozen sign/rebase lemmas.
+Instantiate ONE eta BEFORE its w0/pc family using actual original coefficient/terminal margins, retain SAME strengthened native e and literal Gin joint family, and intersect derived coefficient/sign/lower-Gin-Delta/height/terminal thresholds with genuine phase/carrier bounds to choose ONE rho. Those numerical thresholds now have substantive producers, including actual coefficient-domain D0 construction; the universal same-object family instantiation, actual carrier/full Gin nonpositive strip, upper endpoint Delta and literal ruling/terminal identifications remain ORIGINAL PENDING. Cartesian E remains distinct and no completed family inhabitant is granted.
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`, `R.incoming-displaced-seam-embedding-application`, `R.incoming-terminal-margins-production-application`, `R.incoming-terminal-literal-rebase-application`.
+Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`, `R.incoming-displaced-seam-embedding-application`, `R.incoming-terminal-margins-production-application`, `R.incoming-terminal-literal-rebase-application`, `R.ordinary-coefficient-continuity-application`, `R.ordinary-lower-delta-threshold-production`, `R.ordinary-terminal-escape-production`, `R.ordinary-fixed-source-enclosure-production`, `R.incoming-eta-first-margins-production`, `R.incoming-joint-actual-coefficients-production`, `R.incoming-joint-coefficient-sign-threshold-production`, `R.incoming-same-inverse-gin-delta-threshold-production`, `R.incoming-rho-below-retained-margins-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7342,7 +7364,7 @@ On an actual open neighborhood containing the ENTIRE original incoming curve, es
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.compatible-displacement-production`, `R.displaced-seam-rebase-application`, `R.incoming-local-seam-jets-application`, `R.incoming-cartesian-seam-matching-application`.
+Dependencies: `R.compatible-displacement-production`, `R.displaced-seam-rebase-application`, `R.incoming-local-seam-jets-application`, `R.incoming-cartesian-seam-matching-application`, `R.ordinary-global-raw-potential-production`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7356,7 +7378,7 @@ Instantiate every original primitive seam/domain/sign/matching/closed-band input
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.full-incoming-gin-production`, `R.smoothing`, `R.actual-cartesian-connector-source-application`, `R.final-smoothing-carrier-application`, `R.final-smoothing-side-application`, `R.final-smoothing-boundary-application`, `R.final-smoothing-full-scalar-application`, `R.final-smoothing-open-derivatives-application`.
+Dependencies: `R.full-incoming-gin-production`, `R.smoothing`, `R.actual-cartesian-connector-source-application`, `R.final-smoothing-carrier-application`, `R.final-smoothing-side-application`, `R.final-smoothing-boundary-application`, `R.final-smoothing-full-scalar-application`, `R.final-smoothing-open-derivatives-application`, `R.ordinary-global-raw-potential-production`, `R.final-smoothing-physical-full-band-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7370,7 +7392,7 @@ For EVERY actual Gin/Uin/R and D : VisibleConnectorIncomingData Gin Uin 1 R and 
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-gradient-boundary-separation-application`, `R.ordinary-source-boundary-separation-application`, `R.final-smoothing-open-derivatives-application`.
+Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-gradient-boundary-separation-application`, `R.ordinary-source-boundary-separation-application`, `R.final-smoothing-open-derivatives-application`, `R.ordinary-global-raw-potential-production`, `R.ordinary-fixed-source-enclosure-production`, `R.ordinary-round-gradient-enclosure-production`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7882,7 +7904,7 @@ Additional required audited interface: `TightVer401.positiveExitFinalGradientCha
       (TightVer401.positiveExitFinalGradientChart hU h).target
 ```
 
-### R.final-smoothing-full-scalar-application: Construct ONE final scalar on the full carrier from actual primitive seam and branch facts (pending)
+### R.final-smoothing-full-scalar-application: Construct ONE final scalar on the full carrier from actual primitive seam and branch facts (audited)
 
 The exact export constructs N and H on V = visibleConnectorFinalSmoothingCarrier Vraw GinU B, retains V subset SAME Cartesian E.target, smooth H and negative Hessian throughout V and supplied closed C, BOTH explicit true open incoming/terminal equality neighborhoods, outside piecewise germs and arbitrary actual C1 error. It calls relative on_sides smoothing ONCE. Inputs are actual periodic regular embedded seam, smooth B/Gin/raw on full domains with negative Hessians, seam inclusion/zero and zero-set identification, actual negative B normal derivative, literal value/gradient matching, compact boundary sets with strict height signs and full closed-band containment. These original primitive inputs are still to instantiate; H gradient inverse remains subsequent and distinct. Frozen source provenance fb6dab8 grants no current-audit status.
 
@@ -7892,9 +7914,94 @@ Dependencies: `R.final-smoothing-carrier-application`, `R.final-smoothing-side-a
 
 Lean target: `TightVer401.visibleConnectorFinalSmoothing_exists_full_scalar`; source: `TightVer401/VisibleConnectorFinalSmoothingConstruction.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.final-smoothing-open-derivatives-application: Recover actual final-H gradient and Hessian on true open equality domains (pending)
+```lean
+∀ {L : ℝ} [hL : Fact (0 < L)] {gamma : ℝ → ℂ},
+  ContDiff ℝ (↑⊤) gamma →
+    ∀ (hp : Function.Periodic gamma L),
+      (∀ (s : ℝ), deriv gamma s ≠ 0) →
+        Function.Injective hp.lift →
+          ∀ {B Gin raw : OAI.SmoothLocal.Geometry.Coord → ℝ} {Vraw GinU K T C : Set OAI.SmoothLocal.Geometry.Coord}
+            (E : OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord),
+            Vraw ⊆ E.target →
+              IsOpen Vraw →
+                IsOpen GinU →
+                  ContDiffOn ℝ (↑⊤) B Vraw →
+                    ContDiffOn ℝ (↑⊤) Gin GinU →
+                      ContDiffOn ℝ (↑⊤) raw Vraw →
+                        (∀ x ∈ GinU, (TightVer401.planarHessian Gin x).det < 0) →
+                          (∀ x ∈ Vraw, (TightVer401.planarHessian raw x).det < 0) →
+                            (∀ (s : ℝ), TightVer401.seamComplexCoord (gamma s) ∈ Vraw) →
+                              (∀ (s : ℝ), TightVer401.seamComplexCoord (gamma s) ∈ GinU) →
+                                (∀ (s : ℝ), B (TightVer401.seamComplexCoord (gamma s)) = 0) →
+                                  (∀ x ∈ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B,
+                                      B x = 0 → x ∈ Set.range fun s => TightVer401.seamComplexCoord (gamma s)) →
+                                    (∀ (s : ℝ),
+                                        (fderiv ℝ B (TightVer401.seamComplexCoord (gamma s)))
+                                            (TightVer401.seamComplexCoord (Complex.I * deriv gamma s)) <
+                                          0) →
+                                      (∀ (s : ℝ),
+                                          Gin (TightVer401.seamComplexCoord (gamma s)) =
+                                            raw (TightVer401.seamComplexCoord (gamma s))) →
+                                        (∀ (s : ℝ),
+                                            TightVer401.planarGradient Gin (TightVer401.seamComplexCoord (gamma s)) =
+                                              TightVer401.planarGradient raw (TightVer401.seamComplexCoord (gamma s))) →
+                                          IsCompact K →
+                                            IsCompact T →
+                                              K ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B →
+                                                T ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B →
+                                                  (∀ x ∈ K, B x < 0) →
+                                                    (∀ x ∈ T, 0 < B x) →
+                                                      C ⊆
+                                                          TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU
+                                                            B →
+                                                        ∀ {epsilon : ℝ},
+                                                          0 < epsilon →
+                                                            have V :=
+                                                              TightVer401.visibleConnectorFinalSmoothingCarrier Vraw
+                                                                GinU B;
+                                                            ∃ N H,
+                                                              IsOpen V ∧
+                                                                V ⊆ E.target ∧
+                                                                  IsOpen N ∧
+                                                                    TightVer401.seamNormalSeam gamma hp ⊆ N ∧
+                                                                      closure N ⊆ V \ (K ∪ T) ∧
+                                                                        ContDiffOn ℝ (↑⊤) H V ∧
+                                                                          (∀ x ∈ V,
+                                                                              (TightVer401.planarHessian H x).det < 0) ∧
+                                                                            (∀ x ∈ C,
+                                                                                (TightVer401.planarHessian H x).det <
+                                                                                  0) ∧
+                                                                              (have Oin :=
+                                                                                  TightVer401.visibleConnectorFinalSmoothingIncomingOpen
+                                                                                    V GinU N B;
+                                                                                IsOpen Oin ∧
+                                                                                  K ⊆ Oin ∧
+                                                                                    Oin ⊆ V ∩ GinU ∧
+                                                                                      Set.EqOn H Gin Oin) ∧
+                                                                                (have Ot :=
+                                                                                    TightVer401.visibleConnectorFinalSmoothingTerminalOpen
+                                                                                      V Vraw N B;
+                                                                                  IsOpen Ot ∧
+                                                                                    T ⊆ Ot ∧
+                                                                                      Ot ⊆ V ∩ Vraw ∧
+                                                                                        Set.EqOn H raw Ot) ∧
+                                                                                  (∀ x ∈ V \ N,
+                                                                                      H =ᶠ[nhds x]
+                                                                                        TightVer401.relativeSaddlePiecewise
+                                                                                          {y | B y < 0} Gin raw) ∧
+                                                                                    ∀ x ∈ V, ⋯ ∧ ⋯
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothing_seam_range`.
+
+```lean
+∀ {L : ℝ} {gamma : ℝ → ℂ} (hp : Function.Periodic gamma L),
+  TightVer401.seamNormalSeam gamma hp = Set.range fun s => TightVer401.seamComplexCoord (gamma s)
+```
+
+### R.final-smoothing-open-derivatives-application: Recover actual final-H gradient and Hessian on true open equality domains (audited)
 
 Given literal EqOn H f on SAME open O, derive EqOn of actual planar gradients AND Hessians on O using true neighborhood germ equality. Apply to the exact open Gin/raw-terminal neighborhoods of ONE full-carrier H; this cannot be inferred from first jets alone, and it produces no new scalar or inverse. Frozen source provenance fb6dab8 remains pending until current root import/audit.
 
@@ -7904,9 +8011,17 @@ Dependencies: `R.final-smoothing-full-scalar-application`.
 
 Lean target: `TightVer401.visibleConnectorFinalSmoothing_open_equality_derivatives`; source: `TightVer401/VisibleConnectorFinalSmoothingGerms.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.incoming-local-seam-jets-application: Derive actual Gin trace derivative and construct a LOCAL matched raw scalar (pending)
+```lean
+∀ {H f : OAI.SmoothLocal.Geometry.Coord → ℝ} {O : Set OAI.SmoothLocal.Geometry.Coord},
+  IsOpen O →
+    Set.EqOn H f O →
+      Set.EqOn (TightVer401.planarGradient H) (TightVer401.planarGradient f) O ∧
+        Set.EqOn (TightVer401.planarHessian H) (TightVer401.planarHessian f) O
+```
+
+### R.incoming-local-seam-jets-application: Derive actual Gin trace derivative and construct a LOCAL matched raw scalar (audited)
 
 For SAME smooth Gin on actual open U, smooth p/w with whole p in U and nonzero source determinant at a supplied seam parameter, derive the scalar trace chain rule and construct local Cartesian E/raw with SAME forward source, smooth inverse, literal raw ruling-height and gradient equations on E.source, and scalar/gradient equality at zero-height seam points there. This is LOCAL matched-jet construction, not the universal full Gin open germ, global Cartesian E or final H. Frozen source provenance 4acaef7 supplies no current-audit credit.
 
@@ -7916,9 +8031,47 @@ Dependencies: `R.displaced-seam-rebase-application`.
 
 Lean target: `TightVer401.visibleConnectorIncomingSeam_exists_local_matched_potential`; source: `TightVer401/VisibleConnectorIncomingSeamJets.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.incoming-cartesian-seam-matching-application: Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO (pending)
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord}
+  {p w : ℝ → OAI.SmoothLocal.Geometry.Coord},
+  IsOpen U →
+    ContDiffOn ℝ (↑⊤) Gin U →
+      ContDiff ℝ (↑⊤) p →
+        ContDiff ℝ (↑⊤) w →
+          (∀ (s : ℝ), p s ∈ U) →
+            ∀ (r : ℝ),
+              TightVer401.visibleConnectorDet (deriv p r) (w r) ≠ 0 →
+                ∃ E raw,
+                  ![r, 0] ∈ E.source ∧
+                    ↑E = TightVer401.visibleConnectorSource p w ∧
+                      ContDiffOn ℝ (↑⊤) (↑E.symm) E.target ∧
+                        ContDiffOn ℝ (↑⊤) raw E.target ∧
+                          Set.EqOn (raw ∘ TightVer401.visibleConnectorSource p w)
+                              (TightVer401.visibleConnectorHeight (Gin ∘ p) (TightVer401.planarGradient Gin ∘ p) w)
+                              E.source ∧
+                            Set.EqOn (TightVer401.planarGradient raw ∘ TightVer401.visibleConnectorSource p w)
+                                (TightVer401.visibleConnectorGradient p (TightVer401.planarGradient Gin ∘ p) w)
+                                E.source ∧
+                              ∀ (s : ℝ),
+                                ![s, 0] ∈ E.source →
+                                  raw (p s) = Gin (p s) ∧
+                                    TightVer401.planarGradient raw (p s) = TightVer401.planarGradient Gin (p s)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingSeam_trace_deriv`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord}
+  {p : ℝ → OAI.SmoothLocal.Geometry.Coord},
+  IsOpen U →
+    ContDiffOn ℝ (↑⊤) Gin U →
+      ContDiff ℝ (↑⊤) p →
+        (∀ (s : ℝ), p s ∈ U) → ∀ (s : ℝ), deriv (Gin ∘ p) s = TightVer401.planarGradient Gin (p s) ⬝ᵥ deriv p s
+```
+
+### R.incoming-cartesian-seam-matching-application: Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO (audited)
 
 For SAME Gin/p/w/a/b/d and already retained Cartesian E with literal descended rebased source, actual periodic/shift facts, old lower Delta nonzero, nonzero a_prime/d, full open physical V mapping into E.source, positive physical radius and nonzero rebased Delta, require the ACTUAL seam coordinate (s,-b(s)/d(s)) in V. The literal raw scalar then equals Gin and has its exact planarGradient at p(a(s)). This discharges smoothing hValue/hGradient from ordinary facts, rather than assumes the matches. It neither identifies native e with Cartesian E nor produces full open Gin equality. Frozen source provenance 4acaef7 remains separate from current root audit.
 
@@ -7928,9 +8081,73 @@ Dependencies: `R.incoming-local-seam-jets-application`, `R.displaced-seam-rebase
 
 Lean target: `TightVer401.visibleConnectorIncomingRebase_cartesian_seam_matches`; source: `TightVer401/VisibleConnectorIncomingRebaseMatching.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.incoming-displaced-seam-embedding-application: Derive closed embedding of the displaced central slice from SAME native e (pending)
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord}
+      {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},
+      IsOpen U →
+        ContDiffOn ℝ (↑⊤) Gin U →
+          ContDiff ℝ (↑⊤) p →
+            ContDiff ℝ (↑⊤) w →
+              (∀ (s : ℝ), p s ∈ U) →
+                ContDiff ℝ (↑⊤) a →
+                  ContDiff ℝ (↑⊤) b →
+                    ContDiff ℝ (↑⊤) d →
+                      Function.Periodic p L →
+                        Function.Periodic w L →
+                          (∀ (s : ℝ), a (s + L) = a s + L) →
+                            Function.Periodic b L →
+                              Function.Periodic d L →
+                                (∀ (s : ℝ),
+                                    TightVer401.visibleConnectorDelta p (TightVer401.planarGradient Gin ∘ p) w
+                                        ![a s, b s] ≠
+                                      0) →
+                                  (∀ (s : ℝ), deriv a s ≠ 0) →
+                                    (∀ (s : ℝ), d s ≠ 0) →
+                                      ∀
+                                        (E :
+                                          OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord
+                                            OAI.SmoothLocal.Geometry.Coord),
+                                        (↑E =
+                                            TightVer401.visibleConnectorCartesianSource L
+                                              (TightVer401.visibleConnectorRebasedSource p w a b)
+                                              (TightVer401.visibleConnectorRebasedRuling w a d) fun x => 1) →
+                                          ∀ {V : Set OAI.SmoothLocal.Geometry.Coord},
+                                            IsOpen V →
+                                              Set.MapsTo
+                                                  (TightVer401.visibleConnectorCartesianPotentialPhysicalChart L
+                                                    fun x => 1)
+                                                  V E.source →
+                                                (∀ q ∈ V,
+                                                    0 <
+                                                      TightVer401.visibleConnectorCartesianPotentialRadius (fun x => 1)
+                                                        q) →
+                                                  (∀ q ∈ V,
+                                                      TightVer401.visibleConnectorDelta
+                                                          (TightVer401.visibleConnectorRebasedSource p w a b)
+                                                          (TightVer401.visibleConnectorRebasedGradient p
+                                                            (TightVer401.planarGradient Gin ∘ p) w a b)
+                                                          (TightVer401.visibleConnectorRebasedRuling w a d) q ≠
+                                                        0) →
+                                                    (∀ (s : ℝ), ![s, -b s / d s] ∈ V) →
+                                                      have raw :=
+                                                        TightVer401.visibleConnectorCartesianPotential L
+                                                          (TightVer401.visibleConnectorRebasedHeight (Gin ∘ p)
+                                                            (TightVer401.planarGradient Gin ∘ p) w a b)
+                                                          (TightVer401.visibleConnectorRebasedGradient p
+                                                            (TightVer401.planarGradient Gin ∘ p) w a b)
+                                                          (TightVer401.visibleConnectorRebasedRuling w a d) (fun x => 1)
+                                                          E;
+                                                      ∀ (s : ℝ),
+                                                        raw (p (a s)) = Gin (p (a s)) ∧
+                                                          TightVer401.planarGradient raw (p (a s)) =
+                                                            TightVer401.planarGradient Gin (p (a s))
+```
+
+### R.incoming-displaced-seam-embedding-application: Derive closed embedding of the displaced central slice from SAME native e (audited)
 
 Retain ONE actual native e and its exact visibleConnectorDisplacedNativePsi forward equation. Once ALL (rho,(q,0)) source memberships are supplied, injectivity of THIS inverse and smooth periodic p/w0 prove the actual displaced seam q maps to p(q)+rho*w0(q) is a closed embedding. No seam injectivity package, replacement inverse or independently chosen rho enters the proof. Producing one rho satisfying the full source slice and every other compatible bound remains original work. Frozen source provenance 4acaef7 does not certify root imports.
 
@@ -7940,9 +8157,22 @@ Dependencies: `R.actual-incoming-collar-application`.
 
 Lean target: `TightVer401.visibleConnectorIncomingSeam_displaced_isClosedEmbedding`; source: `TightVer401/VisibleConnectorIncomingSeamEmbedding.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.incoming-terminal-margins-production-application: Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds (pending)
+```lean
+∀ {L : ℝ} [Fact (0 < L)] {p w0 : ℝ → OAI.SmoothLocal.Geometry.Coord} {w : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) w0 →
+      ∀ (hpL : Function.Periodic p L) (hw0L : Function.Periodic w0 L)
+        (hwL : ∀ (rho : ℝ), Function.Periodic (fun s => w (rho, s)) L)
+        (e : OpenPartialHomeomorph (ℝ × AddCircle L × ℝ) (ℝ × OAI.SmoothLocal.Geometry.Coord)),
+        ↑e = TightVer401.visibleConnectorDisplacedNativePsi hpL hw0L hwL →
+          ∀ (rho : ℝ),
+            (∀ (q : AddCircle L), (rho, q, 0) ∈ e.source) →
+              Topology.IsClosedEmbedding fun q => hpL.lift q + rho • hw0L.lift q
+```
+
+### R.incoming-terminal-margins-production-application: Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds (audited)
 
 From original smooth periodic ruling, actual positive radius, phase shift and positive phase/pairings/decomposition, choose ONE eta threshold BEFORE the eta-dependent inverse; construct the SAME terminal positive trace/filling, origin enclosure, strict norm escape at ALL physical phases, strict enclosed incoming filled disk and enclosed closed norm ball. Compact strict separation produces an explicit C0 perturbation budget. AFTER eta is fixed, actual joint value and phase-derivative continuity at rho=0 plus genuine baseline terminal norm/determinant yield ONE rho threshold retaining norm and positive polar determinant. These are substantive threshold/filling producers; original decomposition, derivative continuity and compatibility with SAME e/carriers/coefficient bounds still need instantiation. Frozen source provenance 4acaef7 alone supplies no root validation.
 
@@ -7952,9 +8182,131 @@ Dependencies: `R.actual-terminal-geometry-application`, `R.actual-terminal-filli
 
 Lean target: `TightVer401.visibleConnectorIncomingTerminal_exists_escape_and_filling`; source: `TightVer401/VisibleConnectorIncomingTerminalMargins.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.incoming-terminal-literal-rebase-application: Transport the exact old terminal through SAME a and d=tc(a)-b (pending)
+```lean
+∀ {R L M : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ),
+                                0 <
+                                  TightVer401.visibleConnectorJ (deriv gamma s) ⬝ᵥ
+                                    TightVer401.visibleConnectorUnitDirection (theta s)) →
+                              (∀ (s : ℝ), 0 < deriv theta s) →
+                                ∃ eps > 0,
+                                  ∀ (eta : ℝ),
+                                    0 < eta →
+                                      eta < eps →
+                                        have T :=
+                                          TightVer401.visibleConnectorActualTerminalSource p gamma
+                                            (TightVer401.visibleConnectorShiftedRuling R gamma theta eta);
+                                        ContDiff ℝ (↑⊤) T ∧
+                                          Function.Periodic T L ∧
+                                            (∀ (s : ℝ), M < ‖TightVer401.positiveExitComplexTrace T s‖) ∧
+                                              (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDet (T s) (deriv T s)) ∧
+                                                ∃ H,
+                                                  TightVer401.DualRadialCompletionPositiveTrace H
+                                                      (TightVer401.visibleConnectorTerminalNormalizedTrace L T) ∧
+                                                    0 ∈ OAI.CircleDomainRigidity.jordanInterior H ∧
+                                                      Set.range (TightVer401.positiveExitComplexTrace T) =
+                                                        frontier (OAI.CircleDomainRigidity.jordanInterior H)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_compact_norm_margin`.
+
+```lean
+∀ {A : Type u_1} {E : Type u_2} [inst : TopologicalSpace A] [inst_1 : NormedAddCommGroup E] {K : Set A},
+  IsCompact K →
+    ∀ {T : A → E},
+      ContinuousOn T K →
+        ∀ {M : ℝ},
+          (∀ s ∈ K, M < ‖T s‖) →
+            ∃ delta > 0,
+              (∀ s ∈ K, M + 2 * delta ≤ ‖T s‖) ∧
+                ∀ (U : A → E), (∀ s ∈ K, ‖U s - T s‖ < delta) → ∀ s ∈ K, M + delta < ‖U s‖
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_exists_enclosing_filling`.
+
+```lean
+∀ {R L M : ℝ},
+  0 < R →
+    0 < L →
+      0 ≤ M →
+        ∀ (Hin : ℂ ≃ₜ ℂ),
+          (∀ z ∈ frontier (OAI.CircleDomainRigidity.jordanInterior Hin), ‖z‖ ≤ M) →
+            ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+              ContDiff ℝ (↑⊤) p →
+                ContDiff ℝ (↑⊤) gamma →
+                  ContDiff ℝ (↑⊤) theta →
+                    ContDiff ℝ (↑⊤) kappa →
+                      Function.Periodic p L →
+                        Function.Periodic gamma L →
+                          (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                            (∀ (s : ℝ),
+                                TightVer401.visibleConnectorJ (gamma s) =
+                                  R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                                    kappa s •
+                                      TightVer401.visibleConnectorJ
+                                        (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                              (∀ (s : ℝ), 0 < kappa s) →
+                                (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                                  (∀ (s : ℝ),
+                                      0 <
+                                        TightVer401.visibleConnectorJ (deriv gamma s) ⬝ᵥ
+                                          TightVer401.visibleConnectorUnitDirection (theta s)) →
+                                    (∀ (s : ℝ), 0 < deriv theta s) →
+                                      ∃ eps > 0,
+                                        ∀ (eta : ℝ),
+                                          0 < eta →
+                                            eta < eps →
+                                              have T :=
+                                                TightVer401.visibleConnectorActualTerminalSource p gamma
+                                                  (TightVer401.visibleConnectorShiftedRuling R gamma theta eta);
+                                              ∃ H,
+                                                TightVer401.DualRadialCompletionPositiveTrace H
+                                                    (TightVer401.visibleConnectorTerminalNormalizedTrace L T) ∧
+                                                  Set.range (TightVer401.positiveExitComplexTrace T) =
+                                                      frontier (OAI.CircleDomainRigidity.jordanInterior H) ∧
+                                                    closure (OAI.CircleDomainRigidity.jordanInterior Hin) ⊆
+                                                        OAI.CircleDomainRigidity.jordanInterior H ∧
+                                                      Metric.closedBall 0 M ⊆ OAI.CircleDomainRigidity.jordanInterior H
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_exists_displacement_threshold`.
+
+```lean
+∀ {F : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {K : Set ℝ},
+  IsCompact K →
+    ∀ {M : ℝ},
+      (∀ s ∈ K, ContinuousAt F (0, s)) →
+        (∀ s ∈ K, ContinuousAt (fun q => deriv (fun t => F (q.1, t)) q.2) (0, s)) →
+          (∀ s ∈ K, M < ‖TightVer401.positiveExitComplexPoint (F (0, s))‖) →
+            (∀ s ∈ K, 0 < TightVer401.visibleConnectorDet (F (0, s)) (deriv (fun t => F (0, t)) s)) →
+              ∃ rhoMax > 0,
+                ∀ (rho : ℝ),
+                  |rho| < rhoMax →
+                    ∀ s ∈ K,
+                      M < ‖TightVer401.positiveExitComplexPoint (F (rho, s))‖ ∧
+                        0 < TightVer401.visibleConnectorDet (F (rho, s)) (deriv (fun t => F (rho, t)) s)
+```
+
+### R.incoming-terminal-literal-rebase-application: Transport the exact old terminal through SAME a and d=tc(a)-b (audited)
 
 The rebased u=1 source is LITERALLY the old terminal composed with SAME phase a; its actual derivative is multiplied by a_prime. Retain d(s)=tc(a(s))-b(s), old terminal smoothness, actual a_prime>0 and original full-phase norm/positive determinant. These ordinary facts imply the SAME rebased terminal norm and determinant without a second C1 approximation or a separately selected curve. This does not select eta/rho or prove all remaining endpoint Delta/carrier facts. Frozen source provenance 4acaef7 receives only current-audit bound credit.
 
@@ -7964,9 +8316,60 @@ Dependencies: `R.displaced-seam-rebase-application`, `R.incoming-terminal-margin
 
 Lean target: `TightVer401.visibleConnectorIncomingTerminal_rebase_geometry`; source: `TightVer401/VisibleConnectorIncomingTerminalRebase.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
 
-### R.final-margin-raw-leaf-connection: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin (pending)
+```lean
+∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d tc : ℝ → ℝ} {M : ℝ},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) w →
+      ContDiff ℝ (↑⊤) a →
+        ContDiff ℝ (↑⊤) tc →
+          (∀ (s : ℝ), d s = tc (a s) - b s) →
+            (∀ (s : ℝ), 0 < deriv a s) →
+              (∀ (s : ℝ),
+                  M < ‖TightVer401.positiveExitComplexPoint (TightVer401.visibleConnectorSource p w ![s, tc s])‖) →
+                (∀ (s : ℝ),
+                    0 <
+                      TightVer401.visibleConnectorDet (TightVer401.visibleConnectorSource p w ![s, tc s])
+                        (deriv (fun t => TightVer401.visibleConnectorSource p w ![t, tc t]) s)) →
+                  have T := fun s =>
+                    TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)
+                      (TightVer401.visibleConnectorRebasedRuling w a d) ![s, 1];
+                  ∀ (s : ℝ),
+                    M < ‖TightVer401.positiveExitComplexPoint (T s)‖ ∧
+                      0 < TightVer401.visibleConnectorDet (T s) (deriv T s)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_rebase_eq`.
+
+```lean
+∀ (p w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b d tc : ℝ → ℝ),
+  (∀ (s : ℝ), d s = tc (a s) - b s) →
+    ∀ (s : ℝ),
+      TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)
+          (TightVer401.visibleConnectorRebasedRuling w a d) ![s, 1] =
+        TightVer401.visibleConnectorSource p w ![a s, tc (a s)]
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_rebase_deriv`.
+
+```lean
+∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d tc : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) w →
+      ContDiff ℝ (↑⊤) a →
+        ContDiff ℝ (↑⊤) tc →
+          (∀ (s : ℝ), d s = tc (a s) - b s) →
+            ∀ (s : ℝ),
+              deriv
+                  (fun t =>
+                    TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)
+                      (TightVer401.visibleConnectorRebasedRuling w a d) ![t, 1])
+                  s =
+                deriv a s • deriv (fun t => TightVer401.visibleConnectorSource p w ![t, tc t]) (a s)
+```
+
+### R.final-margin-raw-leaf-connection: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin (audited)
 
 For SAME corrected frame d, fixed original G, period balance hb, final flow margin/containment hinside and final visible-turn output, prove literal central-to-raw coordinate equality and equality of the TWO complex-coordinate conventions. Reorder exactly the retained nonzero, turn and visibility conclusions into selected-patch hmargin. No leaf, final Y, clock, scalar or inverse is chosen. This root source is an adapter whose interface status remains pending until its exact exports occur in CURRENT audit; writing or freezing it alone supplies no certification.
 
@@ -7976,59 +8379,761 @@ Dependencies: `R.same-corrected-seed-full-turn-application`, `R.final-seed-suppo
 
 Lean target: `TightVer401.positiveExit_final_margin_selected_raw_leaves`; source: `TightVer401/PositiveExitConstructionFinalMarginConnection.lean`.
 
-Interface origin: `proposed_source_interface`.
+Interface origin: `kernel_audit`.
 
 ```lean
-theorem positiveExit_final_margin_selected_raw_leaves {T δ w : ℝ}
-    [Fact (0 < T)] (d : PeriodicRuledFrame T)
-    (hb : (∫ r in 0..T, ruledPeriodCoefficient d.k d.τ r) = 0)
-    (hinside : ∀ v ∈ Ioo (0 : ℝ) δ, ∀ s : ℝ,
-      principalTrajectory (ruledRho d.τ) (ruledOmega d.k d.τ) 0 v s ∈ Ioo 0 w)
-    (G : Coord → ℝ)
-    (hmargin : ∀ v ∈ Ioo (0 : ℝ) δ,
-      let u := principalTrajectory (ruledRho d.τ) (ruledOmega d.k d.τ) 0 v
-      ContDiff ℝ ∞ u ∧ Function.Periodic u T ∧
-      HasPositiveArgumentTurn
-        (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s])) T ∧
-      HasPositiveArgumentTurn
-        (positiveExitComplexTrace (fun s => planarGradient G
-          (identityBandCentralCoordinates d ![s, u s]))) T ∧
-      (∀ s, positiveExitComplexPoint (identityBandCentralCoordinates d ![s, u s]) ≠ 0) ∧
-      (∀ s, positiveExitComplexPoint
-        (planarGradient G (identityBandCentralCoordinates d ![s, u s])) ≠ 0) ∧
-      ComplexVisiblePair (1 / 4)
-        (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s]))
-        (fun s => Complex.I * positiveExitComplexPoint
-          (planarGradient G (identityBandCentralCoordinates d ![s, u s]))) ∧
-      ComplexVisiblePair (4 / 5)
-        (corrugatedReverseReflect (positiveExitComplexTrace
-          (fun s => planarGradient G (identityBandCentralCoordinates d ![s, u s]))))
-        (fun s => Complex.I * corrugatedReverseReflect
-          (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s])) s)) :
-    ∀ v : Ioo (0 : ℝ) δ,
-      (∀ s, angularDescentComplex (gnomonicInverse (positiveExitRawLeaf d hb hinside v s)) ≠ 0) ∧
-      (∀ s, angularDescentComplex (planarGradient G
-        (gnomonicInverse (positiveExitRawLeaf d hb hinside v s))) ≠ 0) ∧
-      HasPositiveArgumentTurn
-        (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) T ∧
-      HasPositiveArgumentTurn (angularDescentComplex ∘ planarGradient G ∘
-        gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) T ∧
-      ComplexVisiblePair (1 / 4)
-        (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v)
-        (fun s => Complex.I * angularDescentComplex (planarGradient G
-          (gnomonicInverse (positiveExitRawLeaf d hb hinside v s)))) ∧
-      ComplexVisiblePair (4 / 5)
-        (corrugatedReverseReflect (angularDescentComplex ∘ planarGradient G ∘
-          gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v))
-        (fun s => Complex.I * corrugatedReverseReflect
-          (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) s)
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ v ∈ Set.Ioo 0 δ,
+      ∀ (s : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v s ∈ Set.Ioo 0 w)
+  (G : OAI.SmoothLocal.Geometry.Coord → ℝ),
+  (∀ v ∈ Set.Ioo 0 δ,
+      have u := TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v;
+      ContDiff ℝ (↑⊤) u ∧
+        Function.Periodic u T ∧
+          TightVer401.HasPositiveArgumentTurn
+              (TightVer401.positiveExitComplexTrace fun s => TightVer401.identityBandCentralCoordinates d ![s, u s]) T ∧
+            TightVer401.HasPositiveArgumentTurn
+                (TightVer401.positiveExitComplexTrace fun s =>
+                  TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, u s]))
+                T ∧
+              (∀ (s : ℝ),
+                  TightVer401.positiveExitComplexPoint (TightVer401.identityBandCentralCoordinates d ![s, u s]) ≠ 0) ∧
+                (∀ (s : ℝ),
+                    TightVer401.positiveExitComplexPoint
+                        (TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, u s])) ≠
+                      0) ∧
+                  (TightVer401.ComplexVisiblePair (1 / 4)
+                      (TightVer401.positiveExitComplexTrace fun s =>
+                        TightVer401.identityBandCentralCoordinates d ![s, u s])
+                      fun s =>
+                      Complex.I *
+                        TightVer401.positiveExitComplexPoint
+                          (TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, u s]))) ∧
+                    TightVer401.ComplexVisiblePair (4 / 5)
+                      (TightVer401.corrugatedReverseReflect
+                        (TightVer401.positiveExitComplexTrace fun s =>
+                          TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, u s])))
+                      fun s =>
+                      Complex.I *
+                        TightVer401.corrugatedReverseReflect
+                          (TightVer401.positiveExitComplexTrace fun s =>
+                            TightVer401.identityBandCentralCoordinates d ![s, u s])
+                          s) →
+    ∀ (v : ↑(Set.Ioo 0 δ)),
+      (∀ (s : ℝ),
+          TightVer401.angularDescentComplex
+              (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)) ≠
+            0) ∧
+        (∀ (s : ℝ),
+            TightVer401.angularDescentComplex
+                (TightVer401.planarGradient G
+                  (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s))) ≠
+              0) ∧
+          TightVer401.HasPositiveArgumentTurn
+              (TightVer401.angularDescentComplex ∘
+                TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+              T ∧
+            TightVer401.HasPositiveArgumentTurn
+                (TightVer401.angularDescentComplex ∘
+                  TightVer401.planarGradient G ∘
+                    TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+                T ∧
+              (TightVer401.ComplexVisiblePair (1 / 4)
+                  (TightVer401.angularDescentComplex ∘
+                    TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+                  fun s =>
+                  Complex.I *
+                    TightVer401.angularDescentComplex
+                      (TightVer401.planarGradient G
+                        (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)))) ∧
+                TightVer401.ComplexVisiblePair (4 / 5)
+                  (TightVer401.corrugatedReverseReflect
+                    (TightVer401.angularDescentComplex ∘
+                      TightVer401.planarGradient G ∘
+                        TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v))
+                  fun s =>
+                  Complex.I *
+                    TightVer401.corrugatedReverseReflect
+                      (TightVer401.angularDescentComplex ∘
+                        TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+                      s
 ```
+
+Additional required audited interface: `TightVer401.positiveExitComplexPoint_eq_angularDescentComplex`.
+
+```lean
+TightVer401.positiveExitComplexPoint = TightVer401.angularDescentComplex
+```
+
+Additional required audited interface: `TightVer401.positiveExit_final_margin_central_coordinates`.
+
+```lean
+∀ {T δ w : ℝ} (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ v ∈ Set.Ioo 0 δ,
+      ∀ (s : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v s ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)) (s : ℝ),
+  TightVer401.identityBandCentralCoordinates d
+      ![s, TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 (↑v) s] =
+    TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)
+```
+
+### R.ordinary-coefficient-continuity-application: Derive joint continuity of the actual source coefficients (audited)
+
+For SAME joint smooth p/w on their actual open Omega, identify slice longitudinal derivatives with actual fderiv applied to the second coordinate and prove continuity of those derivatives. Consequently the actual A(p,w) and det(w_prime,w) coefficient maps are continuous on SAME Omega. No desired Delta-sign field or displacement bound is assumed; choosing the actual joint domain and map (rho,s) to (rho,a(rho,s)) inside Omega remains original work.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.displaced-seam-rebase-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamilyCoefficientContinuity_actual`; source: `TightVer401/VisibleConnectorOrdinaryFamilyCoefficientContinuity.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {p w : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {Omega : Set (ℝ × ℝ)},
+  IsOpen Omega →
+    ContDiffOn ℝ (↑⊤) p Omega →
+      ContDiffOn ℝ (↑⊤) w Omega →
+        ContinuousOn (fun z => TightVer401.visibleConnectorA (fun s => p (z.1, s)) (fun s => w (z.1, s)) z.2) Omega ∧
+          ContinuousOn (fun z => TightVer401.visibleConnectorDet (deriv (fun s => w (z.1, s)) z.2) (w z)) Omega
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilyCoefficientContinuity_longitudinal`.
+
+```lean
+∀ {P : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {Omega : Set (ℝ × ℝ)},
+  IsOpen Omega →
+    ContDiffOn ℝ (↑⊤) P Omega → ∀ {z : ℝ × ℝ}, z ∈ Omega → deriv (fun s => P (z.1, s)) z.2 = (fderiv ℝ P z) (0, 1)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilyCoefficientContinuity_deriv`.
+
+```lean
+∀ {P : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {Omega : Set (ℝ × ℝ)},
+  IsOpen Omega → ContDiffOn ℝ (↑⊤) P Omega → ContinuousOn (fun z => deriv (fun s => P (z.1, s)) z.2) Omega
+```
+
+### R.ordinary-lower-delta-threshold-production: Construct uniform actual Delta positivity at SAME lower inverse graph (audited)
+
+Retain actual joint p/gamma/w, SAME inverse phase/height a/b on open V with central a(0,s)=s and b(0,s)=0, period/shift laws and actual coefficient-domain containment (rho,a(rho,s)) in Omega. Positive CENTRAL A and actual coefficient/phase/height continuity construct ONE two-sided rho threshold with Delta(p_rho,gamma_rho,w_rho)(a(rho,s),b(rho,s))>0 for EVERY real phase. The literal Delta identity is independent of gamma; lower negativity of b does not invalidate it. Desired lower Delta is a conclusion, not a premise. Original central A and domain compatibility remain genuine inputs.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-coefficient-continuity-application`, `R.actual-incoming-collar-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamilyLowerDelta_uniform`; source: `TightVer401/VisibleConnectorOrdinaryFamilyLowerDelta.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {p gamma w : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {a b : ℝ × ℝ → ℝ} {Omega V : Set (ℝ × ℝ)},
+      IsOpen V →
+        (∀ (s : ℝ), (0, s) ∈ V) →
+          ContinuousOn a V →
+            ContinuousOn b V →
+              (∀ z ∈ V, (z.1, a z) ∈ Omega) →
+                ContinuousOn (fun z => TightVer401.visibleConnectorA (fun s => p (z.1, s)) (fun s => w (z.1, s)) z.2)
+                    Omega →
+                  ContinuousOn (fun z => TightVer401.visibleConnectorDet (deriv (fun s => w (z.1, s)) z.2) (w z))
+                      Omega →
+                    (∀ (rho : ℝ), Function.Periodic (fun s => p (rho, s)) L) →
+                      (∀ (rho : ℝ), Function.Periodic (fun s => w (rho, s)) L) →
+                        (∀ (rho s : ℝ), a (rho, s + L) = a (rho, s) + L) →
+                          (∀ (rho : ℝ), Function.Periodic (fun s => b (rho, s)) L) →
+                            (∀ (s : ℝ), a (0, s) = s) →
+                              (∀ (s : ℝ), b (0, s) = 0) →
+                                (∀ (s : ℝ),
+                                    0 < TightVer401.visibleConnectorA (fun t => p (0, t)) (fun t => w (0, t)) s) →
+                                  ∃ eps > 0,
+                                    ∀ (rho s : ℝ),
+                                      |rho| < eps →
+                                        0 <
+                                          TightVer401.visibleConnectorDelta (fun t => p (rho, t))
+                                            (fun t => gamma (rho, t)) (fun t => w (rho, t)) ![a (rho, s), b (rho, s)]
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilyLowerDelta_geometry`.
+
+```lean
+∀ (p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b : ℝ),
+  TightVer401.visibleConnectorDelta p gamma w ![a, b] =
+    TightVer401.visibleConnectorA p w a - b * TightVer401.visibleConnectorDet (deriv w a) (w a)
+```
+
+### R.ordinary-terminal-escape-production: Produce actual full-phase norm escape and source boundary separation (audited)
+
+From SAME original smooth periodic p/gamma/theta/kappa, positive radius, full theta shift and genuine positive kappa/phase/source pairing/decomposition, choose ONE eta threshold forcing literal actual terminal beyond ANY norm bound at ALL real phases. Construct a global norm bound for the periodic incoming source and derive actual ruling-source boundary disjointness. Coordinate-norm escape is also proved. No assumed terminal embedding, desired separation or changed terminal is used. Actual phase/decomposition/pairing facts and compatible eta/rho selection still need application.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-terminal-geometry-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamily_uniform_actual_terminal_norm_gt`; source: `TightVer401/VisibleConnectorOrdinaryFamilyTerminalEscape.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {R L M : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ), 0 < deriv theta s) →
+                              ∃ eps > 0,
+                                ∀ (eta : ℝ),
+                                  0 < eta →
+                                    eta < eps →
+                                      ∀ (s : ℝ),
+                                        M <
+                                          ‖TightVer401.positiveExitComplexPoint
+                                              (TightVer401.visibleConnectorActualTerminalSource p gamma
+                                                (TightVer401.visibleConnectorShiftedRuling R gamma theta eta) s)‖
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_actual_terminal_periodic`.
+
+```lean
+∀ {R L : ℝ} {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) gamma →
+      ContDiff ℝ (↑⊤) theta →
+        Function.Periodic p L →
+          Function.Periodic gamma L →
+            (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+              ∀ (eta : ℝ),
+                Function.Periodic
+                  (TightVer401.visibleConnectorActualTerminalSource p gamma
+                    (TightVer401.visibleConnectorShiftedRuling R gamma theta eta))
+                  L
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_incoming_source_norm_bound`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {p : ℝ → OAI.SmoothLocal.Geometry.Coord},
+      Continuous p → Function.Periodic p L → ∃ M ≥ 0, ∀ (s : ℝ), ‖TightVer401.positiveExitComplexPoint (p s)‖ ≤ M
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_actual_ruling_source_boundaries_disjoint`.
+
+```lean
+∀ {R L : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ), 0 < deriv theta s) →
+                              ∃ eps > 0,
+                                ∀ (eta : ℝ),
+                                  0 < eta →
+                                    eta < eps →
+                                      Disjoint (Set.range p)
+                                        (Set.range
+                                          (TightVer401.visibleConnectorActualTerminalSource p gamma
+                                            (TightVer401.visibleConnectorShiftedRuling R gamma theta eta)))
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_uniform_actual_terminal_coord_norm_gt`.
+
+```lean
+∀ {R L M : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ), 0 < deriv theta s) →
+                              ∃ eps > 0,
+                                ∀ (eta : ℝ),
+                                  0 < eta →
+                                    eta < eps →
+                                      ∀ (s : ℝ),
+                                        M <
+                                          ‖TightVer401.visibleConnectorActualTerminalSource p gamma
+                                              (TightVer401.visibleConnectorShiftedRuling R gamma theta eta) s‖
+```
+
+### R.ordinary-fixed-source-enclosure-production: Construct one terminal filling strictly enclosing the retained incoming Jordan fill (audited)
+
+For the caller-fixed incoming Hin, compactness constructs a global norm bound on its ENTIRE closure. SAME original terminal norm-escape selects eta threshold BEFORE any outgoing filling; EVERY origin-containing filling with the SAME terminal frontier strictly encloses Hin. With actual gradient pairing, the positive-terminal producer constructs ONE Hout with its positive trace, origin, exact frontier, positive full turn/nonzero and strict enclosure together. Hin may differ from the displaced source underlying the ruling; it is never silently replaced. Original ruling facts remain genuine inputs.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-terminal-escape-production`, `R.actual-terminal-filling-enclosure-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamily_actual_terminal_positive_trace_encloses`; source: `TightVer401/VisibleConnectorOrdinaryFamilySourceEnclosure.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ (Hin : ℂ ≃ₜ ℂ) {R L : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ),
+                                0 <
+                                  TightVer401.visibleConnectorJ (deriv gamma s) ⬝ᵥ
+                                    TightVer401.visibleConnectorUnitDirection (theta s)) →
+                              (∀ (s : ℝ), 0 < deriv theta s) →
+                                ∃ eps > 0,
+                                  ∀ (eta : ℝ),
+                                    0 < eta →
+                                      eta < eps →
+                                        have T :=
+                                          TightVer401.visibleConnectorActualTerminalSource p gamma
+                                            (TightVer401.visibleConnectorShiftedRuling R gamma theta eta);
+                                        ∃ Hout,
+                                          TightVer401.DualRadialCompletionPositiveTrace Hout
+                                              (TightVer401.visibleConnectorTerminalNormalizedTrace L T) ∧
+                                            0 ∈ OAI.CircleDomainRigidity.jordanInterior Hout ∧
+                                              Set.range (TightVer401.positiveExitComplexTrace T) =
+                                                  frontier (OAI.CircleDomainRigidity.jordanInterior Hout) ∧
+                                                TightVer401.HasPositiveArgumentTurn
+                                                    (TightVer401.visibleConnectorTerminalNormalizedTrace L T) 1 ∧
+                                                  (∀ (t : ℝ),
+                                                      TightVer401.visibleConnectorTerminalNormalizedTrace L T t ≠ 0) ∧
+                                                    closure (OAI.CircleDomainRigidity.jordanInterior Hin) ⊆
+                                                      OAI.CircleDomainRigidity.jordanInterior Hout
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_jordan_closure_norm_bound`.
+
+```lean
+∀ (Hin : ℂ ≃ₜ ℂ), ∃ M ≥ 0, ∀ z ∈ closure (OAI.CircleDomainRigidity.jordanInterior Hin), ‖z‖ ≤ M
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_actual_terminal_encloses_fixed_jordan`.
+
+```lean
+∀ (Hin : ℂ ≃ₜ ℂ) {R L : ℝ},
+  0 < R →
+    0 < L →
+      ∀ {p gamma : ℝ → OAI.SmoothLocal.Geometry.Coord} {theta kappa : ℝ → ℝ},
+        ContDiff ℝ (↑⊤) p →
+          ContDiff ℝ (↑⊤) gamma →
+            ContDiff ℝ (↑⊤) theta →
+              ContDiff ℝ (↑⊤) kappa →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+                      (∀ (s : ℝ),
+                          TightVer401.visibleConnectorJ (gamma s) =
+                            R • TightVer401.visibleConnectorUnitDirection (theta s) -
+                              kappa s •
+                                TightVer401.visibleConnectorJ (TightVer401.visibleConnectorUnitDirection (theta s))) →
+                        (∀ (s : ℝ), 0 < kappa s) →
+                          (∀ (s : ℝ), 0 < deriv p s ⬝ᵥ TightVer401.visibleConnectorUnitDirection (theta s)) →
+                            (∀ (s : ℝ), 0 < deriv theta s) →
+                              ∃ eps > 0,
+                                ∀ (eta : ℝ),
+                                  0 < eta →
+                                    eta < eps →
+                                      ∀ (Hout : ℂ ≃ₜ ℂ),
+                                        Set.range
+                                              (TightVer401.positiveExitComplexTrace
+                                                (TightVer401.visibleConnectorActualTerminalSource p gamma
+                                                  (TightVer401.visibleConnectorShiftedRuling R gamma theta eta))) =
+                                            frontier (OAI.CircleDomainRigidity.jordanInterior Hout) →
+                                          0 ∈ OAI.CircleDomainRigidity.jordanInterior Hout →
+                                            closure (OAI.CircleDomainRigidity.jordanInterior Hin) ⊆
+                                              OAI.CircleDomainRigidity.jordanInterior Hout
+```
+
+### R.ordinary-round-gradient-enclosure-production: Enclose the full closed terminal gradient disk in SAME incoming gradient filling (audited)
+
+For SAME D.incoming and caller-selected positive Jordan filling H, incoming visibility gives gradient radius>R and D supplies origin enclosure. Derive the ENTIRE closed terminal radius-R disk inside positiveExitInside D.incoming.gamma, then strict roundDiskChart-R filling nesting inside SAME H. No target-nesting premise, new incoming filling, inverse or final scalar is assumed. This is an available exact-round alternative to retained negative-Hessian gradient order and can feed final H gradient-chart construction only after its ordinary domain/Hessian/germ data exists.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-gradient-boundary-separation-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamily_round_gradient_nesting`; source: `TightVer401/VisibleConnectorOrdinaryFamilyGradientEnclosure.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {H : ℂ ≃ₜ ℂ},
+  (OAI.CircleDomainRigidity.PositiveJordanParametrization H fun t =>
+      TightVer401.seamComplexCoord.symm (D.incoming.gamma (L * t))) →
+    closure (OAI.CircleDomainRigidity.jordanInterior (OAI.CircleDomainRigidity.roundDiskChart R ⋯)) ⊆
+      OAI.CircleDomainRigidity.jordanInterior H
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_closed_terminal_disk_in_incoming`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {H : ℂ ≃ₜ ℂ},
+  (OAI.CircleDomainRigidity.PositiveJordanParametrization H fun t =>
+      TightVer401.seamComplexCoord.symm (D.incoming.gamma (L * t))) →
+    {q | TightVer401.planarRadius q ≤ R} ⊆ TightVer401.positiveExitInside D.incoming.gamma
+```
+
+### R.ordinary-global-raw-potential-production: Construct SAME global raw source inverse scalar and full closed-band saddle carrier from endpoint geometry (audited)
+
+Use actual smooth periodic p/gamma/w/g/h, h>0, trace derivative g_prime=gamma dot p_prime, actual negative source determinants at BOTH endpoints and positive COEFFICIENT visibleConnectorB gamma w. Together with actual positive Jordan boundary parametrizations, source range separation and common-origin enclosure, derive whole-strip Delta positivity, actual F/O/Jacobian fields and source nesting internally. Invoke EXISTING global raw-potential producer to construct e0/E/closed H and raw scalar B/U, full closed target-band coverage in U subset SAME E.target, smooth inverse and strict Hessian sign, exact ruled value/gradient/Hessian formulas and BOTH boundary first jets. No desired source nesting, inverse, scalar or Hessian package is a premise. Raw B is upstream of final H and does NOT supply full Gin open germ or final-H inverse. Primitive coefficient-B positivity, actual topology/separation/origin and compatible rebased endpoint facts remain real producer inputs.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-source-chart-fields-application`, `R.round-source-order-application`, `R.ordinary-terminal-escape-production`, `R.ordinary-fixed-source-enclosure-production`, `R.actual-cartesian-connector-source-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamilyRawPotential_global`; source: `TightVer401/VisibleConnectorOrdinaryFamilyRawPotential.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {g h : ℝ → ℝ},
+      ContDiff ℝ (↑⊤) p →
+        ContDiff ℝ (↑⊤) gamma →
+          ContDiff ℝ (↑⊤) w →
+            ContDiff ℝ (↑⊤) g →
+              ContDiff ℝ (↑⊤) h →
+                Function.Periodic p L →
+                  Function.Periodic gamma L →
+                    Function.Periodic w L →
+                      Function.Periodic g L →
+                        Function.Periodic h L →
+                          (∀ (s : ℝ), 0 < h s) →
+                            (∀ (s : ℝ), deriv g s = gamma s ⬝ᵥ deriv p s) →
+                              (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w s) < 0) →
+                                (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s + h s • deriv w s) (w s) < 0) →
+                                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorB gamma w s) →
+                                    ∀ {Ho Hi : ℂ ≃ₜ ℂ},
+                                      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>
+                                          TightVer401.seamComplexCoord.symm (p (L * t) + h (L * t) • w (L * t))) →
+                                        (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>
+                                            TightVer401.seamComplexCoord.symm (p (L * t))) →
+                                          Disjoint (Set.range p) (Set.range fun s => p s + h s • w s) →
+                                            0 ∈ OAI.CircleDomainRigidity.jordanInterior Ho →
+                                              0 ∈ OAI.CircleDomainRigidity.jordanInterior Hi →
+                                                ∃ e0 E H B U,
+                                                  e0.source =
+                                                      {z |
+                                                        1 < TightVer401.planarRadius z ∧
+                                                          TightVer401.planarRadius z < 2} ∧
+                                                    e0.target = TightVer401.annularCoordJordanInterior Ho Hi ∧
+                                                      ↑e0 = TightVer401.visibleConnectorCartesianSource L p w h ∧
+                                                        ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target ∧
+                                                          (∀
+                                                              (z :
+                                                                ↑{z |
+                                                                    1 ≤ TightVer401.planarRadius z ∧
+                                                                      TightVer401.planarRadius z ≤ 2}),
+                                                              ↑(H z) =
+                                                                TightVer401.visibleConnectorCartesianSource L p w h
+                                                                  ↑z) ∧
+                                                            TightVer401.visibleConnectorCartesianSource L p w h ''
+                                                                  {z |
+                                                                    1 ≤ TightVer401.planarRadius z ∧
+                                                                      TightVer401.planarRadius z ≤ 2} =
+                                                                TightVer401.annularCoordJordanClosure Ho Hi ∧
+                                                              {z |
+                                                                    1 ≤ TightVer401.planarRadius z ∧
+                                                                      TightVer401.planarRadius z ≤ 2} ⊆
+                                                                  E.source ∧
+                                                                E.source ⊆ {z | 0 < TightVer401.planarRadius z} ∧
+                                                                  ContDiffOn ℝ (↑⊤)
+                                                                      (TightVer401.visibleConnectorCartesianSource L p w
+                                                                        h)
+                                                                      E.source ∧
+                                                                    (∀ z ∈ E.source,
+                                                                        0 <
+                                                                          TightVer401.annularJacobian
+                                                                            (TightVer401.visibleConnectorCartesianSource
+                                                                              L p w h)
+                                                                            z) ∧
+                                                                      ↑E =
+                                                                          TightVer401.visibleConnectorCartesianSource L
+                                                                            p w h ∧
+                                                                        ContDiffOn ℝ (↑⊤) (↑E.symm) E.target ∧
+                                                                          TightVer401.annularCoordJordanClosure Ho Hi ⊆
+                                                                              E.target ∧
+                                                                            Set.EqOn (↑E.symm) (↑e0.symm)
+                                                                                (TightVer401.annularCoordJordanInterior
+                                                                                  Ho Hi) ∧
+                                                                              B =
+                                                                                  TightVer401.visibleConnectorCartesianPotential
+                                                                                    L g gamma w h E ∧
+                                                                                IsOpen U ∧
+                                                                                  TightVer401.annularCoordJordanClosure
+                                                                                        Ho Hi ⊆
+                                                                                      U ∧
+                                                                                    U ⊆ E.target ∧
+                                                                                      ContDiffOn ℝ (↑⊤) B U ∧
+                                                                                        (∀
+                                                                                            (y :
+                                                                                              OAI.SmoothLocal.Geometry.Coord),
+                                                                                            ⋯) ∧
+                                                                                          Set.MapsTo
+                                                                                              (TightVer401.visibleConnectorSource
+                                                                                                p w)
+                                                                                              (TightVer401.visibleConnectorCartesianPotentialRuledDomain
+                                                                                                L p gamma w h E)
+                                                                                              U ∧
+                                                                                            ⋯
+```
+
+### R.selected-core-label-gap-production: Construct uniform core label margins for SAME already selected leaves (pending)
+
+Apply actual SelectedPatches hlabels to SAME C/c0/vin/vout and actual smooth inverse: compactness produces epsilon>0 and open W containing C in c0.target with uniform TWO-sided label gaps. Restrict the ALREADY produced strip-complement Ge=G equality to that W to retain original protected open germ. The optional uniform_core_band helper can initially select leaves, but is not a license to reselect the final SelectedPatches vin/vout; that helper is excluded from this route binding. This is actual label separation, not Jordan hCore.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-patches-budget-application`, `R.final-seed-support-connection`.
+
+Lean target: `TightVer401.positiveExit_selectedSourceGeometry_core_uniform_gap`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryCore.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-phase-label-tubes-production: Construct actual Fermi label tubes and a COMMON later graph-amplitude budget (pending)
+
+For SAME selected raw leaf, original northern band, native c0 and retained Si/Pi clock, derive actual seam-domain membership and its constant label, then uniform ALL-real-phase Fermi label control. Each actual smooth periodic graph profile yields a positive amplitude budget; label-gap tubes derive graph/core and graph/graph range disjointness. Choose a COMMON min budget BEFORE invoking SelectedPatches final nuGeom and retain those returned traces ONCE. Ordinary actual northern/chart/raw-leaf/period/profile facts remain inputs; no final source nesting or protected Jordan placement is a conclusion.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-core-label-gap-production`, `R.selected-patches-budget-application`.
+
+Lean target: `TightVer401.positiveExitFermiLabel_selected_exists_uniform_tube`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryPhase.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-flow-initial-value-derivative-production: Derive genuine positive initial-value derivative of SAME complete ruled flow (pending)
+
+Differentiate the literal principalTrajectory with respect to its original initial value: rho(s)/(rho(t)*(1+rho(s)*v*(W(t)-W(s)))^2. For SAME original ruled flow, actual complete containment supplies nonzero denominator and rho positivity yields a STRICT positive derivative on the retained initial-value margin. No desired flow orientation/sign package is assumed. This fixes the increasing vin-to-vout radial orientation needed by the eventual positive round-source map.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.same-corrected-seed-full-turn-application`.
+
+Lean target: `TightVer401.positiveExit_selectedSourceGeometry_ruledFlow_initialValue_deriv_pos`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryFlowDerivative.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-core-flow-placement-production: Place SAME protected support between original selected leaves in the actual FLOW image (pending)
+
+Retain SAME C/c0/vin/vout, original hprotect and actual SelectedPatches hlabels. Invert the genuine reciprocal label to show C lies in the literal image of complete flow with vin<initial_value<vout, then transfer SAME c0 image tsupport Y using its existing support containment. This is TRUE original flow placement, not yet the final selected Jordan annulus hCore. No final graph, clock, field or source inverse is reselected.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-core-label-gap-production`, `R.selected-flow-initial-value-derivative-production`.
+
+Lean target: `TightVer401.positiveExit_selectedSourceGeometry_core_in_flowCore`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryFlowCore.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-central-gauss-orientation-production: Compute actual central negative signed Gauss orientation (pending)
+
+Using SAME frame orientation cross(T,E)=n and actual central derivatives, prove cross(partial0 rawGaussMap,partial1 rawGaussMap)=-(tau^2)*n at height zero and hence exact signed area -(tau^2)<0. This is actual derivative/cross-product calculation rather than an assumed projection or Jacobian sign. Full-band extension has its own GaussBand producer.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.band`, `R.central-tensor`.
+
+Lean target: `TightVer401.positiveExit_selectedSourceGeometry_central_gauss_orientation`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryOrientation.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-gnomonic-jacobian-production: Derive exact actual projected Gauss Jacobian from the triple product (pending)
+
+For an actual differentiable N with N2 nonzero, derive component quotient partials and det D(gnomonicInverse composed N)=inner(N,cross(partial0 N,partial1 N))/(N2)^3, in BOTH seam and annular conventions. Under actual north and negative signed area derive negative Cartesian Jacobian. No unit/tangent or original Gauss sign package is assumed; the full-band raw sign comes from the separate genuine GaussBand proof.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `O.plane`, `R.selected-central-gauss-orientation-production`.
+
+Lean target: `TightVer401.positiveExitSelected_gnomonic_annular_jacobian`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryProjection.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.selected-full-band-gauss-orientation-production: Prove actual negative signed Gauss area on the ENTIRE original raw band (pending)
+
+Use actual unit-normal derivatives and determinant of the actual second fundamental form; compute the ruled tangent cross as sqrt(ruledEnergy)*SAME raw normal. Genuine frame orientation yields STRICT negative raw Gauss signed area at EVERY raw q, extending beyond central height zero. Under actual north derive negative gnomonic annular Jacobian throughout the entire original band. Combined with positive initial-value flow derivative, the future round map must INCREASE initial value vin-to-vout so polar coordinate ordering gives positive source orientation. The round-map construction, raw Jordan image and transport to final selected nesting/hCore remain original pending work.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-central-gauss-orientation-production`, `R.selected-gnomonic-jacobian-production`, `R.selected-flow-initial-value-derivative-production`.
+
+Lean target: `TightVer401.positiveExit_selectedSourceGeometry_raw_gnomonic_jacobian_neg`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryGaussBand.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.final-smoothing-physical-full-band-application: Identify the ENTIRE Cartesian closed image with SAME rebased physical band (pending)
+
+For SAME positive period and periodic rebased source/ruling, prove exact equality between CartesianSource image of the CLOSED round1-to-round2 annulus and the rebased u in [0,1] physical band. With the SAME positive Jordan traces, actual Jordan facts, physical source nesting and global raw image equation, identify closure of the entire physical source annulus with that SAME band. This supplies the full-band identity consumed by Carrier_closed_subset; it does not silently shrink V, produce branch domains or supply a final-H inverse.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-global-raw-potential-production`, `R.ordinary-source-chart-fields-application`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothing_cartesian_image_rebased_band`; source: `TightVer401/VisibleConnectorFinalSmoothingBand.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-eta-first-margins-production: Choose ONE eta before the displaced family with actual original coefficient and terminal geometry (pending)
+
+For actual original p/gamma/theta/kappa, positive R/L/etaMax and genuine decomposition, positive kappa/phase and BOTH source/gradient pairings, choose eta>0 below etaMax BEFORE defining eta-dependent w0/pc. SAME literal w0 yields positive actual A/B/C and terminal radial pairing; SAME terminal is smooth periodic nonzero, positive polar determinant/full turn, injective/Jordan, above supplied norm M and has ONE retained positive filling/origin/frontier. No Gin match or displaced inverse is assumed; instantiate these actual original facts and retain this one ruling in all later rho thresholds.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-terminal-margins-production-application`, `R.ordinary-terminal-escape-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_exists_eta_original_margins`; source: `TightVer401/VisibleConnectorIncomingParametersEta.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-joint-actual-coefficients-production: Derive continuity periodicity and actual identities of joint A B C (pending)
+
+From SAME joint smooth P/G/W on actual open Omega, derive the longitudinal slice derivative from fderiv, continuity of that derivative and actual A/B/C coefficients. Retain their literal identities to visibleConnectorA/B/C and full-period laws from original joint periodicity. No independent coefficient package or desired Delta sign is granted; actual joint family/domain instantiation remains required.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-coefficient-continuity-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParametersFamily_actual_coefficients_continuousOn`; source: `TightVer401/VisibleConnectorIncomingParametersCoefficients.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-joint-coefficient-sign-threshold-production: Construct uniform A B C positivity from genuine central signs (pending)
+
+For SAME joint smooth periodic P/G/W on open Omega containing the whole zero axis and actual positive A/B/C at rho=0, construct ONE uniform two-sided rho threshold retaining positive ACTUAL A/B/C at EVERY real phase. Continuity and compact-period reduction are derived; no desired rho coefficient sign premise is used. Initial central signs and actual family domain still require same-eta instantiation.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-joint-actual-coefficients-production`, `R.incoming-eta-first-margins-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_uniform_actual_coefficient_signs`; source: `TightVer401/VisibleConnectorIncomingParametersSigns.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-same-inverse-height-threshold-production: Produce uniform small SAME inverse height from zero-axis smoothness (pending)
+
+Retain ONE native e and its actual open real phase domain, smooth periodic height b with all central axis points and b(0,s)=0. For ANY positive requested height r, compactness constructs a uniform two-sided rho threshold with abs(b(rho,s))<r for ALL phases. No new inverse or height map is chosen; this is a numerical smallness producer rather than a full negative Gin strip/domain theorem.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-incoming-collar-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_uniform_height_small`; source: `TightVer401/VisibleConnectorIncomingParametersHeight.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-same-inverse-general-delta-threshold-production: Derive positive lower A+b(B-C) on SAME inverse phase domain (pending)
+
+For actual SAME e with smooth a/b, retained axis values and period/shift laws, actual open D0 in its phase domain mapping (rho,s) to (rho,a) into coefficient Omega, and continuous periodic A/B/C with central A>0, construct uniform lower A(rho,a)+b*(B-C)(rho,a)>0. Desired lower Delta positivity is not an input. General coefficient-domain map containment is a real premise here; the following actual-family export constructs its usable D0 rather than assuming the entire phase domain maps there.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-joint-actual-coefficients-production`, `R.actual-incoming-collar-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_uniform_lower_delta`; source: `TightVer401/VisibleConnectorIncomingParametersDelta.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-same-inverse-actual-delta-threshold-production: Construct SAME-e lower Delta threshold for actual joint source gradient ruling (pending)
+
+For SAME joint smooth periodic P/G/W on open Omega containing the central axis and actual central A>0, retain strengthened SAME native e/phase/height smoothness and zero-axis/shift/period laws. Construct a suitable open D0 mapping into the ACTUAL coefficient domain and produce uniform positive literal visibleConnectorDelta at SAME (a(rho,s),b(rho,s)). No desired lower Delta or whole-domain coefficient map is assumed; it does not select the final compatible rho or produce full ordinary data.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-same-inverse-general-delta-threshold-production`, `R.incoming-joint-actual-coefficients-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_uniform_actual_lower_delta`; source: `TightVer401/VisibleConnectorIncomingParametersActualDelta.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-same-inverse-gin-delta-threshold-production: Produce lower Delta of the literal SAME Gin displaced family (pending)
+
+Use actual Gin smooth on open U, SAME original p/w0 in U, gamma=planarGradient Gin(p), genuine incoming radius margin, w0=LITERAL GinRotatedRuling(R,eta,gamma) and positive central A. The actual GinDisplacedPosition/Gradient/Ruling joint coefficient/domain facts are derived internally. Retain ONE strengthened e and obtain uniform positive Delta at its SAME a/b graph with no lower-old-Delta sign assumption. This is a genuine literal-family producer; actual eta/ruling identification, whole compatible rho/carriers and full Gin equality/nonpositive domain still need instantiation.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-same-inverse-actual-delta-threshold-production`, `R.incoming-eta-first-margins-production`, `R.actual-incoming-collar-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_uniform_Gin_lower_delta`; source: `TightVer401/VisibleConnectorIncomingParametersGinDelta.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-rho-below-retained-margins-application: Select ONE positive rho below all supplied same-object margins and derived height bound (pending)
+
+Retain SAME e and height. Given genuine positive phase/carrier/coefficient/lowerDelta/terminal bounds and requested height r, produce ONE positive rho below EVERY supplied bound and uniform abs(b(rho,s))<r. The height bound is derived; the listed geometric thresholds remain real inputs produced by their exact preceding leaves. This intersection does not instantiate the universal OrdinaryData family, choose a new inverse or prove actual full nonpositive strip/Gin/H facts.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-same-inverse-height-threshold-production`, `R.incoming-joint-coefficient-sign-threshold-production`, `R.incoming-same-inverse-gin-delta-threshold-production`, `R.incoming-terminal-margins-production-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_exists_rho_below_margins`; source: `TightVer401/VisibleConnectorIncomingParametersRho.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
 
 ## Current proof frontier
 
 Only a primary pending node with checked or explicitly externally granted prerequisites and a concrete proposed signature is listed:
 
-- `R.final-margin-raw-leaf-connection`: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin
 
 ## Deferred results
 
@@ -8036,7 +9141,7 @@ Complete cylinders, linking/Han–Khuri applications, general ruled extensions, 
 
 ## Honest completion gates
 
-Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. Same-seed/inverse/margin connections preserve FINAL Y, original scalar, chosen clocks and already chosen subtype inverse. New source-bound terminal thresholds/fillings, seam embedding/matches and ONE full-carrier smoothing/Germs producers discharge only their exact statements when present in CURRENT audit. Frozen worker audits and source candidates never transfer root certification. The outstanding original gates remain actual selected source/core hCore, compatible eta/rho and old endpoint Delta facts, FULL Gin open germ and nonpositive-strip domain, actual seam embedding/normal derivative/matching/Hessian signs, final H from ONE smoothing call on the FULL fixed V, populated universal OrdinaryData, and final invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
+Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. Same-seed/inverse/margin connections preserve FINAL Y, original scalar, chosen clocks and already chosen subtype inverse. New source-bound terminal thresholds/fillings, seam embedding/matches and ONE full-carrier smoothing/Germs producers discharge only their exact statements when present in CURRENT audit. Frozen worker audits and source candidates never transfer root certification. The outstanding original gates remain final selected source Jordan nesting/hCore after actual flow placement and full-band orientation, universal same-eta/e/rho family instantiation after derived coefficient/lower-Gin-Delta thresholds, upper endpoint Delta and actual branch/carrier facts, actual source topology/separation/common origin, FULL Gin open germ and nonpositive-strip domain, actual seam embedding/normal derivative/matching/Hessian signs, final H from ONE smoothing call on the FULL fixed V, populated universal OrdinaryData, and final invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
 
 ## Exact manuscript register
 
