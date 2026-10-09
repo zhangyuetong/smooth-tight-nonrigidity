@@ -1,38 +1,30 @@
 {
   "result": "PASS",
-  "generated_at_utc": "2026-10-09T19:25:53.830362+00:00",
+  "generated_at_utc": "2026-10-09T20:30:18.604546+00:00",
   "paper_completion": "INCOMPLETE",
   "target": "ver503",
   "primary_objective": {
     "statement": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
-    "status": "conditional-proved",
-    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-    "explicit_assumptions": [
-      {
-        "parameter": "positiveGaussTightness",
-        "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-      }
-    ],
+    "status": "proved",
+    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
+    "explicit_assumptions": [],
     "original_construction_assumptions": [],
-    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only positive-Gauss tightness remains an assumption; all three exact closed background proof inhabitants and the reduced ultimate header must also be audited",
+    "certification_rule": "proved only when the current source-bound audit includes four exact closed background proof inhabitants, the closed background bundle, and the canonical theorem whose type starts with an existential and has no premises",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-    "accepted_background": "TightVer401.ClassicalPositiveGaussTightnessClaim",
+    "accepted_background": [],
     "additional_explicit_background": [],
     "proved_background": {
+      "TightVer401.classicalPositiveGaussTightness_proved": "TightVer401.ClassicalPositiveGaussTightnessClaim",
       "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
       "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
       "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
     }
   },
-  "explicit_first_pair_assumptions": [
-    {
-      "parameter": "positiveGaussTightness",
-      "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-    }
-  ],
-  "first_pair_exact_audited_declaration": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+  "explicit_first_pair_assumptions": [],
+  "first_pair_exact_audited_declaration": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
   "proved_first_pair_background": {
+    "TightVer401.classicalPositiveGaussTightness_proved": "TightVer401.ClassicalPositiveGaussTightnessClaim",
     "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
     "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
     "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
@@ -57,18 +49,18 @@
       "source": "Audit.lean",
       "compiled_source": "Audit.lean",
       "key": {
-        "source_sha256": "6cb33b5e5e02b7c85b43d205290c45563fe8527dca2e936316578f3d617c8f8e",
-        "compiled_source_sha256": "6cb33b5e5e02b7c85b43d205290c45563fe8527dca2e936316578f3d617c8f8e",
+        "source_sha256": "04f5c0c0409bdd776ea96983f5528e06f1e54365f20bb2e9f716ba0b77ce6202",
+        "compiled_source_sha256": "04f5c0c0409bdd776ea96983f5528e06f1e54365f20bb2e9f716ba0b77ce6202",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
-          "TightVer401": "276460ce693875f10829b8fcf86eb8de94ebe4059ef837afb7f14b193992a644"
+          "TightVer401": "14b07bbad481a06e5555b33ed4f44e386d40262db3bb78a21ec1188e5ddea374"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 171.835,
-      "olean_sha256": "ec4988353ed7b3e40bbd97093c690a6d75574e3881ec2b68a32e531c611f85f6",
-      "log_sha256": "0753b2dca683836bc5daf361f0c5f52711bdd2a516b12de0e7931f03c79a4c15"
+      "elapsed_seconds": 162.584,
+      "olean_sha256": "0f246fdbd006cc960858327a1f0021f5b8734c8321c0788d9c1109602a36597b",
+      "log_sha256": "2c72930b431e8b7bec2f8ebd41ad7f0c7fc918b41f5cfae8db0823c79cf3f4e5"
     },
     {
       "module": "OAI.Analysis.CircleDomains.LengthArea",
@@ -7762,8 +7754,8 @@
       "source": "TightVer401.lean",
       "compiled_source": "TightVer401.lean",
       "key": {
-        "source_sha256": "66d730a86df567aadc042d218afb5269692ef34c81d75e7230223bf048e8e1fb",
-        "compiled_source_sha256": "66d730a86df567aadc042d218afb5269692ef34c81d75e7230223bf048e8e1fb",
+        "source_sha256": "62b3d09985907af21e7a13d68306cec816954cb9752800d192ffdce0ede7cc6a",
+        "compiled_source_sha256": "62b3d09985907af21e7a13d68306cec816954cb9752800d192ffdce0ede7cc6a",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -8175,7 +8167,7 @@
           "TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly": "08f3d5b52fea1483da6fa06670b40f446b700fc2c7133c6cc922c004d2b5e32c",
           "TightVer401.VisibleConnectorOrdinaryFamilyCompletion": "ae6695e1cb4ea890a223bcccebb491a53b5fd1be10308edfec69dc798df9a560",
           "TightVer401.PositiveExitConstructionActualPair": "a5dd670f6297a4faaa465aea44ecb140aa6aca8ec92ff626931e12092af3ac63",
-          "TightVer401.NonrigidTorusPair": "1e77b121b982e97c9fc30b8ee8fb7620a1dd52cfa9c0bbaabcf2586645cb0f12",
+          "TightVer401.NonrigidTorusPair": "070878c8dce8f311b955d0b04061a09a2180c4927badcd65f2331628dc476629",
           "TightVer401.ClassicalEmbeddingSmoothFactor": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db",
           "TightVer401.ClassicalEmbeddedReparamProof": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9",
           "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229",
@@ -8183,12 +8175,13 @@
           "TightVer401.HeightSuperlevelLimits": "849a764acb237674df4ef437815185f640e9f782eeb74a112bed113d03795d4f",
           "TightVer401.SphereFiniteComplementConnected": "6d0b0fb88758c2097d664357fc8fc99e9aad61a79d1c0326432ff0c5f846e968",
           "TightVer401.LocalMaxSecondDerivative": "264318e0751291a0ddce37f161dfd82515053261126b933249da0a4c8ca34dae",
-          "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof": "c4f53e10f7b2f154ecca73e0bd766421e7df4aeb6212972fbcb411af381c71bb"
+          "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof": "c4f53e10f7b2f154ecca73e0bd766421e7df4aeb6212972fbcb411af381c71bb",
+          "TightVer401.Library": "465d55945d5b65c2c3d2a424bfb6f9b7d3cc24902f60231b138272908a3c8a33"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 50.571,
-      "olean_sha256": "276460ce693875f10829b8fcf86eb8de94ebe4059ef837afb7f14b193992a644",
+      "elapsed_seconds": 50.735,
+      "olean_sha256": "14b07bbad481a06e5555b33ed4f44e386d40262db3bb78a21ec1188e5ddea374",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -9527,6 +9520,64 @@
       "elapsed_seconds": 57.01,
       "olean_sha256": "3d4c844ec5faa583736d0f15f23d43436655b45466127969042725d17036dc40",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.ClassicalExternalProof",
+      "source": "TightVer401\\ClassicalExternalProof.lean",
+      "compiled_source": "TightVer401\\ClassicalExternalProof.lean",
+      "key": {
+        "source_sha256": "04ee7017c935cf8714dad0792df1d08131658fa4ffeb67611390382691c6c4fc",
+        "compiled_source_sha256": "04ee7017c935cf8714dad0792df1d08131658fa4ffeb67611390382691c6c4fc",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.ClassicalPositiveGaussTightnessProof": "2dcc87a1c77109f496fa93579a6848798c2f4248732e96c5e60d9e056ea009f3",
+          "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof": "c4f53e10f7b2f154ecca73e0bd766421e7df4aeb6212972fbcb411af381c71bb"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.215,
+      "olean_sha256": "1d50eba99f71465d06ae0efc0de8e1bb0adf5ea6eb855a91a30db13f3fdd0c13",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.ClassicalPositiveGaussConnected",
+      "source": "TightVer401\\ClassicalPositiveGaussConnected.lean",
+      "compiled_source": "TightVer401\\ClassicalPositiveGaussConnected.lean",
+      "key": {
+        "source_sha256": "13182184403527cbe732f2fea464717bf8fa941ad99dfdf9f7a566bb04c419a5",
+        "compiled_source_sha256": "13182184403527cbe732f2fea464717bf8fa941ad99dfdf9f7a566bb04c419a5",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.ClassicalExternal": "a31e528fe9fb505d2b72324454f81ba5fb552680f2700caa148f8a65d282ea0a"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 53.451,
+      "olean_sha256": "564835ec49faf2c11604261ae9d9bdbb848a853a213b8b42392e2963d5addfe8",
+      "log_sha256": "726df52422e59e37918aaa2523e3bdc6931808eb0b97051ac954f925f9237ca2"
+    },
+    {
+      "module": "TightVer401.ClassicalPositiveGaussTightnessProof",
+      "source": "TightVer401\\ClassicalPositiveGaussTightnessProof.lean",
+      "compiled_source": "TightVer401\\ClassicalPositiveGaussTightnessProof.lean",
+      "key": {
+        "source_sha256": "8be6b05eb071bd1c409b2b2de1dc87e327f6010effb601ac9977fbe7087b9a9e",
+        "compiled_source_sha256": "8be6b05eb071bd1c409b2b2de1dc87e327f6010effb601ac9977fbe7087b9a9e",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessNativeMaximumUnique": "5a662b8b47e111b5a2c3550381fb5ed0e6a4f72fcb4e2d7b1de12c0c9b63ffd6",
+          "TightVer401.GaussTightnessNativeRegular": "1955a226e5296576c443f73e63515d5cf06da407dbd05b3fa34372acb13a450a",
+          "TightVer401.HeightTightnessSphereDirections": "4351c627b0800a2bfd49d3843345553c9a3f01e12f35cc6cf3c78799194f8af8",
+          "TightVer401.HeightSuperlevelConnected": "2d67c634ba24e482cf24996c1115feb4b564a15423a8973831c3bd6bc0d3d63b"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 53.095,
+      "olean_sha256": "2dcc87a1c77109f496fa93579a6848798c2f4248732e96c5e60d9e056ea009f3",
+      "log_sha256": "ca3e924a3fec2bbe1f9fb471f761f86e3a3385b9ef6a18c02dbd6eefbee77b87"
     },
     {
       "module": "TightVer401.CompactTransport",
@@ -14624,6 +14675,231 @@
       "log_sha256": "d82fb9fa8d2383991ae78ab625d5b0aa22c2285fbf30094882a8d0b328e2845d"
     },
     {
+      "module": "TightVer401.GaussTightnessCriticalNormal",
+      "source": "TightVer401\\GaussTightnessCriticalNormal.lean",
+      "compiled_source": "TightVer401\\GaussTightnessCriticalNormal.lean",
+      "key": {
+        "source_sha256": "15a59cda5d8b3d64448ca167de98ba6745015df6118844feb51c865a1e2bb198",
+        "compiled_source_sha256": "15a59cda5d8b3d64448ca167de98ba6745015df6118844feb51c865a1e2bb198",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.SurfaceMetric": "6863a8bb2de797734c4d5db1f21c315b88a59171a3e1f113f7e59ed456a42f67",
+          "OAI.Geometry.IsometricImmersion.Immersions.NormalSpace": "8f0e6ce2281ab58933ecd8eb58dff244ccea1eada795e940b1c3c34ac00d9cff"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 25.824,
+      "olean_sha256": "2677bbb172350852977ba1eff83f55979d88df9b80041ccc4d6b4c0f00f27e77",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessDefiniteSign",
+      "source": "TightVer401\\GaussTightnessDefiniteSign.lean",
+      "compiled_source": "TightVer401\\GaussTightnessDefiniteSign.lean",
+      "key": {
+        "source_sha256": "b49842bfeca75dc39f6cf098ac8cff959339031b64a761ff644c199d52ef1609",
+        "compiled_source_sha256": "b49842bfeca75dc39f6cf098ac8cff959339031b64a761ff644c199d52ef1609",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 30.129,
+      "olean_sha256": "6d0ad58f68e8020cb47839c6d7dddb6cceb336c19382f62bc8be4c33c3b75113",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessDifferential",
+      "source": "TightVer401\\GaussTightnessDifferential.lean",
+      "compiled_source": "TightVer401\\GaussTightnessDifferential.lean",
+      "key": {
+        "source_sha256": "a2cb09697e0d7e2257e391f3a928e3ab5f70b3fc86f99f9af528ec42c5a86c46",
+        "compiled_source_sha256": "a2cb09697e0d7e2257e391f3a928e3ab5f70b3fc86f99f9af528ec42c5a86c46",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussMapDifferential": "e8647811861e8c8cf7155bbdd33d6f099fd244d7f50fe02df35a70682b06f85c"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 27.935,
+      "olean_sha256": "b8b245f75f3412d58af81f0920b4165df052ecf33b1899335d55fc19bcdb58ff",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessHeightHessian",
+      "source": "TightVer401\\GaussTightnessHeightHessian.lean",
+      "compiled_source": "TightVer401\\GaussTightnessHeightHessian.lean",
+      "key": {
+        "source_sha256": "dd80434042de7086eba5dca07d4f69e5922025c7e96c77767aba89d566a4a0fc",
+        "compiled_source_sha256": "dd80434042de7086eba5dca07d4f69e5922025c7e96c77767aba89d566a4a0fc",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.HeightTightnessSecondDerivative": "e09e778c3bded6d418acfe97f07cda6baca01a931546103a74f876863f52e6ce",
+          "TightVer401.SurfaceMetric": "6863a8bb2de797734c4d5db1f21c315b88a59171a3e1f113f7e59ed456a42f67"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 25.753,
+      "olean_sha256": "e7ed6c2d90636f22e9af4c8f18a1ba51e1d5cbb718ef0b1cb7abea102b77e7c3",
+      "log_sha256": "f5fad94d05eea9d361773f758a1f2df72b281d141b05d4b6e59464c24752b6b8"
+    },
+    {
+      "module": "TightVer401.GaussTightnessMaximumCurvature",
+      "source": "TightVer401\\GaussTightnessMaximumCurvature.lean",
+      "compiled_source": "TightVer401\\GaussTightnessMaximumCurvature.lean",
+      "key": {
+        "source_sha256": "0e9dc76519ad6e7ef2cae90260d73d4dba54f577fa491846df6c34aafa54c8e4",
+        "compiled_source_sha256": "0e9dc76519ad6e7ef2cae90260d73d4dba54f577fa491846df6c34aafa54c8e4",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessHeightHessian": "e7ed6c2d90636f22e9af4c8f18a1ba51e1d5cbb718ef0b1cb7abea102b77e7c3",
+          "TightVer401.GaussTightnessCriticalNormal": "2677bbb172350852977ba1eff83f55979d88df9b80041ccc4d6b4c0f00f27e77",
+          "TightVer401.GaussTightnessDifferential": "b8b245f75f3412d58af81f0920b4165df052ecf33b1899335d55fc19bcdb58ff",
+          "TightVer401.GaussTightnessDefiniteSign": "6d0ad58f68e8020cb47839c6d7dddb6cceb336c19382f62bc8be4c33c3b75113"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 30.703,
+      "olean_sha256": "e8c6f369e09dc105abc761a59471ac86969719c5630e983b070ef71246836e21",
+      "log_sha256": "d2318deaf169160eec469554d91d143233df9d999d3e2e26a25503dd5bc51f78"
+    },
+    {
+      "module": "TightVer401.GaussTightnessMaximumTrace",
+      "source": "TightVer401\\GaussTightnessMaximumTrace.lean",
+      "compiled_source": "TightVer401\\GaussTightnessMaximumTrace.lean",
+      "key": {
+        "source_sha256": "e65c18ce5212383cd5b6e6fa47b6c3c871547942f72960220143f7ceaec51573",
+        "compiled_source_sha256": "e65c18ce5212383cd5b6e6fa47b6c3c871547942f72960220143f7ceaec51573",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessMaximumCurvature": "e8c6f369e09dc105abc761a59471ac86969719c5630e983b070ef71246836e21"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 29.657,
+      "olean_sha256": "ee0fa9e01c9b99106071d715e630d9b28f7a93da2056b5288728213e0b272458",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessNativeCharts",
+      "source": "TightVer401\\GaussTightnessNativeCharts.lean",
+      "compiled_source": "TightVer401\\GaussTightnessNativeCharts.lean",
+      "key": {
+        "source_sha256": "3671a3d49a9bbf01d5b52ff6c5fb688b8155d1a6e76e9aefe97f965ef10fe12a",
+        "compiled_source_sha256": "3671a3d49a9bbf01d5b52ff6c5fb688b8155d1a6e76e9aefe97f965ef10fe12a",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.NativeProductPlaneTorusCoordinates": "2dabf96dcae816a622575262000a8fda2279b0c5223c9ebfd73fe60dd3aab579",
+          "TightVer401.SurfaceMetric": "6863a8bb2de797734c4d5db1f21c315b88a59171a3e1f113f7e59ed456a42f67"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.378,
+      "olean_sha256": "6976137d1b242f021367f9ece32412bbc01a65db6dc4421c97a53b73b90868a3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessNativeMaximumUnique",
+      "source": "TightVer401\\GaussTightnessNativeMaximumUnique.lean",
+      "compiled_source": "TightVer401\\GaussTightnessNativeMaximumUnique.lean",
+      "key": {
+        "source_sha256": "2430682bdfe6c6d88c222316fc0edf969f884ded8e11e2b8d93bfc05b3e6e0ac",
+        "compiled_source_sha256": "2430682bdfe6c6d88c222316fc0edf969f884ded8e11e2b8d93bfc05b3e6e0ac",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessNativeCharts": "6976137d1b242f021367f9ece32412bbc01a65db6dc4421c97a53b73b90868a3",
+          "TightVer401.GaussTightnessNativeSign": "6843c73647c12c4cde283a494947e3971e7ad73ea7e7189fe1fc3eb413addec1",
+          "TightVer401.GaussTightnessMaximumTrace": "ee0fa9e01c9b99106071d715e630d9b28f7a93da2056b5288728213e0b272458",
+          "TightVer401.ClassicalPositiveGaussConnected": "564835ec49faf2c11604261ae9d9bdbb848a853a213b8b42392e2963d5addfe8"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 55.617,
+      "olean_sha256": "5a662b8b47e111b5a2c3550381fb5ed0e6a4f72fcb4e2d7b1de12c0c9b63ffd6",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessNativeRegular",
+      "source": "TightVer401\\GaussTightnessNativeRegular.lean",
+      "compiled_source": "TightVer401\\GaussTightnessNativeRegular.lean",
+      "key": {
+        "source_sha256": "4cb55889482c3731705142e3d08cb6df869440071453168f32a422babd98bf41",
+        "compiled_source_sha256": "4cb55889482c3731705142e3d08cb6df869440071453168f32a422babd98bf41",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessSphereRegular": "711548292f4b0605443de138ce99d0e4de1e3df06c9ef218b4e286d13da4d03c",
+          "TightVer401.GaussTightnessNativeCharts": "6976137d1b242f021367f9ece32412bbc01a65db6dc4421c97a53b73b90868a3",
+          "TightVer401.GaussTightnessNativeSign": "6843c73647c12c4cde283a494947e3971e7ad73ea7e7189fe1fc3eb413addec1"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.106,
+      "olean_sha256": "1955a226e5296576c443f73e63515d5cf06da407dbd05b3fa34372acb13a450a",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessNativeSign",
+      "source": "TightVer401\\GaussTightnessNativeSign.lean",
+      "compiled_source": "TightVer401\\GaussTightnessNativeSign.lean",
+      "key": {
+        "source_sha256": "720342fedb71fa9252fba3c7e79dfce62746b6fcc62c60176df49d0a993ea9ef",
+        "compiled_source_sha256": "720342fedb71fa9252fba3c7e79dfce62746b6fcc62c60176df49d0a993ea9ef",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.NativeProductPlaneTorusCoordinates": "2dabf96dcae816a622575262000a8fda2279b0c5223c9ebfd73fe60dd3aab579",
+          "TightVer401.GaussTightnessDefiniteSign": "6d0ad58f68e8020cb47839c6d7dddb6cceb336c19382f62bc8be4c33c3b75113"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.065,
+      "olean_sha256": "6843c73647c12c4cde283a494947e3971e7ad73ea7e7189fe1fc3eb413addec1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.GaussTightnessRegularValues",
+      "source": "TightVer401\\GaussTightnessRegularValues.lean",
+      "compiled_source": "TightVer401\\GaussTightnessRegularValues.lean",
+      "key": {
+        "source_sha256": "ad106121bc98261fd3170cc7ef047435e00a539ef0291f3fed05bbf266224be7",
+        "compiled_source_sha256": "ad106121bc98261fd3170cc7ef047435e00a539ef0291f3fed05bbf266224be7",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 26.002,
+      "olean_sha256": "362ef92b2380b52e34b7a5e59fe5d76ba63d219148aacac8488bfc191dcbe19f",
+      "log_sha256": "9e75e0ad4155eb60e88c2d3bded93e571cfafa52045946caba5052cacb822af1"
+    },
+    {
+      "module": "TightVer401.GaussTightnessSphereRegular",
+      "source": "TightVer401\\GaussTightnessSphereRegular.lean",
+      "compiled_source": "TightVer401\\GaussTightnessSphereRegular.lean",
+      "key": {
+        "source_sha256": "d62171ce75c23b5f68526a191ef1990cf3bfbb863e55baa43ceee208e6f99a73",
+        "compiled_source_sha256": "d62171ce75c23b5f68526a191ef1990cf3bfbb863e55baa43ceee208e6f99a73",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.GaussTightnessRegularValues": "362ef92b2380b52e34b7a5e59fe5d76ba63d219148aacac8488bfc191dcbe19f",
+          "TightVer401.SphereCharts": "485ed176dbce3b2393e4782e201c8b57433119af3648f83fc57957488f3b4284"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 53.501,
+      "olean_sha256": "711548292f4b0605443de138ce99d0e4de1e3df06c9ef218b4e286d13da4d03c",
+      "log_sha256": "82ab2e71fb3d28acec63344d131de8302570a48452f7f5835747d0dff2fdb206"
+    },
+    {
       "module": "TightVer401.GeneralRuledCurvature",
       "source": "TightVer401\\GeneralRuledCurvature.lean",
       "compiled_source": "TightVer401\\GeneralRuledCurvature.lean",
@@ -14901,6 +15177,41 @@
       "elapsed_seconds": 21.496,
       "olean_sha256": "849a764acb237674df4ef437815185f640e9f782eeb74a112bed113d03795d4f",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.HeightTightnessSecondDerivative",
+      "source": "TightVer401\\HeightTightnessSecondDerivative.lean",
+      "compiled_source": "TightVer401\\HeightTightnessSecondDerivative.lean",
+      "key": {
+        "source_sha256": "bfb2610274695d36b2afa879bd2c56a88a8d8df4b5de765f7d6eb4a76dc6f628",
+        "compiled_source_sha256": "bfb2610274695d36b2afa879bd2c56a88a8d8df4b5de765f7d6eb4a76dc6f628",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 23.452,
+      "olean_sha256": "e09e778c3bded6d418acfe97f07cda6baca01a931546103a74f876863f52e6ce",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.HeightTightnessSphereDirections",
+      "source": "TightVer401\\HeightTightnessSphereDirections.lean",
+      "compiled_source": "TightVer401\\HeightTightnessSphereDirections.lean",
+      "key": {
+        "source_sha256": "9d9e43c95a8d5cc6b50956ce5aefdff5d0e0ed85e78473171b19e3e916e64e46",
+        "compiled_source_sha256": "9d9e43c95a8d5cc6b50956ce5aefdff5d0e0ed85e78473171b19e3e916e64e46",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.SphereCharts": "485ed176dbce3b2393e4782e201c8b57433119af3648f83fc57957488f3b4284",
+          "TightVer401.TorusGoalObjects": "6222adf5a45227a94c502462c042afbb1cc9024ac62816c2f02345f3497372fa"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 54.959,
+      "olean_sha256": "4351c627b0800a2bfd49d3843345553c9a3f01e12f35cc6cf3c78799194f8af8",
+      "log_sha256": "dfe2870281f30ab599b9d76f47ba455537e7f8456dabc2b49cc50049304881a7"
     },
     {
       "module": "TightVer401.HomeomorphicJordanInside",
@@ -15553,6 +15864,158 @@
       "exit_code": 0,
       "elapsed_seconds": 61.766,
       "olean_sha256": "67589cb5497c7960c4e6da84b282d6b70e4cfa305d9015fe9cef0fe1d23948c6",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library",
+      "source": "TightVer401\\Library.lean",
+      "compiled_source": "TightVer401\\Library.lean",
+      "key": {
+        "source_sha256": "6673f833d9ca6a13e8ee86dd009ac96f12ecd0b265ebf0f4cc8392089e11608c",
+        "compiled_source_sha256": "6673f833d9ca6a13e8ee86dd009ac96f12ecd0b265ebf0f4cc8392089e11608c",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.Library.Calculus": "f5778c532e3b089249125a36a0be3d84caa2001417e7f868f57142243042a213",
+          "TightVer401.Library.Topology": "8cc883825b2bcb4ab7356f91de4cdbc01a323cc3f924ec4a6af856923837595e",
+          "TightVer401.Library.Analysis": "693c0f862daf8bb7d546b3a91929f81db229bcd7fa43b7ec45507d55107f2060",
+          "TightVer401.Library.Riemannian": "9abb1e5cda00fd49cf378c83f2e7bea50e6531e06699c76146890bf271b1049d",
+          "TightVer401.Library.DifferentialGeometry": "1dbcb04b4c641d9b7d6719a6df08e94fea70c40d28089d96056b3f15b82e76ec",
+          "TightVer401.Library.Construction": "4b9b767c103c53f95271f8bc6f461d4d9f4d10f2a8b02d29834ddb8527ed40be"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 53.216,
+      "olean_sha256": "465d55945d5b65c2c3d2a424bfb6f9b7d3cc24902f60231b138272908a3c8a33",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.Analysis",
+      "source": "TightVer401\\Library\\Analysis.lean",
+      "compiled_source": "TightVer401\\Library\\Analysis.lean",
+      "key": {
+        "source_sha256": "7bf354075e53764bc7e3b74d45e2baa4481290600761fa2575987b10bd52a586",
+        "compiled_source_sha256": "7bf354075e53764bc7e3b74d45e2baa4481290600761fa2575987b10bd52a586",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.MomentControlBasis": "beb01e91e779547d41e5fc4a1b6893c76e9a8ced1b7de5cc6589d1d107464dd4",
+          "TightVer401.MomentPrescriptionSmoothCircle": "fd36ff88f5acf7994c432f4900e571155ea0fccf2afebdb6cc5e38e1c8a35ed7",
+          "TightVer401.ScalarFlowVariationLinearODE": "9a78398c9e9bad54af3a086d136a74a55a1759a8beedfdb0bb3b2d9dfe5ba776",
+          "TightVer401.RiccatiUniqueness": "f7326aef898df340a9a3f22a94d1a6705e2d6f226dcbd30aa9812eb6d199a907",
+          "TightVer401.PeriodicDerivativeSigns": "09d9b78eeaeebc82d567e86f945dfdd9f85a1f51abfd28280aa47644c44388a3",
+          "TightVer401.CurveL1Stability": "bc4f7acbbbbe781426e2a8852976113b5848c4669f88f2c9cde09acb52b81891"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.232,
+      "olean_sha256": "693c0f862daf8bb7d546b3a91929f81db229bcd7fa43b7ec45507d55107f2060",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.Calculus",
+      "source": "TightVer401\\Library\\Calculus.lean",
+      "compiled_source": "TightVer401\\Library\\Calculus.lean",
+      "key": {
+        "source_sha256": "a031e46b44c443e3ca79949da8e9c39aa5b053e74884075fd443e56583e0ad25",
+        "compiled_source_sha256": "a031e46b44c443e3ca79949da8e9c39aa5b053e74884075fd443e56583e0ad25",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.ClassicalEmbeddingSmoothFactor": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db",
+          "TightVer401.LocalMaxSecondDerivative": "264318e0751291a0ddce37f161dfd82515053261126b933249da0a4c8ca34dae",
+          "TightVer401.RegularLocalInverse": "25a874ec63099ca64ce08f807483eb3437f746c9644870483548b3dd0ac0444c",
+          "TightVer401.GaussTightnessRegularValues": "362ef92b2380b52e34b7a5e59fe5d76ba63d219148aacac8488bfc191dcbe19f"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 54.879,
+      "olean_sha256": "f5778c532e3b089249125a36a0be3d84caa2001417e7f868f57142243042a213",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.Construction",
+      "source": "TightVer401\\Library\\Construction.lean",
+      "compiled_source": "TightVer401\\Library\\Construction.lean",
+      "key": {
+        "source_sha256": "98274816f5a41a0507a5555fc599da60325c019ad786a04dce72b79c5b22c84a",
+        "compiled_source_sha256": "98274816f5a41a0507a5555fc599da60325c019ad786a04dce72b79c5b22c84a",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.NonrigidTorusPair": "070878c8dce8f311b955d0b04061a09a2180c4927badcd65f2331628dc476629"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 55.824,
+      "olean_sha256": "4b9b767c103c53f95271f8bc6f461d4d9f4d10f2a8b02d29834ddb8527ed40be",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.DifferentialGeometry",
+      "source": "TightVer401\\Library\\DifferentialGeometry.lean",
+      "compiled_source": "TightVer401\\Library\\DifferentialGeometry.lean",
+      "key": {
+        "source_sha256": "a3aaf46feca6b8d332b6f6f7d2c6af8c8d2d2ec85656bb8789738aa5d6d47709",
+        "compiled_source_sha256": "a3aaf46feca6b8d332b6f6f7d2c6af8c8d2d2ec85656bb8789738aa5d6d47709",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.SphereSupportOpenGeometry": "f441ae0541b561bb483972ef83c05714fb70a7f05dd80a5ee26a0da2e2ba5de6",
+          "TightVer401.SphereSupportCurvature": "58c579e23423e947e111837223e42c74db1e0c6d02b0f5e714fd57045d89b04f",
+          "TightVer401.GnomonicDeterminant": "8089aa96464142b75b08bc0726949f6db541fa4cd95a48ff2caeaa3e9a19f677",
+          "TightVer401.PlanarLegendre": "ab6236950d99774cfd6d56296198268bd94f3e69a12fe1fb8cc014c0bce61d39",
+          "TightVer401.GeneralRuledCurvature": "1b4345a06aa2c97bef2d7aba95f1c53ff88126fe1aca8c7235f3c82961f8e671",
+          "TightVer401.GeneralRuledReturnTheorem": "51d7f35c3b5c5ecf1bd8692e7d974db91bd731ad43d1b2d9cba2bb65ca9204ca",
+          "TightVer401.RuledKernelTheorem": "a497ee04e393e35cf3285012448f7548786c3546398a99600dbbe87c880124d2",
+          "TightVer401.RelativeSaddleSmoothing": "17e02e8eb62fa9afa4ca68a23761d43cb1ecaefd5169cbf1e990003f69fc730b",
+          "TightVer401.HeightTightnessSphereDirections": "4351c627b0800a2bfd49d3843345553c9a3f01e12f35cc6cf3c78799194f8af8"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.088,
+      "olean_sha256": "1dbcb04b4c641d9b7d6719a6df08e94fea70c40d28089d96056b3f15b82e76ec",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.Riemannian",
+      "source": "TightVer401\\Library\\Riemannian.lean",
+      "compiled_source": "TightVer401\\Library\\Riemannian.lean",
+      "key": {
+        "source_sha256": "1f3bd9b5ada167d93c0b17e8c164673d6b026279c8891a2f718bdb37e8f9fe13",
+        "compiled_source_sha256": "1f3bd9b5ada167d93c0b17e8c164673d6b026279c8891a2f718bdb37e8f9fe13",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.NativeEmbeddingMetricIsometrySpace": "8fe7111191f2cb4d2448113947d0725d69c8eaf6a4032e8a6fb87933bfaaa3f4",
+          "TightVer401.NativeEmbeddingMetricIsometryDistance": "fa1f8ef6a731d841abe0c38aa9daaee698dbcf49fc30d3b4def5261594454e9a",
+          "TightVer401.FixedOpenCompact": "1601e34b91ae3bdfe8e21b0eb485bd91ebc425a8ae13b1686de38382f396d8c9"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.553,
+      "olean_sha256": "9abb1e5cda00fd49cf378c83f2e7bea50e6531e06699c76146890bf271b1049d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.Library.Topology",
+      "source": "TightVer401\\Library\\Topology.lean",
+      "compiled_source": "TightVer401\\Library\\Topology.lean",
+      "key": {
+        "source_sha256": "afc06dd698d13c3421708836bce997ec79dd9ba706c2f335300cc4745f2a447a",
+        "compiled_source_sha256": "afc06dd698d13c3421708836bce997ec79dd9ba706c2f335300cc4745f2a447a",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.HeightSuperlevelConnected": "2d67c634ba24e482cf24996c1115feb4b564a15423a8973831c3bd6bc0d3d63b",
+          "TightVer401.HeightSuperlevelLimits": "849a764acb237674df4ef437815185f640e9f782eeb74a112bed113d03795d4f",
+          "TightVer401.SphereFiniteComplementConnected": "6d0b0fb88758c2097d664357fc8fc99e9aad61a79d1c0326432ff0c5f846e968",
+          "TightVer401.AnnularDegreeGradient": "83bbb54ab117a30bd3c25c4632d352351cdf30ea6956c2242ec98762163aadbd"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.506,
+      "olean_sha256": "8cc883825b2bcb4ab7356f91de4cdbc01a323cc3f924ec4a6af856923837595e",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -16618,8 +17081,8 @@
       "source": "TightVer401\\NonrigidTorusPair.lean",
       "compiled_source": "TightVer401\\NonrigidTorusPair.lean",
       "key": {
-        "source_sha256": "1136ddddb8d3e52ae9751e13561fb8b74740868b556018d6bd536a34a8ab9d8b",
-        "compiled_source_sha256": "1136ddddb8d3e52ae9751e13561fb8b74740868b556018d6bd536a34a8ab9d8b",
+        "source_sha256": "9370f9e2695b539a849a986e4fc678a5153d713e54ebe088497892e02fb033e2",
+        "compiled_source_sha256": "9370f9e2695b539a849a986e4fc678a5153d713e54ebe088497892e02fb033e2",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -16627,12 +17090,12 @@
           "TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly": "08f3d5b52fea1483da6fa06670b40f446b700fc2c7133c6cc922c004d2b5e32c",
           "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229",
           "TightVer401.ClassicalEmbeddedReparamProof": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9",
-          "TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof": "c4f53e10f7b2f154ecca73e0bd766421e7df4aeb6212972fbcb411af381c71bb"
+          "TightVer401.ClassicalExternalProof": "1d50eba99f71465d06ae0efc0de8e1bb0adf5ea6eb855a91a30db13f3fdd0c13"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 54.318,
-      "olean_sha256": "1e77b121b982e97c9fc30b8ee8fb7620a1dd52cfa9c0bbaabcf2586645cb0f12",
+      "elapsed_seconds": 59.61,
+      "olean_sha256": "070878c8dce8f311b955d0b04061a09a2180c4927badcd65f2331628dc476629",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -29068,7 +29531,7 @@
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
-  "coverage_sha256": "04fb18ccdd20e8873b9ebd8566f7187ff77c1b674963c89b89413a8321f256f7",
+  "coverage_sha256": "f235ee7ba9cda8fe0d797b02f5c1a613553425742279d302d351a93aee15c80c",
   "declarations": [
     {
       "axioms": [
@@ -140287,6 +140750,26 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.classicalExternalResults_proved",
+      "type": "TightVer401.ClassicalExternalResults"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.classicalPositiveGaussTightness_proved",
+      "type": "TightVer401.ClassicalPositiveGaussTightnessClaim"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.classicalPositiveGauss_tightness",
       "type": "TightVer401.ClassicalExternalResults →\n  ∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n    TightVer401.NativeTorusSmoothEmbedding X →\n      ∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere),\n        ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n          (∀ (p : TightVer401.NonrigidTorusSource) (v : ℝ × ℝ), inner ℝ (↑(N p)) ((mfderiv% X p) v) = 0) →\n            ∀ (E : Set ↑TightVer401.RoundSphere),\n              E.Finite →\n                ∀ (e : OpenPartialHomeomorph TightVer401.NonrigidTorusSource ↑TightVer401.RoundSphere),\n                  e.source = TightVer401.nativeTorusPositiveRegion X →\n                    e.target = Set.univ \\ E →\n                      Set.EqOn (↑e) N e.source →\n                        ContMDiffOn TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2)))\n                            (↑⊤) (↑e) e.source →\n                          ContMDiffOn (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) TightVer401.nativeProductModel\n                              (↑⊤) (↑e.symm) e.target →\n                            TightVer401.IsTightImage X"
     },
@@ -154892,6 +155375,17 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
+      "type": "∃ T,\n  ∃ (hT : 0 < T),\n    ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n      TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n        TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n          TightVer401.IsTightImage Xplus ∧\n            TightVer401.IsTightImage Xminus ∧\n              ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                  Xplus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xminus ∧\n                  (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                      ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                        TightVer401.nativeProductInducedForm Xplus p v z =\n                          TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                      TightVer401.ImageNoncongruent Xplus Xminus ∧\n                        IsOpen V ∧\n                          V.Nonempty ∧\n                            Set.EqOn Xplus Xminus V ∧\n                              TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                  ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                    0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ d0 < dInfinity ∧ ⋯",
+      "unconditional_pair_conclusion_checked": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
       "type": "TightVer401.ClassicalPositiveGaussTightnessClaim →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯"
     },
@@ -158163,8 +158657,378 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.gaussSign_coordPartial_comp_add_left",
+      "type": "∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : NormedSpace ℝ V] (i : Fin 2)\n  (F : OAI.SmoothLocal.Geometry.Coord → V) (q : OAI.SmoothLocal.Geometry.Coord),\n  (OAI.SmoothLocal.Geometry.coordPartial i fun r => F (q + r)) = fun r =>\n    OAI.SmoothLocal.Geometry.coordPartial i F (q + r)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.gaussSupport_reconstruction_local",
       "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {X N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g X U →\n      ContDiffOn ℝ (↑⊤) N U →\n        IsOpen U →\n          (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt X (N q) q) →\n            (∀ q ∈ U, OAI.SmoothLocal.Geometry.gaussianCurvature g q ≠ 0) →\n              ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n                p ∈ U →\n                  ∃ (hw : N p ≠ 0) (_ : ‖N p‖ = 1),\n                    ∃ e,\n                      p ∈ e.source ∧\n                        e.source ⊆ U ∧\n                          ContDiffOn ℝ (↑⊤) (↑e.symm) e.target ∧\n                            (∀ q ∈ e.source, N q = TightVer401.sphereHemisphere (N p) hw (↑e q)) ∧\n                              ∀ y ∈ e.target,\n                                X (↑e.symm y) =\n                                  TightVer401.sphereSupportMap\n                                    (OAI.SmoothLocal.Geometry.inducedMetric (TightVer401.sphereHemisphere (N p) hw))\n                                    (TightVer401.sphereHemisphere (N p) hw)\n                                    (fun z => inner ℝ (X (↑e.symm z)) (TightVer401.sphereHemisphere (N p) hw z)) y"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightnessNativeChartsDimension",
+      "type": "Fact (Module.finrank ℝ OAI.SmoothLocal.Geometry.Ambient = 2 + 1)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightnessNativeChartsPeriod",
+      "type": "Fact (0 < 2 * Real.pi)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.gaussTightnessNativeNormalCoordinates",
+      "type": "(TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere) →\n  TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_critical_image_null",
+      "type": "∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : NormedSpace ℝ V] [FiniteDimensional ℝ V]\n  [inst_3 : MeasurableSpace V] [BorelSpace V] (μ : MeasureTheory.Measure V) [μ.IsAddHaarMeasure] {f : V → V}\n  {s : Set V}, (∀ x ∈ s, DifferentiableAt ℝ f x) → μ (f '' {x | x ∈ s ∧ (fderiv ℝ f x).det = 0}) = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_curvature_ne_zero_of_normal_injective",
+      "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {X N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g X U →\n      ContDiffOn ℝ (↑⊤) N U →\n        IsOpen U →\n          (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt X (N q) q) →\n            ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n              p ∈ U → Function.Injective ⇑(fderiv ℝ N p) → OAI.SmoothLocal.Geometry.gaussianCurvature g p ≠ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_dense_both_regular_sphere_directions",
+      "type": "∀ (N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient),\n  ContDiff ℝ (↑⊤) N →\n    (∀ (p : OAI.SmoothLocal.Geometry.Coord), ‖N p‖ = 1) →\n      Dense {q | ∀ (p : OAI.SmoothLocal.Geometry.Coord), N p = ↑q ∨ N p = -↑q → Function.Injective ⇑(fderiv ℝ N p)}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_dense_regular_values",
+      "type": "∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : NormedSpace ℝ V] [FiniteDimensional ℝ V]\n  [inst_3 : MeasurableSpace V] [BorelSpace V] (μ : MeasureTheory.Measure V) [μ.IsAddHaarMeasure] {ι : Type u_2}\n  [Countable ι] (f : ι → V → V) (s : ι → Set V),\n  (∀ (i : ι), ∀ x ∈ s i, DifferentiableAt ℝ (f i) x) →\n    Dense {y | ∀ (i : ι), ∀ x ∈ s i, f i x = y → (fderiv ℝ (f i) x).det ≠ 0}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_dense_regular_values._simp_1_1",
+      "type": "∀ {a : Prop}, (¬¬a) = a"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_curvature_pos_of_normal_injective",
+      "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {F N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g F U →\n      ContDiffOn ℝ (↑⊤) N U →\n        IsOpen U →\n          (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt F (N q) q) →\n            ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n              p ∈ U →\n                ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n                  inner ℝ w w = 1 →\n                    IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n                      Function.Injective ⇑(fderiv ℝ N p) → 0 < OAI.SmoothLocal.Geometry.gaussianCurvature g p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_curvature_pos_of_second_form_det",
+      "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g F U →\n      IsOpen U →\n        ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n          p ∈ U →\n            ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n              OAI.SmoothLocal.Geometry.IsUnitNormalAt F w p →\n                IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n                  (OAI.SmoothLocal.Geometry.secondFundamental F w p).det ≠ 0 →\n                    0 < OAI.SmoothLocal.Geometry.gaussianCurvature g p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_neg_secondForm_posSemidef",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) F U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U →\n          ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n            IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n              (-OAI.SmoothLocal.Geometry.secondFundamental F w p).PosSemidef"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_normal_eq_or_neg",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {p : OAI.SmoothLocal.Geometry.Coord},\n  DifferentiableAt ℝ F p →\n    (LinearIndependent ℝ fun i => OAI.SmoothLocal.Geometry.coordPartial i F p) →\n      ∀ (n w : OAI.SmoothLocal.Geometry.Ambient),\n        OAI.SmoothLocal.Geometry.IsUnitNormalAt F n p →\n          inner ℝ w w = 1 → IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p → w = n ∨ w = -n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_normal_eq_or_neg_of_injective",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {p : OAI.SmoothLocal.Geometry.Coord},\n  DifferentiableAt ℝ F p →\n    Function.Injective ⇑(fderiv ℝ F p) →\n      ∀ (n w : OAI.SmoothLocal.Geometry.Ambient),\n        OAI.SmoothLocal.Geometry.IsUnitNormalAt F n p →\n          inner ℝ w w = 1 → IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p → w = n ∨ w = -n"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_normal_trace_sign",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) F U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U →\n          Function.Injective ⇑(fderiv ℝ F p) →\n            ∀ (n w : OAI.SmoothLocal.Geometry.Ambient),\n              OAI.SmoothLocal.Geometry.IsUnitNormalAt F n p →\n                inner ℝ w w = 1 →\n                  IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n                    0 < (OAI.SmoothLocal.Geometry.secondFundamental F n p).det →\n                      (0 < (OAI.SmoothLocal.Geometry.secondFundamental F n p).trace ↔ w = -n) ∧\n                        ((OAI.SmoothLocal.Geometry.secondFundamental F n p).trace < 0 ↔ w = n)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_orthogonal",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {p : OAI.SmoothLocal.Geometry.Coord},\n  DifferentiableAt ℝ F p →\n    ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n      IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n        ∀ (v : OAI.SmoothLocal.Geometry.Coord), inner ℝ ((fderiv ℝ F p) v) w = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_secondForm_nonpos",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) F U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U →\n          ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n            IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n              ∀ (v : OAI.SmoothLocal.Geometry.Coord),\n                v ⬝ᵥ (OAI.SmoothLocal.Geometry.secondFundamental F w p).mulVec v ≤ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_height_secondForm_trace_neg",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) F U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U →\n          ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n            IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n              0 < (OAI.SmoothLocal.Geometry.secondFundamental F w p).det →\n                (OAI.SmoothLocal.Geometry.secondFundamental F w p).trace < 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_localMax_normal_trace_sign_of_normal_injective",
+      "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {F N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g F U →\n      ContDiffOn ℝ (↑⊤) N U →\n        IsOpen U →\n          (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt F (N q) q) →\n            ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n              p ∈ U →\n                ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n                  inner ℝ w w = 1 →\n                    IsLocalMax (OAI.SmoothLocal.Geometry.height F w) p →\n                      Function.Injective ⇑(fderiv ℝ N p) →\n                        (0 < (OAI.SmoothLocal.Geometry.secondFundamental F (N p) p).trace ↔ w = -N p) ∧\n                          ((OAI.SmoothLocal.Geometry.secondFundamental F (N p) p).trace < 0 ↔ w = N p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_coordinates_unitNormal",
+      "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) X →\n    ∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere),\n      (∀ (p : TightVer401.NonrigidTorusSource) (v : ℝ × ℝ), inner ℝ (↑(N p)) ((mfderiv% X p) v) = 0) →\n        ∀ (p : TightVer401.NonrigidTorusSource) (q : OAI.SmoothLocal.Geometry.Coord),\n          OAI.SmoothLocal.Geometry.IsUnitNormalAt (TightVer401.nativeProductCoordinateMap X p)\n            (TightVer401.gaussTightnessNativeNormalCoordinates N p q) q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_coordinates_zero",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) (p : TightVer401.NonrigidTorusSource),\n  TightVer401.nativeProductCoordinateMap X p 0 = X p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_cover_zero",
+      "type": "∀ (p : TightVer401.NonrigidTorusSource) (s u : ℝ),\n  (TightVer401.periodProjection (2 * Real.pi)) s = p.1 →\n    (TightVer401.periodProjection (2 * Real.pi)) u = p.2 → TightVer401.nativeProductTorusCoordinateCover s u 0 = p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_curvature_zero",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) (p : TightVer401.NonrigidTorusSource),\n  TightVer401.nativeTorusChartCurvature X p =\n    OAI.SmoothLocal.Geometry.gaussianCurvature\n      (OAI.SmoothLocal.Geometry.inducedMetric (TightVer401.nativeProductCoordinateMap X p)) 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_dense_regular_directions",
+      "type": "∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere),\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n    Dense\n      {w |\n        ∀ (p : TightVer401.NonrigidTorusSource),\n          ↑(N p) = ↑w ∨ ↑(N p) = -↑w →\n            Function.Injective ⇑(fderiv ℝ (TightVer401.gaussTightnessNativeNormalCoordinates N p) 0)}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_inducedMetric_smoothPositiveOn",
+      "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  TightVer401.NativeTorusSmoothEmbedding X →\n    ∀ (p : TightVer401.NonrigidTorusSource),\n      OAI.SmoothLocal.Geometry.SmoothPositiveOn\n        (OAI.SmoothLocal.Geometry.inducedMetric (TightVer401.nativeProductCoordinateMap X p)) Set.univ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_localMax_height",
+      "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient} {p : TightVer401.NonrigidTorusSource}\n  (w : OAI.SmoothLocal.Geometry.Ambient),\n  IsLocalMax (fun z => inner ℝ (X z) w) p →\n    IsLocalMax (OAI.SmoothLocal.Geometry.height (TightVer401.nativeProductCoordinateMap X p) w) 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_localMax_unique_of_regular_direction",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n  TightVer401.NativeTorusSmoothEmbedding X →\n    ∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere),\n      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n        (∀ (p : TightVer401.NonrigidTorusSource) (v : ℝ × ℝ), inner ℝ (↑(N p)) ((mfderiv% X p) v) = 0) →\n          ∀ (E : Set ↑TightVer401.RoundSphere),\n            E.Finite →\n              ∀ (e : OpenPartialHomeomorph TightVer401.NonrigidTorusSource ↑TightVer401.RoundSphere),\n                e.source = TightVer401.nativeTorusPositiveRegion X →\n                  e.target = Set.univ \\ E →\n                    Set.EqOn (↑e) N e.source →\n                      ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n                        inner ℝ w w = 1 →\n                          (∀ (p : TightVer401.NonrigidTorusSource),\n                              ↑(N p) = w ∨ ↑(N p) = -w →\n                                Function.Injective\n                                  ⇑(fderiv ℝ (TightVer401.gaussTightnessNativeNormalCoordinates N p) 0)) →\n                            ∀ (p q : TightVer401.NonrigidTorusSource),\n                              IsLocalMax (fun z => inner ℝ (X z) w) p → IsLocalMax (fun z => inner ℝ (X z) w) q → p = q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_normal_contDiff",
+      "type": "∀ {N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n    ∀ (p : TightVer401.NonrigidTorusSource), ContDiff ℝ (↑⊤) (TightVer401.gaussTightnessNativeNormalCoordinates N p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_normal_zero",
+      "type": "∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere) (p : TightVer401.NonrigidTorusSource),\n  TightVer401.gaussTightnessNativeNormalCoordinates N p 0 = ↑(N p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_native_regular_localMax_positive_and_trace_sign",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n  TightVer401.NativeTorusSmoothEmbedding X →\n    ∀ (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere),\n      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n        (∀ (p : TightVer401.NonrigidTorusSource) (v : ℝ × ℝ), inner ℝ (↑(N p)) ((mfderiv% X p) v) = 0) →\n          ∀ (w : OAI.SmoothLocal.Geometry.Ambient),\n            inner ℝ w w = 1 →\n              (∀ (p : TightVer401.NonrigidTorusSource),\n                  ↑(N p) = w ∨ ↑(N p) = -w →\n                    Function.Injective ⇑(fderiv ℝ (TightVer401.gaussTightnessNativeNormalCoordinates N p) 0)) →\n                ∀ (p : TightVer401.NonrigidTorusSource),\n                  IsLocalMax (fun z => inner ℝ (X z) w) p →\n                    p ∈ TightVer401.nativeTorusPositiveRegion X ∧\n                      (0 < (TightVer401.nativeTorusSecondFundamental X N p).trace ↔ w = -↑(N p)) ∧\n                        ((TightVer401.nativeTorusSecondFundamental X N p).trace < 0 ↔ w = ↑(N p))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_normal_differential_zero_of_second_form",
+      "type": "∀ {X N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) X U →\n    ContDiffOn ℝ (↑⊤) N U →\n      IsOpen U →\n        (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt X (N q) q) →\n          ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n            p ∈ U →\n              Function.Injective ⇑(fderiv ℝ X p) →\n                ∀ (v : OAI.SmoothLocal.Geometry.Coord),\n                  (OAI.SmoothLocal.Geometry.secondFundamental X (N p) p).transpose.mulVec v = 0 → (fderiv ℝ N p) v = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_normal_injective_iff_curvature_ne_zero",
+      "type": "∀ {g : OAI.SmoothLocal.Geometry.MetricField} {X N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient}\n  {U : Set OAI.SmoothLocal.Geometry.Coord},\n  OAI.SmoothLocal.Geometry.SmoothPositiveOn g U →\n    OAI.SmoothLocal.Geometry.IsometricOn g X U →\n      ContDiffOn ℝ (↑⊤) N U →\n        IsOpen U →\n          (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt X (N q) q) →\n            ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n              p ∈ U → (Function.Injective ⇑(fderiv ℝ N p) ↔ OAI.SmoothLocal.Geometry.gaussianCurvature g p ≠ 0)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_secondFundamental_isSymm",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) F U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U → ∀ (w : OAI.SmoothLocal.Geometry.Ambient), (OAI.SmoothLocal.Geometry.secondFundamental F w p).IsSymm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_secondFundamental_neg",
+      "type": "∀ (F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient) (n : OAI.SmoothLocal.Geometry.Ambient)\n  (p : OAI.SmoothLocal.Geometry.Coord),\n  OAI.SmoothLocal.Geometry.secondFundamental F (-n) p = -OAI.SmoothLocal.Geometry.secondFundamental F n p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_second_form_det_ne_zero_of_normal_injective",
+      "type": "∀ {X N : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Ambient} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) X U →\n    ContDiffOn ℝ (↑⊤) N U →\n      IsOpen U →\n        (∀ q ∈ U, OAI.SmoothLocal.Geometry.IsUnitNormalAt X (N q) q) →\n          ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n            p ∈ U →\n              Function.Injective ⇑(fderiv ℝ X p) →\n                Function.Injective ⇑(fderiv ℝ N p) → (OAI.SmoothLocal.Geometry.secondFundamental X (N p) p).det ≠ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_slice_secondDeriv",
+      "type": "∀ {H : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  ContDiffOn ℝ (↑⊤) H U →\n    IsOpen U →\n      ∀ {p : OAI.SmoothLocal.Geometry.Coord},\n        p ∈ U →\n          ∀ (v : OAI.SmoothLocal.Geometry.Coord),\n            deriv (deriv fun t => H (p + t • v)) 0 =\n              v ⬝ᵥ\n                Matrix.mulVec\n                  (fun i j => OAI.SmoothLocal.Geometry.coordPartial i (OAI.SmoothLocal.Geometry.coordPartial j H) p) v"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.gaussTightness_unit_normal_eq_or_neg",
+      "type": "∀ (t : Fin 2 → OAI.SmoothLocal.Geometry.Ambient),\n  LinearIndependent ℝ t →\n    ∀ (n w : OAI.SmoothLocal.Geometry.Ambient),\n      inner ℝ n n = 1 →\n        inner ℝ w w = 1 → (∀ (i : Fin 2), inner ℝ (t i) n = 0) → (∀ (i : Fin 2), inner ℝ (t i) w = 0) → w = n ∨ w = -n"
     },
     {
       "axioms": [
@@ -159535,6 +160399,26 @@
       "kind": "theorem",
       "name": "TightVer401.hasCompactSupport_pullback_of_embedding",
       "type": "∀ {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] [R1Space A] {f : A → B}\n  {Y : B → OAI.SmoothLocal.Geometry.Ambient},\n  Topology.IsEmbedding f → HasCompactSupport Y → tsupport Y ⊆ Set.range f → HasCompactSupport (Y ∘ f)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.heightSuperlevel_isPreconnected_of_dense_sphere_directions",
+      "type": "∀ {M : Type u_1} [inst : TopologicalSpace M] [CompactSpace M] (X : M → OAI.SmoothLocal.Geometry.Ambient),\n  Continuous X →\n    ∀ (G : Set ↑TightVer401.RoundSphere),\n      Dense G →\n        (∀ w ∈ G, ∀ (a : ℝ), IsPreconnected {p | a < inner ℝ (↑w) (X p)}) →\n          ∀ (v : ↑TightVer401.RoundSphere) (a : ℝ), IsPreconnected {p | a < inner ℝ (↑v) (X p)}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.heightTightnessSphereDirectionsPeriod",
+      "type": "Fact (0 < 2 * Real.pi)"
     },
     {
       "axioms": [
@@ -162760,6 +163644,16 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.isTightImage_of_dense_sphere_heightSuperlevels",
+      "type": "∀ {M : Type u_1} [inst : TopologicalSpace M] [CompactSpace M] [PreconnectedSpace M]\n  (X : M → OAI.SmoothLocal.Geometry.Ambient),\n  Continuous X →\n    ∀ (G : Set ↑TightVer401.RoundSphere),\n      Dense G → (∀ w ∈ G, ∀ (a : ℝ), IsPreconnected {p | a < inner ℝ (↑w) (X p)}) → TightVer401.IsTightImage X"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.isometry_eq_id_of_fixed_open_compact",
       "type": "∀ {n : ℕ} {M : Type u_1} [inst : MetricSpace M] [inst_1 : ChartedSpace (OAI.WeakMTWGlobalSupport.WeakMTW.Model n) M]\n  [inst_2 : IsManifold (OAI.WeakMTWGlobalSupport.WeakMTW.model n) (↑⊤) M]\n  [inst_3 : Bundle.RiemannianBundle fun x => TangentSpace (OAI.WeakMTWGlobalSupport.WeakMTW.model n) x]\n  [IsContMDiffRiemannianBundle (OAI.WeakMTWGlobalSupport.WeakMTW.model n) (↑⊤)\n      (OAI.WeakMTWGlobalSupport.WeakMTW.Model n) fun x => TangentSpace (OAI.WeakMTWGlobalSupport.WeakMTW.model n) x]\n  [IsRiemannianManifold (OAI.WeakMTWGlobalSupport.WeakMTW.model n) M] [CompactSpace M] [ConnectedSpace M] {f : M → M},\n  Isometry f →\n    ContMDiff (OAI.WeakMTWGlobalSupport.WeakMTW.model n) (OAI.WeakMTWGlobalSupport.WeakMTW.model n) (↑⊤) f →\n      ∀ {U : Set M}, IsOpen U → U.Nonempty → (∀ p ∈ U, f p = p) → f = id"
     },
@@ -163120,6 +164014,16 @@
       "kind": "theorem",
       "name": "TightVer401.localMax_fderiv_fderiv_apply_nonpos",
       "type": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] {f : E → ℝ} {x : E},\n  IsLocalMax f x → ContDiffAt ℝ 2 f x → ∀ (v : E), ((fderiv ℝ (fderiv ℝ f) x) v) v ≤ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.localMax_secondDeriv_nonpos",
+      "type": "∀ {f : ℝ → ℝ} {a : ℝ}, IsLocalMax f a → ContinuousAt f a → deriv (deriv f) a ≤ 0"
     },
     {
       "axioms": [
@@ -164807,6 +165711,16 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeProductCoordinateMap_at_cover_eq_translate",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) (s u : ℝ)\n  (q : OAI.SmoothLocal.Geometry.Coord),\n  TightVer401.nativeProductCoordinateMap X (TightVer401.nativeProductTorusCoordinateCover s u q) = fun r =>\n    (X ∘ TightVer401.nativeProductTorusCoordinateCover s u) (q + r)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "definition",
       "name": "TightVer401.nativeProductGaussChartedSpace",
       "type": "(M : Type u_1) →\n  [inst : TopologicalSpace M] → [ChartedSpace (ModelProd ℝ ℝ) M] → ChartedSpace OAI.SmoothLocal.Geometry.Coord M"
@@ -166380,6 +167294,16 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.nativeProductTorusCoordinateCover.eq_1",
+      "type": "∀ (s u : ℝ) (q : OAI.SmoothLocal.Geometry.Coord),\n  TightVer401.nativeProductTorusCoordinateCover s u q =\n    ((TightVer401.periodProjection (2 * Real.pi)) (s + q 0), (TightVer401.periodProjection (2 * Real.pi)) (u + q 1))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.nativeProductTorusCoordinateCover_contMDiff",
       "type": "∀ (s u : ℝ),\n  ContMDiff (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)\n    (TightVer401.nativeProductTorusCoordinateCover s u)"
     },
@@ -166392,6 +167316,16 @@
       "kind": "theorem",
       "name": "TightVer401.nativeProductTorusCoordinateCover_mfderiv",
       "type": "∀ (s u : ℝ) (q : OAI.SmoothLocal.Geometry.Coord),\n  mfderiv% (TightVer401.nativeProductTorusCoordinateCover s u) q = ↑(ContinuousLinearEquiv.finTwoArrow ℝ ℝ)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeProductTorusCoordinateCover_zero_isQuotientMap",
+      "type": "Topology.IsQuotientMap (TightVer401.nativeProductTorusCoordinateCover 0 0)"
     },
     {
       "axioms": [
@@ -166492,6 +167426,26 @@
       "kind": "theorem",
       "name": "TightVer401.nativeProduct_opposite_branch_immersion",
       "type": "∀ {M : Type u_1} [inst : TopologicalSpace M] [inst_1 : ChartedSpace (ModelProd ℝ ℝ) M]\n  {X Y : M → TightVer401.Manifold.ThreeSpace},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ TightVer401.Manifold.ThreeSpace) (↑⊤) X →\n    TightVer401.nativeProductIsBending X Y →\n      (∀ (p : M), Function.Injective ⇑(mfderiv% (X + Y) p)) → ∀ (p : M), Function.Injective ⇑(mfderiv% (X - Y) p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeProduct_secondFundamental_at_cover",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) (s u : ℝ)\n  (q : OAI.SmoothLocal.Geometry.Coord) (n : OAI.SmoothLocal.Geometry.Ambient),\n  OAI.SmoothLocal.Geometry.secondFundamental\n      (TightVer401.nativeProductCoordinateMap X (TightVer401.nativeProductTorusCoordinateCover s u q)) n 0 =\n    OAI.SmoothLocal.Geometry.secondFundamental (X ∘ TightVer401.nativeProductTorusCoordinateCover s u) n q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeSignPeriod",
+      "type": "Fact (0 < 2 * Real.pi)"
     },
     {
       "axioms": [
@@ -166836,6 +167790,56 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.nativeTorusPositiveRegion_isPreconnected_of_gauss_chart",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) (E : Set ↑TightVer401.RoundSphere),\n  E.Finite →\n    ∀ (e : OpenPartialHomeomorph TightVer401.NonrigidTorusSource ↑TightVer401.RoundSphere),\n      e.source = TightVer401.nativeTorusPositiveRegion X →\n        e.target = Set.univ \\ E → IsPreconnected (TightVer401.nativeTorusPositiveRegion X)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.nativeTorusSecondFundamental",
+      "type": "(TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient) →\n  (TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere) →\n    TightVer401.NonrigidTorusSource → Matrix (Fin 2) (Fin 2) ℝ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeTorusSecondFundamental.eq_1",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient)\n  (N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere) (p : TightVer401.NonrigidTorusSource),\n  TightVer401.nativeTorusSecondFundamental X N p =\n    OAI.SmoothLocal.Geometry.secondFundamental (TightVer401.nativeProductCoordinateMap X p) (↑(N p)) 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeTorusSecondFundamental_continuous",
+      "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) X →\n    ∀ {N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere},\n      Continuous N → Continuous (TightVer401.nativeTorusSecondFundamental X N)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeTorusSecondFundamental_trace_continuous",
+      "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) X →\n    ∀ {N : TightVer401.NonrigidTorusSource → ↑TightVer401.RoundSphere},\n      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 2))) (↑⊤) N →\n        Continuous fun p =>\n          (OAI.SmoothLocal.Geometry.secondFundamental (TightVer401.nativeProductCoordinateMap X p) (↑(N p)) 0).trace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.nativeTorusSmoothEmbedding_affineIsometry",
       "type": "∀ (A : OAI.SmoothLocal.Geometry.Ambient ≃ᵃⁱ[ℝ] OAI.SmoothLocal.Geometry.Ambient)\n  {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  TightVer401.NativeTorusSmoothEmbedding X → TightVer401.NativeTorusSmoothEmbedding (⇑A ∘ X)"
     },
@@ -166858,6 +167862,16 @@
       "kind": "theorem",
       "name": "TightVer401.nativeTorus_hasNoOpenPlanarPatch_of_dense_nonzero_curvature",
       "type": "∀ {X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient},\n  ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤) X →\n    (∀ (q : TightVer401.NonrigidTorusSource), Function.Injective ⇑(mfderiv% X q)) →\n      Dense {p | TightVer401.nativeTorusChartCurvature X p ≠ 0} → TightVer401.HasNoOpenPlanarPatch X"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.nativeTorus_isTightImage_of_dense_sphere_heightSuperlevels",
+      "type": "∀ (X : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n  Continuous X →\n    ∀ (G : Set ↑TightVer401.RoundSphere),\n      Dense G → (∀ w ∈ G, ∀ (a : ℝ), IsPreconnected {p | a < inner ℝ (↑w) (X p)}) → TightVer401.IsTightImage X"
     },
     {
       "axioms": [
@@ -178405,6 +179419,16 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "theorem",
+      "name": "TightVer401.preconnected_scalar_pos_iff_of_ne_zero",
+      "type": "∀ {A : Type u_1} [inst : TopologicalSpace A] {s : Set A},\n  IsPreconnected s →\n    ∀ (f : A → ℝ), ContinuousOn f s → (∀ x ∈ s, f x ≠ 0) → ∀ {x y : A}, x ∈ s → y ∈ s → (0 < f x ↔ 0 < f y)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "definition",
       "name": "TightVer401.principalTrajectory",
       "type": "(ℝ → ℝ) → (ℝ → ℝ) → ℝ → ℝ → ℝ → ℝ"
@@ -186023,6 +187047,66 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_continuousOn_trace",
+      "type": "∀ {A : Type u_1} [inst : TopologicalSpace A] {s : Set A} (B : A → Matrix (Fin 2) (Fin 2) ℝ),\n  ContinuousOn B s → ContinuousOn (fun x => (B x).trace) s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_det_neg",
+      "type": "∀ (B : Matrix (Fin 2) (Fin 2) ℝ), (-B).det = B.det"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_det_pos_of_neg_posSemidef_of_ne_zero",
+      "type": "∀ (B : Matrix (Fin 2) (Fin 2) ℝ), (-B).PosSemidef → B.det ≠ 0 → 0 < B.det"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_trace_ne_zero_of_det_pos",
+      "type": "∀ (B : Matrix (Fin 2) (Fin 2) ℝ), B.IsSymm → 0 < B.det → B.trace ≠ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_trace_pos_iff_on_preconnected",
+      "type": "∀ {A : Type u_1} [inst : TopologicalSpace A] {s : Set A},\n  IsPreconnected s →\n    ∀ (B : A → Matrix (Fin 2) (Fin 2) ℝ),\n      ContinuousOn B s →\n        (∀ x ∈ s, (B x).IsSymm) →\n          (∀ x ∈ s, 0 < (B x).det) → ∀ {x y : A}, x ∈ s → y ∈ s → (0 < (B x).trace ↔ 0 < (B y).trace)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.real_two_matrix_trace_sign_constant",
+      "type": "∀ {A : Type u_1} [inst : TopologicalSpace A] {s : Set A},\n  IsPreconnected s →\n    ∀ (B : A → Matrix (Fin 2) (Fin 2) ℝ),\n      ContinuousOn B s →\n        (∀ x ∈ s, (B x).IsSymm) →\n          (∀ x ∈ s, 0 < (B x).det) → ∀ p ∈ s, (∀ x ∈ s, 0 < (B x).trace) ∨ ∀ x ∈ s, (B x).trace < 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "definition",
       "name": "TightVer401.reciprocalChart",
       "type": "(ℝ → ℝ) → OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord"
@@ -190240,6 +191324,42 @@
       "kind": "theorem",
       "name": "TightVer401.roundSphere_finite_complement_isPathConnected",
       "type": "∀ {E : Set ↑TightVer401.RoundSphere}, E.Finite → IsPathConnected Eᶜ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isPreconnected",
+      "type": "∀ (E : Set ↑TightVer401.RoundSphere), E.Finite → IsPreconnected (Set.univ \\ E)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isPreconnected._simp_1_1",
+      "type": "∀ (R : Type u) (M : Type v) [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] [StrongRankCondition R]\n  [Module.Finite R M], Module.rank R M = ↑(Module.finrank R M)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isPreconnected._simp_1_2",
+      "type": "∀ {α : Type u} (s : Set α) (x : α), (x ∈ sᶜ) = (x ∉ s)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isPreconnected._simp_1_3",
+      "type": "∀ {α : Type u_1} {a b : α}, (a ∈ {b}) = (a = b)"
     },
     {
       "axioms": [
@@ -194754,6 +195874,16 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.smooth_localMax_secondDeriv_nonpos",
+      "type": "∀ {f : ℝ → ℝ} {a : ℝ}, ContDiff ℝ (↑⊤) f → IsLocalMax f a → deriv (deriv f) a ≤ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.smooth_periodic_primitive_iff",
       "type": "∀ {f : ℝ → ℝ} {L : ℝ},\n  ContDiff ℝ (↑⊤) f →\n    Function.Periodic f L →\n      (∫ (s : ℝ) in 0..L, f s = 0 ↔ ∃ W, ContDiff ℝ (↑⊤) W ∧ Function.Periodic W L ∧ ∀ (s : ℝ), HasDerivAt W (f s) s)"
     },
@@ -197640,6 +198770,16 @@
       "kind": "theorem",
       "name": "TightVer401.sphereHemisphereInverse._proof_2",
       "type": "CompleteSpace (PiLp 2 fun x => ℝ)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.sphereHemisphereInverse.congr_simp",
+      "type": "∀ (w w_1 : OAI.SmoothLocal.Geometry.Ambient) (e_w : w = w_1) (hw : w ≠ 0) (a a_1 : OAI.SmoothLocal.Geometry.Ambient),\n  a = a_1 →\n    ∀ (a_2 a_3 : Fin 2),\n      a_2 = a_3 → TightVer401.sphereHemisphereInverse w hw a a_2 = TightVer401.sphereHemisphereInverse w_1 ⋯ a_1 a_3"
     },
     {
       "axioms": [
@@ -206965,16 +208105,16 @@
     }
   ],
   "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion.",
-  "source_closure_sha256": "e8522d6d4f6a3531b12866da01f4cf0b5624cfbbdbb3398d757128ed256e8c63",
-  "source_git_commit": "d967b0f234254d936cd036e67602d4103a3d40ac",
+  "source_closure_sha256": "6b3de7e38a145a0fd9e25b246d30f18ffc5f77729b14eeb194b8538252f14d24",
+  "source_git_commit": "a733b93d31cf80a2b2a4d3654890029cbe200b69",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
-  "classical_registry_sha256": "f9f2b08f69b88f1a81afc04d079860314d1b049db677399e9fa04b2aa6d5bfbf",
+  "classical_registry_sha256": "a0976520ce023d09995c9e42c26040c58d457478e40c8069de6ce8e860a14b9f",
   "lean_toolchain_sha256": "62c2d9c0fc1ec4c67e151c11eff41ca004ef38e179cf9476c230406e6defedef",
   "lakefile_sha256": "90b217528e30a6f9bddd0f7bd7342b0d97f5e76ac66ddba525a7d13eea7003d5",
   "verification_scripts": {
     "build.py": "2d75c5af85f36abe541d46ac98ff367459aa7c6efe9262ae74307838c203784c",
-    "verify.py": "98580029a537fdd0cc9d01a2963dfec7e7fe7383adeac17793121051e1c8c040",
-    "inventory.py": "ec27e713111d5b0e20c88867bfcf1fa42b289e3c26b13510f78fca92e21b3c2d"
+    "verify.py": "e84cac08888cd6f524c4ba495e06f6ebd8fde466cd8edfc7d6b8b254d1be14a2",
+    "inventory.py": "95ca14832efb96353c6d0c093bd08b43d5ec35a1f5417f368bb751537ea3f8ee"
   }
 }

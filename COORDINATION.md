@@ -34,3 +34,9 @@ All four actual worktree HEADs were checked at `68996b72a5a3be36982cb90600ccec06
 ## Active remaining-background proof phase
 
 Human authorization: continue for ten hours from 2026-10-09 18:43:29 UTC until 2026-10-10 04:43:29 UTC, stopping early only when the requested work is achieved. The first-pair construction and two simple background proofs are already certified. Fresh worker paths, branches, exact closed exports and chat IDs are in `lean/research/coordination/background-workers.json`. These workers own new proof leaves in private worktrees; root alone integrates and audits. No new grants or conditional substitutes count as completion. After both remaining proofs, root constructs the unconditional pair theorem, validates source closure, organizes results and publishes an honest formalization report.
+
+## Completed background proofs and unconditional audit
+
+Full current-source verification **PASS** at `a733b93d31cf80a2b2a4d3654890029cbe200b69` on `2026-10-09T20:30:18.604546+00:00` (Audit: 162.584 seconds). All FOUR exact closed background proofs, the closed bundle, the premise-free canonical theorem and its full kernel-checked result type are certified. The closure has no admissions or custom axioms.
+
+Canonical: `TightVer401.exists_noncongruent_isometric_tight_tori_pair`. Both remaining-background workers are complete; exact frozen commits and handoffs are in `lean/research/coordination/background-workers.json`. All original producers remain unchanged. Six additive Library entry points and the formalization report organize useful results across mathematics. Final publication state is recorded in `ver503-session-state.json`; no further proof work or old worker restart is required for this request. Full-paper and deferred extension/Cantor scope remain incomplete.

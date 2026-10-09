@@ -2,14 +2,14 @@
   "target": "ver503",
   "active_engine": "lean",
   "manuscript": "paper/paper.tex",
-  "source_snapshot_commit": "d967b0f234254d936cd036e67602d4103a3d40ac",
-  "audit_utc": "2026-10-09T19:25:53.830362+00:00",
+  "source_snapshot_commit": "a733b93d31cf80a2b2a4d3654890029cbe200b69",
+  "audit_utc": "2026-10-09T20:30:18.604546+00:00",
   "result": "PASS",
-  "full_construction": "FIRST_PAIR_CONDITIONAL_PROVED",
-  "final_existence_theorem": "conditional on the sole exact positive-Gauss tightness statement",
+  "full_construction": "FIRST_PAIR_UNCONDITIONALLY_PROVED",
+  "final_existence_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
   "conditional_final_existence_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-  "kernel_report_sha256": "faed3170ba1840d7983420e39600c15d5416ca9949e57102b832fac983a645d0",
-  "source_closure_sha256": "e8522d6d4f6a3531b12866da01f4cf0b5624cfbbdbb3398d757128ed256e8c63",
+  "kernel_report_sha256": "4c8c830bd8571679a2536682073b9fdc68cdc0705c9c39aec4b5d2529be758a5",
+  "source_closure_sha256": "6b3de7e38a145a0fd9e25b246d30f18ffc5f77729b14eeb194b8538252f14d24",
   "target_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
@@ -17,8 +17,8 @@
   "schoenflies_lock_sha256": "98384b576a7b97e0332f63fea83aa2f9ae6636813c7a303cd988e1f6b8e242e2",
   "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
   "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
-  "modules": 1512,
-  "declarations": 18264,
+  "modules": 1536,
+  "declarations": 18332,
   "admissions": [],
   "custom_axioms": [],
   "historical_ver500": {
@@ -30,13 +30,8 @@
   "pending_snapshot": "../pending/IncomingGin5176081/provenance.json",
   "note": "Current sources, compiled compatibility sources, local dependencies, objects, audit logs and registered consumers were verified in the isolated integration worktree. Historical certificates alone provide no validation of migrated edits.",
   "paper_completion": "INCOMPLETE",
-  "first_pair_status": "conditional-proved",
-  "explicit_assumptions": [
-    {
-      "parameter": "positiveGaussTightness",
-      "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-    }
-  ],
+  "first_pair_status": "unconditionally-proved",
+  "explicit_assumptions": [],
   "original_construction_assumptions": [],
   "historical_four_statement_pair": {
     "source_snapshot_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
@@ -62,11 +57,13 @@
     ]
   },
   "proved_first_pair_background": {
+    "TightVer401.classicalPositiveGaussTightness_proved": "TightVer401.ClassicalPositiveGaussTightnessClaim",
+    "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
     "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
     "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
   },
   "background_proof_followup": "COMPLETE",
-  "classical_registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b",
+  "classical_registry_sha256": "a0976520ce023d09995c9e42c26040c58d457478e40c8069de6ce8e860a14b9f",
   "historical_two_simple_background_proofs": {
     "source_snapshot_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
     "audit_utc": "2026-10-09T18:31:19.661370+00:00",
@@ -78,5 +75,15 @@
     "audit_utc": "2026-10-09T19:06:01.685090+00:00",
     "kernel_report_sha256": "3d3d116df4b3c89576745f2dc032d84f8d50214f9ebcfd07f9032b5d82bb0b4a",
     "source_closure_sha256": "51d26392c48ade537f43ad392ca0a3b62cfa6bd6a611aabed0e4cf5e1d467fc0"
-  }
+  },
+  "historical_one_statement_fixed_open_checkpoint": {
+    "source_snapshot_commit": "d967b0f234254d936cd036e67602d4103a3d40ac",
+    "audit_utc": "2026-10-09T19:25:53.830362+00:00",
+    "kernel_report_sha256": "faed3170ba1840d7983420e39600c15d5416ca9949e57102b832fac983a645d0",
+    "source_closure_sha256": "e8522d6d4f6a3531b12866da01f4cf0b5624cfbbdbb3398d757128ed256e8c63"
+  },
+  "explicit_first_pair_assumptions": [],
+  "unconditional_pair_conclusion_checked": true,
+  "formalization_report": "lean/formalization-report.md",
+  "library_catalog": "lean/TightVer401/Library/README.md"
 }

@@ -4,9 +4,11 @@
 |---|---|
 | Current illustrated manuscript, ver503 | [paper](paper/README.md) |
 | Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
+| Formalized results and contributions to Lean | [formalization report](lean/formalization-report.md) |
+| Reusable entry points across mathematics | [library catalog](lean/TightVer401/Library/README.md) |
 | Interactive numerical geometry and illustrated construction | [visualization](visualization/README.md) |
 
-The Lean formalization remains **incomplete**. The latest integrated audit records 1,403 modules and 17,564 declarations; the final existence theorem is pending. The numerical meshes illustrate the construction and do not certify it.
+Lean now proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. The current source-bound audit passed with no admissions or custom axioms. The full manuscript remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
 
 To explore the visualization, serve this repository root:
 

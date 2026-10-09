@@ -1,5 +1,7 @@
 # ver503 infrastructure report: internal coordinator planning notes
 
+Historical planning/checkpoint record, superseded by the [completed formalization report](../../formalization-report.md) and current [audit snapshot](../../audit/snapshot.json). Earlier status statements below refer to their dated source checkpoints.
+
 DRAFT / INTERNAL PLANNING ONLY. This is an evidence inventory for a later human-requested report and possible export organization, not the final report, a completed reorganization, an upstream submission, or a claim of upstream acceptance. No builds were run for this note.
 
 ## Pinned-library overlap review, 2026-10-09

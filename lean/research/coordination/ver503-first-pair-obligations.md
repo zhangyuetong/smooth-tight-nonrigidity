@@ -1,14 +1,14 @@
 # ver503 first-pair obligation audit
 
-Full current-source verification **PASS** at `d967b0f234254d936cd036e67602d4103a3d40ac` on `2026-10-09T19:25:53.830362+00:00` (Audit: 171.835 seconds). All THREE exact closed background proof inhabitants and ONLY `ClassicalPositiveGaussTightnessClaim` before the ultimate first existential are checked. The closure has no admissions or custom axioms; only positive-Gauss tightness remains an external assumption. Historical source `07a2980` certified the earlier four-statement theorem.
+Full current-source verification **PASS** at `a733b93d31cf80a2b2a4d3654890029cbe200b69` on `2026-10-09T20:30:18.604546+00:00` (Audit: 162.584 seconds). All FOUR exact closed background proofs, the closed bundle, the premise-free canonical theorem and its full kernel-checked result type are certified. The closure has no admissions or custom axioms.
 
 ## Present ultimate theorem and exact assumptions
 
-`TightVer401/NonrigidTorusPair.lean` declares `exists_noncongruent_isometric_tight_tori_pair_of_classical`. Its exact header has one parameter: `positiveGaussTightness : ClassicalPositiveGaussTightnessClaim`. This sole remaining proposition is defined in `ClassicalExternal.lean` and is not yet proved.
+`TightVer401/NonrigidTorusPair.lean` declares the canonical `exists_noncongruent_isometric_tight_tori_pair` with no premises. The retained `_of_classical` helper takes the positive-Gauss criterion; the canonical proof supplies its exact closed proved inhabitant and preserves the helper's entire existential conclusion.
 
-Three former assumptions have exact closed proofs: `classicalEmbeddedImageReparametrization_proved`, `markerEllipseAxesRecognition_proved`, and `classicalCoincidentEmbeddingFixedOpen_proved`. The third constructs the genuine common induced intrinsic metric, proves reparametrization preserves path-distance, and invokes compact fixed-open isometry rigidity. All three closed types and the reduced ultimate header are checked by the current combined audit.
+All four former assumptions have exact closed proofs: `classicalEmbeddedImageReparametrization_proved`, `markerEllipseAxesRecognition_proved`, `classicalCoincidentEmbeddingFixedOpen_proved`, and `classicalPositiveGaussTightness_proved`. The audit checks their exact types, the closed bundle and complete canonical result type using the kernel.
 
-No seed, connector, geometry, completion, ordinary family or desired torus package is an additional premise. The ultimate theorem builds `hOrdinary` locally from the concrete producer and invokes the retained same-object actual pair consumer with `⟨positiveGaussTightness, classicalCoincidentEmbeddingFixedOpen_proved⟩` and the other two proved terms. The generic `ClassicalExternalResults` bundle remains a reusable conditional consumer interface; only its positive-Gauss field is a caller-supplied ultimate assumption.
+No seed, connector, geometry, completion, ordinary family or desired torus package is a premise. The helper builds the actual universal ordinary family locally and supplies the proved rigidity, reparametrization and ellipse terms. `classicalExternalResults_proved` provides the retained geometric bundle for other conditional consumers.
 
 ## Actual seed and exact selected caller projection
 
@@ -63,10 +63,10 @@ plus/minus the same positive amplitude times the affine marked bending of
 
 The full meridian is the same `D.meridian` returned by the completion caller. The agreement set is exactly the complement of the same chart image of `tsupport Y`. `CompletedSaddleTorusVer503Bending.lean` / `completedSaddleTorusBendingField_source_eq_neg` supplies the ver503 normalization `Z = -Y` on the original chart.
 
-Downstream, `TorusMarkedCompletedPairConnection.lean` / `exists_completedSaddleTorus_marked_pair` supplies these conclusions through `completedSaddleTorus_marked_branch_stability`, `affineMarkedTorusLinear_common_smooth_metric`, `affineMarkedTorusLinear_opposite_native_forms`, `affineMarkedTorus_actualCylinder_bending_imageNoncongruent`, `protectedTorus_marked_branch_germs_off_support`, and `affineMarkedTorus_actualCylinder_bending_hasNoOpenPlanarPatch`, using the sole retained positive-Gauss statement and the three internally supplied proved background terms.
+Downstream, `TorusMarkedCompletedPairConnection.lean` / `exists_completedSaddleTorus_marked_pair` supplies these conclusions through `completedSaddleTorus_marked_branch_stability`, `affineMarkedTorusLinear_common_smooth_metric`, `affineMarkedTorusLinear_opposite_native_forms`, `affineMarkedTorus_actualCylinder_bending_imageNoncongruent`, `protectedTorus_marked_branch_germs_off_support`, and `affineMarkedTorus_actualCylinder_bending_hasNoOpenPlanarPatch`, using the proved positive-Gauss statement and the other three proved background terms.
 
 ## Certification boundary and deferred scope
 
-The current source contains the universal D-only producer, the actual seed-to-selected construction, the exact same-object pair projection and the ultimate theorem with only the positive-Gauss parameter. Reparametrization and ellipse recognition have direct checked proofs supplied internally. Combined current-source certification passed at the source/date above. All three closed proof types and the reduced ultimate header are verified, with no admissions or custom axioms. The historical `07a2980` certificate applies to the previous four-statement source snapshot.
+The universal D-only producer, actual seed/selected construction, same-object pair projection and premise-free canonical theorem are in the current certified closure. All four background proofs and the closed bundle are checked, with no admissions or custom axioms. The kernel verifies equality of the complete canonical result type to the supplied retained helper result. Historical certificates remain provenance for their earlier source snapshots.
 
 The objective remains the global nonrigid-torus first pair. Extension applications and Cantor families are deferred.

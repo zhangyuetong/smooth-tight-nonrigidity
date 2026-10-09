@@ -5,21 +5,17 @@
   "target": "ver503",
   "primary_objective": {
     "statement": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
-    "status": "conditional-proved",
-    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-    "explicit_assumptions": [
-      {
-        "parameter": "positiveGaussTightness",
-        "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
-      }
-    ],
+    "status": "proved",
+    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
+    "explicit_assumptions": [],
     "original_construction_assumptions": [],
-    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only positive-Gauss tightness remains an assumption; all three exact closed background proof inhabitants and the reduced ultimate header must also be audited",
+    "certification_rule": "proved only when the current source-bound audit includes four exact closed background proof inhabitants, the closed background bundle, and the canonical theorem whose type starts with an existential and has no premises",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-    "accepted_background": "TightVer401.ClassicalPositiveGaussTightnessClaim",
+    "accepted_background": [],
     "additional_explicit_background": [],
     "proved_background": {
+      "TightVer401.classicalPositiveGaussTightness_proved": "TightVer401.ClassicalPositiveGaussTightnessClaim",
       "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
       "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
       "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
@@ -892,11 +888,11 @@
     }
   ],
   "classical_external_policy": {
-    "mode": "explicit_named_theorem_parameters",
+    "mode": "all_registered_background_proved",
     "authorization_date": "2026-10-09",
     "registry": "classical-external-results.json",
-    "registry_sha256": "f9f2b08f69b88f1a81afc04d079860314d1b049db677399e9fa04b2aa6d5bfbf",
-    "conditional_final_pair_status": "conditional-proved",
+    "registry_sha256": "a0976520ce023d09995c9e42c26040c58d457478e40c8069de6ce8e860a14b9f",
+    "final_pair_status": "proved",
     "external_results_are_not_proved_claims": true
   },
   "additional_checked_scope": {
@@ -1660,9 +1656,10 @@
       "TightVer401.visibleConnectorOrdinaryFamily_construction_statement",
       "TightVer401.visibleConnectorOrdinaryFamily_dual_radial_completion"
     ],
-    "actual-seed-pair-and-ultimate-under-one-exact-classical-parameter": [
+    "actual-seed-pair-and-unconditional-ultimate": [
       "TightVer401.actualSeed_exists_markedTorus_pair_of_ordinary_connector_family",
-      "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+      "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+      "TightVer401.exists_noncongruent_isometric_tight_tori_pair"
     ],
     "proved-background-ellipse-and-smooth-embedded-reparameterization": [
       "TightVer401.markerEllipseAxesRecognition_proved",
@@ -1677,6 +1674,14 @@
       "TightVer401.height_superlevel_isPreconnected_of_unique_localMax",
       "TightVer401.height_superlevel_isPreconnected_of_uniform_approximants",
       "TightVer401.roundSphere_finite_complement_isPathConnected"
+    ],
+    "proved-positive-gauss-tightness-and-regular-height-route": [
+      "TightVer401.classicalPositiveGaussTightness_proved",
+      "TightVer401.classicalExternalResults_proved",
+      "TightVer401.gaussTightness_critical_image_null",
+      "TightVer401.gaussTightness_dense_regular_values",
+      "TightVer401.gaussTightness_native_dense_regular_directions",
+      "TightVer401.gaussTightness_native_localMax_unique_of_regular_direction"
     ]
   },
   "limits": [
@@ -1684,6 +1689,6 @@
     "Actual open-sphere support reconstruction and the global injective regular Gauss-image bridge are proved. The planar potential curvature, converse, local gradient inverse and gnomonic support reconstruction are proved; actual degree and full quadratic filling are proved; the first-pair source constructions and exact classical theorem require current audited-name certification.",
     "None of the three principal existence theorems is yet proved.",
     "Declaration counts do not measure the percentage of the paper formalized.",
-    "The first-pair theorem is conditional on exactly one registered classical statement parameter, positive-Gauss tightness; its truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred."
+    "The canonical first-pair theorem has no background or construction premises. Credit requires the exact theorem, four closed background proofs and closed bundle in the current source-bound audit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred."
   ]
 }

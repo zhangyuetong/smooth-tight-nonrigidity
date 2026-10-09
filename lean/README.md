@@ -2,11 +2,15 @@
 
 Active proof engine: `/lean`; manuscript target: [`paper/paper.tex`](../paper/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
 
-The actual first-pair theorem [`exists_noncongruent_isometric_tight_tori_pair_of_classical`](TightVer401/NonrigidTorusPair.lean) now has only `positiveGaussTightness : ClassicalPositiveGaussTightnessClaim`. Smooth equal-image reparametrization, ellipse-axis recognition and coincident-embedding fixed-open rigidity are proved and supplied internally. Every original first-pair construction gate is discharged. Combined current-source verification **PASS** at `d967b0f` (Audit: 171.835 seconds). The full paper remains **INCOMPLETE**; extension and Cantor-family applications are deferred.
+The canonical [`exists_noncongruent_isometric_tight_tori_pair`](TightVer401/NonrigidTorusPair.lean) is **unconditionally proved**, with no background or construction premises. All four background propositions have closed proofs. It constructs two smooth tight embedded tori with one common smooth positive induced metric, noncongruent images, nonempty open agreement and no open planar patches. The full manuscript remains **INCOMPLETE**; Cantor-family and extension applications are deferred.
+
+Read the [formalization report](formalization-report.md) for exact paper coverage, important general infrastructure in several fields, inherited foundations and potential contributions to Lean. The [library catalog](TightVer401/Library/README.md) groups reusable imports into Calculus, Topology, Analysis, Riemannian, DifferentialGeometry and Construction.
 
 ## Current verification and actual construction
 
-Full current-source verification **PASS** at `d967b0f234254d936cd036e67602d4103a3d40ac` on `2026-10-09T19:25:53.830362+00:00` (Audit: 171.835 seconds). All THREE exact closed background proof inhabitants and ONLY `ClassicalPositiveGaussTightnessClaim` before the ultimate first existential are checked. The closure has no admissions or custom axioms; only positive-Gauss tightness remains an external assumption. Historical source `07a2980` certified the earlier four-statement theorem.
+Full current-source verification **PASS** at `a733b93d31cf80a2b2a4d3654890029cbe200b69` on `2026-10-09T20:30:18.604546+00:00` (Audit: 162.584 seconds). All FOUR exact closed background proofs, the closed bundle, the premise-free canonical theorem and its full kernel-checked result type are certified. The closure has no admissions or custom axioms.
+
+The [snapshot](audit/snapshot.json) binds the 1,536-module, 18,332-declaration closure to the current [kernel report](audit/kernel-report.json). Counts include helpers, definitions, generated declarations and inherited results; they are not distinct published theorems or a completion percentage.
 
 The retained producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Source/reversed-gradient order and simultaneous source/scalar/gradient rebase preserve the same displaced inverse. The ver503 bridge proves the fixed affine normalization acts on vectors by negation and the transported bending is exactly `-Y` on the same source chart, with zero extension outside.
 
@@ -20,15 +24,16 @@ The result retains the SAME completed `Gtilde/E/beta/Q/Cdata` tuple and once-cho
 
 The 13 historical uncompiled IncomingGin leaves from `5176081` remain in [pending](pending/IncomingGin5176081/README.md), outside the certified closure; the concrete universal construction uses the current producers. [Frozen source review](research/coordination/ver503-frozen-review.md), [mathematical migration](research/coordination/ver503-mathematical-migration.md) and per-claim [reuse review](target/ver503-reuse-review.json) record provenance and exact manuscript scope. Coverage is a scope register, not a percentage of the construction.
 
-## Exact external theorem parameter
+## Proved background statements
 
-Only `ClassicalPositiveGaussTightnessClaim` remains assumed in the ultimate theorem. The [registry](classical-external-results.json) distinguishes it from three exact closed proved statements:
+The [registry](classical-external-results.json) has no remaining grants. It records these exact closed proofs:
 
 - [`classicalEmbeddedImageReparametrization_proved`](TightVer401/ClassicalEmbeddedReparamProof.lean): smooth reparametrization of equal-image actual embeddings.
-- [`markerEllipseAxesRecognition_proved`](TightVer401/MarkerEllipseAxesRecognitionProof.lean): elementary recognition of the unequal ellipse axes.
-- [`classicalCoincidentEmbeddingFixedOpen_proved`](TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean): equal-image embeddings with equal induced forms and nonempty open agreement coincide.
+- [`markerEllipseAxesRecognition_proved`](TightVer401/MarkerEllipseAxesRecognitionProof.lean): recognition of unequal ellipse axes.
+- [`classicalCoincidentEmbeddingFixedOpen_proved`](TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean): equal-image embeddings with equal induced forms and open agreement coincide.
+- [`classicalPositiveGaussTightness_proved`](TightVer401/ClassicalPositiveGaussTightnessProof.lean): an actual Gauss chart of the entire positive-curvature locus onto a finitely punctured sphere implies tightness.
 
-The third proof constructs the actual induced intrinsic metric with the original topology, proves preservation of actual C1 path integrals and their distance infimum, and applies compact fixed-open isometry rigidity. The generic metric-space and distance bridges, connected-superlevel topology, uniform-approximation lemma and necessary second derivative tests are audited reusable infrastructure. No construction, metric or final pair is granted. Positive-Gauss tightness is the active final background proof obligation.
+The rigidity proof uses the genuine compatible intrinsic metric and actual C¹ path-distance infimum. The Gauss proof uses regular directions, curvature and normal signs at maxima, connected components and approximation. Neither uses a construction grant. [`classicalExternalResults_proved`](TightVer401/ClassicalExternalProof.lean) inhabits the retained bundle; conditional helper interfaces remain reusable with these proved inputs.
 
 ## Reproduce the current build
 
