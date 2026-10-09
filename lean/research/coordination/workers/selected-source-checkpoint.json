@@ -175,5 +175,42 @@
     ],
     "producer_build_report_sha256": "8c09ebce718ebb214a44921625a6aee7285346d65253635d4f950f78da39cb20",
     "producer_axiom_log_sha256": "faa9b92bf4fc8a85db3cc9ae199915730efd075929166d0eafed08b8ab1fa403"
+  },
+  "raw_source_checkpoint": {
+    "result": "PASS",
+    "audited_exports": 13,
+    "scope": "Actual raw Jordan fillings, strict nesting, exact flowCore annulus and inverse from original seed/selected values/source margin. Final selected graph protected topology pending.",
+    "sources": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRawBoundary",
+        "source_sha256": "da6e7302ccbc2c781313974b44978927dd01cdca97f1245061ae48ad82cb952c",
+        "compiled_source_sha256": "da6e7302ccbc2c781313974b44978927dd01cdca97f1245061ae48ad82cb952c",
+        "olean_sha256": "800a73f92770bb1ee468f71501d3df744d36a215c5fb1c0490e9f61fb564a152",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRawAnnulus",
+        "source_sha256": "ea30935ea05c632e297c22747e1157a90da82cfda62aeec488958f64840f5a56",
+        "compiled_source_sha256": "ea30935ea05c632e297c22747e1157a90da82cfda62aeec488958f64840f5a56",
+        "olean_sha256": "6cef130fdf99940bf13685185aab3d41c1c4db8320247a761658186b4c467c7d",
+        "log_sha256": "121fb1d8411dcad9fe3c1f940063405623352a3cf792c2380381bd2a80581882"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRawConstruction",
+        "source_sha256": "386e73598fe84711affbd4f79fd2158ce5212f8d24697b22d0da58cf396bd3ed",
+        "compiled_source_sha256": "386e73598fe84711affbd4f79fd2158ce5212f8d24697b22d0da58cf396bd3ed",
+        "olean_sha256": "03d1582de9bc0f8c6e5efe84236eb15a61daffe4e7db0b4fae438cea9318da47",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRawAudit",
+        "source_sha256": "c127652fbda0a80dd3d95c403bb2f9e7dd34bf7d7f25038069e73328cf768b67",
+        "compiled_source_sha256": "c127652fbda0a80dd3d95c403bb2f9e7dd34bf7d7f25038069e73328cf768b67",
+        "olean_sha256": "dd3d7edfe6b6ed09592e30358683d8aeef051d4d8464819f665fa89293a6473b",
+        "log_sha256": "e9fbf5149ef7411d801eacc7fa7da8bfe0f303da249b07acd5a477e5d719b3e8"
+      }
+    ],
+    "producer_build_report_sha256": "518e69fff8d28c0bf9b12d5a3f8d3da8f67cc04a2172be870a8ece210b76e6c7",
+    "producer_axiom_log_sha256": "e9fbf5149ef7411d801eacc7fa7da8bfe0f303da249b07acd5a477e5d719b3e8"
   }
 }
