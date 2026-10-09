@@ -5,7 +5,7 @@
   "mode": "explicit_classical_external_theorem_parameters",
   "lean_bundle": "TightVer401.ClassicalExternalResults",
   "lean_source": "TightVer401/ClassicalExternal.lean",
-  "certification_rule": "Kernel checks the two remaining explicit external statement parameters and their conditional applications, and separately verifies the exact closed proof inhabitants in proved_background. No inhabitant of ClassicalExternalResults, custom axiom, admission or circular construction grant is introduced.",
+  "certification_rule": "Kernel checks one remaining positive-Gauss statement parameter and separately verifies three exact closed proof inhabitants in proved_background. No admissions, custom axioms or construction grants.",
   "primary_goal": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
   "grants": [
     {
@@ -44,44 +44,6 @@
         "Surface-area measure/change-of-variables framework as a prerequisite of the first pair"
       ],
       "proof_note": "Finite omitted sphere points have zero spherical area, so the positive curvature integral is 4π. The published equality characterization gives tightness directly; Gauss–Bonnet is not required for this conclusion."
-    },
-    {
-      "id": "E.coincident-embedding-fixed-open",
-      "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
-      "field": "coincidentEmbeddingFixedOpen",
-      "status": "external_assumed",
-      "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
-      "sources": [
-        {
-          "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
-          "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
-          "location": "Smooth embedding and induced embedded-submanifold inverse"
-        },
-        {
-          "title": "John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness",
-          "url": "https://link.springer.com/book/10.1007/978-3-319-91755-9",
-          "location": "Uniqueness of isometries from their value and differential; also see engine FixedOpenCompact.isometry_eq_id_of_fixed_open_compact"
-        }
-      ],
-      "hypotheses": [
-        "Two actual infinity-smooth embedded immersions on the same fixed connected compact native torus",
-        "Equality of actual nativeProductInducedForm at every point on every tangent-vector pair",
-        "Equal entire embedded images",
-        "The two actual maps agree on a nonempty open subset of that same source"
-      ],
-      "conclusion": "X=Y as parametrized maps",
-      "consumers": [
-        "R.image-separation"
-      ],
-      "still_owned": [
-        "Actual affine marking and trivial stabilizer of the unchanged positive image",
-        "An alleged ambient congruence preserves that exact positive image and hence is the identity",
-        "Actual opposite-branch common metric, protected open agreement, nonzero field and chosen nonzero amplitude"
-      ],
-      "replaces": [
-        "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
-      ],
-      "proof_note": "Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence."
     }
   ],
   "already_proved_background": [
@@ -219,6 +181,47 @@
       "proof_declaration": "TightVer401.markerEllipseAxesRecognition_proved",
       "lean_proof_source": "TightVer401/MarkerEllipseAxesRecognitionProof.lean",
       "certification_rule": "Exact closed proof inhabitant must occur in the current source-bound kernel audit; historical statement/application checks alone do not prove the claim."
+    },
+    {
+      "id": "E.coincident-embedding-fixed-open",
+      "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
+      "field": "coincidentEmbeddingFixedOpen",
+      "status": "kernel_proved",
+      "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
+      "sources": [
+        {
+          "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
+          "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
+          "location": "Smooth embedding and induced embedded-submanifold inverse"
+        },
+        {
+          "title": "John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness",
+          "url": "https://link.springer.com/book/10.1007/978-3-319-91755-9",
+          "location": "Uniqueness of isometries from their value and differential; also see engine FixedOpenCompact.isometry_eq_id_of_fixed_open_compact"
+        }
+      ],
+      "hypotheses": [
+        "Two actual infinity-smooth embedded immersions on the same fixed connected compact native torus",
+        "Equality of actual nativeProductInducedForm at every point on every tangent-vector pair",
+        "Equal entire embedded images",
+        "The two actual maps agree on a nonempty open subset of that same source"
+      ],
+      "conclusion": "X=Y as parametrized maps",
+      "consumers": [
+        "R.image-separation"
+      ],
+      "still_owned": [
+        "Actual affine marking and trivial stabilizer of the unchanged positive image",
+        "An alleged ambient congruence preserves that exact positive image and hence is the identity",
+        "Actual opposite-branch common metric, protected open agreement, nonzero field and chosen nonzero amplitude"
+      ],
+      "replaces": [
+        "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
+      ],
+      "proof_note": "The actual common induced metric and the proved smooth equal-image reparametrization give tangent norm preservation. Actual C1 path integrals and intrinsic infima are preserved. A finite compatible intrinsic metric retains the original topology; compact fixed-open isometry rigidity gives X=Y. No external assumption remains.",
+      "proof_declaration": "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved",
+      "lean_proof_source": "TightVer401/ClassicalCoincidentEmbeddingFixedOpenProof.lean",
+      "certification_rule": "Exact closed proof inhabitant must occur in current source-bound kernel audit; no new premise header."
     }
   ]
 }

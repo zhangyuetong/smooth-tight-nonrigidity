@@ -502,3 +502,6 @@ import TightVer401.MarkerEllipseAxesRecognitionProof
 import TightVer401.HeightSuperlevelConnected
 import TightVer401.HeightSuperlevelLimits
 import TightVer401.SphereFiniteComplementConnected
+
+import TightVer401.LocalMaxSecondDerivative
+import TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof

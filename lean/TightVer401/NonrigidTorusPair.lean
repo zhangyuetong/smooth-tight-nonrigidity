@@ -2,10 +2,11 @@ import TightVer401.PositiveExitConstructionActualPair
 import TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly
 import TightVer401.MarkerEllipseAxesRecognitionProof
 import TightVer401.ClassicalEmbeddedReparamProof
+import TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof
 
 /-! The concrete seed and universal original-data connector construction
-discharge all original first-pair premises. Two background claims are proved locally. Only positive-Gauss tightness and
-equal-image fixed-open uniqueness remain exact theorem parameters.
+discharge all original first-pair premises. Three background claims are proved locally. Only positive-Gauss tightness
+remains an exact theorem parameter.
 Completion choices, the full meridian and marked pair are those returned by the
 existing caller, selected once with the SAME native band and protected field. -/
 open Manifold Bundle
@@ -27,7 +28,7 @@ local instance nonrigidPairPlaneManifold : IsManifold planeModel ∞ NonrigidTor
 
 /-- The actual global pair, retaining the completed tuple and SAME full meridian. -/
 theorem exists_noncongruent_isometric_tight_tori_pair_of_classical
-    (background : ClassicalExternalResults)
+    (positiveGaussTightness : ClassicalPositiveGaussTightnessClaim)
  :
     ∃ T : ℝ, ∃ hT : 0 < T,
       letI : Fact (0 < T) := ⟨hT⟩
@@ -82,7 +83,8 @@ theorem exists_noncongruent_isometric_tight_tori_pair_of_classical
     intro Gin Uin R D etaMax hetaMax
     exact visibleConnectorOrdinaryFamily_nonempty_from_incoming D hetaMax
   exact actualSeed_exists_markedTorus_pair_of_ordinary_connector_family
-    background classicalEmbeddedImageReparametrization_proved
+    ⟨positiveGaussTightness, classicalCoincidentEmbeddingFixedOpen_proved⟩
+    classicalEmbeddedImageReparametrization_proved
     markerEllipseAxesRecognition_proved hOrdinary
 
 end

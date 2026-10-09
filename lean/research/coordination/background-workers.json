@@ -16,7 +16,10 @@
       "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-fixed-open",
       "branch": "codex/ver503-fixed-open",
       "exact_export": "classicalCoincidentEmbeddingFixedOpen_proved : ClassicalCoincidentEmbeddingFixedOpenClaim",
-      "handoff": "lean/research/coordination/workers/fixed-open.md"
+      "handoff": "lean/research/coordination/workers/fixed-open.md",
+      "status": "complete",
+      "source_commit": "eca1ae5507108b087bf708bc6523c7b8facc1a2d",
+      "handoff_commit": "cb922dec06d994682fb2acd5a2e030a840b6495f"
     }
   ]
 }
