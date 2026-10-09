@@ -2,6 +2,12 @@
 
 DRAFT / INTERNAL PLANNING ONLY. This is an evidence inventory for a later human-requested report and possible export organization, not the final report, a completed reorganization, an upstream submission, or a claim of upstream acceptance. No builds were run for this note.
 
+## Pinned-library overlap review, 2026-10-09
+
+Read-only scoped review searched pinned Mathlib `e4c9178`, rather than current upstream. No equivalent exported theorem surfaced for the necessary Frechet Hessian test, injective-differential smooth factor recovery, uniform-approximation superlevel stability, unique-local-maximum superlevel connectivity, or tangent-isometry preservation of intrinsic distance. This is a search result, not proof of absence or mathematical novelty. The pinned immersion API has a composition characterization for an already supplied immersion; its injective-differential-to-immersion bridge remains a TODO, making the factor recovery lemma practically useful.
+
+For extraction, use standard namespaces and minimal imports; consider finite differentiability and a split differential for factor recovery, minimum variants for the Hessian test, a standard uniform-convergence formulation for superlevels, and maps between different Riemannian manifolds with norm inequalities for distance transport. Each generalization needs its own checked proof. The connected intrinsic metric-space package composes existing Mathlib constructors; the small connected-emetric finiteness lemma and actual tangent-norm/path-distance argument are its substantive reusable contributions. None has been submitted upstream.
+
 ## Current certification boundary
 
 Coordinator checkpoint: combined current-source verification PASS at source `d967b0f234254d936cd036e67602d4103a3d40ac`, Audit 171.835 seconds; published checkpoint `ef7ca24`. Current README, classical route and actual ultimate source agree on the reduced scope. Three background statements now have closed audited proof inhabitants. ONLY `positiveGaussTightness : ClassicalPositiveGaussTightnessClaim` remains pending/assumed. Every original first-pair construction gate is discharged. Full-paper status remains INCOMPLETE.
