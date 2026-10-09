@@ -1,0 +1,2 @@
+import TightVer401.VisibleConnectorOrdinaryFamilyTerminalMargins
+#print axioms TightVer401.visibleConnectorOrdinaryFamilyTerminalMargins_uniform
