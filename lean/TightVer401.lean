@@ -498,3 +498,7 @@ import TightVer401.ClassicalEmbeddingSmoothFactor
 import TightVer401.ClassicalEmbeddedReparamProof
 
 import TightVer401.MarkerEllipseAxesRecognitionProof
+
+import TightVer401.HeightSuperlevelConnected
+import TightVer401.HeightSuperlevelLimits
+import TightVer401.SphereFiniteComplementConnected

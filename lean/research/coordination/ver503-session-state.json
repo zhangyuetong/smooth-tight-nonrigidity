@@ -16,7 +16,7 @@
   },
   "queued_frozen_sources": [],
   "remaining_original_gates": [],
-  "next_action": "Follow two fresh private background workers, collect frozen proofs, integrate closed proof bundle and unconditional first-pair theorem; full current-source audit before report publication.",
+  "next_action": "Full integrated helper audit, then follow frozen remaining-background handoffs. Final closed claims still pending; do not report unconditional pair.",
   "note": "Live process/Git/source evidence overrides historical session IDs. Old paused ver500 monitors and workers remain untouched. No worker-only Audit module enters production imports.",
   "latest_checked_source_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
   "latest_audit_result": "PASS",
@@ -32,5 +32,19 @@
   ],
   "authorization_start_utc": "2026-10-09T18:43:29Z",
   "authorization_deadline_utc": "2026-10-10T04:43:29Z",
-  "report_scope": "Reusable infrastructure in any field: explain significance and general applicability, distinguish inherited foundations and manuscript-specific constructions, identify potential contributions to Lean library growth."
+  "report_scope": "Reusable infrastructure in any field: explain significance and general applicability, distinguish inherited foundations and manuscript-specific constructions, identify potential contributions to Lean library growth.",
+  "latest_direct_checked_helpers": [
+    {
+      "module": "HeightSuperlevelConnected",
+      "seconds": 22.601
+    },
+    {
+      "module": "HeightSuperlevelLimits",
+      "seconds": 21.496
+    },
+    {
+      "module": "SphereFiniteComplementConnected",
+      "seconds": 57.604
+    }
+  ]
 }
