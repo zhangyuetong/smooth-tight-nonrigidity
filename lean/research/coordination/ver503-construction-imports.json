@@ -1,5 +1,5 @@
 {
-  "last_published_checked_checkpoint": "bcfc915",
+  "last_published_checked_checkpoint": "07a29801e214f5525d69bd3fab37ea8029145626",
   "records": [
     {
       "worker": "final-smoothing",
@@ -511,11 +511,123 @@
       "source": "lean/TightVer401/PositiveExitConstructionSinglePrefix.lean",
       "git_blob": "589d62181ace31be54fd96fcaeb85733b86c78a3",
       "sha256": "aef496a0f7abb2da77fc99c4f48814b5b413baa744feb5a2da46e220eb2569cb"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "2461b16c457e1b0ef4dde8cfb25d5494fb6d25dc",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyTerminalMargins.lean",
+      "git_blob": "2cd647fd34c207feafb1604c4718fdf41bb726a4",
+      "sha256": "1a2af2b0ec6f9e8044ffd754210aad4c856d34584dd56a0eac8e0609f3704473"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyGeometricRaw.lean",
+      "git_blob": "006a9199bca50546b516b122bdd298dc1c380646",
+      "sha256": "20e2ebd08ea67711292c63d3e5b29dd88bd0e44851403752429a24df07391d5c"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyGinSmoothSlice.lean",
+      "git_blob": "21b40d01d31240ace4f232054e6c832aa82ae05b",
+      "sha256": "097c872106767cc211178c821637cb90ba05e3c08610ef032d1858823a41a882"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilySeamMatching.lean",
+      "git_blob": "f7646726c36dcd5f2cdbd585e0dbb03aa26498b1",
+      "sha256": "62d4870de8d9114e6915f9066d700d9ec9d4bd8feae68579daf5dc6d1be5ba5e"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilySourceClosure.lean",
+      "git_blob": "73ed7341bf56634d655e980da06323891503cddd",
+      "sha256": "492260e97cecc773ccbf26836301fc03d69866098eb0af5f56ff398294e7e09c"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyTerminalActualMargins.lean",
+      "git_blob": "e16e138821b2a87f1223ba3fb320f46b74120cf2",
+      "sha256": "7b7fb9f1a8e12333688fdf24ae71c2557cf20c2bc2c66c81a366a14d901137c5"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "8caba619d215979e6a4ad88be6bb86c74ccc8825",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyTerminalAngle.lean",
+      "git_blob": "0710b372bd10db374a14348894021c396f3183c5",
+      "sha256": "5f5b521339cc84fddfcb061b2f80eb99c3799a15e0309ad2caa4ba683edd7efa"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyActualChoiceTerminal.lean",
+      "git_blob": "72921269c3fc8e93643adaab8ace685b4d14e3eb",
+      "sha256": "e2f9af6db1cf47329b43306370a28d45fa5d9dbe1fcc0041b2b2878c12e97e2c"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyActualChoiceTurn.lean",
+      "git_blob": "88b47d87b39648e4b8214bbacaa7843836b33bf4",
+      "sha256": "b02ef6599f27ac05bf4f9598203488e8f6a6b7d0c05735f0b5c4f4d78c0e1d60"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyCompletion.lean",
+      "git_blob": "8b4334758fcfbe40cdf980cf33728c7fb4215032",
+      "sha256": "49cbf1899f9186c27ce7c729bbfaf0128dda46feb971dc86c760ddad4a8d85f0"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyFromIncomingAssembly.lean",
+      "git_blob": "7603905b4ec3d66242fc1cef1ba8e235e7eec1fe",
+      "sha256": "d010803e7f14a42d98d9255cd6d621b8342108b2a66f1878a14631b7cd2ceb00"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyFromIncomingRaw.lean",
+      "git_blob": "f5d4992c7ca18c00ff8216504d9e4b3be80468e1",
+      "sha256": "05804e3331f34083e964b58e16b8cc462851a49fb74977ebe4a0832bafa3268a"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyFromIncomingScalar.lean",
+      "git_blob": "92f345d198390c76c694cfa29c38682a6b191589",
+      "sha256": "9258cb2a3677a81ac66fa2b78eb9496516dbf7b24b4109eac97f3fb91374b2bf"
+    },
+    {
+      "worker": "ordinary-family",
+      "commit": "61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b",
+      "source": "lean/TightVer401/VisibleConnectorOrdinaryFamilyRebasedGradientCircle.lean",
+      "git_blob": "a6b699811260f18c4a662a58b3b42d72680e0199",
+      "sha256": "7cbbef0b43ce80559b197989297fa3b7f5b81eeb2f0d0247da3b5c5dd44b68b1"
+    },
+    {
+      "worker": "root-integration",
+      "commit": "07a29801e214f5525d69bd3fab37ea8029145626",
+      "source": "lean/TightVer401/NonrigidTorusPair.lean",
+      "git_blob": "49d38fbc1f84252b7ab8bfaad424a53b28f219ca",
+      "sha256": "7bd5df5c40eb1bc4274dafbdc59a54ee5ebebf97680cca0838a9e30bdffda401"
+    },
+    {
+      "worker": "root-integration",
+      "commit": "07a29801e214f5525d69bd3fab37ea8029145626",
+      "source": "lean/TightVer401/PositiveExitConstructionActualPair.lean",
+      "git_blob": "a96a8289202d0793d7c4f49738598fc0a8b5093e",
+      "sha256": "079d1ffd4d4ed1005901f0ecbebbcd94b4f8c6875b1b359766c1224b95676ce0"
     }
   ],
-  "note": "Exact frozen import history, including superseded versions. Current source/compiled-source/object hashes and certificate are bound by the kernel report, not historical worker records. Actual selected-seed/source production is checked; ultimate caller and universal ordinary family remain pending.",
-  "audit_source_commit": "96ff7f87a2176bac127a5e898c19864fa40befd2",
-  "kernel_report_sha256": "0b5f46a7655a7e64f1fb5d3906bfdb3f01c4b4d4f3611414dac1793c1b76a0b7",
-  "source_closure_sha256": "a874d0b582666303ea2627702ad240d40e9c78b5d269452fff1fb9d29efe6322",
-  "status": "current_integration_PASS"
+  "note": "Exact frozen import history, including superseded versions. Current source/compiled-source/object hashes are bound by this integration kernel report. Actual seed, selected geometry, D-only universal ordinary family, same-object final application and exact ultimate first pair are checked. Exactly four registered statements remain theorem parameters; extension and Cantor assertions are deferred.",
+  "audit_source_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
+  "kernel_report_sha256": "948b3ed1ecbfef71420be8d51077dcbf71ffc985de1f01610383473978fb2055",
+  "source_closure_sha256": "c362fdbda7c1ba550d45f0225e780b5d13a0d60f96851513b19fe24a5acbbe96",
+  "status": "first_pair_conditional_PROVED_current_integration_PASS"
 }

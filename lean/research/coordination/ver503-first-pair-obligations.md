@@ -1,6 +1,6 @@
 # ver503 first-pair obligation audit
 
-Source-interface review updated on 2026-10-10 in `ver503-integration`. This record describes the current source declarations, including the frozen universal ordinary-family producer imported from `61ee647c815f4f6d3cf5b9a0abd53bc479c3fd2b` and root's actual pair connection. Root's direct preflight is running; the combined current-source audit is pending. Neither the earlier PASS at source `96ff7f8` nor a peer's private certificate certifies the newly integrated ultimate theorem. Root remains the sole integration compiler and will bind the final PASS date and source after that audit.
+Source-interface review updated on 2026-10-10 in `ver503-integration`. Full combined current-source verification **PASS** at `07a29801e214f5525d69bd3fab37ea8029145626` on `2026-10-09T17:42:40.725023+00:00` (Audit: 197.993 seconds). This certificate includes the actual seed, complete selected geometry, universal D-only ordinary family, exact same-object pair application and ultimate theorem. The first-pair objective is **conditional-proved** under exactly four registered classical statements, with no original construction assumptions, admissions or custom axioms. Full-paper extension and Cantor-family scope remains deferred. Root was the sole integration compiler.
 
 ## Present ultimate theorem and exact assumptions
 
@@ -49,7 +49,7 @@ The concrete dependency chain retains the same objects:
 4. `FromIncomingAssembly` invokes the retained scalar family once at positive error budget `1`, keeping one final `H`. `ActualChoiceTerminal`, `ActualChoiceTurn`, `RebasedGradientCircle`, `TerminalJets`, `SourceClosure` and `GradientEnclosure` supply the terminal facts, increasing full-turn angle, actual circle and origin enclosures, source closure and nesting, and reversed gradient nesting for that final scalar. The retained source map has the actual boundary traces and positive annular Jacobian.
 5. The downstream witness/gradient-inverse application constructs the own final `H` gradient inverse. It does not reuse `E` as a gradient inverse. Thus the ordinary-family consumer receives the same final scalar, its own gradient chart, its genuine incoming germ and its full physical closed-band Hessian statement.
 
-The universal family obligation is now discharged in source for every `D` and positive `etaMax`; it is no longer an unfinished conditional assembly requirement. Current integrated certification remains subject to root's pending audit.
+The universal family obligation is now discharged in source for every `D` and positive `etaMax`; it is no longer an unfinished conditional assembly requirement. The universal producer is included in the current root PASS certificate.
 
 ## Literal ultimate conclusions and completed tuple
 
@@ -71,6 +71,6 @@ Downstream, `TorusMarkedCompletedPairConnection.lean` / `exists_completedSaddleT
 
 ## Certification boundary and deferred scope
 
-The current source contains the universal D-only producer, the actual seed-to-selected construction, the exact same-object pair projection and the ultimate four-statement conditional theorem. This source-interface review does not itself constitute a compiler certificate. Root's direct preflight is running and the combined audit is pending; root will record the final verified source and PASS date after completion. Earlier certificates apply only to their own snapshots.
+The current source contains the universal D-only producer, the actual seed-to-selected construction, the exact same-object pair projection and the ultimate four-statement conditional theorem. This source-interface review does not itself constitute a compiler certificate. Root direct preflight and combined audit both passed at the source/date recorded above. The published kernel certificate validates this current source closure; earlier certificates apply only to their own snapshots.
 
 The objective remains the global nonrigid-torus first pair. Extension applications and Cantor families are deferred.

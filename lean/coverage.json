@@ -5,8 +5,28 @@
   "target": "ver503",
   "primary_objective": {
     "statement": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
-    "status": "pending",
-    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
+    "status": "conditional-proved",
+    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+    "explicit_assumptions": [
+      {
+        "parameter": "background.positiveGaussTightness",
+        "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
+      },
+      {
+        "parameter": "background.coincidentEmbeddingFixedOpen",
+        "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
+      },
+      {
+        "parameter": "reparam",
+        "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+      },
+      {
+        "parameter": "axes",
+        "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
+      }
+    ],
+    "original_construction_assumptions": [],
+    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; all four statements remain assumptions",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
     "accepted_background": "TightVer401.ClassicalExternalResults",
@@ -886,7 +906,7 @@
     "authorization_date": "2026-10-09",
     "registry": "classical-external-results.json",
     "registry_sha256": "8d2a3f846c6f21da451412bfe98bd5293b2af9f9896902e012e2fb1548eb963c",
-    "conditional_final_pair_status": "pending",
+    "conditional_final_pair_status": "conditional-proved",
     "external_results_are_not_proved_claims": true
   },
   "additional_checked_scope": {
@@ -1636,13 +1656,30 @@
     "ver503-literal-normalized-bending-sign": [
       "TightVer401.completedSaddleTorusBandAffine_linear_apply",
       "TightVer401.completedSaddleTorusBendingField_source_eq_neg"
+    ],
+    "actual-premise-free-seed-and-complete-selected-source-core": [
+      "TightVer401.PositiveExitSinglePrefixGeometry",
+      "TightVer401.positiveExit_exists_single_prefix_source_geometry",
+      "TightVer401.actualSeed_exists_selected_single_prefix"
+    ],
+    "actual-D-only-universal-ordinary-family-and-completion": [
+      "TightVer401.visibleConnectorIncomingParametersChoice_nonempty",
+      "TightVer401.visibleConnectorOrdinaryFamily_exists_raw_from_incoming",
+      "TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming",
+      "TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming",
+      "TightVer401.visibleConnectorOrdinaryFamily_construction_statement",
+      "TightVer401.visibleConnectorOrdinaryFamily_dual_radial_completion"
+    ],
+    "actual-seed-pair-and-ultimate-under-four-exact-classical-parameters": [
+      "TightVer401.actualSeed_exists_markedTorus_pair_of_ordinary_connector_family",
+      "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
     ]
   },
   "limits": [
     "The principal-normal geometric characteristic equation, actual integrating factor and period-integral return with explicit flow through zero over a full compact circuit are proved. The full general ruled characteristic coefficients, actual geometry, constructed flow, uniqueness and projective return/two-jet proposition are proved.",
-    "Actual open-sphere support reconstruction and the global injective regular Gauss-image bridge are proved. The planar potential curvature, converse, local gradient inverse and gnomonic support reconstruction are proved; actual degree and full quadratic filling are proved; original exits/full visible connector and ultimate original completion/pair caller remain pending.",
+    "Actual open-sphere support reconstruction and the global injective regular Gauss-image bridge are proved. The planar potential curvature, converse, local gradient inverse and gnomonic support reconstruction are proved; actual degree and full quadratic filling are proved; the first-pair source constructions and exact classical theorem require current audited-name certification.",
     "None of the three principal existence theorems is yet proved.",
     "Declaration counts do not measure the percentage of the paper formalized.",
-    "Completed-saddle marked-pair connections are conditional on actual SAME completed scalar/geometry inputs and exact registered classical parameters; they do not discharge original exits/connector or ultimate existence."
+    "The first-pair theorem is conditional on exactly four registered classical statement parameters; their truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred."
   ]
 }
