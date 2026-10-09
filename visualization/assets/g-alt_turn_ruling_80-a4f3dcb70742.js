@@ -1,0 +1,1 @@
+window.ATLAS_GEOMETRY=window.ATLAS_GEOMETRY||{};window.ATLAS_GEOMETRY["alt_turn_ruling_80"]={"points":{"shape":[2,3],"data":"aNsjPg+Ji74rWGi9Tsoxv82V6z3YI609"}};

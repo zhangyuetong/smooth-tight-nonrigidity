@@ -1,0 +1,518 @@
+{
+  "generator_sha256": {
+    "alternative_bands.py": "1f527077effd0bb05add77e96379f1bae6a1ee3c3d2743f411bf12a119a0f25f",
+    "support_tools.py": "f73500c683fdbb6059d45dec915e5b22d3adf4d27471c6f270b48623edbae1e8"
+  },
+  "mechanism": "Same asymptotic Riccati equation as ver500; constant a gives exact zero period.",
+  "scope": "Alternative closed immersed bands only. Self-intersections are permitted; no support-chart injectivity or torus completion is asserted.",
+  "family": "beta(t)=R exp(i m t)+r exp(-i n t), n>m>0",
+  "bands": [
+    {
+      "key": "four",
+      "label": "Four-lobed broad band",
+      "m": 1,
+      "n": 3,
+      "R": 1.0,
+      "r": 0.687368000672168,
+      "spherical_period": 8.18880166342168,
+      "parameter_period": 6.283185307179586,
+      "a": 1.0,
+      "hmax": 0.43603855346676246,
+      "width_fraction": 0.65,
+      "minimum_width": 0.8720893064180859,
+      "maximum_width": 1.510090228456321,
+      "full_surface_span": [
+        4.472687181579941,
+        4.472687181579937,
+        1.4090806761573373
+      ],
+      "center_span": [
+        2.183321140941067,
+        2.183321140941067,
+        0.30850521040766166
+      ],
+      "minimum_leaf_denominator": 0.35,
+      "minimum_spherical_speed": 0.5414945069076447,
+      "kappa_min": -6.5158947322477,
+      "kappa_max": -0.5531192406576237,
+      "I0": 0.0,
+      "closure_sample": 1.5060513897550218e-15,
+      "independent_spatial_closure": 3.7607150493188764e-15,
+      "minimum_area_density": 0.08397050634577904,
+      "K_min": -1852.917762920668,
+      "K_max": -0.0001394438157577226,
+      "mesh": [
+        1801,
+        257
+      ],
+      "leaf_count": 21,
+      "return_integrations": [
+        {
+          "rtol": 2e-09,
+          "success": true,
+          "nfev": 3809,
+          "return_error": 6.486478021372477e-12,
+          "full_path_error": 2.362291473545497e-10,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-11,
+          "success": true,
+          "nfev": 4172,
+          "return_error": 7.0958794395892255e-12,
+          "full_path_error": 1.9130963480051832e-10,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-13,
+          "success": true,
+          "nfev": 5936,
+          "return_error": 7.610578833805448e-13,
+          "full_path_error": 8.066214363111612e-12,
+          "formula_return_error": 0.0
+        }
+      ],
+      "finite_difference_curvature": [
+        {
+          "dt": 5e-05,
+          "du": 5e-05,
+          "samples": 7953,
+          "maximum_K": -0.00018838673441915933,
+          "minimum_K": -1728.043405046448,
+          "maximum_asymptotic_normal_residual": 8.828230919935887e-07,
+          "maximum_relative_error": 5.207853512081403e-06,
+          "all_negative": true
+        },
+        {
+          "dt": 2e-05,
+          "du": 2e-05,
+          "samples": 7953,
+          "maximum_K": -0.00018838671884226593,
+          "minimum_K": -1728.0434739326488,
+          "maximum_asymptotic_normal_residual": 5.661084510713388e-06,
+          "maximum_relative_error": 3.413342975382933e-05,
+          "all_negative": true
+        }
+      ],
+      "turn_center": 4.68795437085677
+    },
+    {
+      "key": "three",
+      "label": "Three-lobed broad band",
+      "m": 1,
+      "n": 2,
+      "R": 1.6,
+      "r": 1.3502104696360129,
+      "spherical_period": 7.763904633795872,
+      "parameter_period": 6.283185307179586,
+      "a": 1.0,
+      "hmax": 0.4191606140370139,
+      "width_fraction": 0.65,
+      "minimum_width": 0.8383409524865224,
+      "maximum_width": 1.4516384901714763,
+      "full_surface_span": [
+        4.247587103945654,
+        3.8516791679295816,
+        1.6225550216298301
+      ],
+      "center_span": [
+        2.2421834229607183,
+        1.949165829077185,
+        0.3511925302203118
+      ],
+      "minimum_leaf_denominator": 0.35,
+      "minimum_spherical_speed": 0.3532557415795569,
+      "kappa_min": -6.40839465442034,
+      "kappa_max": -0.20552178676486957,
+      "I0": 0.0,
+      "closure_sample": 5.15720015226794e-15,
+      "independent_spatial_closure": 2.3635289916586993e-14,
+      "minimum_area_density": 0.05845739390394703,
+      "K_min": -1768.8116976460242,
+      "K_max": -0.00017006271087265738,
+      "mesh": [
+        1801,
+        257
+      ],
+      "leaf_count": 21,
+      "return_integrations": [
+        {
+          "rtol": 2e-09,
+          "success": true,
+          "nfev": 3809,
+          "return_error": 6.689093723366568e-13,
+          "full_path_error": 6.761613491335083e-11,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-11,
+          "success": true,
+          "nfev": 3848,
+          "return_error": 1.3438139490062895e-12,
+          "full_path_error": 6.315981071480792e-11,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-13,
+          "success": true,
+          "nfev": 5237,
+          "return_error": 2.476907567938724e-13,
+          "full_path_error": 7.493339282405032e-12,
+          "formula_return_error": 0.0
+        }
+      ],
+      "finite_difference_curvature": [
+        {
+          "dt": 5e-05,
+          "du": 5e-05,
+          "samples": 7953,
+          "maximum_K": -0.00022947682814619712,
+          "minimum_K": -1738.6965915647954,
+          "maximum_asymptotic_normal_residual": 5.292685670860496e-07,
+          "maximum_relative_error": 9.340821454056497e-06,
+          "all_negative": true
+        },
+        {
+          "dt": 2e-05,
+          "du": 2e-05,
+          "samples": 7953,
+          "maximum_K": -0.0002294764590963282,
+          "minimum_K": -1738.6967114185215,
+          "maximum_asymptotic_normal_residual": 3.843163163514535e-06,
+          "maximum_relative_error": 6.625829449232667e-05,
+          "all_negative": true
+        }
+      ],
+      "turn_center": 3.141592653589793
+    },
+    {
+      "key": "five",
+      "label": "Five-lobed broad band",
+      "m": 1,
+      "n": 4,
+      "R": 1.0,
+      "r": 0.6153695283651582,
+      "spherical_period": 9.676309455819295,
+      "parameter_period": 6.283185307179586,
+      "a": 1.0,
+      "hmax": 0.501731110582623,
+      "width_fraction": 0.65,
+      "minimum_width": 1.003464265024805,
+      "maximum_width": 1.7375969197666603,
+      "full_surface_span": [
+        4.410155080807853,
+        4.219463194981653,
+        1.9321984312512215
+      ],
+      "center_span": [
+        2.0899787044656577,
+        1.9935251682287582,
+        0.3390672446020142
+      ],
+      "minimum_leaf_denominator": 0.35,
+      "minimum_spherical_speed": 0.7692609432696831,
+      "kappa_min": -5.920335768121457,
+      "kappa_max": -0.7382772009721846,
+      "I0": 0.0,
+      "closure_sample": 9.388212955593874e-15,
+      "independent_spatial_closure": 1.458133982185186e-14,
+      "minimum_area_density": 0.1365838322317758,
+      "K_min": -1282.254571427848,
+      "K_max": -0.00011808124372174894,
+      "mesh": [
+        1801,
+        257
+      ],
+      "leaf_count": 21,
+      "return_integrations": [
+        {
+          "rtol": 2e-09,
+          "success": true,
+          "nfev": 4001,
+          "return_error": 3.9656267158960645e-10,
+          "full_path_error": 8.044973576204484e-09,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-11,
+          "success": true,
+          "nfev": 5456,
+          "return_error": 7.485645436844379e-11,
+          "full_path_error": 9.333965822477808e-10,
+          "formula_return_error": 0.0
+        },
+        {
+          "rtol": 2e-13,
+          "success": true,
+          "nfev": 8354,
+          "return_error": 6.078471059822732e-13,
+          "full_path_error": 1.1534329047435676e-11,
+          "formula_return_error": 0.0
+        }
+      ],
+      "finite_difference_curvature": [
+        {
+          "dt": 5e-05,
+          "du": 5e-05,
+          "samples": 7953,
+          "maximum_K": -0.00015993746405262358,
+          "minimum_K": -1275.6555376055774,
+          "maximum_asymptotic_normal_residual": 3.924401867963595e-07,
+          "maximum_relative_error": 1.8096883088628347e-05,
+          "all_negative": true
+        },
+        {
+          "dt": 2e-05,
+          "du": 2e-05,
+          "samples": 7953,
+          "maximum_K": -0.00015993671386118702,
+          "minimum_K": -1275.655584314335,
+          "maximum_asymptotic_normal_residual": 1.8932340383940801e-06,
+          "maximum_relative_error": 0.00013828288223356454,
+          "all_negative": true
+        }
+      ],
+      "turn_center": 3.141592653589793
+    }
+  ],
+  "width_trials": [
+    {
+      "band": "four",
+      "width_fraction": 0.35,
+      "minimum_leaf_denominator": 0.65,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 2.046696145896476e-13,
+      "full_path_error": 2.731537218636504e-12,
+      "maximum_width": 0.5351338810900438,
+      "K_max": -0.007725293811568752,
+      "minimum_area_density": 0.0841874455394199
+    },
+    {
+      "band": "four",
+      "width_fraction": 0.65,
+      "minimum_leaf_denominator": 0.35,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 6.073586078514381e-12,
+      "full_path_error": 6.427358645311188e-11,
+      "maximum_width": 1.510090228456321,
+      "K_max": -0.0001394438157577226,
+      "minimum_area_density": 0.08424653636075728
+    },
+    {
+      "band": "four",
+      "width_fraction": 0.85,
+      "minimum_leaf_denominator": 0.15000000000000002,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 6.895994886235712e-11,
+      "full_path_error": 1.5089440807969368e-10,
+      "maximum_width": 4.109580268293816,
+      "K_max": -2.172167220345782e-06,
+      "minimum_area_density": 0.08399117881116394
+    },
+    {
+      "band": "four",
+      "width_fraction": 0.95,
+      "minimum_leaf_denominator": 0.050000000000000044,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 3.2092462021182655e-10,
+      "full_path_error": 8.847873544937102e-10,
+      "maximum_width": 13.072556238056857,
+      "K_max": -1.9147145345408127e-08,
+      "minimum_area_density": 0.08497568875356891
+    },
+    {
+      "band": "four",
+      "width_fraction": 1.0,
+      "minimum_leaf_denominator": 0.0,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    },
+    {
+      "band": "four",
+      "width_fraction": 1.05,
+      "minimum_leaf_denominator": -0.050000000000000044,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    },
+    {
+      "band": "three",
+      "width_fraction": 0.35,
+      "minimum_leaf_denominator": 0.65,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 4.551914400963142e-14,
+      "full_path_error": 8.108513860349831e-13,
+      "maximum_width": 0.5144202144657631,
+      "K_max": -0.009031648951808887,
+      "minimum_area_density": 0.05871645225185315
+    },
+    {
+      "band": "three",
+      "width_fraction": 0.65,
+      "minimum_leaf_denominator": 0.35,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 3.2348568268503186e-12,
+      "full_path_error": 9.081579932512795e-11,
+      "maximum_width": 1.4516384901714763,
+      "K_max": -0.00017006271087265738,
+      "minimum_area_density": 0.05845739390394703
+    },
+    {
+      "band": "three",
+      "width_fraction": 0.85,
+      "minimum_leaf_denominator": 0.15000000000000002,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 1.3822942790397974e-11,
+      "full_path_error": 1.2639800317515437e-10,
+      "maximum_width": 3.9505089056849507,
+      "K_max": -2.6916612478995178e-06,
+      "minimum_area_density": 0.058482545126668506
+    },
+    {
+      "band": "three",
+      "width_fraction": 0.95,
+      "minimum_leaf_denominator": 0.050000000000000044,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 3.8060665730199617e-11,
+      "full_path_error": 5.399645175430123e-10,
+      "maximum_width": 12.566550953377892,
+      "K_max": -2.387849750532435e-08,
+      "minimum_area_density": 0.05851192285733469
+    },
+    {
+      "band": "three",
+      "width_fraction": 1.0,
+      "minimum_leaf_denominator": 0.0,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    },
+    {
+      "band": "three",
+      "width_fraction": 1.05,
+      "minimum_leaf_denominator": -0.050000000000000044,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    },
+    {
+      "band": "five",
+      "width_fraction": 0.35,
+      "minimum_leaf_denominator": 0.65,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 1.9574342147166135e-12,
+      "full_path_error": 1.2798928583634961e-11,
+      "maximum_width": 0.6157559104235565,
+      "K_max": -0.006776448036695243,
+      "minimum_area_density": 0.13719220821770028
+    },
+    {
+      "band": "five",
+      "width_fraction": 0.65,
+      "minimum_leaf_denominator": 0.35,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 5.791478407957129e-12,
+      "full_path_error": 1.2540812832639858e-10,
+      "maximum_width": 1.7375969197666603,
+      "K_max": -0.00011808124372174894,
+      "minimum_area_density": 0.13732195849439371
+    },
+    {
+      "band": "five",
+      "width_fraction": 0.85,
+      "minimum_leaf_denominator": 0.15000000000000002,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 1.7189361045666374e-11,
+      "full_path_error": 1.382778336278534e-10,
+      "maximum_width": 4.728720099739206,
+      "K_max": -1.8172099432799718e-06,
+      "minimum_area_density": 0.13666736560784018
+    },
+    {
+      "band": "five",
+      "width_fraction": 0.95,
+      "minimum_leaf_denominator": 0.050000000000000044,
+      "finite_closed_leaf_strip": true,
+      "explanation": "Uniformly finite closed leaves",
+      "return_error": 3.68869379485659e-11,
+      "full_path_error": 1.1013945311333373e-09,
+      "maximum_width": 15.0420372403469,
+      "K_max": -1.6006245238452516e-08,
+      "minimum_area_density": 0.13681972721981742
+    },
+    {
+      "band": "five",
+      "width_fraction": 1.0,
+      "minimum_leaf_denominator": 0.0,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    },
+    {
+      "band": "five",
+      "width_fraction": 1.05,
+      "minimum_leaf_denominator": -0.050000000000000044,
+      "finite_closed_leaf_strip": false,
+      "explanation": "A reciprocal denominator reaches zero; the raw ruled surface still remains immersed"
+    }
+  ],
+  "nonidentity_controls": [
+    {
+      "delta": 0.0,
+      "a_min": 1.0,
+      "I0": 0.0,
+      "sampled_center_closure": 1.5060513897550218e-15,
+      "central_multiplier": 1,
+      "return_error": 1.940114735532461e-14,
+      "exact_formula_error": 7.749079156127436e-13
+    },
+    {
+      "delta": 0.05,
+      "a_min": 0.95,
+      "I0": -0.5243237974725496,
+      "sampled_center_closure": 1.8524986345439254e-14,
+      "central_multiplier": 1,
+      "return_error": 0.031194221873888595,
+      "exact_formula_error": 1.096955859480886e-12
+    },
+    {
+      "delta": 0.15,
+      "a_min": 0.85,
+      "I0": -1.5899483634788472,
+      "sampled_center_closure": 4.301517462870079e-15,
+      "central_multiplier": 1,
+      "return_error": 0.13154818650463665,
+      "exact_formula_error": 3.6060598951337397e-12
+    },
+    {
+      "delta": 0.3,
+      "a_min": 0.7,
+      "I0": -3.302008302942611,
+      "sampled_center_closure": 8.482231477723121e-15,
+      "central_multiplier": 1,
+      "return_error": 0.7428984757238324,
+      "exact_formula_error": 1.2556733430812983e-10
+    }
+  ],
+  "extra_wide": {
+    "width_fraction": 0.85,
+    "minimum_leaf_denominator": 0.15,
+    "minimum_width": 1.1404358055908135,
+    "maximum_width": 4.109580268293816,
+    "return_check": {
+      "rtol": 2e-12,
+      "success": true,
+      "nfev": 6359,
+      "return_error": 5.576694661613146e-11,
+      "full_path_error": 3.228879386085737e-10,
+      "formula_return_error": 0.0
+    }
+  }
+}

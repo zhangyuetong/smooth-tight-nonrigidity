@@ -1,0 +1,1 @@
+window.ATLAS_GEOMETRY=window.ATLAS_GEOMETRY||{};window.ATLAS_GEOMETRY["wide_patch_ruling_600"]={"points":{"shape":[2,3],"data":"AAB6pqOQOL8AgG2mAADIpjP2KEEAAEim"}};

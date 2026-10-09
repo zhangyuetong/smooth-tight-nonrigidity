@@ -1,0 +1,479 @@
+{
+  "version": "ver500",
+  "source_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "seed": {
+    "N": 12,
+    "k": 1.1614320408980991,
+    "center": 4.12,
+    "width": 0.32,
+    "closing_center": 0.12118448224296566,
+    "slowdown": 0.6262161406742363,
+    "minimum": 0.4194660870216669,
+    "B0": 66.2955750532982,
+    "B": -2.976314451634032e-14,
+    "M": -1.4532785408369298e-17,
+    "relative_L1": 0.028504784413347722,
+    "closure": 7.772479649165994e-15,
+    "I0": -2.507544925501672e-12,
+    "ncell": 8192,
+    "outer_visibility": 0.06362527365861055,
+    "outer_radial": 0.0761789306194394,
+    "inner_visibility": 0.121222199034309,
+    "inner_radial": 0.20027777777777733,
+    "winding": 0.9999999999999986
+  },
+  "exits": {
+    "inner": {
+      "v0": 0.2,
+      "width": 1.2392243065526552e-05,
+      "epsilon": -1.0803146779348127e-05,
+      "requested_logmu": 0.05,
+      "actual_logmu": 0.0499999654717203,
+      "mean_base_logmu": -3.460565510456113e-08,
+      "minimum_mixed": 0.41917429746373175,
+      "curvature_square_integral": 9256.562189006387
+    },
+    "outer": {
+      "v0": 0.8,
+      "width": 1.2267578240433562e-05,
+      "epsilon": 1.072138516225984e-05,
+      "requested_logmu": -0.05,
+      "actual_logmu": -0.05000037401243977,
+      "mean_base_logmu": -3.7410583001654326e-07,
+      "minimum_mixed": 0.4182967244909339,
+      "curvature_square_integral": 9327.153020489204
+    },
+    "min_positive": 3.5773465078818246e-10,
+    "inverse_error": 2.94627755741752e-15
+  },
+  "fillers": {
+    "outer": {
+      "M": 40218403.35947971,
+      "radial_negative_margin": 40073153.71607221,
+      "tangential_positive_min": 8.192204368674304,
+      "max_det": -5271638738.232101,
+      "angular_nodes": 4096,
+      "radial_nodes": 321,
+      "seam_radial_min": 33.02500237043479,
+      "seam_tangential_min": 8.192204368674302
+    },
+    "inner": {
+      "M": 2050028.5561473297,
+      "radial_negative_margin": 2034527.4713973212,
+      "tangential_positive_min": 14.489484508168225,
+      "max_det": -46412494.61247679,
+      "angular_nodes": 4096,
+      "radial_nodes": 321,
+      "seam_radial_min": 18.377414830073242,
+      "seam_tangential_min": 14.489484508168227
+    }
+  },
+  "scope": "Numerical N=12 realization; connector/filling joins match first jets and require the paper relative smoothing. This is a piecewise same-data torus reconstruction, not a certified smooth tight-torus mesh.",
+  "core_exit_position_errors": [
+    1.1102230246251565e-16,
+    1.1102230246251565e-16
+  ],
+  "branch_display": {
+    "amplitude": 0.005854463915797144,
+    "maximum_displacement": 8e-06,
+    "scope": "Exact algebraic equal metric; display amplitude is not a global embedding certificate."
+  },
+  "return_integrations": [
+    {
+      "tolerance": 1e-09,
+      "success": true,
+      "return_error": 2.760382678186103e-10,
+      "path_error": 7.963225109701433e-10
+    },
+    {
+      "tolerance": 1e-11,
+      "success": true,
+      "return_error": 6.1920191738763786e-12,
+      "path_error": 5.059150971417625e-11
+    },
+    {
+      "tolerance": 1e-12,
+      "success": true,
+      "return_error": 9.575182985908925e-13,
+      "path_error": 1.5881454571570197e-11
+    }
+  ],
+  "filling_trials": [
+    {
+      "M_factor": 0,
+      "M": 0.0,
+      "max_frr": 145209.6899721133,
+      "min_T": -390604.9195973774,
+      "max_det": 746113702361.8668,
+      "passes": false
+    },
+    {
+      "M_factor": 0.0001,
+      "M": 4021.840335947971,
+      "max_frr": 141187.8496361653,
+      "min_T": -390551.6970971478,
+      "max_det": 722227192908.6335,
+      "passes": false
+    },
+    {
+      "M_factor": 0.001,
+      "M": 40218.403359479715,
+      "max_frr": 104991.28661263357,
+      "min_T": -390072.694595081,
+      "max_det": 508513845678.7526,
+      "passes": false
+    },
+    {
+      "M_factor": 0.01,
+      "M": 402184.03359479713,
+      "max_frr": -256974.34362268387,
+      "min_T": -385282.6695744125,
+      "max_det": 4732661037535.861,
+      "passes": false
+    },
+    {
+      "M_factor": 0.1,
+      "M": 4021840.3359479713,
+      "max_frr": -3876630.645975858,
+      "min_T": -337382.41936772823,
+      "max_det": 45146883236916.47,
+      "passes": false
+    },
+    {
+      "M_factor": 1.0,
+      "M": 40218403.35947971,
+      "max_frr": -40073193.66950759,
+      "min_T": 8.192209946645754,
+      "max_det": -5271642214.466806,
+      "passes": true
+    }
+  ],
+  "boundaries": [
+    {
+      "side": "outer",
+      "terminal_polar_min": 3557.3520916484767,
+      "terminal_radial_min": 33.02498322273905,
+      "outgoing_min_radius": 33.03263834721247,
+      "incoming_max_radius": 1.0847270255074133,
+      "terminal_crossings": 0,
+      "source_crossings": 0,
+      "gradient_crossings": 0
+    },
+    {
+      "side": "inner",
+      "terminal_polar_min": 478.2953049231663,
+      "terminal_radial_min": 18.377367938628677,
+      "outgoing_min_radius": 18.378510331881497,
+      "incoming_max_radius": 0.5981609162169357,
+      "terminal_crossings": 0,
+      "source_crossings": 0,
+      "gradient_crossings": 0
+    }
+  ],
+  "joins": {
+    "outer_dual_value": 0.0,
+    "outer_dual_gradient": 1.915589477564423e-08,
+    "inner_dual_value": 0.0,
+    "inner_dual_gradient": 7.574336924769858e-09,
+    "outer_band_connector_physical": 1.6653345369377348e-16,
+    "inner_band_connector_physical": 1.6653345369377348e-16
+  },
+  "neck": {
+    "A": 0.025,
+    "B": 2729564947326.053,
+    "C": -1357371.095844321,
+    "rj": 0.1,
+    "radial_derivative_negative_max": -40050435.96177776,
+    "radial_join_value_error": 0.0,
+    "radial_join_slope_error": 9.313225746154785e-10
+  },
+  "completion": {
+    "RN": 1640022.8449178638,
+    "mu": 2050028.5561473297,
+    "h": 2013380.2338114665,
+    "scale": 2013380.2338114665,
+    "asymmetric_bump": 40.916592742352016,
+    "sampled_normalized_rpp_max": -0.06064862831190064,
+    "core_to_height": 2.9701378951336175e-07,
+    "hole_to_boundary": 1.5243690097043775e-08,
+    "core_location": 0.6741752367731974
+  },
+  "seconds": 122.47738122940063,
+  "exit_offset_trials": [
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 0.001,
+      "minimum_positive": 4.510163869118498e-11,
+      "max_normalized_det": -0.9999999919281524,
+      "passes": true
+    },
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 0.01,
+      "minimum_positive": 4.494081562209568e-10,
+      "max_normalized_det": -0.9999999192798412,
+      "passes": true
+    },
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 0.1,
+      "minimum_positive": 4.378326432073082e-10,
+      "max_normalized_det": -0.9999991926301048,
+      "passes": true
+    },
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 0.4,
+      "minimum_positive": -6.380479966501158e-08,
+      "max_normalized_det": -0.9999967682769269,
+      "passes": false
+    },
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 0.8,
+      "minimum_positive": -3.0384194769368893e-07,
+      "max_normalized_det": -0.9999935305744236,
+      "passes": false
+    },
+    {
+      "side": "inner",
+      "offset_over_cutoff_width": 1.2,
+      "minimum_positive": -1.1833201554818723e-06,
+      "max_normalized_det": -0.9999934152773216,
+      "passes": false
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 0.001,
+      "minimum_positive": 4.363818830769508e-11,
+      "max_normalized_det": -0.9999998978069834,
+      "passes": true
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 0.01,
+      "minimum_positive": 4.379501258968525e-10,
+      "max_normalized_det": -0.9999989780391089,
+      "passes": true
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 0.1,
+      "minimum_positive": 9.288762554729501e-10,
+      "max_normalized_det": -0.9999897773191825,
+      "passes": true
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 0.4,
+      "minimum_positive": -5.6623386046538195e-08,
+      "max_normalized_det": -0.9999590682760364,
+      "passes": false
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 0.8,
+      "minimum_positive": -2.76760400194237e-07,
+      "max_normalized_det": -0.999918027017564,
+      "passes": false
+    },
+    {
+      "side": "outer",
+      "offset_over_cutoff_width": 1.2,
+      "minimum_positive": -6.610135887919277e-07,
+      "max_normalized_det": -0.9998574297454002,
+      "passes": false
+    }
+  ],
+  "connector_angle_trials": [
+    {
+      "side": "outer",
+      "eta": 0.001,
+      "minimum_polar": 93767.13169716978,
+      "maximum_length": 7888.656236275368,
+      "passes": true
+    },
+    {
+      "side": "outer",
+      "eta": 0.005,
+      "minimum_polar": 3557.3520916484767,
+      "maximum_length": 1575.7801772813837,
+      "passes": true
+    },
+    {
+      "side": "outer",
+      "eta": 0.02,
+      "minimum_polar": -183.50456709250145,
+      "maximum_length": 391.98918623507586,
+      "passes": false
+    },
+    {
+      "side": "outer",
+      "eta": 0.05,
+      "minimum_polar": -215.84915847731298,
+      "maximum_length": 154.98825446034922,
+      "passes": false
+    },
+    {
+      "side": "outer",
+      "eta": 0.1,
+      "minimum_polar": -195.4652293556602,
+      "maximum_length": 75.62275578752342,
+      "passes": false
+    },
+    {
+      "side": "inner",
+      "eta": 0.001,
+      "minimum_polar": 11679.069714317231,
+      "maximum_length": 1789.3104497201164,
+      "passes": true
+    },
+    {
+      "side": "inner",
+      "eta": 0.005,
+      "minimum_polar": 478.2953049231663,
+      "maximum_length": 356.8983833590374,
+      "passes": true
+    },
+    {
+      "side": "inner",
+      "eta": 0.02,
+      "minimum_polar": -24.362445333633428,
+      "maximum_length": 88.18105441491238,
+      "passes": false
+    },
+    {
+      "side": "inner",
+      "eta": 0.05,
+      "minimum_polar": -34.69269964720771,
+      "maximum_length": 34.16344422915816,
+      "passes": false
+    },
+    {
+      "side": "inner",
+      "eta": 0.1,
+      "minimum_polar": -19.196208534973675,
+      "maximum_length": 15.724567450811033,
+      "passes": false
+    }
+  ],
+  "width_trials": [
+    {
+      "h_max": 0.0008,
+      "min_denominator": 0.9167686149669099,
+      "source_boundary_crossings": 0,
+      "horizontal_boundary_crossings": 0,
+      "passes": true,
+      "scope": "Boundary polygon test only; not a full band embedding certificate."
+    },
+    {
+      "h_max": 0.004,
+      "min_denominator": 0.5838430748345493,
+      "source_boundary_crossings": 0,
+      "horizontal_boundary_crossings": 0,
+      "passes": true,
+      "scope": "Boundary polygon test only; not a full band embedding certificate."
+    },
+    {
+      "h_max": 0.0088,
+      "min_denominator": 0.08445476463600854,
+      "source_boundary_crossings": 0,
+      "horizontal_boundary_crossings": 0,
+      "passes": true,
+      "scope": "Boundary polygon test only; not a full band embedding certificate."
+    },
+    {
+      "h_max": 0.0092,
+      "min_denominator": 0.042839072119463584,
+      "source_boundary_crossings": 24,
+      "horizontal_boundary_crossings": 24,
+      "passes": false,
+      "scope": "Boundary polygon test only; not a full band embedding certificate."
+    },
+    {
+      "h_max": 0.0097,
+      "min_denominator": -0.009180543526217777,
+      "passes": false,
+      "pole": true
+    }
+  ],
+  "generator_sha256": {
+    "support_tools.py": "f73500c683fdbb6059d45dec915e5b22d3adf4d27471c6f270b48623edbae1e8",
+    "corrugated.py": "5e81d1b690bcd09c26b3f6a815ffde0f8f8c6c7262be20d0138feb294a0b5469",
+    "geometry.py": "f39bf0b78ab28917078d59f40a6c05cca374d8fde0a8e89935caa69bbcccc7ac",
+    "compute.py": "e46496976e628e452bdce4ad8508761dc32e1c3f91cb8899a522c572f5a4522e",
+    "stress.py": "781b432d672b0666987da8ad58f6d6702975a19758b7e903f2e71fa30be2e3dc",
+    "details.py": "a82b528fc262bffbb74fcd364279c7d95a0ab535241bc3f55b175328907604ca",
+    "refine.py": "8e8ab7320ba490dfd229d85daab9ada08ca5395a79440be86971fbb083423493",
+    "field_check.py": "ad1a94c8645df854b9cd2210ab86e1f2def36c3f73684f6ce85e80551e201ee8"
+  },
+  "local_views": {
+    "wide_patch_center": 6.1154061585045945,
+    "wide_patch_uniform_unit": 0.01,
+    "inner_connector_radius_limit": 0.9
+  },
+  "full_return_comparison": [
+    {
+      "speed": "Original closed seed speed",
+      "I0": 397.77345031978876,
+      "central_multiplier": 1,
+      "max_return_displacement": 8.396140485875244e-05,
+      "method": "Exact reciprocal return formula using the computed unbalanced period"
+    },
+    {
+      "speed": "Balanced retained speed",
+      "I0": -2.507544925501672e-12,
+      "central_multiplier": 1,
+      "max_return_displacement": 9.575182985908925e-13,
+      "method": "Independent original-u ODE integration"
+    }
+  ],
+  "supported_field_tests": {
+    "finite_difference_runs": [
+      {
+        "dt": 1e-05,
+        "dv": 0.001,
+        "maximum_relative_strain": 1.3146095603288735e-05,
+        "maximum_relative_endpoint_metric_difference": 1.5392668475219963e-07
+      },
+      {
+        "dt": 1e-06,
+        "dv": 0.0001,
+        "maximum_relative_strain": 1.4141356224564313e-07,
+        "maximum_relative_endpoint_metric_difference": 1.6558012851340964e-09
+      },
+      {
+        "dt": 1e-07,
+        "dv": 1e-05,
+        "maximum_relative_strain": 9.288984334445166e-07,
+        "maximum_relative_endpoint_metric_difference": 1.0876404845629439e-08
+      }
+    ],
+    "protected_position_change": 0.0,
+    "scope": "Independent finite-difference check of the analytic protected field; endpoint amplitude is not a global embedding certificate."
+  },
+  "mesh_refinement": {
+    "core_shape": [
+      3072,
+      161,
+      3
+    ],
+    "micro_shape": [
+      1201,
+      197,
+      3
+    ],
+    "wide_shape": [
+      4096,
+      193,
+      3
+    ],
+    "wide_sampling": "192 equal physical-length cells across each straight ruling",
+    "wide_max_cell_width_fraction": 0.005208333333333333,
+    "core_transverse_cells": 160,
+    "core_join_errors": [
+      1.1102230246251565e-16,
+      1.1102230246251565e-16
+    ]
+  }
+}

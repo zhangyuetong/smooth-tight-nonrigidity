@@ -1,0 +1,1 @@
+document.querySelector('.menu')?.addEventListener('click',()=>document.body.classList.toggle('menuopen'));document.querySelector('aside a.active')?.scrollIntoView({block:'nearest'});
