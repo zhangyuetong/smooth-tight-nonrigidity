@@ -1,0 +1,6 @@
+import TightVer401.PositiveExitConstructionSelectedSourceGeometryAnnularDescent
+#print axioms TightVer401.positiveExitSelected_angularDescentPotential_contDiffAt
+#print axioms TightVer401.positiveExitSelectedAnnularDescent_contDiffOn
+#print axioms TightVer401.positiveExitSelectedAnnularDescent_polar
+#print axioms TightVer401.positiveExitSelectedAnnularDescentDomain_closed_band
+

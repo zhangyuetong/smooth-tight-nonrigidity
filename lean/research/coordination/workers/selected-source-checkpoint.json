@@ -100,5 +100,43 @@
         "log_sha256": "e6376479c11daf4cc0d6ae3d9f68326218facec7b39af460eb3a6719c7dcd91b"
       }
     ]
+  },
+  "annular_descent_checkpoint": {
+    "result": "PASS",
+    "scope": "Four current-source leaves separately compiled; full closed 1-2 band retained. Raw-flow/Cartesian assembly and Jordan nesting remain pending.",
+    "sources": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryAnnularDescent",
+        "source_sha256": "f29238c4b405f1f9cb9e89caafea1b2170a4a7f08d38d21e6269ab454c6b09f2",
+        "compiled_source_sha256": "f29238c4b405f1f9cb9e89caafea1b2170a4a7f08d38d21e6269ab454c6b09f2",
+        "olean_sha256": "768b2b5734dbb169514bcbadb901b16624cd4c574aa769164c282d8b93ce1669",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build_report_sha256": "56cebaa9101f1956d73a56f4924ed4db16970a0ab4f5ed81392336b48fe85dd6"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryAnnularDescentAudit",
+        "source_sha256": "1b99dfcecac7bb192fa4e0d925dcad58feef3cbef02d2e8b709a685cb771f0ae",
+        "compiled_source_sha256": "1b99dfcecac7bb192fa4e0d925dcad58feef3cbef02d2e8b709a685cb771f0ae",
+        "olean_sha256": "4a3730628ccffe1d601be08afae35571114f115c0c26c259415499518326cc81",
+        "log_sha256": "5038a5f0e5b2edfba709e207980510845625d55d2e7427e15dd9cbed7119aaf7",
+        "build_report_sha256": "56cebaa9101f1956d73a56f4924ed4db16970a0ab4f5ed81392336b48fe85dd6"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryAnnularJacobian",
+        "source_sha256": "a28410018725c49bb477fcf7a185610baad57cb3dc88035c073269acf1213efb",
+        "compiled_source_sha256": "a28410018725c49bb477fcf7a185610baad57cb3dc88035c073269acf1213efb",
+        "olean_sha256": "22e99496afb6bccf1d690b7e2804f8ffd052fa13a17476e87b660a1c4e6fbb8e",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "build_report_sha256": "9ffbe203eedbe74dfbda8809648ee6a6901325c71fe7bfe7483e794bfcb855d9"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryAnnularJacobianAudit",
+        "source_sha256": "c45ca323760630a7a5c33e55a3628b33c50f13297f72556e4c5c2064a10972ce",
+        "compiled_source_sha256": "c45ca323760630a7a5c33e55a3628b33c50f13297f72556e4c5c2064a10972ce",
+        "olean_sha256": "388196a3eb554b932e3d2b989827d1f0bc1ce7abffc4f5f0274a059c8bebffb4",
+        "log_sha256": "93f5d11c2321c81596cf7902c77bdb3dc69dd95781837a07b629396a4367d4c3",
+        "build_report_sha256": "9ffbe203eedbe74dfbda8809648ee6a6901325c71fe7bfe7483e794bfcb855d9"
+      }
+    ]
   }
 }
