@@ -6,7 +6,7 @@ The first-pair construction remains **INCOMPLETE**. Neither the unconditional ex
 
 ## Current checked checkpoint
 
-A full current-source integration verification passed at 2026-10-09T15:48:10.523604+00:00 against source commit `1e5e39090916ee3697757c10b8271aed92f8f0e6` and the exact ver503 manuscript. [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to source, target, toolchain and dependency hashes. The certified closure has no admissions or custom axioms; the first-pair construction remains incomplete.
+A full combined current-source integration verification passed against source commit `edaf4bb` and the exact ver503 manuscript (Audit: 198.084 seconds). [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to source, target, toolchain and dependency hashes. The certified closure has no admissions or custom axioms; the first-pair construction remains incomplete.
 
 The retained original producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Checked downstream consumers produce the literal marked pair from actual completed support/saddle inputs, one chosen full meridian and explicit classical theorem parameters.
 
@@ -14,15 +14,17 @@ Newly validated frozen results derive canonical source/reversed-gradient order f
 
 This checked checkpoint adds full smoothing-carrier/boundary/side producers, actual source chart and boundary-separation producers, and connections retaining the final protected field and the final scalar's own gradient inverse. The integrated Gin seam jets, raw scalar and once-only full-domain smoothing application retain their actual hypotheses. [The exact first-pair obligation audit](research/coordination/ver503-first-pair-obligations.md) lists the absent ultimate theorem, named external statements and remaining inputs. These close interface mismatches; the original geometry and parameter-choice gates below remain open.
 
-Further checked producers now give the actual full-band signed Gauss area and projected orientation, positive initial-height flow derivative, uniform selected label tubes and protected flow placement, full closed physical-band identity, and eta-first actual Gin coefficient/lower-determinant bounds. Strict selected Jordan nesting and protected Jordan placement are still pending. [Session state](research/coordination/ver503-session-state.json) records the human-authorized 30-minute continuation backup and next handoffs.
+Further checked producers give actual full-band signed Gauss area and projected orientation, positive initial-height flow derivative, uniform selected label tubes and protected flow placement. The compatible literal Gin-family choice now produces one displacement satisfying coefficient signs, lower Delta, height and the entire negative-Gin-strip constraints, below supplied actual phase and terminal bounds. Rebased ordinary-family producers derive upper Delta, preserve the same terminal Jordan frontier, and construct the actual raw potential and full physical-band identity.
+
+The concrete smoothing application `visibleConnectorFinalSmoothing_exists_scalar_from_cartesian` now derives the literal old-height classifier, its exact zero seam, regular injective seam geometry, negative normal, compact boundaries and full-band carrier from the SAME raw source inverse. It returns one final scalar with full-domain negative Hessian and both genuine open boundary germs, retaining actual Gin/raw jets and domain hypotheses. Universal ordinary-family instantiation, actual terminal radial/tangent/full-turn-angle bounds before the one displacement choice, selected one-budget assembly and protected Jordan placement remain pending. [The exact first-pair obligation audit](research/coordination/ver503-first-pair-obligations.md) records these same-object obligations; [session state](research/coordination/ver503-session-state.json) records the continuation handoffs.
 
 ## Remaining original construction gates
 
 | Gate | Required producer | Final consumer |
 |---|---|---|
 | Selected source/core geometry | Actual strict nesting of selected graphs, protected support between them, original-potential open agreement | `exists_markedTorus_pair_of_negative_gradient_order` |
-| Compatible incoming rebase | SAME inverse; actual seam embedding/value/gradient matching; displaced terminal geometry; eta-first/rho-second common bounds | Final relative-smoothing application and ordinary data |
-| Final scalar H | Full fixed V, Gin/raw on actual side domains, both genuine open boundary germs, negative Hessian on entire required closed band | `VisibleConnectorWitnessAssemblyOrdinaryData` |
+| Compatible incoming rebase | Instantiate the SAME literal Gin family/inverse; actual terminal radial/tangent and increasing full-turn-angle bounds before one rho; consume the checked compatible choice | Final relative-smoothing application and ordinary data |
+| Final scalar H | Instantiate the SAME actual Gin/raw jets and side-domain Hessian facts; invoke the checked concrete smoothing producer once on full V and reconstruct H's own gradient inverse | `VisibleConnectorWitnessAssemblyOrdinaryData` |
 | Ordinary connector family | Actual universal ordinary data with F/O/terminal/boundary facts, using final H's own reconstructed gradient inverse | Completion/pair consumers, then ultimate first-pair theorem |
 
 No original first-pair construction gate is closed by importing an equivalent conditional wrapper. Full incoming open equality cannot be replaced by matching first jets. Native inverse e, Cartesian inverse E and the final H gradient inverse are distinct objects with required same-object identifications.
