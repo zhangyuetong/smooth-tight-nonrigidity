@@ -460,7 +460,7 @@ Choose the actual balanced-turn tolerance before one correction with min eta eta
 \subsection*{R.selected-patches-budget-application: Construct SAME potential and actual selected traces within a later geometric budget}
 Construct two actual Cartesian patches and one globally negative-Hessian Ge with actual global gradient embedding, preserving SAME corrected seed/clocks/protected Y. Only AFTER fixing these objects choose the two final graphs below a caller-selected positive geometric budget, retaining actual visibility, positive Jordan traces, full strip containment and ambient first jets. Ambient first jets are not already planar-source jet estimates. Original source/core/reverse-gradient order remains separate.
 \par Status: audited.
-\par Dependencies: R.same-corrected-seed-full-turn-application, R.central-tensor, R.band.
+\par Dependencies: R.same-corrected-seed-full-turn-application, R.central-tensor, R.band, R.final-seed-support-connection, R.final-margin-raw-leaf-connection.
 \par Lean target: \texttt{TightVer401.positiveExit\_exists\_two\_selected\_visible\_cartesian\_patches}.
 \subsection*{R.selected-homotopy-domain-application: Actual selected homotopy supplies whole closed source annulus domain}
 Build the literal inner-graph to clock to complete-flow to clock to outer-graph homotopy entirely in SAME original source domain. Reverse it for outer-minus-inner completion orientation; actual positive Jordan winding and seamComplexCoord transport prove whole CLOSED source annulus containment. No nesting, annular inverse or new domain grant is assumed. Source/core placement and target reverse order remain original obligations.
@@ -520,7 +520,7 @@ Normalize SAME actual terminal trace by its positive period and use existing win
 \subsection*{R.firstpair-selected-geometry: Original same-seed nested selected geometry for the first pair}
 Instantiate SAME corrected seed/Ge/final Y and final graphs ONCE below a proved geometric tolerance. Construct actual source strict Jordan nesting and hCore : c0 '' tsupport Y ⊆ seamComplexCoord '' ((HpPlus '' ball 0 1) \textbackslash{} closure (HpMinus '' ball 0 1)). Retain original G0 equality on open O containing that support, SAME e0/Ge selected trace/homotopy, both gradient origin enclosures and actual visibility/pairing. Signed gradient degree derives reverse target order but does not prove source/core placement. This ORIGINAL selected geometry/hCore producer remains PENDING.
 \par Status: pending.
-\par Dependencies: R.selected-patches-budget-application, R.selected-homotopy-domain-application, R.actual-flow-protected-neighborhood-application, R.degree.
+\par Dependencies: R.selected-patches-budget-application, R.selected-homotopy-domain-application, R.actual-flow-protected-neighborhood-application, R.degree, R.final-seed-support-connection, R.final-selected-gradient-cartesian-connection.
 \par Lean target: \texttt{TightVer401.exists\_same\_seed\_nested\_selected\_exit\_geometry}.
 \subsection*{R.round-source-order-application: Derive strict source order on the fixed round annulus}
 From the SAME smooth Cartesian map F on open O containing the ENTIRE closed round 1-to-2 band, positive actual Jacobian including its boundaries, exact positive Jordan boundary traces, disjoint boundary ranges and a common enclosed point, derive incoming-inside-terminal strict Jordan nesting. The round specialization derives round1<round2 internally; no desired source nesting or global inverse is an input.
@@ -530,12 +530,12 @@ From the SAME smooth Cartesian map F on open O containing the ENTIRE closed roun
 \subsection*{R.retained-source-order-application: Retain original incoming and terminal source nesting}
 Apply actual signed source order to SAME F/O/D/T and caller-selected Ho/Hi. The retained export uses the incoming and terminal origin-enclosure facts and constructs OrdinaryData.source\_nesting. It does not construct F, closed-round coverage, its positive Jacobian, honest boundary equations or source range separation, and does not prove protected core placement hCore.
 \par Status: audited.
-\par Dependencies: R.round-source-order-application.
+\par Dependencies: R.round-source-order-application, R.ordinary-source-chart-fields-application, R.ordinary-source-boundary-separation-application.
 \par Lean target: \texttt{TightVer401.visibleConnectorSourceOrder\_retained\_incoming\_terminal}.
 \subsection*{R.retained-gradient-order-application: Derive ordinary final-gradient nesting from the full incoming open germ}
 Retain SAME final G/U, original D.incoming, terminal T and ALL FOUR caller-selected positive Jordan fills. Source nesting, closure of the entire source band in U, smoothness, actual negative Hessian, open N containing the whole incoming curve with EqOn G Gin N, and gradient boundary disjointness imply terminal-gradient-inside-incoming-gradient strict nesting. The full open germ derives the incoming final-gradient equality; first jets alone do not suffice. No desired target order or gradient inverse is assumed.
 \par Status: audited.
-\par Dependencies: R.negative-gradient-order-application, R.retained-source-order-application.
+\par Dependencies: R.negative-gradient-order-application, R.retained-source-order-application, R.ordinary-gradient-boundary-separation-application.
 \par Lean target: \texttt{TightVer401.visibleConnectorGradientOrder\_retained\_incoming\_terminal}.
 \subsection*{R.displaced-seam-rebase-application: Rebase the SAME old ruling and scalar with literal source height gradient identities}
 For the SAME phase a, old height b and scale d, transport the ruling through old parameters (a(s),b(s)+u*d(s)). Retain literal source and scalar equalities, smoothness, determinant factors a\_prime*d, positive pairing and actual gradient identity. Original Delta nonzero and required a\_prime/d nonzero remain real hypotheses. This algebraic application supplies no original curve/scalar identification, full Gin equality germ or compatible displacement choice.
@@ -550,19 +550,99 @@ For the SAME CompletedSaddleAnnulusGeometryOutput Q and original field Y, the no
 \subsection*{R.compatible-displacement-production: Construct one compatible eta/rho family with native e and Cartesian E distinguished}
 Choose eta before eta-dependent pc/w0, then choose rho only after intersecting ALL same-e carrier, coefficient, smallness and terminal C1/Jordan/nonzero/norm bounds. Retain the strengthened central source and phase/height fields of ONE native e; construct the actual displaced seam embedding and identify the SAME original curve/scalar. Cartesian E is a distinct source inverse with explicit retained identities. This is an ORIGINAL PENDING producer, not a premise granted by frozen sign/rebase lemmas.
 \par Status: pending.
-\par Dependencies: R.actual-incoming-collar-application, R.displaced-seam-rebase-application, R.actual-terminal-geometry-application, R.actual-terminal-filling-enclosure-application.
+\par Dependencies: R.actual-incoming-collar-application, R.displaced-seam-rebase-application, R.actual-terminal-geometry-application, R.actual-terminal-filling-enclosure-application, R.incoming-displaced-seam-embedding-application, R.incoming-terminal-margins-production-application, R.incoming-terminal-literal-rebase-application.
 \subsection*{R.full-incoming-gin-production: Prove the full Gin open germ for the SAME incoming seam}
 On an actual open neighborhood containing the ENTIRE original incoming curve, establish literal scalar equality with Gin and actual gradient matching using the SAME rebased source/scalar and inverse. Construct GinU and Vraw on their full required sides; Vraw is contained in SAME E.target. The pending IncomingGin sources are uncompiled snapshots outside the certified closure and grant no completion credit.
 \par Status: pending.
-\par Dependencies: R.compatible-displacement-production, R.displaced-seam-rebase-application.
+\par Dependencies: R.compatible-displacement-production, R.displaced-seam-rebase-application, R.incoming-local-seam-jets-application, R.incoming-cartesian-seam-matching-application.
 \subsection*{R.final-smoothed-h-production: Construct final H once on the full fixed smoothing domain}
-Retain full fixed V, Gin on GinU and raw scalar on Vraw with both seam and FULL side portions in their domains; Vraw remains a subset of SAME E.target. Apply relative on\_sides smoothing EXACTLY ONCE, with actual matching values/gradients, strict Hessian signs and true boundary neighborhoods outside modification N. Produce final H/U, open Gin and raw-terminal equality neighborhoods and negative Hessian on the ENTIRE closed source band. Do not silently shrink V or reuse the raw scalar gradient inverse as final H inverse.
+Instantiate every original primitive seam/domain/sign/matching/closed-band input of visibleConnectorFinalSmoothing\_exists\_full\_scalar for SAME native e, Cartesian E and compatible eta/rho. The checked source-bound producer calls relative on\_sides ONCE and returns final H on the ENTIRE fixed carrier V, both true open Gin/raw-terminal equality neighborhoods and negative Hessian throughout V. The Germs export derives actual final-H gradient/Hessian equality on those neighborhoods. Producing the full Gin nonpositive strip, seam zero-set and negative normal derivative, actual seam regular embedding and raw branch Hessian/domain facts remains ORIGINAL PENDING work. Final H uses its own rebuilt gradient inverse; a raw scalar inverse cannot replace it.
 \par Status: pending.
-\par Dependencies: R.full-incoming-gin-production, R.smoothing, R.actual-cartesian-connector-source-application.
+\par Dependencies: R.full-incoming-gin-production, R.smoothing, R.actual-cartesian-connector-source-application, R.final-smoothing-carrier-application, R.final-smoothing-side-application, R.final-smoothing-boundary-application, R.final-smoothing-full-scalar-application, R.final-smoothing-open-derivatives-application.
 \subsection*{R.ordinary-connector-family-production: Populate the actual universal OrdinaryData family}
 For EVERY actual Gin/Uin/R and D : VisibleConnectorIncomingData Gin Uin 1 R and EVERY positive etaMax, construct Nonempty (VisibleConnectorWitnessAssemblyOrdinaryData D etaMax). Retain SAME final H/U/F/O/D/T, honest full incoming open germ, terminal circle/radial facts and four fills. Derive source and reversed-gradient nesting with the retained signed-order exports. The final H gradient inverse is rebuilt by the canonical ordinary-data consumer. No data inhabitant or universal family is granted.
 \par Status: pending.
-\par Dependencies: R.final-smoothed-h-production, R.retained-source-order-application, R.retained-gradient-order-application, R.actual-terminal-filling-enclosure-application.
+\par Dependencies: R.final-smoothed-h-production, R.retained-source-order-application, R.retained-gradient-order-application, R.actual-terminal-filling-enclosure-application, R.ordinary-source-chart-fields-application, R.ordinary-gradient-boundary-separation-application, R.ordinary-source-boundary-separation-application, R.final-smoothing-open-derivatives-application.
+\subsection*{R.final-smoothing-carrier-application: Keep the ENTIRE rebased closed band in the SAME full smoothing carrier}
+Construct the explicit full carrier Vraw intersect (GinU union positive inverse-height). Its openness follows from actual continuity on Vraw; retain Vraw subset SAME Cartesian E.target. Literal inverse height b(s)+u*d(s), positive SAME d, whole old raw-strip containment and the ENTIRE old nonpositive strip in GinU imply closed rebased u in [0,1] band coverage, including both boundaries. Physical closed-band identification remains a real independent input. No seam-collar shrink or new inverse is introduced.
+\par Status: audited.
+\par Dependencies: R.displaced-seam-rebase-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorFinalSmoothingCarrier\_closed\_rebased\_band}.
+\subsection*{R.final-smoothing-side-application: Derive the actual canonical side classifier from the inverse height}
+For SAME smooth periodic seam gamma, actual inverse height B smooth on open V, seam inclusion and zero seam height, an actual STRICT NEGATIVE B normal derivative yields ONE uniform normal-coordinate radius, full carrier inclusion and B<0 iff positive normal parameter. A continuous sublevel has frontier only at B=0. Actual seam embedding, normal derivative and original scalar/gradient matching are still producer obligations; this conditional derivative application does not produce final H.
+\par Status: audited.
+\par Dependencies: R.actual-incoming-collar-application, R.displaced-seam-rebase-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorFinalSmoothing\_exists\_canonical\_side\_threshold}.
+\subsection*{R.final-smoothing-boundary-application: Protect BOTH boundary sets and derive true open H equality neighborhoods}
+For the SAME full fixed V, compact zero-height seam C, negative-height incoming K and positive-height terminal T, choose open modification N with closure in V minus BOTH boundaries. Given relative on\_sides outside-germ equality, construct explicit open neighborhoods of ENTIRE K/T within V intersect GinU/Vraw and prove literal EqOn H Gin and EqOn H raw respectively. The helper uses real open equality germs rather than inferring equality from first jets. Actual branch domains, signs and the single relative smoothing call remain original inputs.
+\par Status: audited.
+\par Dependencies: R.final-smoothing-carrier-application, R.final-smoothing-side-application, R.smoothing.
+\par Lean target: \texttt{TightVer401.visibleConnectorFinalSmoothing\_exists\_modification}.
+\subsection*{R.ordinary-source-chart-fields-application: Produce ordinary Cartesian source fields from two actual endpoint signs}
+For SAME smooth periodic p/w/h with h>0, actual negative source determinant at BOTH endpoints yields positive Delta throughout the ENTIRE closed strip. Construct F as the literal Cartesian descent on the punctured plane O, with full closed round1-to-round2 coverage, positive actual Jacobian and exact incoming/terminal physical traces p and p+h*w. Rebased endpoint signs and whole-strip positivity follow from SAME a/b/d with actual a\_prime>0,d>0 and old Delta positive at BOTH (a,b) and (a,b+d). Lower negative b is permitted; its positivity fact remains real work. No terminal curve, inverse or family is independently selected.
+\par Status: audited.
+\par Dependencies: R.displaced-seam-rebase-application, R.actual-cartesian-connector-source-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorOrdinaryFamilySourceChart\_fields}.
+\subsection*{R.ordinary-gradient-boundary-separation-application: Derive terminal/incoming gradient separation from visibility and the literal radius}
+For SAME D : VisibleConnectorIncomingData, incoming visibility implies radius strictly greater than R and constructs ONE uniform positive margin from its physical period. Every SAME radius-R terminal gradient is therefore disjoint from the incoming gradient. No terminal inverse, reversed nesting, eta choice or final scalar construction is assumed; actual terminal circle equality remains the supplied geometric fact.
+\par Status: audited.
+\par Dependencies: R.actual-terminal-geometry-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorOrdinaryFamily\_gradient\_boundaries\_disjoint}.
+\subsection*{R.ordinary-source-boundary-separation-application: Separate source boundaries by evaluating the SAME final gradient}
+Retain SAME final G/U/D/T and FULL open incoming N containing range D.incoming.p with EqOn G Gin N. The actual radius-R terminal gradient and incoming visibility yield gradient boundary disjointness; evaluating THIS SAME final gradient proves incoming/terminal source boundaries disjoint. No source inverse, source nesting or global gradient injectivity is an input. The companion full-turn circle export retains SAME theta period shift and literal terminal circle. Original final H/open Gin construction remains required.
+\par Status: audited.
+\par Dependencies: R.ordinary-gradient-boundary-separation-application, R.final-smoothing-boundary-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorOrdinaryFamily\_source\_boundaries\_disjoint}.
+\subsection*{R.final-seed-support-connection: Connect FINAL margin-selected Y to the SAME original scalar and native chart}
+Extract the actual native c0 for SAME G from IdentityBandCentralSupportWithPotential, then transfer the FINAL Y selected AFTER the common visible/turn margin. Retain SAME d/hb/hinside, exact c0 forward Gauss coordinates, full source, smooth inverse, original support reconstruction, strict Hessian and gradient embedding. C is LITERALLY c0 image tsupport Y, compact/nonempty and inside the SAME complete-flow image. The old support-package field is discarded, with no new Y, corrected seed, clock, potential or selected exit choice. Consumers: actual two-selected-patches producer and final hCore connection.
+\par Status: audited.
+\par Dependencies: R.same-corrected-seed-full-turn-application, R.core-support.
+\par Lean target: \texttt{TightVer401.positiveExit\_final\_seed\_support\_connection}.
+\subsection*{R.final-selected-gradient-cartesian-connection: Flatten the ALREADY CHOSEN final selected-gradient inverse without reselection}
+Lift SAME subtype chart h : OpenPartialHomeomorph U Coord through its actual open inclusion. The resulting Cartesian e0 has source exactly U, target exactly h.target, literal forward planarGradient Ge and inverse literally subtype-erased h.symm. Smoothness on full source and inverse on original target are retained. No new inversion, degree argument, final scalar Ge, clock or selected geometry is constructed. This is the exact selected-patch inverse interface for exists\_markedTorus\_pair\_of\_negative\_gradient\_order; final smoothed connector H still requires its own distinct gradient inverse.
+\par Status: audited.
+\par Dependencies: R.selected-patches-budget-application.
+\par Lean target: \texttt{TightVer401.positiveExit\_final\_gradient\_cartesian\_connection}.
+\subsection*{R.final-smoothing-full-scalar-application: Construct ONE final scalar on the full carrier from actual primitive seam and branch facts}
+The exact export constructs N and H on V = visibleConnectorFinalSmoothingCarrier Vraw GinU B, retains V subset SAME Cartesian E.target, smooth H and negative Hessian throughout V and supplied closed C, BOTH explicit true open incoming/terminal equality neighborhoods, outside piecewise germs and arbitrary actual C1 error. It calls relative on\_sides smoothing ONCE. Inputs are actual periodic regular embedded seam, smooth B/Gin/raw on full domains with negative Hessians, seam inclusion/zero and zero-set identification, actual negative B normal derivative, literal value/gradient matching, compact boundary sets with strict height signs and full closed-band containment. These original primitive inputs are still to instantiate; H gradient inverse remains subsequent and distinct. Frozen source provenance fb6dab8 grants no current-audit status.
+\par Status: pending.
+\par Dependencies: R.final-smoothing-carrier-application, R.final-smoothing-side-application, R.final-smoothing-boundary-application, R.smoothing, R.incoming-cartesian-seam-matching-application, R.incoming-displaced-seam-embedding-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorFinalSmoothing\_exists\_full\_scalar}.
+\subsection*{R.final-smoothing-open-derivatives-application: Recover actual final-H gradient and Hessian on true open equality domains}
+Given literal EqOn H f on SAME open O, derive EqOn of actual planar gradients AND Hessians on O using true neighborhood germ equality. Apply to the exact open Gin/raw-terminal neighborhoods of ONE full-carrier H; this cannot be inferred from first jets alone, and it produces no new scalar or inverse. Frozen source provenance fb6dab8 remains pending until current root import/audit.
+\par Status: pending.
+\par Dependencies: R.final-smoothing-full-scalar-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorFinalSmoothing\_open\_equality\_derivatives}.
+\subsection*{R.incoming-local-seam-jets-application: Derive actual Gin trace derivative and construct a LOCAL matched raw scalar}
+For SAME smooth Gin on actual open U, smooth p/w with whole p in U and nonzero source determinant at a supplied seam parameter, derive the scalar trace chain rule and construct local Cartesian E/raw with SAME forward source, smooth inverse, literal raw ruling-height and gradient equations on E.source, and scalar/gradient equality at zero-height seam points there. This is LOCAL matched-jet construction, not the universal full Gin open germ, global Cartesian E or final H. Frozen source provenance 4acaef7 supplies no current-audit credit.
+\par Status: pending.
+\par Dependencies: R.displaced-seam-rebase-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorIncomingSeam\_exists\_local\_matched\_potential}.
+\subsection*{R.incoming-cartesian-seam-matching-application: Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO}
+For SAME Gin/p/w/a/b/d and already retained Cartesian E with literal descended rebased source, actual periodic/shift facts, old lower Delta nonzero, nonzero a\_prime/d, full open physical V mapping into E.source, positive physical radius and nonzero rebased Delta, require the ACTUAL seam coordinate (s,-b(s)/d(s)) in V. The literal raw scalar then equals Gin and has its exact planarGradient at p(a(s)). This discharges smoothing hValue/hGradient from ordinary facts, rather than assumes the matches. It neither identifies native e with Cartesian E nor produces full open Gin equality. Frozen source provenance 4acaef7 remains separate from current root audit.
+\par Status: pending.
+\par Dependencies: R.incoming-local-seam-jets-application, R.displaced-seam-rebase-application, R.actual-cartesian-connector-source-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorIncomingRebase\_cartesian\_seam\_matches}.
+\subsection*{R.incoming-displaced-seam-embedding-application: Derive closed embedding of the displaced central slice from SAME native e}
+Retain ONE actual native e and its exact visibleConnectorDisplacedNativePsi forward equation. Once ALL (rho,(q,0)) source memberships are supplied, injectivity of THIS inverse and smooth periodic p/w0 prove the actual displaced seam q maps to p(q)+rho*w0(q) is a closed embedding. No seam injectivity package, replacement inverse or independently chosen rho enters the proof. Producing one rho satisfying the full source slice and every other compatible bound remains original work. Frozen source provenance 4acaef7 does not certify root imports.
+\par Status: pending.
+\par Dependencies: R.actual-incoming-collar-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorIncomingSeam\_displaced\_isClosedEmbedding}.
+\subsection*{R.incoming-terminal-margins-production-application: Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds}
+From original smooth periodic ruling, actual positive radius, phase shift and positive phase/pairings/decomposition, choose ONE eta threshold BEFORE the eta-dependent inverse; construct the SAME terminal positive trace/filling, origin enclosure, strict norm escape at ALL physical phases, strict enclosed incoming filled disk and enclosed closed norm ball. Compact strict separation produces an explicit C0 perturbation budget. AFTER eta is fixed, actual joint value and phase-derivative continuity at rho=0 plus genuine baseline terminal norm/determinant yield ONE rho threshold retaining norm and positive polar determinant. These are substantive threshold/filling producers; original decomposition, derivative continuity and compatibility with SAME e/carriers/coefficient bounds still need instantiation. Frozen source provenance 4acaef7 alone supplies no root validation.
+\par Status: pending.
+\par Dependencies: R.actual-terminal-geometry-application, R.actual-terminal-filling-enclosure-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorIncomingTerminal\_exists\_escape\_and\_filling}.
+\subsection*{R.incoming-terminal-literal-rebase-application: Transport the exact old terminal through SAME a and d=tc(a)-b}
+The rebased u=1 source is LITERALLY the old terminal composed with SAME phase a; its actual derivative is multiplied by a\_prime. Retain d(s)=tc(a(s))-b(s), old terminal smoothness, actual a\_prime>0 and original full-phase norm/positive determinant. These ordinary facts imply the SAME rebased terminal norm and determinant without a second C1 approximation or a separately selected curve. This does not select eta/rho or prove all remaining endpoint Delta/carrier facts. Frozen source provenance 4acaef7 receives only current-audit bound credit.
+\par Status: pending.
+\par Dependencies: R.displaced-seam-rebase-application, R.incoming-terminal-margins-production-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorIncomingTerminal\_rebase\_geometry}.
+\subsection*{R.final-margin-raw-leaf-connection: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin}
+For SAME corrected frame d, fixed original G, period balance hb, final flow margin/containment hinside and final visible-turn output, prove literal central-to-raw coordinate equality and equality of the TWO complex-coordinate conventions. Reorder exactly the retained nonzero, turn and visibility conclusions into selected-patch hmargin. No leaf, final Y, clock, scalar or inverse is chosen. This root source is an adapter whose interface status remains pending until its exact exports occur in CURRENT audit; writing or freezing it alone supplies no certification.
+\par Status: pending.
+\par Dependencies: R.same-corrected-seed-full-turn-application, R.final-seed-support-connection.
+\par Lean target: \texttt{TightVer401.positiveExit\_final\_margin\_selected\_raw\_leaves}.
 \section*{Deferred scope}
 Complete cylinders, linking applications, general ruled extensions, Cantor families and quotient topology are deferred. Support completion and tightness remain required for the torus pair.
 \end{document}

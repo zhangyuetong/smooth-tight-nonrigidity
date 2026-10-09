@@ -1,4 +1,4 @@
-# Current ver503 formalization
+A full current-source integration verification passed at 2026-10-09T15:05:39.325460+00:00 against source commit `50903ad02bfc9ad0e4a880dec95ec4c043f319ab` and the exact ver503 manuscript. [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to source, target, toolchain and dependency hashes. The certified closure has no admissions or custom axioms; the first-pair construction remains incomplete.
 
 Active proof engine: `/lean`; manuscript target: [`paper/paper.tex`](../paper/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
 
@@ -11,6 +11,8 @@ A fresh full integration verification passed on 2026-10-09 at 14:30:39 UTC again
 The retained original producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Checked downstream consumers produce the literal marked pair from actual completed support/saddle inputs, one chosen full meridian and explicit classical theorem parameters.
 
 Newly validated frozen results derive canonical source/reversed-gradient order from honest signed-degree premises, retain central fields for the SAME chosen displaced inverse, and rebase source/scalar/gradient simultaneously. The ver503 bridge proves the fixed affine normalization acts on vectors by negation and the transported field is exactly `-Y` on the SAME source chart; the existing extension is zero outside. These are useful checked exports, not completed original connector inputs.
+
+The next checked checkpoint adds full smoothing-carrier/boundary/side producers, actual source chart and boundary-separation producers, and connections retaining the final protected field and the final scalar's own gradient inverse. These close interface mismatches; the original geometry and parameter-choice gates below remain open.
 
 ## Remaining original construction gates
 

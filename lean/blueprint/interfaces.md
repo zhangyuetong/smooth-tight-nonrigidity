@@ -59,6 +59,22 @@ General height/component topology, native intrinsic-distance instance packaging,
 
 These interface statuses come from the current local audit. An audited conditional consumer proves its stated implication and does not construct the pending source/core or universal ordinary-family inputs.
 
+- `R.final-margin-raw-leaf-connection`: pending — Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin.
+- `R.incoming-local-seam-jets-application`: pending — Derive actual Gin trace derivative and construct a LOCAL matched raw scalar.
+- `R.incoming-cartesian-seam-matching-application`: pending — Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO.
+- `R.incoming-displaced-seam-embedding-application`: pending — Derive closed embedding of the displaced central slice from SAME native e.
+- `R.incoming-terminal-margins-production-application`: pending — Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds.
+- `R.incoming-terminal-literal-rebase-application`: pending — Transport the exact old terminal through SAME a and d=tc(a)-b.
+- `R.final-smoothing-full-scalar-application`: pending — Construct ONE final scalar on the full carrier from actual primitive seam and branch facts.
+- `R.final-smoothing-open-derivatives-application`: pending — Recover actual final-H gradient and Hessian on true open equality domains.
+- `R.final-seed-support-connection`: audited — Connect FINAL margin-selected Y to the SAME original scalar and native chart.
+- `R.final-selected-gradient-cartesian-connection`: audited — Flatten the ALREADY CHOSEN final selected-gradient inverse without reselection.
+- `R.final-smoothing-carrier-application`: audited — Keep the ENTIRE rebased closed band in the SAME full smoothing carrier.
+- `R.final-smoothing-side-application`: audited — Derive the actual canonical side classifier from the inverse height.
+- `R.final-smoothing-boundary-application`: audited — Protect BOTH boundary sets and derive true open H equality neighborhoods.
+- `R.ordinary-source-chart-fields-application`: audited — Produce ordinary Cartesian source fields from two actual endpoint signs.
+- `R.ordinary-gradient-boundary-separation-application`: audited — Derive terminal/incoming gradient separation from visibility and the literal radius.
+- `R.ordinary-source-boundary-separation-application`: audited — Separate source boundaries by evaluating the SAME final gradient.
 - `R.retained-source-order-application`: audited — Retain original incoming and terminal source nesting.
 - `R.retained-gradient-order-application`: audited — Derive ordinary final-gradient nesting from the full incoming open germ.
 - `R.actual-incoming-collar-application`: audited — Actual incoming two-sided source collar and displaced inverse.
@@ -5670,7 +5686,7 @@ Construct two actual Cartesian patches and one globally negative-Hessian Ge with
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.same-corrected-seed-full-turn-application`, `R.central-tensor`, `R.band`.
+Dependencies: `R.same-corrected-seed-full-turn-application`, `R.central-tensor`, `R.band`, `R.final-seed-support-connection`, `R.final-margin-raw-leaf-connection`.
 
 Lean target: `TightVer401.positiveExit_exists_two_selected_visible_cartesian_patches`; source: `TightVer401/PositiveExitConstructionSelectedPatches.lean`.
 
@@ -6962,7 +6978,7 @@ Instantiate SAME corrected seed/Ge/final Y and final graphs ONCE below a proved 
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`.
+Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`, `R.final-seed-support-connection`, `R.final-selected-gradient-cartesian-connection`.
 
 Lean target: `TightVer401.exists_same_seed_nested_selected_exit_geometry`; source: `TightVer401/PositiveExitConstructionSelectedGeometryApplication.lean`.
 
@@ -7010,7 +7026,7 @@ Apply actual signed source order to SAME F/O/D/T and caller-selected Ho/Hi. The 
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.round-source-order-application`.
+Dependencies: `R.round-source-order-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-source-boundary-separation-application`.
 
 Lean target: `TightVer401.visibleConnectorSourceOrder_retained_incoming_terminal`; source: `TightVer401/VisibleConnectorSourceOrderPhysical.lean`.
 
@@ -7072,7 +7088,7 @@ Retain SAME final G/U, original D.incoming, terminal T and ALL FOUR caller-selec
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.negative-gradient-order-application`, `R.retained-source-order-application`.
+Dependencies: `R.negative-gradient-order-application`, `R.retained-source-order-application`, `R.ordinary-gradient-boundary-separation-application`.
 
 Lean target: `TightVer401.visibleConnectorGradientOrder_retained_incoming_terminal`; source: `TightVer401/VisibleConnectorGradientOrderWitnessApplication.lean`.
 
@@ -7312,7 +7328,7 @@ Choose eta before eta-dependent pc/w0, then choose rho only after intersecting A
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`.
+Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`, `R.incoming-displaced-seam-embedding-application`, `R.incoming-terminal-margins-production-application`, `R.incoming-terminal-literal-rebase-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7326,7 +7342,7 @@ On an actual open neighborhood containing the ENTIRE original incoming curve, es
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.compatible-displacement-production`, `R.displaced-seam-rebase-application`.
+Dependencies: `R.compatible-displacement-production`, `R.displaced-seam-rebase-application`, `R.incoming-local-seam-jets-application`, `R.incoming-cartesian-seam-matching-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7336,11 +7352,11 @@ Produce the full open Gin equality neighborhood and the actual fixed-domain bran
 
 ### R.final-smoothed-h-production: Construct final H once on the full fixed smoothing domain (pending)
 
-Retain full fixed V, Gin on GinU and raw scalar on Vraw with both seam and FULL side portions in their domains; Vraw remains a subset of SAME E.target. Apply relative on_sides smoothing EXACTLY ONCE, with actual matching values/gradients, strict Hessian signs and true boundary neighborhoods outside modification N. Produce final H/U, open Gin and raw-terminal equality neighborhoods and negative Hessian on the ENTIRE closed source band. Do not silently shrink V or reuse the raw scalar gradient inverse as final H inverse.
+Instantiate every original primitive seam/domain/sign/matching/closed-band input of visibleConnectorFinalSmoothing_exists_full_scalar for SAME native e, Cartesian E and compatible eta/rho. The checked source-bound producer calls relative on_sides ONCE and returns final H on the ENTIRE fixed carrier V, both true open Gin/raw-terminal equality neighborhoods and negative Hessian throughout V. The Germs export derives actual final-H gradient/Hessian equality on those neighborhoods. Producing the full Gin nonpositive strip, seam zero-set and negative normal derivative, actual seam regular embedding and raw branch Hessian/domain facts remains ORIGINAL PENDING work. Final H uses its own rebuilt gradient inverse; a raw scalar inverse cannot replace it.
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.full-incoming-gin-production`, `R.smoothing`, `R.actual-cartesian-connector-source-application`.
+Dependencies: `R.full-incoming-gin-production`, `R.smoothing`, `R.actual-cartesian-connector-source-application`, `R.final-smoothing-carrier-application`, `R.final-smoothing-side-application`, `R.final-smoothing-boundary-application`, `R.final-smoothing-full-scalar-application`, `R.final-smoothing-open-derivatives-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7354,7 +7370,7 @@ For EVERY actual Gin/Uin/R and D : VisibleConnectorIncomingData Gin Uin 1 R and 
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`.
+Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-gradient-boundary-separation-application`, `R.ordinary-source-boundary-separation-application`, `R.final-smoothing-open-derivatives-application`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7362,11 +7378,657 @@ Interface origin: `proposed_theorem`.
 ∀ (Gin : Coord → ℝ) (Uin : Set Coord) (R : ℝ) (D : VisibleConnectorIncomingData Gin Uin 1 R), ∀ etaMax : ℝ, 0 < etaMax → Nonempty (VisibleConnectorWitnessAssemblyOrdinaryData D etaMax)
 ```
 
+### R.final-smoothing-carrier-application: Keep the ENTIRE rebased closed band in the SAME full smoothing carrier (audited)
+
+Construct the explicit full carrier Vraw intersect (GinU union positive inverse-height). Its openness follows from actual continuity on Vraw; retain Vraw subset SAME Cartesian E.target. Literal inverse height b(s)+u*d(s), positive SAME d, whole old raw-strip containment and the ENTIRE old nonpositive strip in GinU imply closed rebased u in [0,1] band coverage, including both boundaries. Physical closed-band identification remains a real independent input. No seam-collar shrink or new inverse is introduced.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.displaced-seam-rebase-application`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothingCarrier_closed_rebased_band`; source: `TightVer401/VisibleConnectorFinalSmoothingCarrier.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}
+  {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},
+  (∀ (s : ℝ), 0 < d s) →
+    (∀ (s t : ℝ), b s ≤ t → t ≤ b s + d s → TightVer401.visibleConnectorSource p w ![a s, t] ∈ Vraw) →
+      (∀ (s t : ℝ), b s ≤ t → t ≤ 0 → TightVer401.visibleConnectorSource p w ![a s, t] ∈ GinU) →
+        (∀ (s u : ℝ),
+            u ∈ Set.Icc 0 1 →
+              B
+                  (TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)
+                    (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u]) =
+                b s + u * d s) →
+          TightVer401.visibleConnectorFinalSmoothingClosedRebasedBand p w a b d ⊆
+            TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_open`.
+
+```lean
+∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ},
+  IsOpen Vraw →
+    IsOpen GinU → ContinuousOn B Vraw → IsOpen (TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_subset_target`.
+
+```lean
+∀ {Vraw GinU T : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ},
+  Vraw ⊆ T → TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ⊆ T
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_positive_domain`.
+
+```lean
+∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),
+  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ∩ interior (B ⁻¹' Set.Ioi 0) ⊆ Vraw
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_negative_domain`.
+
+```lean
+∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),
+  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ∩ interior (B ⁻¹' Set.Ioi 0)ᶜ ⊆ GinU
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_nonpositive_domain`.
+
+```lean
+∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}
+  {x : OAI.SmoothLocal.Geometry.Coord},
+  x ∈ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B → B x ≤ 0 → x ∈ GinU
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothingCarrier_closed_subset`.
+
+```lean
+∀ {Vraw GinU C : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}
+  {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},
+  C ⊆ TightVer401.visibleConnectorFinalSmoothingClosedRebasedBand p w a b d →
+    (∀ (s : ℝ), 0 < d s) →
+      (∀ (s t : ℝ), b s ≤ t → t ≤ b s + d s → TightVer401.visibleConnectorSource p w ![a s, t] ∈ Vraw) →
+        (∀ (s t : ℝ), b s ≤ t → t ≤ 0 → TightVer401.visibleConnectorSource p w ![a s, t] ∈ GinU) →
+          (∀ (s u : ℝ),
+              u ∈ Set.Icc 0 1 →
+                B
+                    (TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)
+                      (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u]) =
+                  b s + u * d s) →
+            C ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B
+```
+
+### R.final-smoothing-side-application: Derive the actual canonical side classifier from the inverse height (audited)
+
+For SAME smooth periodic seam gamma, actual inverse height B smooth on open V, seam inclusion and zero seam height, an actual STRICT NEGATIVE B normal derivative yields ONE uniform normal-coordinate radius, full carrier inclusion and B<0 iff positive normal parameter. A continuous sublevel has frontier only at B=0. Actual seam embedding, normal derivative and original scalar/gradient matching are still producer obligations; this conditional derivative application does not produce final H.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothing_exists_canonical_side_threshold`; source: `TightVer401/VisibleConnectorFinalSmoothingSide.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {gamma : ℝ → ℂ} {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V : Set OAI.SmoothLocal.Geometry.Coord},
+      ContDiff ℝ (↑⊤) gamma →
+        Function.Periodic gamma L →
+          IsOpen V →
+            ContDiffOn ℝ (↑⊤) B V →
+              (∀ (s : ℝ), TightVer401.seamComplexCoord (gamma s) ∈ V) →
+                (∀ (s : ℝ), B (TightVer401.seamComplexCoord (gamma s)) = 0) →
+                  (∀ (s : ℝ),
+                      (fderiv ℝ B (TightVer401.seamComplexCoord (gamma s)))
+                          (TightVer401.seamComplexCoord (Complex.I * deriv gamma s)) <
+                        0) →
+                    ∃ r > 0,
+                      ∀ (s t : ℝ),
+                        |t| ≤ r →
+                          TightVer401.seamNormalCoordinates gamma ![s, t] ∈ V ∧
+                            (B (TightVer401.seamNormalCoordinates gamma ![s, t]) < 0 ↔ 0 < t)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothing_sublevel_frontier_zero`.
+
+```lean
+∀ {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V : Set OAI.SmoothLocal.Geometry.Coord},
+  IsOpen V → ContinuousOn B V → ∀ x ∈ V ∩ frontier {y | B y < 0}, B x = 0
+```
+
+### R.final-smoothing-boundary-application: Protect BOTH boundary sets and derive true open H equality neighborhoods (audited)
+
+For the SAME full fixed V, compact zero-height seam C, negative-height incoming K and positive-height terminal T, choose open modification N with closure in V minus BOTH boundaries. Given relative on_sides outside-germ equality, construct explicit open neighborhoods of ENTIRE K/T within V intersect GinU/Vraw and prove literal EqOn H Gin and EqOn H raw respectively. The helper uses real open equality germs rather than inferring equality from first jets. Actual branch domains, signs and the single relative smoothing call remain original inputs.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.final-smoothing-carrier-application`, `R.final-smoothing-side-application`, `R.smoothing`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothing_exists_modification`; source: `TightVer401/VisibleConnectorFinalSmoothingBoundary.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V C K T : Set OAI.SmoothLocal.Geometry.Coord},
+  IsOpen V →
+    IsCompact C →
+      IsCompact K →
+        IsCompact T →
+          C ⊆ V →
+            (∀ x ∈ C, B x = 0) →
+              (∀ x ∈ K, B x < 0) → (∀ x ∈ T, 0 < B x) → ∃ N, IsOpen N ∧ C ⊆ N ∧ closure N ⊆ V \ (K ∪ T)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothing_incoming_open`.
+
+```lean
+∀ {B Gin raw H : OAI.SmoothLocal.Geometry.Coord → ℝ} {V GinU N K : Set OAI.SmoothLocal.Geometry.Coord},
+  IsOpen V →
+    IsOpen GinU →
+      ContinuousOn B V →
+        K ⊆ V →
+          K ⊆ GinU →
+            Disjoint K (closure N) →
+              (∀ x ∈ K, B x < 0) →
+                (∀ x ∈ V \ N, H =ᶠ[nhds x] TightVer401.relativeSaddlePiecewise {y | B y < 0} Gin raw) →
+                  have O := TightVer401.visibleConnectorFinalSmoothingIncomingOpen V GinU N B;
+                  IsOpen O ∧ K ⊆ O ∧ O ⊆ V ∩ GinU ∧ Set.EqOn H Gin O
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorFinalSmoothing_terminal_open`.
+
+```lean
+∀ {B Gin raw H : OAI.SmoothLocal.Geometry.Coord → ℝ} {V Vraw N T : Set OAI.SmoothLocal.Geometry.Coord},
+  IsOpen V →
+    IsOpen Vraw →
+      ContinuousOn B V →
+        T ⊆ V →
+          T ⊆ Vraw →
+            Disjoint T (closure N) →
+              (∀ x ∈ T, 0 < B x) →
+                (∀ x ∈ V \ N, H =ᶠ[nhds x] TightVer401.relativeSaddlePiecewise {y | B y < 0} Gin raw) →
+                  have O := TightVer401.visibleConnectorFinalSmoothingTerminalOpen V Vraw N B;
+                  IsOpen O ∧ T ⊆ O ∧ O ⊆ V ∩ Vraw ∧ Set.EqOn H raw O
+```
+
+### R.ordinary-source-chart-fields-application: Produce ordinary Cartesian source fields from two actual endpoint signs (audited)
+
+For SAME smooth periodic p/w/h with h>0, actual negative source determinant at BOTH endpoints yields positive Delta throughout the ENTIRE closed strip. Construct F as the literal Cartesian descent on the punctured plane O, with full closed round1-to-round2 coverage, positive actual Jacobian and exact incoming/terminal physical traces p and p+h*w. Rebased endpoint signs and whole-strip positivity follow from SAME a/b/d with actual a_prime>0,d>0 and old Delta positive at BOTH (a,b) and (a,b+d). Lower negative b is permitted; its positivity fact remains real work. No terminal curve, inverse or family is independently selected.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.displaced-seam-rebase-application`, `R.actual-cartesian-connector-source-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamilySourceChart_fields`; source: `TightVer401/VisibleConnectorOrdinaryFamilySourceChart.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},
+      ContDiff ℝ (↑⊤) p →
+        ContDiff ℝ (↑⊤) w →
+          ContDiff ℝ (↑⊤) h →
+            Function.Periodic p L →
+              Function.Periodic w L →
+                Function.Periodic h L →
+                  (∀ (s : ℝ), 0 < h s) →
+                    (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w s) < 0) →
+                      (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s + h s • deriv w s) (w s) < 0) →
+                        have F := TightVer401.visibleConnectorCartesianSource L p w h;
+                        have O := {q | 0 < TightVer401.planarRadius q};
+                        IsOpen O ∧
+                          ContDiffOn ℝ (↑⊤) F O ∧
+                            {q | 1 ≤ TightVer401.planarRadius q ∧ TightVer401.planarRadius q ≤ 2} ⊆ O ∧
+                              (∀ (q : OAI.SmoothLocal.Geometry.Coord),
+                                  1 ≤ TightVer401.planarRadius q →
+                                    TightVer401.planarRadius q ≤ 2 → 0 < TightVer401.annularJacobian F q) ∧
+                                (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = p s) ∧
+                                  ∀ (s : ℝ),
+                                    F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = p s + h s • w s
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilySourceChart_delta_closed`.
+
+```lean
+∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},
+  (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w s) < 0) →
+    (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s + h s • deriv w s) (w s) < 0) →
+      ∀ (q : OAI.SmoothLocal.Geometry.Coord),
+        0 ≤ q 1 → q 1 ≤ h (q 0) → 0 < TightVer401.visibleConnectorDelta p gamma w q
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical`.
+
+```lean
+∀ {L : ℝ},
+  0 < L →
+    ∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},
+      Function.Periodic p L →
+        Function.Periodic w L →
+          Function.Periodic h L →
+            ∀ {r : ℝ},
+              0 < r →
+                ∀ (s : ℝ),
+                  TightVer401.visibleConnectorCartesianSource L p w h
+                      (TightVer401.saddlePolarChart ![r, 2 * Real.pi * s / L]) =
+                    p s + ((r - 1) * h s) • w s
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilySourceChart_rebased_endpoint_signs`.
+
+```lean
+∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) w →
+      ContDiff ℝ (↑⊤) a →
+        ContDiff ℝ (↑⊤) b →
+          ContDiff ℝ (↑⊤) d →
+            (∀ (s : ℝ), 0 < deriv a s) →
+              (∀ (s : ℝ), 0 < d s) →
+                (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s]) →
+                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s + d s]) →
+                    ∀ (s : ℝ),
+                      TightVer401.visibleConnectorDet (deriv (TightVer401.visibleConnectorRebasedSource p w a b) s)
+                            (TightVer401.visibleConnectorRebasedRuling w a d s) <
+                          0 ∧
+                        TightVer401.visibleConnectorDet
+                            (deriv (TightVer401.visibleConnectorRebasedSource p w a b) s +
+                              deriv (TightVer401.visibleConnectorRebasedRuling w a d) s)
+                            (TightVer401.visibleConnectorRebasedRuling w a d s) <
+                          0
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamilySourceChart_rebased_delta_closed`.
+
+```lean
+∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) p →
+    ContDiff ℝ (↑⊤) w →
+      ContDiff ℝ (↑⊤) a →
+        ContDiff ℝ (↑⊤) b →
+          ContDiff ℝ (↑⊤) d →
+            (∀ (s : ℝ), 0 < deriv a s) →
+              (∀ (s : ℝ), 0 < d s) →
+                (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s]) →
+                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s + d s]) →
+                    ∀ (q : OAI.SmoothLocal.Geometry.Coord),
+                      0 ≤ q 1 →
+                        q 1 ≤ 1 →
+                          0 <
+                            TightVer401.visibleConnectorDelta (TightVer401.visibleConnectorRebasedSource p w a b)
+                              (TightVer401.visibleConnectorRebasedGradient p gamma w a b)
+                              (TightVer401.visibleConnectorRebasedRuling w a d) q
+```
+
+### R.ordinary-gradient-boundary-separation-application: Derive terminal/incoming gradient separation from visibility and the literal radius (audited)
+
+For SAME D : VisibleConnectorIncomingData, incoming visibility implies radius strictly greater than R and constructs ONE uniform positive margin from its physical period. Every SAME radius-R terminal gradient is therefore disjoint from the incoming gradient. No terminal inverse, reversed nesting, eta choice or final scalar construction is assumed; actual terminal circle equality remains the supplied geometric fact.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-terminal-geometry-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamily_gradient_boundaries_disjoint`; source: `TightVer401/VisibleConnectorOrdinaryFamilyGradientSeparation.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {gamma : ℝ → OAI.SmoothLocal.Geometry.Coord},
+  (∀ (s : ℝ), TightVer401.planarRadius (gamma s) = R) → Disjoint (Set.range D.incoming.gamma) (Set.range gamma)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_incoming_gradient_radius`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) (s : ℝ), R < TightVer401.planarRadius (D.incoming.gamma s)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_incoming_gradient_uniform_margin`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R),
+  ∃ eps > 0, ∀ (s : ℝ), R + eps ≤ TightVer401.planarRadius (D.incoming.gamma s)
+```
+
+### R.ordinary-source-boundary-separation-application: Separate source boundaries by evaluating the SAME final gradient (audited)
+
+Retain SAME final G/U/D/T and FULL open incoming N containing range D.incoming.p with EqOn G Gin N. The actual radius-R terminal gradient and incoming visibility yield gradient boundary disjointness; evaluating THIS SAME final gradient proves incoming/terminal source boundaries disjoint. No source inverse, source nesting or global gradient injectivity is an input. The companion full-turn circle export retains SAME theta period shift and literal terminal circle. Original final H/open Gin construction remains required.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.ordinary-gradient-boundary-separation-application`, `R.final-smoothing-boundary-application`.
+
+Lean target: `TightVer401.visibleConnectorOrdinaryFamily_source_boundaries_disjoint`; source: `TightVer401/VisibleConnectorOrdinaryFamilySourceSeparation.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U N : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}
+  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)
+  (T : TightVer401.VisibleConnectorWitnessAssemblyTerminalFacts G U L),
+  IsOpen N →
+    Set.range D.incoming.p ⊆ N →
+      Set.EqOn G Gin N →
+        (∀ (s : ℝ), TightVer401.planarRadius (T.gamma s) = R) → Disjoint (Set.range D.incoming.p) (Set.range T.p)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorOrdinaryFamily_terminal_circle_gradient_disjoint`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]
+  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {gamma : ℝ → OAI.SmoothLocal.Geometry.Coord}
+  {theta : ℝ → ℝ},
+  Continuous theta →
+    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →
+      (∀ (s : ℝ), gamma s = R • TightVer401.visibleConnectorUnitDirection (theta s)) →
+        Disjoint (Set.range D.incoming.gamma) (Set.range gamma)
+```
+
+### R.final-seed-support-connection: Connect FINAL margin-selected Y to the SAME original scalar and native chart (audited)
+
+Extract the actual native c0 for SAME G from IdentityBandCentralSupportWithPotential, then transfer the FINAL Y selected AFTER the common visible/turn margin. Retain SAME d/hb/hinside, exact c0 forward Gauss coordinates, full source, smooth inverse, original support reconstruction, strict Hessian and gradient embedding. C is LITERALLY c0 image tsupport Y, compact/nonempty and inside the SAME complete-flow image. The old support-package field is discarded, with no new Y, corrected seed, clock, potential or selected exit choice. Consumers: actual two-selected-patches producer and final hCore connection.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.same-corrected-seed-full-turn-application`, `R.core-support`.
+
+Lean target: `TightVer401.positiveExit_final_seed_support_connection`; source: `TightVer401/PositiveExitConstructionFinalSeedConnection.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) {a κ : ℝ → ℝ} {S : ℝ ≃ₜ ℝ}
+  {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},
+  TightVer401.IdentityBandCentralSupportWithPotential d w a κ S G U →
+    ∀ {δ : ℝ} (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+      (hinside :
+        ∀ v ∈ Set.Ioo 0 δ,
+          ∀ (s : ℝ),
+            TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v s ∈
+              Set.Ioo 0 w)
+      (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient),
+      TightVer401.IsBandBending d.bandMap Y →
+        HasCompactSupport Y →
+          (∃ p, Y p ≠ 0) →
+            tsupport Y ⊆ Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+              ∃ c0,
+                c0.source = Set.univ ∧
+                  c0.target = Set.range (TightVer401.identityBandPlanarSource d.bandSphereGauss) ∧
+                    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑c0 p = TightVer401.gnomonicInverse (d.bandGaussMap p)) ∧
+                      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)
+                          ↑⊤ ↑c0 ∧
+                        ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)
+                            TightVer401.nativeProductModel (↑⊤) (↑c0.symm) c0.target ∧
+                          ContDiffOn ℝ (↑⊤) G c0.target ∧
+                            (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)),
+                                TightVer401.planarSupportMap G (↑c0 p) = d.bandMap p) ∧
+                              (∀ q ∈ c0.target, (TightVer401.planarHessian G q).det < 0) ∧
+                                (Topology.IsEmbedding fun q => TightVer401.planarGradient G ↑q) ∧
+                                  TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G) (Y ∘ ↑c0.symm)
+                                      c0.target ∧
+                                    ∃ C,
+                                      C = ↑c0 '' tsupport Y ∧
+                                        IsCompact C ∧
+                                          C.Nonempty ∧
+                                            C ⊆
+                                                ↑c0 ''
+                                                  Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) ∧
+                                              ↑c0 '' tsupport Y ⊆ C
+```
+
+Additional required audited interface: `TightVer401.positiveExit_final_band_bending_transfer`.
+
+```lean
+∀ {T w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) {G : OAI.SmoothLocal.Geometry.Coord → ℝ}
+  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient},
+  TightVer401.IsBandBending d.bandMap Y →
+    ∀ (c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+      c0.source = Set.univ →
+        ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)
+            (↑c0.symm) c0.target →
+          (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), TightVer401.planarSupportMap G (↑c0 p) = d.bandMap p) →
+            TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G) (Y ∘ ↑c0.symm) c0.target
+```
+
+### R.final-selected-gradient-cartesian-connection: Flatten the ALREADY CHOSEN final selected-gradient inverse without reselection (audited)
+
+Lift SAME subtype chart h : OpenPartialHomeomorph U Coord through its actual open inclusion. The resulting Cartesian e0 has source exactly U, target exactly h.target, literal forward planarGradient Ge and inverse literally subtype-erased h.symm. Smoothness on full source and inverse on original target are retained. No new inversion, degree argument, final scalar Ge, clock or selected geometry is constructed. This is the exact selected-patch inverse interface for exists_markedTorus_pair_of_negative_gradient_order; final smoothed connector H still requires its own distinct gradient inverse.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-patches-budget-application`.
+
+Lean target: `TightVer401.positiveExit_final_gradient_cartesian_connection`; source: `TightVer401/PositiveExitConstructionFinalGradientConnection.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Ge : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U),
+  ContDiffOn ℝ (↑⊤) Ge U →
+    ∀ (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),
+      h.source = Set.univ →
+        (↑h = fun p => TightVer401.planarGradient Ge ↑p) →
+          ContDiffOn ℝ (↑⊤) (fun p => ↑(↑h.symm p)) h.target →
+            have e0 := TightVer401.positiveExitFinalGradientChart hU h;
+            e0.source = U ∧
+              e0.target = h.target ∧
+                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Ge p) ∧
+                  (∀ (p : OAI.SmoothLocal.Geometry.Coord), ↑e0.symm p = ↑(↑h.symm p)) ∧
+                    ContDiffOn ℝ (↑⊤) (↑e0) e0.source ∧ ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_source`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),
+  h.source = Set.univ → (TightVer401.positiveExitFinalGradientChart hU h).source = U
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_target`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),
+  (TightVer401.positiveExitFinalGradientChart hU h).target = h.target
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_apply`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord) {p : OAI.SmoothLocal.Geometry.Coord} (hp : p ∈ U),
+  ↑(TightVer401.positiveExitFinalGradientChart hU h) p = ↑h ⟨p, hp⟩
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_symm_apply`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord) (p : OAI.SmoothLocal.Geometry.Coord),
+  ↑(TightVer401.positiveExitFinalGradientChart hU h).symm p = ↑(↑h.symm p)
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_contDiffOn`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),
+  h.source = Set.univ →
+    ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord},
+      ContDiffOn ℝ (↑⊤) F U →
+        (∀ (p : ↑U), ↑h p = F ↑p) →
+          ContDiffOn ℝ (↑⊤) (↑(TightVer401.positiveExitFinalGradientChart hU h))
+            (TightVer401.positiveExitFinalGradientChart hU h).source
+```
+
+Additional required audited interface: `TightVer401.positiveExitFinalGradientChart_inverse_contDiffOn`.
+
+```lean
+∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)
+  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),
+  ContDiffOn ℝ (↑⊤) (fun p => ↑(↑h.symm p)) h.target →
+    ContDiffOn ℝ (↑⊤) (↑(TightVer401.positiveExitFinalGradientChart hU h).symm)
+      (TightVer401.positiveExitFinalGradientChart hU h).target
+```
+
+### R.final-smoothing-full-scalar-application: Construct ONE final scalar on the full carrier from actual primitive seam and branch facts (pending)
+
+The exact export constructs N and H on V = visibleConnectorFinalSmoothingCarrier Vraw GinU B, retains V subset SAME Cartesian E.target, smooth H and negative Hessian throughout V and supplied closed C, BOTH explicit true open incoming/terminal equality neighborhoods, outside piecewise germs and arbitrary actual C1 error. It calls relative on_sides smoothing ONCE. Inputs are actual periodic regular embedded seam, smooth B/Gin/raw on full domains with negative Hessians, seam inclusion/zero and zero-set identification, actual negative B normal derivative, literal value/gradient matching, compact boundary sets with strict height signs and full closed-band containment. These original primitive inputs are still to instantiate; H gradient inverse remains subsequent and distinct. Frozen source provenance fb6dab8 grants no current-audit status.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.final-smoothing-carrier-application`, `R.final-smoothing-side-application`, `R.final-smoothing-boundary-application`, `R.smoothing`, `R.incoming-cartesian-seam-matching-application`, `R.incoming-displaced-seam-embedding-application`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothing_exists_full_scalar`; source: `TightVer401/VisibleConnectorFinalSmoothingConstruction.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.final-smoothing-open-derivatives-application: Recover actual final-H gradient and Hessian on true open equality domains (pending)
+
+Given literal EqOn H f on SAME open O, derive EqOn of actual planar gradients AND Hessians on O using true neighborhood germ equality. Apply to the exact open Gin/raw-terminal neighborhoods of ONE full-carrier H; this cannot be inferred from first jets alone, and it produces no new scalar or inverse. Frozen source provenance fb6dab8 remains pending until current root import/audit.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.final-smoothing-full-scalar-application`.
+
+Lean target: `TightVer401.visibleConnectorFinalSmoothing_open_equality_derivatives`; source: `TightVer401/VisibleConnectorFinalSmoothingGerms.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-local-seam-jets-application: Derive actual Gin trace derivative and construct a LOCAL matched raw scalar (pending)
+
+For SAME smooth Gin on actual open U, smooth p/w with whole p in U and nonzero source determinant at a supplied seam parameter, derive the scalar trace chain rule and construct local Cartesian E/raw with SAME forward source, smooth inverse, literal raw ruling-height and gradient equations on E.source, and scalar/gradient equality at zero-height seam points there. This is LOCAL matched-jet construction, not the universal full Gin open germ, global Cartesian E or final H. Frozen source provenance 4acaef7 supplies no current-audit credit.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.displaced-seam-rebase-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingSeam_exists_local_matched_potential`; source: `TightVer401/VisibleConnectorIncomingSeamJets.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-cartesian-seam-matching-application: Prove actual rebased Cartesian scalar/gradient matches at displaced old height ZERO (pending)
+
+For SAME Gin/p/w/a/b/d and already retained Cartesian E with literal descended rebased source, actual periodic/shift facts, old lower Delta nonzero, nonzero a_prime/d, full open physical V mapping into E.source, positive physical radius and nonzero rebased Delta, require the ACTUAL seam coordinate (s,-b(s)/d(s)) in V. The literal raw scalar then equals Gin and has its exact planarGradient at p(a(s)). This discharges smoothing hValue/hGradient from ordinary facts, rather than assumes the matches. It neither identifies native e with Cartesian E nor produces full open Gin equality. Frozen source provenance 4acaef7 remains separate from current root audit.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-local-seam-jets-application`, `R.displaced-seam-rebase-application`, `R.actual-cartesian-connector-source-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingRebase_cartesian_seam_matches`; source: `TightVer401/VisibleConnectorIncomingRebaseMatching.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-displaced-seam-embedding-application: Derive closed embedding of the displaced central slice from SAME native e (pending)
+
+Retain ONE actual native e and its exact visibleConnectorDisplacedNativePsi forward equation. Once ALL (rho,(q,0)) source memberships are supplied, injectivity of THIS inverse and smooth periodic p/w0 prove the actual displaced seam q maps to p(q)+rho*w0(q) is a closed embedding. No seam injectivity package, replacement inverse or independently chosen rho enters the proof. Producing one rho satisfying the full source slice and every other compatible bound remains original work. Frozen source provenance 4acaef7 does not certify root imports.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-incoming-collar-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingSeam_displaced_isClosedEmbedding`; source: `TightVer401/VisibleConnectorIncomingSeamEmbedding.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-terminal-margins-production-application: Produce SAME terminal escape filling enclosure and actual C1 displacement thresholds (pending)
+
+From original smooth periodic ruling, actual positive radius, phase shift and positive phase/pairings/decomposition, choose ONE eta threshold BEFORE the eta-dependent inverse; construct the SAME terminal positive trace/filling, origin enclosure, strict norm escape at ALL physical phases, strict enclosed incoming filled disk and enclosed closed norm ball. Compact strict separation produces an explicit C0 perturbation budget. AFTER eta is fixed, actual joint value and phase-derivative continuity at rho=0 plus genuine baseline terminal norm/determinant yield ONE rho threshold retaining norm and positive polar determinant. These are substantive threshold/filling producers; original decomposition, derivative continuity and compatibility with SAME e/carriers/coefficient bounds still need instantiation. Frozen source provenance 4acaef7 alone supplies no root validation.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingTerminal_exists_escape_and_filling`; source: `TightVer401/VisibleConnectorIncomingTerminalMargins.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.incoming-terminal-literal-rebase-application: Transport the exact old terminal through SAME a and d=tc(a)-b (pending)
+
+The rebased u=1 source is LITERALLY the old terminal composed with SAME phase a; its actual derivative is multiplied by a_prime. Retain d(s)=tc(a(s))-b(s), old terminal smoothness, actual a_prime>0 and original full-phase norm/positive determinant. These ordinary facts imply the SAME rebased terminal norm and determinant without a second C1 approximation or a separately selected curve. This does not select eta/rho or prove all remaining endpoint Delta/carrier facts. Frozen source provenance 4acaef7 receives only current-audit bound credit.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.displaced-seam-rebase-application`, `R.incoming-terminal-margins-production-application`.
+
+Lean target: `TightVer401.visibleConnectorIncomingTerminal_rebase_geometry`; source: `TightVer401/VisibleConnectorIncomingTerminalRebase.lean`.
+
+The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+
+### R.final-margin-raw-leaf-connection: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin (pending)
+
+For SAME corrected frame d, fixed original G, period balance hb, final flow margin/containment hinside and final visible-turn output, prove literal central-to-raw coordinate equality and equality of the TWO complex-coordinate conventions. Reorder exactly the retained nonzero, turn and visibility conclusions into selected-patch hmargin. No leaf, final Y, clock, scalar or inverse is chosen. This root source is an adapter whose interface status remains pending until its exact exports occur in CURRENT audit; writing or freezing it alone supplies no certification.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.same-corrected-seed-full-turn-application`, `R.final-seed-support-connection`.
+
+Lean target: `TightVer401.positiveExit_final_margin_selected_raw_leaves`; source: `TightVer401/PositiveExitConstructionFinalMarginConnection.lean`.
+
+Interface origin: `proposed_source_interface`.
+
+```lean
+theorem positiveExit_final_margin_selected_raw_leaves {T δ w : ℝ}
+    [Fact (0 < T)] (d : PeriodicRuledFrame T)
+    (hb : (∫ r in 0..T, ruledPeriodCoefficient d.k d.τ r) = 0)
+    (hinside : ∀ v ∈ Ioo (0 : ℝ) δ, ∀ s : ℝ,
+      principalTrajectory (ruledRho d.τ) (ruledOmega d.k d.τ) 0 v s ∈ Ioo 0 w)
+    (G : Coord → ℝ)
+    (hmargin : ∀ v ∈ Ioo (0 : ℝ) δ,
+      let u := principalTrajectory (ruledRho d.τ) (ruledOmega d.k d.τ) 0 v
+      ContDiff ℝ ∞ u ∧ Function.Periodic u T ∧
+      HasPositiveArgumentTurn
+        (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s])) T ∧
+      HasPositiveArgumentTurn
+        (positiveExitComplexTrace (fun s => planarGradient G
+          (identityBandCentralCoordinates d ![s, u s]))) T ∧
+      (∀ s, positiveExitComplexPoint (identityBandCentralCoordinates d ![s, u s]) ≠ 0) ∧
+      (∀ s, positiveExitComplexPoint
+        (planarGradient G (identityBandCentralCoordinates d ![s, u s])) ≠ 0) ∧
+      ComplexVisiblePair (1 / 4)
+        (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s]))
+        (fun s => Complex.I * positiveExitComplexPoint
+          (planarGradient G (identityBandCentralCoordinates d ![s, u s]))) ∧
+      ComplexVisiblePair (4 / 5)
+        (corrugatedReverseReflect (positiveExitComplexTrace
+          (fun s => planarGradient G (identityBandCentralCoordinates d ![s, u s]))))
+        (fun s => Complex.I * corrugatedReverseReflect
+          (positiveExitComplexTrace (fun s => identityBandCentralCoordinates d ![s, u s])) s)) :
+    ∀ v : Ioo (0 : ℝ) δ,
+      (∀ s, angularDescentComplex (gnomonicInverse (positiveExitRawLeaf d hb hinside v s)) ≠ 0) ∧
+      (∀ s, angularDescentComplex (planarGradient G
+        (gnomonicInverse (positiveExitRawLeaf d hb hinside v s))) ≠ 0) ∧
+      HasPositiveArgumentTurn
+        (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) T ∧
+      HasPositiveArgumentTurn (angularDescentComplex ∘ planarGradient G ∘
+        gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) T ∧
+      ComplexVisiblePair (1 / 4)
+        (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v)
+        (fun s => Complex.I * angularDescentComplex (planarGradient G
+          (gnomonicInverse (positiveExitRawLeaf d hb hinside v s)))) ∧
+      ComplexVisiblePair (4 / 5)
+        (corrugatedReverseReflect (angularDescentComplex ∘ planarGradient G ∘
+          gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v))
+        (fun s => Complex.I * corrugatedReverseReflect
+          (angularDescentComplex ∘ gnomonicInverse ∘ positiveExitRawLeaf d hb hinside v) s)
+```
+
 ## Current proof frontier
 
 Only a primary pending node with checked or explicitly externally granted prerequisites and a concrete proposed signature is listed:
 
-- `R.compatible-displacement-production`: Construct one compatible eta/rho family with native e and Cartesian E distinguished
+- `R.final-margin-raw-leaf-connection`: Rewrite the SAME final central-coordinate margins into selected raw-leaf hmargin
 
 ## Deferred results
 
@@ -7374,7 +8036,7 @@ Complete cylinders, linking/Han–Khuri applications, general ruled extensions, 
 
 ## Honest completion gates
 
-Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. The outstanding original gates are selected source/core hCore, one compatible eta/rho family, the FULL Gin open germ, final H from smoothing on the FULL fixed V, populated universal OrdinaryData, and invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
+Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. Same-seed/inverse/margin connections preserve FINAL Y, original scalar, chosen clocks and already chosen subtype inverse. New source-bound terminal thresholds/fillings, seam embedding/matches and ONE full-carrier smoothing/Germs producers discharge only their exact statements when present in CURRENT audit. Frozen worker audits and source candidates never transfer root certification. The outstanding original gates remain actual selected source/core hCore, compatible eta/rho and old endpoint Delta facts, FULL Gin open germ and nonpositive-strip domain, actual seam embedding/normal derivative/matching/Hessian signs, final H from ONE smoothing call on the FULL fixed V, populated universal OrdinaryData, and final invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
 
 ## Exact manuscript register
 

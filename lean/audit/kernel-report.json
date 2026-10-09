@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "generated_at_utc": "2026-10-09T14:30:39.918025+00:00",
+  "generated_at_utc": "2026-10-09T15:05:39.325460+00:00",
   "paper_completion": "INCOMPLETE",
   "target": "ver503",
   "primary_objective": {
@@ -40,13 +40,13 @@
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
-          "TightVer401": "ee635d701b1b962afcedbb2a214da96a39f5f56cb4fb6e80d800c78df0864d3c"
+          "TightVer401": "03044abdf48490fa1d76198414ba39597dd872b2dc5ab7bbccea81e6d4b2b075"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 135.188,
+      "elapsed_seconds": 160.113,
       "olean_sha256": "ec4988353ed7b3e40bbd97093c690a6d75574e3881ec2b68a32e531c611f85f6",
-      "log_sha256": "13aec9bfcbba26c34f378587224a99401b4625866aa800e94beeedc6cda427c4"
+      "log_sha256": "bdcf39de92daba3c59b7455a019e4171e8b3f859e7343a379d3f64647c2c8afe"
     },
     {
       "module": "OAI.Analysis.CircleDomains.LengthArea",
@@ -7740,8 +7740,8 @@
       "source": "TightVer401.lean",
       "compiled_source": "TightVer401.lean",
       "key": {
-        "source_sha256": "77892b90a62f8ffc5900ba5d728b0ab7738dc36b0da5ec7cf2bc4f38aa24c8b2",
-        "compiled_source_sha256": "77892b90a62f8ffc5900ba5d728b0ab7738dc36b0da5ec7cf2bc4f38aa24c8b2",
+        "source_sha256": "a9fc37df1a70b451c1dd60421bc29ec3de2a5d91db31ba89326a7c359ab4133c",
+        "compiled_source_sha256": "a9fc37df1a70b451c1dd60421bc29ec3de2a5d91db31ba89326a7c359ab4133c",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -8068,12 +8068,20 @@
           "TightVer401.VisibleConnectorGradientOrderWitnessApplication": "d4eb28417c27a189ba4f98f4b54cc5868c1413796deeff05d6a6dc7c0bac8f24",
           "TightVer401.VisibleConnectorSourceOrderPhysical": "ca9223061cedc78d71c8e7b4ab6e162bb9c267c5c68c7f608ce32b61c0b34147",
           "TightVer401.VisibleConnectorDisplacedSeamRebase": "76070e19eaced963f99c67b552e070d6d36491494517954a2bf75db766a34f4a",
-          "TightVer401.CompletedSaddleTorusVer503Bending": "dc96bebde0f4dc046d88340136604a5e47ffd2755a2a9f84aa31ba4ab2b8f9c1"
+          "TightVer401.CompletedSaddleTorusVer503Bending": "dc96bebde0f4dc046d88340136604a5e47ffd2755a2a9f84aa31ba4ab2b8f9c1",
+          "TightVer401.VisibleConnectorFinalSmoothingBoundary": "55f2b1a030e4930a623058340f9735df9ef80eb3a87f66150cee158f351a36c0",
+          "TightVer401.VisibleConnectorFinalSmoothingCarrier": "269653fe5d0a7c40570909df9f74dadd2c1fbd37bb8a1f1d202d02f964ce4bf3",
+          "TightVer401.VisibleConnectorFinalSmoothingSide": "157ddc9f66d0161a83ffd3c3e2babf28161900f9c142a02559b59bc5f07c9c1d",
+          "TightVer401.VisibleConnectorOrdinaryFamilySourceChart": "85e5d2648f7e305e21de4eec794aae844308090816d87367752eb21e0195ce50",
+          "TightVer401.VisibleConnectorOrdinaryFamilyGradientSeparation": "2ff52a44410f240c6dd339bcce6f787abbf67bc6ee8567a0e47580d5303ac318",
+          "TightVer401.VisibleConnectorOrdinaryFamilySourceSeparation": "7b8b8839e81ed260b2ab1e716dc3f591c01c0275f11261babac6ab45497ab865",
+          "TightVer401.PositiveExitConstructionFinalGradientConnection": "8f2366fbf9404b89c53bdcebda7989a6ba55a3a92eb99af8b1ae0d995df859a2",
+          "TightVer401.PositiveExitConstructionFinalSeedConnection": "f00b10d184eec100f5320d10e1971966f7ee01ba4710354e227d981d41f8e90b"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 47.917,
-      "olean_sha256": "ee635d701b1b962afcedbb2a214da96a39f5f56cb4fb6e80d800c78df0864d3c",
+      "elapsed_seconds": 55.983,
+      "olean_sha256": "03044abdf48490fa1d76198414ba39597dd872b2dc5ab7bbccea81e6d4b2b075",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -18419,6 +18427,43 @@
       "log_sha256": "a8c6cb0e23c7330c8972cbf0cc5be9cc27d8598ee39c264f53750591f22fd377"
     },
     {
+      "module": "TightVer401.PositiveExitConstructionFinalGradientConnection",
+      "source": "TightVer401\\PositiveExitConstructionFinalGradientConnection.lean",
+      "compiled_source": "TightVer401\\PositiveExitConstructionFinalGradientConnection.lean",
+      "key": {
+        "source_sha256": "eb0fc8c24aefb472e9a765d765541ffa7ed274cf323e45b8a35dbcf0bd55dce3",
+        "compiled_source_sha256": "eb0fc8c24aefb472e9a765d765541ffa7ed274cf323e45b8a35dbcf0bd55dce3",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.PlanarGradientInverse": "ec757ec974c8a9478f4094488195a8e0f4acb7bd6635ba1b59a595854a35578a"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 50.285,
+      "olean_sha256": "8f2366fbf9404b89c53bdcebda7989a6ba55a3a92eb99af8b1ae0d995df859a2",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionFinalSeedConnection",
+      "source": "TightVer401\\PositiveExitConstructionFinalSeedConnection.lean",
+      "compiled_source": "TightVer401\\PositiveExitConstructionFinalSeedConnection.lean",
+      "key": {
+        "source_sha256": "63922c5b1537cef988cff1b71eddd19b7d9270201cc2c09f1a23498578ae504a",
+        "compiled_source_sha256": "63922c5b1537cef988cff1b71eddd19b7d9270201cc2c09f1a23498578ae504a",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.PositiveExitConstructionVisibleTurnSeed": "ad0d9e5c3b45a57a8b735830119497106bc7ea6ea860feb671796c0ded100915",
+          "TightVer401.IdentityBandFlowOpenConnection": "347218be699cc70f58af08e1d6f977d986e372d525b3a881aa50f46d37158d58"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.773,
+      "olean_sha256": "f00b10d184eec100f5320d10e1971966f7ee01ba4710354e227d981d41f8e90b",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "module": "TightVer401.PositiveExitConstructionFirstIntegral",
       "source": "TightVer401\\PositiveExitConstructionFirstIntegral.lean",
       "compiled_source": "TightVer401\\PositiveExitConstructionFirstIntegral.lean",
@@ -26179,6 +26224,61 @@
       "log_sha256": "bb410652daa08841e1e5774ce7039a0e20fe68a60f2d69935c511eb95feebdfa"
     },
     {
+      "module": "TightVer401.VisibleConnectorFinalSmoothingBoundary",
+      "source": "TightVer401\\VisibleConnectorFinalSmoothingBoundary.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorFinalSmoothingBoundary.lean",
+      "key": {
+        "source_sha256": "6bbb41a276bdb0712ecc2e5b2365a31ff371a78a70808b59e09759da408ebbf9",
+        "compiled_source_sha256": "6bbb41a276bdb0712ecc2e5b2365a31ff371a78a70808b59e09759da408ebbf9",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.RelativeSaddleSmoothing": "17e02e8eb62fa9afa4ca68a23761d43cb1ecaefd5169cbf1e990003f69fc730b"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 50.664,
+      "olean_sha256": "55f2b1a030e4930a623058340f9735df9ef80eb3a87f66150cee158f351a36c0",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorFinalSmoothingCarrier",
+      "source": "TightVer401\\VisibleConnectorFinalSmoothingCarrier.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorFinalSmoothingCarrier.lean",
+      "key": {
+        "source_sha256": "4b5f85775435b0ad419867e18048afada1c62bf254f0d069180396832ba58acc",
+        "compiled_source_sha256": "4b5f85775435b0ad419867e18048afada1c62bf254f0d069180396832ba58acc",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorDisplacedSeamRebase": "76070e19eaced963f99c67b552e070d6d36491494517954a2bf75db766a34f4a",
+          "TightVer401.RelativeSaddleSmoothing": "17e02e8eb62fa9afa4ca68a23761d43cb1ecaefd5169cbf1e990003f69fc730b"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.265,
+      "olean_sha256": "269653fe5d0a7c40570909df9f74dadd2c1fbd37bb8a1f1d202d02f964ce4bf3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorFinalSmoothingSide",
+      "source": "TightVer401\\VisibleConnectorFinalSmoothingSide.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorFinalSmoothingSide.lean",
+      "key": {
+        "source_sha256": "fe2307eea77d7ac83c740c76a167f1ff4c34ce38ae2f029d70eae9cf5216aab4",
+        "compiled_source_sha256": "fe2307eea77d7ac83c740c76a167f1ff4c34ce38ae2f029d70eae9cf5216aab4",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.RelativeSaddleSmoothing": "17e02e8eb62fa9afa4ca68a23761d43cb1ecaefd5169cbf1e990003f69fc730b"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.937,
+      "olean_sha256": "157ddc9f66d0161a83ffd3c3e2babf28161900f9c142a02559b59bc5f07c9c1d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "module": "TightVer401.VisibleConnectorGradientInverseApplication",
       "source": "TightVer401\\VisibleConnectorGradientInverseApplication.lean",
       "compiled_source": "TightVer401\\VisibleConnectorGradientInverseApplication.lean",
@@ -26403,6 +26503,63 @@
       "exit_code": 0,
       "elapsed_seconds": 54.521,
       "olean_sha256": "dadcbf4ec216eab69323d0b3cf79f2dcf2936a92f01bc0138bb094861652942d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorOrdinaryFamilyGradientSeparation",
+      "source": "TightVer401\\VisibleConnectorOrdinaryFamilyGradientSeparation.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorOrdinaryFamilyGradientSeparation.lean",
+      "key": {
+        "source_sha256": "b3ab17f47257e4d4cba4127f59c7c24a7d031aa26695fa22f01d56a3215ba9ef",
+        "compiled_source_sha256": "b3ab17f47257e4d4cba4127f59c7c24a7d031aa26695fa22f01d56a3215ba9ef",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorWitnessAssemblyCircle": "d16b8cb080110e07a680a884775e8465eccdaabfec103b03cb3d14e552d03234",
+          "TightVer401.VisibleConnectorWitnessAssemblyTopology": "f3d288ad9db0f67ee43d14214967f5a6c8c622a6a44e61695a983fa2e8619bf2"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 51.649,
+      "olean_sha256": "2ff52a44410f240c6dd339bcce6f787abbf67bc6ee8567a0e47580d5303ac318",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorOrdinaryFamilySourceChart",
+      "source": "TightVer401\\VisibleConnectorOrdinaryFamilySourceChart.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorOrdinaryFamilySourceChart.lean",
+      "key": {
+        "source_sha256": "083d087436735055776fce6736dc5a7851c6dbac5a4f834a4775d6e4e9b465f3",
+        "compiled_source_sha256": "083d087436735055776fce6736dc5a7851c6dbac5a4f834a4775d6e4e9b465f3",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorSourceInverseCartesianJacobian": "a06fe3a339b913e7cd6804c2f8624b4ab898651f4d0573637355cf79788c8853",
+          "TightVer401.VisibleConnectorDisplacedSeamRebase": "76070e19eaced963f99c67b552e070d6d36491494517954a2bf75db766a34f4a"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 53.221,
+      "olean_sha256": "85e5d2648f7e305e21de4eec794aae844308090816d87367752eb21e0195ce50",
+      "log_sha256": "655458876ac4581d47bbf8899ce6c1b821069db5fd4033c2a8e9f0ce024efd18"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorOrdinaryFamilySourceSeparation",
+      "source": "TightVer401\\VisibleConnectorOrdinaryFamilySourceSeparation.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorOrdinaryFamilySourceSeparation.lean",
+      "key": {
+        "source_sha256": "8330cdcd45424ce7e8e80133cf82855a638bffa9c15f23f753e5ea7c345ff53b",
+        "compiled_source_sha256": "8330cdcd45424ce7e8e80133cf82855a638bffa9c15f23f753e5ea7c345ff53b",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorOrdinaryFamilyGradientSeparation": "2ff52a44410f240c6dd339bcce6f787abbf67bc6ee8567a0e47580d5303ac318",
+          "TightVer401.VisibleConnectorWitnessAssemblyInputs": "4568705d66918f9db81ced55b5d28b9dc8a7a4f4f6fee66e638d2f42913d2a70"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.199,
+      "olean_sha256": "7b8b8839e81ed260b2ab1e716dc3f591c01c0275f11261babac6ab45497ab865",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -154145,6 +154302,26 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "definition",
+      "name": "TightVer401.finalSeedCoordChartedSpace",
+      "type": "{T w : ℝ} → [Fact (0 < T)] → ChartedSpace OAI.SmoothLocal.Geometry.Coord (AddCircle T × ↑(Set.Ioo 0 w))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.finalSeedCoordManifold",
+      "type": "∀ {T w : ℝ} [inst : Fact (0 < T)],\n  IsManifold (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) (↑⊤) (AddCircle T × ↑(Set.Ioo 0 w))"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "theorem",
       "name": "TightVer401.finite_moment_period_prescription",
       "type": "∀ {m : ℕ} (L : ℝ) [inst : Fact (0 < L)] (f : AddCircle L → EuclideanSpace ℝ (Fin m)) (g b : AddCircle L → ℝ),\n  Continuous f →\n    ContDiff ℝ (↑⊤) (f ∘ ⇑(TightVer401.periodProjection L)) →\n      Continuous g →\n        ContDiff ℝ (↑⊤) (b ∘ ⇑(TightVer401.periodProjection L)) →\n          (∀ (q : AddCircle L), 0 < b q) →\n            (∃ q, 0 < g q) →\n              (∃ q, g q < 0) →\n                ∀ (B : ℝ) {η ε : ℝ},\n                  0 < η →\n                    0 < ε →\n                      ∃ A,\n                        ContMDiff (modelWithCornersSelf ℝ ℝ) (modelWithCornersSelf ℝ ℝ) (↑⊤) A ∧\n                          (∀ (q : AddCircle L), 0 < A q) ∧\n                            ∫ (r : ℝ) in 0..L,\n                                  ‖A ((TightVer401.periodProjection L) r) - b ((TightVer401.periodProjection L) r)‖ <\n                                η ∧\n                              ∫ (r : ℝ) in 0..L,\n                                    A ((TightVer401.periodProjection L) r) • f ((TightVer401.periodProjection L) r) =\n                                  ∫ (r : ℝ) in 0..L,\n                                    b ((TightVer401.periodProjection L) r) • f ((TightVer401.periodProjection L) r) ∧\n                                ∫ (r : ℝ) in 0..L,\n                                      g ((TightVer401.periodProjection L) r) /\n                                        √(A ((TightVer401.periodProjection L) r)) =\n                                    B ∧\n                                  ∃ centers radii,\n                                    (∀ (j : Fin (Module.finrank ℝ ↥(TightVer401.circleMomentSpan L f) + 1)),\n                                        0 ≤ radii j) ∧\n                                      ∑ j, 2 * radii j < ε ∧\n                                        (Function.support fun q => A q - b q) ⊆\n                                          ⋃ j,\n                                            ⇑(TightVer401.periodProjection L) ''\n                                              Set.Icc (centers j - radii j) (centers j + radii j)"
@@ -171275,6 +171452,106 @@
         "Quot.sound"
       ],
       "kind": "definition",
+      "name": "TightVer401.positiveExitFinalGradientChart",
+      "type": "{U : Set OAI.SmoothLocal.Geometry.Coord} →\n  IsOpen U →\n    OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord →\n      OpenPartialHomeomorph OAI.SmoothLocal.Geometry.Coord OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart._proof_1",
+      "type": "Nonempty (Fin 2 → ℝ)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart._proof_2",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord}, IsOpen U → Topology.IsOpenEmbedding Subtype.val"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart.eq_1",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n  TightVer401.positiveExitFinalGradientChart hU h = h.lift_openEmbedding ⋯"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_apply",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord) {p : OAI.SmoothLocal.Geometry.Coord} (hp : p ∈ U),\n  ↑(TightVer401.positiveExitFinalGradientChart hU h) p = ↑h ⟨p, hp⟩"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_contDiffOn",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n  h.source = Set.univ →\n    ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord},\n      ContDiffOn ℝ (↑⊤) F U →\n        (∀ (p : ↑U), ↑h p = F ↑p) →\n          ContDiffOn ℝ (↑⊤) (↑(TightVer401.positiveExitFinalGradientChart hU h))\n            (TightVer401.positiveExitFinalGradientChart hU h).source"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_inverse_contDiffOn",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n  ContDiffOn ℝ (↑⊤) (fun p => ↑(↑h.symm p)) h.target →\n    ContDiffOn ℝ (↑⊤) (↑(TightVer401.positiveExitFinalGradientChart hU h).symm)\n      (TightVer401.positiveExitFinalGradientChart hU h).target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_source",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n  h.source = Set.univ → (TightVer401.positiveExitFinalGradientChart hU h).source = U"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_symm_apply",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord) (p : OAI.SmoothLocal.Geometry.Coord),\n  ↑(TightVer401.positiveExitFinalGradientChart hU h).symm p = ↑(↑h.symm p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExitFinalGradientChart_target",
+      "type": "∀ {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U)\n  (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n  (TightVer401.positiveExitFinalGradientChart hU h).target = h.target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
       "name": "TightVer401.positiveExitFlowTrace",
       "type": "{T w delta : ℝ} →\n  (d : TightVer401.PeriodicRuledFrame T) →\n    OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord →\n      ∫ (s : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ s = 0 →\n        (∀ v ∈ Set.Ioo 0 delta,\n            ∀ (t : ℝ),\n              TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v t ∈\n                Set.Ioo 0 w) →\n          (v : ℝ) → v ∈ Set.Ioo 0 delta → ℝ → OAI.SmoothLocal.Geometry.Coord"
     },
@@ -172538,6 +172815,36 @@
       "kind": "theorem",
       "name": "TightVer401.positiveExit_exists_visible_complete_flow_initial_margin",
       "type": "∀ {T w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T),\n  ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0 →\n    ∀ {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n      0 < w →\n        IsOpen U →\n          ContDiffOn ℝ (↑⊤) G U →\n            ContDiffOn ℝ (↑⊤) (TightVer401.identityBandCentralCoordinates d)\n                (TightVer401.identityBandCentralRawDomain w) →\n              Set.MapsTo (TightVer401.identityBandCentralCoordinates d) (TightVer401.identityBandCentralRawDomain w) U →\n                (TightVer401.ComplexVisiblePair (1 / 4)\n                    (TightVer401.positiveExitComplexTrace fun s => TightVer401.identityBandCentralCoordinates d ![s, 0])\n                    fun s =>\n                    Complex.I *\n                      TightVer401.positiveExitComplexPoint\n                        (TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, 0]))) →\n                  (TightVer401.ComplexVisiblePair (4 / 5)\n                      (TightVer401.corrugatedReverseReflect\n                        (TightVer401.positiveExitComplexTrace fun s =>\n                          TightVer401.planarGradient G (TightVer401.identityBandCentralCoordinates d ![s, 0])))\n                      fun s =>\n                      Complex.I *\n                        TightVer401.corrugatedReverseReflect\n                          (TightVer401.positiveExitComplexTrace fun s =>\n                            TightVer401.identityBandCentralCoordinates d ![s, 0])\n                          s) →\n                    ∃ δ > 0,\n                      δ < w ∧\n                        ∀ v ∈ Set.Ioo 0 δ,\n                          have u :=\n                            TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ)\n                              0 v;\n                          (∀ (s : ℝ), u s ∈ Set.Ioo 0 w) ∧\n                            (TightVer401.ComplexVisiblePair (1 / 4)\n                                (TightVer401.positiveExitComplexTrace fun s =>\n                                  TightVer401.identityBandCentralCoordinates d ![s, u s])\n                                fun s =>\n                                Complex.I *\n                                  TightVer401.positiveExitComplexPoint\n                                    (TightVer401.planarGradient G\n                                      (TightVer401.identityBandCentralCoordinates d ![s, u s]))) ∧\n                              TightVer401.ComplexVisiblePair (4 / 5)\n                                (TightVer401.corrugatedReverseReflect\n                                  (TightVer401.positiveExitComplexTrace fun s =>\n                                    TightVer401.planarGradient G\n                                      (TightVer401.identityBandCentralCoordinates d ![s, u s])))\n                                fun s =>\n                                Complex.I *\n                                  TightVer401.corrugatedReverseReflect\n                                    (TightVer401.positiveExitComplexTrace fun s =>\n                                      TightVer401.identityBandCentralCoordinates d ![s, u s])\n                                    s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExit_final_band_bending_transfer",
+      "type": "∀ {T w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) {G : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient},\n  TightVer401.IsBandBending d.bandMap Y →\n    ∀ (c0 : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),\n      c0.source = Set.univ →\n        ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)\n            (↑c0.symm) c0.target →\n          (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), TightVer401.planarSupportMap G (↑c0 p) = d.bandMap p) →\n            TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G) (Y ∘ ↑c0.symm) c0.target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExit_final_gradient_cartesian_connection",
+      "type": "∀ {Ge : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord} (hU : IsOpen U),\n  ContDiffOn ℝ (↑⊤) Ge U →\n    ∀ (h : OpenPartialHomeomorph (↑U) OAI.SmoothLocal.Geometry.Coord),\n      h.source = Set.univ →\n        (↑h = fun p => TightVer401.planarGradient Ge ↑p) →\n          ContDiffOn ℝ (↑⊤) (fun p => ↑(↑h.symm p)) h.target →\n            have e0 := TightVer401.positiveExitFinalGradientChart hU h;\n            e0.source = U ∧\n              e0.target = h.target ∧\n                (∀ p ∈ e0.source, ↑e0 p = TightVer401.planarGradient Ge p) ∧\n                  (∀ (p : OAI.SmoothLocal.Geometry.Coord), ↑e0.symm p = ↑(↑h.symm p)) ∧\n                    ContDiffOn ℝ (↑⊤) (↑e0) e0.source ∧ ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.positiveExit_final_seed_support_connection",
+      "type": "∀ {T w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) {a κ : ℝ → ℝ} {S : ℝ ≃ₜ ℝ}\n  {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n  TightVer401.IdentityBandCentralSupportWithPotential d w a κ S G U →\n    ∀ {δ : ℝ} (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)\n      (hinside :\n        ∀ v ∈ Set.Ioo 0 δ,\n          ∀ (s : ℝ),\n            TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 v s ∈\n              Set.Ioo 0 w)\n      (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient),\n      TightVer401.IsBandBending d.bandMap Y →\n        HasCompactSupport Y →\n          (∃ p, Y p ≠ 0) →\n            tsupport Y ⊆ Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →\n              ∃ c0,\n                c0.source = Set.univ ∧\n                  c0.target = Set.range (TightVer401.identityBandPlanarSource d.bandSphereGauss) ∧\n                    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑c0 p = TightVer401.gnomonicInverse (d.bandGaussMap p)) ∧\n                      ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)\n                          ↑⊤ ↑c0 ∧\n                        ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord)\n                            TightVer401.nativeProductModel (↑⊤) (↑c0.symm) c0.target ∧\n                          ContDiffOn ℝ (↑⊤) G c0.target ∧\n                            (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)),\n                                TightVer401.planarSupportMap G (↑c0 p) = d.bandMap p) ∧\n                              (∀ q ∈ c0.target, (TightVer401.planarHessian G q).det < 0) ∧\n                                (Topology.IsEmbedding fun q => TightVer401.planarGradient G ↑q) ∧\n                                  TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G) (Y ∘ ↑c0.symm)\n                                      c0.target ∧\n                                    ∃ C,\n                                      C = ↑c0 '' tsupport Y ∧\n                                        IsCompact C ∧\n                                          C.Nonempty ∧\n                                            C ⊆\n                                                ↑c0 ''\n                                                  Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) ∧\n                                              ↑c0 '' tsupport Y ⊆ C"
     },
     {
       "axioms": [
@@ -195184,6 +195491,300 @@
         "Quot.sound"
       ],
       "kind": "definition",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier",
+      "type": "Set OAI.SmoothLocal.Geometry.Coord →\n  Set OAI.SmoothLocal.Geometry.Coord → (OAI.SmoothLocal.Geometry.Coord → ℝ) → Set OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier.eq_1",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B = Vraw ∩ (GinU ∪ B ⁻¹' Set.Ioi 0)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_closed_rebased_band",
+      "type": "∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  (∀ (s : ℝ), 0 < d s) →\n    (∀ (s t : ℝ), b s ≤ t → t ≤ b s + d s → TightVer401.visibleConnectorSource p w ![a s, t] ∈ Vraw) →\n      (∀ (s t : ℝ), b s ≤ t → t ≤ 0 → TightVer401.visibleConnectorSource p w ![a s, t] ∈ GinU) →\n        (∀ (s u : ℝ),\n            u ∈ Set.Icc 0 1 →\n              B\n                  (TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)\n                    (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u]) =\n                b s + u * d s) →\n          TightVer401.visibleConnectorFinalSmoothingClosedRebasedBand p w a b d ⊆\n            TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_closed_subset",
+      "type": "∀ {Vraw GinU C : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  C ⊆ TightVer401.visibleConnectorFinalSmoothingClosedRebasedBand p w a b d →\n    (∀ (s : ℝ), 0 < d s) →\n      (∀ (s t : ℝ), b s ≤ t → t ≤ b s + d s → TightVer401.visibleConnectorSource p w ![a s, t] ∈ Vraw) →\n        (∀ (s t : ℝ), b s ≤ t → t ≤ 0 → TightVer401.visibleConnectorSource p w ![a s, t] ∈ GinU) →\n          (∀ (s u : ℝ),\n              u ∈ Set.Icc 0 1 →\n                B\n                    (TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)\n                      (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u]) =\n                  b s + u * d s) →\n            C ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_incoming_subset",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  Vraw ∩ GinU ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_negative_domain",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ∩ interior (B ⁻¹' Set.Ioi 0)ᶜ ⊆ GinU"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_nonpositive_domain",
+      "type": "∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ}\n  {x : OAI.SmoothLocal.Geometry.Coord},\n  x ∈ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B → B x ≤ 0 → x ∈ GinU"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_open",
+      "type": "∀ {Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ},\n  IsOpen Vraw →\n    IsOpen GinU → ContinuousOn B Vraw → IsOpen (TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_positive_domain",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ∩ interior (B ⁻¹' Set.Ioi 0) ⊆ Vraw"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_positive_subset",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  Vraw ∩ B ⁻¹' Set.Ioi 0 ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_seam_subset",
+      "type": "∀ {Vraw GinU S : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ},\n  S ⊆ Vraw → S ⊆ GinU → S ⊆ TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_subset_raw",
+      "type": "∀ (Vraw GinU : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ⊆ Vraw"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingCarrier_subset_target",
+      "type": "∀ {Vraw GinU T : Set OAI.SmoothLocal.Geometry.Coord} {B : OAI.SmoothLocal.Geometry.Coord → ℝ},\n  Vraw ⊆ T → TightVer401.visibleConnectorFinalSmoothingCarrier Vraw GinU B ⊆ T"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorFinalSmoothingClosedRebasedBand",
+      "type": "(ℝ → OAI.SmoothLocal.Geometry.Coord) →\n  (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → ℝ) → (ℝ → ℝ) → (ℝ → ℝ) → Set OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorFinalSmoothingIncomingOpen",
+      "type": "Set OAI.SmoothLocal.Geometry.Coord →\n  Set OAI.SmoothLocal.Geometry.Coord →\n    Set OAI.SmoothLocal.Geometry.Coord → (OAI.SmoothLocal.Geometry.Coord → ℝ) → Set OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingIncomingOpen.eq_1",
+      "type": "∀ (V GinU N : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingIncomingOpen V GinU N B = (V ∩ GinU) \\ closure N ∩ {x | B x < 0}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorFinalSmoothingTerminalOpen",
+      "type": "Set OAI.SmoothLocal.Geometry.Coord →\n  Set OAI.SmoothLocal.Geometry.Coord →\n    Set OAI.SmoothLocal.Geometry.Coord → (OAI.SmoothLocal.Geometry.Coord → ℝ) → Set OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothingTerminalOpen.eq_1",
+      "type": "∀ (V Vraw N : Set OAI.SmoothLocal.Geometry.Coord) (B : OAI.SmoothLocal.Geometry.Coord → ℝ),\n  TightVer401.visibleConnectorFinalSmoothingTerminalOpen V Vraw N B = (V ∩ Vraw) \\ closure N ∩ {x | 0 < B x}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_exists_canonical_side_threshold",
+      "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {gamma : ℝ → ℂ} {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V : Set OAI.SmoothLocal.Geometry.Coord},\n      ContDiff ℝ (↑⊤) gamma →\n        Function.Periodic gamma L →\n          IsOpen V →\n            ContDiffOn ℝ (↑⊤) B V →\n              (∀ (s : ℝ), TightVer401.seamComplexCoord (gamma s) ∈ V) →\n                (∀ (s : ℝ), B (TightVer401.seamComplexCoord (gamma s)) = 0) →\n                  (∀ (s : ℝ),\n                      (fderiv ℝ B (TightVer401.seamComplexCoord (gamma s)))\n                          (TightVer401.seamComplexCoord (Complex.I * deriv gamma s)) <\n                        0) →\n                    ∃ r > 0,\n                      ∀ (s t : ℝ),\n                        |t| ≤ r →\n                          TightVer401.seamNormalCoordinates gamma ![s, t] ∈ V ∧\n                            (B (TightVer401.seamNormalCoordinates gamma ![s, t]) < 0 ↔ 0 < t)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_exists_modification",
+      "type": "∀ {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V C K T : Set OAI.SmoothLocal.Geometry.Coord},\n  IsOpen V →\n    IsCompact C →\n      IsCompact K →\n        IsCompact T →\n          C ⊆ V →\n            (∀ x ∈ C, B x = 0) →\n              (∀ x ∈ K, B x < 0) → (∀ x ∈ T, 0 < B x) → ∃ N, IsOpen N ∧ C ⊆ N ∧ closure N ⊆ V \\ (K ∪ T)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_incoming_open",
+      "type": "∀ {B Gin raw H : OAI.SmoothLocal.Geometry.Coord → ℝ} {V GinU N K : Set OAI.SmoothLocal.Geometry.Coord},\n  IsOpen V →\n    IsOpen GinU →\n      ContinuousOn B V →\n        K ⊆ V →\n          K ⊆ GinU →\n            Disjoint K (closure N) →\n              (∀ x ∈ K, B x < 0) →\n                (∀ x ∈ V \\ N, H =ᶠ[nhds x] TightVer401.relativeSaddlePiecewise {y | B y < 0} Gin raw) →\n                  have O := TightVer401.visibleConnectorFinalSmoothingIncomingOpen V GinU N B;\n                  IsOpen O ∧ K ⊆ O ∧ O ⊆ V ∩ GinU ∧ Set.EqOn H Gin O"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_incoming_open._simp_1_2",
+      "type": "∀ {α : Type u} (x : α) (a b : Set α), (x ∈ a ∩ b) = (x ∈ a ∧ x ∈ b)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_incoming_open._simp_1_3",
+      "type": "∀ {α : Type u} {s t : Set α} (x : α), (x ∈ s \\ t) = (x ∈ s ∧ x ∉ t)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_incoming_open._simp_1_4",
+      "type": "∀ {α : Type u} {β : Type v} {f : α → β} {s : Set β} {a : α}, (a ∈ f ⁻¹' s) = (f a ∈ s)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_incoming_open._simp_1_5",
+      "type": "∀ {α : Type u_1} [inst : Preorder α] {b x : α}, (x ∈ Set.Iio b) = (x < b)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_sublevel_frontier_zero",
+      "type": "∀ {B : OAI.SmoothLocal.Geometry.Coord → ℝ} {V : Set OAI.SmoothLocal.Geometry.Coord},\n  IsOpen V → ContinuousOn B V → ∀ x ∈ V ∩ frontier {y | B y < 0}, B x = 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_terminal_open",
+      "type": "∀ {B Gin raw H : OAI.SmoothLocal.Geometry.Coord → ℝ} {V Vraw N T : Set OAI.SmoothLocal.Geometry.Coord},\n  IsOpen V →\n    IsOpen Vraw →\n      ContinuousOn B V →\n        T ⊆ V →\n          T ⊆ Vraw →\n            Disjoint T (closure N) →\n              (∀ x ∈ T, 0 < B x) →\n                (∀ x ∈ V \\ N, H =ᶠ[nhds x] TightVer401.relativeSaddlePiecewise {y | B y < 0} Gin raw) →\n                  have O := TightVer401.visibleConnectorFinalSmoothingTerminalOpen V Vraw N B;\n                  IsOpen O ∧ T ⊆ O ∧ O ⊆ V ∩ Vraw ∧ Set.EqOn H raw O"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_terminal_open._simp_1_2",
+      "type": "∀ {α : Type u} (x : α) (a b : Set α), (x ∈ a ∩ b) = (x ∈ a ∧ x ∈ b)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_terminal_open._simp_1_3",
+      "type": "∀ {α : Type u} {s t : Set α} (x : α), (x ∈ s \\ t) = (x ∈ s ∧ x ∉ t)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_terminal_open._simp_1_4",
+      "type": "∀ {α : Type u} {β : Type v} {f : α → β} {s : Set β} {a : α}, (a ∈ f ⁻¹' s) = (f a ∈ s)"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorFinalSmoothing_terminal_open._simp_1_5",
+      "type": "∀ {α : Type u_1} [inst : Preorder α] {b x : α}, (x ∈ Set.Ioi b) = (b < x)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
       "name": "TightVer401.visibleConnectorGinDisplacedDomain",
       "type": "Set OAI.SmoothLocal.Geometry.Coord →\n  (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → OAI.SmoothLocal.Geometry.Coord) → Set (ℝ × ℝ)"
     },
@@ -195702,6 +196303,164 @@
       "kind": "theorem",
       "name": "TightVer401.visibleConnectorJ_hasDerivAt",
       "type": "∀ {f : ℝ → OAI.SmoothLocal.Geometry.Coord} {f' : OAI.SmoothLocal.Geometry.Coord} {s : ℝ},\n  HasDerivAt f f' s → HasDerivAt (fun t => TightVer401.visibleConnectorJ (f t)) (TightVer401.visibleConnectorJ f') s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_delta_closed",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},\n  (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w s) < 0) →\n    (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s + h s • deriv w s) (w s) < 0) →\n      ∀ (q : OAI.SmoothLocal.Geometry.Coord),\n        0 ≤ q 1 → q 1 ≤ h (q 0) → 0 < TightVer401.visibleConnectorDelta p gamma w q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_fields",
+      "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},\n      ContDiff ℝ (↑⊤) p →\n        ContDiff ℝ (↑⊤) w →\n          ContDiff ℝ (↑⊤) h →\n            Function.Periodic p L →\n              Function.Periodic w L →\n                Function.Periodic h L →\n                  (∀ (s : ℝ), 0 < h s) →\n                    (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w s) < 0) →\n                      (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s + h s • deriv w s) (w s) < 0) →\n                        have F := TightVer401.visibleConnectorCartesianSource L p w h;\n                        have O := {q | 0 < TightVer401.planarRadius q};\n                        IsOpen O ∧\n                          ContDiffOn ℝ (↑⊤) F O ∧\n                            {q | 1 ≤ TightVer401.planarRadius q ∧ TightVer401.planarRadius q ≤ 2} ⊆ O ∧\n                              (∀ (q : OAI.SmoothLocal.Geometry.Coord),\n                                  1 ≤ TightVer401.planarRadius q →\n                                    TightVer401.planarRadius q ≤ 2 → 0 < TightVer401.annularJacobian F q) ∧\n                                (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = p s) ∧\n                                  ∀ (s : ℝ),\n                                    F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = p s + h s • w s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical",
+      "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},\n      Function.Periodic p L →\n        Function.Periodic w L →\n          Function.Periodic h L →\n            ∀ {r : ℝ},\n              0 < r →\n                ∀ (s : ℝ),\n                  TightVer401.visibleConnectorCartesianSource L p w h\n                      (TightVer401.saddlePolarChart ![r, 2 * Real.pi * s / L]) =\n                    p s + ((r - 1) * h s) • w s"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_1",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_2",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_3",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_4",
+      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_5",
+      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_6",
+      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_physical._simp_1_7",
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_rebased_delta_closed",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w →\n      ContDiff ℝ (↑⊤) a →\n        ContDiff ℝ (↑⊤) b →\n          ContDiff ℝ (↑⊤) d →\n            (∀ (s : ℝ), 0 < deriv a s) →\n              (∀ (s : ℝ), 0 < d s) →\n                (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s]) →\n                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s + d s]) →\n                    ∀ (q : OAI.SmoothLocal.Geometry.Coord),\n                      0 ≤ q 1 →\n                        q 1 ≤ 1 →\n                          0 <\n                            TightVer401.visibleConnectorDelta (TightVer401.visibleConnectorRebasedSource p w a b)\n                              (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                              (TightVer401.visibleConnectorRebasedRuling w a d) q"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamilySourceChart_rebased_endpoint_signs",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w →\n      ContDiff ℝ (↑⊤) a →\n        ContDiff ℝ (↑⊤) b →\n          ContDiff ℝ (↑⊤) d →\n            (∀ (s : ℝ), 0 < deriv a s) →\n              (∀ (s : ℝ), 0 < d s) →\n                (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s]) →\n                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s + d s]) →\n                    ∀ (s : ℝ),\n                      TightVer401.visibleConnectorDet (deriv (TightVer401.visibleConnectorRebasedSource p w a b) s)\n                            (TightVer401.visibleConnectorRebasedRuling w a d s) <\n                          0 ∧\n                        TightVer401.visibleConnectorDet\n                            (deriv (TightVer401.visibleConnectorRebasedSource p w a b) s +\n                              deriv (TightVer401.visibleConnectorRebasedRuling w a d) s)\n                            (TightVer401.visibleConnectorRebasedRuling w a d s) <\n                          0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamily_gradient_boundaries_disjoint",
+      "type": "∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]\n  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {gamma : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  (∀ (s : ℝ), TightVer401.planarRadius (gamma s) = R) → Disjoint (Set.range D.incoming.gamma) (Set.range gamma)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamily_incoming_gradient_radius",
+      "type": "∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]\n  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) (s : ℝ), R < TightVer401.planarRadius (D.incoming.gamma s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamily_incoming_gradient_uniform_margin",
+      "type": "∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]\n  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R),\n  ∃ eps > 0, ∀ (s : ℝ), R + eps ≤ TightVer401.planarRadius (D.incoming.gamma s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamily_source_boundaries_disjoint",
+      "type": "∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U N : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}\n  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)\n  (T : TightVer401.VisibleConnectorWitnessAssemblyTerminalFacts G U L),\n  IsOpen N →\n    Set.range D.incoming.p ⊆ N →\n      Set.EqOn G Gin N →\n        (∀ (s : ℝ), TightVer401.planarRadius (T.gamma s) = R) → Disjoint (Set.range D.incoming.p) (Set.range T.p)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorOrdinaryFamily_terminal_circle_gradient_disjoint",
+      "type": "∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ} [inst : Fact (0 < L)]\n  (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R) {gamma : ℝ → OAI.SmoothLocal.Geometry.Coord}\n  {theta : ℝ → ℝ},\n  Continuous theta →\n    (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) →\n      (∀ (s : ℝ), gamma s = R • TightVer401.visibleConnectorUnitDirection (theta s)) →\n        Disjoint (Set.range D.incoming.gamma) (Set.range gamma)"
     },
     {
       "axioms": [
@@ -198599,8 +199358,8 @@
     }
   ],
   "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion.",
-  "source_closure_sha256": "b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9",
-  "source_git_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+  "source_closure_sha256": "30977e6d2c53738be2b4168599eef5cb5a749a7d1fc58f28dbe17c4dc2fc08a7",
+  "source_git_commit": "50903ad02bfc9ad0e4a880dec95ec4c043f319ab",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
   "classical_registry_sha256": "8d2a3f846c6f21da451412bfe98bd5293b2af9f9896902e012e2fb1548eb963c",
