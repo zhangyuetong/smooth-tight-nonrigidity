@@ -1,0 +1,5 @@
+import TightVer401.ClassicalPositiveGaussTightnessProof
+
+#check TightVer401.classicalPositiveGaussTightness_proved
+#print TightVer401.classicalPositiveGaussTightness_proved
+#print axioms TightVer401.classicalPositiveGaussTightness_proved
