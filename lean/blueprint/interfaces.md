@@ -48,7 +48,7 @@ General height/component topology, native intrinsic-distance instance packaging,
 
 ## Construction milestones
 
-- `R.firstpair-selected-geometry`: pending — Original same-seed nested selected geometry for the first pair.
+- `R.firstpair-selected-geometry`: audited — Actual selected source core and protected geometry from one seed.
 - `R.compatible-displacement-production`: pending — Construct one compatible eta/rho family with native e and Cartesian E distinguished.
 - `R.full-incoming-gin-production`: pending — Prove the full Gin open germ for the SAME incoming seam.
 - `R.final-smoothed-h-production`: pending — Construct final H once on the full fixed smoothing domain.
@@ -59,6 +59,22 @@ General height/component topology, native intrinsic-distance instance packaging,
 
 These interface statuses come from the current local audit. An audited conditional consumer proves its stated implication and does not construct the pending source/core or universal ordinary-family inputs.
 
+- `R.incoming-terminal-radial-directional-stability-production`: audited — Produce simultaneous actual terminal radial directional and excess thresholds.
+- `R.selected-one-common-graph-budget-production`: audited — Construct one positive amplitude budget for BOTH fixed periodic profiles.
+- `R.selected-actual-traces-source-geometry-production`: audited — Derive exact selected source nesting and protected placement for SAME final traces.
+- `R.incoming-original-choice-from-data-production`: audited — Construct eta angular frame and original terminal geometry from D alone.
+- `R.incoming-literal-gin-terminal-stability-production`: audited — Construct displaced positive terminal filling for the SAME literal Gin family.
+- `R.incoming-d-only-coherent-choice-production`: audited — Inhabit coherent retained incoming choices from D alone.
+- `R.selected-round-flow-positive-source-production`: audited — Construct actual positive round-flow source from SAME selected initial values.
+- `R.selected-round-flow-exact-image-production`: audited — Identify explicit round-flow open-band image with SAME flow core.
+- `R.selected-round-cartesian-source-production`: audited — Construct smooth positive Cartesian source on the entire closed round annulus.
+- `R.selected-raw-boundary-positive-jordan-production`: audited — Produce positive Jordan fillings for actual original raw leaves.
+- `R.selected-raw-annulus-order-core-production`: audited — Derive strict raw Jordan order exact flow annulus and protected core.
+- `R.selected-raw-source-construction-production`: audited — Construct raw Jordan order and actual source inverse from original seed and margins.
+- `R.selected-protected-homotopy-winding-production`: audited — Transport actual inside and exterior by protected closed homotopy.
+- `R.selected-fermi-protected-avoidance-production`: audited — Construct actual selected graph homotopies avoiding SAME protected set.
+- `R.selected-actual-graph-to-raw-protected-production`: audited — Construct graph-to-raw protected homotopy with SAME actual speed clock.
+- `R.selected-protected-jordan-placement-production`: audited — Derive selected Jordan nesting and actual protected placement from transport.
 - `R.final-smoothing-literal-signed-height-production`: audited — Construct smooth literal signed height from SAME Cartesian source inverse.
 - `R.final-smoothing-literal-height-normal-production`: audited — Derive actual negative normal derivative and canonical side classifier.
 - `R.final-smoothing-literal-height-carrier-production`: audited — Construct seam full closed-band and compact boundary carrier facts for literal B.
@@ -7015,17 +7031,134 @@ Additional required audited interface: `TightVer401.visibleConnector_jordan_encl
           closure (OAI.CircleDomainRigidity.jordanInterior Hin) ⊆ OAI.CircleDomainRigidity.jordanInterior Hout
 ```
 
-### R.firstpair-selected-geometry: Original same-seed nested selected geometry for the first pair (pending)
+### R.firstpair-selected-geometry: Actual selected source core and protected geometry from one seed (audited)
 
-Instantiate SAME corrected seed/Ge/FINAL Y and already retained selected leaves/clocks/patches ONCE. Uniform core label gaps, Fermi label tubes/amplitude budgets, actual graph/core and pair separation, positive flow initial-value derivative, full-band negative projected Gauss orientation and genuine protected FLOW placement now have substantive producers. Still construct the positive full-round Cartesian map with INCREASING vin-to-vout initial value, its raw Jordan annulus image and winding transport through the SAME disjoint selected homotopies. Final selected strict source Jordan nesting and hCore : c0 image tsupport Y inside the FINAL selected Jordan annulus remain ORIGINAL PENDING. Keep SAME e0/Ge traces/homotopy, actual gradient origin enclosures and existing original G0 open agreement. Never reselect leaves using the optional core-band existence helper.
+The original selected source/core producer is now an ACTUAL premise-free existential: N=10000, internal positive numeric choices, SAME corrected seed and FINAL margin-selected Y feed one complete prefix. It returns Ge own gradient inverse, exact normalized trace/filling/order/visibility/pairing facts, protected Jordan support placement, full-source closed homotopy and protected open equality. This gate is audited ONLY when CURRENT combined kernel declarations include both actual seed existential and complete single-prefix producer. Root must still connect retained output projections to the final caller; hOrdinary and ultimate first-pair existence remain pending.
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`, `R.final-seed-support-connection`, `R.final-selected-gradient-cartesian-connection`, `R.selected-core-label-gap-production`, `R.selected-phase-label-tubes-production`, `R.selected-core-flow-placement-production`, `R.selected-full-band-gauss-orientation-production`, `R.selected-annular-descent-production`, `R.selected-annular-descent-jacobian-production`.
+Dependencies: `R.selected-patches-budget-application`, `R.selected-homotopy-domain-application`, `R.actual-flow-protected-neighborhood-application`, `R.degree`, `R.final-seed-support-connection`, `R.final-selected-gradient-cartesian-connection`, `R.selected-core-label-gap-production`, `R.selected-phase-label-tubes-production`, `R.selected-core-flow-placement-production`, `R.selected-full-band-gauss-orientation-production`, `R.selected-annular-descent-production`, `R.selected-annular-descent-jacobian-production`, `R.selected-raw-source-construction-production`, `R.selected-protected-jordan-placement-production`, `R.selected-actual-traces-source-geometry-production`, `R.actual-seed-selected-existence-production`.
 
-Lean target: `TightVer401.exists_same_seed_nested_selected_exit_geometry`; source: `TightVer401/PositiveExitConstructionSelectedGeometryApplication.lean`.
+Lean target: `TightVer401.actualSeed_exists_selected_single_prefix`; source: `TightVer401/PositiveExitConstructionActualSeedSelected.lean`.
 
-The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.
+Interface origin: `kernel_audit`.
+
+```lean
+∃ T,
+  ∃ (hT : 0 < T),
+    ∃ d w c0 G0 Y,
+      0 < w ∧
+        c0.source = Set.univ ∧
+          ContMDiffOn TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) (↑⊤) (↑c0)
+              c0.source ∧
+            ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)
+                (↑c0.symm) c0.target ∧
+              (∀ p ∈ c0.source, TightVer401.planarSupportMap G0 (↑c0 p) = d.bandMap p) ∧
+                TightVer401.IsBandBending d.bandMap Y ∧
+                  HasCompactSupport Y ∧
+                    (∃ p, Y p ≠ 0) ∧
+                      tsupport Y ⊆ c0.source ∧ Nonempty (TightVer401.PositiveExitSinglePrefixGeometry d c0 G0 Y)
+```
+
+Additional required audited interface: `TightVer401.positiveExit_exists_single_prefix_source_geometry`.
+
+```lean
+∀ {T δ w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0),
+  0 < δ →
+    ∀
+      (hinside :
+        ∀ u ∈ Set.Ioo 0 δ,
+          ∀ (t : ℝ),
+            TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+              Set.Ioo 0 w),
+      Function.Injective d.bandGaussMap →
+        (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+          (∀ (t : ℝ), TightVer401.ambientCross (d.T t) (d.E t) = d.n t) →
+            (∀ (t : ℝ), d.τ t < 0) →
+              ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+                e.source = Set.univ →
+                  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+                    ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) ↑⊤
+                        ↑e →
+                      ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel
+                          (↑⊤) (↑e.symm) e.target →
+                        ∀ (G : OAI.SmoothLocal.Geometry.Coord → ℝ),
+                          ContDiffOn ℝ (↑⊤) G e.target →
+                            (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)),
+                                TightVer401.planarSupportMap G (↑e p) = d.bandMap p) →
+                              (∀ y ∈ e.target, (TightVer401.planarHessian G y).det < 0) →
+                                (Topology.IsEmbedding fun y => TightVer401.planarGradient G ↑y) →
+                                  ∀ (C : Set OAI.SmoothLocal.Geometry.Coord),
+                                    IsCompact C →
+                                      C.Nonempty →
+                                        C ⊆ ↑e '' Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+                                          ∀ (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient),
+                                            TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G)
+                                                (Y ∘ ↑e.symm) e.target →
+                                              ↑e '' tsupport Y ⊆ C →
+                                                ∀ {η ξ σin σout : ℝ},
+                                                  0 < η →
+                                                    0 < ξ →
+                                                      σin ≠ 0 →
+                                                        σout ≠ 0 →
+                                                          (∀ (v : ↑(Set.Ioo 0 δ)),
+                                                              (∀ (s : ℝ),
+                                                                  TightVer401.angularDescentComplex
+                                                                      (TightVer401.gnomonicInverse
+                                                                        (TightVer401.positiveExitRawLeaf d hb hinside v
+                                                                          s)) ≠
+                                                                    0) ∧
+                                                                (∀ (s : ℝ),
+                                                                    TightVer401.angularDescentComplex
+                                                                        (TightVer401.planarGradient G
+                                                                          (TightVer401.gnomonicInverse
+                                                                            (TightVer401.positiveExitRawLeaf d hb
+                                                                              hinside v s))) ≠
+                                                                      0) ∧
+                                                                  TightVer401.HasPositiveArgumentTurn
+                                                                      (TightVer401.angularDescentComplex ∘
+                                                                        TightVer401.gnomonicInverse ∘
+                                                                          TightVer401.positiveExitRawLeaf d hb hinside
+                                                                            v)
+                                                                      T ∧
+                                                                    TightVer401.HasPositiveArgumentTurn
+                                                                        (TightVer401.angularDescentComplex ∘
+                                                                          TightVer401.planarGradient G ∘
+                                                                            TightVer401.gnomonicInverse ∘
+                                                                              TightVer401.positiveExitRawLeaf d hb
+                                                                                hinside v)
+                                                                        T ∧
+                                                                      (TightVer401.ComplexVisiblePair (1 / 4)
+                                                                          (TightVer401.angularDescentComplex ∘
+                                                                            TightVer401.gnomonicInverse ∘
+                                                                              TightVer401.positiveExitRawLeaf d hb
+                                                                                hinside v)
+                                                                          fun s =>
+                                                                          Complex.I *
+                                                                            TightVer401.angularDescentComplex
+                                                                              (TightVer401.planarGradient G
+                                                                                (TightVer401.gnomonicInverse
+                                                                                  (TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v s)))) ∧
+                                                                        TightVer401.ComplexVisiblePair (4 / 5)
+                                                                          (TightVer401.corrugatedReverseReflect
+                                                                            (TightVer401.angularDescentComplex ∘
+                                                                              TightVer401.planarGradient G ∘
+                                                                                TightVer401.gnomonicInverse ∘
+                                                                                  TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v))
+                                                                          fun s =>
+                                                                          Complex.I *
+                                                                            TightVer401.corrugatedReverseReflect
+                                                                              (TightVer401.angularDescentComplex ∘
+                                                                                TightVer401.gnomonicInverse ∘
+                                                                                  TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v)
+                                                                              s) →
+                                                            Nonempty
+                                                              (TightVer401.PositiveExitSinglePrefixGeometry d e G Y)
+```
 
 ### R.round-source-order-application: Derive strict source order on the fixed round annulus (audited)
 
@@ -7367,11 +7500,11 @@ Additional required audited interface: `TightVer401.completedSaddleTorusBendingF
 
 ### R.compatible-displacement-production: Construct one compatible eta/rho family with native e and Cartesian E distinguished (pending)
 
-Instantiate coherent original D data with ONE eta-before-family ruling, ONE strengthened native e and ONE rho from literal Gin compatible-choice/actual-terminal-filling producers. Those exports now derive actual coefficients, lower Delta, ENTIRE negative Gin strip and uniform height bound; rebased coefficients derive positive remaining d, upper Delta and whole closed signs. Original lower trace is proved literally by SAME inverse. Still connect actual universal D-derived eta/ruling/phase/terminal/fills, inverse-height carrier/seam facts and one raw/smoothing invocation without reselection. Numerical compatible choice is substantially constructed; coherent universal-family inhabitation remains ORIGINAL PENDING. Cartesian E remains distinct from native e and final H gradient inverse.
+Apply the D-only coherent parameter-choice inhabitant to the SAME actual incoming D and etaMax, retaining its literal eta/Gin family/native e/ONE rho and all produced phase/height/coefficient/lower-strip/terminal facts. The choice is now constructed from D alone. Coherently instantiate the rebased topology/raw/smoothing producers and final H own inverse; this downstream universal ordinary-family assembly remains pending.
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`, `R.incoming-displaced-seam-embedding-application`, `R.incoming-terminal-margins-production-application`, `R.incoming-terminal-literal-rebase-application`, `R.ordinary-coefficient-continuity-application`, `R.ordinary-lower-delta-threshold-production`, `R.ordinary-terminal-escape-production`, `R.ordinary-fixed-source-enclosure-production`, `R.incoming-eta-first-margins-production`, `R.incoming-joint-actual-coefficients-production`, `R.incoming-joint-coefficient-sign-threshold-production`, `R.incoming-same-inverse-gin-delta-threshold-production`, `R.incoming-rho-below-retained-margins-application`, `R.incoming-literal-gin-compatible-choice-production`, `R.incoming-actual-terminal-family-filling-production`, `R.incoming-rebased-original-trace-production`, `R.ordinary-rebased-coefficients-production`, `R.final-smoothing-literal-signed-height-production`, `R.final-smoothing-literal-height-carrier-production`.
+Dependencies: `R.actual-incoming-collar-application`, `R.displaced-seam-rebase-application`, `R.actual-terminal-geometry-application`, `R.actual-terminal-filling-enclosure-application`, `R.incoming-displaced-seam-embedding-application`, `R.incoming-terminal-margins-production-application`, `R.incoming-terminal-literal-rebase-application`, `R.ordinary-coefficient-continuity-application`, `R.ordinary-lower-delta-threshold-production`, `R.ordinary-terminal-escape-production`, `R.ordinary-fixed-source-enclosure-production`, `R.incoming-eta-first-margins-production`, `R.incoming-joint-actual-coefficients-production`, `R.incoming-joint-coefficient-sign-threshold-production`, `R.incoming-same-inverse-gin-delta-threshold-production`, `R.incoming-rho-below-retained-margins-application`, `R.incoming-literal-gin-compatible-choice-production`, `R.incoming-actual-terminal-family-filling-production`, `R.incoming-rebased-original-trace-production`, `R.ordinary-rebased-coefficients-production`, `R.final-smoothing-literal-signed-height-production`, `R.final-smoothing-literal-height-carrier-production`, `R.incoming-d-only-coherent-choice-production`.
 
 Interface origin: `proposed_theorem`.
 
@@ -7413,7 +7546,7 @@ For EVERY actual Gin/Uin/R and D : VisibleConnectorIncomingData Gin Uin 1 R and 
 
 Route scope: `primary`. External dependencies: none.
 
-Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-gradient-boundary-separation-application`, `R.ordinary-source-boundary-separation-application`, `R.final-smoothing-open-derivatives-application`, `R.ordinary-global-raw-potential-production`, `R.ordinary-fixed-source-enclosure-production`, `R.ordinary-round-gradient-enclosure-production`, `R.ordinary-rebased-same-jordan-topology-production`, `R.ordinary-full-rebased-band-carrier-production`, `R.ordinary-final-h-terminal-jets-production`, `R.final-smoothing-from-actual-cartesian-production`, `R.final-gradient-collar-application`.
+Dependencies: `R.final-smoothed-h-production`, `R.retained-source-order-application`, `R.retained-gradient-order-application`, `R.actual-terminal-filling-enclosure-application`, `R.ordinary-source-chart-fields-application`, `R.ordinary-gradient-boundary-separation-application`, `R.ordinary-source-boundary-separation-application`, `R.final-smoothing-open-derivatives-application`, `R.ordinary-global-raw-potential-production`, `R.ordinary-fixed-source-enclosure-production`, `R.ordinary-round-gradient-enclosure-production`, `R.ordinary-rebased-same-jordan-topology-production`, `R.ordinary-full-rebased-band-carrier-production`, `R.ordinary-final-h-terminal-jets-production`, `R.final-smoothing-from-actual-cartesian-production`, `R.final-gradient-collar-application`, `R.incoming-d-only-coherent-choice-production`.
 
 Interface origin: `proposed_theorem`.
 
@@ -11550,6 +11683,1425 @@ Interface origin: `kernel_audit`.
                                                                             V ⊆ E.target ∧ ContDiffOn ℝ (↑⊤) H V ∧ ⋯ ∧ ⋯
 ```
 
+### R.incoming-original-choice-from-data-production: Construct eta angular frame and original terminal geometry from D alone (audited)
+
+Given only actual incoming D and positive etaMax, derive smooth increasing full-turn theta from its visibility and gradient trace, choose eta first below etaMax, and identify ONE shifted ruling with literal GinRotatedRuling. Construct central A/B/C, actual gradient/radius margin, original terminal positive Jordan filling, origin, radial sign and arbitrary norm escape budget. No angular signs, chosen eta or desired terminal filling is an added premise. This is original parameter production, not the final ordinary-family inhabitant.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-eta-first-margins-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParameters_exists_original_choice_from_data`; source: `TightVer401/VisibleConnectorIncomingParametersFromData.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R etaMax M : ℝ}
+  [hL : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R),
+  0 < etaMax →
+    ∃ theta,
+      ContDiff ℝ (↑⊤) theta ∧
+        (∀ (s : ℝ), theta (s + L) = theta s + 2 * Real.pi) ∧
+          (∀ (s : ℝ), 0 < deriv theta s) ∧
+            (∀ (s : ℝ),
+                TightVer401.visibleConnectorTangentDirection R D.incoming.gamma s =
+                  TightVer401.visibleConnectorUnitDirection (theta s)) ∧
+              ∃ eta > 0,
+                eta < etaMax ∧
+                  have w0 := TightVer401.visibleConnectorShiftedRuling R D.incoming.gamma theta eta;
+                  have T := TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0;
+                  w0 = TightVer401.visibleConnectorGinRotatedRuling R eta D.incoming.gamma ∧
+                    ContDiff ℝ (↑⊤) w0 ∧
+                      Function.Periodic w0 L ∧
+                        (∀ (s : ℝ),
+                            0 < TightVer401.visibleConnectorA D.incoming.p w0 s ∧
+                              0 < TightVer401.visibleConnectorB D.incoming.gamma w0 s ∧
+                                0 < TightVer401.visibleConnectorC D.incoming.gamma w0 s) ∧
+                          (∀ (s : ℝ), D.incoming.gamma s = TightVer401.planarGradient Gin (D.incoming.p s)) ∧
+                            (∀ (s : ℝ), R < ‖Complex.I * TightVer401.angularDescentComplex (D.incoming.gamma s)‖) ∧
+                              ContDiff ℝ (↑⊤) T ∧
+                                Function.Periodic T L ∧
+                                  (∀ (s : ℝ), TightVer401.positiveExitComplexTrace T s ≠ 0) ∧
+                                    (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDet (T s) (deriv T s)) ∧
+                                      TightVer401.HasPositiveArgumentTurn (TightVer401.positiveExitComplexTrace T) L ∧
+                                        Set.InjOn T (Set.Ico 0 L) ∧
+                                          Schoenflies.IsJordanCurve
+                                              (Set.range
+                                                (⇑TightVer401.jordanComplexCoordinates.symm ∘
+                                                  TightVer401.positiveExitComplexTrace T)) ∧
+                                            (∀ (s : ℝ), M < ‖TightVer401.positiveExitComplexPoint (T s)‖) ∧
+                                              (∀ (s : ℝ),
+                                                  0 <
+                                                    T s ⬝ᵥ
+                                                      -TightVer401.visibleConnectorJ
+                                                          (TightVer401.visibleConnectorShiftedDirection theta eta s)) ∧
+                                                (∀ (s : ℝ),
+                                                    0 <
+                                                      deriv T s ⬝ᵥ
+                                                        TightVer401.visibleConnectorGinRotatedDirection R eta
+                                                          D.incoming.gamma s) ∧
+                                                  (∀ (s : ℝ),
+                                                      0 <
+                                                        T s ⬝ᵥ
+                                                          -TightVer401.visibleConnectorJ
+                                                              (TightVer401.visibleConnectorGinRotatedDirection R eta
+                                                                D.incoming.gamma s)) ∧
+                                                    (∀ (s : ℝ),
+                                                        0 <
+                                                          TightVer401.visibleConnectorJ (D.incoming.gamma s) ⬝ᵥ
+                                                              TightVer401.visibleConnectorGinRotatedDirection R eta
+                                                                D.incoming.gamma s -
+                                                            R) ∧
+                                                      ∃ H,
+                                                        TightVer401.DualRadialCompletionPositiveTrace H
+                                                            (TightVer401.visibleConnectorTerminalNormalizedTrace L T) ∧
+                                                          0 ∈ ⇑H '' Metric.ball 0 1 ∧
+                                                            Set.range (TightVer401.positiveExitComplexTrace T) =
+                                                              frontier (⇑H '' Metric.ball 0 1)
+```
+
+### R.incoming-literal-gin-terminal-stability-production: Construct displaced positive terminal filling for the SAME literal Gin family (audited)
+
+From actual incoming D, SAME smooth periodic literal rotated ruling, positive original C and genuine original norm/determinant/nonzero/full-turn facts, build actual family-domain and joint coefficient facts internally. Produce a uniform displacement threshold retaining smooth periodic terminal, norm escape, positive determinant, quotient injectivity, normalized positive filling, common origin and exact terminal frontier. The threshold is for THIS literal Gin family, not independent pc/gc/wc.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-original-choice-from-data-production`, `R.incoming-actual-terminal-family-filling-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingTerminal_Gin_exists_positive_filling`; source: `TightVer401/VisibleConnectorIncomingTerminalGinStability.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R eta M : ℝ}
+  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)
+  {w0 : ℝ → OAI.SmoothLocal.Geometry.Coord},
+  ContDiff ℝ (↑⊤) w0 →
+    Function.Periodic w0 L →
+      (∀ (s : ℝ), w0 s = TightVer401.visibleConnectorGinRotatedRuling R eta D.incoming.gamma s) →
+        (∀ (s : ℝ), 0 < TightVer401.visibleConnectorC D.incoming.gamma w0 s) →
+          (∀ s ∈ Set.Icc 0 L,
+              M <
+                ‖TightVer401.positiveExitComplexPoint
+                    (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0 s)‖) →
+            (∀ s ∈ Set.Icc 0 L,
+                0 <
+                  TightVer401.visibleConnectorDet
+                    (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0 s)
+                    (deriv (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0) s)) →
+              (∀ (s : ℝ),
+                  TightVer401.positiveExitComplexTrace
+                      (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0) s ≠
+                    0) →
+                TightVer401.HasPositiveArgumentTurn
+                    (TightVer401.positiveExitComplexTrace
+                      (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0))
+                    L →
+                  ∃ rhoMax > 0,
+                    ∀ (rho : ℝ),
+                      |rho| < rhoMax →
+                        have pc := fun t => TightVer401.visibleConnectorGinDisplacedPosition D.incoming.p w0 (rho, t);
+                        have gc := fun t =>
+                          TightVer401.visibleConnectorGinDisplacedGradient Gin D.incoming.p w0 (rho, t);
+                        have wc := fun t =>
+                          TightVer401.visibleConnectorGinDisplacedRuling Gin R eta D.incoming.p w0 (rho, t);
+                        have T := TightVer401.visibleConnectorActualTerminalSource pc gc wc;
+                        (∀ (s : ℝ),
+                            (rho, s) ∈
+                              TightVer401.visibleConnectorGinDisplacedVisibilityDomain Gin Uin R D.incoming.p w0) ∧
+                          (∀ (s : ℝ), 0 < TightVer401.visibleConnectorC gc wc s) ∧
+                            ContDiff ℝ (↑⊤) T ∧
+                              Function.Periodic T L ∧
+                                (∀ (s : ℝ), M < ‖TightVer401.positiveExitComplexTrace T s‖) ∧
+                                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDet (T s) (deriv T s)) ∧
+                                    Set.InjOn T (Set.Ico 0 L) ∧
+                                      ∃ H,
+                                        TightVer401.DualRadialCompletionPositiveTrace H
+                                            (TightVer401.visibleConnectorTerminalNormalizedTrace L T) ∧
+                                          0 ∈ OAI.CircleDomainRigidity.jordanInterior H ∧
+                                            Set.range (TightVer401.positiveExitComplexTrace T) =
+                                              frontier (OAI.CircleDomainRigidity.jordanInterior H)
+```
+
+### R.incoming-d-only-coherent-choice-production: Inhabit coherent retained incoming choices from D alone (audited)
+
+Given ONLY D and positive etaMax, construct Nonempty VisibleConnectorIncomingParametersChoice D etaMax: theta and eta first, literal w0/Gin family and ONE native e with local inverse charts and real phase/height, all positive thresholds BEFORE ONE rho. Retain positive smooth phase homeomorphism with smooth inverse, negative small height, actual coefficient/lower-Delta signs, ENTIRE negative Gin strip, original lower-source identity, whole visibility-domain homotopy strip for every abs(r)≤rho, and SAME displaced terminal radial positivity, directional derivative positivity, strict rotated-gradient excess above R and positive Jordan filling with norm escape and common origin. Radial/directional/excess and whole-family domain thresholds are intersected BEFORE selecting the SINGLE rho; these are retained conclusions, not unproved threshold premises. This is a proved parameter-choice inhabitant; it does NOT inhabit VisibleConnectorWitnessAssemblyOrdinaryData, produce final smoothing H or its own gradient inverse, or discharge hOrdinary.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-original-choice-from-data-production`, `R.incoming-literal-gin-terminal-stability-production`, `R.incoming-literal-gin-compatible-choice-production`, `R.incoming-rebased-original-trace-production`, `R.incoming-terminal-radial-directional-stability-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingParametersChoice_nonempty`; source: `TightVer401/VisibleConnectorIncomingParametersChoice.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R etaMax : ℝ}
+  [hL : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R),
+  0 < etaMax → Nonempty (TightVer401.VisibleConnectorIncomingParametersChoice D etaMax)
+```
+
+### R.selected-round-flow-positive-source-production: Construct actual positive round-flow source from SAME selected initial values (audited)
+
+Use SAME d/hb/hinside, vin<vout, north Gauss and oriented frame. Initial-height flow derivative is positive; round parameter map has negative determinant and raw projected Gauss orientation is negative, yielding positive actual roundFlowSource Jacobian. Construct smoothness on open radial-phase domain containing full closed band and exact periodicity. Source map is explicit, not granted.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-flow-initial-value-derivative-production`, `R.selected-full-band-gauss-orientation-production`.
+
+Lean target: `TightVer401.positiveExitSelected_roundFlowSource_jacobian_pos`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRoundFlow.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) (vin vout : ℝ),
+  vin < vout →
+    (∀ u ∈ Set.Ioo 0 δ,
+        ∀ (t : ℝ),
+          TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+            Set.Ioo 0 w) →
+      (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+        (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+          ∀ {q : OAI.SmoothLocal.Geometry.Coord},
+            q ∈ TightVer401.positiveExitSelected_roundFlowDomain δ vin vout →
+              0 < TightVer401.annularJacobian (TightVer401.positiveExitSelected_roundFlowSource d vin vout) q
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundFlowSource_contDiffOn`.
+
+```lean
+∀ {T δ w : ℝ} (d : TightVer401.PeriodicRuledFrame T) (vin vout : ℝ),
+  (∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+          Set.Ioo 0 w) →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      ContDiffOn ℝ (↑⊤) (TightVer401.positiveExitSelected_roundFlowSource d vin vout)
+        (TightVer401.positiveExitSelected_roundFlowDomain δ vin vout)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundFlowDomain_contains_closed_band`.
+
+```lean
+∀ {δ : ℝ} (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout → {q | 1 ≤ q 0 ∧ q 0 ≤ 2} ⊆ TightVer401.positiveExitSelected_roundFlowDomain δ ↑vin ↑vout
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundFlowSource_periodic`.
+
+```lean
+∀ {T : ℝ} (d : TightVer401.PeriodicRuledFrame T),
+  ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0 →
+    ∀ (vin vout r theta : ℝ),
+      TightVer401.positiveExitSelected_roundFlowSource d vin vout ![r, theta + 2 * Real.pi] =
+        TightVer401.positiveExitSelected_roundFlowSource d vin vout ![r, theta]
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_flowRaw_jacobian_pos`.
+
+```lean
+∀ {T δ w : ℝ} (d : TightVer401.PeriodicRuledFrame T),
+  (∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+          Set.Ioo 0 w) →
+    ∀ {q : OAI.SmoothLocal.Geometry.Coord},
+      q 1 ∈ Set.Ioo 0 δ → 0 < TightVer401.annularJacobian (TightVer401.positiveExitSelected_flowRaw d) q
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_flowRawHeight_partial_initial`.
+
+```lean
+∀ {T δ w : ℝ} (d : TightVer401.PeriodicRuledFrame T),
+  (∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+          Set.Ioo 0 w) →
+    ∀ {q : OAI.SmoothLocal.Geometry.Coord},
+      q 1 ∈ Set.Ioo 0 δ →
+        OAI.SmoothLocal.Geometry.coordPartial 1 (TightVer401.positiveExitSelected_flowRawHeight d) q =
+          TightVer401.ruledRho d.τ 0 /
+            (TightVer401.ruledRho d.τ (q 0) *
+              (1 +
+                  TightVer401.ruledRho d.τ 0 * q 1 *
+                    (TightVer401.ruledOmega d.k d.τ (q 0) - TightVer401.ruledOmega d.k d.τ 0)) ^
+                2)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundFlowParameters_jacobian`.
+
+```lean
+∀ (T vin vout : ℝ) (q : OAI.SmoothLocal.Geometry.Coord),
+  TightVer401.annularJacobian (TightVer401.positiveExitSelected_roundFlowParameters T vin vout) q =
+    -(T / (2 * Real.pi)) * (vout - vin)
+```
+
+### R.selected-round-flow-exact-image-production: Identify explicit round-flow open-band image with SAME flow core (audited)
+
+Using SAME original native chart e and its actual Gauss equation, prove literal round-flow source equals the selected flow leaf and its whole open radial band image equals flowCore for SAME vin/vout. No replacement inverse or partial carrier image is used.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-round-flow-positive-source-production`, `R.selected-core-flow-placement-production`.
+
+Lean target: `TightVer401.positiveExitSelected_roundFlowSource_image_open_band`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRoundImage.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+    ∀ (vin vout : ↑(Set.Ioo 0 δ)),
+      ↑vin < ↑vout →
+        TightVer401.positiveExitSelected_roundFlowSource d ↑vin ↑vout '' {q | 1 < q 0 ∧ q 0 < 2} =
+          TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin vout
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundFlowSource_eq_leaf`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+    ∀ (vin vout : ℝ) (q : OAI.SmoothLocal.Geometry.Coord)
+      (hv : TightVer401.positiveExitSelected_roundFlowInitial vin vout (q 0) ∈ Set.Ioo 0 δ),
+      TightVer401.positiveExitSelected_roundFlowSource d vin vout q =
+        ↑e
+          (TightVer401.positiveExitLeaf d hb hinside
+            ⟨TightVer401.positiveExitSelected_roundFlowInitial vin vout (q 0), hv⟩
+            ((TightVer401.periodProjection T) (TightVer401.positiveExitSelected_roundFlowPhase T (q 1))))
+```
+
+### R.selected-round-cartesian-source-production: Construct smooth positive Cartesian source on the entire closed round annulus (audited)
+
+Descend SAME periodic round-flow source to actual Cartesian map on an open domain containing radius 1-to2 closed band. Derive positive actual annular Jacobian everywhere there and exact inner/outer boundary identities with SAME original raw leaves and phase clock. Its open round-annulus image is exactly SAME flowCore. Actual d/hb/containment/north/orientation/order are premises; map and Jacobian are conclusions.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-round-flow-positive-source-production`, `R.selected-round-flow-exact-image-production`.
+
+Lean target: `TightVer401.positiveExitSelected_roundCartesianSource_jacobian_pos`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRoundCartesian.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T) (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    (∀ u ∈ Set.Ioo 0 δ,
+        ∀ (t : ℝ),
+          TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+            Set.Ioo 0 w) →
+      (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+        (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+          ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0 →
+            ∀ {p : OAI.SmoothLocal.Geometry.Coord},
+              1 ≤ TightVer401.planarRadius p →
+                TightVer401.planarRadius p ≤ 2 →
+                  0 < TightVer401.annularJacobian (TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout) p
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianSource_contDiffOn`.
+
+```lean
+∀ {T δ w : ℝ} (d : TightVer401.PeriodicRuledFrame T) (vin vout : ℝ),
+  (∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+          Set.Ioo 0 w) →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0 →
+        ContDiffOn ℝ (↑⊤) (TightVer401.positiveExitSelected_roundCartesianSource d vin vout)
+          (TightVer401.positiveExitSelected_roundCartesianDomain δ vin vout)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianDomain_isOpen`.
+
+```lean
+∀ (δ vin vout : ℝ), IsOpen (TightVer401.positiveExitSelected_roundCartesianDomain δ vin vout)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianDomain_contains_closed_band`.
+
+```lean
+∀ {δ : ℝ} (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆
+      TightVer401.positiveExitSelected_roundCartesianDomain δ ↑vin ↑vout
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianSource_polar`.
+
+```lean
+∀ {T : ℝ} (d : TightVer401.PeriodicRuledFrame T),
+  ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0 →
+    ∀ (vin vout : ℝ) {q : OAI.SmoothLocal.Geometry.Coord},
+      0 < q 0 →
+        TightVer401.positiveExitSelected_roundCartesianSource d vin vout (TightVer401.saddlePolarChart q) =
+          TightVer401.positiveExitSelected_roundFlowSource d vin vout q
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianSource_boundary_one`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)) (theta : ℝ),
+  TightVer401.positiveExitSelected_roundCartesianSource d (↑vin) (↑vout) (TightVer401.saddlePolarChart ![1, theta]) =
+    TightVer401.gnomonicInverse
+      (TightVer401.positiveExitRawLeaf d hb hinside vin (TightVer401.positiveExitSelected_roundFlowPhase T theta))
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianSource_boundary_two`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)) (theta : ℝ),
+  TightVer401.positiveExitSelected_roundCartesianSource d (↑vin) (↑vout) (TightVer401.saddlePolarChart ![2, theta]) =
+    TightVer401.gnomonicInverse
+      (TightVer401.positiveExitRawLeaf d hb hinside vout (TightVer401.positiveExitSelected_roundFlowPhase T theta))
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_roundCartesianSource_image_open_annulus`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+    ∀ (vin vout : ↑(Set.Ioo 0 δ)),
+      ↑vin < ↑vout →
+        TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout ''
+            {p | 1 < TightVer401.planarRadius p ∧ TightVer401.planarRadius p < 2} =
+          TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin vout
+```
+
+### R.selected-raw-boundary-positive-jordan-production: Produce positive Jordan fillings for actual original raw leaves (audited)
+
+Retain SAME d/hb/hinside, selected v, actual Gauss injectivity/north and honest original source nonzero/full-turn margin. Derive smooth regular normalized rawBoundary, periodic quotient injectivity, positive Jordan parametrization and positive trace with origin; selected vin<vout actual raw boundaries are disjoint. No desired raw filling/separation is granted.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-round-cartesian-source-production`, `R.final-margin-raw-leaf-connection`.
+
+Lean target: `TightVer401.positiveExitSelected_rawBoundary_exists_positive_jordan`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRawBoundary.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)),
+  Function.Injective d.bandGaussMap →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      (∀ (s : ℝ),
+          TightVer401.angularDescentComplex
+              (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)) ≠
+            0) →
+        TightVer401.HasPositiveArgumentTurn
+            (TightVer401.angularDescentComplex ∘
+              TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+            T →
+          ∃ H,
+            OAI.CircleDomainRigidity.PositiveJordanParametrization H
+                (TightVer401.positiveExitSelected_rawBoundary d hb hinside v) ∧
+              TightVer401.DualRadialCompletionPositiveTrace H
+                  (TightVer401.positiveExitSelected_rawBoundary d hb hinside v) ∧
+                0 ∈ OAI.CircleDomainRigidity.jordanInterior H
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_contDiff`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+    ContDiff ℝ (↑⊤) (TightVer401.positiveExitSelected_rawBoundary d hb hinside v)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_periodic`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)), Function.Periodic (TightVer401.positiveExitSelected_rawBoundary d hb hinside v) 1
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_injOn`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)),
+  Function.Injective d.bandGaussMap →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      Set.InjOn (TightVer401.positiveExitSelected_rawBoundary d hb hinside v) (Set.Ico 0 1)
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_deriv_ne_zero`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+    ∀ (t : ℝ), deriv (TightVer401.positiveExitSelected_rawBoundary d hb hinside v) t ≠ 0
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_ranges_disjoint`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    Function.Injective d.bandGaussMap →
+      (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+        Disjoint (Set.range (TightVer401.positiveExitSelected_rawBoundary d hb hinside vin))
+          (Set.range (TightVer401.positiveExitSelected_rawBoundary d hb hinside vout))
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawBoundary_gauss_reconstruction`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (v : ↑(Set.Ioo 0 δ)),
+  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+    ∀ (t : ℝ),
+      TightVer401.planarUnitNormal
+          (TightVer401.seamComplexCoord (TightVer401.positiveExitSelected_rawBoundary d hb hinside v t)) =
+        TightVer401.positiveExitRawLeaf d hb hinside v (T * t)
+```
+
+### R.selected-raw-annulus-order-core-production: Derive strict raw Jordan order exact flow annulus and protected core (audited)
+
+Apply signed degree to explicit positive Cartesian source and actual positive raw Jordan boundaries/disjointness/common origin. Derive closure(inner) subset outer, exact flowCore=annularCoordJordanInterior and SAME Cartesian source inverse on whole open round annulus. Given retained hlabels/protection, place C and SAME e-image support in THAT Jordan annulus. This raw annulus alone is not final selected hCore.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-round-cartesian-source-production`, `R.selected-raw-boundary-positive-jordan-production`, `R.selected-core-flow-placement-production`.
+
+Lean target: `TightVer401.positiveExitSelected_rawAnnulus_order_and_image`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRawAnnulus.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+        ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+          (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+            ∀ {Ho Hi : ℂ ≃ₜ ℂ},
+              (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>
+                  TightVer401.angularDescentComplex
+                    (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vout (T * t)))) →
+                (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>
+                    TightVer401.angularDescentComplex
+                      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vin (T * t)))) →
+                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))
+                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →
+                    0 ∈ OAI.CircleDomainRigidity.jordanInterior Ho →
+                      0 ∈ OAI.CircleDomainRigidity.jordanInterior Hi →
+                        closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆
+                            OAI.CircleDomainRigidity.jordanInterior Ho ∧
+                          TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin vout =
+                              TightVer401.annularCoordJordanInterior Ho Hi ∧
+                            ∃ e0,
+                              e0.source = {p | 1 < TightVer401.planarRadius p ∧ TightVer401.planarRadius p < 2} ∧
+                                e0.target =
+                                    TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin vout ∧
+                                  ↑e0 = TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout ∧
+                                    ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawAnnulus_trace_inner`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)) (t : ℝ),
+  TightVer401.annularComplexConjugate (TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout)
+      (OAI.CircleDomainRigidity.unitCircleParam 0 1 t) =
+    TightVer401.angularDescentComplex
+      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vin (T * t)))
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawAnnulus_trace_outer`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)) (t : ℝ),
+  TightVer401.annularComplexConjugate (TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout)
+      (OAI.CircleDomainRigidity.unitCircleParam 0 2 t) =
+    TightVer401.angularDescentComplex
+      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vout (T * t)))
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawAnnulus_protected_core`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+        ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+          (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+            ∀ {Ho Hi : ℂ ≃ₜ ℂ},
+              (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>
+                  TightVer401.angularDescentComplex
+                    (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vout (T * t)))) →
+                (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>
+                    TightVer401.angularDescentComplex
+                      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vin (T * t)))) →
+                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))
+                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →
+                    0 ∈ OAI.CircleDomainRigidity.jordanInterior Ho →
+                      0 ∈ OAI.CircleDomainRigidity.jordanInterior Hi →
+                        e.source = Set.univ →
+                          ∀ {C : Set OAI.SmoothLocal.Geometry.Coord},
+                            C ⊆ ↑e '' Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+                              (∀ p ∈ C,
+                                  1 / (TightVer401.ruledRho d.τ 0 * ↑vout) - TightVer401.ruledOmega d.k d.τ 0 <
+                                      TightVer401.positiveExitCartesianLabel d hb e p ∧
+                                    TightVer401.positiveExitCartesianLabel d hb e p <
+                                      1 / (TightVer401.ruledRho d.τ 0 * ↑vin) - TightVer401.ruledOmega d.k d.τ 0) →
+                                C ⊆ TightVer401.annularCoordJordanInterior Ho Hi
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_rawAnnulus_protected_support`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+      (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+        ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+          (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+            ∀ {Ho Hi : ℂ ≃ₜ ℂ},
+              (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>
+                  TightVer401.angularDescentComplex
+                    (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vout (T * t)))) →
+                (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>
+                    TightVer401.angularDescentComplex
+                      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside vin (T * t)))) →
+                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))
+                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →
+                    0 ∈ OAI.CircleDomainRigidity.jordanInterior Ho →
+                      0 ∈ OAI.CircleDomainRigidity.jordanInterior Hi →
+                        e.source = Set.univ →
+                          ∀ {C : Set OAI.SmoothLocal.Geometry.Coord},
+                            C ⊆ ↑e '' Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+                              (∀ p ∈ C,
+                                  1 / (TightVer401.ruledRho d.τ 0 * ↑vout) - TightVer401.ruledOmega d.k d.τ 0 <
+                                      TightVer401.positiveExitCartesianLabel d hb e p ∧
+                                    TightVer401.positiveExitCartesianLabel d hb e p <
+                                      1 / (TightVer401.ruledRho d.τ 0 * ↑vin) - TightVer401.ruledOmega d.k d.τ 0) →
+                                ∀ {Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient},
+                                  ↑e '' tsupport Y ⊆ C → ↑e '' tsupport Y ⊆ TightVer401.annularCoordJordanInterior Ho Hi
+```
+
+### R.selected-raw-source-construction-production: Construct raw Jordan order and actual source inverse from original seed and margins (audited)
+
+From SAME actual d/hb/hinside/vin/vout/order/Gauss injectivity/north/orientation, honest source nonzero/full-turn margins and original native e equation, internally construct BOTH raw positive fillings, disjoint frontiers and common origins. Derive strict raw nesting, exact full flowCore Jordan annulus and its explicit Cartesian map inverse. No raw geometry package or independent source map premise. Root still must select final graphs with one common protection budget.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-raw-boundary-positive-jordan-production`, `R.selected-raw-annulus-order-core-production`.
+
+Lean target: `TightVer401.positiveExitSelected_exists_raw_source_construction`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryRawConstruction.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 δ,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 δ)),
+  ↑vin < ↑vout →
+    Function.Injective d.bandGaussMap →
+      (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+        (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+          (∀ (v : ↑(Set.Ioo 0 δ)),
+              (∀ (s : ℝ),
+                  TightVer401.angularDescentComplex
+                      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)) ≠
+                    0) ∧
+                TightVer401.HasPositiveArgumentTurn
+                  (TightVer401.angularDescentComplex ∘
+                    TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+                  T) →
+            ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+              (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+                ∃ Ho Hi,
+                  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho
+                      (TightVer401.positiveExitSelected_rawBoundary d hb hinside vout) ∧
+                    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi
+                        (TightVer401.positiveExitSelected_rawBoundary d hb hinside vin) ∧
+                      TightVer401.DualRadialCompletionPositiveTrace Ho
+                          (TightVer401.positiveExitSelected_rawBoundary d hb hinside vout) ∧
+                        TightVer401.DualRadialCompletionPositiveTrace Hi
+                            (TightVer401.positiveExitSelected_rawBoundary d hb hinside vin) ∧
+                          0 ∈ OAI.CircleDomainRigidity.jordanInterior Ho ∧
+                            0 ∈ OAI.CircleDomainRigidity.jordanInterior Hi ∧
+                              closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆
+                                  OAI.CircleDomainRigidity.jordanInterior Ho ∧
+                                TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin vout =
+                                    TightVer401.annularCoordJordanInterior Ho Hi ∧
+                                  ∃ e0,
+                                    e0.source = {p | 1 < TightVer401.planarRadius p ∧ TightVer401.planarRadius p < 2} ∧
+                                      e0.target =
+                                          TightVer401.positiveExit_selectedSourceGeometry_flowCore d hb hinside e vin
+                                            vout ∧
+                                        ↑e0 = TightVer401.positiveExitSelected_roundCartesianSource d ↑vin ↑vout ∧
+                                          ContDiffOn ℝ (↑⊤) (↑e0.symm) e0.target
+```
+
+### R.selected-protected-homotopy-winding-production: Transport actual inside and exterior by protected closed homotopy (audited)
+
+For actual positive Jordan parametrizations and a closed loop homotopy avoiding actual point y, prove angular-form integral equality and BOTH inside and outside-closure equivalences. These are winding proofs, not an assumed preservation package; genuine closed homotopy and avoidance still required.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-raw-source-construction-production`.
+
+Lean target: `TightVer401.positiveExit_protected_homotopy_sides_iff`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometryProtectedWinding.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {J₀ J₁ : ℂ ≃ₜ ℂ} {γ₀ γ₁ : ℝ → ℂ} (h₀ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₀ γ₀)
+  (h₁ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₁ γ₁) (H : C(↑unitInterval, C(↑unitInterval, ℂ)))
+  (y : ℂ),
+  H 0 = TightVer401.annularLoopPath γ₀ ⋯ →
+    H 1 = TightVer401.annularLoopPath γ₁ ⋯ →
+      (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →
+        (∀ (a t : ↑unitInterval), (H a) t ≠ y) →
+          (y ∈ OAI.CircleDomainRigidity.jordanInterior J₀ ↔ y ∈ OAI.CircleDomainRigidity.jordanInterior J₁) ∧
+            (y ∉ closure (OAI.CircleDomainRigidity.jordanInterior J₀) ↔
+              y ∉ closure (OAI.CircleDomainRigidity.jordanInterior J₁))
+```
+
+Additional required audited interface: `TightVer401.positiveExit_protected_homotopy_integral_eq`.
+
+```lean
+∀ {J₀ J₁ : ℂ ≃ₜ ℂ} {γ₀ γ₁ : ℝ → ℂ} (h₀ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₀ γ₀)
+  (h₁ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₁ γ₁) (H : C(↑unitInterval, C(↑unitInterval, ℂ)))
+  (y : ℂ),
+  H 0 = TightVer401.annularLoopPath γ₀ ⋯ →
+    H 1 = TightVer401.annularLoopPath γ₁ ⋯ →
+      (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →
+        (∀ (a t : ↑unitInterval), (H a) t ≠ y) →
+          OAI.CircleDomainRigidity.planarFormIntegral (TightVer401.annularAngularFormP id y)
+              (TightVer401.annularAngularFormQ id y) γ₀ =
+            OAI.CircleDomainRigidity.planarFormIntegral (TightVer401.annularAngularFormP id y)
+              (TightVer401.annularAngularFormQ id y) γ₁
+```
+
+Additional required audited interface: `TightVer401.positiveExit_protected_homotopy_inside`.
+
+```lean
+∀ {J₀ J₁ : ℂ ≃ₜ ℂ} {γ₀ γ₁ : ℝ → ℂ} (h₀ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₀ γ₀)
+  (h₁ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₁ γ₁) (H : C(↑unitInterval, C(↑unitInterval, ℂ)))
+  (y : ℂ),
+  H 0 = TightVer401.annularLoopPath γ₀ ⋯ →
+    H 1 = TightVer401.annularLoopPath γ₁ ⋯ →
+      (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →
+        (∀ (a t : ↑unitInterval), (H a) t ≠ y) →
+          y ∈ OAI.CircleDomainRigidity.jordanInterior J₀ → y ∈ OAI.CircleDomainRigidity.jordanInterior J₁
+```
+
+Additional required audited interface: `TightVer401.positiveExit_protected_homotopy_exterior`.
+
+```lean
+∀ {J₀ J₁ : ℂ ≃ₜ ℂ} {γ₀ γ₁ : ℝ → ℂ} (h₀ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₀ γ₀)
+  (h₁ : OAI.CircleDomainRigidity.PositiveJordanParametrization J₁ γ₁) (H : C(↑unitInterval, C(↑unitInterval, ℂ)))
+  (y : ℂ),
+  H 0 = TightVer401.annularLoopPath γ₀ ⋯ →
+    H 1 = TightVer401.annularLoopPath γ₁ ⋯ →
+      (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) →
+        (∀ (a t : ↑unitInterval), (H a) t ≠ y) →
+          y ∉ closure (OAI.CircleDomainRigidity.jordanInterior J₀) →
+            y ∉ closure (OAI.CircleDomainRigidity.jordanInterior J₁)
+```
+
+### R.selected-fermi-protected-avoidance-production: Construct actual selected graph homotopies avoiding SAME protected set (audited)
+
+For SAME actual Fermi data/periodic graph, true strip containment, label-tube inequality, protected label gap and amplitude budget, construct full closed source-domain homotopy from seam to graph and reverse avoiding every q in C. Construct actual seam-clock homotopy from retained clock endpoints and constant seam label. No arbitrary homotopy/avoidance witness is granted; the common bounds must be supplied before graphs are selected.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-phase-label-tubes-production`, `R.selected-core-label-gap-production`.
+
+Lean target: `TightVer401.positiveExitSelected_fermi_homotopy_avoids_protected`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometrySelectedAvoidance.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {P : ℝ} [inst : Fact (0 < P)] {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord}
+  {ζ : ℝ → OAI.SmoothLocal.Geometry.Ambient} {hp : Function.Periodic ζ P} {η ξ σ ρMax : ℝ}
+  (D : TightVer401.PositiveExitActualFermiData G U ζ hp η ξ σ ρMax) {v : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) v →
+    Function.Periodic v P →
+      ∀ (δ : ℝ),
+        (∀ r ∈ Set.Icc 0 P, |δ * v r| < D.rho) →
+          ∀ {L : OAI.SmoothLocal.Geometry.Coord → ℝ} {C : Set OAI.SmoothLocal.Geometry.Coord} {c ε ρ : ℝ},
+            (∀ (r x : ℝ), |x| ≤ ρ → |L (TightVer401.positiveExitFermiSource ζ ![r, x]) - c| < ε) →
+              (∀ q ∈ C, ε ≤ |L q - c|) →
+                (∀ r ∈ Set.Icc 0 P, |δ * v r| ≤ ρ) →
+                  ∃ H,
+                    (∀ (a t : ↑unitInterval),
+                        (H a) t =
+                          TightVer401.angularDescentComplex
+                            (TightVer401.positiveExitFermiSource ζ ![P * ↑t, ↑a * (δ * v (P * ↑t))])) ∧
+                      (∀ (t : ↑unitInterval),
+                          (H 0) t = TightVer401.angularDescentComplex (TightVer401.gnomonicInverse (ζ (P * ↑t)))) ∧
+                        (∀ (t : ↑unitInterval),
+                            (H 1) t =
+                              TightVer401.angularDescentComplex
+                                (TightVer401.positiveExitFermiSource ζ (TightVer401.exitGraphCurve v δ (P * ↑t)))) ∧
+                          (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) ∧
+                            (∀ (a t : ↑unitInterval), (H a) t ∈ TightVer401.angularDescentComplex '' U) ∧
+                              ∀ (a t : ↑unitInterval), ∀ q ∈ C, (H a) t ≠ TightVer401.angularDescentComplex q
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_graph_to_seam_avoids_protected`.
+
+```lean
+∀ {P : ℝ} [inst : Fact (0 < P)] {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord}
+  {ζ : ℝ → OAI.SmoothLocal.Geometry.Ambient} {hp : Function.Periodic ζ P} {η ξ σ ρMax : ℝ}
+  (D : TightVer401.PositiveExitActualFermiData G U ζ hp η ξ σ ρMax) {v : ℝ → ℝ},
+  ContDiff ℝ (↑⊤) v →
+    Function.Periodic v P →
+      ∀ (δ : ℝ),
+        (∀ r ∈ Set.Icc 0 P, |δ * v r| < D.rho) →
+          ∀ {L : OAI.SmoothLocal.Geometry.Coord → ℝ} {C : Set OAI.SmoothLocal.Geometry.Coord} {c ε ρ : ℝ},
+            (∀ (r x : ℝ), |x| ≤ ρ → |L (TightVer401.positiveExitFermiSource ζ ![r, x]) - c| < ε) →
+              (∀ q ∈ C, ε ≤ |L q - c|) →
+                (∀ r ∈ Set.Icc 0 P, |δ * v r| ≤ ρ) →
+                  ∃ H,
+                    (∀ (t : ↑unitInterval),
+                        (H 0) t =
+                          TightVer401.angularDescentComplex
+                            (TightVer401.positiveExitFermiSource ζ (TightVer401.exitGraphCurve v δ (P * ↑t)))) ∧
+                      (∀ (t : ↑unitInterval),
+                          (H 1) t = TightVer401.angularDescentComplex (TightVer401.gnomonicInverse (ζ (P * ↑t)))) ∧
+                        (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) ∧
+                          (∀ (a t : ↑unitInterval), (H a) t ∈ TightVer401.angularDescentComplex '' U) ∧
+                            ∀ (a t : ↑unitInterval), ∀ q ∈ C, (H a) t ≠ TightVer401.angularDescentComplex q
+```
+
+Additional required audited interface: `TightVer401.positiveExitSelected_seam_clock_avoids_protected`.
+
+```lean
+∀ {T P : ℝ} {ξ : ℝ → OAI.SmoothLocal.Geometry.Ambient},
+  ContDiff ℝ (↑⊤) ξ →
+    Function.Periodic ξ T →
+      (∀ (s : ℝ), 0 < (ξ s).ofLp 2) →
+        ∀ {U : Set OAI.SmoothLocal.Geometry.Coord},
+          (∀ (s : ℝ), TightVer401.gnomonicInverse (ξ s) ∈ U) →
+            ∀ {ψ : ℝ → ℝ},
+              Continuous ψ →
+                ψ 0 = 0 →
+                  ψ P = T →
+                    ∀ {L : OAI.SmoothLocal.Geometry.Coord → ℝ} {C : Set OAI.SmoothLocal.Geometry.Coord} {c ε : ℝ},
+                      0 < ε →
+                        (∀ (s : ℝ), L (TightVer401.gnomonicInverse (ξ s)) = c) →
+                          (∀ q ∈ C, ε ≤ |L q - c|) →
+                            ∃ H,
+                              (∀ (a t : ↑unitInterval),
+                                  (H a) t =
+                                    TightVer401.angularDescentComplex
+                                      (TightVer401.gnomonicInverse (ξ ((1 - ↑a) * ψ (P * ↑t) + ↑a * (T * ↑t))))) ∧
+                                (∀ (t : ↑unitInterval),
+                                    (H 0) t =
+                                      TightVer401.angularDescentComplex
+                                        (TightVer401.gnomonicInverse (ξ (ψ (P * ↑t))))) ∧
+                                  (∀ (t : ↑unitInterval),
+                                      (H 1) t =
+                                        TightVer401.angularDescentComplex (TightVer401.gnomonicInverse (ξ (T * ↑t)))) ∧
+                                    (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) ∧
+                                      (∀ (a t : ↑unitInterval), (H a) t ∈ TightVer401.angularDescentComplex '' U) ∧
+                                        ∀ (a t : ↑unitInterval), ∀ q ∈ C, (H a) t ≠ TightVer401.angularDescentComplex q
+```
+
+### R.selected-actual-graph-to-raw-protected-production: Construct graph-to-raw protected homotopy with SAME actual speed clock (audited)
+
+Retain SAME d/hb/hinside/e/selected z, actual S=rawPrimitive(speed) and P=rawPrimitive(speed)(T), SAME Fermi D and graph. Use true label tube/gap and amplitude/strip bounds to join graph-to-seam and seam-clock homotopies. Return closed homotopy entirely in actual e.target from actual normalized graph to SAME rawBoundary, avoiding every q in C. Root must assemble the one common budget and retain final graphs once.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-fermi-protected-avoidance-production`, `R.selected-raw-source-construction-production`.
+
+Lean target: `TightVer401.positiveExitSelected_graph_to_raw_avoids_protected`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometrySelectedProtectedPair.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T delta w P : ℝ} [Fact (0 < T)] [inst : Fact (0 < P)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 delta,
+      ∀ (t : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈ Set.Ioo 0 w)
+  (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+  e.source = Set.univ →
+    (∀ (q : AddCircle T × ↑(Set.Ioo 0 w)), ↑e q = TightVer401.gnomonicInverse (d.bandGaussMap q)) →
+      (∀ (q : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap q).ofLp 2) →
+        ∀ (z : ↑(Set.Ioo 0 delta)) (S : ℝ ≃ₜ ℝ),
+          ⇑S = OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive (TightVer401.positiveExitLeafSpeed d hb hinside z) →
+            P =
+                OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive (TightVer401.positiveExitLeafSpeed d hb hinside z)
+                  T →
+              ∀ {G : OAI.SmoothLocal.Geometry.Coord → ℝ}
+                {hp : Function.Periodic (TightVer401.positiveExitRawLeaf d hb hinside z ∘ ⇑S.symm) P} {η ξ σ rhoMax : ℝ}
+                (D :
+                  TightVer401.PositiveExitActualFermiData G e.target
+                    (TightVer401.positiveExitRawLeaf d hb hinside z ∘ ⇑S.symm) hp η ξ σ rhoMax)
+                {v : ℝ → ℝ},
+                ContDiff ℝ (↑⊤) v →
+                  Function.Periodic v P →
+                    ∀ (δ : ℝ),
+                      (∀ s ∈ Set.Icc 0 P, |δ * v s| < D.rho) →
+                        ∀ {C : Set OAI.SmoothLocal.Geometry.Coord} {ε ρ : ℝ},
+                          0 < ε →
+                            (∀ (r x : ℝ),
+                                |x| ≤ ρ →
+                                  |TightVer401.positiveExitCartesianLabel d hb e
+                                          (TightVer401.positiveExitFermiSource
+                                            (TightVer401.positiveExitRawLeaf d hb hinside z ∘ ⇑S.symm) ![r, x]) -
+                                        (1 / (TightVer401.ruledRho d.τ 0 * ↑z) - TightVer401.ruledOmega d.k d.τ 0)| <
+                                    ε) →
+                              (∀ q ∈ C,
+                                  ε ≤
+                                    |TightVer401.positiveExitCartesianLabel d hb e q -
+                                        (1 / (TightVer401.ruledRho d.τ 0 * ↑z) - TightVer401.ruledOmega d.k d.τ 0)|) →
+                                (∀ r ∈ Set.Icc 0 P, |δ * v r| ≤ ρ) →
+                                  ∃ H,
+                                    (∀ (t : ↑unitInterval),
+                                        (H 0) t =
+                                          TightVer401.angularDescentComplex
+                                            (TightVer401.positiveExitFermiSource
+                                              (TightVer401.positiveExitRawLeaf d hb hinside z ∘ ⇑S.symm)
+                                              (TightVer401.exitGraphCurve v δ (P * ↑t)))) ∧
+                                      (∀ (t : ↑unitInterval),
+                                          (H 1) t =
+                                            TightVer401.angularDescentComplex
+                                              (TightVer401.gnomonicInverse
+                                                (TightVer401.positiveExitRawLeaf d hb hinside z (T * ↑t)))) ∧
+                                        (∀ (a : ↑unitInterval), (H a) 1 = (H a) 0) ∧
+                                          (∀ (a t : ↑unitInterval),
+                                              (H a) t ∈ TightVer401.angularDescentComplex '' e.target) ∧
+                                            ∀ (a t : ↑unitInterval),
+                                              ∀ q ∈ C, (H a) t ≠ TightVer401.angularDescentComplex q
+```
+
+### R.selected-protected-jordan-placement-production: Derive selected Jordan nesting and actual protected placement from transport (audited)
+
+From actual raw/selected positive Jordan curves, nonempty C in raw annulus, actual closed outer/inner graph-to-raw homotopies avoiding all of C, genuine selected frontier disjointness and common origin, derive C subset exact SELECTED annularCoordJordanInterior and closure(selected inner) subset selected outer. Desired selected nesting and protected placement are outputs. SAME final selected traces, amplitude bounds, nonempty protected set and frontier disjointness must still be connected by root; no hCore inhabitant asserted until that assembly.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-protected-homotopy-winding-production`, `R.selected-actual-graph-to-raw-protected-production`, `R.selected-raw-annulus-order-core-production`.
+
+Lean target: `TightVer401.positiveExitSelected_protected_placement_and_nesting`; source: `TightVer401/PositiveExitConstructionSelectedSourceGeometrySelectedPlacement.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Ro Ri Ho Hi : ℂ ≃ₜ ℂ} {rawOuter rawInner selectedOuter selectedInner : ℝ → ℂ},
+  OAI.CircleDomainRigidity.PositiveJordanParametrization Ro rawOuter →
+    OAI.CircleDomainRigidity.PositiveJordanParametrization Ri rawInner →
+      OAI.CircleDomainRigidity.PositiveJordanParametrization Ho selectedOuter →
+        OAI.CircleDomainRigidity.PositiveJordanParametrization Hi selectedInner →
+          ∀ {C : Set OAI.SmoothLocal.Geometry.Coord},
+            C.Nonempty →
+              C ⊆ TightVer401.annularCoordJordanInterior Ro Ri →
+                ∀ (Outer Inner : C(↑unitInterval, C(↑unitInterval, ℂ))),
+                  (∀ (t : ↑unitInterval), (Outer 0) t = selectedOuter ↑t) →
+                    (∀ (t : ↑unitInterval), (Outer 1) t = rawOuter ↑t) →
+                      (∀ (t : ↑unitInterval), (Inner 0) t = selectedInner ↑t) →
+                        (∀ (t : ↑unitInterval), (Inner 1) t = rawInner ↑t) →
+                          (∀ (a : ↑unitInterval), (Outer a) 1 = (Outer a) 0) →
+                            (∀ (a : ↑unitInterval), (Inner a) 1 = (Inner a) 0) →
+                              (∀ (a t : ↑unitInterval), ∀ q ∈ C, (Outer a) t ≠ TightVer401.angularDescentComplex q) →
+                                (∀ (a t : ↑unitInterval), ∀ q ∈ C, (Inner a) t ≠ TightVer401.angularDescentComplex q) →
+                                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))
+                                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →
+                                    ∀ {c : ℂ},
+                                      c ∈ OAI.CircleDomainRigidity.jordanInterior Ho →
+                                        c ∈ OAI.CircleDomainRigidity.jordanInterior Hi →
+                                          C ⊆ TightVer401.annularCoordJordanInterior Ho Hi ∧
+                                            closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆
+                                              OAI.CircleDomainRigidity.jordanInterior Ho
+```
+
+### R.incoming-terminal-radial-directional-stability-production: Produce simultaneous actual terminal radial directional and excess thresholds (audited)
+
+For SAME literal Gin family from D and fixed eta/ruling, actual original C/radial/directional/excess positivity yields one uniform full-phase displacement threshold. Derive joint coefficient/terminal derivative continuity internally and preserve positive terminal radial pairing, derivative pairing with rotated direction and rotated-gradient excess above R. General family theorem and literal ruling identities retain exact P/G/W; leaf does not select another rho. Coherent Choice intersects this threshold and full visibility-domain strip before its one rho.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.incoming-original-choice-from-data-production`, `R.incoming-terminal-quotient-smoothness-production`.
+
+Lean target: `TightVer401.visibleConnectorIncomingTerminal_Gin_uniform_radial_directional_threshold`; source: `TightVer401/VisibleConnectorIncomingTerminalRadialStability.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {Gin : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin : Set OAI.SmoothLocal.Geometry.Coord} {L R eta : ℝ}
+  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)
+  {w0 : ℝ → OAI.SmoothLocal.Geometry.Coord},
+  ContDiff ℝ (↑⊤) w0 →
+    Function.Periodic w0 L →
+      (∀ (s : ℝ), w0 s = TightVer401.visibleConnectorGinRotatedRuling R eta D.incoming.gamma s) →
+        (∀ (s : ℝ), 0 < TightVer401.visibleConnectorC D.incoming.gamma w0 s) →
+          (∀ (s : ℝ),
+              0 <
+                TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0 s ⬝ᵥ
+                  -TightVer401.visibleConnectorJ
+                      (TightVer401.visibleConnectorGinRotatedDirection R eta D.incoming.gamma s)) →
+            (∀ (s : ℝ),
+                0 <
+                  deriv (TightVer401.visibleConnectorActualTerminalSource D.incoming.p D.incoming.gamma w0) s ⬝ᵥ
+                    TightVer401.visibleConnectorGinRotatedDirection R eta D.incoming.gamma s) →
+              (∀ (s : ℝ),
+                  0 <
+                    TightVer401.visibleConnectorJ (D.incoming.gamma s) ⬝ᵥ
+                        TightVer401.visibleConnectorGinRotatedDirection R eta D.incoming.gamma s -
+                      R) →
+                ∃ rhoRadial > 0,
+                  ∀ (rho : ℝ),
+                    |rho| < rhoRadial →
+                      have pc := fun t => TightVer401.visibleConnectorGinDisplacedPosition D.incoming.p w0 (rho, t);
+                      have gc := fun t => TightVer401.visibleConnectorGinDisplacedGradient Gin D.incoming.p w0 (rho, t);
+                      have wc := fun t =>
+                        TightVer401.visibleConnectorGinDisplacedRuling Gin R eta D.incoming.p w0 (rho, t);
+                      ∀ (s : ℝ),
+                        0 <
+                            TightVer401.visibleConnectorActualTerminalSource pc gc wc s ⬝ᵥ
+                              -TightVer401.visibleConnectorJ
+                                  (TightVer401.visibleConnectorGinRotatedDirection R eta gc s) ∧
+                          0 <
+                              deriv (TightVer401.visibleConnectorActualTerminalSource pc gc wc) s ⬝ᵥ
+                                TightVer401.visibleConnectorGinRotatedDirection R eta gc s ∧
+                            0 <
+                              TightVer401.visibleConnectorJ (gc s) ⬝ᵥ
+                                  TightVer401.visibleConnectorGinRotatedDirection R eta gc s -
+                                R
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_uniform_radial_directional_threshold`.
+
+```lean
+∀ {P G W : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord} {Omega : Set (ℝ × ℝ)} {L R : ℝ},
+  0 < L →
+    IsOpen Omega →
+      ContDiffOn ℝ (↑⊤) P Omega →
+        ContDiffOn ℝ (↑⊤) G Omega →
+          ContDiffOn ℝ (↑⊤) W Omega →
+            (∀ (s : ℝ), (0, s) ∈ Omega) →
+              (∀ (rho : ℝ), Function.Periodic (fun s => P (rho, s)) L) →
+                (∀ (rho : ℝ), Function.Periodic (fun s => G (rho, s)) L) →
+                  (∀ (rho : ℝ), Function.Periodic (fun s => W (rho, s)) L) →
+                    (∀ (s : ℝ), 0 < TightVer401.visibleConnectorC (fun t => G (0, t)) (fun t => W (0, t)) s) →
+                      (∀ (s : ℝ), 0 < TightVer401.visibleConnectorIncomingTerminalRadialScalar P G W (0, s)) →
+                        (∀ (s : ℝ), 0 < TightVer401.visibleConnectorIncomingTerminalDirectionalScalar P G W (0, s)) →
+                          (∀ (s : ℝ), 0 < TightVer401.visibleConnectorIncomingTerminalExcessScalar R G W (0, s)) →
+                            ∃ rhoRadial > 0,
+                              ∀ (rho s : ℝ),
+                                |rho| < rhoRadial →
+                                  0 < TightVer401.visibleConnectorIncomingTerminalRadialScalar P G W (rho, s) ∧
+                                    0 < TightVer401.visibleConnectorIncomingTerminalDirectionalScalar P G W (rho, s) ∧
+                                      0 < TightVer401.visibleConnectorIncomingTerminalExcessScalar R G W (rho, s)
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_radial_ruling_identity`.
+
+```lean
+∀ (R : ℝ) (gamma direction T : OAI.SmoothLocal.Geometry.Coord),
+  T ⬝ᵥ
+      -TightVer401.visibleConnectorJ
+          (TightVer401.visibleConnectorJ gamma - (TightVer401.visibleConnectorJ gamma - R • direction)) =
+    R * T ⬝ᵥ -TightVer401.visibleConnectorJ direction
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_directional_ruling_identity`.
+
+```lean
+∀ (R : ℝ) (gamma direction Td : OAI.SmoothLocal.Geometry.Coord),
+  Td ⬝ᵥ (TightVer401.visibleConnectorJ gamma - (TightVer401.visibleConnectorJ gamma - R • direction)) =
+    R * Td ⬝ᵥ direction
+```
+
+Additional required audited interface: `TightVer401.visibleConnectorIncomingTerminal_excess_ruling_identity`.
+
+```lean
+∀ (R : ℝ) (gamma direction : OAI.SmoothLocal.Geometry.Coord),
+  TightVer401.visibleConnectorJ gamma ⬝ᵥ
+        (TightVer401.visibleConnectorJ gamma - (TightVer401.visibleConnectorJ gamma - R • direction)) -
+      R ^ 2 =
+    R * (TightVer401.visibleConnectorJ gamma ⬝ᵥ direction - R)
+```
+
+### R.selected-one-common-graph-budget-production: Construct one positive amplitude budget for BOTH fixed periodic profiles (audited)
+
+Given genuine positive P1/P2 and tube radii r1/r2 and SAME continuous periodic profiles v1/v2, construct ONE nu>0 such that every abs(a1),abs(a2)<nu yields global strict bounds abs(a1*v1)<r1 and abs(a2*v2)<r2. Choose before retaining final graphs. Root still must intersect this with true protection/embedding/turn/visibility thresholds and instantiate the fixed prefix once.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-phase-label-tubes-production`.
+
+Lean target: `TightVer401.positiveExitSelected_exists_common_graph_budget`; source: `TightVer401/PositiveExitConstructionSelectedAssembly.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {P1 P2 r1 r2 : ℝ},
+  0 < P1 →
+    0 < P2 →
+      0 < r1 →
+        0 < r2 →
+          ∀ {v1 v2 : ℝ → ℝ},
+            Continuous v1 →
+              Continuous v2 →
+                Function.Periodic v1 P1 →
+                  Function.Periodic v2 P2 →
+                    ∃ nu > 0,
+                      ∀ (a1 a2 : ℝ), |a1| < nu → |a2| < nu → (∀ (s : ℝ), |a1 * v1 s| < r1) ∧ ∀ (s : ℝ), |a2 * v2 s| < r2
+```
+
+### R.selected-actual-traces-source-geometry-production: Derive exact selected source nesting and protected placement for SAME final traces (audited)
+
+Consume SAME d/hb/hinside/e/vin/vout, actual original source margins/Gauss injectivity/north/orientation, SAME actual primitive clocks S1/P1 and S2/P2, genuine Fermi D1/D2 and final actual PositiveExitTrace Ge witnesses with literal graph equations. Given real strip and amplitude budgets, nonempty C, K⊆C, retained protected flow inclusion, strict epsilon label gap and actual tube estimates, INTERNALLY construct raw Jordan geometry, both protected graph-to-raw homotopies and selected frontier separation. Return FOUR normalized positive fillings/origin enclosures with exact P1/P2 normalization, closure HpMinus subset HpPlus and K subset the EXACT selected annularCoordJordanInterior. No selected nesting/core placement/fillings/homotopies are granted. Still pending root complete selected prefix, common-budget instantiation, same-baseline Fermi identifications, K=c0-image support and final caller glue; source node receives checked status ONLY from current root audit.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-one-common-graph-budget-production`, `R.selected-raw-source-construction-production`, `R.selected-actual-graph-to-raw-protected-production`, `R.selected-protected-jordan-placement-production`, `R.final-selected-gradient-cartesian-connection`.
+
+Lean target: `TightVer401.positiveExitSelected_actual_traces_source_geometry`; source: `TightVer401/PositiveExitConstructionSelectedAssembly.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T delta w P1 P2 : ℝ} [Fact (0 < T)] [inst : Fact (0 < P1)] [inst_1 : Fact (0 < P2)]
+  (d : TightVer401.PeriodicRuledFrame T) (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0)
+  (hinside :
+    ∀ u ∈ Set.Ioo 0 delta,
+      ∀ (s : ℝ),
+        TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u s ∈ Set.Ioo 0 w)
+  (vin vout : ↑(Set.Ioo 0 delta)),
+  ↑vin < ↑vout →
+    Function.Injective d.bandGaussMap →
+      (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+        (∀ (s : ℝ), TightVer401.ambientCross (d.T s) (d.E s) = d.n s) →
+          (∀ (v : ↑(Set.Ioo 0 delta)),
+              (∀ (s : ℝ),
+                  TightVer401.angularDescentComplex
+                      (TightVer401.gnomonicInverse (TightVer401.positiveExitRawLeaf d hb hinside v s)) ≠
+                    0) ∧
+                TightVer401.HasPositiveArgumentTurn
+                  (TightVer401.angularDescentComplex ∘
+                    TightVer401.gnomonicInverse ∘ TightVer401.positiveExitRawLeaf d hb hinside v)
+                  T) →
+            ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+              e.source = Set.univ →
+                (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+                  ∀ (S1 S2 : ℝ ≃ₜ ℝ),
+                    ⇑S1 =
+                        OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive
+                          (TightVer401.positiveExitLeafSpeed d hb hinside vin) →
+                      P1 =
+                          OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive
+                            (TightVer401.positiveExitLeafSpeed d hb hinside vin) T →
+                        ⇑S2 =
+                            OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive
+                              (TightVer401.positiveExitLeafSpeed d hb hinside vout) →
+                          P2 =
+                              OAI.ClosedSurfaceR4.PeriodicPrimitive.rawPrimitive
+                                (TightVer401.positiveExitLeafSpeed d hb hinside vout) T →
+                            ∀ {G Ge : OAI.SmoothLocal.Geometry.Coord → ℝ}
+                              {hp1 : Function.Periodic (TightVer401.positiveExitRawLeaf d hb hinside vin ∘ ⇑S1.symm) P1}
+                              {hp2 :
+                                Function.Periodic (TightVer401.positiveExitRawLeaf d hb hinside vout ∘ ⇑S2.symm) P2}
+                              {eta1 xi1 sig1 rm1 eta2 xi2 sig2 rm2 : ℝ}
+                              (D1 :
+                                TightVer401.PositiveExitActualFermiData G e.target
+                                  (TightVer401.positiveExitRawLeaf d hb hinside vin ∘ ⇑S1.symm) hp1 eta1 xi1 sig1 rm1)
+                              (D2 :
+                                TightVer401.PositiveExitActualFermiData G e.target
+                                  (TightVer401.positiveExitRawLeaf d hb hinside vout ∘ ⇑S2.symm) hp2 eta2 xi2 sig2 rm2)
+                              {v1 v2 : ℝ → ℝ},
+                              ContDiff ℝ (↑⊤) v1 →
+                                ContDiff ℝ (↑⊤) v2 →
+                                  Function.Periodic v1 P1 →
+                                    Function.Periodic v2 P2 →
+                                      ∀ (a1 a2 : ℝ) (t1 : TightVer401.PositiveExitTrace Ge e.target P1)
+                                        (t2 : TightVer401.PositiveExitTrace Ge e.target P2),
+                                        (∀ (s : ℝ),
+                                            t1.p s =
+                                              TightVer401.positiveExitFermiSource
+                                                (TightVer401.positiveExitRawLeaf d hb hinside vin ∘ ⇑S1.symm)
+                                                (TightVer401.exitGraphCurve v1 a1 s)) →
+                                          (∀ (s : ℝ),
+                                              t2.p s =
+                                                TightVer401.positiveExitFermiSource
+                                                  (TightVer401.positiveExitRawLeaf d hb hinside vout ∘ ⇑S2.symm)
+                                                  (TightVer401.exitGraphCurve v2 a2 s)) →
+                                            (∀ s ∈ Set.Icc 0 P1, |a1 * v1 s| < D1.rho) →
+                                              (∀ s ∈ Set.Icc 0 P2, |a2 * v2 s| < D2.rho) →
+                                                ∀ {C K : Set OAI.SmoothLocal.Geometry.Coord},
+                                                  C.Nonempty →
+                                                    K ⊆ C →
+                                                      C ⊆
+                                                          ↑e ''
+                                                            Set.range
+                                                              (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+                                                        ∀ {eps r1 r2 : ℝ},
+                                                          0 < eps →
+                                                            (∀ q ∈ C,
+                                                                ⋯ + eps <
+                                                                    TightVer401.positiveExitCartesianLabel d hb e q ∧
+                                                                  TightVer401.positiveExitCartesianLabel d hb e q <
+                                                                    ⋯ - eps) →
+                                                              (∀ (s x : ℝ), |x| ≤ r1 → |⋯| < eps) →
+                                                                (∀ (s x : ℝ), |x| ≤ r2 → ⋯ < eps) →
+                                                                  (∀ (s : ℝ), |a1 * v1 s| ≤ r1) →
+                                                                    (∀ (s : ℝ), |a2 * v2 s| ≤ r2) → ∃ HpPlus, ⋯
+```
+
+### R.selected-complete-single-prefix-production: Construct complete selected source/core geometry from ONE retained prefix (audited)
+
+From SAME actual d/hb/flow/native e/G/Y/protected C and original raw margins, retain one prefix, intersect the genuine geometric/amplitude/visibility/embedding budgets and call the final paired trace producer once. Construct Nonempty PositiveExitSinglePrefixGeometry d e G Y: SAME Ge=G+J, smooth compact J, full-source negative Hessian and retained bending, Ge own actual gradient chart e0 and smooth inverse, two actual clocks/traces, FOUR exact normalized positive fillings/origins, strict selected source nesting, SAME e-image tsupport Y protected placement, actual gradient images/positive tangent pairings, both exact outer/reflected-inner visibility facts, closed source homotopy entirely in e0.source and protected OPEN O with EqOn Ge G. Source/core, homotopy and protected equality are outputs; universal ordinary family remains separate.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-one-common-graph-budget-production`, `R.selected-actual-traces-source-geometry-production`, `R.final-selected-gradient-cartesian-connection`, `R.final-margin-raw-leaf-connection`.
+
+Lean target: `TightVer401.positiveExit_exists_single_prefix_source_geometry`; source: `TightVer401/PositiveExitConstructionSinglePrefix.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∀ {T δ w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T)
+  (hb : ∫ (r : ℝ) in 0..T, TightVer401.ruledPeriodCoefficient d.k d.τ r = 0),
+  0 < δ →
+    ∀
+      (hinside :
+        ∀ u ∈ Set.Ioo 0 δ,
+          ∀ (t : ℝ),
+            TightVer401.principalTrajectory (TightVer401.ruledRho d.τ) (TightVer401.ruledOmega d.k d.τ) 0 u t ∈
+              Set.Ioo 0 w),
+      Function.Injective d.bandGaussMap →
+        (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), 0 < (d.bandGaussMap p).ofLp 2) →
+          (∀ (t : ℝ), TightVer401.ambientCross (d.T t) (d.E t) = d.n t) →
+            (∀ (t : ℝ), d.τ t < 0) →
+              ∀ (e : OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord),
+                e.source = Set.univ →
+                  (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)), ↑e p = TightVer401.gnomonicInverse (d.bandGaussMap p)) →
+                    ContMDiff TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) ↑⊤
+                        ↑e →
+                      ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel
+                          (↑⊤) (↑e.symm) e.target →
+                        ∀ (G : OAI.SmoothLocal.Geometry.Coord → ℝ),
+                          ContDiffOn ℝ (↑⊤) G e.target →
+                            (∀ (p : AddCircle T × ↑(Set.Ioo 0 w)),
+                                TightVer401.planarSupportMap G (↑e p) = d.bandMap p) →
+                              (∀ y ∈ e.target, (TightVer401.planarHessian G y).det < 0) →
+                                (Topology.IsEmbedding fun y => TightVer401.planarGradient G ↑y) →
+                                  ∀ (C : Set OAI.SmoothLocal.Geometry.Coord),
+                                    IsCompact C →
+                                      C.Nonempty →
+                                        C ⊆ ↑e '' Set.range (TightVer401.identityFlowBandInclusion d hb 0 hinside) →
+                                          ∀ (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient),
+                                            TightVer401.IsInfinitesimalBendingOn (TightVer401.planarSupportMap G)
+                                                (Y ∘ ↑e.symm) e.target →
+                                              ↑e '' tsupport Y ⊆ C →
+                                                ∀ {η ξ σin σout : ℝ},
+                                                  0 < η →
+                                                    0 < ξ →
+                                                      σin ≠ 0 →
+                                                        σout ≠ 0 →
+                                                          (∀ (v : ↑(Set.Ioo 0 δ)),
+                                                              (∀ (s : ℝ),
+                                                                  TightVer401.angularDescentComplex
+                                                                      (TightVer401.gnomonicInverse
+                                                                        (TightVer401.positiveExitRawLeaf d hb hinside v
+                                                                          s)) ≠
+                                                                    0) ∧
+                                                                (∀ (s : ℝ),
+                                                                    TightVer401.angularDescentComplex
+                                                                        (TightVer401.planarGradient G
+                                                                          (TightVer401.gnomonicInverse
+                                                                            (TightVer401.positiveExitRawLeaf d hb
+                                                                              hinside v s))) ≠
+                                                                      0) ∧
+                                                                  TightVer401.HasPositiveArgumentTurn
+                                                                      (TightVer401.angularDescentComplex ∘
+                                                                        TightVer401.gnomonicInverse ∘
+                                                                          TightVer401.positiveExitRawLeaf d hb hinside
+                                                                            v)
+                                                                      T ∧
+                                                                    TightVer401.HasPositiveArgumentTurn
+                                                                        (TightVer401.angularDescentComplex ∘
+                                                                          TightVer401.planarGradient G ∘
+                                                                            TightVer401.gnomonicInverse ∘
+                                                                              TightVer401.positiveExitRawLeaf d hb
+                                                                                hinside v)
+                                                                        T ∧
+                                                                      (TightVer401.ComplexVisiblePair (1 / 4)
+                                                                          (TightVer401.angularDescentComplex ∘
+                                                                            TightVer401.gnomonicInverse ∘
+                                                                              TightVer401.positiveExitRawLeaf d hb
+                                                                                hinside v)
+                                                                          fun s =>
+                                                                          Complex.I *
+                                                                            TightVer401.angularDescentComplex
+                                                                              (TightVer401.planarGradient G
+                                                                                (TightVer401.gnomonicInverse
+                                                                                  (TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v s)))) ∧
+                                                                        TightVer401.ComplexVisiblePair (4 / 5)
+                                                                          (TightVer401.corrugatedReverseReflect
+                                                                            (TightVer401.angularDescentComplex ∘
+                                                                              TightVer401.planarGradient G ∘
+                                                                                TightVer401.gnomonicInverse ∘
+                                                                                  TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v))
+                                                                          fun s =>
+                                                                          Complex.I *
+                                                                            TightVer401.corrugatedReverseReflect
+                                                                              (TightVer401.angularDescentComplex ∘
+                                                                                TightVer401.gnomonicInverse ∘
+                                                                                  TightVer401.positiveExitRawLeaf d hb
+                                                                                    hinside v)
+                                                                              s) →
+                                                            Nonempty
+                                                              (TightVer401.PositiveExitSinglePrefixGeometry d e G Y)
+```
+
+Additional required audited interface: `TightVer401.PositiveExitSinglePrefixGeometry`.
+
+```lean
+{T w : ℝ} →
+  [Fact (0 < T)] →
+    TightVer401.PeriodicRuledFrame T →
+      OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) OAI.SmoothLocal.Geometry.Coord →
+        (OAI.SmoothLocal.Geometry.Coord → ℝ) → (AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient) → Type
+```
+
+### R.actual-seed-selected-existence-production: Produce actual seed and complete selected geometry with NO premises (audited)
+
+Premise-free actualSeed_exists_selected_single_prefix internally chooses N=10000 and eta=1, constructs the balanced corrected seed/support potential, proves SAME frame orientation/negative torsion/northern injective band, discards the earlier support-package field and selects FINAL nonzero compact Y ONLY after the visible-turn margin. Connects SAME native c0/G0/identity band/support field and raw margins, then instantiates the complete single prefix with internal eta/xi/sigma choices equal one. Returns positive period/width, actual smooth native chart/inverse, band support identity, SAME nonzero compact bending/support and Nonempty complete selected geometry. No original geometry or external construction premise is added. Current combined audit must include both exact exports before certification; universal hOrdinary and ultimate caller linkage remain pending.
+
+Route scope: `primary`. External dependencies: none.
+
+Dependencies: `R.selected-complete-single-prefix-production`, `R.final-seed-support-connection`, `R.final-margin-raw-leaf-connection`, `R.same-corrected-seed-full-turn-application`.
+
+Lean target: `TightVer401.actualSeed_exists_selected_single_prefix`; source: `TightVer401/PositiveExitConstructionActualSeedSelected.lean`.
+
+Interface origin: `kernel_audit`.
+
+```lean
+∃ T,
+  ∃ (hT : 0 < T),
+    ∃ d w c0 G0 Y,
+      0 < w ∧
+        c0.source = Set.univ ∧
+          ContMDiffOn TightVer401.nativeProductModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) (↑⊤) (↑c0)
+              c0.source ∧
+            ContMDiffOn (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Coord) TightVer401.nativeProductModel (↑⊤)
+                (↑c0.symm) c0.target ∧
+              (∀ p ∈ c0.source, TightVer401.planarSupportMap G0 (↑c0 p) = d.bandMap p) ∧
+                TightVer401.IsBandBending d.bandMap Y ∧
+                  HasCompactSupport Y ∧
+                    (∃ p, Y p ≠ 0) ∧
+                      tsupport Y ⊆ c0.source ∧ Nonempty (TightVer401.PositiveExitSinglePrefixGeometry d c0 G0 Y)
+```
+
 ## Current proof frontier
 
 Only a primary pending node with checked or explicitly externally granted prerequisites and a concrete proposed signature is listed:
@@ -11562,7 +13114,7 @@ Complete cylinders, linking/Han–Khuri applications, general ruled extensions, 
 
 ## Honest completion gates
 
-Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. Same-seed/inverse/margin connections preserve FINAL Y, original scalar, chosen clocks and already chosen subtype inverse. New source-bound terminal thresholds/fillings, seam embedding/matches and ONE full-carrier smoothing/Germs producers discharge only their exact statements when present in CURRENT audit. Frozen worker audits and source candidates never transfer root certification. The outstanding original gates remain final selected source Jordan nesting/hCore after actual flow placement and full-band orientation, coherent universal same-eta/e/rho D-family instantiation after produced Gin negative strip/compatible choice/terminal filling and rebased upper Delta, actual coherent Gin/raw jets and negative-Hessian branch-domain coverage after DERIVED literal signed height/classifier/seam/compact carrier facts, actual source topology/separation/common origin, FULL Gin open germ and nonpositive-strip domain, coherent actual Gin/raw value/gradient jets and negative-Hessian domain coverage, invocation of the actual Cartesian producer returning final H from ONE smoothing call on the FULL fixed V, populated universal OrdinaryData, and final invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
+Full quadratic filling and downstream completed-support/saddle/torus/Gauss/marker/marked-pair consumers are checked only when their exact declarations occur in the CURRENT audit. Their ordinary producer premises remain explicit. Same-seed/inverse/margin connections preserve FINAL Y, original scalar, chosen clocks and already chosen subtype inverse. New source-bound terminal thresholds/fillings, seam embedding/matches and ONE full-carrier smoothing/Germs producers discharge only their exact statements when present in CURRENT audit. Frozen worker audits and source candidates never transfer root certification. The selected source/core gate now binds the premise-free actual seed and complete one-prefix exports and is closed only when BOTH occur in the CURRENT combined audit; final caller projection linkage remains necessary. The outstanding original gates remain coherent universal same-eta/e/rho D-family instantiation after produced Gin negative strip/compatible choice/terminal filling and rebased upper Delta, actual coherent Gin/raw jets and negative-Hessian branch-domain coverage after DERIVED literal signed height/classifier/seam/compact carrier facts, actual source topology/separation/common origin, FULL Gin open germ and nonpositive-strip domain, coherent actual Gin/raw value/gradient jets and negative-Hessian domain coverage, invocation of the actual Cartesian producer returning final H from ONE smoothing call on the FULL fixed V, populated universal OrdinaryData, and final invocation with all actual inputs. The final H gradient inverse is rebuilt from its own scalar; the raw inverse is not reused. No declaration count or historical certificate supplies these inputs.
 
 ## Exact manuscript register
 
