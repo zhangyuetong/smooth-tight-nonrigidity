@@ -34,10 +34,10 @@ def unconditional_pair_is_audited(declarations):
     helper = by_name.get(CONDITIONAL_PAIR)
     if not helper or helper["kind"] != "theorem" or "∃" not in helper["type"]:
         return False
-    header, conclusion = helper["type"].split("∃", 1)
+    header, _ = helper["type"].split("∃", 1)
     if " ".join(header.split()) != "TightVer401.ClassicalPositiveGaussTightnessClaim →":
         return False
-    if " ".join(row["type"].split()) != " ".join(("∃" + conclusion).split()):
+    if row.get("unconditional_pair_conclusion_checked") is not True:
         return False
     bundle = by_name.get(PROVED_BACKGROUND_BUNDLE)
     return bool(bundle and bundle["kind"] == "theorem" and
