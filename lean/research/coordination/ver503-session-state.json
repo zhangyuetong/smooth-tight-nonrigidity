@@ -7,10 +7,10 @@
   "active_audit_session_id": null,
   "active_audit_log": null,
   "backup": {
-    "automation_id": "ver503-proof-continuation",
+    "automation_id": "ver503-remaining-proof-backup",
     "kind": "heartbeat",
     "interval_minutes": 30,
-    "status": "MISSING_IN_APP: replacement pending",
+    "status": "ACTIVE",
     "human_authorized": "2026-10-09: set a timer so you restart the session if it somehow close for too long",
     "target_thread_id": "01a120fb-9b90-7310-9e32-127f2ef5dad6"
   },
@@ -31,5 +31,6 @@
     "ClassicalCoincidentEmbeddingFixedOpenClaim"
   ],
   "authorization_start_utc": "2026-10-09T18:43:29Z",
-  "authorization_deadline_utc": "2026-10-10T04:43:29Z"
+  "authorization_deadline_utc": "2026-10-10T04:43:29Z",
+  "report_scope": "Reusable infrastructure in any field: explain significance and general applicability, distinguish inherited foundations and manuscript-specific constructions, identify potential contributions to Lean library growth."
 }
