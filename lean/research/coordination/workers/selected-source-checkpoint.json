@@ -1,0 +1,66 @@
+{
+  "result": "PASS",
+  "base_git_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+  "scope": "Exclusive producer leaves separately compiled and axiom-audited; shared root Audit closure unchanged; selected Jordan nesting and final hCore remain pending.",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms": [],
+  "admissions": [],
+  "audited_exports": 14,
+  "sources": [
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryAudit",
+      "source_sha256": "ec94f6acab52ada3b256df5325d91357db2618bf24f9462f72e8b2d870b9f089",
+      "compiled_source_sha256": "ec94f6acab52ada3b256df5325d91357db2618bf24f9462f72e8b2d870b9f089",
+      "olean_sha256": "417459efe0e23e69125d33053e60e2a3c9aa21e5ff26d6c1865f8374981cfd33",
+      "log_sha256": "04f429738aba832aa9b2331c876fb3b3fe4e14c20737c6b2b6c710651b8adbc6"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryCore",
+      "source_sha256": "82ad89bed8005d2ab8c7b159b6f5b0534cc3f706a4efe3aa35a4d4e5c0938687",
+      "compiled_source_sha256": "82ad89bed8005d2ab8c7b159b6f5b0534cc3f706a4efe3aa35a4d4e5c0938687",
+      "olean_sha256": "1f4e2e9b6f5a317b499c85fd35edcd6f3b12443b88986e042801be10b42183c7",
+      "log_sha256": "180e51733e29c4268886ec819df5d440c0df2373f28b0e81367d936fd408a9e3"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryFlowCore",
+      "source_sha256": "2fee8f8a350e79541ef53c38f543de3264d10d8547e1d57fb0de9e6e370531a9",
+      "compiled_source_sha256": "2fee8f8a350e79541ef53c38f543de3264d10d8547e1d57fb0de9e6e370531a9",
+      "olean_sha256": "c6a8f30eca16312f1be5a3bb7cc0cec8a288807dded3cc86d41ca63fcea3f335",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryFlowDerivative",
+      "source_sha256": "2f9b66d274f306169b56af8ae0ab14acaae29f401bc4b23be78a840f4a753866",
+      "compiled_source_sha256": "2f9b66d274f306169b56af8ae0ab14acaae29f401bc4b23be78a840f4a753866",
+      "olean_sha256": "ea5f64c91e497e11ccd27c78b691540aebb94a3b5419c6736b3bf6a2353b3840",
+      "log_sha256": "96731c1701f95afa2aa0275bbea1d1bd7e4fce5d76c5fee18f094f9091be1f1b"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryOrientation",
+      "source_sha256": "038276748aef2950f00b6212bdd1cb93748dd69a394959237d2a3c73570551bf",
+      "compiled_source_sha256": "038276748aef2950f00b6212bdd1cb93748dd69a394959237d2a3c73570551bf",
+      "olean_sha256": "525cd44666d3763caa7d9cbb74e3666385d50c61922fb652856bfa13d15d74c8",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryPhase",
+      "source_sha256": "9fafcd6371e309e378061e060fd447aed7146836777397ad71298e4688d82a13",
+      "compiled_source_sha256": "9fafcd6371e309e378061e060fd447aed7146836777397ad71298e4688d82a13",
+      "olean_sha256": "761a667fd0dd0be07016e2013e6135ebdd738948d1c4ba5eb39813628a12f674",
+      "log_sha256": "8e4807c5fd1b03da17d2a4f049c8913dd4c8225e29de3c4d1094e23626fda156"
+    },
+    {
+      "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryProjection",
+      "source_sha256": "852960391e187c9c1d502b089cbe3544b1fead4b2602e652b3f4baedde6dd655",
+      "compiled_source_sha256": "852960391e187c9c1d502b089cbe3544b1fead4b2602e652b3f4baedde6dd655",
+      "olean_sha256": "f8a4979490c507997f2280f7dd16c2e45a825913f9816440a43da42fe0f2cc3e",
+      "log_sha256": "c98ddbb4ad1c6b624e38194efa1675aef1ba83e4a4fad9ff591ad4daaf86871a"
+    }
+  ],
+  "producer_build_report_sha256": "2ee6d8f680a535b547335ab796c6acb9ca59f98bc0590382f5dd6fe76d646021",
+  "producer_axiom_log_sha256": "04f429738aba832aa9b2331c876fb3b3fe4e14c20737c6b2b6c710651b8adbc6"
+}
