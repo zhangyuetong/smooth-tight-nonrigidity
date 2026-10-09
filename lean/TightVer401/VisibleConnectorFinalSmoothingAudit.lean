@@ -1,5 +1,6 @@
 import TightVer401.VisibleConnectorFinalSmoothingGerms
 import TightVer401.VisibleConnectorFinalSmoothingBand
+import TightVer401.VisibleConnectorFinalSmoothingActual
 import Lean
 
 open Lean Elab Command in
