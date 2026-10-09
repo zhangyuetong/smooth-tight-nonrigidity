@@ -2,7 +2,7 @@
   "updated_at_utc": "2026-10-09T19:25:53.830362+00:00",
   "integration_path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-integration",
   "branch": "codex/ver503-integration",
-  "latest_published_checked_checkpoint": "3d0c5f6",
+  "latest_published_checked_checkpoint": "ef7ca24f557985d33aaeaa567b148d023ff503cd",
   "active_audit_source_commit": null,
   "active_audit_session_id": null,
   "active_audit_log": null,
@@ -16,7 +16,7 @@
   },
   "queued_frozen_sources": [],
   "remaining_original_gates": [],
-  "next_action": "Publish the checked one-background checkpoint, continue Gauss private compiler repairs until exact closed claim; then unconditional pair/audit and general Lean infrastructure report.",
+  "next_action": "Continue fresh Gauss worker actual curvature/regularity/sign proof compiler repairs. Its exact closed theorem is source-only pending. After frozen PASS integrate, supply all four proved background terms, unconditional canonical pair and full audit; then reorganize exports and write/publish formalization report using internal planning inventory.",
   "note": "Live process/Git/source evidence overrides historical session IDs. Old paused ver500 monitors and workers remain untouched. No worker-only Audit module enters production imports.",
   "latest_checked_source_commit": "d967b0f234254d936cd036e67602d4103a3d40ac",
   "latest_audit_result": "PASS",
@@ -50,5 +50,6 @@
       "seconds": 26.561,
       "source_commit": "d251eb4f1999067129f9d771f566f858e69d38da"
     }
-  ]
+  ],
+  "internal_report_plan": "lean/research/coordination/ver503-infrastructure-report-plan.md"
 }
