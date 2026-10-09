@@ -1,34 +1,32 @@
 {
-  "source_snapshot_commit": "502220cc44850941449b848f7080e8828c731364",
-  "source_audit_commit": "0d2e3fcfe73350a14d3734b6887dbda961190015",
-  "audit_utc": "2026-10-09T01:37:31.201018+00:00",
+  "target": "ver503",
+  "active_engine": "lean",
+  "manuscript": "paper/paper.tex",
+  "source_snapshot_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+  "audit_utc": "2026-10-09T14:30:39.918025+00:00",
   "result": "PASS",
-  "modules": 1403,
-  "declarations": 17564,
-  "claims": {
-    "pending": 20,
-    "proved": 17,
-    "partial": 3
-  },
   "full_construction": "INCOMPLETE",
   "final_existence_theorem": "pending",
-  "kernel_report_sha256": "4e3a26634765588c7524ad11f22545cdd6ba6afd183755c5f4aae7b4c57dc44a",
-  "portable_changes": [
-    "scripts/build.py: cross-platform Lean executable lookup",
-    "scripts/inventory.py: bundled exact target and statement-reuse comparison lookup"
-  ],
-  "excluded": [
-    "older formalization snapshots",
-    "build objects and dependency caches",
-    "build logs",
-    "14 engine source files outside the audited closure",
-    "later worker-only changes not integrated in this certificate"
-  ],
-  "audited_sources_preserved": true,
-  "note": "This is the latest integrated source snapshot and its recorded audit, not a claim of a new clean compilation on every platform.",
-  "publication_checks": [
-    "all 1403 audited source hashes match",
-    "upstream, Schoenflies, manuscript and regenerated coverage hashes match",
-    "portable build launcher compiled TightVer401.Compatibility successfully in a private output directory"
-  ]
+  "conditional_final_existence_theorem": "pending",
+  "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238",
+  "source_closure_sha256": "b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9",
+  "target_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
+  "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
+  "upstream_lock_sha256": "003537806bb19cbf8eeea531fdf310d9abf25df43b4e3cc497b2ea35af4c3827",
+  "schoenflies_lock_sha256": "98384b576a7b97e0332f63fea83aa2f9ae6636813c7a303cd988e1f6b8e242e2",
+  "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+  "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+  "modules": 1409,
+  "declarations": 17608,
+  "admissions": [],
+  "custom_axioms": [],
+  "historical_ver500": {
+    "source_snapshot": "502220cc44850941449b848f7080e8828c731364",
+    "audit_commit": "0d2e3fcfe73350a14d3734b6887dbda961190015",
+    "target_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304"
+  },
+  "frozen_imports": "../research/coordination/ver503-frozen-imports.json",
+  "pending_snapshot": "../pending/IncomingGin5176081/provenance.json",
+  "note": "Current sources, compiled compatibility sources, local dependencies, objects, audit logs and registered consumers were verified in the isolated integration worktree. Historical certificates alone provide no validation of migrated edits."
 }

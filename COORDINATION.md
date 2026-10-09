@@ -15,3 +15,7 @@ Read `lean/research/coordination/ver503-starting-state.json`, migration review, 
 Shared interfaces are frozen in `lean/research/coordination/ver503-consumer-contract.md`; request root changes rather than editing peer/shared files. Root alone updates TightVer401.lean and coverage. A worker validates leaves directly before handing off. All parents may use exclusive-file subagents; each parent is sole compiler writer. Cross-worker imports only after root-reviewed frozen integration.
 
 All meaningful handoffs identify exact declarations, same mathematical objects, actual hypotheses and remaining producer obligations. No equivalent conditional wrapper counts as a construction. Registry backgrounds remain theorem parameters; pending admissions never enter certified closure. Extension and Cantor families remain deferred. No old chats/monitors are resumed.
+
+## Reconciled integration checkpoint
+
+Full current-source ver503 audit PASS at 2026-10-09T14:30:39.918025+00:00, source fc8d7997c66d386842c41373ae46dfb92ce47f85. Exact target a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a; no admissions/custom axioms. Frozen DOM/DESC sources and two literal normalized-bending identities are in closure. Original four construction jobs remain pending. New worker worktrees are created only after the audit/blueprint checkpoint commit.

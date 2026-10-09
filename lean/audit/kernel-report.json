@@ -1,8 +1,8 @@
 {
   "result": "PASS",
-  "generated_at_utc": "2026-10-09T01:37:31.201018+00:00",
+  "generated_at_utc": "2026-10-09T14:30:39.918025+00:00",
   "paper_completion": "INCOMPLETE",
-  "target": "ver500",
+  "target": "ver503",
   "primary_objective": {
     "statement": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
     "status": "pending",
@@ -15,7 +15,7 @@
       "TightVer401.MarkerEllipseAxesRecognition"
     ]
   },
-  "manuscript_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
   "upstream_lock_sha256": "003537806bb19cbf8eeea531fdf310d9abf25df43b4e3cc497b2ea35af4c3827",
   "schoenflies_lock_sha256": "98384b576a7b97e0332f63fea83aa2f9ae6636813c7a303cd988e1f6b8e242e2",
@@ -40,13 +40,13 @@
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
-          "TightVer401": "12dbf139c82566b361818b42418317312f7c43d39b08d566825bf0a64709917f"
+          "TightVer401": "ee635d701b1b962afcedbb2a214da96a39f5f56cb4fb6e80d800c78df0864d3c"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 176.856,
+      "elapsed_seconds": 135.188,
       "olean_sha256": "ec4988353ed7b3e40bbd97093c690a6d75574e3881ec2b68a32e531c611f85f6",
-      "log_sha256": "6fe854e92e05b0a98e87acdf4e2994abf061d1e5c131754f9e271ba4c0b6e011"
+      "log_sha256": "13aec9bfcbba26c34f378587224a99401b4625866aa800e94beeedc6cda427c4"
     },
     {
       "module": "OAI.Analysis.CircleDomains.LengthArea",
@@ -7740,8 +7740,8 @@
       "source": "TightVer401.lean",
       "compiled_source": "TightVer401.lean",
       "key": {
-        "source_sha256": "c877ed1ce38d23193b5a4a89dab62edbaf2dfbd85d9567581827ca1960d59a41",
-        "compiled_source_sha256": "c877ed1ce38d23193b5a4a89dab62edbaf2dfbd85d9567581827ca1960d59a41",
+        "source_sha256": "77892b90a62f8ffc5900ba5d728b0ab7738dc36b0da5ec7cf2bc4f38aa24c8b2",
+        "compiled_source_sha256": "77892b90a62f8ffc5900ba5d728b0ab7738dc36b0da5ec7cf2bc4f38aa24c8b2",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -8061,15 +8061,19 @@
           "TightVer401.VisibleConnectorGradientOrderPhysical": "8333ed8812873ad4298ed75083519803d7b55917671caa44749cbcf3e6f34835",
           "TightVer401.TorusMarkedGradientOrderPairConnection": "29a3e958993ca1f5cb1d93f72b86d98ab197ac8a607b35497a16e11644ca6c82",
           "TightVer401.VisibleConnectorIncomingCollar": "8f8482535003124a740ca24194ba719be177ad2ff46e432234c12a9c88168158",
-          "TightVer401.VisibleConnectorDisplacedSeamPhaseSigns": "49a86eea04d41ac098504c1273cef3772352c52db4498c0e7fc5f8418df7c681",
+          "TightVer401.VisibleConnectorDisplacedSeamPhaseSigns": "36a650262a3da1281f98ae1db59fc1cd1bc50967d0660b7d2de32ab20aa4c591",
           "TightVer401.VisibleConnectorDisplacedSeamGinFamily": "962234df3f6b6d22c673cfe400f0a8ececaec1526b6b111450926049a0fa48a6",
           "TightVer401.VisibleConnectorTerminalPositiveTrace": "3f70821a9a8b9064539dfa95a345f83b33ad08d034c6a09b34ce14f33a437b1c",
-          "TightVer401.VisibleConnectorTerminalEnclosure": "9b2712e1842de0687856ac3a9104f08727d500b0f863ae8f91a7bcff9828b045"
+          "TightVer401.VisibleConnectorTerminalEnclosure": "9b2712e1842de0687856ac3a9104f08727d500b0f863ae8f91a7bcff9828b045",
+          "TightVer401.VisibleConnectorGradientOrderWitnessApplication": "d4eb28417c27a189ba4f98f4b54cc5868c1413796deeff05d6a6dc7c0bac8f24",
+          "TightVer401.VisibleConnectorSourceOrderPhysical": "ca9223061cedc78d71c8e7b4ab6e162bb9c267c5c68c7f608ce32b61c0b34147",
+          "TightVer401.VisibleConnectorDisplacedSeamRebase": "76070e19eaced963f99c67b552e070d6d36491494517954a2bf75db766a34f4a",
+          "TightVer401.CompletedSaddleTorusVer503Bending": "dc96bebde0f4dc046d88340136604a5e47ffd2755a2a9f84aa31ba4ab2b8f9c1"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 54.149,
-      "olean_sha256": "12dbf139c82566b361818b42418317312f7c43d39b08d566825bf0a64709917f",
+      "elapsed_seconds": 47.917,
+      "olean_sha256": "ee635d701b1b962afcedbb2a214da96a39f5f56cb4fb6e80d800c78df0864d3c",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -10060,6 +10064,24 @@
       "exit_code": 0,
       "elapsed_seconds": 57.933,
       "olean_sha256": "0f578c69cb21727ce2162ee4594ac571b62dc09e54c19f7cc1f077045b56d18e",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.CompletedSaddleTorusVer503Bending",
+      "source": "TightVer401\\CompletedSaddleTorusVer503Bending.lean",
+      "compiled_source": "TightVer401\\CompletedSaddleTorusVer503Bending.lean",
+      "key": {
+        "source_sha256": "bc259e287e70a5cb0d312cfcf2050d76e998c820b89ca9a418810b67c3233877",
+        "compiled_source_sha256": "bc259e287e70a5cb0d312cfcf2050d76e998c820b89ca9a418810b67c3233877",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.CompletedSaddleTorusBendingConnection": "ecfd8800622a4f1e7724f2dbc83ca4a49abe1a4cf8b0a403faf3dee325f6c1cc"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 47.38,
+      "olean_sha256": "dc96bebde0f4dc046d88340136604a5e47ffd2755a2a9f84aa31ba4ab2b8f9c1",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -26125,8 +26147,8 @@
       "source": "TightVer401\\VisibleConnectorDisplacedSeamPhaseSigns.lean",
       "compiled_source": "TightVer401\\VisibleConnectorDisplacedSeamPhaseSigns.lean",
       "key": {
-        "source_sha256": "b1787bd7263d3780e8dfb4aae1dd1e8970ef1d9e0763e66179f7278817e708b9",
-        "compiled_source_sha256": "b1787bd7263d3780e8dfb4aae1dd1e8970ef1d9e0763e66179f7278817e708b9",
+        "source_sha256": "97c035f524f9c17e55b68497d4ac06d57466b78df856dbfe3a97e5006fd821e5",
+        "compiled_source_sha256": "97c035f524f9c17e55b68497d4ac06d57466b78df856dbfe3a97e5006fd821e5",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -26134,9 +26156,27 @@
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 50.017,
-      "olean_sha256": "49a86eea04d41ac098504c1273cef3772352c52db4498c0e7fc5f8418df7c681",
+      "elapsed_seconds": 137.385,
+      "olean_sha256": "36a650262a3da1281f98ae1db59fc1cd1bc50967d0660b7d2de32ab20aa4c591",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorDisplacedSeamRebase",
+      "source": "TightVer401\\VisibleConnectorDisplacedSeamRebase.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorDisplacedSeamRebase.lean",
+      "key": {
+        "source_sha256": "5bb2fee3619c9efec4ff33346a9181862631c622da132a9c7557b163a4dcbfe4",
+        "compiled_source_sha256": "5bb2fee3619c9efec4ff33346a9181862631c622da132a9c7557b163a4dcbfe4",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorTerminalCircle": "3926ddb0c0d85b44728744961aed1f36931e65497700705a7c4fc0051d0b31a7"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 137.991,
+      "olean_sha256": "76070e19eaced963f99c67b552e070d6d36491494517954a2bf75db766a34f4a",
+      "log_sha256": "bb410652daa08841e1e5774ce7039a0e20fe68a60f2d69935c511eb95feebdfa"
     },
     {
       "module": "TightVer401.VisibleConnectorGradientInverseApplication",
@@ -26304,6 +26344,25 @@
       "exit_code": 0,
       "elapsed_seconds": 49.923,
       "olean_sha256": "8333ed8812873ad4298ed75083519803d7b55917671caa44749cbcf3e6f34835",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorGradientOrderWitnessApplication",
+      "source": "TightVer401\\VisibleConnectorGradientOrderWitnessApplication.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorGradientOrderWitnessApplication.lean",
+      "key": {
+        "source_sha256": "cab7743cbe79cdd7640b29fcf2e86e8fe62d3e9687020be0b9cd06958231ae59",
+        "compiled_source_sha256": "cab7743cbe79cdd7640b29fcf2e86e8fe62d3e9687020be0b9cd06958231ae59",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorGradientOrderPhysical": "8333ed8812873ad4298ed75083519803d7b55917671caa44749cbcf3e6f34835",
+          "TightVer401.VisibleConnectorWitnessAssemblyInputs": "4568705d66918f9db81ced55b5d28b9dc8a7a4f4f6fee66e638d2f42913d2a70"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 47.386,
+      "olean_sha256": "d4eb28417c27a189ba4f98f4b54cc5868c1413796deeff05d6a6dc7c0bac8f24",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -26572,6 +26631,65 @@
       "exit_code": 0,
       "elapsed_seconds": 57.86,
       "olean_sha256": "c754b49e89e551982375cbab8d7ab010cb704949d2b0cf7019b621dafc16f20d",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrder",
+      "source": "TightVer401\\VisibleConnectorSourceOrder.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorSourceOrder.lean",
+      "key": {
+        "source_sha256": "d915e6f10dc3018a8ce0b679770bebb87220b32eaf2a1a1d9fed5bc701efd2e2",
+        "compiled_source_sha256": "d915e6f10dc3018a8ce0b679770bebb87220b32eaf2a1a1d9fed5bc701efd2e2",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorGradientOrder": "665a67f102ee230fd5f834e82ea2a0f00c377d148cb7b38bc3ef4124219167ae",
+          "TightVer401.VisibleConnectorGradientInverseApplicationBoundary": "699dc6fc0fd8c8667c65d9bcb4bf6a392bcee0c8447c6a828ecd91dfeb9604b5"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 48.327,
+      "olean_sha256": "c89f4c61f666dd75b93bf815023c84664b653af10d10cf348d7d384a4cf116ff",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrderPhysical",
+      "source": "TightVer401\\VisibleConnectorSourceOrderPhysical.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorSourceOrderPhysical.lean",
+      "key": {
+        "source_sha256": "b3294e324d7b699aff309f6c2e4bfb02975d60b2810ef3e29e375896332faaae",
+        "compiled_source_sha256": "b3294e324d7b699aff309f6c2e4bfb02975d60b2810ef3e29e375896332faaae",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorSourceOrderRound": "9ec310b7a7b0b87fa7abb6eefb0e20b4cdf87634db0bae11373a2e489e186ccc",
+          "TightVer401.VisibleConnectorWitnessAssemblyOrientation": "6d799a49cae0d068fdaa99de3e8760832fd353f654df5a4516f193f29b9e3576",
+          "TightVer401.VisibleConnectorWitnessAssemblyTopology": "f3d288ad9db0f67ee43d14214967f5a6c8c622a6a44e61695a983fa2e8619bf2",
+          "TightVer401.VisibleConnectorWitnessAssemblyInputs": "4568705d66918f9db81ced55b5d28b9dc8a7a4f4f6fee66e638d2f42913d2a70"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 47.972,
+      "olean_sha256": "ca9223061cedc78d71c8e7b4ab6e162bb9c267c5c68c7f608ce32b61c0b34147",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrderRound",
+      "source": "TightVer401\\VisibleConnectorSourceOrderRound.lean",
+      "compiled_source": "TightVer401\\VisibleConnectorSourceOrderRound.lean",
+      "key": {
+        "source_sha256": "c710f55a4ab6462fee7e2d1ebe87a6330af4935708274e05bc05818b1221c3a1",
+        "compiled_source_sha256": "c710f55a4ab6462fee7e2d1ebe87a6330af4935708274e05bc05818b1221c3a1",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.VisibleConnectorSourceOrder": "c89f4c61f666dd75b93bf815023c84664b653af10d10cf348d7d384a4cf116ff",
+          "TightVer401.VisibleConnectorSourceInverseGlobal": "00bc8323c4f360063c1e72c9d3ebb13ba512d043c29ed27cee06e2135ee47084"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 47.539,
+      "olean_sha256": "9ec310b7a7b0b87fa7abb6eefb0e20b4cdf87634db0bae11373a2e489e186ccc",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -26851,7 +26969,7 @@
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
-  "coverage_sha256": "a595b3ed2691f15c6e2c40d647153bd49efde15b35f9fbf87622dd04f79e5f76",
+  "coverage_sha256": "cccc2bad7f094b69470437d73a529656f1cc1f10c7260d685d4f391a70d29e7b",
   "declarations": [
     {
       "axioms": [
@@ -139957,6 +140075,16 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "theorem",
+      "name": "TightVer401.completedSaddleTorusBandAffine_linear_apply",
+      "type": "∀ {T w RN μ h : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {K : Set (AddCircle T × ↑(Set.Ioo 0 w))}\n  (Q : TightVer401.CompletedSaddleAnnulusGeometryOutput d K RN μ h) (x : OAI.SmoothLocal.Geometry.Ambient),\n  (TightVer401.completedSaddleTorusBandAffine Q).linearIsometryEquiv x = -x"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "definition",
       "name": "TightVer401.completedSaddleTorusBandChart",
       "type": "{T w RN μ h : ℝ} →\n  [inst : Fact (0 < T)] →\n    {d : TightVer401.PeriodicRuledFrame T} →\n      {K : Set (AddCircle T × ↑(Set.Ioo 0 w))} →\n        TightVer401.CompletedSaddleAnnulusGeometryOutput d K RN μ h →\n          OpenPartialHomeomorph (AddCircle T × ↑(Set.Ioo 0 w)) TightVer401.NonrigidTorusSource"
@@ -140058,6 +140186,16 @@
       "kind": "theorem",
       "name": "TightVer401.completedSaddleTorusBandChart_zero_not_mem_target",
       "type": "∀ {T w RN μ h : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {K : Set (AddCircle T × ↑(Set.Ioo 0 w))}\n  (Q : TightVer401.CompletedSaddleAnnulusGeometryOutput d K RN μ h),\n  0 ∉ (TightVer401.completedSaddleTorusBandChart Q).target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.completedSaddleTorusBendingField_source_eq_neg",
+      "type": "∀ {T w RN μ h : ℝ} [inst : Fact (0 < T)] {d : TightVer401.PeriodicRuledFrame T} {K : Set (AddCircle T × ↑(Set.Ioo 0 w))}\n  (Q : TightVer401.CompletedSaddleAnnulusGeometryOutput d K RN μ h)\n  (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient) {p : AddCircle T × ↑(Set.Ioo 0 w)},\n  p ∈ (TightVer401.completedSaddleTorusBandChart Q).source →\n    TightVer401.protectedTorusBendingField (TightVer401.completedSaddleTorusBandChart Q)\n        (TightVer401.completedSaddleTorusBandAffine Q) Y (↑(TightVer401.completedSaddleTorusBandChart Q) p) =\n      -Y p"
     },
     {
       "axioms": [
@@ -195037,7 +195175,7 @@
       ],
       "kind": "theorem",
       "name": "TightVer401.visibleConnectorDisplaced_exists_uniform_phase_signs",
-      "type": "∀ {L : ℝ} [hL : Fact (0 < L)] {p w0 : ℝ → OAI.SmoothLocal.Geometry.Coord} {w : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord}\n  {Omega : Set (ℝ × ℝ)},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w0 →\n      ∀ (hpL : Function.Periodic p L) (hw0L : Function.Periodic w0 L)\n        (hwL : ∀ (rho : ℝ), Function.Periodic (fun s => w (rho, s)) L),\n        Function.Injective hpL.lift →\n          IsOpen Omega →\n            ContDiffOn ℝ (↑⊤) w Omega →\n              (∀ (s : ℝ), (0, s) ∈ Omega) →\n                (∀ (s : ℝ), w (0, s) = w0 s) →\n                  (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w0 s) ≠ 0) →\n                    ∃ e,\n                      ↑e = TightVer401.visibleConnectorDisplacedNativePsi hpL hw0L hwL ∧\n                        (∀ y ∈ e.target,\n                            ∃ s a,\n                              ContDiffOn ℝ (↑⊤) (↑a.symm) a.target ∧\n                                ∃ B,\n                                  IsOpen B ∧\n                                    y ∈ B ∧\n                                      B ⊆ e.target ∧\n                                        B ⊆ a.target ∧\n                                          ∀ v ∈ B,\n                                            ↑e.symm v =\n                                              ↑(TightVer401.visibleConnectorDisplacedNativeChart L s) (↑a.symm v)) ∧\n                          ∃ eta > 0,\n                            ∃ eps > 0,\n                              eps ≤ eta ∧\n                                Set.Icc (-eta) eta ×ˢ Set.univ ⊆\n                                    TightVer401.visibleConnectorDisplacedRealPhaseDomain e p ∧\n                                  (∀ (rho s : ℝ),\n                                      |rho| < eps →\n                                        0 <\n                                            deriv (fun t => TightVer401.visibleConnectorDisplacedRealPhase e p (rho, t))\n                                              s ∧\n                                          deriv\n                                              (fun r =>\n                                                (TightVer401.visibleConnectorDisplacedNativeSolution e p (r, s)).2)\n                                              rho <\n                                            0) ∧\n                                    (∀ (rho s : ℝ),\n                                        0 < rho →\n                                          rho < eps →\n                                            (TightVer401.visibleConnectorDisplacedNativeSolution e p (rho, s)).2 < 0) ∧\n                                      (∀ (rho : ℝ),\n                                          |rho| < eps →\n                                            ∃ A,\n                                              (⇑A = fun s =>\n                                                  TightVer401.visibleConnectorDisplacedRealPhase e p (rho, s)) ∧\n                                                ContDiff ℝ ↑⊤ ⇑A.symm ∧ ∀ (s : ℝ), A.symm (s + L) = A.symm s + L) ∧\n                                        ∀ (rho s : ℝ),\n                                          |rho| < eps →\n                                            TightVer401.visibleConnectorDisplacedPhi p w0 w rho\n                                                ![TightVer401.visibleConnectorDisplacedRealPhase e p (rho, s),\n                                                  (TightVer401.visibleConnectorDisplacedNativeSolution e p\n                                                      (rho, s)).2] =\n                                              p s"
+      "type": "∀ {L : ℝ} [hL : Fact (0 < L)] {p w0 : ℝ → OAI.SmoothLocal.Geometry.Coord} {w : ℝ × ℝ → OAI.SmoothLocal.Geometry.Coord}\n  {Omega : Set (ℝ × ℝ)},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w0 →\n      ∀ (hpL : Function.Periodic p L) (hw0L : Function.Periodic w0 L)\n        (hwL : ∀ (rho : ℝ), Function.Periodic (fun s => w (rho, s)) L),\n        Function.Injective hpL.lift →\n          IsOpen Omega →\n            ContDiffOn ℝ (↑⊤) w Omega →\n              (∀ (s : ℝ), (0, s) ∈ Omega) →\n                (∀ (s : ℝ), w (0, s) = w0 s) →\n                  (∀ (s : ℝ), TightVer401.visibleConnectorDet (deriv p s) (w0 s) ≠ 0) →\n                    ∃ e,\n                      ↑e = TightVer401.visibleConnectorDisplacedNativePsi hpL hw0L hwL ∧\n                        (∀ y ∈ e.target,\n                            ∃ s a,\n                              ContDiffOn ℝ (↑⊤) (↑a.symm) a.target ∧\n                                ∃ B,\n                                  IsOpen B ∧\n                                    y ∈ B ∧\n                                      B ⊆ e.target ∧\n                                        B ⊆ a.target ∧\n                                          ∀ v ∈ B,\n                                            ↑e.symm v =\n                                              ↑(TightVer401.visibleConnectorDisplacedNativeChart L s) (↑a.symm v)) ∧\n                          (∀ (s : ℝ),\n                              (0, p s) ∈ e.target ∧\n                                TightVer401.visibleConnectorDisplacedNativeSolution e p (0, s) =\n                                  ((TightVer401.periodProjection L) s, 0)) ∧\n                            (∀ (q : AddCircle L), (0, q, 0) ∈ e.source) ∧\n                              IsOpen (TightVer401.visibleConnectorDisplacedRealPhaseDomain e p) ∧\n                                ContDiffOn ℝ (↑⊤) (TightVer401.visibleConnectorDisplacedRealPhase e p)\n                                    (TightVer401.visibleConnectorDisplacedRealPhaseDomain e p) ∧\n                                  ContDiffOn ℝ (↑⊤)\n                                      (fun z => (TightVer401.visibleConnectorDisplacedNativeSolution e p z).2)\n                                      (TightVer401.visibleConnectorDisplacedRealPhaseDomain e p) ∧\n                                    (∀ (rho s : ℝ),\n                                        TightVer401.visibleConnectorDisplacedRealPhase e p (rho, s + L) =\n                                          TightVer401.visibleConnectorDisplacedRealPhase e p (rho, s) + L) ∧\n                                      (∀ (rho : ℝ),\n                                          Function.Periodic\n                                            (fun s =>\n                                              (TightVer401.visibleConnectorDisplacedNativeSolution e p (rho, s)).2)\n                                            L) ∧\n                                        (∀ (s : ℝ), TightVer401.visibleConnectorDisplacedRealPhase e p (0, s) = s) ∧\n                                          (∀ (s : ℝ),\n                                              (TightVer401.visibleConnectorDisplacedNativeSolution e p (0, s)).2 = 0) ∧\n                                            ∃ eta > 0,\n                                              ∃ eps > 0,\n                                                eps ≤ eta ∧\n                                                  Set.Icc (-eta) eta ×ˢ Set.univ ⊆\n                                                      TightVer401.visibleConnectorDisplacedRealPhaseDomain e p ∧\n                                                    (∀ (rho s : ℝ),\n                                                        |rho| < eps →\n                                                          0 <\n                                                              deriv\n                                                                (fun t =>\n                                                                  TightVer401.visibleConnectorDisplacedRealPhase e p\n                                                                    (rho, t))\n                                                                s ∧\n                                                            deriv\n                                                                (fun r =>\n                                                                  (TightVer401.visibleConnectorDisplacedNativeSolution e\n                                                                      p (r, s)).2)\n                                                                rho <\n                                                              0) ∧\n                                                      (∀ (rho s : ℝ),\n                                                          0 < rho →\n                                                            rho < eps →\n                                                              (TightVer401.visibleConnectorDisplacedNativeSolution e p\n                                                                    (rho, s)).2 <\n                                                                0) ∧\n                                                        (∀ (rho : ℝ),\n                                                            |rho| < eps →\n                                                              ∃ A,\n                                                                (⇑A = fun s =>\n                                                                    TightVer401.visibleConnectorDisplacedRealPhase e p\n                                                                      (rho, s)) ∧\n                                                                  ContDiff ℝ ↑⊤ ⇑A.symm ∧\n                                                                    ∀ (s : ℝ), A.symm (s + L) = A.symm s + L) ∧\n                                                          ∀ (rho s : ℝ),\n                                                            |rho| < eps →\n                                                              TightVer401.visibleConnectorDisplacedPhi p w0 w rho\n                                                                  ![TightVer401.visibleConnectorDisplacedRealPhase e p\n                                                                      (rho, s),\n                                                                    (TightVer401.visibleConnectorDisplacedNativeSolution\n                                                                        e p (rho, s)).2] =\n                                                                p s"
     },
     {
       "axioms": [
@@ -195318,6 +195456,16 @@
       "kind": "theorem",
       "name": "TightVer401.visibleConnectorGradientOrder_planarGradient",
       "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner etaOuter etaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      OAI.CircleDomainRigidity.PositiveJordanParametrization Ti etaOuter →\n        OAI.CircleDomainRigidity.PositiveJordanParametrization To etaInner →\n          closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n            ∀ {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n              IsOpen U →\n                ContDiffOn ℝ (↑⊤) G U →\n                  TightVer401.annularCoordJordanClosure Ho Hi ⊆ U →\n                    (∀ z ∈ TightVer401.annularCoordJordanInterior Ho Hi, (TightVer401.planarHessian G z).det < 0) →\n                      (∀ (t : ℝ),\n                          TightVer401.annularComplexConjugate (TightVer401.planarGradient G) (gammaOuter t) =\n                            etaOuter t) →\n                        (∀ (t : ℝ),\n                            TightVer401.annularComplexConjugate (TightVer401.planarGradient G) (gammaInner t) =\n                              etaInner t) →\n                          Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ti))\n                              (frontier (OAI.CircleDomainRigidity.jordanInterior To)) →\n                            ∀ {c : ℂ},\n                              c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                  closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                    OAI.CircleDomainRigidity.jordanInterior To"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorGradientOrder_retained_incoming_terminal",
+      "type": "∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U N : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}\n  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)\n  (T : TightVer401.PositiveExitTrace G U L) {Ho Hi To Ti : ℂ ≃ₜ ℂ},\n  (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t => TightVer401.seamComplexCoord.symm (T.p (L * t))) →\n    (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n        TightVer401.seamComplexCoord.symm (D.incoming.p (L * t))) →\n      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ti fun t =>\n          TightVer401.seamComplexCoord.symm (T.gamma (L * t))) →\n        (OAI.CircleDomainRigidity.PositiveJordanParametrization To fun t =>\n            TightVer401.seamComplexCoord.symm (D.incoming.gamma (L * t))) →\n          closure (TightVer401.positiveExitInside D.incoming.p) ⊆ TightVer401.positiveExitInside T.p →\n            IsOpen U →\n              ContDiffOn ℝ (↑⊤) G U →\n                closure (TightVer401.positiveExitInside T.p \\ closure (TightVer401.positiveExitInside D.incoming.p)) ⊆\n                    U →\n                  (∀ q ∈ TightVer401.positiveExitInside T.p \\ closure (TightVer401.positiveExitInside D.incoming.p),\n                      (TightVer401.planarHessian G q).det < 0) →\n                    IsOpen N →\n                      Set.range D.incoming.p ⊆ N →\n                        Set.EqOn G Gin N →\n                          Disjoint (Set.range D.incoming.gamma) (Set.range T.gamma) →\n                            closure (TightVer401.positiveExitInside T.gamma) ⊆\n                              TightVer401.positiveExitInside D.incoming.gamma"
     },
     {
       "axioms": [
@@ -195670,6 +195818,106 @@
       "kind": "theorem",
       "name": "TightVer401.visibleConnectorPolarSource_periodic",
       "type": "∀ {L : ℝ} {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {h : ℝ → ℝ},\n  Function.Periodic p L →\n    Function.Periodic w L →\n      Function.Periodic h L →\n        ∀ (r theta : ℝ),\n          TightVer401.visibleConnectorPolarSource L p w h ![r, theta + 2 * Real.pi] =\n            TightVer401.visibleConnectorPolarSource L p w h ![r, theta]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorRebaseParameter",
+      "type": "(ℝ → ℝ) → (ℝ → ℝ) → ℝ → OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorRebaseParameter.eq_1",
+      "type": "∀ (a b : ℝ → ℝ) (s : ℝ), TightVer401.visibleConnectorRebaseParameter a b s = ![a s, b s]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorRebasedGradient",
+      "type": "(ℝ → OAI.SmoothLocal.Geometry.Coord) →\n  (ℝ → OAI.SmoothLocal.Geometry.Coord) →\n    (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → ℝ) → (ℝ → ℝ) → ℝ → OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorRebasedGradient.eq_1",
+      "type": "∀ (p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b : ℝ → ℝ),\n  TightVer401.visibleConnectorRebasedGradient p gamma w a b =\n    TightVer401.visibleConnectorGradient p gamma w ∘ TightVer401.visibleConnectorRebaseParameter a b"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorRebasedHeight",
+      "type": "(ℝ → ℝ) → (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → ℝ) → (ℝ → ℝ) → ℝ → ℝ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorRebasedHeight.eq_1",
+      "type": "∀ (g : ℝ → ℝ) (gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b : ℝ → ℝ),\n  TightVer401.visibleConnectorRebasedHeight g gamma w a b =\n    TightVer401.visibleConnectorHeight g gamma w ∘ TightVer401.visibleConnectorRebaseParameter a b"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorRebasedRuling",
+      "type": "(ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → ℝ) → (ℝ → ℝ) → ℝ → OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorRebasedRuling.eq_1",
+      "type": "∀ (w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a d : ℝ → ℝ) (s : ℝ),\n  TightVer401.visibleConnectorRebasedRuling w a d s = d s • w (a s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "definition",
+      "name": "TightVer401.visibleConnectorRebasedSource",
+      "type": "(ℝ → OAI.SmoothLocal.Geometry.Coord) →\n  (ℝ → OAI.SmoothLocal.Geometry.Coord) → (ℝ → ℝ) → (ℝ → ℝ) → ℝ → OAI.SmoothLocal.Geometry.Coord"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorRebasedSource.eq_1",
+      "type": "∀ (p w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b : ℝ → ℝ),\n  TightVer401.visibleConnectorRebasedSource p w a b =\n    TightVer401.visibleConnectorSource p w ∘ TightVer401.visibleConnectorRebaseParameter a b"
     },
     {
       "axioms": [
@@ -196488,6 +196736,36 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.visibleConnectorSourceOrder_physical",
+      "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {terminal incoming : ℝ → OAI.SmoothLocal.Geometry.Coord} {Ho Hi : ℂ ≃ₜ ℂ},\n      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>\n          TightVer401.seamComplexCoord.symm (terminal (L * t))) →\n        (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n            TightVer401.seamComplexCoord.symm (incoming (L * t))) →\n          Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange terminal) →\n            Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange incoming) →\n              ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord}\n                {O : Set OAI.SmoothLocal.Geometry.Coord},\n                IsOpen O →\n                  ContDiffOn ℝ (↑⊤) F O →\n                    {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n                      (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                          1 ≤ TightVer401.planarRadius p →\n                            TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n                        (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = terminal s) →\n                          (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = incoming s) →\n                            Disjoint (Set.range incoming) (Set.range terminal) →\n                              ∀ {c : OAI.SmoothLocal.Geometry.Coord},\n                                c ∈ TightVer401.positiveExitInside terminal →\n                                  c ∈ TightVer401.positiveExitInside incoming →\n                                    closure (TightVer401.positiveExitInside incoming) ⊆\n                                      TightVer401.positiveExitInside terminal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorSourceOrder_retained_incoming_terminal",
+      "type": "∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}\n  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)\n  (T : TightVer401.VisibleConnectorWitnessAssemblyTerminalFacts G U L) {Ho Hi : ℂ ≃ₜ ℂ},\n  (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t => TightVer401.seamComplexCoord.symm (T.p (L * t))) →\n    (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n        TightVer401.seamComplexCoord.symm (D.incoming.p (L * t))) →\n      ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord} {O : Set OAI.SmoothLocal.Geometry.Coord},\n        IsOpen O →\n          ContDiffOn ℝ (↑⊤) F O →\n            {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n              (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                  1 ≤ TightVer401.planarRadius p →\n                    TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n                (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = T.p s) →\n                  (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = D.incoming.p s) →\n                    Disjoint (Set.range D.incoming.p) (Set.range T.p) →\n                      closure (TightVer401.positiveExitInside D.incoming.p) ⊆ TightVer401.positiveExitInside T.p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnectorSourceOrder_round",
+      "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord} {O : Set OAI.SmoothLocal.Geometry.Coord}\n  {Ho Hi : ℂ ≃ₜ ℂ} {etaOuter etaInner : ℝ → ℂ},\n  IsOpen O →\n    ContDiffOn ℝ (↑⊤) F O →\n      {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n        (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n            1 ≤ TightVer401.planarRadius p → TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n          OAI.CircleDomainRigidity.PositiveJordanParametrization Ho etaOuter →\n            OAI.CircleDomainRigidity.PositiveJordanParametrization Hi etaInner →\n              (∀ (t : ℝ),\n                  TightVer401.annularComplexConjugate F (OAI.CircleDomainRigidity.unitCircleParam 0 2 t) = etaOuter t) →\n                (∀ (t : ℝ),\n                    TightVer401.annularComplexConjugate F (OAI.CircleDomainRigidity.unitCircleParam 0 1 t) =\n                      etaInner t) →\n                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))\n                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →\n                    ∀ {c : ℂ},\n                      c ∈ OAI.CircleDomainRigidity.jordanInterior Ho →\n                        c ∈ OAI.CircleDomainRigidity.jordanInterior Hi →\n                          closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆\n                            OAI.CircleDomainRigidity.jordanInterior Ho"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.visibleConnectorSource_actual_determinant",
       "type": "∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w →\n      ∀ (gamma : ℝ → OAI.SmoothLocal.Geometry.Coord) (q : OAI.SmoothLocal.Geometry.Coord),\n        TightVer401.visibleConnectorDet\n            (OAI.SmoothLocal.Geometry.coordPartial 0 (TightVer401.visibleConnectorSource p w) q)\n            (OAI.SmoothLocal.Geometry.coordPartial 1 (TightVer401.visibleConnectorSource p w) q) =\n          -TightVer401.visibleConnectorDelta p gamma w q"
     },
@@ -197294,6 +197572,26 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.visibleConnector_actual_positive_map_preserves_positive_jordan_order",
+      "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        ∀ (F : ℂ → ℂ) (O : Set ℂ),\n          IsOpen O →\n            ContDiffOn ℝ (↑⊤) F O →\n              TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, 0 < (fderiv ℝ F z).det) →\n                  OAI.CircleDomainRigidity.PositiveJordanParametrization To (F ∘ gammaOuter) →\n                    OAI.CircleDomainRigidity.PositiveJordanParametrization Ti (F ∘ gammaInner) →\n                      Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                          (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                        ∀ {c : ℂ},\n                          c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                            c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                              closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                OAI.CircleDomainRigidity.jordanInterior To"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_actual_positive_map_preserves_positive_jordan_order._proof_1_1",
+      "type": "∀ {Ho Hi : ℂ ≃ₜ ℂ} {gammaOuter gammaInner : ℝ → ℂ} (F : ℂ → ℂ) (y : ℂ),\n  -1 = 1 * ↑{x | x ∈ TightVer401.annularJordanClosure Ho Hi ∧ F x = y}.ncard → False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.visibleConnector_actual_ruling_C_formula",
       "type": "∀ {R : ℝ} {gamma e : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  ContDiff ℝ (↑⊤) gamma →\n    ∀ {s k : ℝ},\n      HasDerivAt e (k • TightVer401.visibleConnectorJ (e s)) s →\n        e s ⬝ᵥ e s = 1 →\n          TightVer401.visibleConnectorC gamma (TightVer401.visibleConnectorActualRuling R gamma e) s =\n            R * k * (TightVer401.visibleConnectorJ (gamma s) ⬝ᵥ e s - R)"
     },
@@ -197306,6 +197604,16 @@
       "kind": "theorem",
       "name": "TightVer401.visibleConnector_actual_ruling_circle_terminal",
       "type": "∀ {R : ℝ},\n  0 < R →\n    ∀ {p gamma e : ℝ → OAI.SmoothLocal.Geometry.Coord} {s : ℝ},\n      e s ⬝ᵥ e s = 1 →\n        0 < TightVer401.visibleConnectorA p (TightVer401.visibleConnectorActualRuling R gamma e) s →\n          0 < TightVer401.visibleConnectorB gamma (TightVer401.visibleConnectorActualRuling R gamma e) s →\n            0 < TightVer401.visibleConnectorC gamma (TightVer401.visibleConnectorActualRuling R gamma e) s →\n              have w := TightVer401.visibleConnectorActualRuling R gamma e;\n              have t := TightVer401.visibleConnectorActualTerminalHeight p gamma w s;\n              0 < t ∧\n                (∀ u ∈ Set.Icc 0 t, 0 < TightVer401.visibleConnectorDelta p gamma w ![s, u]) ∧\n                  TightVer401.visibleConnectorGradient p gamma w ![s, t] = -R • TightVer401.visibleConnectorJ (e s) ∧\n                    TightVer401.visibleConnectorGradient p gamma w ![s, t] ⬝ᵥ\n                        TightVer401.visibleConnectorGradient p gamma w ![s, t] =\n                      R ^ 2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_actual_signed_map_orders_positive_jordan_fills",
+      "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        ∀ (F : ℂ → ℂ) (O : Set ℂ),\n          IsOpen O →\n            ContDiffOn ℝ (↑⊤) F O →\n              TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                ∀ (s : ℤ),\n                  s = 1 ∨ s = -1 →\n                    (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, 0 < ↑s * (fderiv ℝ F z).det) →\n                      OAI.CircleDomainRigidity.PositiveJordanParametrization To (F ∘ gammaOuter) →\n                        OAI.CircleDomainRigidity.PositiveJordanParametrization Ti (F ∘ gammaInner) →\n                          Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                              (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                            ∀ {c : ℂ},\n                              c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                  if s = 1 then\n                                    closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                      OAI.CircleDomainRigidity.jordanInterior To\n                                  else\n                                    closure (OAI.CircleDomainRigidity.jordanInterior To) ⊆\n                                      OAI.CircleDomainRigidity.jordanInterior Ti"
     },
     {
       "axioms": [
@@ -197662,6 +197970,232 @@
       "kind": "theorem",
       "name": "TightVer401.visibleConnector_positive_det_turn_jordan._simp_1_7",
       "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) gamma →\n      ContDiff ℝ (↑⊤) w →\n        ContDiff ℝ (↑⊤) a →\n          ContDiff ℝ (↑⊤) b →\n            ContDiff ℝ (↑⊤) d →\n              (∀ (s : ℝ), TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ≠ 0) →\n                ∀ (s : ℝ),\n                  TightVer401.visibleConnectorB (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                      (TightVer401.visibleConnectorRebasedRuling w a d) s =\n                    deriv a s * d s * TightVer401.visibleConnectorA p w (a s) *\n                        TightVer401.visibleConnectorB gamma w (a s) /\n                      TightVer401.visibleConnectorDelta p gamma w ![a s, b s]"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_2",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_3",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_4",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_5",
+      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_6",
+      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_7",
+      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_B._simp_1_8",
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_determinants",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w →\n      ContDiff ℝ (↑⊤) a →\n        ContDiff ℝ (↑⊤) b →\n          ContDiff ℝ (↑⊤) d →\n            ∀ (s u : ℝ),\n              TightVer401.visibleConnectorA (TightVer401.visibleConnectorRebasedSource p w a b)\n                    (TightVer401.visibleConnectorRebasedRuling w a d) s =\n                  deriv a s * d s * TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ∧\n                TightVer401.visibleConnectorDelta (TightVer401.visibleConnectorRebasedSource p w a b)\n                    (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                    (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u] =\n                  deriv a s * d s * TightVer401.visibleConnectorDelta p gamma w ![a s, b s + u * d s]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) gamma →\n      ContDiff ℝ (↑⊤) w →\n        ContDiff ℝ (↑⊤) a →\n          ContDiff ℝ (↑⊤) b →\n            ContDiff ℝ (↑⊤) d →\n              (∀ (s : ℝ), TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ≠ 0) →\n                (∀ (s : ℝ), deriv a s ≠ 0) →\n                  (∀ (s : ℝ), d s ≠ 0) →\n                    ∀ (s u : ℝ),\n                      TightVer401.visibleConnectorDelta p gamma w ![a s, b s + u * d s] ≠ 0 →\n                        TightVer401.visibleConnectorGradient (TightVer401.visibleConnectorRebasedSource p w a b)\n                            (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                            (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u] =\n                          TightVer401.visibleConnectorGradient p gamma w ![a s, b s + u * d s]"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_10",
+      "type": "∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_4",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_5",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_6",
+      "type": "∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_7",
+      "type": "∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_8",
+      "type": "∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_gradient._simp_1_9",
+      "type": "∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_height",
+      "type": "∀ (g : ℝ → ℝ) (p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b d : ℝ → ℝ) (s u : ℝ),\n  TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ≠ 0 →\n    TightVer401.visibleConnectorHeight (TightVer401.visibleConnectorRebasedHeight g gamma w a b)\n        (TightVer401.visibleConnectorRebasedGradient p gamma w a b) (TightVer401.visibleConnectorRebasedRuling w a d)\n        ![s, u] =\n      TightVer401.visibleConnectorHeight g gamma w ![a s, b s + u * d s]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_periodic",
+      "type": "∀ {L : ℝ} {g a b d : ℝ → ℝ} {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  Function.Periodic p L →\n    Function.Periodic g L →\n      Function.Periodic gamma L →\n        Function.Periodic w L →\n          (∀ (s : ℝ), a (s + L) = a s + L) →\n            Function.Periodic b L →\n              Function.Periodic d L →\n                Function.Periodic (TightVer401.visibleConnectorRebasedSource p w a b) L ∧\n                  Function.Periodic (TightVer401.visibleConnectorRebasedHeight g gamma w a b) L ∧\n                    Function.Periodic (TightVer401.visibleConnectorRebasedRuling w a d) L ∧\n                      Function.Periodic (TightVer401.visibleConnectorRebasedGradient p gamma w a b) L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_positive",
+      "type": "∀ {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) gamma →\n      ContDiff ℝ (↑⊤) w →\n        ContDiff ℝ (↑⊤) a →\n          ContDiff ℝ (↑⊤) b →\n            ContDiff ℝ (↑⊤) d →\n              (∀ (s : ℝ), 0 < deriv a s) →\n                (∀ (s : ℝ), 0 < d s) →\n                  (∀ (s : ℝ), 0 < TightVer401.visibleConnectorA p w (a s)) →\n                    (∀ (s : ℝ), 0 < TightVer401.visibleConnectorB gamma w (a s)) →\n                      (∀ (s : ℝ), 0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s]) →\n                        ∀ (s u : ℝ),\n                          0 < TightVer401.visibleConnectorDelta p gamma w ![a s, b s + u * d s] →\n                            0 <\n                                TightVer401.visibleConnectorA (TightVer401.visibleConnectorRebasedSource p w a b)\n                                  (TightVer401.visibleConnectorRebasedRuling w a d) s ∧\n                              0 <\n                                  TightVer401.visibleConnectorB\n                                    (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                                    (TightVer401.visibleConnectorRebasedRuling w a d) s ∧\n                                0 <\n                                  TightVer401.visibleConnectorDelta (TightVer401.visibleConnectorRebasedSource p w a b)\n                                    (TightVer401.visibleConnectorRebasedGradient p gamma w a b)\n                                    (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_smooth",
+      "type": "∀ {g a b d : ℝ → ℝ} {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  ContDiff ℝ (↑⊤) g →\n    ContDiff ℝ (↑⊤) p →\n      ContDiff ℝ (↑⊤) gamma →\n        ContDiff ℝ (↑⊤) w →\n          ContDiff ℝ (↑⊤) a →\n            ContDiff ℝ (↑⊤) b →\n              ContDiff ℝ (↑⊤) d →\n                (∀ (s : ℝ), TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ≠ 0) →\n                  ContDiff ℝ (↑⊤) (TightVer401.visibleConnectorRebasedSource p w a b) ∧\n                    ContDiff ℝ (↑⊤) (TightVer401.visibleConnectorRebasedHeight g gamma w a b) ∧\n                      ContDiff ℝ (↑⊤) (TightVer401.visibleConnectorRebasedRuling w a d) ∧\n                        ContDiff ℝ (↑⊤) (TightVer401.visibleConnectorRebasedGradient p gamma w a b)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_source",
+      "type": "∀ (p w : ℝ → OAI.SmoothLocal.Geometry.Coord) (a b d : ℝ → ℝ) (s u : ℝ),\n  TightVer401.visibleConnectorSource (TightVer401.visibleConnectorRebasedSource p w a b)\n      (TightVer401.visibleConnectorRebasedRuling w a d) ![s, u] =\n    TightVer401.visibleConnectorSource p w ![a s, b s + u * d s]"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebase_value_deriv",
+      "type": "∀ {g a b : ℝ → ℝ} {p gamma w : ℝ → OAI.SmoothLocal.Geometry.Coord},\n  ContDiff ℝ (↑⊤) g →\n    ContDiff ℝ (↑⊤) p →\n      ContDiff ℝ (↑⊤) gamma →\n        ContDiff ℝ (↑⊤) w →\n          ContDiff ℝ (↑⊤) a →\n            ContDiff ℝ (↑⊤) b →\n              (∀ (s : ℝ), deriv g s = gamma s ⬝ᵥ deriv p s) →\n                ∀ (s : ℝ),\n                  TightVer401.visibleConnectorDelta p gamma w ![a s, b s] ≠ 0 →\n                    deriv (TightVer401.visibleConnectorRebasedHeight g gamma w a b) s =\n                      TightVer401.visibleConnectorRebasedGradient p gamma w a b s ⬝ᵥ\n                        deriv (TightVer401.visibleConnectorRebasedSource p w a b) s"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebased_ruling_deriv",
+      "type": "∀ {w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a d : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) w →\n    ContDiff ℝ (↑⊤) a →\n      ContDiff ℝ (↑⊤) d →\n        ∀ (s : ℝ),\n          deriv (TightVer401.visibleConnectorRebasedRuling w a d) s =\n            deriv d s • w (a s) + (d s * deriv a s) • deriv w (a s)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.visibleConnector_rebased_source_deriv",
+      "type": "∀ {p w : ℝ → OAI.SmoothLocal.Geometry.Coord} {a b : ℝ → ℝ},\n  ContDiff ℝ (↑⊤) p →\n    ContDiff ℝ (↑⊤) w →\n      ContDiff ℝ (↑⊤) a →\n        ContDiff ℝ (↑⊤) b →\n          ∀ (s : ℝ),\n            deriv (TightVer401.visibleConnectorRebasedSource p w a b) s =\n              deriv a s • (deriv p (a s) + b s • deriv w (a s)) + deriv b s • w (a s)"
     },
     {
       "axioms": [
@@ -198064,5 +198598,17 @@
       "type": "∀ {α : Sort u_1} {p : Prop} [inst : Decidable p] {a b : α}, ¬p → (if p then a else b) = b"
     }
   ],
-  "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion."
+  "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion.",
+  "source_closure_sha256": "b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9",
+  "source_git_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+  "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
+  "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
+  "classical_registry_sha256": "8d2a3f846c6f21da451412bfe98bd5293b2af9f9896902e012e2fb1548eb963c",
+  "lean_toolchain_sha256": "62c2d9c0fc1ec4c67e151c11eff41ca004ef38e179cf9476c230406e6defedef",
+  "lakefile_sha256": "90b217528e30a6f9bddd0f7bd7342b0d97f5e76ac66ddba525a7d13eea7003d5",
+  "verification_scripts": {
+    "build.py": "2d75c5af85f36abe541d46ac98ff367459aa7c6efe9262ae74307838c203784c",
+    "verify.py": "a3eb77057f7151ff7b70bc3a9fe5c290cd07cadb8fc8132104047a69c66fb320",
+    "inventory.py": "f699b2bff52ee2ee4a45dd1a4eb11dbe61c8dd407e607d4f94b7e7b5381e9572"
+  }
 }

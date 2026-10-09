@@ -6,7 +6,9 @@
     "source": "TightVer401/VisibleConnectorGradientOrderWitnessApplication.lean",
     "git_blob": "8e646cb5c206eca2bf2309eb36f2123123e0ce52",
     "sha256": "cab7743cbe79cdd7640b29fcf2e86e8fe62d3e9687020be0b9cd06958231ae59",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   },
   {
     "worker": "angular-domination",
@@ -15,7 +17,9 @@
     "source": "TightVer401/VisibleConnectorSourceOrder.lean",
     "git_blob": "72eefd65fa5f0917bd26617947b8992df45c8a83",
     "sha256": "d915e6f10dc3018a8ce0b679770bebb87220b32eaf2a1a1d9fed5bc701efd2e2",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   },
   {
     "worker": "angular-domination",
@@ -24,7 +28,9 @@
     "source": "TightVer401/VisibleConnectorSourceOrderRound.lean",
     "git_blob": "c0d77da565959c4f4fdb9a0702829c6858e2b6fe",
     "sha256": "c710f55a4ab6462fee7e2d1ebe87a6330af4935708274e05bc05818b1221c3a1",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   },
   {
     "worker": "angular-domination",
@@ -33,7 +39,9 @@
     "source": "TightVer401/VisibleConnectorSourceOrderPhysical.lean",
     "git_blob": "3738b36db356a7c723e660e4b0c9fd71f13294d9",
     "sha256": "b3294e324d7b699aff309f6c2e4bfb02975d60b2810ef3e29e375896332faaae",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   },
   {
     "worker": "angular-descent",
@@ -42,7 +50,9 @@
     "source": "TightVer401/VisibleConnectorDisplacedSeamPhaseSigns.lean",
     "git_blob": "81785717b024fb9b51716d02271db6ace7f2da72",
     "sha256": "97c035f524f9c17e55b68497d4ac06d57466b78df856dbfe3a97e5006fd821e5",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   },
   {
     "worker": "angular-descent",
@@ -51,6 +61,8 @@
     "source": "TightVer401/VisibleConnectorDisplacedSeamRebase.lean",
     "git_blob": "2b44510f40f7557fa48424f94a17e1a172cadd29",
     "sha256": "5bb2fee3619c9efec4ff33346a9181862631c622da132a9c7557b163a4dcbfe4",
-    "status": "reviewed_frozen_current_validation_pending"
+    "status": "current_integration_PASS",
+    "audit_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+    "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
   }
 ]

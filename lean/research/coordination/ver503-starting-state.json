@@ -14,5 +14,8 @@
     "README.md",
     "timestamp/"
   ],
-  "new_validation": "pending"
+  "new_validation": "PASS",
+  "validated_source_commit": "fc8d7997c66d386842c41373ae46dfb92ce47f85",
+  "validated_target_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "kernel_report_sha256": "3650e0e99f7163b7244192cf0c3c60130b598594955b6a5d8ed114fb9fcf3238"
 }

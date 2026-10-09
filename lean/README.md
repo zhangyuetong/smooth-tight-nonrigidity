@@ -1,35 +1,43 @@
-# Current Lean formalization
+# Current ver503 formalization
 
-This directory publishes the **latest integrated formalization**, not the older main-checkout baseline. The retained namespace `TightVer401` is an engine name; it does not indicate the age of this snapshot.
+Active proof engine: `/lean`; manuscript target: [`paper/paper.tex`](../paper/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
 
-- Source snapshot: `502220cc44850941449b848f7080e8828c731364` (see [snapshot metadata](audit/snapshot.json) for the exact authoritative ID).
-- Final integration audit: `0d2e3fcfe73350a14d3734b6887dbda961190015`, **2026-10-09 01:37:31 UTC**.
-- Recorded result: **PASS — 1,403 modules and 17,564 declarations**, with no admissions or custom axioms in the audited import closure.
-- Full construction: **INCOMPLETE**. Both the unconditional existence theorem and `exists_noncongruent_isometric_tight_tori_pair_of_classical` remain pending.
+The first-pair construction remains **INCOMPLETE**. Neither the unconditional existence theorem nor `exists_noncongruent_isometric_tight_tori_pair_of_classical` is present. Extension and Cantor-family applications remain deferred.
 
-## What is checked
+## Current checked checkpoint
 
-The checked work includes the actual identity-holonomy band and compactly supported bending; exact equal-metric sign branches; signed annular degree; the full quadratic filling and its inverse; the normalized reflected saddle; and the same-meridian Gauss and affine-marker applications. Downstream theorems construct a noncongruent embedded tight pair **given the specified completed support/saddle inputs and explicit classical background parameters**.
+A fresh full integration verification passed on 2026-10-09 at 14:30:39 UTC against source commit `fc8d7997c66d386842c41373ae46dfb92ce47f85` and exact ver503 target SHA256 `a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a`. [Audit metadata](audit/snapshot.json) binds the current [kernel report](audit/kernel-report.json) to source, target, toolchain, foundation/dependency and migration-review hashes. There are no admissions or custom axioms in the certified import closure. The ver500 certificate is retained as historical provenance; it was not transferred as a ver503 certificate.
 
-These conditional consumers do not establish the existence of the original construction inputs. The remaining bottlenecks are the actual selected source/core placement, the universal ordinary connector-data family, and the incoming rebasing/relative smoothing that preserves the full open incoming germ and the required negative Hessian.
+The retained original producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Checked downstream consumers produce the literal marked pair from actual completed support/saddle inputs, one chosen full meridian and explicit classical theorem parameters.
 
-The [coverage register](coverage.json) records **17 proved, 3 partial and 20 pending** numbered manuscript statements. These counts are not an estimate of how much mathematical work remains. Extension applications, Cantor families and orbit-space topology are deferred in this formalization.
+Newly validated frozen results derive canonical source/reversed-gradient order from honest signed-degree premises, retain central fields for the SAME chosen displaced inverse, and rebase source/scalar/gradient simultaneously. The ver503 bridge proves the fixed affine normalization acts on vectors by negation and the transported field is exactly `-Y` on the SAME source chart; the existing extension is zero outside. These are useful checked exports, not completed original connector inputs.
 
-## Trust and source provenance
+## Remaining original construction gates
 
-[The complete recorded kernel audit](audit/kernel-report.json) lists declaration types, transitive axioms, import dependencies and exact source hashes. [Snapshot metadata](audit/snapshot.json) identifies the source and publication adaptations. All audited Lean source bytes and vendored foundation bytes are preserved. Compiled objects, local caches, logs, old snapshots and unaudited WIP are excluded. Later frozen worker changes that were not integrated in this audit receive no transferred proof credit here.
+| Gate | Required producer | Final consumer |
+|---|---|---|
+| Selected source/core geometry | Actual strict nesting of selected graphs, protected support between them, original-potential open agreement | `exists_markedTorus_pair_of_negative_gradient_order` |
+| Compatible incoming rebase | SAME inverse; actual seam embedding/value/gradient matching; displaced terminal geometry; eta-first/rho-second common bounds | Final relative-smoothing application and ordinary data |
+| Final scalar H | Full fixed V, Gin/raw on actual side domains, both genuine open boundary germs, negative Hessian on entire required closed band | `VisibleConnectorWitnessAssemblyOrdinaryData` |
+| Ordinary connector family | Actual universal ordinary data with F/O/terminal/boundary facts, using final H's own reconstructed gradient inverse | Completion/pair consumers, then ultimate first-pair theorem |
 
-The only permitted foundational axioms are `propext`, `Classical.choice` and `Quot.sound`. Four classical/external statements are explicitly registered in [classical-external-results.json](classical-external-results.json). They remain theorem parameters; defining their types does not prove them or grant the desired torus construction.
+No original first-pair construction gate is closed by importing an equivalent conditional wrapper. Full incoming open equality cannot be replaced by matching first jets. Native inverse e, Cartesian inverse E and the final H gradient inverse are distinct objects with required same-object identifications.
 
-The exact mathematical target is the ver500 manuscript pinned by [target-lock.json](target-lock.json). Its byte-identical reference is bundled as [target/manuscript.tex](target/manuscript.tex) so coverage can be reproduced. A small [statement-reuse comparison record](target/reuse-statements.json) supports the historical statement-identity check; it contains no old proof engine or certificate. The [current readable paper](../paper/README.md) is ver503. This source audit does **not** assert a separate formal verification of every ver503 passage or figure.
+The 13 uncompiled IncomingGin leaves from `5176081` are preserved separately in [pending](pending/IncomingGin5176081/README.md), outside the certified closure. [Frozen source review](research/coordination/ver503-frozen-review.md) and [mathematical migration](research/coordination/ver503-mathematical-migration.md) record exact provenance, reuse and remaining obligations. Per-claim [reuse review](target/ver503-reuse-review.json) binds all current statement hashes, including changed support/holonomy/protected-realization/localized-sign passages. Coverage is a scope register, not a percentage of the construction.
 
-Start with [blueprint/interfaces.md](blueprint/interfaces.md), which specifies the actual objects, dependencies, proved interfaces and remaining gates. It is the generated blueprint at this snapshot. The proof entry point is [TightVer401.lean](TightVer401.lean), and [Audit.lean](Audit.lean) performs the kernel axiom/admission audit.
+## Exact external theorem parameters
 
-## Reproduce the build
+The [registry](classical-external-results.json) retains four explicit statements with references and consumers:
 
-Requirements: Git, Python 3, and Lean's `elan`/`lake`. The audited compatibility profile uses **Lean 4.33.0-rc1** and **Mathlib `e4c91783ca8e6a7c693ae624ade32fd22d4e43c1`**. The unmodified OpenAI sources are pinned to **`adc7f1241b42e322a6451854ab7e4b4c146bf78a`**; Schoenflies is pinned to **`05a43d29cde026618777db3d4e4316204ccca237`**. Their licenses and exact locks are included.
+- `ClassicalPositiveGaussTightnessClaim` and `ClassicalCoincidentEmbeddingFixedOpenClaim`, bundled in `ClassicalExternalResults`.
+- `ClassicalEmbeddedImageReparametrizationClaim`, separately supplied.
+- `MarkerEllipseAxesRecognition`, separately supplied.
 
-From the repository root:
+Their definitions and conditional applications are kernel checked; their mathematical truth remains assumed. No inhabitant or original construction data is granted. Every actual geometry, inverse, marker, metric and final-pair input must be produced.
+
+## Reproduce the current build
+
+Requirements: Git, Python 3 and Lean/elan. Pins: Lean `4.33.0-rc1`, Mathlib `e4c91783ca8e6a7c693ae624ade32fd22d4e43c1`, OpenAI/math `adc7f1241b42e322a6451854ab7e4b4c146bf78a`, Schoenflies `05a43d29cde026618777db3d4e4316204ccca237`.
 
 ```sh
 cd lean
@@ -37,12 +45,9 @@ elan toolchain install leanprover/lean4:v4.33.0-rc1
 lake update
 lake exe cache get
 python scripts/verify.py --jobs 3
+python scripts/build_blueprint.py
 ```
 
-On systems where Python is named `python3`, substitute that name. Use **the supplied builder/checker**, because a plain `lake build` does not apply the recorded source-compatibility transformations. Internet access is needed only to obtain the pinned Lean and Mathlib dependencies; the selected OpenAI and Schoenflies sources are included.
+Use the supplied builder/checker; plain `lake build` does not apply the recorded compatibility transformations. Compiler lookup is portable; the new verification was performed on Windows. Optional `VER401_LEAN` and `VER401_PACKAGES` select the pinned executable and read-only packages. Each checkout owns `.lake/build`, compatibility sources and `build-logs`. A copied report or cache does not validate source edits; the builder and full verifier check current source/dependency/object/log hashes.
 
-The verifier compiles the current import closure, verifies source/object/dependency hashes, rejects admissions and custom axioms, and checks coverage exports. Successful verification creates a new local `kernel-report.json`. The published integration record remains in `audit/kernel-report.json` for comparison. A copied report alone is not a validation of subsequent source edits.
-
-Optional: set `VER401_LEAN` to the pinned Lean executable or `VER401_PACKAGES` to an existing directory containing the exact Mathlib checkout and its dependency packages. The builder verifies the compiler version and Mathlib revision. Each checkout must write its own `.lake/build`, compatibility sources and `build-logs`; share dependency caches read-only.
-
-The recorded audit was performed on Windows. The launcher supports Windows and Unix executable names; a fresh Unix build has not been certified by this publication step. The package changes only executable discovery and the bundled manuscript/statement lookup, not any Lean proof or compatibility transformation.
+For concurrent Windows worktrees follow [SESSION_WORKTREES.md](../SESSION_WORKTREES.md), [COORDINATION.md](../COORDINATION.md), the [rebuilt precise blueprint](blueprint/interfaces.md) and [frozen consumers](research/coordination/ver503-consumer-contract.md). Parent chats are their worktrees' sole compiler writers; subagents use exclusive source leaves or read-only reviews. The publication excludes caches, compiled binaries and bulk logs, preserving personal README additions and timestamp files.

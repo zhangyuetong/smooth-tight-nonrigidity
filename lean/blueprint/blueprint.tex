@@ -1,0 +1,568 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\begin{document}
+\section*{Ver503 formalization blueprint}
+The first target is two noncongruent isometric smooth embedded tight tori, agreeing on a nonempty open set and having no open planar patch. The whole-paper and Cantor-family assertions remain incomplete.
+\par The exact manuscript, audited interfaces, proposed dependencies and source bindings are recorded in interfaces.md and lean-map.json. This overview accompanies the annotated mathematics.tex.
+\section*{Object and proof interfaces}
+\subsection*{O.plane: Actual plane and ambient space}
+Use the actual coordinate plane, Euclidean three-space, Frechet derivatives, induced metric and intrinsic Gaussian curvature from the pinned OpenAI foundation.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.planarHessian}.
+\subsection*{O.frame: Actual periodic physical frame}
+A smooth periodic closed curve and orthonormal frame satisfy the actual Frenet-type derivative equations with nowhere-zero torsion. The frame input includes no immersion, holonomy or bending conclusions.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.PeriodicRuledFrame}.
+\subsection*{O.band: Native ruled band}
+The actual map on the native circle times an open positive height interval is gamma(s)+u E(s). All derivatives, normal and Gaussian curvature refer to this actual map.
+\par Status: audited.
+\par Dependencies: O.frame.
+\par Lean target: \texttt{TightVer401.PeriodicRuledFrame.bandMap}.
+\subsection*{O.bending: Actual localized bending}
+A native smooth ambient vector field satisfies the zero symmetric mixed derivative pairing. Full topological support, rather than only nonzero values, specifies its protected region.
+\par Status: audited.
+\par Dependencies: O.band.
+\par Lean target: \texttt{TightVer401.IsBandBending}.
+\subsection*{O.manifold-bending: Actual plane-model manifold bending}
+For an actual charted surface in the OpenAI plane model, the smooth ambient field has zero actual symmetric strain pairing on every tangent vector pair. Transporting the protected band field to this global object is a separate application proof.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.Manifold.IsBending}.
+\subsection*{O.support: Actual planar support potential}
+G is an actual smooth scalar potential; X\_G=(partial\_0 G,partial\_1 G,G-p dot grad G), and the Hessian is formed from its actual second derivatives.
+\par Status: audited.
+\par Dependencies: O.plane.
+\par Lean target: \texttt{TightVer401.planarSupportMap}.
+\subsection*{O.dual: Differential Legendre transform}
+For an actual gradient diffeomorphism, G*(y)=p dot y-G(p), y=grad G(p). The actual inverse gradient defines the transform; convexity is not assumed.
+\par Status: audited.
+\par Dependencies: O.support.
+\par Lean target: \texttt{TightVer401.planarLegendre}.
+\subsection*{O.polar: Actual polar coordinate map}
+Phi(r,theta)=(r cos theta,r sin theta), on r>0. Its actual Jacobian determinant is r; polar Hessian expressions include chart second-derivative corrections.
+\par Status: audited.
+\par Dependencies: O.plane.
+\par Lean target: \texttt{TightVer401.saddlePolarChart}.
+\subsection*{O.quadratic: Quadratic radial end germ}
+f(r)=M R r-M r^2/2+d, with R,M>0. The support map and its boundary-circle resolution are actual derivatives of this germ.
+\par Status: audited.
+\par Dependencies: O.support.
+\par Lean target: \texttt{TightVer401.dualRadialQuadraticProfile}.
+\subsection*{O.neck: Square-root dual neck}
+f\_neck(r)=C+2 sqrt(B(r-a)), B>0,r>a. Its inverse gradient radius is a+B/p^2 and its inverse Legendre potential is a p-B/p-C.
+\par Status: audited.
+\par Dependencies: O.dual.
+\par Lean target: \texttt{TightVer401.dualRadialNeck}.
+\subsection*{O.torus: Actual torus source}
+The actual carrier is the native product of two quotient circles. Smooth structure, compactness, connectedness and annulus assembly have separate proof obligations.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.NonrigidTorusSource}.
+\subsection*{O.tightness: Geometric tightness}
+Tightness means every nonempty intersection of the image with an open affine half-space is connected. The curvature equality characterization is a separate theorem, not the definition.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.IsTightImage}.
+\subsection*{O.no-planar-patch: Absence of open planar patches}
+No nonempty open part of the actual source maps into an affine plane: every nonzero ambient continuous linear functional fails to be constant on that part.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.HasNoOpenPlanarPatch}.
+\subsection*{O.noncongruence: Noncongruence of images}
+For every ambient Euclidean affine isometry A, A(range Xplus) differs from range Xminus. Distinct parametrized maps alone are insufficient.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.ImageNoncongruent}.
+\subsection*{O.actual-graph-cylinder-data: Ordinary same-scalar completed cylinder data}
+Retain actual G/e/beta, scalar end constants and actual gradient/Hessian/smoothness/germ data, with literal equality to the SAME saddle cylinder. This object contains no asserted normal, curvature sign, positive region, Gauss inverse or tightness result.
+\par Status: audited.
+\par Dependencies: O.support, O.dual.
+\par Lean target: \texttt{TightVer401.ProtectedTorusActualGraphCylinderData}.
+\subsection*{E.embedded-image-reparametrization: Granted smooth embedded-image reparameterization}
+Two actual infinity-smooth embedded immersions of the native torus with equal entire images have an actual source homeomorphism smooth in both directions intertwining their maps. This additional explicit classical parameter supplies only embedded-submanifold inversion; all curvature covariance and marking applications remain proved obligations.
+\par Status: external\_assumed.
+\par Dependencies: O.torus.
+\par Lean target: \texttt{TightVer401.ClassicalEmbeddedImageReparametrizationClaim}.
+\subsection*{E.positive-gauss-tightness: Granted positive-Gauss tightness criterion}
+For an actual smooth embedded native torus and its actual smooth unit normal, a smooth inverse Gauss chart covering exactly the entire K>0 locus and the sphere minus finitely many points implies the existing open-half-space tightness predicate. This is a named classical corollary of Gauss area and Banchoff–Kühnel §1.1. All actual geometry inputs remain producer obligations.
+\par Status: external\_assumed.
+\par Dependencies: O.tightness, R.model-transport.
+\par Lean target: \texttt{TightVer401.ClassicalPositiveGaussTightnessClaim}.
+\subsection*{E.coincident-embedding-fixed-open: Granted equal-image fixed-open rigidity corollary}
+Actual smooth embedded immersions on the same connected native torus with equal pointwise induced forms, equal entire images and agreement on a nonempty open set are equal maps. This packages the classical smooth embedded-submanifold inverse and connected Riemannian isometry uniqueness; it grants neither affine markedness nor image noncongruence.
+\par Status: external\_assumed.
+\par Dependencies: O.torus, R.model-transport.
+\par Lean target: \texttt{TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim}.
+\subsection*{E.noncircular-ellipse-axes-recognition: Granted generic single noncircular ellipse recognition}
+An actual ambient affine isometry between equally oriented translates of one noncircular ellipse transports its center and has signed diagonal linear action. This elementary corollary grants no two-ellipse boundary, same-meridian asymmetry or original marker stabilizer. Exact ordinary single-ellipse type is locally checked in worker a30f703; current root audit determines imported application certification.
+\par Status: external\_assumed.
+\par Dependencies: O.torus.
+\par Lean target: \texttt{TightVer401.MarkerEllipseAxesRecognition}.
+\subsection*{R.torus-source: Derive the native compact connected smooth torus source}
+Construct the native ModelProd real-product charts and derive compactness, connectedness and the infinity smooth manifold structure; no embedding is supplied.
+\par Status: audited.
+\par Dependencies: O.torus.
+\par Lean target: \texttt{TightVer401.nonrigidTorusSource\_isManifold}.
+\subsection*{R.model-transport: Transport native product charts to the OpenAI plane model}
+Construct the actual continuous linear smooth equivalence between the native two-real-coordinate model and the OpenAI Euclidean plane model. Derive chart, manifold differential, induced form and local curvature compatibility for the actual band and torus. This application bridge is not supplied by a theorem stated only in the plane model.
+\par Status: audited.
+\par Dependencies: O.plane.
+\par Lean target: \texttt{TightVer401.native\_product\_plane\_geometry\_transport}.
+\subsection*{R.band: Retain the verified protected identity band and bending}
+From N>=10000 and eta>0 construct the same corrected speed, physical frame, embedded identity band and protected closed-leaf annulus. The entire compact support of a nonzero bending lies inside that annulus. Proved compact-support stability gives distinct opposite embedded band maps with equal actual induced forms and negative curvature for all sufficiently small amplitudes.
+\par Status: audited.
+\par Dependencies: O.band, O.bending.
+\par Lean target: \texttt{TightVer401.corrugatedSeed\_exists\_protected\_identity\_band\_bending}.
+\subsection*{R.support-calculus: Retain actual support reconstruction and dual calculus}
+For an already supplied smooth spherical support potential on an open northern sphere domain, reconstruct its actual support in planar gnomonic coordinates. This theorem supplies neither the particular band potential nor a global gradient inverse.
+\par Status: audited.
+\par Dependencies: O.support, O.dual.
+\par Lean target: \texttt{TightVer401.gnomonicSupport\_reconstruction}.
+\subsection*{R.core-support: Represent this particular protected band by a global planar potential}
+Derive the actual open Gauss-image inverse and one support potential on the band image. Its source and gradient maps are diffeomorphisms onto annuli; identify the retained bending region.
+\par Status: audited.
+\par Dependencies: R.band, R.support-calculus, R.model-transport.
+\par Lean target: \texttt{TightVer401.identityBand\_exists\_planar\_support\_annulus}.
+\subsection*{R.central-tensor: Compute the central support tensor}
+Compute the actual central mixed entry and signed tangential entry from the same balanced speed and spherical curvature. Identify noncharacteristic positive seam directions.
+\par Status: audited.
+\par Dependencies: R.core-support.
+\par Lean target: \texttt{TightVer401.identityBand\_central\_support\_tensor}.
+\subsection*{R.exits: Construct positive exits while fixing the protected region}
+Change support only outside a prescribed protected neighborhood; construct both positive exit pairs as positively oriented Jordan source and gradient curves enclosing zero, prove positive tangent pairing and opposite source/gradient nesting, retain zero action and both visibility conditions, and prove the changed return behavior used to locate those exits.
+\par Status: pending.
+\par Dependencies: R.central-tensor.
+\par Lean target: \texttt{TightVer401.exists\_positive\_exits\_fixed\_core}.
+\subsection*{R.degree: Annular global inverse theorem}
+An actual smooth map on a compact annulus with constant nonzero interior Jacobian sign and nested Jordan boundary homeomorphisms of opposite induced winding is a diffeomorphism of interiors and a homeomorphism of closures. Boundary rank may vanish.
+\par Status: audited.
+\par Dependencies: O.plane.
+\par Lean target: \texttt{TightVer401.annular\_degree\_global\_diffeomorphism}.
+\subsection*{R.smoothing: Relative two-dimensional saddle smoothing}
+For matching first jets along an actual embedded seam, negative Hessian determinant and positive common tangential Hessian, construct a smooth saddle interpolation supported in any prescribed seam collar and retaining both outer germs.
+\par Status: audited.
+\par Dependencies: O.support.
+\par Lean target: \texttt{TightVer401.exists\_relative\_saddle\_smoothing}.
+\subsection*{R.connector: Original ordinary visible-connector family construction}
+Discharge the actual universal VisibleConnectorWitnessAssemblyOrdinaryData family, including compatible eta/rho, original Gin full open germ, full fixed-V smoothing and final H. Checked canonical witness assembly constructs inverse/charts/collars only AFTER ordinary data is supplied. Native e, Cartesian E and final H gradient inverse remain distinct, with exact same-object identities retained.
+\par Status: pending.
+\par Dependencies: R.ordinary-connector-family-production.
+\par Lean target: \texttt{TightVer401.exists\_visible\_connector\_radial\_positive}.
+\subsection*{R.polar-sign: Actual polar saddle criterion}
+For a smooth Cartesian F on an open domain and f=F composed with Phi, f\_rr<0 and f\_thetatheta+r f\_r>0 imply det D^2F<0 at Phi(r,theta), r>0. Derive actual intrinsic negative curvature.
+\par Status: audited.
+\par Dependencies: O.polar, O.support.
+\par Lean target: \texttt{TightVer401.saddlePolarChart\_hessian\_det\_neg\_on}.
+\subsection*{R.angular-domination: Construct the large coefficient in the angular filler}
+Given R>0 and actual smooth 2pi-periodic traces h,b with b>0 and h\_second+R b>0, choose a cutoff zero below R/2 and one above 3R/4. For every lower bound on M construct M above it so f\_M=-M(r-R)^2/2+chi(r)(h+(r-R)b) has negative radial second derivative and positive angular-plus-radial expression on 0<r<=R.
+\par Status: audited.
+\par Dependencies: R.polar-sign.
+\par Lean target: \texttt{TightVer401.exists\_quadratic\_filler\_coefficient}.
+\subsection*{R.angular-descent: Descend the angular filler to an actual Cartesian potential}
+From the actual smooth 2pi-periodic cylinder expression construct one smooth Cartesian potential on 0<|p|<=R (with an open boundary collar), prove F composed with Phi equals the expression, and derive its actual polar first and second derivatives. A periodic scalar cylinder formula alone is not an actual Cartesian Hessian input.
+\par Status: audited.
+\par Dependencies: O.polar.
+\par Lean target: \texttt{TightVer401.quadratic\_filler\_exists\_cartesian\_descent}.
+\subsection*{R.quadratic-germ: Actual radial germ geometry}
+Prove the actual derivatives, Hessian, intrinsic negative curvature and explicit support immersion of M R r-M r^2/2+d on 0<r<R.
+\par Status: audited.
+\par Dependencies: O.quadratic, O.support.
+\par Lean target: \texttt{TightVer401.dualRadialQuadraticPotential\_gaussianCurvature\_neg}.
+\subsection*{R.polar-circle: Regular boundary-circle resolution}
+The actual support germ is ((M R-M r)e\_theta,d+M r^2/2). At r=0 its angular and transverse derivatives are independent. After negation and parameter change obtain the exact parabolic northern collar.
+\par Status: audited.
+\par Dependencies: R.quadratic-germ.
+\par Lean target: \texttt{TightVer401.dualRadialQuadraticCompactification\_boundary\_regular}.
+\subsection*{R.quadratic-filling: Full quadratic filling at a circular seam}
+For an actual incoming exterior saddle germ at radius R with positive radial trace and positive tangential Hessian, construct an interior saddle extension agreeing on an unchanged exterior collar and equal near zero to the quadratic germ, with arbitrarily large M. If the incoming gradient trace is a positive Jordan curve enclosing zero, prove the attached gradient is globally injective.
+\par Status: audited.
+\par Dependencies: R.angular-domination, R.angular-descent, R.quadratic-germ, R.smoothing, R.degree.
+\par Lean target: \texttt{TightVer401.exists\_quadratic\_radial\_filling\_global\_gradient}.
+\subsection*{R.neck-jet: Actual square-root neck first jet}
+From actual incoming value f(j) and positive actual deriv f(j), choose B=deriv f(j)^2(j-a), C=f(j)-2 deriv f(j)(j-a); prove matching values and derivatives, actual smoothness and strict derivative signs.
+\par Status: audited.
+\par Dependencies: O.neck.
+\par Lean target: \texttt{TightVer401.dualRadialNeck\_actual\_first\_jet}.
+\subsection*{R.neck-inverse: Exact inverse Legendre neck calculation}
+For p>0 prove r=a+B/p^2, actual derivative f\_neck(r)=p, and p r-f\_neck(r)=a p-B/p-C.
+\par Status: audited.
+\par Dependencies: R.neck-jet, O.dual.
+\par Lean target: \texttt{TightVer401.dualRadialNeck\_inverse\_legendre}.
+\subsection*{R.neck-end: Actual endpoint slope escape}
+Prove deriv f\_neck(r) tends to positive infinity as r decreases to a, and the inverse radius tends to a as p tends to infinity.
+\par Status: audited.
+\par Dependencies: R.neck-jet.
+\par Lean target: \texttt{TightVer401.dualRadialNeck\_deriv\_tendsto\_atTop}.
+\subsection*{R.neck-geometry: Actual saddle geometry of the neck germs}
+Derive negative intrinsic Gaussian curvature and injective actual differentials for the square-root radial germ and its inverse Legendre germ.
+\par Status: audited.
+\par Dependencies: R.neck-inverse, R.neck-end, O.support.
+\par Lean target: \texttt{TightVer401.dualRadialNeckLegendreGerm\_radial\_support\_geometry}.
+\subsection*{R.concave-join: Retain the actual relative concave first-jet join}
+For actual smooth one-dimensional profiles with matching value and derivative and negative second derivatives, construct a smooth relative join retaining both outer germs and strict concavity. Positive first derivative on a neck continuation requires a separate argument.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.exists\_concave\_first\_jet\_join}.
+\subsection*{R.neck-adapter: Full germ-preserving radial neck join}
+Join an actual radial incoming germ with positive first and negative second derivative to the matched square-root neck; construct a smooth continuation preserving the incoming germ and the terminal neck germ.
+\par Status: audited.
+\par Dependencies: R.neck-jet, R.neck-end, R.concave-join.
+\par Lean target: \texttt{TightVer401.exists\_dualRadialNeck\_gradient\_adapter}.
+\subsection*{R.completion: Two-sided support completion with exact gradient annulus}
+From the actual protected support annulus and both visible positive exits, construct one saddle Gtilde on the punctured plane, unchanged near the protected region, with quadratic puncture germ and a r-B/r+d infinity germ. Its gradient is a diffeomorphism onto A<|y|<R\_N, R\_N>A>0.
+\par Status: pending.
+\par Dependencies: R.connector, R.quadratic-filling, R.neck-adapter, R.neck-inverse, R.degree.
+\par Lean target: \texttt{TightVer401.exists\_dual\_radial\_support\_completion}.
+\subsection*{R.saddle-annulus: Embedded reflected saddle annulus}
+Resolve the two actual support ends into circles, prove regular boundary charts and horizontal injectivity, establish height separation, and reflect smoothly at the parabolic neck. Extend the protected bending by zero.
+\par Status: pending.
+\par Dependencies: R.completion, R.polar-circle, R.neck-geometry.
+\par Lean target: \texttt{TightVer401.exists\_completed\_saddle\_annulus}.
+\subsection*{R.convex-meridian: Construct the matching meridian from positive parameters}
+For arbitrary positive RN, mu and h, construct one asymmetric strictly concave meridian with the literal square-root endpoint germs and actual root meridian input. Instantiate this same witness with saddle parameters later; no completed saddle is required for this generic construction.
+\par Status: audited.
+\par Dependencies: O.plane.
+\par Lean target: \texttt{TightVer401.exists\_protectedParabolicMeridianInput}.
+\subsection*{R.convex: Convex closure with exact matching parabolic germs}
+Construct a strictly concave positive meridian radius with prescribed square-root endpoint germs and a non-even interior perturbation. Prove convexity, positive curvature, regular Gauss image, exterior-cylinder separation and full germ agreement.
+\par Status: audited.
+\par Dependencies: R.convex-meridian.
+\par Lean target: \texttt{TightVer401.exists\_parabolic\_convex\_closure}.
+\subsection*{R.torus: Actual smooth embedded torus carrying the protected bending}
+Assemble the saddle and convex annuli on the actual torus source, prove smoothness across both seams, actual differential injectivity, global embedding, extension by zero of the bending, and absence of open planar patches.
+\par Status: pending.
+\par Dependencies: R.saddle-annulus, R.convex, R.torus-source, R.model-transport, O.no-planar-patch.
+\par Lean target: \texttt{TightVer401.exists\_protected\_torus\_embedding}.
+\subsection*{R.induced-metric: Construct the actual induced Riemannian metric and intrinsic distance}
+For the actual smooth compact torus immersion, construct the positive smooth induced metric bundle, its chart compatibility and compatible intrinsic length distance. Prove curve-length and distance compatibility; the ambient chordal distance is not the intrinsic distance.
+\par Status: pending.
+\par Dependencies: R.torus, R.torus-source, R.model-transport.
+\par Lean target: \texttt{TightVer401.torus\_induced\_metric\_intrinsic\_distance}.
+\subsection*{R.direct-tightness: Direct half-space tightness of the actual torus}
+Prove every nonempty open linear-height superlevel image is preconnected. Each component has a local height maximum; negative curvature excludes saddle-interior maxima. Strict meridian concavity gives at most one maximum for nonvertical heights, while the literal zero-curvature seams give one connected maximum circle for vertical heights.
+\par Status: pending.
+\par Dependencies: R.torus, R.saddle-annulus, R.convex, O.tightness.
+\par Lean target: \texttt{TightVer401.protectedTorus\_isTight}.
+\subsection*{R.curvature-budget: Separate numerical Gauss area and curvature budget}
+Define actual surface area and curvature integrals. Prove positive curvature integral 4pi, Euler characteristic zero and total absolute curvature 8pi. These numerical manuscript assertions remain separate pending obligations; direct half-space tightness does not discharge them.
+\par Status: pending.
+\par Dependencies: R.torus, R.induced-metric, R.convex.
+\par Lean target: \texttt{TightVer401.protectedTorus\_curvature\_integrals}.
+\subsection*{R.marking: Remove ambient symmetries of the fixed positive region}
+Prove the actual small affine marking of the SAME constructed positive-curvature image: exact boundary ellipses, recognized centers/axes, trivial ambient Euclidean stabilizer, inverse-transpose bending transport, unchanged support, curvature signs and half-space tightness under the actual invertible affine map. Published tightness background supplies tightness only after its actual geometry premises are discharged.
+\par Status: pending.
+\par Dependencies: R.classical-tightness, R.positive-gauss, E.noncircular-ellipse-axes-recognition.
+\par Lean target: \texttt{TightVer401.exists\_affine\_marked\_protected\_torus}.
+\subsection*{R.metric-pair: Retain exact opposite-branch common metric}
+For a genuine smooth bending on a surface already equipped with the OpenAI plane chart model, the two actual perturbations have equal induced forms, with common value g\_X+epsilon^2 g\_Y. Applying this theorem to the native torus requires the separate application bridge.
+\par Status: audited.
+\par Dependencies: O.manifold-bending.
+\par Lean target: \texttt{TightVer401.Manifold.exact\_sign\_pair}.
+\subsection*{R.metric-application: Apply exact branching to the actual torus bending}
+Given the actual smooth immersed torus F and the SAME protected nonzero bending transported through its actual open chart and affine-isometry placement, derive actual zero strain, common positive smooth opposite-branch metric, open agreement and distinct maps. Under actual negative curvature of both branches on the protected support, derive equality of their entire positive regions and images. These checked conditional applications do not construct F, its embedding, affine marker or curvature threshold.
+\par Status: audited.
+\par Dependencies: R.torus, R.metric-pair, R.model-transport.
+\par Lean target: \texttt{TightVer401.protectedTorus\_metric\_branching}.
+\subsection*{R.stability: Small perturbations remain tight embeddings}
+Choose an actual positive amplitude threshold for the same compact torus and supported nonzero bending. Reuse audited compact embedding and compact negative-curvature stability. Prove the entire positive region and its actual Gauss restriction are unchanged because all modified points remain K<0; reapply the named classical positive-Gauss criterion to both branches. No general curvature-integral or component-maxima library is required.
+\par Status: pending.
+\par Dependencies: R.marking, R.classical-tightness, R.metric-application.
+\par Lean target: \texttt{TightVer401.exists\_tight\_bending\_amplitude\_threshold}.
+\subsection*{R.fixed-open: Use the checked compact fixed-open isometry theorem}
+A smooth intrinsic isometry of the actual compact connected boundaryless Riemannian surface fixing a nonempty open set is the identity. The broader noncompact and boundary statement is deferred.
+\par Status: audited.
+\par Dependencies: none.
+\par Lean target: \texttt{TightVer401.isometry\_eq\_id\_of\_fixed\_open\_compact}.
+\subsection*{R.distance-isometry: Derive intrinsic isometry from coincident images and equal induced forms}
+If the two actual smooth torus embeddings have equal induced metrics and coincident images, construct the smooth reparametrization and prove it preserves lengths of actual curves and therefore the compatible intrinsic distance. It then meets the Isometry hypothesis of the checked fixed-open theorem.
+\par Status: pending.
+\par Dependencies: R.stability, R.metric-application, R.induced-metric.
+\par Lean target: \texttt{TightVer401.coincident\_torus\_images\_intrinsic\_isometry}.
+\subsection*{R.image-separation: Prove actual image noncongruence for one bending}
+Assume an actual ambient congruence between opposite branch images. Prove it preserves the SAME unchanged entire K>0 image; actual affine marking forces it to be identity. Equal images, actual equal induced forms and open agreement then meet the granted coincident-embedding fixed-open corollary. Nonzero bending at the chosen nonzero amplitude contradicts equality. Image noncongruence itself is proved, never granted.
+\par Status: pending.
+\par Dependencies: R.stability, R.metric-application, R.marking, E.coincident-embedding-fixed-open, E.embedded-image-reparametrization, O.noncongruence.
+\par Lean target: \texttt{TightVer401.opposite\_torus\_bending\_images\_noncongruent\_of\_classical}.
+\subsection*{R.pair-goal: Two noncongruent isometric tight tori}
+With explicit background : ClassicalExternalResults, reparamBackground : ClassicalEmbeddedImageReparametrizationClaim and ellipseAxesRecognition : MarkerEllipseAxesRecognition, construct two ACTUAL smooth tight embedded native tori with the same positive smooth induced metric, noncongruent entire images, agreement on a nonempty open set, and no open planar patch. This conditional first-pair theorem is the user-authorized objective. Every novel construction input and final conclusion must be proved; original selected geometry and full connector remain pending. Its exact named classical premises remain externally assumed. The unconditional theorem and Cantor-family clause receive no transferred completion credit.
+\par Status: pending.
+\par Dependencies: R.band, R.same-corrected-seed-full-turn-application, R.firstpair-selected-geometry, R.ordinary-connector-family-production, R.negative-gradient-order-marked-pair-application, R.ver503-literal-negation-application.
+\par Lean target: \texttt{TightVer401.exists\_noncongruent\_isometric\_tight\_tori\_pair\_of\_classical}.
+\subsection*{R.positive-gauss: Construct the actual positive-region Gauss data}
+For the actual same saddle/convex assembled torus, construct NativeTorusPositiveGaussData X: infinity smooth embedded immersion; one global smooth unit normal orthogonal to the actual differential; exact entire K>0 locus identified with the SAME convex interior; actual Gauss inverse transported to that locus with precisely the two sphere poles omitted. Prove K<0 on saddle interior and K=0 on both literal seams in actual preferred charts. No tightness premise is accepted.
+\par Status: audited.
+\par Dependencies: R.torus, R.saddle-annulus, R.convex, R.model-transport, O.actual-graph-cylinder-data.
+\par Lean target: \texttt{TightVer401.protectedTorusActualCylinderPositiveGaussData}.
+\subsection*{R.classical-tightness: Apply granted tightness to the constructed torus}
+Apply nativeTorusPositiveGaussData\_tight\_of\_classical to the actual producer data and the explicit external background parameter. Granting the general criterion does not produce its input torus or its positive-region Gauss data.
+\par Status: audited.
+\par Dependencies: R.positive-gauss, E.positive-gauss-tightness.
+\par Lean target: \texttt{TightVer401.protectedTorusActualCylinderPositiveGauss\_tight\_of\_classical}.
+\subsection*{R.saddle-from-completion-application: Construct actual saddle geometry from ordinary completed support data}
+For the SAME actual completed smooth G, actual gradient inverse e, strict negative Hessian, exact near/far radial scalar germs and actual unchanged protected open W, construct beta and the literal reflected regular embedded saddle with exact RN/mu/h collars, protected coordinates, height separation and actual negative intrinsic curvature. The original existence of such G/e/W remains R.completion.
+\par Status: audited.
+\par Dependencies: R.completion, R.neck-geometry.
+\par Lean target: \texttt{TightVer401.exists\_completedSaddleAnnulusGeometryOutput}.
+\subsection*{R.torus-from-saddle-application: Choose one convex meridian and assemble the same actual embedded torus}
+Given actual ordinary saddle data, choose one strictly concave asymmetric convex meridian with both endpoints RN and construct the actual smooth embedded native torus. The same selected meridian and saddle are exposed to all positive-Gauss and marker consumers. This is not a grant of saddle existence or tightness.
+\par Status: audited.
+\par Dependencies: R.saddle-from-completion-application, R.convex.
+\par Lean target: \texttt{TightVer401.exists\_protectedTorusAssembly\_from\_saddle}.
+\subsection*{R.rigid-curvature-connection: Exact intrinsic curvature and entire positive image under rigid ambient motion}
+Prove full actual induced-metric equality under ambient affine isometries from actual derivatives, hence exact preferred-chart curvature equality and the precise entire positive-image transport. No curvature premise or generic source covariance is granted.
+\par Status: audited.
+\par Dependencies: O.torus.
+\par Lean target: \texttt{TightVer401.nativeTorusChartCurvature\_affineIsometry}.
+\subsection*{R.protected-image-inequality-connection: Prove unequal entire protected branch images}
+For the SAME actual protected bending, smooth baseline immersion, derived common metric and open agreement, actual embedding of both branches and nonzero amplitude, apply the explicit coincident-embedding fixed-open theorem and contradict derived map separation. This proves image inequality; ambient noncongruence additionally needs the original affine marker and source curvature transport.
+\par Status: audited.
+\par Dependencies: R.metric-application, E.coincident-embedding-fixed-open.
+\par Lean target: \texttt{TightVer401.protectedTorus\_bending\_ranges\_ne\_of\_classical}.
+\subsection*{R.completed-band-chart-connection: Actual protected band chart and torus placement}
+Compose the same completed saddle protected coordinates and quotient phase chart; derive both smooth directions, literal affine placement and an outside seam point. Original saddle existence remains pending.
+\par Status: audited.
+\par Dependencies: R.saddle-from-completion-application, R.torus-from-saddle-application.
+\par Lean target: \texttt{TightVer401.completedSaddleTorusBandChart\_placement}.
+\subsection*{R.completed-torus-bending-connection: Same saddle torus supported bending and metric branches}
+Construct the actual extension of the same compact nonzero band bending onto one selected meridian torus, with actual zero strain, common smooth metric and open agreement. The final positive Gauss caller must retain the SAME full convex witness.
+\par Status: audited.
+\par Dependencies: R.completed-band-chart-connection, R.metric-application.
+\par Lean target: \texttt{TightVer401.exists\_completedSaddleTorus\_metric\_branching}.
+\subsection*{R.native-source-curvature-connection: Actual native torus curvature reparameterization}
+Derive true preferred-chart curvature covariance from existing OpenAI coordinate geometry, actual inverse ranks and unit normal. No curvature covariance is granted.
+\par Status: audited.
+\par Dependencies: R.model-transport.
+\par Lean target: \texttt{TightVer401.nativeTorusChartCurvature\_comp\_homeomorph}.
+\subsection*{R.band-torus-curvature-connection: Actual local band curvature and torus branch threshold}
+Through the same smooth partial homeomorphism and affine-isometry placement, transfer the retained band threshold to both literal unmarked torus branches on the same support. Contragredient marked branches require their own bound.
+\par Status: audited.
+\par Dependencies: R.completed-band-chart-connection, R.native-source-curvature-connection, R.rigid-curvature-connection.
+\par Lean target: \texttt{TightVer401.protectedTorus\_ruled\_bending\_curvature\_threshold}.
+\subsection*{R.marked-image-noncongruence-connection: Conditional actual marked-image noncongruence}
+Actual branch embeddings, equal forms, open agreement, unequal maps and the same entire positive image with its ORIGINAL trivial stabilizer imply image noncongruence. Generic reparameterization and fixed-open rigidity remain explicit classical parameters. This does not prove the marker or original pair existence.
+\par Status: audited.
+\par Dependencies: R.native-source-curvature-connection, R.rigid-curvature-connection, R.protected-image-inequality-connection, R.marking, E.embedded-image-reparametrization.
+\par Lean target: \texttt{TightVer401.torusImageNoncongruent\_of\_positive\_marker\_and\_open\_agreement}.
+\subsection*{R.same-meridian-witness-connection: Retain one full convex witness for every torus consumer}
+Choose the full actual convex closure once and expose the literal matching torus assembly and baseline embedding. Its same meridian remains available for Gauss and affine marker consumers; no independent second choice is made.
+\par Status: audited.
+\par Dependencies: R.saddle-from-completion-application, R.convex.
+\par Lean target: \texttt{TightVer401.exists\_completedSaddleTorusAssembly\_with\_full\_meridian}.
+\subsection*{R.same-torus-branch-stability-connection: Actual small embedded branches with unchanged entire positive images}
+For a fixed SAME actual assembly and completed saddle, combine the retained compact embedding and actual band curvature thresholds. Derive both smooth embedded branches and unchanged entire positive regions and images. The marked B/C family requires its own curvature bound; no tightness or marker is an input or output.
+\par Status: audited.
+\par Dependencies: R.completed-torus-bending-connection, R.band-torus-curvature-connection.
+\par Lean target: \texttt{TightVer401.completedSaddleTorusBending\_branch\_stability}.
+\subsection*{R.full-filling-retained-trace-application: Full filling with same-potential open retained inverse collar}
+The actual global filling constructs one H/M/S/e, retaining the original excluded GammaS hole and a distinct Gamma0 at R<S0<S. Scalar agreement and actual gradient inverse agreement hold on a true open retained collar; completion must use these same witnesses.
+\par Status: audited.
+\par Dependencies: R.quadratic-filling, R.degree.
+\par Lean target: \texttt{TightVer401.exists\_quadratic\_radial\_filling\_global\_gradient\_with\_retained\_trace}.
+\subsection*{R.native-no-planar-consumer: Actual curvature density excludes open planar patches}
+For an actual infinity-smooth native torus immersion, dense nonzero intrinsic curvature excludes any nonempty open affine-planar patch. The actual Gauss equation derives zero K on such a patch. Original baseline curvature coverage is a separate producer.
+\par Status: audited.
+\par Dependencies: O.no-planar-patch, R.native-source-curvature-connection.
+\par Lean target: \texttt{TightVer401.nativeTorus\_hasNoOpenPlanarPatch\_of\_dense\_nonzero\_curvature}.
+\subsection*{R.actual-phase-seam-density-consumer: Density off the two literal torus phase seams}
+The complement of phase zero and pi is dense on the actual quotient-circle product. Actual same-map K nonzero off those two seams gives dense nonzero curvature; zero seam curvature is allowed.
+\par Status: audited.
+\par Dependencies: O.torus.
+\par Lean target: \texttt{TightVer401.nativeTorus\_nonzero\_curvature\_dense\_of\_off\_seams}.
+\subsection*{R.marked-family-curvature-connection: Fresh marked contragredient curvature threshold}
+For the literal marked baseline B(F) and field C(Z), construct a new compact-support amplitude threshold. Actual rank, strain and K premises refer only to the positive-height band, and native curvature uses the SAME protected chart/placement. C is the inverse transpose in the original marking producer; an unmarked amplitude or affine image of an unmarked branch is never substituted.
+\par Status: audited.
+\par Dependencies: R.band-torus-curvature-connection, R.metric-application.
+\par Lean target: \texttt{TightVer401.protectedTorus\_marked\_bending\_curvature\_threshold}.
+\subsection*{R.same-cylinder-no-planar-connection: Same completed cylinder has no open planar patches}
+Actual saddle-negative and same-meridian convex-positive curvature cover all points off the two literal seams; derived density and the actual Gauss equation exclude every nonempty open planar patch. Protected branch smooth embeddings and support negativity give the same conclusion for both branches. No curvature-coverage conclusion is assumed.
+\par Status: audited.
+\par Dependencies: R.positive-gauss, R.actual-phase-seam-density-consumer, R.native-no-planar-consumer.
+\par Lean target: \texttt{TightVer401.protectedTorusActualCylinder\_hasNoOpenPlanarPatch}.
+\subsection*{R.same-cylinder-branch-gauss-connection: Both supported branches have actual Gauss data and conditional tightness}
+Construct actual global branch normals from their native derivatives. On the unchanged whole positive phase, map germs identify these with the baseline normal, so the SAME Gauss map and inverse supply both branch data. Apply the exact explicit classical criterion to both. Actual embedding/region equality/support negativity remain real branch-stability inputs.
+\par Status: audited.
+\par Dependencies: R.positive-gauss, R.same-torus-branch-stability-connection, R.classical-tightness.
+\par Lean target: \texttt{TightVer401.protectedTorusActualCylinder\_supported\_branches\_tight}.
+\subsection*{R.same-completed-scalar-graph-witness-connection: Retain the actual full saddle scalar tuple and one meridian}
+Call the existing ordinary completed-saddle geometry producer once. Retain its constructed beta and literal Q, package SAME G/e/beta into actualGraph C, and choose one FULL convex D with the literal matching assembly. All subsequent chart, Gauss, bending and marker consumers refer to these same objects; no new producer or assumed Q inhabitant is introduced.
+\par Status: audited.
+\par Dependencies: R.saddle-from-completion-application, R.same-meridian-witness-connection, O.actual-graph-cylinder-data.
+\par Lean target: \texttt{TightVer401.exists\_completedSaddleTorusActualGraph\_with\_full\_meridian}.
+\subsection*{R.completion-visible-connector-application: Complete the support using actual filling and degree}
+Apply the ordinary two-ended completion caller to original G/e/Jordan/protected-core data. Actual retained filling and gradient degree are supplied by proved exports; ONLY the original visible connector construction remains an explicit producer obligation. This implication does not discharge original completion existence.
+\par Status: audited.
+\par Dependencies: R.connector, R.full-filling-retained-trace-application, R.degree.
+\par Lean target: \texttt{TightVer401.exists\_dual\_radial\_support\_completion\_of\_visible\_connector}.
+\subsection*{R.exit-all-interior-winding-application: Actual full-period exit winding and positive Jordan traces}
+Construct an actual smooth full-period argument, propagate unit turn to EVERY point inside the SAME filled Jordan trace, and build actual source/gradient positive traces. Original selected exits and nesting remain separate obligations.
+\par Status: audited.
+\par Dependencies: R.exits, R.degree.
+\par Lean target: \texttt{TightVer401.positiveExitTrace\_exists\_completion\_positive\_traces}.
+\subsection*{R.actual-marked-same-cylinder-application: Actual marked normal metric Gauss and positive-image rigidity}
+The deterministic B map and inverse-transpose C construct the NEW common metric and normalized actual normal. Actual K scales by the proved positive factor, the entire Gauss image is transported, and actual SAME-RN boundary ellipses and SAME-fullD asymmetry prove the original marked-image stabilizer under the single-ellipse background. Original input saddle existence is not granted.
+\par Status: audited.
+\par Dependencies: R.positive-gauss, E.noncircular-ellipse-axes-recognition.
+\par Lean target: \texttt{TightVer401.affineMarkedTorusGauss\_actualCylinder\_positive\_image\_rigid}.
+\subsection*{R.actual-marked-same-cylinder-stability-application: Fresh same-object marked branch stability and tightness}
+Derive the physical marked-coordinate inputs from the actual frame and original bending. Intersect actual compact embedding and FRESH marked curvature bounds; retain SAME field zero strain and all three support-negative K facts. Construct both actual branch embeddings and whole-positive-region Gauss inverses and apply the explicit classical tightness criterion.
+\par Status: audited.
+\par Dependencies: R.actual-marked-same-cylinder-application, R.marked-family-curvature-connection, R.completed-band-chart-connection, E.positive-gauss-tightness.
+\par Lean target: \texttt{TightVer401.completedSaddleTorus\_marked\_branch\_stability}.
+\subsection*{R.completed-saddle-marked-pair-application: First actual marked pair from completed protected geometry}
+Given SAME actual Q/Cdata and once-chosen FULLD plus original compact nonzero protected bending, derive all coordinate inputs, choose one nonzero amplitude, build the NEW common positive smooth metric, both tight smooth embeddings, actual image noncongruence, nonempty open agreement and no open planar patches. All three named classical parameters remain explicit. The original completed Q exists only after original exits/full connector/completion; this theorem is NOT the ultimate original-existence target.
+\par Status: audited.
+\par Dependencies: R.same-completed-scalar-graph-witness-connection, R.actual-marked-same-cylinder-stability-application, R.actual-marked-same-cylinder-application, R.marked-image-noncongruence-connection, R.same-cylinder-no-planar-connection, E.coincident-embedding-fixed-open, E.embedded-image-reparametrization.
+\par Lean target: \texttt{TightVer401.exists\_completedSaddleTorus\_marked\_pair}.
+\subsection*{R.ordinary-completed-support-marked-pair-application: Actual marked pair from the ordinary completed scalar tuple}
+From the actual ordinary completed G/e/end formulas and original protected c0/open scalar germ, construct SAME beta/Q/Cdata and choose FULLD ONCE, then derive all literal marked-pair conclusions with the original compact nonzero bending. No completed geometry or torus witness is a caller premise. Production of ordinary G/e from actual exits/connector remains an original obligation.
+\par Status: audited.
+\par Dependencies: R.completed-saddle-marked-pair-application, R.same-completed-scalar-graph-witness-connection.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_ordinary\_completed\_support}.
+\subsection*{R.same-seed-visible-field-application: Select the protected field after the actual visibility margin}
+For SAME corrected d/G0/clocks/central traces, choose complete-flow visibility margin FIRST then construct the actual compact nonzero band bending within it. Both full outer/reflected-inner visibility radii remain literal. Never retain an earlier field after shrinking its margin.
+\par Status: audited.
+\par Dependencies: R.central-tensor, R.band.
+\par Lean target: \texttt{TightVer401.positiveExit\_same\_seed\_visible\_protected\_field}.
+\subsection*{R.actual-flow-protected-neighborhood-application: Actual open flow image and protected compact neighborhood}
+The literal rational inverse identifies the actual open characteristic image. SAME positive trajectory bounds force nonzero denominators; the original c0 transports openness. Apply existing compact-neighborhood topology to c0 image support of the later selected Y. No flow openness/neighborhood grant or extra shrink.
+\par Status: audited.
+\par Dependencies: R.same-seed-visible-field-application, R.core-support.
+\par Lean target: \texttt{TightVer401.identityFlowBandInclusion\_exists\_protected\_neighborhood}.
+\subsection*{R.actual-cartesian-connector-source-application: Actual raw connector closed source inverse and same scalar}
+From literal periodic ruling/height and ordinary whole-strip signs and nested Jordan boundaries, derive positive actual Cartesian Jacobian, construct full closed annulus image/inverse/open collar, and SAME scalar with actual ruled gradient/Hessian and open saddle carrier covering the ENTIRE closed target band. Full original incoming Gin open germ, actual supplied boundary/nesting/sign data and final native charts remain original applications. No Jacobian/inverse/potential or connector conclusion is granted.
+\par Status: audited.
+\par Dependencies: R.degree, R.angular-descent.
+\par Lean target: \texttt{TightVer401.visibleConnectorCartesianPotentialApplication\_global}.
+\subsection*{R.actual-exit-completion-application: Actual exits produce the same-original-potential completion}
+Normalize each actual return period independently, construct actual positive Jordan source/gradient traces and enlarged whole closed-exit gradient collar, retain actual source/reversed-gradient nesting, and apply proved filling/degree completion with the original visible-connector producer explicit. Return SAME original G0 open germ on W intersect O for SAME c0/Y. Actual exits and connector remain original obligations.
+\par Status: audited.
+\par Dependencies: R.exits, R.completion-visible-connector-application, R.exit-all-interior-winding-application.
+\par Lean target: \texttt{TightVer401.exists\_dualRadialCompletionExitApplication\_of\_visible\_connector}.
+\subsection*{R.ordinary-exit-traces-marked-pair-application: First marked pair directly from actual ordinary selected traces}
+From SAME actual Gexit/e0, four positive Jordan traces, actual source/reversed-gradient nesting, ENTIRE closed source annulus in e0.source, protected core placement and original open G0 germ, apply actual completion ONCE and construct SAME beta/Q/Cdata/FULLD and both literal marked branches. The original full visible-connector producer and all original geometry remain explicit. Full-X native positive-exit charts and Fermi-return packaging are not first-pair premises; connector-native charts are distinct original obligations.
+\par Status: audited.
+\par Dependencies: R.completion-visible-connector-application, R.ordinary-completed-support-marked-pair-application, R.actual-flow-protected-neighborhood-application.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_ordinary\_exit\_traces}.
+\subsection*{R.actual-exit-marked-pair-application: Actual exit data connects to every first-pair conclusion}
+From actual SAME selected exit X and explicit original visible-connector production plus original c0/bending facts, construct the ordinary completed scalar/end/inverse tuple and retain G0 germs; select SAME beta/Q/Cdata/FULLD once and derive all literal marked-pair conclusions. No completed potential, torus, metric, Gauss/stabilizer or pair premise. This does not prove production of X or the connector.
+\par Status: audited.
+\par Dependencies: R.actual-exit-completion-application, R.ordinary-completed-support-marked-pair-application.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_actual\_positive\_exits}.
+\subsection*{R.same-corrected-seed-full-turn-application: One corrected seed supplies both visibility and full turns}
+Choose the actual balanced-turn tolerance before one correction with min eta etaTurn. Carry SAME speed/clocks/frame/G0/c0 through central and full-flow turn proofs, then select final Y after intersecting visibility and turn margins. Seed-specific facts do not assert the generic universal exit construction statement.
+\par Status: audited.
+\par Dependencies: R.same-seed-visible-field-application, R.central-tensor.
+\par Lean target: \texttt{TightVer401.positiveExit\_same\_seed\_visible\_turn\_protected\_field}.
+\subsection*{R.selected-patches-budget-application: Construct SAME potential and actual selected traces within a later geometric budget}
+Construct two actual Cartesian patches and one globally negative-Hessian Ge with actual global gradient embedding, preserving SAME corrected seed/clocks/protected Y. Only AFTER fixing these objects choose the two final graphs below a caller-selected positive geometric budget, retaining actual visibility, positive Jordan traces, full strip containment and ambient first jets. Ambient first jets are not already planar-source jet estimates. Original source/core/reverse-gradient order remains separate.
+\par Status: audited.
+\par Dependencies: R.same-corrected-seed-full-turn-application, R.central-tensor, R.band.
+\par Lean target: \texttt{TightVer401.positiveExit\_exists\_two\_selected\_visible\_cartesian\_patches}.
+\subsection*{R.selected-homotopy-domain-application: Actual selected homotopy supplies whole closed source annulus domain}
+Build the literal inner-graph to clock to complete-flow to clock to outer-graph homotopy entirely in SAME original source domain. Reverse it for outer-minus-inner completion orientation; actual positive Jordan winding and seamComplexCoord transport prove whole CLOSED source annulus containment. No nesting, annular inverse or new domain grant is assumed. Source/core placement and target reverse order remain original obligations.
+\par Status: audited.
+\par Dependencies: R.selected-patches-budget-application, R.degree.
+\par Lean target: \texttt{TightVer401.positiveExit\_actual\_selected\_pair\_source\_homotopy}.
+\subsection*{R.native-connector-chart-application: Actual native open and closed connector charts for SAME inverse}
+Use existing positive round native chart and period-rescaling smoothness; compose SAME actual e0/H from scalar source producer. Exact physical phase is p(s)+t*h(s)*w(s), including both boundary circles. Do not choose another scalar/inverse collar or identify displaced raw p with original incoming p. Gradient inverse and full incoming Gin germ remain distinct obligations.
+\par Status: audited.
+\par Dependencies: R.actual-cartesian-connector-source-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorSourceInverse\_native\_charts\_of\_actual\_inverse}.
+\subsection*{R.actual-terminal-geometry-application: Actual same-terminal positive pairing and native Jordan curve}
+For SAME actual ruling select one small positive rotation below coefficient/radial/pairing/Jordan thresholds. Derive literal terminal gradient circle, positive radial and derivative pairing, actual smooth period/native Jordan embedding and positive origin turn. Recover original p through actual joint displaced SOURCE inverse with displacement derivatives (0,-1). This inverse is not a scalar/gradient inverse or Gin open germ; chosen positive-Jordan filling/enclosure/nesting and actual relative smoothing remain original obligations.
+\par Status: audited.
+\par Dependencies: R.actual-cartesian-connector-source-application, R.degree.
+\par Lean target: \texttt{TightVer401.visibleConnector\_periodic\_actual\_terminal\_jordan}.
+\subsection*{R.final-gradient-collar-application: Actual supplied-potential gradient inverse and full closed collar}
+From SAME actual final G on open U, closed source band inclusion, actual strict negative Hessian including boundaries and ordinary positively oriented nested source/reversed-gradient traces, construct actual gradient inverse, closed homeomorphism and enlarged smooth collar. P is the restriction of SAME enlarged inverse; no gradient chart/count package is assumed. Final Gin germ and ordinary original nesting remain producer obligations.
+\par Status: audited.
+\par Dependencies: R.degree, R.actual-cartesian-connector-source-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorGradientInverseApplication\_charts}.
+\subsection*{R.homotopy-exit-traces-marked-pair-application: Actual same-domain homotopy replaces the ordinary pair domain premise}
+Use SAME normalized inner-to-outer closedloop homotopy and derive boundary membership by periodicity, then whole closed source band containment. Apply the ordinary marked-pair caller ONCE retaining all original source/core/reversed-gradient nesting, Gin connector, protected field and registered background premises. No second graph, inverse, potential or full meridian choice.
+\par Status: audited.
+\par Dependencies: R.selected-homotopy-domain-application, R.ordinary-exit-traces-marked-pair-application.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_homotopy\_exit\_traces}.
+\subsection*{R.canonical-ordinary-connector-assembly-application: Construct exact connector inverse and collars from ordinary final scalar data}
+From actual final G/U/F/O, full Gin open overlap, whole closed source-band Hessian sign and ordinary source/terminal geometry, build SAME source inverse/native charts and SAME gradient inverse/enlarged collar. No inverse/chart/image conclusion package enters the ordinary data. Actual ordinary data FAMILY remains an original pending construction.
+\par Status: audited.
+\par Dependencies: R.degree, R.native-connector-chart-application, R.final-gradient-collar-application, R.actual-terminal-geometry-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorWitnessAssembly\_of\_ordinary}.
+\subsection*{R.ordinary-connector-data-marked-pair-application: Connect ordinary connector family to the same homotopy marked pair}
+Derive the canonical connector statement from the existing ordinary data family, then apply SAME homotopy/trace first-pair caller once. Actual universal family, original source/core and gradient nesting remain explicit; G/e/beta/Q/Cdata and full meridian are chosen once. This is a conditional connection, not the family construction.
+\par Status: audited.
+\par Dependencies: R.canonical-ordinary-connector-assembly-application, R.homotopy-exit-traces-marked-pair-application.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_ordinary\_connector\_data}.
+\subsection*{R.negative-gradient-order-application: Derive actual reverse gradient order from negative Hessian}
+Use SAME actual final G/domain and physical or normalized positive boundary loops; actual signed degree plus negative Hessian forces reverse gradient nesting. Actual source nesting, target boundary separation and common enclosure remain original facts. No target order or global inverse is assumed.
+\par Status: audited.
+\par Dependencies: R.degree, R.actual-cartesian-connector-source-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorGradientOrder\_physical}.
+\subsection*{R.negative-gradient-order-marked-pair-application: Replace the marked pair target nesting premise by actual signed degree}
+The checked final ordinary-family consumer retains hOrdinary quantified over ALL Gin/Uin/R/D and positive etaMax, SAME selected e0/Ge/trace/homotopy, actual source nesting, both gradient origin enclosures, protected source/core hCore and original G0 open agreement. It derives reverse gradient order and invokes the marked-pair producer ONCE, retaining completed scalar/beta/Q/Cdata and ONE full meridian. This export already provides every pair conclusion conditionally; constructing hOrdinary and the actual selected source/core inputs is still original work.
+\par Status: audited.
+\par Dependencies: R.negative-gradient-order-application, R.ordinary-connector-data-marked-pair-application.
+\par Lean target: \texttt{TightVer401.exists\_markedTorus\_pair\_of\_negative\_gradient\_order}.
+\subsection*{R.actual-incoming-collar-application: Actual incoming two-sided source collar and displaced inverse}
+Construct ONE actual displaced native e from SAME periodic p/w0/w with original injective central curve and nonzero source determinant. The strengthened output retains its central target solution, ALL central source points, joint smooth real phase and height, period/shift laws, zero-axis values, one uniform sign strip, global smooth phase inverses and literal original-source recovery. This is a checked conditional phase/sign application; it does not choose the complete compatible eta/rho family, identify Cartesian E with native e or supply the full Gin scalar germ.
+\par Status: audited.
+\par Dependencies: R.actual-terminal-geometry-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorDisplaced\_exists\_uniform\_phase\_signs}.
+\subsection*{R.actual-terminal-filling-enclosure-application: Actual terminal positive filling and strict Jordan enclosure}
+Normalize SAME actual terminal trace by its positive period and use existing winding producer for ONE positive filling and origin inclusion. Actual terminal norm escape and frontier bounds yield enclosure. Apply with ONE final eta/rho; generic inputs do not discharge original curve separation or full smoothing.
+\par Status: audited.
+\par Dependencies: R.actual-terminal-geometry-application, R.degree.
+\par Lean target: \texttt{TightVer401.visibleConnector\_periodic\_actual\_terminal\_positive\_trace}.
+\subsection*{R.firstpair-selected-geometry: Original same-seed nested selected geometry for the first pair}
+Instantiate SAME corrected seed/Ge/final Y and final graphs ONCE below a proved geometric tolerance. Construct actual source strict Jordan nesting and hCore : c0 '' tsupport Y ⊆ seamComplexCoord '' ((HpPlus '' ball 0 1) \textbackslash{} closure (HpMinus '' ball 0 1)). Retain original G0 equality on open O containing that support, SAME e0/Ge selected trace/homotopy, both gradient origin enclosures and actual visibility/pairing. Signed gradient degree derives reverse target order but does not prove source/core placement. This ORIGINAL selected geometry/hCore producer remains PENDING.
+\par Status: pending.
+\par Dependencies: R.selected-patches-budget-application, R.selected-homotopy-domain-application, R.actual-flow-protected-neighborhood-application, R.degree.
+\par Lean target: \texttt{TightVer401.exists\_same\_seed\_nested\_selected\_exit\_geometry}.
+\subsection*{R.round-source-order-application: Derive strict source order on the fixed round annulus}
+From the SAME smooth Cartesian map F on open O containing the ENTIRE closed round 1-to-2 band, positive actual Jacobian including its boundaries, exact positive Jordan boundary traces, disjoint boundary ranges and a common enclosed point, derive incoming-inside-terminal strict Jordan nesting. The round specialization derives round1<round2 internally; no desired source nesting or global inverse is an input.
+\par Status: audited.
+\par Dependencies: R.degree.
+\par Lean target: \texttt{TightVer401.visibleConnectorSourceOrder\_round}.
+\subsection*{R.retained-source-order-application: Retain original incoming and terminal source nesting}
+Apply actual signed source order to SAME F/O/D/T and caller-selected Ho/Hi. The retained export uses the incoming and terminal origin-enclosure facts and constructs OrdinaryData.source\_nesting. It does not construct F, closed-round coverage, its positive Jacobian, honest boundary equations or source range separation, and does not prove protected core placement hCore.
+\par Status: audited.
+\par Dependencies: R.round-source-order-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorSourceOrder\_retained\_incoming\_terminal}.
+\subsection*{R.retained-gradient-order-application: Derive ordinary final-gradient nesting from the full incoming open germ}
+Retain SAME final G/U, original D.incoming, terminal T and ALL FOUR caller-selected positive Jordan fills. Source nesting, closure of the entire source band in U, smoothness, actual negative Hessian, open N containing the whole incoming curve with EqOn G Gin N, and gradient boundary disjointness imply terminal-gradient-inside-incoming-gradient strict nesting. The full open germ derives the incoming final-gradient equality; first jets alone do not suffice. No desired target order or gradient inverse is assumed.
+\par Status: audited.
+\par Dependencies: R.negative-gradient-order-application, R.retained-source-order-application.
+\par Lean target: \texttt{TightVer401.visibleConnectorGradientOrder\_retained\_incoming\_terminal}.
+\subsection*{R.displaced-seam-rebase-application: Rebase the SAME old ruling and scalar with literal source height gradient identities}
+For the SAME phase a, old height b and scale d, transport the ruling through old parameters (a(s),b(s)+u*d(s)). Retain literal source and scalar equalities, smoothness, determinant factors a\_prime*d, positive pairing and actual gradient identity. Original Delta nonzero and required a\_prime/d nonzero remain real hypotheses. This algebraic application supplies no original curve/scalar identification, full Gin equality germ or compatible displacement choice.
+\par Status: audited.
+\par Dependencies: R.actual-incoming-collar-application.
+\par Lean target: \texttt{TightVer401.visibleConnector\_rebase\_source}.
+\subsection*{R.ver503-literal-negation-application: Literal ver503 sign transport on the SAME completed protected chart}
+For the SAME CompletedSaddleAnnulusGeometryOutput Q and original field Y, the normalization linear isometry acts as x maps to -x, while its vertical translation acts only on the immersion. On the SAME completedSaddleTorusBandChart Q source, the transported torus field at that chart image is literally -Y p. These two exports construct no new geometry or field and retain exactly Q/Y from the compact nonzero bending consumer.
+\par Status: audited.
+\par Dependencies: R.completed-band-chart-connection, R.completed-torus-bending-connection.
+\par Lean target: \texttt{TightVer401.completedSaddleTorusBandAffine\_linear\_apply}.
+\subsection*{R.compatible-displacement-production: Construct one compatible eta/rho family with native e and Cartesian E distinguished}
+Choose eta before eta-dependent pc/w0, then choose rho only after intersecting ALL same-e carrier, coefficient, smallness and terminal C1/Jordan/nonzero/norm bounds. Retain the strengthened central source and phase/height fields of ONE native e; construct the actual displaced seam embedding and identify the SAME original curve/scalar. Cartesian E is a distinct source inverse with explicit retained identities. This is an ORIGINAL PENDING producer, not a premise granted by frozen sign/rebase lemmas.
+\par Status: pending.
+\par Dependencies: R.actual-incoming-collar-application, R.displaced-seam-rebase-application, R.actual-terminal-geometry-application, R.actual-terminal-filling-enclosure-application.
+\subsection*{R.full-incoming-gin-production: Prove the full Gin open germ for the SAME incoming seam}
+On an actual open neighborhood containing the ENTIRE original incoming curve, establish literal scalar equality with Gin and actual gradient matching using the SAME rebased source/scalar and inverse. Construct GinU and Vraw on their full required sides; Vraw is contained in SAME E.target. The pending IncomingGin sources are uncompiled snapshots outside the certified closure and grant no completion credit.
+\par Status: pending.
+\par Dependencies: R.compatible-displacement-production, R.displaced-seam-rebase-application.
+\subsection*{R.final-smoothed-h-production: Construct final H once on the full fixed smoothing domain}
+Retain full fixed V, Gin on GinU and raw scalar on Vraw with both seam and FULL side portions in their domains; Vraw remains a subset of SAME E.target. Apply relative on\_sides smoothing EXACTLY ONCE, with actual matching values/gradients, strict Hessian signs and true boundary neighborhoods outside modification N. Produce final H/U, open Gin and raw-terminal equality neighborhoods and negative Hessian on the ENTIRE closed source band. Do not silently shrink V or reuse the raw scalar gradient inverse as final H inverse.
+\par Status: pending.
+\par Dependencies: R.full-incoming-gin-production, R.smoothing, R.actual-cartesian-connector-source-application.
+\subsection*{R.ordinary-connector-family-production: Populate the actual universal OrdinaryData family}
+For EVERY actual Gin/Uin/R and D : VisibleConnectorIncomingData Gin Uin 1 R and EVERY positive etaMax, construct Nonempty (VisibleConnectorWitnessAssemblyOrdinaryData D etaMax). Retain SAME final H/U/F/O/D/T, honest full incoming open germ, terminal circle/radial facts and four fills. Derive source and reversed-gradient nesting with the retained signed-order exports. The final H gradient inverse is rebuilt by the canonical ordinary-data consumer. No data inhabitant or universal family is granted.
+\par Status: pending.
+\par Dependencies: R.final-smoothed-h-production, R.retained-source-order-application, R.retained-gradient-order-application, R.actual-terminal-filling-enclosure-application.
+\section*{Deferred scope}
+Complete cylinders, linking applications, general ruled extensions, Cantor families and quotient topology are deferred. Support completion and tightness remain required for the torus pair.
+\end{document}
