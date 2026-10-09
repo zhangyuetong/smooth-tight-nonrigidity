@@ -347,7 +347,6 @@ theorem positiveExit_exists_two_selected_visible_cartesian_patches {T δ w : ℝ
     B1.change_compact.add B2.change_compact,(fun z => (hC2 z).trans_le (min_le_left _ _)),
     hprotectedOpen,hprotected,hprotectedEq,hprotectedGerm,hBending,hwhole,hpres1,hpres2,hEmbedded,
     h,hhS,hhT,hhF,hhI,hS1,hLength1,hS2,hLength2,hlabels,?_⟩
-  dsimp only
   intro νGeom hνGeom
   let ζ1 := positiveExitRawLeaf d hb hinside vin ∘ S1.symm
   let v1 := exitPositiveGraphProfile P1 (fermiSupportSeamSlope (normalLoopCurvature ζ1)
@@ -435,6 +434,7 @@ theorem positiveExit_exists_two_selected_visible_cartesian_patches {T δ w : ℝ
 
 end
 end TightVer401
+
 
 
 
