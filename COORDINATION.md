@@ -19,3 +19,14 @@ All meaningful handoffs identify exact declarations, same mathematical objects, 
 ## Reconciled integration checkpoint
 
 Full current-source ver503 audit PASS at 2026-10-09T14:30:39.918025+00:00, source fc8d7997c66d386842c41373ae46dfb92ce47f85. Exact target a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a; no admissions/custom axioms. Frozen DOM/DESC sources and two literal normalized-bending identities are in closure. Original four construction jobs remain pending. New worker worktrees are created only after the audit/blueprint checkpoint commit.
+
+## Fresh construction chats
+
+All four actual worktree HEADs were checked at `68996b72a5a3be36982cb90600ccec06c194fb4d` before dispatch. Machine-readable paths, branches and chat IDs: `lean/research/coordination/workers.json`.
+
+| Role | Fresh chat | Branch |
+|---|---|---|
+| selected-source | 01a12116-c7d0-7542-bcb0-32eece00757a | codex/ver503-selected-source |
+| incoming-rebase | 01a12116-ef18-70b2-8818-7a1ddaab58de | codex/ver503-incoming-rebase |
+| final-smoothing | 01a12117-09d9-71c2-9281-9c0b6e6cd153 | codex/ver503-final-smoothing |
+| ordinary-family | 01a12117-305f-7ef1-aa69-bef839f9983f | codex/ver503-ordinary-family |

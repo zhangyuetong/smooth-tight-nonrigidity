@@ -1,0 +1,50 @@
+{
+  "coordinator_thread_id": "01a120fb-9b90-7310-9e32-127f2ef5dad6",
+  "validated_checkpoint": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+  "workers": [
+    {
+      "role": "selected-source",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-selected-source",
+      "branch": "codex/ver503-selected-source",
+      "starting_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+      "handoff": "lean/research/coordination/workers/selected-source.md",
+      "thread_status": "dispatched",
+      "thread_id": "01a12116-c7d0-7542-bcb0-32eece00757a",
+      "host_id": "local",
+      "starting_commit_verified_by_coordinator": true
+    },
+    {
+      "role": "incoming-rebase",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-incoming-rebase",
+      "branch": "codex/ver503-incoming-rebase",
+      "starting_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+      "handoff": "lean/research/coordination/workers/incoming-rebase.md",
+      "thread_status": "dispatched",
+      "thread_id": "01a12116-ef18-70b2-8818-7a1ddaab58de",
+      "host_id": "local",
+      "starting_commit_verified_by_coordinator": true
+    },
+    {
+      "role": "final-smoothing",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-final-smoothing",
+      "branch": "codex/ver503-final-smoothing",
+      "starting_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+      "handoff": "lean/research/coordination/workers/final-smoothing.md",
+      "thread_status": "dispatched",
+      "thread_id": "01a12117-09d9-71c2-9281-9c0b6e6cd153",
+      "host_id": "local",
+      "starting_commit_verified_by_coordinator": true
+    },
+    {
+      "role": "ordinary-family",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-ordinary-family",
+      "branch": "codex/ver503-ordinary-family",
+      "starting_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+      "handoff": "lean/research/coordination/workers/ordinary-family.md",
+      "thread_status": "dispatched",
+      "thread_id": "01a12117-305f-7ef1-aa69-bef839f9983f",
+      "host_id": "local",
+      "starting_commit_verified_by_coordinator": true
+    }
+  ]
+}
