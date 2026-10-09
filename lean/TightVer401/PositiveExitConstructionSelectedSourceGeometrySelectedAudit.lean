@@ -1,0 +1,5 @@
+import TightVer401.PositiveExitConstructionSelectedSourceGeometryProtectedAudit
+import TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedPlacement
+namespace TightVer401
+#print axioms positiveExitSelected_protected_placement_and_nesting
+end TightVer401

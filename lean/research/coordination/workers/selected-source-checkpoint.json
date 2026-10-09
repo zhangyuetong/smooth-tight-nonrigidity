@@ -212,5 +212,67 @@
     ],
     "producer_build_report_sha256": "518e69fff8d28c0bf9b12d5a3f8d3da8f67cc04a2172be870a8ece210b76e6c7",
     "producer_axiom_log_sha256": "e9fbf5149ef7411d801eacc7fa7da8bfe0f303da249b07acd5a477e5d719b3e8"
+  },
+  "protected_selected_checkpoint": {
+    "result": "PASS",
+    "audited_exports": 9,
+    "scope": "Actual label-controlled graph-to-raw protected homotopy, genuine winding-side transport, selected placement/nesting consumer. Complete SelectedPatches one-budget assembly remains pending.",
+    "sources": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedAvoidance",
+        "source_sha256": "8926bd83e03cc5075812e0e7b9942ae14a340208e056cc3586b70835d8ac588b",
+        "compiled_source_sha256": "8926bd83e03cc5075812e0e7b9942ae14a340208e056cc3586b70835d8ac588b",
+        "olean_sha256": "430fa8b7c41496b3292d738d07c2ff9b37f297c76707caf53bf7081327813eeb",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryProtectedWinding",
+        "source_sha256": "0214869f33f450e1761274cd99cb4c4b067768826a5aa6bba5586085eaf22b14",
+        "compiled_source_sha256": "0214869f33f450e1761274cd99cb4c4b067768826a5aa6bba5586085eaf22b14",
+        "olean_sha256": "bcc20ebd0639a16182dc8e06382022563eb5706862c7c1fe00c7bced09403b79",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedProtectedPair",
+        "source_sha256": "ad6ea9db9114c85b79a0d7a7955dccb1017d0fab6c648fd766f378597840ab0a",
+        "compiled_source_sha256": "ad6ea9db9114c85b79a0d7a7955dccb1017d0fab6c648fd766f378597840ab0a",
+        "olean_sha256": "d3bde721b2aee0e9fcf24918596cfb71b5d372bb97e41bde22b4eb5b43148967",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedPlacement",
+        "source_sha256": "9c8a82196b93a7ed890bc660c5250b216c9aa15327650b1f337735d16dd1bc75",
+        "compiled_source_sha256": "9c8a82196b93a7ed890bc660c5250b216c9aa15327650b1f337735d16dd1bc75",
+        "olean_sha256": "90708f54f5c5b305bf09e24e3b2e3b7a3d4da16c219ce77550acd81fa912353f",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryProtectedAudit",
+        "source_sha256": "77f85df24707e907272ae5ccfa7307eaf1cd9e3b70ca42607865ba6a5badf746",
+        "compiled_source_sha256": "77f85df24707e907272ae5ccfa7307eaf1cd9e3b70ca42607865ba6a5badf746",
+        "olean_sha256": "232e3f3006b2c68d71c1a923ee8685c289a3b18ef3f72b0b6bd1aec2bc81d6db",
+        "log_sha256": "31db0525531419c9f78829ce6cf9896286364661955d3499b59858f7a2ba0068"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedAudit",
+        "source_sha256": "83afb05a821a3d5abee663cbef7c2dba4b232fd0420763265e8b58dbe19e36a8",
+        "compiled_source_sha256": "83afb05a821a3d5abee663cbef7c2dba4b232fd0420763265e8b58dbe19e36a8",
+        "olean_sha256": "5e8ac8b35181be9e9b0a37494432312c87767f26fbb10c73f73d1260240814e1",
+        "log_sha256": "660a35c34e350decf750fd0ae750088606e8597f36d7b2aec31ff7a8c758a2f2"
+      }
+    ],
+    "audits": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryProtectedAudit",
+        "axiom_log_sha256": "31db0525531419c9f78829ce6cf9896286364661955d3499b59858f7a2ba0068",
+        "audited_exports": 8
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometrySelectedAudit",
+        "axiom_log_sha256": "660a35c34e350decf750fd0ae750088606e8597f36d7b2aec31ff7a8c758a2f2",
+        "audited_exports": 1
+      }
+    ],
+    "producer_build_report_sha256": "8a394d6e1e0efadb123d40e396c56c5b7213543ba704a7bdd885bdabc89f80b5"
   }
 }
