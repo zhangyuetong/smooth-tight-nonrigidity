@@ -1,5 +1,6 @@
 import TightVer401.VisibleConnectorIncomingParametersFromData
 import TightVer401.VisibleConnectorIncomingTerminalGinStability
+import TightVer401.VisibleConnectorIncomingTerminalRadialStability
 import TightVer401.VisibleConnectorIncomingParametersGinChoice
 import TightVer401.VisibleConnectorIncomingRebaseOriginalTrace
 
@@ -96,6 +97,24 @@ structure VisibleConnectorIncomingParametersChoice {Gin : Coord → ℝ} {Uin : 
     (fun t => (visibleConnectorDisplacedNativeSolution e D.incoming.p (rho, t)).2) s = D.incoming.p s
   family_domain : ∀ s, (rho, s) ∈
     visibleConnectorGinDisplacedVisibilityDomain Gin Uin R D.incoming.p w0
+  family_homotopy_domain : ∀ r, |r| ≤ rho → ∀ s, (r, s) ∈
+    visibleConnectorGinDisplacedVisibilityDomain Gin Uin R D.incoming.p w0
+  terminal_radial :
+    let pc := fun s => visibleConnectorGinDisplacedPosition D.incoming.p w0 (rho, s)
+    let gc := fun s => visibleConnectorGinDisplacedGradient Gin D.incoming.p w0 (rho, s)
+    let wc := fun s => visibleConnectorGinDisplacedRuling Gin R etaAngle D.incoming.p w0 (rho, s)
+    let T := visibleConnectorActualTerminalSource pc gc wc
+    ∀ s, 0 < T s ⬝ᵥ (-visibleConnectorJ (visibleConnectorGinRotatedDirection R etaAngle gc s))
+  terminal_directional :
+    let pc := fun s => visibleConnectorGinDisplacedPosition D.incoming.p w0 (rho, s)
+    let gc := fun s => visibleConnectorGinDisplacedGradient Gin D.incoming.p w0 (rho, s)
+    let wc := fun s => visibleConnectorGinDisplacedRuling Gin R etaAngle D.incoming.p w0 (rho, s)
+    let T := visibleConnectorActualTerminalSource pc gc wc
+    ∀ s, 0 < deriv T s ⬝ᵥ visibleConnectorGinRotatedDirection R etaAngle gc s
+  terminal_excess :
+    let gc := fun s => visibleConnectorGinDisplacedGradient Gin D.incoming.p w0 (rho, s)
+    ∀ s, 0 < visibleConnectorJ (gc s) ⬝ᵥ
+      visibleConnectorGinRotatedDirection R etaAngle gc s - R
   normBudget : ℝ
   original_norm_bounded : ∀ s, ‖positiveExitComplexTrace D.incoming.p s‖ < normBudget
   terminal_geometry :
@@ -147,7 +166,8 @@ theorem visibleConnectorIncomingParametersChoice_nonempty
   obtain ⟨M, hM⟩ := incomingParametersChoice_norm_budget D
   obtain ⟨theta, ht, hshift, htpos, hdir, etaAngle, heta, hetamax,
       hwactual, hw, hw0L, hcoeff, hgamma, hmargin, hTs, hTp, hTne, hTdet,
-      hTturn, hTi, hTj, hnorm, hTr, H0, hH0, hHorigin, hHfront⟩ :=
+      hTturn, hTi, hTj, hnorm, hTr, hDir0, hRad0, hExcess0,
+      H0, hH0, hHorigin, hHfront⟩ :=
     visibleConnectorIncomingParameters_exists_original_choice_from_data (M := M) D hetaMax
   let w0 := visibleConnectorShiftedRuling R D.incoming.gamma theta etaAngle
   let w := visibleConnectorGinDisplacedRuling Gin R etaAngle D.incoming.p w0
@@ -173,15 +193,28 @@ theorem visibleConnectorIncomingParametersChoice_nonempty
     visibleConnectorIncomingTerminal_Gin_exists_positive_filling (M := M)
       D hw hw0L hw0same (fun s => (hcoeff s).2.2)
       (fun s _ => hnorm s) (fun s _ => hTdet s) hTne hTturn
-  obtain ⟨rho, hrho, hrhoPhase, hrhoTerminal, hcurrent, hlowerDelta, hlowerStrip, hheight⟩ :=
+  obtain ⟨radialBound, hradialBound, hradial⟩ :=
+    visibleConnectorIncomingTerminal_Gin_uniform_radial_directional_threshold
+      D hw hw0L hw0same (fun s => (hcoeff s).2.2) hRad0 hDir0 hExcess0
+  obtain ⟨rho, hrho, hrhoPhase, hrhoStable, hcurrent, hlowerDelta, hlowerStrip, hheight⟩ :=
     visibleConnectorIncomingParameters_exists_Gin_compatible_rho
       D.radius_pos D.domain_open D.potential_smooth D.incoming.p_smooth hw
       D.incoming.p_periodic hw0L (fun s => D.incoming.p_in_domain (mem_univ s))
       hgamma hmargin hw0same hcoeff e hD ha hb haxis ha0 hb0 hashift hbL
-      hphase hterminalBound (show (0 : ℝ) < 1 by norm_num)
+      hphase (lt_min hterminalBound hradialBound) (show (0 : ℝ) < 1 by norm_num)
   have habsPhase : |rho| < phase := by simpa only [abs_of_pos hrho] using hrhoPhase
+  have hrhoTerminal : rho < terminalBound := hrhoStable.trans_le (min_le_left _ _)
+  have hrhoRadial : rho < radialBound := hrhoStable.trans_le (min_le_right _ _)
   have habsTerminal : |rho| < terminalBound := by
     simpa only [abs_of_pos hrho] using hrhoTerminal
+  have habsRadial : |rho| < radialBound := by
+    simpa only [abs_of_pos hrho] using hrhoRadial
+  have hchosenRadial (s : ℝ) := (hradial rho habsRadial s).1
+  have hchosenDir (s : ℝ) := (hradial rho habsRadial s).2.1
+  have hchosenExcess (s : ℝ) := (hradial rho habsRadial s).2.2
+  have hpathDomain (r : ℝ) (hr : |r| ≤ rho) (s : ℝ) :
+      (r, s) ∈ visibleConnectorGinDisplacedVisibilityDomain Gin Uin R D.incoming.p w0 :=
+    (hterminal r (hr.trans_lt hrhoTerminal)).1 s
   have hrhoDomainLt : rho < rhoDomain := hrhoPhase.trans_le hphaseLe
   have hchosen (s : ℝ) : (rho, s) ∈ visibleConnectorDisplacedRealPhaseDomain e D.incoming.p :=
     hstrip ⟨⟨by linarith, hrhoDomainLt.le⟩, mem_univ s⟩
@@ -234,6 +267,10 @@ theorem visibleConnectorIncomingParametersChoice_nonempty
     lower_strip_in_GinU := hlowerStrip
     original_trace := ?_
     family_domain := hfamilyDomain
+    family_homotopy_domain := hpathDomain
+    terminal_radial := hchosenRadial
+    terminal_directional := hchosenDir
+    terminal_excess := hchosenExcess
     normBudget := M
     original_norm_bounded := hM
     terminal_geometry := ?_ }⟩
