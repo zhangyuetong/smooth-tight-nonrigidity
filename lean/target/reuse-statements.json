@@ -1,0 +1,113 @@
+{
+  "purpose": "Statement comparison only; no archived proof source, binary or completion certificate is used. The reused exports are checked in the current integration audit.",
+  "comparison_record_sha256": "11d9103916742c0be98b35acc1c9fe065fcfa961703473aff92bb0419c8ed994",
+  "claims": [
+    {
+      "labels": [
+        "prop:support"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[Support reconstruction]\\label{prop:support}\r\nThe $\\R^3$-valued differential of $a_H$ is $B_H$. Where $B_H$ is\r\ninvertible, $a_H$ is an immersion with normal $q$, metric $B_H^2$,\r\nsecond fundamental form $-B_H$, and curvature $R_H^{-1}$. Every immersion\r\nwith an injective regular Gauss map has this representation on its Gauss\r\nimage.\r\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "thm:ruled",
+        "eq:yF"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Supported kernel on a ruled band]\\label{thm:ruled}\r\nOn a sufficiently thin one-sided band $0<u<b$, a nonzero compactly\r\nsupported infinitesimal bending exists exactly when $I_0=0$. In that\r\ncase choose periodic $\\omega$ with $\\omega_s=D/(2\\rho)$ and define\r\n\\[\r\n v(s,u)=\\frac1{\\rho(s)u}-\\omega(s),\\qquad\r\n c_b=\\max_s\\left(\\frac1{\\rho(s)b}-\\omega(s)\\right).\r\n\\]\r\nEvery supported bending has a unique expression\r\n\\begin{equation}\\label{eq:yF}\r\n y_F=\\frac{\\tau u}{2\\rho}F'(v)T+\r\n \\left[uF(v)-\\frac{1-ku}{2\\rho}F'(v)\\right]n,\r\n \\qquad F\\in C_c^\\infty((c_b,\\infty)).\r\n\\end{equation}\r\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "lem:finite-moment-balance",
+        "eq:finite-moment-balance"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Finite-moment period prescription]\\label{lem:finite-moment-balance}\r\nLet $f:S^1\\to\\R^m$ and $g:S^1\\to\\R$ be smooth, with $g$ taking both\r\nsigns. For every smooth $b>0$, $B_*\\in\\R$, and $\\eta>0$, there is a\r\nsmooth $a>0$ such that\r\n\\begin{equation}\\label{eq:finite-moment-balance}\r\n \\|a-b\\|_{L^1}<\\eta,\\qquad\r\n \\oint af=\\oint bf,\\qquad \\oint g/\\sqrt a=B_*.\r\n\\end{equation}\r\nIf $d=\\dim\\operatorname{span}f(S^1)$, the correction uses at most $d+1$\r\narbitrarily short intervals.\r\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "thm:normal-loop-criterion"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Normal-loop existence criterion]\\label{thm:normal-loop-criterion}\r\nFor the loop in \\eqref{eq:structural-normal-frame}, the following are\r\nequivalent:\r\n\\begin{enumerate}[label=\\textup{(\\roman*)}]\r\n\\item $0$ belongs to the ordinary three-dimensional interior of\r\n$\\conv P(S^1)$;\r\n\\item a smooth positive speed $b$ satisfies $\\mathbf M(b)=0$;\r\n\\item a smooth positive speed $a$ satisfies both\r\n$\\mathbf M(a)=0$ and $\\mathscr B(a)=0$.\r\n\\end{enumerate}\r\nThis characterizes closed immersed principal-normal identity-return bands\r\nwith the prescribed normal loop. For every closing speed $b$, the balanced\r\nspeed $a$ can be chosen arbitrarily close to $b$ in $L^1$.\r\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "cor:relative-holonomy-upgrade"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{corollary}[Relative upgrade of an embedded seed]\\label{cor:relative-holonomy-upgrade}\r\nIf a closing speed $b$ has an embedded primitive $\\Gamma_b$, the balanced\r\nprimitive can be chosen embedded and arbitrarily uniformly close to it.\r\nThe two are connected through embedded closed curves with the same oriented\r\ntangent and normal at each parameter value. Any specified regular embedded\r\nlinear projection remains embedded. If $\\zeta$ is embedded, the Gauss map\r\nof a sufficiently thin resulting band is injective.\r\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "lem:seed",
+        "eq:seed-data",
+        "eq:zero-action"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Corrugated analytic seed]\\label{lem:seed}\r\nFor every integer $N\\ge10^4$, $\\beta_N$ and $\\delta_N$ are real analytic\r\npositively oriented embedded curves enclosing the origin. If $Q_N$ is\r\nrotation through $2\\pi/N$, then\r\n\\begin{equation}\\label{eq:seed-data}\r\n \\beta_N(t+T_N)=Q_N\\beta_N(t),\\qquad\r\n \\delta_N(t+T_N)=Q_N\\delta_N(t),\\qquad\r\n \\delta_N'=m_N\\beta_N',\\quad m_N>0,\r\n\\end{equation}\r\nand\r\n\\begin{equation}\\label{eq:zero-action}\r\n \\int_0^{2\\pi}\\det(\\beta_N,\\delta_N')\\,dt=0.\r\n\\end{equation}\r\nThe pair $(\\beta_N,\\delta_N)$ is visible at $R_+=1/4$, and\r\n\\[\r\n (\\widetilde\\beta_N,\\widetilde\\delta_N)(t)\r\n =\\bigl(A_*\\delta_N(-t),A_*\\beta_N(-t)\\bigr)\r\n\\]\r\nis visible at $R_-=4/5$. The spherical lift\r\n\\[\r\n \\zeta_N(t)=\\frac{(\\beta_N(t),1)}{\\sqrt{1+|\\beta_N(t)|^2}}\r\n\\]\r\nis embedded in the northern hemisphere and its geodesic curvature takes\r\nboth signs.\r\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:one-slowdown"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[One-slowdown holonomy correction]\\label{prop:one-slowdown}\r\nIf $b>0$ is $\\ell$-periodic with $M(b)=0$, $\\kappa$ is nonconstant,\r\nand $P_3\\not\\equiv0$, then for every $\\eta>0$ a positive smooth\r\n$\\ell$-periodic $a$ satisfies\r\n\\[\r\n \\|a-b\\|_{L^1(0,\\ell)}<\\eta,\\qquad M(a)=0,\r\n \\qquad\\mathscr B_\\ell(a)=0.\r\n\\]\r\nThe change is supported in at most two arbitrarily short intervals.\r\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "thm:spike",
+        "lem:speed",
+        "eq:balanced-speed"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Balanced embedded speed]\\label{thm:spike}\\label{lem:speed}\r\nFor every $\\eta_0>0$, the seed admits a positive smooth $\\ell$-periodic\r\nspeed $a$ with\r\n\\begin{equation}\\label{eq:balanced-speed}\r\n \\|a-a_0\\|_{L^1(0,\\ell)}<\\eta_0,\\qquad\r\n M(a)=0,\\qquad\\mathscr B_\\ell(a)=0.\r\n\\end{equation}\r\nFor small enough $\\eta_0$, its spatial primitive and horizontal\r\nprojection are embedded, and both visibility conditions persist.\r\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "thm:branch",
+        "eq:abstractsign"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Disjoint quadratic branching]\\label{thm:branch}\r\nIf $y_1,\\ldots,y_m\\in\\ker S_X$ have pairwise disjoint supports, then\r\n\\begin{equation}\\label{eq:abstractsign}\r\n g_{X+\\sum_{j=1}^m\\varepsilon_j a_jy_j}\r\n =g_X+\\sum_{j=1}^m a_j^2\\langle dy_j,dy_j\\rangle,\r\n \\qquad\\varepsilon_j\\in\\{-1,1\\}.\r\n\\end{equation}\r\nThe same identity holds for an infinite series converging in $C^\\infty$.\r\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:budget"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{proposition}[Relative preservation of absolute curvature]\\label{prop:budget}\r\nLet $X$ be a closed embedded surface and $V\\Subset\\{K_X<0\\}$.\r\nEvery sufficiently small $C^2$ perturbation supported in $V$ remains an\r\nembedding and has the same total absolute curvature. If $X$ is tight,\r\nso is the perturbation.\r\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:fixed-open"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{lemma}[An intrinsic isometry fixed on an open set]\\label{lem:fixed-open}\r\nAn isometry of a connected smooth Riemannian manifold which fixes a\r\nnonempty open set pointwise is the identity. The same holds for a connected\r\nmanifold with boundary when the fixed set meets its interior.\r\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "thm:localized-sign"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{theorem}[Localized sign families on a marked tight surface]\r\n\\label{thm:localized-sign}\r\nUnder the marking hypothesis of Proposition~\\ref{prop:finite-sign}, let\r\n$y_j$, $j\\ge1$, be nonzero bendings with pairwise disjoint supports in\r\none compact $V\\Subset\\{K_X<0\\}$. Choose positive amplitudes such that\r\n\\[\r\n X_\\varepsilon=X+\\sum_{j\\ge1}\\varepsilon_ja_jy_j,\r\n \\qquad\\varepsilon\\in\\{-1,1\\}^{\\mathbb N},\r\n\\]\r\nconverges smoothly uniformly in the signs and is sufficiently small in\r\n$C^2$. Then the maps are tight embeddings with the common smooth metric\r\n\\[\r\n g=g_X+\\sum_{j\\ge1}a_j^2\\langle dy_j,dy_j\\rangle.\r\n\\]\r\nTheir images are pairwise noncongruent, and the sign map induces a\r\ntopological embedding into $\\Emb_g(M,\\R^3)/\\Isom(\\R^3)$.\r\nSuch amplitudes always exist.\r\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "lem:complete-profile"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Strictly convex continuation of a radial profile]\r\n\\label{lem:complete-profile}\r\nSuppose $q_0$ is smooth near $H$, with $q_0(H)>0$, $q_0'(H)>0$,\r\nand $q_0''>0$ there. For every $\\beta>0$ there is a smooth $q$ on\r\n$[H,\\infty)$ equal to $q_0$ near $H$, with $q,q',q''>0$, and with\r\n$q''=\\beta$ eventually. In particular $q'(z)\\to\\infty$.\r\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:general-ruled-return",
+        "eq:general-riccati",
+        "eq:general-return"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[Riccati return and a two-jet criterion]\r\n\\label{prop:general-ruled-return}\r\nLet $X(t,u)=c(t)+ue(t)$ with $|e|=1$, smooth $L$-periodic $c,e$, and\r\n$\\Delta=\\det(c',e,e')\\ne0$. Suppose $u=0$ is a closed nonruling\r\nasymptotic leaf. Then the nonruling characteristics satisfy\r\n\\begin{equation}\\label{eq:general-riccati}\r\n u'=q(t,u)=q_1(t)u+q_2(t)u^2,\r\n \\qquad q=-\\frac{\\langle c''+ue'',(c'+ue')\\times e\\rangle}{2\\Delta}.\r\n\\end{equation}\r\nWith\r\n\\[\r\n A(t)=\\int_0^tq_1(s)\\,ds,\\quad \\mu=e^{A(L)},\\quad\r\n \\nu=\\int_0^Lq_2(t)e^{A(t)}\\,dt,\r\n\\]\r\nthe local return is\r\n\\begin{equation}\\label{eq:general-return}\r\n \\mathcal R(u)=\\frac{\\mu u}{1-\\nu u}.\r\n\\end{equation}\r\nIdentity return is equivalent to $\\mu=1$, $\\nu=0$, or equivalently\r\n$\\mathcal R'(0)=1$ and $\\mathcal R''(0)=0$.\r\n\\end{proposition}"
+    }
+  ]
+}

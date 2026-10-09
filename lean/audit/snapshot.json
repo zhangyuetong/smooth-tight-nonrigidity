@@ -1,0 +1,34 @@
+{
+  "source_snapshot_commit": "502220cc44850941449b848f7080e8828c731364",
+  "source_audit_commit": "0d2e3fcfe73350a14d3734b6887dbda961190015",
+  "audit_utc": "2026-10-09T01:37:31.201018+00:00",
+  "result": "PASS",
+  "modules": 1403,
+  "declarations": 17564,
+  "claims": {
+    "pending": 20,
+    "proved": 17,
+    "partial": 3
+  },
+  "full_construction": "INCOMPLETE",
+  "final_existence_theorem": "pending",
+  "kernel_report_sha256": "4e3a26634765588c7524ad11f22545cdd6ba6afd183755c5f4aae7b4c57dc44a",
+  "portable_changes": [
+    "scripts/build.py: cross-platform Lean executable lookup",
+    "scripts/inventory.py: bundled exact target and statement-reuse comparison lookup"
+  ],
+  "excluded": [
+    "older formalization snapshots",
+    "build objects and dependency caches",
+    "build logs",
+    "14 engine source files outside the audited closure",
+    "later worker-only changes not integrated in this certificate"
+  ],
+  "audited_sources_preserved": true,
+  "note": "This is the latest integrated source snapshot and its recorded audit, not a claim of a new clean compilation on every platform.",
+  "publication_checks": [
+    "all 1403 audited source hashes match",
+    "upstream, Schoenflies, manuscript and regenerated coverage hashes match",
+    "portable build launcher compiled TightVer401.Compatibility successfully in a private output directory"
+  ]
+}

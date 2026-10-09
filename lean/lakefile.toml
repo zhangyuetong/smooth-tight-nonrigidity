@@ -1,0 +1,17 @@
+name = "tightVer401"
+version = "0.1.0"
+defaultTargets = ["TightVer401"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1"
+
+[[lean_lib]]
+name = "OAI"
+srcDir = "vendor/openai-math/lean"
+roots = ["OAI.Geometry.IsometricImmersion.Curvature.GaussEquation", "OAI.Geometry.IsometricImmersion.Curvature.IntrinsicCurvature", "OAI.Geometry.IsometricImmersion.Metrics.MetricLocality", "OAI.Geometry.SurfaceImmersion.Geometry.ManifoldMetricCalculus", "OAI.Geometry.WeakMTW.Geodesics.IntrinsicUniqueness", "OAI.Geometry.WeakMTW.Geodesics.HopfRinow", "OAI.Geometry.SurfaceImmersion.Primitive.PeriodicPrimitive", "OAI.Geometry.NilpotentCharts.QuotientLie", "OAI.Geometry.Borsuk.SphereGeometry.HemisphereChart"]
+
+[[lean_lib]]
+name = "TightVer401"
+

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "authorized_local_date": "2026-10-09",
+  "authorization": "Human: Now redesign the blueprint and grant the classical results; grant classical and external results.",
+  "mode": "explicit_classical_external_theorem_parameters",
+  "lean_bundle": "TightVer401.ClassicalExternalResults",
+  "lean_source": "TightVer401/ClassicalExternal.lean",
+  "certification_rule": "Kernel checks the statements and conditional applications; neither a Prop definition nor a checked application proves an external premise. No inhabitant of ClassicalExternalResults, custom axiom, sorry or circular construction grant is introduced.",
+  "primary_goal": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+  "grants": [
+    {
+      "id": "E.positive-gauss-tightness",
+      "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim",
+      "field": "positiveGaussTightness",
+      "status": "external_assumed",
+      "reference_kind": "classical corollary of published background results",
+      "sources": [
+        {
+          "title": "Banchoff and Kühnel, Tight Submanifolds, Smooth and Polyhedral (1997), §1.1 pp.56–57",
+          "url": "https://library.slmath.org/books/Book32/files/banchoff.pdf",
+          "location": "Gauss-area formula, positive-curvature integral equality at 4π, equivalence to two-piece property"
+        }
+      ],
+      "hypotheses": [
+        "Actual infinity-smooth embedded immersion on the fixed compact connected native torus",
+        "Actual smooth global unit normal orthogonal to the actual manifold differential",
+        "Open partial homeomorphism whose exact source is the actual preferred-chart intrinsic K>0 region",
+        "Exact Gauss target is the round sphere minus a finite exceptional set",
+        "Forward map equals the same global normal on the whole positive region; forward and inverse are smooth"
+      ],
+      "conclusion": "IsTightImage X in the existing open-half-space definition",
+      "consumers": [
+        "R.positive-gauss",
+        "R.classical-tightness",
+        "R.stability"
+      ],
+      "still_owned": [
+        "Transport/root construct the actual normal and its agreement, exact positive locus, same-closure Gauss restriction and target",
+        "Smoothing/domination construct the actual global saddle, its K<0 interior and literal K=0 seams",
+        "Root extends protected bending and proves all branch application hypotheses"
+      ],
+      "replaces": [
+        "General height-maxima-to-component tightness proof as a blocking route",
+        "Surface-area measure/change-of-variables framework as a prerequisite of the first pair"
+      ],
+      "proof_note": "Finite omitted sphere points have zero spherical area, so the positive curvature integral is 4π. The published equality characterization gives tightness directly; Gauss–Bonnet is not required for this conclusion."
+    },
+    {
+      "id": "E.coincident-embedding-fixed-open",
+      "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
+      "field": "coincidentEmbeddingFixedOpen",
+      "status": "external_assumed",
+      "reference_kind": "classical corollary; fixed-open uniqueness already has an engine proof with Riemannian instances",
+      "sources": [
+        {
+          "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
+          "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
+          "location": "Smooth embedding and induced embedded-submanifold inverse"
+        },
+        {
+          "title": "John M. Lee, Introduction to Riemannian Manifolds, connected local-isometry uniqueness",
+          "url": "https://link.springer.com/book/10.1007/978-3-319-91755-9",
+          "location": "Uniqueness of isometries from their value and differential; also see engine FixedOpenCompact.isometry_eq_id_of_fixed_open_compact"
+        }
+      ],
+      "hypotheses": [
+        "Two actual infinity-smooth embedded immersions on the same fixed connected compact native torus",
+        "Equality of actual nativeProductInducedForm at every point on every tangent-vector pair",
+        "Equal entire embedded images",
+        "The two actual maps agree on a nonempty open subset of that same source"
+      ],
+      "conclusion": "X=Y as parametrized maps",
+      "consumers": [
+        "R.image-separation"
+      ],
+      "still_owned": [
+        "Actual affine marking and trivial stabilizer of the unchanged positive image",
+        "An alleged ambient congruence preserves that exact positive image and hence is the identity",
+        "Actual opposite-branch common metric, protected open agreement, nonzero field and chosen nonzero amplitude"
+      ],
+      "replaces": [
+        "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
+      ],
+      "proof_note": "Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence."
+    },
+    {
+      "id": "E.embedded-image-reparametrization",
+      "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
+      "field": null,
+      "parameter": "embeddedImageReparametrization",
+      "lean_source": "TightVer401/ClassicalEmbeddedReparam.lean",
+      "status": "external_assumed",
+      "reference_kind": "generic corollary of smooth embedded-submanifold inversion",
+      "sources": [
+        {
+          "title": "Ralph Cohen, Bundles, Homotopy, and Manifolds, §3.2.3, Theorem3.3/Proposition3.4",
+          "url": "https://math.stanford.edu/~ralph/math215b/book.pdf",
+          "location": "Same embedded submanifold and smooth inverse composition; the displayed statement is a corollary, not a quoted theorem."
+        }
+      ],
+      "hypotheses": [
+        "Two actual infinity-smooth embedded immersions from the same native torus",
+        "Equal entire images"
+      ],
+      "conclusion": "An actual source homeomorphism smooth in both directions, with Y composed with e equal to X",
+      "consumers": [
+        "R.image-separation"
+      ],
+      "still_owned": [
+        "Actual embedding of the constructed branches",
+        "Derivative-based curvature covariance under the returned smooth reparameterization",
+        "Actual positive image identification and affine marker stabilizer argument"
+      ],
+      "replaces": [
+        "Further native embedded-submanifold inverse packaging as a first-pair blocker"
+      ],
+      "proof_note": "Separate explicit theorem parameter; existing two-field ClassicalExternalResults bundle is unchanged. Grants no common metric, curvature, positive image, marking or noncongruence."
+    },
+    {
+      "id": "E.noncircular-ellipse-axes-recognition",
+      "lean_claim": "TightVer401.MarkerEllipseAxesRecognition",
+      "lean_source": "TightVer401/TorusAffineMarkerEllipseBasic.lean",
+      "field": null,
+      "parameter": "ellipseAxesRecognition",
+      "status": "external_assumed",
+      "typed_interface_status": "root_combined_PASS1325_16912_at2026-10-08T22:20:36UTC; definition and exact application consumers audited; no inhabitant asserted",
+      "reference_kind": "generic elementary corollary of noncircular ellipse center and principal-axis recognition",
+      "sources": [
+        {
+          "title": "OpenStax College Algebra, section8.1 The Ellipse",
+          "url": "https://openstax.org/books/college-algebra/pages/8-1-the-ellipse",
+          "location": "Center and major/minor axis endpoints"
+        },
+        {
+          "title": "TU Delft Linear algebra, section8.2 Proposition8.2.5",
+          "url": "https://interactivetextbooks.tudelft.nl/linear-algebra/Chapter8/QuadraticForms.html",
+          "location": "Principal axes are eigenvector lines of the symmetric quadratic matrix"
+        }
+      ],
+      "hypotheses": [
+        "Arbitrary actual ambient linear isometry L and translation b; arbitrary centers c,d",
+        "Actual unequal positive semiaxes 0<a<e",
+        "Exact affine-isometric image equality of ONE literal standard planar ellipse with its equally sized and equally oriented translate"
+      ],
+      "conclusion": "Center c maps to d; L acts diagonally with an independent sign +/-1 on each ambient coordinate. This allows plane and axis reflections.",
+      "consumers": [
+        "R.marking",
+        "torusAffineMarkerEllipse_pair_stabilizer",
+        "torusAffineMarker_open_annulus_rigid",
+        "torusAffineMarker_actual_meridian_rigid"
+      ],
+      "still_owned": [
+        "Actual marked boundary equals the specific ellipse pair",
+        "Actual boundary permutation and center algebra",
+        "Actual same-meridian asymmetry excludes central inversion",
+        "Actual entire positive image identification",
+        "Actual original torus, B/C bending and new metric, marked curvature threshold and final pair"
+      ],
+      "proof_note": "Elementary COROLLARY, not a verbatim named theorem. Isometry preserves unique long diameter endpoint pair and its center midpoint; distinct long/short extreme endpoint pairs identify both axis lines; orthogonality preserves their 1D normal complement. See overnight-ellipse-background-review.md. Exact ordinary type validated in worker audit a30f703 and reviewed in root; the root combined audit PASS1325/16912 checks its imported consumers; no inhabitant or original marker stabilizer is asserted."
+    }
+  ],
+  "already_proved_background": [
+    {
+      "result": "Annular degree and gradient global inverse",
+      "export": "TightVer401.annular_degree_planarGradient_global_diffeomorphism",
+      "policy": "Reuse actual proof; do not replace by a new grant."
+    },
+    {
+      "result": "Relative saddle smoothing",
+      "export": "TightVer401.exists_relative_saddle_smoothing",
+      "policy": "Reuse actual proof and supply its application inputs."
+    },
+    {
+      "result": "Compact embedding stability",
+      "export": "TightVer401.nativeCompactEmbedding_exists_amplitude_threshold",
+      "policy": "Reuse actual proof."
+    },
+    {
+      "result": "Fixed-open isometry uniqueness with compatible Riemannian instances",
+      "export": "TightVer401.isometry_eq_id_of_fixed_open_compact",
+      "policy": "Retain audited proof; grant only the generic embedded-image corollary above to bypass additional compatibility infrastructure."
+    }
+  ],
+  "classical_results_authorized_on_demand": [
+    "Ordinary inverse/implicit-function theorems, Jordan–Schoenflies, degree, compact C1 embedding openness, tubular neighborhoods, smooth bump functions and partitions of unity, Riemannian isometry uniqueness, Gauss-area and Gauss–Bonnet"
+  ],
+  "on_demand_rule": "Prefer existing OpenAI/Mathlib/engine exports. A needed missing theorem may be added only with its precise statement, valid published reference, application hypotheses and consumer; authorization is not proof credit and never grants the paper-specific exits/connector/completion/torus/pair.",
+  "optional_nonblocking_numeric_budget": {
+    "results": [
+      "Gauss–Bonnet",
+      "Gauss-area change of variables"
+    ],
+    "status": "authorized classical background; an exact actual area/integral interface is not yet registered",
+    "policy": "Do not define a dummy area measure or fabricate numerical 8π proof credit. This is not a first-pair dependency."
+  },
+  "forbidden_construction_grants": [
+    "exists_positive_exits_fixed_core",
+    "exists_visible_connector_radial_positive",
+    "full quadratic filling",
+    "two-sided support completion",
+    "existsCompletedSaddle",
+    "exists_protected_torus_embedding",
+    "affine marking of the chosen closure",
+    "exists_noncongruent_isometric_tight_tori_pair"
+  ],
+  "lean_additional_parameters": [
+    "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
+    "TightVer401.MarkerEllipseAxesRecognition"
+  ]
+}

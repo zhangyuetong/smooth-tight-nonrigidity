@@ -1,0 +1,16 @@
+{
+  "active_formalization": "formalization/ver401",
+  "proof_namespace": "TightVer401",
+  "target": "ver500",
+  "sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "manuscript": "counterexample_long/ver500/tight_tori_dual_radial_rewrite.tex",
+  "objective": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
+  "deferred": [
+    "complete-cylinder applications",
+    "linking and Han-Khuri applications",
+    "general ruled extensions",
+    "Cantor-family and orbit-space topology"
+  ],
+  "retained_checked_core": "ver401 band, bending and support calculus; exact prior snapshot archived",
+  "previous_target_snapshot": "archive/ver401-before-ver500-20261008"
+}

@@ -1,0 +1,255 @@
+{
+  "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "geometry_tree_sha": "802c5efb3142a299fb780105e14b7a9f268c4d32",
+  "source_modules": 102,
+  "compatibility_profile": {
+    "lean": "4.33.0-rc1",
+    "mathlib": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+    "upstream_native_lean": "4.34.1",
+    "upstream_native_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "transformations": [
+    {
+      "module": "OAI.Geometry.IsometricImmersion.Immersions.InducedMetric",
+      "change": "Add an import of the independently proved ite_eq_left compatibility alias."
+    },
+    {
+      "module": "OAI.Geometry.SurfaceImmersion.Geometry.ManifoldMetricCalculus",
+      "change": "Replace the finite-sum derivative proof application with induction and the same derivative addition rule, preserving the full statement including arbitrary index universe."
+    },
+    {
+      "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicExp",
+      "change": "Add an import of the independently proved dite_eq_left compatibility alias."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.MatrixGeometry.SymmetricCoordinates",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of dite_eq_left. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.CrossEmbedding",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of dite_eq_left. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.Equivariance",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of ite_eq_left, ite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.LinearMapSupport",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of ite_eq_left, ite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.MapChainsEquivSimplexAll",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of ite_eq_left, ite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.Maps",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of ite_eq_left, ite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.MemSupportSimplex",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of dite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.SignedVertex",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of ite_eq_left. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.SimplexMemDegreeAll",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of dite_eq_right, ite_eq_right. Statements and remaining proof text are preserved."
+    },
+    {
+      "module": "OAI.Geometry.Borsuk.Simplicial.SubdivSimplex",
+      "change": "Import independently proved decidability-polymorphic aliases and rename only uses of dite_eq_left, ite_eq_left, ite_eq_right. Statements and remaining proof text are preserved."
+    }
+  ],
+  "elaboration_options": {
+    "OAI.Geometry.SurfaceImmersion.Geometry.ManifoldMetricCalculus": [
+      "backward.isDefEq.respectTransparency=false"
+    ],
+    "TightVer401.ManifoldBranching": [
+      "backward.isDefEq.respectTransparency=false"
+    ],
+    "TightVer401.ProjectiveJets": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SmoothConvergence": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledTransverseStrain": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledIntegratingFactor": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledLeaves": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledPrimitives": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ScalarCoordinateCalculus": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledProfiles": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledProfileStrain": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledProfileUniqueness": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledProfileApplication": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledSecondForm": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.AdvectionTransport": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalExtension": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.TwoCoordinateChain": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalTransport": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalSupport": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalNecessity": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.TransportWeightPDE": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledPotentialPDE": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PotentialNecessity": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledPotentialRecovery": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledBendingNecessity": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalSmooth": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalClassification": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.ReciprocalLevelBounds": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledProfileRecovery": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledKernelRepresentation": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PeriodCircle": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.BandProfileSmooth": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PeriodicBandProfile": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PeriodProjectionDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.BandDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.BandProjectionDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.CoordinateBendingPullback": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PeriodicRuledFrame": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.PeriodicRuledBending": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledVectorReduction": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RuledVectorNecessity": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.BandCoordinateLift": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.OpenCoordinateDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.BandLiftStrain": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.GeneralRuledReturn": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.GeneralRuledCurvature": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereGeometry": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportGradient": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportConverse": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportTensor": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportForms": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportCurvature": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereFrame": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereHemisphere": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereCharts": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportTransition": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.RegularLocalInverse": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.GaussMapDifferential": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.GaussInverseCoordinates": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.SphereSupportGlobal": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ],
+    "TightVer401.GaussSupportReconstruction": [
+      "backward.isDefEq.respectTransparency=false (source option)"
+    ]
+  },
+  "upstream_source_mutations": [],
+  "legacy_proof_imports": []
+}

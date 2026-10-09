@@ -1,0 +1,6 @@
+.lake/
+build-logs/
+__pycache__/
+*.pyc
+/kernel-report.json
+/lake-manifest.json

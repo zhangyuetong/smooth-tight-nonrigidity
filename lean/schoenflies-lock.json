@@ -1,0 +1,783 @@
+{
+  "repository": "https://github.com/alonamaloh/schoenflies-lean",
+  "commit": "05a43d29cde026618777db3d4e4316204ccca237",
+  "selection_reason": "Exact Schoenflies dependency pinned by openai/math adc7f1241b42e322a6451854ab7e4b4c146bf78a lean/lakefile.lean",
+  "proof_status": "source download; compilation and kernel audit pending",
+  "native_lean": "4.32.2",
+  "native_mathlib": "v4.32.2",
+  "license": {
+    "path": "LICENSE",
+    "git_blob_sha1": "8dada3edaf50dbc082c9a125058f25def75e625a",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "modules": [
+    {
+      "module": "Schoenflies.Accessible",
+      "path": "Schoenflies/Accessible.lean",
+      "git_blob_sha1": "64b4d4aa059d43c7ca78b8bbce602698306e5b01",
+      "sha256": "a9b131ecde16129fe2abe765dd1860d194fd9222fab41735f72108da1bb4bfa0"
+    },
+    {
+      "module": "Schoenflies.AccessibleJoin",
+      "path": "Schoenflies/AccessibleJoin.lean",
+      "git_blob_sha1": "238252c60d279a297b69301959d1cc5a2ae986e5",
+      "sha256": "5a280eb40da8c839eff65aa9bc23aea44949fa181a0e4cbb2be567cc2e4871f7"
+    },
+    {
+      "module": "Schoenflies.AlternatingCrosscuts",
+      "path": "Schoenflies/AlternatingCrosscuts.lean",
+      "git_blob_sha1": "2cb56bfc913263832809b59d8ef4e466c55bec43",
+      "sha256": "76a2030c7b1b125cef58de4729056869666dd4b37a40e1ee136d493b6385d42a"
+    },
+    {
+      "module": "Schoenflies.ArcCollars",
+      "path": "Schoenflies/ArcCollars.lean",
+      "git_blob_sha1": "60d074d41225085b99cfab747db8a5ac7bdcd374",
+      "sha256": "0c16964faf27ca48bf331f70fcb7e6e3bf0c18331450a3f8b7852e4802ce3297"
+    },
+    {
+      "module": "Schoenflies.ArcComplement",
+      "path": "Schoenflies/ArcComplement.lean",
+      "git_blob_sha1": "661d8e8aa9f247f0e212a4e576627202951053ff",
+      "sha256": "c1de694e5d318c5223e8b8778d24721a1e7b772dd570e4ab960635150f20d5a8"
+    },
+    {
+      "module": "Schoenflies.ArcComplementPrep",
+      "path": "Schoenflies/ArcComplementPrep.lean",
+      "git_blob_sha1": "d67bcedf68390ea6af40d985369e902dc34f3776",
+      "sha256": "d67fd14615711d68950fa3d0051c7d53df0f9c339da05c27c137495da6e2d0e7"
+    },
+    {
+      "module": "Schoenflies.ArcMonotone",
+      "path": "Schoenflies/ArcMonotone.lean",
+      "git_blob_sha1": "2475d8d167725c15fe94658893096d981668fb26",
+      "sha256": "01f2f68150a3dcb558f9fb9f46d1621b21f8a5752d7bf0f3a01de523227e217b"
+    },
+    {
+      "module": "Schoenflies.BoundaryAnchors",
+      "path": "Schoenflies/BoundaryAnchors.lean",
+      "git_blob_sha1": "74d76869ccd63de69bb7ca85c309df1bd5d02232",
+      "sha256": "9d2bd75bb5f128fc5c44cb13b65d9c448709804f70bdf09f2a0502b59ad02366"
+    },
+    {
+      "module": "Schoenflies.BoundaryContinuity",
+      "path": "Schoenflies/BoundaryContinuity.lean",
+      "git_blob_sha1": "e4f3c9c40b6d6ad474d06f754b848421ab99ae8c",
+      "sha256": "a4958df8b8a4822602a3fc667bb18430104b8696e69983809fdea0dddafe0358"
+    },
+    {
+      "module": "Schoenflies.BoundaryContinuity2",
+      "path": "Schoenflies/BoundaryContinuity2.lean",
+      "git_blob_sha1": "155cc07a4eb49d0e26434294206d5cda395a0006",
+      "sha256": "f92980158cf6aeaba27a4a5c77a6c6e00f868a614331aae46eb404a7c9752e3d"
+    },
+    {
+      "module": "Schoenflies.BoundaryCycles",
+      "path": "Schoenflies/BoundaryCycles.lean",
+      "git_blob_sha1": "ffec79677a3e491f3ad4a37fd4511a91eebe55cf",
+      "sha256": "d723c46383ef795ba903e5113fa84e4896900349e88d40100ab3879a374faa43"
+    },
+    {
+      "module": "Schoenflies.BoundaryCyclesGenerated",
+      "path": "Schoenflies/BoundaryCyclesGenerated.lean",
+      "git_blob_sha1": "39415fe7b3c60910d334aa71da33d1a4b0f429a5",
+      "sha256": "0844182010aa4e78401c804cf1033da5ccf3c6d80ca668067190a4ef075ee197"
+    },
+    {
+      "module": "Schoenflies.Bounded",
+      "path": "Schoenflies/Bounded.lean",
+      "git_blob_sha1": "7860ad6f0c967675924107a6c71119bfefe5b9b0",
+      "sha256": "eefb83941cf808e288c487ecd32ac4f322c6472d70c6f45cffbf4f861f8bb2e1"
+    },
+    {
+      "module": "Schoenflies.CellulationInvariants",
+      "path": "Schoenflies/CellulationInvariants.lean",
+      "git_blob_sha1": "8512c05ebcf466be1eb597f23f4cc3b25f63a271",
+      "sha256": "ab33cbd5309b0112be78961e513308e4ade758db1e78670d0c22691e49f25c81"
+    },
+    {
+      "module": "Schoenflies.CombinatorialInvariance",
+      "path": "Schoenflies/CombinatorialInvariance.lean",
+      "git_blob_sha1": "6e513e315972e1edb73a8b66e60c5f153b20eedb",
+      "sha256": "d91a3612dd8dade159460bb6661441477f6f767ab511d552a5a401aa631f1f19"
+    },
+    {
+      "module": "Schoenflies.CommonSubdivision",
+      "path": "Schoenflies/CommonSubdivision.lean",
+      "git_blob_sha1": "088f8f2f99a7efbc2c38b5fdd07fdb9e18df3411",
+      "sha256": "66f2b1f39a7a65c9af9576e13053a8d1bea35fd36235a28bd1381fe9aba65209"
+    },
+    {
+      "module": "Schoenflies.Concatenate",
+      "path": "Schoenflies/Concatenate.lean",
+      "git_blob_sha1": "0a51033802fc3c8570c81ab66fc0b9e55f38a044",
+      "sha256": "e3553ba8c9f41fe2908a69a86803c8d515af0e5f77150efaf0a723ba69945b77"
+    },
+    {
+      "module": "Schoenflies.CrosscutAtMostTwo",
+      "path": "Schoenflies/CrosscutAtMostTwo.lean",
+      "git_blob_sha1": "244e09b6e61e569550e4a3949b4fc2c208b56b99",
+      "sha256": "e88b44d3521e1f26a0c25addf39c979183ed0e720f5437562143e8af20e3154a"
+    },
+    {
+      "module": "Schoenflies.CrosscutCells",
+      "path": "Schoenflies/CrosscutCells.lean",
+      "git_blob_sha1": "ee8e03203087f07b086e190aa76f19248fe8c090",
+      "sha256": "2d78bbf21565f3ae3104c0a24b5999a77af6492939967e4534a6c508759ecf6c"
+    },
+    {
+      "module": "Schoenflies.CrosscutEncloses",
+      "path": "Schoenflies/CrosscutEncloses.lean",
+      "git_blob_sha1": "fd9cab9cf994e6cdbb7624afd0444d2b47277466",
+      "sha256": "63b0b8c62f4bd165974f922f3c8c15de4136fbf9f30153b875005388f7c580b4"
+    },
+    {
+      "module": "Schoenflies.CrosscutExists",
+      "path": "Schoenflies/CrosscutExists.lean",
+      "git_blob_sha1": "f79d9e1e7af9b40e4cb357614667e234ad020496",
+      "sha256": "5f414fe4f69b7e28cde7e28f70d8b8628dbcbdb5a486aca119913281b0e2911a"
+    },
+    {
+      "module": "Schoenflies.Curve",
+      "path": "Schoenflies/Curve.lean",
+      "git_blob_sha1": "8c07bfd4a662528f4d6681443f7901c79330fa69",
+      "sha256": "1012c9dbd15677efe36dba37b040d7de3c765ab513eec0138c1af8514a3dd966"
+    },
+    {
+      "module": "Schoenflies.Direction",
+      "path": "Schoenflies/Direction.lean",
+      "git_blob_sha1": "b85ed2ae42d26dcf23b88ce6e91c90e8748c7773",
+      "sha256": "1a0a4d0fc5be8f88c354fa7398c26fc0fa442f896f8b815aa0c3480c0da8e872"
+    },
+    {
+      "module": "Schoenflies.Endgame",
+      "path": "Schoenflies/Endgame.lean",
+      "git_blob_sha1": "211a08ecc2d685f0f690fc5ccf1f36d55d048cc4",
+      "sha256": "d59775eb6102cd763d5b9b71abb1be8f8210b5dba2469b14c7f40bdc6b52e814"
+    },
+    {
+      "module": "Schoenflies.FaceCycles",
+      "path": "Schoenflies/FaceCycles.lean",
+      "git_blob_sha1": "6e3c8c004b8c738f2f16bf161cbc0d37a6690420",
+      "sha256": "3b0c3bf001f02ac8c91e6474c19c71b0fae4cfab0a3009363da7abc985fae2c5"
+    },
+    {
+      "module": "Schoenflies.FaceCyclesLand",
+      "path": "Schoenflies/FaceCyclesLand.lean",
+      "git_blob_sha1": "93ea52a93a24e0376776f6914cc9813e03b28471",
+      "sha256": "bd7a40af1eae566357f65535fa8f3cd0b3f8352d1599d33d3623ccf1f422a097"
+    },
+    {
+      "module": "Schoenflies.FaceCyclesProof",
+      "path": "Schoenflies/FaceCyclesProof.lean",
+      "git_blob_sha1": "c1b7c8f41da3b463fea44d5ed6d099a3423e2e35",
+      "sha256": "46902b10c30553fd56099fcc5e1f491391f2d9596631ddd4f2f4284ba5721a70"
+    },
+    {
+      "module": "Schoenflies.FiniteTransfer",
+      "path": "Schoenflies/FiniteTransfer.lean",
+      "git_blob_sha1": "7a3b8d5d779b5359cdc1c0ffa5c5f3adcc3bae9b",
+      "sha256": "d993eda998dca866814a82472788b907df9c7ff52b3dc00e94f523cb21445a4e"
+    },
+    {
+      "module": "Schoenflies.FiniteTransferTarget",
+      "path": "Schoenflies/FiniteTransferTarget.lean",
+      "git_blob_sha1": "008dc554acc3982e87feb730ddcad17ff3921021",
+      "sha256": "30d313438eb7644d35fe99aa4b83183808d12dcaf7748ef7ddcdcbf415e373bb"
+    },
+    {
+      "module": "Schoenflies.FiniteTransferTargetMesh",
+      "path": "Schoenflies/FiniteTransferTargetMesh.lean",
+      "git_blob_sha1": "5381088011c3b591935b17e3f49c5592bc3124a5",
+      "sha256": "4ab94a2fd4276283722f52daf4d77133442d9edcc42ad949390ec21312c25048"
+    },
+    {
+      "module": "Schoenflies.FreshAccess",
+      "path": "Schoenflies/FreshAccess.lean",
+      "git_blob_sha1": "f080b8e53126bbb3b000ddab9f67dcb2336f72ec",
+      "sha256": "b9f76dbd1e797efff58b6f6f651143be0e12031cfa237885ac18a8a43652413e"
+    },
+    {
+      "module": "Schoenflies.FreshDenseSelection",
+      "path": "Schoenflies/FreshDenseSelection.lean",
+      "git_blob_sha1": "f1ac83702dfb8a651675ee3054900ecfa3e1b571",
+      "sha256": "d8b0901b5ddb6f83c35c94368bebe065c90e8bc8170b23a2f6bbeb23140bfccf"
+    },
+    {
+      "module": "Schoenflies.GeneralCrosscut",
+      "path": "Schoenflies/GeneralCrosscut.lean",
+      "git_blob_sha1": "32e30b919035203aeb7299706e0181efe0ddac12",
+      "sha256": "46f809edaf539464e73dfa6895467e54bb553c5aaf843397142ac484ef4446e9"
+    },
+    {
+      "module": "Schoenflies.GeneratedStructure",
+      "path": "Schoenflies/GeneratedStructure.lean",
+      "git_blob_sha1": "fd85ed16c4edfd9f733fca1fcd2a3ea8144f2173",
+      "sha256": "ef44eb227a7f82e5c02527947c4a95eb1c5ebc92c5b0d6809570f0139b0922b4"
+    },
+    {
+      "module": "Schoenflies.Graph.Component",
+      "path": "Schoenflies/Graph/Component.lean",
+      "git_blob_sha1": "31c228417d3f62d27cf7388f519b5d538d256fa0",
+      "sha256": "faf45d7999899747d0ccf0057f2cc07235ea53656e5b9e2b012a518b7bda9de2"
+    },
+    {
+      "module": "Schoenflies.Graph.Cycle",
+      "path": "Schoenflies/Graph/Cycle.lean",
+      "git_blob_sha1": "8ae81e022fd6a9c5f6ea047ff55b68b7337b166d",
+      "sha256": "e285b38522fe21385178ff47a0c47228284b7daaf8a80654551821dc31be269b"
+    },
+    {
+      "module": "Schoenflies.Graph.CycleJordan",
+      "path": "Schoenflies/Graph/CycleJordan.lean",
+      "git_blob_sha1": "cd8b47682cba16a04d69b064a9a1930a8e47e564",
+      "sha256": "9311150e8c6c247126106cfad7c5913f473aa9e957eed06462bc582afc0b1755"
+    },
+    {
+      "module": "Schoenflies.Graph.Degree",
+      "path": "Schoenflies/Graph/Degree.lean",
+      "git_blob_sha1": "c5670d08367c6eacb8bf5030b5d71ac2a64afec3",
+      "sha256": "d6df00066ff52b15b4d140b80848416856ca289b687dbdb512f0529212048a52"
+    },
+    {
+      "module": "Schoenflies.Graph.Drawing",
+      "path": "Schoenflies/Graph/Drawing.lean",
+      "git_blob_sha1": "b2618663b0fef2f75895154d0c62cc24d7aa9aaa",
+      "sha256": "471a7a68dd9787e0f5ebaed4182841cdb0588c4d668218213c50dd8449a9e727"
+    },
+    {
+      "module": "Schoenflies.Graph.Ear",
+      "path": "Schoenflies/Graph/Ear.lean",
+      "git_blob_sha1": "edf95b10b29febad01344bf795d04dc4f6e8a52f",
+      "sha256": "94f22b16d56f6f914a1d567fddaa4a5ee71cc77c47df52c650ad529d1a35f72a"
+    },
+    {
+      "module": "Schoenflies.Graph.K33",
+      "path": "Schoenflies/Graph/K33.lean",
+      "git_blob_sha1": "bc041711461d2ca099d3f52164bff0700b09584b",
+      "sha256": "4d3876924aa0a59d4bdf72f239b160cb96f0972181fbf580249144d65b523169"
+    },
+    {
+      "module": "Schoenflies.Graph.K33Closed",
+      "path": "Schoenflies/Graph/K33Closed.lean",
+      "git_blob_sha1": "6295ee8e00b5f58d2f2b7976259d07fedff54cb6",
+      "sha256": "0985231b92961325346079ac5f8668a3cbe6c4b81b12e94068b282c8bfffce53"
+    },
+    {
+      "module": "Schoenflies.Graph.K33Land",
+      "path": "Schoenflies/Graph/K33Land.lean",
+      "git_blob_sha1": "683d055e397ed7ba00028d42de36b3c6153bee8c",
+      "sha256": "1118ffc1dfac6745857c382104f9945d84857c3622b27661a42a34a2586ee307"
+    },
+    {
+      "module": "Schoenflies.Graph.K33Planar",
+      "path": "Schoenflies/Graph/K33Planar.lean",
+      "git_blob_sha1": "7a08c07b2ae80ef97960522f506f4a2cc8a12454",
+      "sha256": "65c4562448c32f9fc5b86440d826025498f07ae61837a62615b9b86476bc315e"
+    },
+    {
+      "module": "Schoenflies.Graph.OuterFace",
+      "path": "Schoenflies/Graph/OuterFace.lean",
+      "git_blob_sha1": "05e6d92aef69e7b019cfc109fc3a8c13bec72fcb",
+      "sha256": "1da449c396297c2cd46c66ff8497cf76903e80b336d3ebf322871a7257769499"
+    },
+    {
+      "module": "Schoenflies.Graph.PathGraph",
+      "path": "Schoenflies/Graph/PathGraph.lean",
+      "git_blob_sha1": "de0a1751aa57d367bbd8f0f87a7b486620460c1b",
+      "sha256": "498c0654288f10a2ace3f064d3604fe40d2714c9b8b4c022819ac47594af9bc9"
+    },
+    {
+      "module": "Schoenflies.Graph.Redrawing",
+      "path": "Schoenflies/Graph/Redrawing.lean",
+      "git_blob_sha1": "00f0aad0b9ed729f06e82c812df07a69d0112ba1",
+      "sha256": "3686ccebb23eb7fe4f1879f32521e4a53b7295d942944a47fd7b51073153c7ef"
+    },
+    {
+      "module": "Schoenflies.Graph.Relabel",
+      "path": "Schoenflies/Graph/Relabel.lean",
+      "git_blob_sha1": "80f45f9174790654199050e29f89f70d4f4513a8",
+      "sha256": "1b0e5066b9b1ac4fc350a3d71c4b7b5c6dbfd71af95aca019cf3003d9cc7ac64"
+    },
+    {
+      "module": "Schoenflies.Graph.RelativeEar",
+      "path": "Schoenflies/Graph/RelativeEar.lean",
+      "git_blob_sha1": "1c5c58c642c0d0c683fa4ef32599058c434c5979",
+      "sha256": "2f7c69be1cb2fd0b4ea571d9efcfde32801f1dff4f2d3d2acae398f4602bfc5f"
+    },
+    {
+      "module": "Schoenflies.Graph.Tree",
+      "path": "Schoenflies/Graph/Tree.lean",
+      "git_blob_sha1": "bd8616a8e4a65997d061637ebc6ddbb3b72e1d88",
+      "sha256": "94b0c9b4bdf40e5e3dbeeb239dac4fd46089bc63fadc20214c9f3297a68a6c4c"
+    },
+    {
+      "module": "Schoenflies.Graph.TwoConnected",
+      "path": "Schoenflies/Graph/TwoConnected.lean",
+      "git_blob_sha1": "d4a16de6dd31dd9a6cb36f41629494eec71be192",
+      "sha256": "1f05babe5c2ca5f441de751092bd6e816076ef1548d58e178cb465c12d78729c"
+    },
+    {
+      "module": "Schoenflies.Graph.TwoPaths",
+      "path": "Schoenflies/Graph/TwoPaths.lean",
+      "git_blob_sha1": "6c410435981c261ea842cf41057fe12f1f9b5eda",
+      "sha256": "bac74a60329e9c02740f95d4a43f8f3bea5b29d2fc50005084059b67a5135d39"
+    },
+    {
+      "module": "Schoenflies.Graph.VertexSquares",
+      "path": "Schoenflies/Graph/VertexSquares.lean",
+      "git_blob_sha1": "8922f3ef7ac75206e572a204b0b9a91f8b2b8008",
+      "sha256": "9f3b0834b06c3cc090a247522d8975fb045d81c39756589790a7be25d758b899"
+    },
+    {
+      "module": "Schoenflies.Graph.Walk",
+      "path": "Schoenflies/Graph/Walk.lean",
+      "git_blob_sha1": "20ae8e5d7b77df194348d030f0f46eb74ed80a22",
+      "sha256": "dbd2b1d1b6de760cc78d5419bc37a9ea4f005d69fd919a0c717a6d39264a9c5e"
+    },
+    {
+      "module": "Schoenflies.GridAttach",
+      "path": "Schoenflies/GridAttach.lean",
+      "git_blob_sha1": "5e239bc8d632fb316b6117a62050a46a4b0b11fb",
+      "sha256": "daeffdd1fa5e16ef7ab204592e119154d97a2a300476e754b1bcb3bcdd6408ca"
+    },
+    {
+      "module": "Schoenflies.InitialGenerated",
+      "path": "Schoenflies/InitialGenerated.lean",
+      "git_blob_sha1": "dc70b3b274b2d3991fc76dab247539f854e0396d",
+      "sha256": "3636a149ca68ff8dfa2bf41d49f9d7f05f3d0bea1baf7722c6ba840e70925008"
+    },
+    {
+      "module": "Schoenflies.InitialOuterCycle",
+      "path": "Schoenflies/InitialOuterCycle.lean",
+      "git_blob_sha1": "dec09f961a228f386909d39e642cceac903cb4f2",
+      "sha256": "075f30065f227e8347a8ba39fe9ed575ae9bc11ae4939a395836754e7da431f9"
+    },
+    {
+      "module": "Schoenflies.InitialPair",
+      "path": "Schoenflies/InitialPair.lean",
+      "git_blob_sha1": "a5ff17bd279702a8d05ba079f5a0f7e839173b96",
+      "sha256": "e2eee2d80840c81fa0c1025ae5fda9de2ab9cda1eca707670524a28586a710a6"
+    },
+    {
+      "module": "Schoenflies.InitialPairFixed",
+      "path": "Schoenflies/InitialPairFixed.lean",
+      "git_blob_sha1": "080d0f9f35226e12566d4e12633e629f70e9da3a",
+      "sha256": "f805fb61c272be2ea6feb81b4d603071c787de24e5d0a6aa4c92c675aaaac6a6"
+    },
+    {
+      "module": "Schoenflies.InteriorHomeomorphism",
+      "path": "Schoenflies/InteriorHomeomorphism.lean",
+      "git_blob_sha1": "1f9ee19c7c9921ab8eb267165923b6dc4b31add7",
+      "sha256": "b946fe0a4bdae6b547547e985bf00e532100be753e7f84ada08fa93883d38c73"
+    },
+    {
+      "module": "Schoenflies.Inversion",
+      "path": "Schoenflies/Inversion.lean",
+      "git_blob_sha1": "fed03788f50a6613f63761e64ef557df0d2f7919",
+      "sha256": "9bf5bb6285ef92ef185773dfa01ae548071b7c0b24fe01c7d2c8dee949868a06"
+    },
+    {
+      "module": "Schoenflies.Jordan",
+      "path": "Schoenflies/Jordan.lean",
+      "git_blob_sha1": "fef140542d896482654ce4d2aa2fd65d25a6930e",
+      "sha256": "cb9d40c0571a02bcfc2588bf0aef6b354ab10199541ff9b09e2de3a89400fe98"
+    },
+    {
+      "module": "Schoenflies.JordanClosed",
+      "path": "Schoenflies/JordanClosed.lean",
+      "git_blob_sha1": "17cbe435f506982ea4c32ee91e528f5a9d0ae5db",
+      "sha256": "1aa3cf9f19ae8b522096f475949383efedaef8a7fdf08bfbdfd951f865064f48"
+    },
+    {
+      "module": "Schoenflies.JordanSchoenflies",
+      "path": "Schoenflies/JordanSchoenflies.lean",
+      "git_blob_sha1": "a41f044dc40b767270486b5a0e0c15599c42a20f",
+      "sha256": "cf3ff150a78245d9fe6acab5de1dfb6cff883768bfde39a3be9cf73fc8126ddb"
+    },
+    {
+      "module": "Schoenflies.JordanSeparates",
+      "path": "Schoenflies/JordanSeparates.lean",
+      "git_blob_sha1": "8871a30c1b9788dc10ccd9ddf00652001891a937",
+      "sha256": "96669ed703a9c65b518c0f150a3c5a21c8032dd89899590f3b9935c296bc37c1"
+    },
+    {
+      "module": "Schoenflies.LimitMap",
+      "path": "Schoenflies/LimitMap.lean",
+      "git_blob_sha1": "9b8ffa97af8c803d507e6ff82287f425cc204e44",
+      "sha256": "7bd2650a8cf0e036a0e9e15f07a437dd5b69f222e2fa377c0039cf5e7bc15e6c"
+    },
+    {
+      "module": "Schoenflies.Line",
+      "path": "Schoenflies/Line.lean",
+      "git_blob_sha1": "a6c3d870de5e7237110ec81e81810d5c1571672b",
+      "sha256": "827551a4c6573c86325b0dc86b430e3915219abe5d5fb984cf4fbc9542d0bc6d"
+    },
+    {
+      "module": "Schoenflies.LocalGrid",
+      "path": "Schoenflies/LocalGrid.lean",
+      "git_blob_sha1": "4749022d8960d50e13ab11bd4403a4b28455f550",
+      "sha256": "7b26c82a930ca5b7b56382c948f2790a97222a584a23fd8125089f7d879e64ef"
+    },
+    {
+      "module": "Schoenflies.LocallyPolygonal",
+      "path": "Schoenflies/LocallyPolygonal.lean",
+      "git_blob_sha1": "8b92f70d50523393a5798a0f8add7b90a6cb2c7e",
+      "sha256": "c1e6a1a3ae843109be42a3e5716afc584a28635ae10f7ce0fc75c5995be33499"
+    },
+    {
+      "module": "Schoenflies.MatchedArc",
+      "path": "Schoenflies/MatchedArc.lean",
+      "git_blob_sha1": "92fb5eac2b23293afd48ec11ce198bfe6baf920f",
+      "sha256": "0a43e7257d562158e37dafd12c0c6b0699d0ace9b38f410c1b110c20c0eb974e"
+    },
+    {
+      "module": "Schoenflies.MatchedSplit",
+      "path": "Schoenflies/MatchedSplit.lean",
+      "git_blob_sha1": "7263fa07fcd3ee73066b52eea65a3c717d58ee3a",
+      "sha256": "4d266c9718f585875e0cd9a1972280a1b6f90d692573bedbc2641d82ec92e096"
+    },
+    {
+      "module": "Schoenflies.ModelCurve",
+      "path": "Schoenflies/ModelCurve.lean",
+      "git_blob_sha1": "ecb81e75a6561389be9eb19c341e7b158660eddc",
+      "sha256": "075a680ec63d14b63ac19a129eb6a6eb906f50b8f42089ae8837e00a1087b16e"
+    },
+    {
+      "module": "Schoenflies.OuterChain",
+      "path": "Schoenflies/OuterChain.lean",
+      "git_blob_sha1": "913ec88bbb969fdda71710bed81c17a4e88b21c8",
+      "sha256": "f1cb42e16523faac1ee51bfa5a833c93329b5a612124732877e8132dae2ebeb2"
+    },
+    {
+      "module": "Schoenflies.OuterChainClosed",
+      "path": "Schoenflies/OuterChainClosed.lean",
+      "git_blob_sha1": "60d349981a1a770844a538b0272e6a477de04d09",
+      "sha256": "0b31d697e88b2be10d5e9499aeef5783bc805d0bd3bb7a20a3c6071cf1ae4689"
+    },
+    {
+      "module": "Schoenflies.Overlay",
+      "path": "Schoenflies/Overlay.lean",
+      "git_blob_sha1": "a87f7a1fa638bab23bd32c2d05e6b6bc38e24c19",
+      "sha256": "f50c21fe18c2b6c60acb3861359257da68164a453cf9842b3899c1ad8f67ddbf"
+    },
+    {
+      "module": "Schoenflies.OverlayExtension",
+      "path": "Schoenflies/OverlayExtension.lean",
+      "git_blob_sha1": "5bc54e390a1188498c8acbc2c21838284ccd480c",
+      "sha256": "1a1be8be46e23a1c69d8a05308f95ce9e6ab06ee0f39bc74b7f5479b8fb2bd4f"
+    },
+    {
+      "module": "Schoenflies.OverlayGraph",
+      "path": "Schoenflies/OverlayGraph.lean",
+      "git_blob_sha1": "077bf74afeff7b91ed42c06dbe0f3b6327e95a71",
+      "sha256": "72c8343d4d23156111db104ba87331ce44192938af86cc40dd835d807bb65eec"
+    },
+    {
+      "module": "Schoenflies.Parity",
+      "path": "Schoenflies/Parity.lean",
+      "git_blob_sha1": "e389fdb89b9b229bac2e24249a366ffe2918f1b4",
+      "sha256": "9ae7ff915e8289aa774d3c245dea4595a40d89e26449a7d605301dba069a1351"
+    },
+    {
+      "module": "Schoenflies.ParitySplitting",
+      "path": "Schoenflies/ParitySplitting.lean",
+      "git_blob_sha1": "189521180c974c6093f47f76aae017cdb10593b6",
+      "sha256": "4f9940ef3e2068f2f0eb10caa5137c7fb62ab281bacdaf1ff6b10266aae2e777"
+    },
+    {
+      "module": "Schoenflies.Plane",
+      "path": "Schoenflies/Plane.lean",
+      "git_blob_sha1": "fa6a8d06a484a092be405473901fc8b10fa9ad70",
+      "sha256": "c313e109f1ce99adcc4b1e7d551c0008f7887f448c496520c0a26a0315c8a0da"
+    },
+    {
+      "module": "Schoenflies.PolyArcRealize",
+      "path": "Schoenflies/PolyArcRealize.lean",
+      "git_blob_sha1": "986881e927f070fcd598f6b1729129f0c4d18ea5",
+      "sha256": "43e1ba25354cc20ac203566f97d2531c7f6414c0776ee506a11b0ca01752c8be"
+    },
+    {
+      "module": "Schoenflies.PolyLocal",
+      "path": "Schoenflies/PolyLocal.lean",
+      "git_blob_sha1": "2612e5052fafe49e6a4c128de706a54192bd8f99",
+      "sha256": "003f7362a5898ca9da461ea34259022d8d7ceb66b49e9cd8453f0933ad5ae9b9"
+    },
+    {
+      "module": "Schoenflies.PolyPath",
+      "path": "Schoenflies/PolyPath.lean",
+      "git_blob_sha1": "032c12083db2c8775385bcf847c0e15361c47e89",
+      "sha256": "0ccc8e266ea21bb6de49016efe80a968213b275093d42f5e65e0914a13b181cd"
+    },
+    {
+      "module": "Schoenflies.PolygonBridge",
+      "path": "Schoenflies/PolygonBridge.lean",
+      "git_blob_sha1": "8e08e359f99a86be368acfccd0da3d044e75190f",
+      "sha256": "493a1096d134e2b07bc08206fdedce78c67f63788cca1c4bd12dfae7ca6b0455"
+    },
+    {
+      "module": "Schoenflies.Polygonal",
+      "path": "Schoenflies/Polygonal.lean",
+      "git_blob_sha1": "48a48243cc24ffc57030355d383b4beda8b46d17",
+      "sha256": "b1ee5d4f6e71b2bff548848be04e9f47a78373815aefb75670167a659926f541"
+    },
+    {
+      "module": "Schoenflies.PolygonalCarrier",
+      "path": "Schoenflies/PolygonalCarrier.lean",
+      "git_blob_sha1": "a42b6ca968dde3e9e2eea9b3d046537e40f2fef9",
+      "sha256": "efce11826f4530941641578af77dbfe6349f99430c750ac525a1f6a06d7d52da"
+    },
+    {
+      "module": "Schoenflies.PolygonalCrosscut",
+      "path": "Schoenflies/PolygonalCrosscut.lean",
+      "git_blob_sha1": "1e6e51a31497703a1030d14d550ae8ea31c84b2e",
+      "sha256": "f5c8392060c5a5fab7264210eb693870d71545aea2e31b9313ede3a8bc16d184"
+    },
+    {
+      "module": "Schoenflies.PolygonalJordan",
+      "path": "Schoenflies/PolygonalJordan.lean",
+      "git_blob_sha1": "c0f1a2c0683c54872eeccab373b7d5d7d903ac42",
+      "sha256": "f05c159848a12cdc5cc3e46705b5fe3f2e313e0c421b75d6c28b443918be35f0"
+    },
+    {
+      "module": "Schoenflies.PrePolygonArc",
+      "path": "Schoenflies/PrePolygonArc.lean",
+      "git_blob_sha1": "74c1074ffb52c1fe624467eeae1d4369ab27c22f",
+      "sha256": "87e8437b0a1ec7b0d6719929465fa51c41ac356482901b12270dcc414abee752"
+    },
+    {
+      "module": "Schoenflies.PrePolygonSep",
+      "path": "Schoenflies/PrePolygonSep.lean",
+      "git_blob_sha1": "2075edb4ab02792a8d37e7918215df8e1fbf2c47",
+      "sha256": "871a3b34016b8d7de247608971fe762dc6e1327e0e0a5816a00424866a8213c0"
+    },
+    {
+      "module": "Schoenflies.QuantitativeForwardStages",
+      "path": "Schoenflies/QuantitativeForwardStages.lean",
+      "git_blob_sha1": "8b2819667f2773332caf8ea562706c1bdcaf0c20",
+      "sha256": "06abcf556cf14fa115a27600cb14d4b17f3e3c1811d6671afe9afe49597719ec"
+    },
+    {
+      "module": "Schoenflies.QuantitativeRecursion",
+      "path": "Schoenflies/QuantitativeRecursion.lean",
+      "git_blob_sha1": "382ba7b2b62e3318a09f79ad51462c3db75b8376",
+      "sha256": "2f067044548f4eac74006367cafcd916eaf3539a38750c026ccd08a595d07e01"
+    },
+    {
+      "module": "Schoenflies.QuantitativeStages",
+      "path": "Schoenflies/QuantitativeStages.lean",
+      "git_blob_sha1": "ae3ff2db81eeb3f3c7e20e83a3b0409ccb0fa8d3",
+      "sha256": "6da7ec7779a709662e1ba670231d4383835f7f4f598bf66908977ab8691018d3"
+    },
+    {
+      "module": "Schoenflies.Realization",
+      "path": "Schoenflies/Realization.lean",
+      "git_blob_sha1": "d08a2ba78dd6a8593aee1ac2c56b6c3be1185230",
+      "sha256": "db11512df754eaaaaccce32461b1552f4ac5650b4dab104c40c313b2ea3df944"
+    },
+    {
+      "module": "Schoenflies.RealizeSplit",
+      "path": "Schoenflies/RealizeSplit.lean",
+      "git_blob_sha1": "a3c6ca760fcf70ca79de0e805b6a58ed567332bc",
+      "sha256": "c54c696116f135b23c35d6ae5352c008ac19c1bb66bc015f330b5bb1b4b2a92e"
+    },
+    {
+      "module": "Schoenflies.RealizeSubdiv",
+      "path": "Schoenflies/RealizeSubdiv.lean",
+      "git_blob_sha1": "4c6e1fd2cb7a97399da1ce2e54643ce8d2262c85",
+      "sha256": "3e6b546a6be914575da42d0787cde76623413cca5f8f7cc78a10a1732a4d6100"
+    },
+    {
+      "module": "Schoenflies.RealizeSubdivHomeo",
+      "path": "Schoenflies/RealizeSubdivHomeo.lean",
+      "git_blob_sha1": "e9a86f6bb1df37d745a48696c18568f1373f29f0",
+      "sha256": "9ea0a6c68af50af2ba347098323d987c8869c5e7372fc4ca1bdf6bbe3d73d16f"
+    },
+    {
+      "module": "Schoenflies.RefinementStars",
+      "path": "Schoenflies/RefinementStars.lean",
+      "git_blob_sha1": "6c66def8d2cc27bac3191aaee4b352c9d2d8cb62",
+      "sha256": "491e27ebf5f5e165d42d3d99ff60c65d8262ed573aebcf37f628a38167e6ec63"
+    },
+    {
+      "module": "Schoenflies.SegmentCut",
+      "path": "Schoenflies/SegmentCut.lean",
+      "git_blob_sha1": "33b4cb4f92190f4e7228e5f3768f71f4d42029f3",
+      "sha256": "dff4ce54d75eaf877943abee157deb25d13c56c591b309304482899a301c2a4b"
+    },
+    {
+      "module": "Schoenflies.SegmentMeet",
+      "path": "Schoenflies/SegmentMeet.lean",
+      "git_blob_sha1": "58b48ef13bc22f5fd2e1a00988fa96fadce408c1",
+      "sha256": "3e06022a7a83b53bcef668031e3f39c7887950533e8b9c045422abe25ff14fcc"
+    },
+    {
+      "module": "Schoenflies.SegmentOrder",
+      "path": "Schoenflies/SegmentOrder.lean",
+      "git_blob_sha1": "adb6ac20453f8a807dafa99b230f32f0ed49f5c3",
+      "sha256": "3ef1fb13ac15c0fbf6cbe1d398c7f5449de6d45c7cbf4abd2337903c0d7fc181"
+    },
+    {
+      "module": "Schoenflies.SimpleArc",
+      "path": "Schoenflies/SimpleArc.lean",
+      "git_blob_sha1": "6267903dfd95c09b6d76b78941560ab7e3610d54",
+      "sha256": "447ad1c9811c950543a3707ef194cba607c8e93491bb7a68755d9124b201ce54"
+    },
+    {
+      "module": "Schoenflies.SkeletonAccess",
+      "path": "Schoenflies/SkeletonAccess.lean",
+      "git_blob_sha1": "b521381f658866999854685623d0afc5bb703098",
+      "sha256": "c8e2275706a77b415b21e61633a61af7604e408eeea259f3b2c6573b84f3fc6f"
+    },
+    {
+      "module": "Schoenflies.SkeletonLocal",
+      "path": "Schoenflies/SkeletonLocal.lean",
+      "git_blob_sha1": "82578e659cd8520121bf6708c1dc89fd8f6d5c5f",
+      "sha256": "817df7e84bf886d2efbccf74ad35d35002da38f726c0f6b1cab45cb6309f71f3"
+    },
+    {
+      "module": "Schoenflies.SkeletonSectors",
+      "path": "Schoenflies/SkeletonSectors.lean",
+      "git_blob_sha1": "95b4728a182ddb6e1e8f3ea732ee55ef8d5df6dd",
+      "sha256": "ce635fe449c8017aca5405393332f267440f1843069020c4c0050b6d87bf04a8"
+    },
+    {
+      "module": "Schoenflies.SourceAttachment",
+      "path": "Schoenflies/SourceAttachment.lean",
+      "git_blob_sha1": "b636cb6f920a8d34a737c8251e8b16f8aed7290f",
+      "sha256": "abb0417d36a6dcfd54b598da2dbdd1688b657cf1f4606b01741865407e656214"
+    },
+    {
+      "module": "Schoenflies.SourceJoining",
+      "path": "Schoenflies/SourceJoining.lean",
+      "git_blob_sha1": "12c1b9afefcce7243b842849d52eccc65e4afe0a",
+      "sha256": "75f49a7c4a847d7cf4e3f00126ae28930b704bcfcc31d57951093b3b7b181756"
+    },
+    {
+      "module": "Schoenflies.SourceOverlay",
+      "path": "Schoenflies/SourceOverlay.lean",
+      "git_blob_sha1": "3d8df47f14147c314bf36287094f10e81aa0b04d",
+      "sha256": "d3f414283230e32be6e810b9d53ea093c160e709f69178babd0a155e80245d5d"
+    },
+    {
+      "module": "Schoenflies.Square",
+      "path": "Schoenflies/Square.lean",
+      "git_blob_sha1": "f9a7c30bfb81a71a77aa4b958d16855bafcdcc9e",
+      "sha256": "29a0129a6ae5f88ef6536d026f9f40a66330ae8c8c3e7d656a79b17347695a69"
+    },
+    {
+      "module": "Schoenflies.SquareCycle",
+      "path": "Schoenflies/SquareCycle.lean",
+      "git_blob_sha1": "9718fe58b87cfd9299b3e9846aeca9d6a96e85fb",
+      "sha256": "3903ea1504204f444fcc783d31a063941a2645feb1d37aed341a158f1e3da2d6"
+    },
+    {
+      "module": "Schoenflies.SquareMesh",
+      "path": "Schoenflies/SquareMesh.lean",
+      "git_blob_sha1": "ba5416f66b4cc280f3f54c4291239786d4e4ff09",
+      "sha256": "6c830b169f579cd7a1e170edac1079e3be793b0cd96c642327b8a6ba7e58b161"
+    },
+    {
+      "module": "Schoenflies.SquareMeshClosed",
+      "path": "Schoenflies/SquareMeshClosed.lean",
+      "git_blob_sha1": "ac651c24a8b8bc8dae91d7a7b2e96241f13415a7",
+      "sha256": "1ce1c3515d4826f8dbaf5ec0596068810899b5402051127f52ce9811bf152f50"
+    },
+    {
+      "module": "Schoenflies.SquareMeshConnected",
+      "path": "Schoenflies/SquareMeshConnected.lean",
+      "git_blob_sha1": "be8f8f9d2f17bf9e3e46c381c9212d3955d67210",
+      "sha256": "2715448dc13a21aadbc024b1f4ce2b36ebec46755bd7ff2c6f56396e5682c3a2"
+    },
+    {
+      "module": "Schoenflies.SquareMeshFixed",
+      "path": "Schoenflies/SquareMeshFixed.lean",
+      "git_blob_sha1": "4ad446007871dcd6b68455c075d241d7a37420fd",
+      "sha256": "bc75465fafeb2131de883f0731129ea18402d0a185ffce0bf68ca893a2492918"
+    },
+    {
+      "module": "Schoenflies.SquareMover",
+      "path": "Schoenflies/SquareMover.lean",
+      "git_blob_sha1": "9d2a0317ab8cab648c320b35e589feb06a6294c5",
+      "sha256": "5c8133c6f80eb64741d715f7bcc9b58b1e85ce212b644831cde28c5897ab88ec"
+    },
+    {
+      "module": "Schoenflies.StageTower",
+      "path": "Schoenflies/StageTower.lean",
+      "git_blob_sha1": "12fe3264d404966f855e2e51e3fcb89c9b75d50b",
+      "sha256": "b1843454e38ebc30813a88e74a365d5221818a6e52c8cb6da86bd0b8d448c393"
+    },
+    {
+      "module": "Schoenflies.StageTransition",
+      "path": "Schoenflies/StageTransition.lean",
+      "git_blob_sha1": "aa31a87a088e4bd6904fc6fcddcf265cfbccd100",
+      "sha256": "85a0ff8b2239db8a501d91c5e0574e210edb78ca0ea02c84300289ec164e99f3"
+    },
+    {
+      "module": "Schoenflies.Strip",
+      "path": "Schoenflies/Strip.lean",
+      "git_blob_sha1": "1f85f3aa7724ff9ebea4dbb3e0d6e9a4925876ee",
+      "sha256": "ebffc5144cdbbf2f66d9ae0feff5a895e8e3d64e12c04f1c9db62466454b8783"
+    },
+    {
+      "module": "Schoenflies.StripConnected",
+      "path": "Schoenflies/StripConnected.lean",
+      "git_blob_sha1": "9f7c79c69ba3561c23ad063263ebf08959de0087",
+      "sha256": "4330d59d6999fc9aef47e73936c8837de78f40e285f4e46d90530a52703577e6"
+    },
+    {
+      "module": "Schoenflies.StripConstants",
+      "path": "Schoenflies/StripConstants.lean",
+      "git_blob_sha1": "9f6f461346e04f073991c09b1477dad3225b0c01",
+      "sha256": "cdc16d2994bb288297b7609d8a91a9332749ad0958ea3e07eb4d1cd4b2f9fad9"
+    },
+    {
+      "module": "Schoenflies.StripLocal",
+      "path": "Schoenflies/StripLocal.lean",
+      "git_blob_sha1": "fe0b540c3ebcd8cf9a625f916670bbdd364838a1",
+      "sha256": "e284e8e8cb89a714f8e5ba41b95ac4006433375c786ae19aedf5a5a061b3a79c"
+    },
+    {
+      "module": "Schoenflies.Subarc",
+      "path": "Schoenflies/Subarc.lean",
+      "git_blob_sha1": "56ca247571bef51af927126bdb0467fc4e9b847b",
+      "sha256": "9b6ae2368330402c1a5432080c1fab67219ef67a7f476d47ff29f9391d5e4723"
+    },
+    {
+      "module": "Schoenflies.Subdivide",
+      "path": "Schoenflies/Subdivide.lean",
+      "git_blob_sha1": "494a766f380bc07d01d4ee5761128d9c5151f026",
+      "sha256": "0ea322adbb73b9a37ef640ebb1ba7621cc301ad2d6a76ac3b1cdc21798cb9b80"
+    },
+    {
+      "module": "Schoenflies.TargetOverlay",
+      "path": "Schoenflies/TargetOverlay.lean",
+      "git_blob_sha1": "98b3de45257804d0eeca1af88a63bd761129536d",
+      "sha256": "63a8faef32fefdd02d9937c871b0fa18a6ba540fcc4a82193714ea8d554b029f"
+    },
+    {
+      "module": "Schoenflies.Topology",
+      "path": "Schoenflies/Topology.lean",
+      "git_blob_sha1": "e6660577ac8b6b953030522af1111769544a1868",
+      "sha256": "df4d2f7264825c34698d000928793fb6780eac2196656ad11099c6bbc4337df4"
+    },
+    {
+      "module": "Schoenflies.TwoArcs",
+      "path": "Schoenflies/TwoArcs.lean",
+      "git_blob_sha1": "05be32b31d32f5b3166b8f4b3df7ff3868d2d7af",
+      "sha256": "4849857d6cfde02fc678607af8e4e0020ce97e6cda2973ca46c9363337057d4f"
+    },
+    {
+      "module": "Schoenflies.UniformBound",
+      "path": "Schoenflies/UniformBound.lean",
+      "git_blob_sha1": "95d6201aa11ec4f2f25c2059f3794f1cd5a595e0",
+      "sha256": "ef5cfd476900bb4fd82672d5b57ea719e28b6c1953623cca48e33f625a82f64d"
+    },
+    {
+      "module": "Schoenflies.Windows",
+      "path": "Schoenflies/Windows.lean",
+      "git_blob_sha1": "1cf8a600b1f9b94aff1c8a2a8fa275663812a3a0",
+      "sha256": "cb38d1c7f04e49b0c506f9243ce83089d4081d3ea269253581f42d639ce4dcd7"
+    }
+  ]
+}
