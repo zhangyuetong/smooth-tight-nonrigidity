@@ -1,0 +1,19 @@
+import TightVer401.PositiveExitConstructionSelectedSourceGeometryRoundCartesian
+
+/-! Parent-compiled leaf audit for the SAME raw selected-flow Cartesian source.
+These reports expose logical dependencies; compiling this file does not by
+itself prove the remaining selected graph Jordan/core interface. -/
+namespace TightVer401
+
+#print axioms positiveExitSelected_roundFlowSource_contDiffOn
+#print axioms positiveExitSelected_roundFlowSource_jacobian_pos
+#print axioms positiveExitSelected_roundFlowSource_periodic
+#print axioms positiveExitSelected_roundFlowSource_image_open_band
+#print axioms positiveExitSelected_roundCartesianSource_contDiffOn
+#print axioms positiveExitSelected_roundCartesianDomain_contains_closed_band
+#print axioms positiveExitSelected_roundCartesianSource_jacobian_pos
+#print axioms positiveExitSelected_roundCartesianSource_boundary_one
+#print axioms positiveExitSelected_roundCartesianSource_boundary_two
+#print axioms positiveExitSelected_roundCartesianSource_image_open_annulus
+
+end TightVer401

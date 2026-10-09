@@ -138,5 +138,42 @@
         "build_report_sha256": "9ffbe203eedbe74dfbda8809648ee6a6901325c71fe7bfe7483e794bfcb855d9"
       }
     ]
+  },
+  "round_source_checkpoint": {
+    "result": "PASS",
+    "audited_exports": 10,
+    "scope": "Actual SAME Cartesian F on full closed round band, positive J, literal selected raw boundaries, exact open image=flowCore. Raw Jordan/selected graph topology remains pending.",
+    "sources": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRoundFlow",
+        "source_sha256": "5fed4dd8a15079e78cc351ac14bb28d64f97437553bcc6f66bafb008fea485a8",
+        "compiled_source_sha256": "5fed4dd8a15079e78cc351ac14bb28d64f97437553bcc6f66bafb008fea485a8",
+        "olean_sha256": "2241e35582e877c87b01090bda1a2d16488869872e3f23b204a04735ff02eb09",
+        "log_sha256": "fcf17d72f46a1214c4446bdc436a6953b50f21609d1a789e44dc077e46f5badf"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRoundImage",
+        "source_sha256": "40b99e1e6d324260aec13c6575c139dd8f0a2077ce3729a977bc97cafd01f31f",
+        "compiled_source_sha256": "40b99e1e6d324260aec13c6575c139dd8f0a2077ce3729a977bc97cafd01f31f",
+        "olean_sha256": "6591b0a864978421a6e23e23fe0b9d1bb24dce62f37775edbca2b3534fda715b",
+        "log_sha256": "26b92a193078e5d37dea684fb4c568d488c912d565baed14c51408d08815da3c"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRoundCartesian",
+        "source_sha256": "bc0ecf372c58e24aee029ddbc087024129819708c7322a22dad2c761eb00ed94",
+        "compiled_source_sha256": "bc0ecf372c58e24aee029ddbc087024129819708c7322a22dad2c761eb00ed94",
+        "olean_sha256": "79a292ddb80a5152e01ece244f2742e55492557bbeb00177db91d337ce0c81c0",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryRoundAudit",
+        "source_sha256": "6668ca7723290010a3601d5899aedfc89f89081dbc8db3f8ead18d24323e3434",
+        "compiled_source_sha256": "6668ca7723290010a3601d5899aedfc89f89081dbc8db3f8ead18d24323e3434",
+        "olean_sha256": "08fd4e52ef5268b32d7f5c9401d9713bce0df9dfcd47b56f1c3fe82663c6f052",
+        "log_sha256": "faa9b92bf4fc8a85db3cc9ae199915730efd075929166d0eafed08b8ab1fa403"
+      }
+    ],
+    "producer_build_report_sha256": "8c09ebce718ebb214a44921625a6aee7285346d65253635d4f950f78da39cb20",
+    "producer_axiom_log_sha256": "faa9b92bf4fc8a85db3cc9ae199915730efd075929166d0eafed08b8ab1fa403"
   }
 }
