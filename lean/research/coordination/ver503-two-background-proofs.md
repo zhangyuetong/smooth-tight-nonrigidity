@@ -1,6 +1,6 @@
 # Two elementary background proofs requested 2026-10-10
 
-The user asked to prove the two simple classical propositions: noncircular ellipse-axis recognition and smooth reparameterization of equal embedded images. The published first-pair certificate at source07a2980 remains conditional on four statements until this follow-up is audited.
+The user asked to prove the two simple classical propositions: noncircular ellipse-axis recognition and smooth reparameterization of equal embedded images. Full current-source verification **PASS** at `3a8f551901af2d613bd0950df4ee11fff462f79f` on `2026-10-09T18:31:19.661370+00:00` (Audit: 166.665 seconds). Both EXACT closed proof inhabitants and ONLY `ClassicalExternalResults` before the ultimate first existential are checked. The closure has no admissions or custom axioms; exactly two external statements remain. Historical source `07a2980` certified the earlier four-statement theorem. This follow-up is COMPLETE.
 
 ## Exact interfaces and owners
 

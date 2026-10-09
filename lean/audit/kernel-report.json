@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "generated_at_utc": "2026-10-09T17:42:40.725023+00:00",
+  "generated_at_utc": "2026-10-09T18:31:19.661370+00:00",
   "paper_completion": "INCOMPLETE",
   "target": "ver503",
   "primary_objective": {
@@ -15,25 +15,18 @@
       {
         "parameter": "background.coincidentEmbeddingFixedOpen",
         "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
-      },
-      {
-        "parameter": "reparam",
-        "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
-      },
-      {
-        "parameter": "axes",
-        "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
       }
     ],
     "original_construction_assumptions": [],
-    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; all four statements remain assumptions",
+    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only the two ClassicalExternalResults fields remain assumptions; both exact closed background proof inhabitants and the reduced ultimate header must also be audited",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
     "accepted_background": "TightVer401.ClassicalExternalResults",
-    "additional_explicit_background": [
-      "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
-      "TightVer401.MarkerEllipseAxesRecognition"
-    ]
+    "additional_explicit_background": [],
+    "proved_background": {
+      "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
+      "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+    }
   },
   "explicit_first_pair_assumptions": [
     {
@@ -43,17 +36,13 @@
     {
       "parameter": "background.coincidentEmbeddingFixedOpen",
       "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
-    },
-    {
-      "parameter": "reparam",
-      "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
-    },
-    {
-      "parameter": "axes",
-      "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
     }
   ],
   "first_pair_exact_audited_declaration": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+  "proved_first_pair_background": {
+    "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
+    "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+  },
   "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
   "upstream_lock_sha256": "003537806bb19cbf8eeea531fdf310d9abf25df43b4e3cc497b2ea35af4c3827",
@@ -79,13 +68,13 @@
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
-          "TightVer401": "14f4b58112ff2afe7799026042c3e308bf2a4613dc17f2167fdea46c4f48370c"
+          "TightVer401": "811a37573b0121ee744ee1f24651193c609b2d291a8d2932b6bd0ada17826403"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 197.993,
+      "elapsed_seconds": 166.665,
       "olean_sha256": "ec4988353ed7b3e40bbd97093c690a6d75574e3881ec2b68a32e531c611f85f6",
-      "log_sha256": "472a21ccc9d778427944e10b9ae9ed1d63357ac9cd9fc1dbda60c2723d9a6e53"
+      "log_sha256": "fd3f94c51954898a2df3dfa0708326866be567d647de0d435a2015d93be3835d"
     },
     {
       "module": "OAI.Analysis.CircleDomains.LengthArea",
@@ -7779,8 +7768,8 @@
       "source": "TightVer401.lean",
       "compiled_source": "TightVer401.lean",
       "key": {
-        "source_sha256": "3351c5afcdd673a4ffe5510b27ad05d4ad0ebd0840c05ff71c3c43bf32b34bf5",
-        "compiled_source_sha256": "3351c5afcdd673a4ffe5510b27ad05d4ad0ebd0840c05ff71c3c43bf32b34bf5",
+        "source_sha256": "e23fe20bfe824d3c8ada3843b3fba210f851b0b7434ceb105d5583113f5fa2a8",
+        "compiled_source_sha256": "e23fe20bfe824d3c8ada3843b3fba210f851b0b7434ceb105d5583113f5fa2a8",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -8192,12 +8181,15 @@
           "TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly": "08f3d5b52fea1483da6fa06670b40f446b700fc2c7133c6cc922c004d2b5e32c",
           "TightVer401.VisibleConnectorOrdinaryFamilyCompletion": "ae6695e1cb4ea890a223bcccebb491a53b5fd1be10308edfec69dc798df9a560",
           "TightVer401.PositiveExitConstructionActualPair": "a5dd670f6297a4faaa465aea44ecb140aa6aca8ec92ff626931e12092af3ac63",
-          "TightVer401.NonrigidTorusPair": "51b74d5bbc3e6dce3ca8e83014dbf0c5bbd2c5379052d1f699e0f0018e042430"
+          "TightVer401.NonrigidTorusPair": "3ee4f3a676b7ff4854dac7801564774dfee7a694bcaa97ed43720b25846a2138",
+          "TightVer401.ClassicalEmbeddingSmoothFactor": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db",
+          "TightVer401.ClassicalEmbeddedReparamProof": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9",
+          "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 64.958,
-      "olean_sha256": "14f4b58112ff2afe7799026042c3e308bf2a4613dc17f2167fdea46c4f48370c",
+      "elapsed_seconds": 50.094,
+      "olean_sha256": "811a37573b0121ee744ee1f24651193c609b2d291a8d2932b6bd0ada17826403",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -9421,6 +9413,41 @@
       "exit_code": 0,
       "elapsed_seconds": 61.106,
       "olean_sha256": "198560d067373ef7d67d35f3be519170d40c46eebf369f133aaf92c6e11590c3",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.ClassicalEmbeddedReparamProof",
+      "source": "TightVer401\\ClassicalEmbeddedReparamProof.lean",
+      "compiled_source": "TightVer401\\ClassicalEmbeddedReparamProof.lean",
+      "key": {
+        "source_sha256": "c7c1ff4fe76008455856e16f30be2bad42018e78430de6f6ca0b55a11c100c0e",
+        "compiled_source_sha256": "c7c1ff4fe76008455856e16f30be2bad42018e78430de6f6ca0b55a11c100c0e",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.ClassicalEmbeddedReparam": "198560d067373ef7d67d35f3be519170d40c46eebf369f133aaf92c6e11590c3",
+          "TightVer401.ClassicalEmbeddingSmoothFactor": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 52.063,
+      "olean_sha256": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9",
+      "log_sha256": "bbd8424f72406a7ca6b7171513ba328f1a99fd8a4d0bfe2101edaf6b85b77644"
+    },
+    {
+      "module": "TightVer401.ClassicalEmbeddingSmoothFactor",
+      "source": "TightVer401\\ClassicalEmbeddingSmoothFactor.lean",
+      "compiled_source": "TightVer401\\ClassicalEmbeddingSmoothFactor.lean",
+      "key": {
+        "source_sha256": "fcfa838cbad0d1abac7767025924ee38c90f79917da90cc183914026ae3791a3",
+        "compiled_source_sha256": "fcfa838cbad0d1abac7767025924ee38c90f79917da90cc183914026ae3791a3",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 24.295,
+      "olean_sha256": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -15497,6 +15524,24 @@
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "module": "TightVer401.MarkerEllipseAxesRecognitionProof",
+      "source": "TightVer401\\MarkerEllipseAxesRecognitionProof.lean",
+      "compiled_source": "TightVer401\\MarkerEllipseAxesRecognitionProof.lean",
+      "key": {
+        "source_sha256": "e07a1ff66f4755a0b43ebad93ddf88b4c3720a5addb2b221a954051ed7bd2b9a",
+        "compiled_source_sha256": "e07a1ff66f4755a0b43ebad93ddf88b4c3720a5addb2b221a954051ed7bd2b9a",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.TorusAffineMarkerEllipseBasic": "4196f82cfacf8dfeb4bfaa861522422912a502cb650315c3311bcdc39a0adbba"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 61.073,
+      "olean_sha256": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229",
+      "log_sha256": "edc5916f7e56a7b85ca9a89a10382fcbccca842e41f55fc76d9387f522a090dd"
+    },
+    {
       "module": "TightVer401.MetricBranching",
       "source": "TightVer401\\MetricBranching.lean",
       "compiled_source": "TightVer401\\MetricBranching.lean",
@@ -16453,18 +16498,20 @@
       "source": "TightVer401\\NonrigidTorusPair.lean",
       "compiled_source": "TightVer401\\NonrigidTorusPair.lean",
       "key": {
-        "source_sha256": "7bd5df5c40eb1bc4274dafbdc59a54ee5ebebf97680cca0838a9e30bdffda401",
-        "compiled_source_sha256": "7bd5df5c40eb1bc4274dafbdc59a54ee5ebebf97680cca0838a9e30bdffda401",
+        "source_sha256": "bfc695968aeb23c4b98b413a5c5a177a502366b3e6922a44bc05e5533db32327",
+        "compiled_source_sha256": "bfc695968aeb23c4b98b413a5c5a177a502366b3e6922a44bc05e5533db32327",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
           "TightVer401.PositiveExitConstructionActualPair": "a5dd670f6297a4faaa465aea44ecb140aa6aca8ec92ff626931e12092af3ac63",
-          "TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly": "08f3d5b52fea1483da6fa06670b40f446b700fc2c7133c6cc922c004d2b5e32c"
+          "TightVer401.VisibleConnectorOrdinaryFamilyFromIncomingAssembly": "08f3d5b52fea1483da6fa06670b40f446b700fc2c7133c6cc922c004d2b5e32c",
+          "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229",
+          "TightVer401.ClassicalEmbeddedReparamProof": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 65.821,
-      "olean_sha256": "51b74d5bbc3e6dce3ca8e83014dbf0c5bbd2c5379052d1f699e0f0018e042430",
+      "elapsed_seconds": 52.097,
+      "olean_sha256": "3ee4f3a676b7ff4854dac7801564774dfee7a694bcaa97ed43720b25846a2138",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -28882,7 +28929,7 @@
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
-  "coverage_sha256": "e15e9530ea1a1c7c816a624eeef828f31cdd5b9a46c9cc33c3cba15580e7cdf5",
+  "coverage_sha256": "0f5ab2cbdb6d8c637a4c8f1d8ec0c1124d873b39475a6d5bfea1acffa5ab0dca",
   "declarations": [
     {
       "axioms": [
@@ -140011,8 +140058,28 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.classicalEmbeddedImageReparametrization_proved",
+      "type": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.classicalEmbeddedImages_reparametrize",
       "type": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n  ∀ (X Y : TightVer401.NonrigidTorusSource → OAI.SmoothLocal.Geometry.Ambient),\n    TightVer401.NativeTorusSmoothEmbedding X →\n      TightVer401.NativeTorusSmoothEmbedding Y →\n        Set.range X = Set.range Y →\n          ∃ e,\n            ContMDiff TightVer401.nativeProductModel TightVer401.nativeProductModel ↑⊤ ⇑e ∧\n              ContMDiff TightVer401.nativeProductModel TightVer401.nativeProductModel ↑⊤ ⇑e.symm ∧\n                ∀ (p : TightVer401.NonrigidTorusSource), Y (e p) = X p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.classicalEmbedding_contDiffAt_factor",
+      "type": "∀ {E : Type u_1} {F : Type u_2} {G : Type u_3} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E]\n  [CompleteSpace E] [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace ℝ F] [FiniteDimensional ℝ F]\n  [inst_6 : NormedAddCommGroup G] [inst_7 : NormedSpace ℝ G] {f : E → F} {g : G → E} {x : G},\n  ContDiffAt ℝ (↑⊤) f (g x) →\n    Function.Injective ⇑(fderiv ℝ f (g x)) → ContinuousAt g x → ContDiffAt ℝ (↑⊤) (f ∘ g) x → ContDiffAt ℝ (↑⊤) g x"
     },
     {
       "axioms": [
@@ -154527,7 +154594,7 @@
       ],
       "kind": "theorem",
       "name": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-      "type": "TightVer401.ClassicalExternalResults →\n  TightVer401.ClassicalEmbeddedImageReparametrizationClaim →\n    TightVer401.MarkerEllipseAxesRecognition →\n      ∃ T,\n        ∃ (hT : 0 < T),\n          ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n            TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n              TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n                TightVer401.IsTightImage Xplus ∧\n                  TightVer401.IsTightImage Xminus ∧\n                    ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                        (↑⊤) Xplus ∧\n                      ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                          (↑⊤) Xminus ∧\n                        (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                            ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                              ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                          (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                              TightVer401.nativeProductInducedForm Xplus p v z =\n                                TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                            TightVer401.ImageNoncongruent Xplus Xminus ∧\n                              IsOpen V ∧\n                                V.Nonempty ∧\n                                  Set.EqOn Xplus Xminus V ∧\n                                    TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                      TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                        ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                          0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ ⋯"
+      "type": "TightVer401.ClassicalExternalResults →\n  ∃ T,\n    ∃ (hT : 0 < T),\n      ∃ d w c0 G0 Y Ge e0 O Xplus Xminus g V,\n        TightVer401.NativeTorusSmoothEmbedding Xplus ∧\n          TightVer401.NativeTorusSmoothEmbedding Xminus ∧\n            TightVer401.IsTightImage Xplus ∧\n              TightVer401.IsTightImage Xminus ∧\n                ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient) (↑⊤)\n                    Xplus ∧\n                  ContMDiff OAI.ClosedSurfaceR4.planeModel (modelWithCornersSelf ℝ OAI.SmoothLocal.Geometry.Ambient)\n                      (↑⊤) Xminus ∧\n                    (∀ (p : TightVer401.NonrigidTorusSource) (v z : TangentSpace OAI.ClosedSurfaceR4.planeModel p),\n                        ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xplus p v z ∧\n                          ((g.inner p) v) z = OAI.ClosedSurfaceR4.inducedForm Xminus p v z) ∧\n                      (∀ (p : TightVer401.NonrigidTorusSource) (v z : ℝ × ℝ),\n                          TightVer401.nativeProductInducedForm Xplus p v z =\n                            TightVer401.nativeProductInducedForm Xminus p v z) ∧\n                        TightVer401.ImageNoncongruent Xplus Xminus ∧\n                          IsOpen V ∧\n                            V.Nonempty ∧\n                              Set.EqOn Xplus Xminus V ∧\n                                TightVer401.HasNoOpenPlanarPatch Xplus ∧\n                                  TightVer401.HasNoOpenPlanarPatch Xminus ∧\n                                    ∃ A RN mu B d0 dInfinity epsilon L Gtilde W E β Q Cdata D a,\n                                      0 < A ∧ A < RN ∧ 0 < mu ∧ 0 < B ∧ 0 < epsilon ∧ epsilon < L ∧ ⋯"
     },
     {
       "axioms": [
@@ -162822,6 +162889,36 @@
       "kind": "theorem",
       "name": "TightVer401.markedRuledBand_native_compact_curvature_threshold",
       "type": "∀ {T w : ℝ} [inst : Fact (0 < T)] (d : TightVer401.PeriodicRuledFrame T),\n  0 < w →\n    ∀ (Y : AddCircle T × ↑(Set.Ioo 0 w) → OAI.SmoothLocal.Geometry.Ambient)\n      (A : OAI.SmoothLocal.Geometry.Ambient ≃ᵃⁱ[ℝ] OAI.SmoothLocal.Geometry.Ambient)\n      (B C : OAI.SmoothLocal.Geometry.Ambient →L[ℝ] OAI.SmoothLocal.Geometry.Ambient),\n      HasCompactSupport Y →\n        ContDiff ℝ (↑⊤) (TightVer401.markedRuledBandCoordinateBase d A B) →\n          TightVer401.IsInfinitesimalBendingOn (TightVer401.markedRuledBandCoordinateBase d A B)\n              (TightVer401.markedRuledBandCoordinateField Y A C) (TightVer401.markedRuledBandCoordinateDomain w) →\n            (∀ q ∈ TightVer401.markedRuledBandCoordinateDomain w,\n                Function.Injective ⇑(fderiv ℝ (TightVer401.markedRuledBandCoordinateBase d A B) q)) →\n              (∀ q ∈ TightVer401.markedRuledBandCoordinateDomain w,\n                  OAI.SmoothLocal.Geometry.gaussianCurvature\n                      (OAI.SmoothLocal.Geometry.inducedMetric (TightVer401.markedRuledBandCoordinateBase d A B)) q <\n                    0) →\n                ∃ δ > 0,\n                  ∀ (a : ℝ),\n                    |a| < δ →\n                      ∀ p ∈ tsupport Y,\n                        OAI.SmoothLocal.Geometry.gaussianCurvature\n                            (OAI.SmoothLocal.Geometry.inducedMetric\n                              (TightVer401.nativeProductPlaneCoordinateMap\n                                (TightVer401.markedRuledBandNativeBranch d Y A B C a) p))\n                            ![0, ↑p.2] <\n                          0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.markerEllipseAxesRecognition_proved",
+      "type": "TightVer401.MarkerEllipseAxesRecognition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.markerEllipseAxesRecognition_proved._abel_1_1",
+      "type": "∀ (L : OAI.SmoothLocal.Geometry.Ambient ≃ₗᵢ[ℝ] OAI.SmoothLocal.Geometry.Ambient)\n  (b c p : OAI.SmoothLocal.Geometry.Ambient), L p + b - (L c + b) = L p - L c"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.markerEllipseAxesRecognition_proved._abel_1_2",
+      "type": "∀ (L : OAI.SmoothLocal.Geometry.Ambient ≃ₗᵢ[ℝ] OAI.SmoothLocal.Geometry.Ambient)\n  (b c p : OAI.SmoothLocal.Geometry.Ambient), L c + L p + b = L c + b + L p"
     },
     {
       "axioms": [
@@ -206419,16 +206516,16 @@
     }
   ],
   "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion.",
-  "source_closure_sha256": "c362fdbda7c1ba550d45f0225e780b5d13a0d60f96851513b19fe24a5acbbe96",
-  "source_git_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
+  "source_closure_sha256": "89bf2dab0e0e2d6924ebbc2c78c5288153be5e7e522c387ee31402bf1aca3095",
+  "source_git_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
-  "classical_registry_sha256": "8d2a3f846c6f21da451412bfe98bd5293b2af9f9896902e012e2fb1548eb963c",
+  "classical_registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b",
   "lean_toolchain_sha256": "62c2d9c0fc1ec4c67e151c11eff41ca004ef38e179cf9476c230406e6defedef",
   "lakefile_sha256": "90b217528e30a6f9bddd0f7bd7342b0d97f5e76ac66ddba525a7d13eea7003d5",
   "verification_scripts": {
     "build.py": "2d75c5af85f36abe541d46ac98ff367459aa7c6efe9262ae74307838c203784c",
-    "verify.py": "7aaede9845f0280244c681b3385cf5ff33b68dd31866518dc698f06edd690a75",
-    "inventory.py": "ba1e4ec69f5a9f7b650fc94eb1bebf3463b83a713e0bc0848d0b254e6c646330"
+    "verify.py": "9b0a3b1dcb9a409084240a80d9943e752143b71cc0a9019ed450a404a6533495",
+    "inventory.py": "80567c1dda8ca155d67af8f3c3acf25e4b8071ec831b54a86c535b5e379373df"
   }
 }

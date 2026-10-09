@@ -2,14 +2,14 @@
   "target": "ver503",
   "active_engine": "lean",
   "manuscript": "paper/paper.tex",
-  "source_snapshot_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
-  "audit_utc": "2026-10-09T17:42:40.725023+00:00",
+  "source_snapshot_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
+  "audit_utc": "2026-10-09T18:31:19.661370+00:00",
   "result": "PASS",
   "full_construction": "FIRST_PAIR_CONDITIONAL_PROVED",
-  "final_existence_theorem": "conditional on four exact registered classical statements",
+  "final_existence_theorem": "conditional on two exact registered classical statements",
   "conditional_final_existence_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-  "kernel_report_sha256": "948b3ed1ecbfef71420be8d51077dcbf71ffc985de1f01610383473978fb2055",
-  "source_closure_sha256": "c362fdbda7c1ba550d45f0225e780b5d13a0d60f96851513b19fe24a5acbbe96",
+  "kernel_report_sha256": "64b6a28389bd8efb63628134ddc2a2f327045c17bd9bde8969f9d81368f40e83",
+  "source_closure_sha256": "89bf2dab0e0e2d6924ebbc2c78c5288153be5e7e522c387ee31402bf1aca3095",
   "target_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
@@ -17,8 +17,8 @@
   "schoenflies_lock_sha256": "98384b576a7b97e0332f63fea83aa2f9ae6636813c7a303cd988e1f6b8e242e2",
   "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
   "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
-  "modules": 1501,
-  "declarations": 18228,
+  "modules": 1504,
+  "declarations": 18233,
   "admissions": [],
   "custom_axioms": [],
   "historical_ver500": {
@@ -39,15 +39,36 @@
     {
       "parameter": "background.coincidentEmbeddingFixedOpen",
       "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
-    },
-    {
-      "parameter": "reparam",
-      "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
-    },
-    {
-      "parameter": "axes",
-      "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
     }
   ],
-  "original_construction_assumptions": []
+  "original_construction_assumptions": [],
+  "historical_four_statement_pair": {
+    "source_snapshot_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
+    "audit_utc": "2026-10-09T17:42:40.725023+00:00",
+    "kernel_report_sha256": "948b3ed1ecbfef71420be8d51077dcbf71ffc985de1f01610383473978fb2055",
+    "explicit_assumptions": [
+      {
+        "parameter": "background.positiveGaussTightness",
+        "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"
+      },
+      {
+        "parameter": "background.coincidentEmbeddingFixedOpen",
+        "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
+      },
+      {
+        "parameter": "reparam",
+        "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+      },
+      {
+        "parameter": "axes",
+        "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
+      }
+    ]
+  },
+  "proved_first_pair_background": {
+    "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
+    "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+  },
+  "background_proof_followup": "COMPLETE",
+  "classical_registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b"
 }

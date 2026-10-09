@@ -2,11 +2,11 @@
 
 Active proof engine: `/lean`; manuscript target: [`paper/paper.tex`](../paper/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
 
-The actual first-pair theorem [`exists_noncongruent_isometric_tight_tori_pair_of_classical`](TightVer401/NonrigidTorusPair.lean) is now implemented, with only the four exact classical statement parameters listed below. All original first-pair construction gates are discharged in its source proof. Its direct compiler check passed (65.821 seconds), followed by full combined current-source verification PASS at `07a2980` (Audit: 197.993 seconds). The first-pair objective is **conditional-proved** under the four authorized statements. The full paper remains **INCOMPLETE**; extension and Cantor-family applications remain deferred.
+The actual first-pair theorem [`exists_noncongruent_isometric_tight_tori_pair_of_classical`](TightVer401/NonrigidTorusPair.lean) is implemented with only `background : ClassicalExternalResults`, containing the two exact statements below. Smooth equal-image reparametrization and ellipse-axis recognition are now proved and supplied internally. All original first-pair construction gates are discharged in source. Direct compiler checks of the new proof leaves and reduced ultimate theorem passed; combined current-source verification **PASS** at `3a8f551` (Audit: 166.665 seconds). The earlier combined PASS at `07a2980` certifies the previous four-statement theorem. The full paper remains **INCOMPLETE**; extension and Cantor-family applications remain deferred.
 
 ## Current verification and actual construction
 
-Full current-source verification passed at `07a29801e214f5525d69bd3fab37ea8029145626` on `2026-10-09T17:42:40.725023+00:00`. The exact ultimate theorem and all actual source construction producers are in the certified closure. [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to sources, target, toolchain, dependencies and verification scripts. There are no admissions or custom axioms; the ultimate theorem uses only `propext`, `Classical.choice` and `Quot.sound` plus its four explicit theorem parameters.
+Full current-source verification **PASS** at `3a8f551901af2d613bd0950df4ee11fff462f79f` on `2026-10-09T18:31:19.661370+00:00` (Audit: 166.665 seconds). Both EXACT closed proof inhabitants and ONLY `ClassicalExternalResults` before the ultimate first existential are checked. The closure has no admissions or custom axioms; exactly two external statements remain. Historical source `07a2980` certified the earlier four-statement theorem. [Audit metadata](audit/snapshot.json) and [kernel report](audit/kernel-report.json) bind the current sources, compiled closure, pins and verification scripts.
 
 The retained producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Source/reversed-gradient order and simultaneous source/scalar/gradient rebase preserve the same displaced inverse. The ver503 bridge proves the fixed affine normalization acts on vectors by negation and the transported bending is exactly `-Y` on the same source chart, with zero extension outside.
 
@@ -22,14 +22,12 @@ The 13 historical uncompiled IncomingGin leaves from `5176081` remain in [pendin
 
 ## Exact external theorem parameters
 
-The ultimate theorem has ONLY `background : ClassicalExternalResults`, `reparam : ClassicalEmbeddedImageReparametrizationClaim` and `axes : MarkerEllipseAxesRecognition`. The [registry](classical-external-results.json) names their four exact statements:
+The ultimate theorem now has ONLY `background : ClassicalExternalResults`. The [registry](classical-external-results.json) identifies the two retained exact statements:
 
 - `ClassicalPositiveGaussTightnessClaim` (`background.positiveGaussTightness`).
 - `ClassicalCoincidentEmbeddingFixedOpenClaim` (`background.coincidentEmbeddingFixedOpen`).
-- `ClassicalEmbeddedImageReparametrizationClaim` (`reparam`).
-- `MarkerEllipseAxesRecognition` (`axes`).
 
-Their mathematical truth remains assumed. No original geometry, scalar, inverse, marker, metric or final-pair construction is granted. The exact ultimate declaration is in the current combined kernel report and the primary objective is **conditional-proved** under these four assumptions; this does not certify the deferred full-paper or Cantor-family claims.
+Their mathematical truth remains assumed. The former `reparam` and `axes` parameters are discharged by [`classicalEmbeddedImageReparametrization_proved`](TightVer401/ClassicalEmbeddedReparamProof.lean) and [`markerEllipseAxesRecognition_proved`](TightVer401/MarkerEllipseAxesRecognitionProof.lean). The first uses actual embedding range homeomorphisms and local smooth factor recovery through injective differentials; the second proves ellipse recognition directly. Both proof terms are supplied internally. No original geometry, scalar, inverse, marker, metric or final-pair construction is granted. The current combined certificate validates both closed proofs and the two-statement reduction. Extension and Cantor-family claims remain deferred.
 
 ## Reproduce the current build
 

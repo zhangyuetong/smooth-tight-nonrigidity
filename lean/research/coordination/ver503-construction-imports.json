@@ -1,5 +1,5 @@
 {
-  "last_published_checked_checkpoint": "07a29801e214f5525d69bd3fab37ea8029145626",
+  "last_published_checked_checkpoint": "3a8f551901af2d613bd0950df4ee11fff462f79f",
   "records": [
     {
       "worker": "final-smoothing",
@@ -623,11 +623,39 @@
       "source": "lean/TightVer401/PositiveExitConstructionActualPair.lean",
       "git_blob": "a96a8289202d0793d7c4f49738598fc0a8b5093e",
       "sha256": "079d1ffd4d4ed1005901f0ecbebbcd94b4f8c6875b1b359766c1224b95676ce0"
+    },
+    {
+      "worker": "root-classical-background-proof",
+      "commit": "d9e195e52fd1dc4e4a86a9b9011bf87f92ed6291",
+      "source": "lean/TightVer401/ClassicalEmbeddedReparamProof.lean",
+      "git_blob": "54b2fe1f9977b1e44e493a3faa3b708150d2939e",
+      "sha256": "c7c1ff4fe76008455856e16f30be2bad42018e78430de6f6ca0b55a11c100c0e"
+    },
+    {
+      "worker": "root-classical-background-proof",
+      "commit": "d9e195e52fd1dc4e4a86a9b9011bf87f92ed6291",
+      "source": "lean/TightVer401/ClassicalEmbeddingSmoothFactor.lean",
+      "git_blob": "84c954f173c8ccc9fa150ec70e412f57f7f44942",
+      "sha256": "fcfa838cbad0d1abac7767025924ee38c90f79917da90cc183914026ae3791a3"
+    },
+    {
+      "worker": "root-classical-background-proof",
+      "commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
+      "source": "lean/TightVer401/MarkerEllipseAxesRecognitionProof.lean",
+      "git_blob": "5125e60df318ba35bbdd9e2e62dcb81c0410ad6c",
+      "sha256": "e07a1ff66f4755a0b43ebad93ddf88b4c3720a5addb2b221a954051ed7bd2b9a"
+    },
+    {
+      "worker": "root-classical-background-proof",
+      "commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
+      "source": "lean/TightVer401/NonrigidTorusPair.lean",
+      "git_blob": "e8cda3cd7597422a315c611551dc694c2fcba3d2",
+      "sha256": "bfc695968aeb23c4b98b413a5c5a177a502366b3e6922a44bc05e5533db32327"
     }
   ],
-  "note": "Exact frozen import history, including superseded versions. Current source/compiled-source/object hashes are bound by this integration kernel report. Actual seed, selected geometry, D-only universal ordinary family, same-object final application and exact ultimate first pair are checked. Exactly four registered statements remain theorem parameters; extension and Cantor assertions are deferred.",
-  "audit_source_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
-  "kernel_report_sha256": "948b3ed1ecbfef71420be8d51077dcbf71ffc985de1f01610383473978fb2055",
-  "source_closure_sha256": "c362fdbda7c1ba550d45f0225e780b5d13a0d60f96851513b19fe24a5acbbe96",
-  "status": "first_pair_conditional_PROVED_current_integration_PASS"
+  "note": "Exact frozen import history includes superseded versions. Current source hashes are bound by this integration kernel report. Exact closed smooth reparametrization and ellipse recognition discharge two former external parameters; only positive-Gauss tightness and fixed-open uniqueness remain assumed. Extensions/Cantor remain deferred.",
+  "audit_source_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
+  "kernel_report_sha256": "64b6a28389bd8efb63628134ddc2a2f327045c17bd9bde8969f9d81368f40e83",
+  "source_closure_sha256": "89bf2dab0e0e2d6924ebbc2c78c5288153be5e7e522c387ee31402bf1aca3095",
+  "status": "first_pair_conditional_PROVED_under_two_background_statements"
 }

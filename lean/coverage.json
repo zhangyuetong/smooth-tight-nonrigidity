@@ -15,25 +15,18 @@
       {
         "parameter": "background.coincidentEmbeddingFixedOpen",
         "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"
-      },
-      {
-        "parameter": "reparam",
-        "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
-      },
-      {
-        "parameter": "axes",
-        "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"
       }
     ],
     "original_construction_assumptions": [],
-    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; all four statements remain assumptions",
+    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only the two ClassicalExternalResults fields remain assumptions; both exact closed background proof inhabitants and the reduced ultimate header must also be audited",
     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
     "accepted_background": "TightVer401.ClassicalExternalResults",
-    "additional_explicit_background": [
-      "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
-      "TightVer401.MarkerEllipseAxesRecognition"
-    ]
+    "additional_explicit_background": [],
+    "proved_background": {
+      "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
+      "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"
+    }
   },
   "deferred_scope": [
     "complete-cylinder applications",
@@ -905,7 +898,7 @@
     "mode": "explicit_named_theorem_parameters",
     "authorization_date": "2026-10-09",
     "registry": "classical-external-results.json",
-    "registry_sha256": "8d2a3f846c6f21da451412bfe98bd5293b2af9f9896902e012e2fb1548eb963c",
+    "registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b",
     "conditional_final_pair_status": "conditional-proved",
     "external_results_are_not_proved_claims": true
   },
@@ -1670,9 +1663,14 @@
       "TightVer401.visibleConnectorOrdinaryFamily_construction_statement",
       "TightVer401.visibleConnectorOrdinaryFamily_dual_radial_completion"
     ],
-    "actual-seed-pair-and-ultimate-under-four-exact-classical-parameters": [
+    "actual-seed-pair-and-ultimate-under-two-exact-classical-parameters": [
       "TightVer401.actualSeed_exists_markedTorus_pair_of_ordinary_connector_family",
       "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+    ],
+    "proved-background-ellipse-and-smooth-embedded-reparameterization": [
+      "TightVer401.markerEllipseAxesRecognition_proved",
+      "TightVer401.classicalEmbedding_contDiffAt_factor",
+      "TightVer401.classicalEmbeddedImageReparametrization_proved"
     ]
   },
   "limits": [
@@ -1680,6 +1678,6 @@
     "Actual open-sphere support reconstruction and the global injective regular Gauss-image bridge are proved. The planar potential curvature, converse, local gradient inverse and gnomonic support reconstruction are proved; actual degree and full quadratic filling are proved; the first-pair source constructions and exact classical theorem require current audited-name certification.",
     "None of the three principal existence theorems is yet proved.",
     "Declaration counts do not measure the percentage of the paper formalized.",
-    "The first-pair theorem is conditional on exactly four registered classical statement parameters; their truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred."
+    "The first-pair theorem is conditional on exactly two registered classical statement parameters; their truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred."
   ]
 }
