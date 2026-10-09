@@ -1,0 +1,504 @@
+{
+  "previous_checkpoint": "80ca4b16b29232fbb4057babac6082bfa39a4471",
+  "result": "PASS",
+  "paper_completion": "INCOMPLETE",
+  "actual_construction": "D-only Choice_nonempty retains actual terminal radial/directional/excess and full visibility homotopy domain; bounds intersected before sole rho choice",
+  "validation": "current source/compiled-source/object/log hashes; jobs1 private build; all-export scoped axiom audit; full repository verification",
+  "compiled_scoped_closure_modules": 818,
+  "scoped_closure_sha256": "cf3bdab94cdd16920a51852b088b898aafb1ca5bd19f3adde3e837845ce3746e",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms": [],
+  "admissions": [],
+  "pending_imports": [],
+  "scoped_exports": {
+    "TightVer401.visibleConnectorIncomingParameters_uniform_actual_lower_delta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_uniform_source_domain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_rho_negative_strip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersChoice_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.VisibleConnectorIncomingParametersChoice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.VisibleConnectorIncomingParametersChoice.mk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyPhaseDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyC": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyPhaseDerivative_actual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamilyPhaseDerivative_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamily_coefficients_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamily_coefficients_actual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamily_deriv_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamily_actual_coefficients_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParametersFamily_actual_coefficients_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_compatible_rho": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_uniform_lower_delta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_eta_original_margins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_original_choice_from_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_Gin_compatible_rho": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_uniform_Gin_lower_delta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_uniform_height_small": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_exists_rho_below_margins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingParameters_uniform_actual_coefficient_signs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingRebase_cartesian_seam_matches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingRebase_original_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingSeam_displaced_isClosedEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingSeam_trace_deriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingSeam_exists_local_matched_potential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_actualFamily_exists_positive_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_Gin_exists_positive_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_exists_local_periodic_displacement_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_exists_local_displaced_positive_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_compact_norm_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_exists_escape_and_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_exists_enclosing_filling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_exists_displacement_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_phase_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_rebase_range_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_rebase_frontier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_familyPhaseDerivative_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_familyAC_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminalActualFamily": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_actualFamily_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_actualFamily_C1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_radial_ruling_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminalRadialScalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminalDirectionalScalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_directional_ruling_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminalExcessScalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_excess_ruling_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_uniform_radial_directional_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_Gin_uniform_radial_directional_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_rebase_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_rebase_deriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TightVer401.visibleConnectorIncomingTerminal_rebase_geometry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "records": [
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersActualDelta",
+      "source_sha256": "4cc624543020034c2d55aa6d278885acb9a11a3ebda6a225f11f784e14997fc5",
+      "compiled_source_sha256": "4cc624543020034c2d55aa6d278885acb9a11a3ebda6a225f11f784e14997fc5",
+      "object_sha256": "55bdb6a58120655c80c41b3240dc0fe1e1720bcdc7112824552e1c79324a1d70",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersCarrier",
+      "source_sha256": "29b57bfcf4d4210763e2800b4f5c5b44c4993c35fe0f9961e877ea023c7621f9",
+      "compiled_source_sha256": "29b57bfcf4d4210763e2800b4f5c5b44c4993c35fe0f9961e877ea023c7621f9",
+      "object_sha256": "999277c09c35a9b1518d137addea75b28a493b50c3fdd51ee294eab1c6641491",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersChoice",
+      "source_sha256": "71b9b45bcfcccff81852c1942cc557285e0a2aa26700efe1fed25ac0be0568c4",
+      "compiled_source_sha256": "71b9b45bcfcccff81852c1942cc557285e0a2aa26700efe1fed25ac0be0568c4",
+      "object_sha256": "9a3cb9ccd1e17ce5adc1f89619a6a5c1be426d5c3d469c31ce67eb07e939c6ed",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersCoefficients",
+      "source_sha256": "bfa53392b6e92916e536a7b5ea2e1fc135d54a91b74e46e8373b0e7ff39a71fd",
+      "compiled_source_sha256": "bfa53392b6e92916e536a7b5ea2e1fc135d54a91b74e46e8373b0e7ff39a71fd",
+      "object_sha256": "a59866328871700bb0aac676ce228fa1e33dcabdfc73513ed00059c808dd44f5",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersCompatible",
+      "source_sha256": "bd2cc925ddbfc7ac4ddde05209d1d79fecaf821e957be22384150a54669d59ba",
+      "compiled_source_sha256": "bd2cc925ddbfc7ac4ddde05209d1d79fecaf821e957be22384150a54669d59ba",
+      "object_sha256": "e60ccb4310b6468f068558b7ab2044d577f854cf977bf25e77ef9bf07494065f",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersDelta",
+      "source_sha256": "c0dd8af2692221d1f88d2f580d5eba68d559d41ec3e0dce9da9fa1e11b684a34",
+      "compiled_source_sha256": "c0dd8af2692221d1f88d2f580d5eba68d559d41ec3e0dce9da9fa1e11b684a34",
+      "object_sha256": "46ea0e78bd41d29f555a5fde0457115e1fc9f7c8d17cb05fdf7a48ef3ad627a1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersEta",
+      "source_sha256": "25d0e71cdbad5dbe2e0060ee013f0c852e99748dbf6ec10b75737fcaaaf7602c",
+      "compiled_source_sha256": "25d0e71cdbad5dbe2e0060ee013f0c852e99748dbf6ec10b75737fcaaaf7602c",
+      "object_sha256": "d311dc505eafa4ac6f2168417e69175ae8aaafe7a940c43eb00b97504ecd2a91",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersFromData",
+      "source_sha256": "e19eb04c43a8803eb4e649f295016d1ea156d7c8b536fe6d4ccadc5825385ca9",
+      "compiled_source_sha256": "e19eb04c43a8803eb4e649f295016d1ea156d7c8b536fe6d4ccadc5825385ca9",
+      "object_sha256": "ac479f9e54bd2d2aa743c24a7815140dca4115a299028b0981bd7d69ecba335a",
+      "log_sha256": "cc7c6c533aab5361d061f6287910de0655e08e4db3f199be678fd104caa0babb"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersGinChoice",
+      "source_sha256": "be8af6bf5b30b1e09063272a5ea686f7857f735cad89b9262baa467dff7121ae",
+      "compiled_source_sha256": "be8af6bf5b30b1e09063272a5ea686f7857f735cad89b9262baa467dff7121ae",
+      "object_sha256": "5b83897d894c155b69d25b1a07aa4d33da451e489a00d1e16a940f84652c2a35",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersGinDelta",
+      "source_sha256": "35c72f038c81d2ed561a864d6709a1a5fdd48e79a0b992c99f9a651e3c266948",
+      "compiled_source_sha256": "35c72f038c81d2ed561a864d6709a1a5fdd48e79a0b992c99f9a651e3c266948",
+      "object_sha256": "5ac21028a1ed646cf4b467e7b5848661c8cd10430a99954bb62a4b7259bdb6b6",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersHeight",
+      "source_sha256": "de3de74367388570e0d41f274860b28d4bef7e296c9303501ff402efaabe95b5",
+      "compiled_source_sha256": "de3de74367388570e0d41f274860b28d4bef7e296c9303501ff402efaabe95b5",
+      "object_sha256": "af3a1c676da281e7434d424007d36072a9b21b58bce5db5c179b2d946c5d073f",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersRho",
+      "source_sha256": "1a86a8af7cd41e6204253bba2a5004f3b1b216e69c889ded7f72452b0e305c4c",
+      "compiled_source_sha256": "1a86a8af7cd41e6204253bba2a5004f3b1b216e69c889ded7f72452b0e305c4c",
+      "object_sha256": "69034c9a124cc9517d4f803be643df0e1102d632067ddabbb361870d2471e7f5",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersSigns",
+      "source_sha256": "4e299eb9ab74676e07587cfa5a6c2a141f973326a6dafd9534776b1f8c0e8ba9",
+      "compiled_source_sha256": "4e299eb9ab74676e07587cfa5a6c2a141f973326a6dafd9534776b1f8c0e8ba9",
+      "object_sha256": "ed095406f05ba6c7eac6a27a7c7dee1448f0290d7005364e3927f487c65a367c",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingRebaseAudit",
+      "source_sha256": "6f332c7f529264ba02ed2293714cd2a94d2035f22269f11a6361904f27fd8b91",
+      "compiled_source_sha256": "6f332c7f529264ba02ed2293714cd2a94d2035f22269f11a6361904f27fd8b91",
+      "object_sha256": "5e81acbfe96d32100b3108054564e8b68d11024efcdaa4fa2e2d791967bedc80",
+      "log_sha256": "654cd323d14cc6f26359cefc5d7ed5642f716feb6e24967dcae2886a44c16f6d"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingRebaseMatching",
+      "source_sha256": "16b153ae063fedb166b2f8fa91600443c4a67133517c1cd0ea8a538e26f294fb",
+      "compiled_source_sha256": "16b153ae063fedb166b2f8fa91600443c4a67133517c1cd0ea8a538e26f294fb",
+      "object_sha256": "b94fcb645b7538670c06d288111774884de5c0f316b9175b8049fd624dd147f4",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingRebaseOriginalTrace",
+      "source_sha256": "186494dcb80a0034246d77275b3214ea820d58f68b2650dfdb66edb768ac857d",
+      "compiled_source_sha256": "186494dcb80a0034246d77275b3214ea820d58f68b2650dfdb66edb768ac857d",
+      "object_sha256": "ef45f1dd1725a878acd02d0ce255e4002ca8cbbdb8941acf4bd65f61673b7cbe",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingSeamEmbedding",
+      "source_sha256": "70452fa23e5ee8d49f162a7397727a2560ecb9cebc5e5f8ddf2446d8453b78ae",
+      "compiled_source_sha256": "70452fa23e5ee8d49f162a7397727a2560ecb9cebc5e5f8ddf2446d8453b78ae",
+      "object_sha256": "9cb8da8bbc24ff7d65bcd1be472ec149433f6dffa61a986991917e56547b4dce",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingSeamJets",
+      "source_sha256": "cb94a4b3c7f9763a48a88085d5d222b3ee96a8dda955473d0de2d88cf2369bd5",
+      "compiled_source_sha256": "cb94a4b3c7f9763a48a88085d5d222b3ee96a8dda955473d0de2d88cf2369bd5",
+      "object_sha256": "e1ed69623fe23d18b7820dfca3e8c0813e364b671032a89627110678b113bd79",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalActualStability",
+      "source_sha256": "94e1fa66bce5230c7a061b656d88f58dc8cca09bd0d3d68e29557b3359b67be2",
+      "compiled_source_sha256": "94e1fa66bce5230c7a061b656d88f58dc8cca09bd0d3d68e29557b3359b67be2",
+      "object_sha256": "4a0f39c005cdb4c62a77ca84b5a8b5ba040040730ab525f21a0580d1fed30a23",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalGinStability",
+      "source_sha256": "08a4060d57274dcca967f55cb17ec20242bbfda5ad1442f230460d54bd155f68",
+      "compiled_source_sha256": "08a4060d57274dcca967f55cb17ec20242bbfda5ad1442f230460d54bd155f68",
+      "object_sha256": "8c34ecacd109b63b1908ecc9e57f808bbaa921fba3da0fd0580690f92fe72437",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalLocalStability",
+      "source_sha256": "49383869db96958e6889644f8cefe76b971472a6c8707710cde3d9429a0657d8",
+      "compiled_source_sha256": "49383869db96958e6889644f8cefe76b971472a6c8707710cde3d9429a0657d8",
+      "object_sha256": "8731e75a41d7829327faf59245781ace1b1469aa18a94cc83044b91bb0e995ce",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalMargins",
+      "source_sha256": "da2eb84f1a012a4dd0e4a8a8eda464d98470873fd9eae83f8e0199edeb4f97ae",
+      "compiled_source_sha256": "da2eb84f1a012a4dd0e4a8a8eda464d98470873fd9eae83f8e0199edeb4f97ae",
+      "object_sha256": "319d0f0e8c484b6fbd8605e4c77e0723a9a86b1571a59f240700849fbddebbd0",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalPhase",
+      "source_sha256": "d99452bf6bfb33730cf94d86482193fc5fbd7fe457ba52b326574accafc0ffef",
+      "compiled_source_sha256": "d99452bf6bfb33730cf94d86482193fc5fbd7fe457ba52b326574accafc0ffef",
+      "object_sha256": "b71515ccda64d4602362005369d9d2d0e8867b0f9aea32e5c674352980ce0664",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalQuotient",
+      "source_sha256": "90dca8b7b52c69f1b3cb1f5267475adea6e81595aac541819446f50b271b799a",
+      "compiled_source_sha256": "90dca8b7b52c69f1b3cb1f5267475adea6e81595aac541819446f50b271b799a",
+      "object_sha256": "68f8ca5883738619b5b623ba95f91201b8c76f15996c3e0a252346073275c1b1",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalRadialStability",
+      "source_sha256": "31c1f053a664312caa77ee1178049aa862317ec30e676c55898f63d7d735ead3",
+      "compiled_source_sha256": "31c1f053a664312caa77ee1178049aa862317ec30e676c55898f63d7d735ead3",
+      "object_sha256": "d12cc355a93ab07f0066ccdbb66fce062ccd9e26f95a854774d9f6db3672cbfe",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalRebase",
+      "source_sha256": "6e88172986a73058b27aaf4100496807506bff930e2296c27ad9c8b20bb549fe",
+      "compiled_source_sha256": "6e88172986a73058b27aaf4100496807506bff930e2296c27ad9c8b20bb549fe",
+      "object_sha256": "ca98ed99d28dde3e3f60e58087884aa331b95996f85cbcfbde35a7637c4cf328",
+      "log_sha256": "c1565766f39cc5d70b42895ddb2e80bbdde8ec4ea4f17ed91b0fe3b4835410e4"
+    }
+  ],
+  "full_repository_verification": {
+    "result": "PASS",
+    "declarations": 17608,
+    "modules": 1409,
+    "source_closure_sha256": "b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9",
+    "report_sha256": "80b6e4376943a8a12b1f03d9a5fe9f1703640de9d2fd1082e71b2f03a06ee6bf",
+    "warning": "Shared root closure does not import incoming leaves; scoped audit certifies them separately."
+  },
+  "target_manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+  "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1"
+}
