@@ -1,4 +1,5 @@
 import TightVer401.VisibleConnectorFinalSmoothingGerms
+import TightVer401.VisibleConnectorFinalSmoothingBand
 import Lean
 
 open Lean Elab Command in
@@ -35,5 +36,6 @@ elab "#final_smoothing_audit" : command => do
   logInfo m!"VER401_AUDIT_COUNT {count}"
 
 #final_smoothing_audit
+
 
 
