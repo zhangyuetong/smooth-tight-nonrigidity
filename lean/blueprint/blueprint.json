@@ -28,15 +28,15 @@
     }
   },
   "certificate": {
-    "audit_sha256": "64b6a28389bd8efb63628134ddc2a2f327045c17bd9bde8969f9d81368f40e83",
-    "audit_generated_at_utc": "2026-10-09T18:31:19.661370+00:00",
+    "audit_sha256": "3d3d116df4b3c89576745f2dc032d84f8d50214f9ebcfd07f9032b5d82bb0b4a",
+    "audit_generated_at_utc": "2026-10-09T19:06:01.685090+00:00",
     "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
     "upstream_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
     "upstream_lock_sha256": "003537806bb19cbf8eeea531fdf310d9abf25df43b4e3cc497b2ea35af4c3827",
     "lean": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
     "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
-    "compiled_modules": 1504,
-    "audited_declarations": 18233
+    "compiled_modules": 1507,
+    "audited_declarations": 18241
   },
   "numbered_claim_counts": {
     "pending": 20,

@@ -1,6 +1,6 @@
 # ver503 first-pair obligation audit
 
-Full current-source verification **PASS** at `3a8f551901af2d613bd0950df4ee11fff462f79f` on `2026-10-09T18:31:19.661370+00:00` (Audit: 166.665 seconds). Both EXACT closed proof inhabitants and ONLY `ClassicalExternalResults` before the ultimate first existential are checked. The closure has no admissions or custom axioms; exactly two external statements remain. Historical source `07a2980` certified the earlier four-statement theorem. No original construction assumption remains. Extensions/Cantor remain deferred.
+Full current-source verification **PASS** at `771b0d3e0e394d9801e36df54c8448ea5321497b` on `2026-10-09T19:06:01.685090+00:00` (Audit: 166.869 seconds). Both EXACT closed proof inhabitants and ONLY `ClassicalExternalResults` before the ultimate first existential are checked. The closure has no admissions or custom axioms; exactly two external statements remain. Historical source `07a2980` certified the earlier four-statement theorem. No original construction assumption remains. Extensions/Cantor remain deferred.
 
 ## Present ultimate theorem and exact assumptions
 

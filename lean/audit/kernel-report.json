@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "generated_at_utc": "2026-10-09T18:31:19.661370+00:00",
+  "generated_at_utc": "2026-10-09T19:06:01.685090+00:00",
   "paper_completion": "INCOMPLETE",
   "target": "ver503",
   "primary_objective": {
@@ -68,13 +68,13 @@
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
-          "TightVer401": "811a37573b0121ee744ee1f24651193c609b2d291a8d2932b6bd0ada17826403"
+          "TightVer401": "e0c04d060414010e0890c55996f023dd327d4580bbab000a2735304daf319ad4"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 166.665,
+      "elapsed_seconds": 166.869,
       "olean_sha256": "ec4988353ed7b3e40bbd97093c690a6d75574e3881ec2b68a32e531c611f85f6",
-      "log_sha256": "fd3f94c51954898a2df3dfa0708326866be567d647de0d435a2015d93be3835d"
+      "log_sha256": "28382d4313d5bbe9c963c61c725625a4dfa4ca5133d2a76ea207294452e23c27"
     },
     {
       "module": "OAI.Analysis.CircleDomains.LengthArea",
@@ -7768,8 +7768,8 @@
       "source": "TightVer401.lean",
       "compiled_source": "TightVer401.lean",
       "key": {
-        "source_sha256": "e23fe20bfe824d3c8ada3843b3fba210f851b0b7434ceb105d5583113f5fa2a8",
-        "compiled_source_sha256": "e23fe20bfe824d3c8ada3843b3fba210f851b0b7434ceb105d5583113f5fa2a8",
+        "source_sha256": "d7a164672ac9f5c05a0be4378a65bc2c98640ccef8f2766197bd18260de7e2bf",
+        "compiled_source_sha256": "d7a164672ac9f5c05a0be4378a65bc2c98640ccef8f2766197bd18260de7e2bf",
         "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
         "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
         "dependencies": {
@@ -8184,12 +8184,15 @@
           "TightVer401.NonrigidTorusPair": "3ee4f3a676b7ff4854dac7801564774dfee7a694bcaa97ed43720b25846a2138",
           "TightVer401.ClassicalEmbeddingSmoothFactor": "9cb5a3f295ba366f888ba451c7bf2349b3b135bf4e41ffd0c21c73dd29dd87db",
           "TightVer401.ClassicalEmbeddedReparamProof": "1b371f4f3d28fc9c68cb57ed065be3018061eda8ecf5da2dc08330e76c2e1ff9",
-          "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229"
+          "TightVer401.MarkerEllipseAxesRecognitionProof": "367765397ed8435e544d2ecae4e61536f3f476fefb0c5c7d5d1efd8b49f65229",
+          "TightVer401.HeightSuperlevelConnected": "2d67c634ba24e482cf24996c1115feb4b564a15423a8973831c3bd6bc0d3d63b",
+          "TightVer401.HeightSuperlevelLimits": "849a764acb237674df4ef437815185f640e9f782eeb74a112bed113d03795d4f",
+          "TightVer401.SphereFiniteComplementConnected": "6d0b0fb88758c2097d664357fc8fc99e9aad61a79d1c0326432ff0c5f846e968"
         }
       },
       "exit_code": 0,
-      "elapsed_seconds": 50.094,
-      "olean_sha256": "811a37573b0121ee744ee1f24651193c609b2d291a8d2932b6bd0ada17826403",
+      "elapsed_seconds": 52.504,
+      "olean_sha256": "e0c04d060414010e0890c55996f023dd327d4580bbab000a2735304daf319ad4",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -14828,6 +14831,38 @@
       "exit_code": 0,
       "elapsed_seconds": 66.401,
       "olean_sha256": "991a2fb3cb1dde2b089d29d43881640d86c9e232f2e35fcacc8ff62e5e3efbea",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.HeightSuperlevelConnected",
+      "source": "TightVer401\\HeightSuperlevelConnected.lean",
+      "compiled_source": "TightVer401\\HeightSuperlevelConnected.lean",
+      "key": {
+        "source_sha256": "d32c265af4ac2d890bbf8215ace88ac4a35dd3adf68a6ac90a2e98a169bddaaa",
+        "compiled_source_sha256": "d32c265af4ac2d890bbf8215ace88ac4a35dd3adf68a6ac90a2e98a169bddaaa",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 22.601,
+      "olean_sha256": "2d67c634ba24e482cf24996c1115feb4b564a15423a8973831c3bd6bc0d3d63b",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "TightVer401.HeightSuperlevelLimits",
+      "source": "TightVer401\\HeightSuperlevelLimits.lean",
+      "compiled_source": "TightVer401\\HeightSuperlevelLimits.lean",
+      "key": {
+        "source_sha256": "cd96e9bff1090dfa808cc200e8165c54575e8838d593258f38a6fda30f533f11",
+        "compiled_source_sha256": "cd96e9bff1090dfa808cc200e8165c54575e8838d593258f38a6fda30f533f11",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {}
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 21.496,
+      "olean_sha256": "849a764acb237674df4ef437815185f640e9f782eeb74a112bed113d03795d4f",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
@@ -25455,6 +25490,24 @@
       "elapsed_seconds": 54.203,
       "olean_sha256": "485ed176dbce3b2393e4782e201c8b57433119af3648f83fc57957488f3b4284",
       "log_sha256": "9be7f51a7ec046bd18537f53e750fe76596872ad6ced7c6ea083a967b3301712"
+    },
+    {
+      "module": "TightVer401.SphereFiniteComplementConnected",
+      "source": "TightVer401\\SphereFiniteComplementConnected.lean",
+      "compiled_source": "TightVer401\\SphereFiniteComplementConnected.lean",
+      "key": {
+        "source_sha256": "90fdab1a57614a578533c30880635e0bf78fe8f30fd90e3bc9d855ca09a3bab4",
+        "compiled_source_sha256": "90fdab1a57614a578533c30880635e0bf78fe8f30fd90e3bc9d855ca09a3bab4",
+        "lean_version": "Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)",
+        "mathlib_pin": "e4c91783ca8e6a7c693ae624ade32fd22d4e43c1",
+        "dependencies": {
+          "TightVer401.SphereCharts": "485ed176dbce3b2393e4782e201c8b57433119af3648f83fc57957488f3b4284"
+        }
+      },
+      "exit_code": 0,
+      "elapsed_seconds": 57.604,
+      "olean_sha256": "6d0b0fb88758c2097d664357fc8fc99e9aad61a79d1c0326432ff0c5f846e968",
+      "log_sha256": "d6947e6d5bfb41b65b016fafd3060e6b3bbd13a8cbb6bc5d6944aa5b1300d49f"
     },
     {
       "module": "TightVer401.SphereFrame",
@@ -159243,6 +159296,36 @@
         "Classical.choice",
         "Quot.sound"
       ],
+      "kind": "theorem",
+      "name": "TightVer401.height_superlevel_component_exists_localMax",
+      "type": "∀ {X : Type u_1} [inst : TopologicalSpace X] [CompactSpace X] [LocallyConnectedSpace X] {h : X → ℝ},\n  Continuous h → ∀ {a : ℝ} {x : X}, a < h x → ∃ p ∈ connectedComponentIn {y | a < h y} x, IsLocalMax h p"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.height_superlevel_isPreconnected_of_uniform_approximants",
+      "type": "∀ {X : Type u_1} [inst : TopologicalSpace X] {h : X → ℝ},\n  (∀ (ε : ℝ), 0 < ε → ∃ g, (∀ (x : X), |g x - h x| < ε) ∧ ∀ (b : ℝ), IsPreconnected {x | b < g x}) →\n    ∀ (a : ℝ), IsPreconnected {x | a < h x}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.height_superlevel_isPreconnected_of_unique_localMax",
+      "type": "∀ {X : Type u_1} [inst : TopologicalSpace X] [CompactSpace X] [LocallyConnectedSpace X] {h : X → ℝ},\n  Continuous h → (∀ (p q : X), IsLocalMax h p → IsLocalMax h q → p = q) → ∀ (a : ℝ), IsPreconnected {x | a < h x}"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
       "kind": "definition",
       "name": "TightVer401.hemisphereDomain",
       "type": "(w : OAI.SmoothLocal.Geometry.Ambient) →\n  w ≠ 0 → ‖w‖ = 1 → Set ↑TightVer401.RoundSphere → Set OAI.SmoothLocal.Geometry.Coord"
@@ -189839,6 +189922,36 @@
         "Quot.sound"
       ],
       "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isConnected",
+      "type": "∀ {E : Set ↑TightVer401.RoundSphere}, E.Finite → IsConnected Eᶜ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_isPathConnected",
+      "type": "∀ {E : Set ↑TightVer401.RoundSphere}, E.Finite → IsPathConnected Eᶜ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_finite_complement_nonempty",
+      "type": "∀ {E : Set ↑TightVer401.RoundSphere}, E.Finite → Eᶜ.Nonempty"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
       "name": "TightVer401.roundSphere_ne_zero",
       "type": "∀ (q : ↑TightVer401.RoundSphere), ↑q ≠ 0"
     },
@@ -189851,6 +189964,16 @@
       "kind": "theorem",
       "name": "TightVer401.roundSphere_norm",
       "type": "∀ (q : ↑TightVer401.RoundSphere), ‖↑q‖ = 1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.roundSphere_univ_diff_finite_isConnected",
+      "type": "∀ {E : Set ↑TightVer401.RoundSphere}, E.Finite → IsConnected (Set.univ \\ E)"
     },
     {
       "axioms": [
@@ -196953,6 +197076,16 @@
       "kind": "theorem",
       "name": "TightVer401.sphereCoordEquiv._proof_1",
       "type": "(1 + 1).AtLeastTwo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "kind": "theorem",
+      "name": "TightVer401.sphereFiniteComplementDimension",
+      "type": "Fact (Module.finrank ℝ OAI.SmoothLocal.Geometry.Ambient = 2 + 1)"
     },
     {
       "axioms": [
@@ -206516,8 +206649,8 @@
     }
   ],
   "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion.",
-  "source_closure_sha256": "89bf2dab0e0e2d6924ebbc2c78c5288153be5e7e522c387ee31402bf1aca3095",
-  "source_git_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
+  "source_closure_sha256": "51d26392c48ade537f43ad392ca0a3b62cfa6bd6a611aabed0e4cf5e1d467fc0",
+  "source_git_commit": "771b0d3e0e394d9801e36df54c8448ea5321497b",
   "target_lock_sha256": "b28d8bb7bf25e74707d28346111280f6a659ed64f342e258cb0ac455f0b11f84",
   "migration_review_sha256": "344f01052b12f91a289d3d74a79aa7a7a57013811e8b9302885200ce8e20c901",
   "classical_registry_sha256": "9ca23f05ce0e3be1397f7dc543ec84d39e792254d642348f660e56d972c3df2b",
