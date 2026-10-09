@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-09T17:44:17.131414+00:00",
+  "updated_at_utc": "2026-10-09T18:24:35.154848+00:00",
   "integration_path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-integration",
   "branch": "codex/ver503-integration",
   "latest_published_checked_checkpoint": "07a29801e214f5525d69bd3fab37ea8029145626",
@@ -16,13 +16,19 @@
   },
   "queued_frozen_sources": [],
   "remaining_original_gates": [],
-  "next_action": "First-pair proof objective achieved and certified under the four authorized classical statements. Stay quiet on unchanged completed state. Extensions/Cantor remain deferred unless newly requested.",
+  "next_action": "Exclusive source owners tooling_migration:MarkerEllipseAxesRecognitionProof.lean; migration_review:ClassicalEmbeddedReparamProof.lean; frozen_review read-only API support. Root sole compiler. Direct compile candidates, relay errors, supply proved claims in exact ultimate theorem, update registry/inventory/verifier/blueprint, certify and publish.",
   "note": "Live process/Git/source evidence overrides historical session IDs. Old paused ver500 monitors and workers remain untouched. No worker-only Audit module enters production imports.",
   "latest_checked_source_commit": "07a29801e214f5525d69bd3fab37ea8029145626",
   "latest_audit_result": "PASS",
-  "latest_audit_attempt": "Final combined first-pair audit PASS, exact four statement parameters only, no original construction assumptions/admissions/custom axioms.",
-  "active_preflight_session_id": null,
-  "active_preflight_log": null,
-  "first_pair_status": "conditional-proved",
-  "exact_final_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+  "latest_audit_attempt": "Smooth-factor direct PASS24.295s and exact reparameterization direct PASS52.063s. Repaired ellipse and reduced ultimate theorem preflight active. Historical four-statement final audit remains the published certificate.",
+  "active_preflight_session_id": 34098,
+  "active_preflight_log": "build-logs/ver503-two-background-final-preflight.log",
+  "first_pair_status": "conditional-proved-under-four; two-background-removal-followup-active",
+  "exact_final_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
+  "active_followup": "Human requested prove the two simple classical results: exact MarkerEllipseAxesRecognition and ClassicalEmbeddedImageReparametrizationClaim. Preserve first-pair source construction; remove these two theorem parameters after direct proof and new combined audit.",
+  "remaining_background_proof_gates": [
+    "Ellipse direct compiler validation",
+    "Reduced ultimate theorem direct compiler validation",
+    "Combined exact two-background certificate and publication"
+  ]
 }
