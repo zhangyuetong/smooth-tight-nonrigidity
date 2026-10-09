@@ -7,6 +7,7 @@ import re
 import subprocess
 import sys
 import argparse
+from inventory import PROVED_PAIR_BACKGROUND, reduced_pair_is_audited
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
@@ -99,14 +100,22 @@ def main():
         assert set(exports) <= names
     ultimate = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
     assert ultimate in names, "Exact classical first-pair theorem missing from the current audited closure"
+    assert reduced_pair_is_audited(declarations), (
+        "Need exact closed background proof inhabitants and ONLY ClassicalExternalResults → before the ultimate first existential")
+    by_name = {row["name"]: row for row in declarations}
+    for proof, expected_type in PROVED_PAIR_BACKGROUND.items():
+        assert by_name[proof]["kind"] == "theorem"
+        assert " ".join(by_name[proof]["type"].split()) == expected_type, by_name[proof]
+    assert " ".join(by_name[ultimate]["type"].split("∃", 1)[0].split()) == "TightVer401.ClassicalExternalResults →"
     assumptions = [
         {"parameter": "background.positiveGaussTightness", "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"},
         {"parameter": "background.coincidentEmbeddingFixedOpen", "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"},
-        {"parameter": "reparam", "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"},
-        {"parameter": "axes", "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"},
     ]
     registry = json.loads((ROOT / "classical-external-results.json").read_text(encoding="utf-8"))
     assert {grant["lean_claim"] for grant in registry["grants"]} == {a["lean_claim"] for a in assumptions}
+    proved_registry = registry["proved_background"]
+    assert {row["proof_declaration"]: row["lean_claim"] for row in proved_registry} == PROVED_PAIR_BACKGROUND
+    assert all(row["status"] == "kernel_proved" and row["lean_proof_source"] for row in proved_registry)
     objective = coverage["primary_objective"]
     assert objective["lean_target"] == ultimate and objective["conditional_lean_target"] == ultimate
     assert objective["status"] == "conditional-proved"
@@ -120,7 +129,7 @@ def main():
     result = {"result": "PASS", "generated_at_utc": datetime.now(timezone.utc).isoformat(),
               "paper_completion": "INCOMPLETE", "target": coverage["target"],
               "primary_objective": objective, "explicit_first_pair_assumptions": assumptions,
-              "first_pair_exact_audited_declaration": ultimate, "manuscript_sha256": coverage["manuscript_sha256"],
+              "first_pair_exact_audited_declaration": ultimate, "proved_first_pair_background": PROVED_PAIR_BACKGROUND, "manuscript_sha256": coverage["manuscript_sha256"],
               "upstream_commit": lock["commit"], "upstream_lock_sha256": sha(ROOT / "upstream-lock.json"),
               "schoenflies_lock_sha256": build.get("schoenflies_lock_sha256"),
               "build_profile": build["build_profile"], "version": build["version"],
@@ -142,7 +151,7 @@ def main():
     result["lakefile_sha256"] = sha(ROOT / "lakefile.toml")
     result["verification_scripts"] = {name: sha(ROOT / "scripts" / name) for name in ["build.py", "verify.py", "inventory.py"]}
     report_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"PASS: exact first-pair theorem audited against {coverage['target']}, conditional on four registered classical statements; full paper remains incomplete.")
+    print(f"PASS: exact first-pair theorem audited against {coverage['target']}, conditional on two registered classical statements; full paper remains incomplete.")
 
 if __name__ == "__main__":
     main()

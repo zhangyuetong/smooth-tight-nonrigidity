@@ -5,7 +5,7 @@
   "mode": "explicit_classical_external_theorem_parameters",
   "lean_bundle": "TightVer401.ClassicalExternalResults",
   "lean_source": "TightVer401/ClassicalExternal.lean",
-  "certification_rule": "Kernel checks the statements and conditional applications; neither a Prop definition nor a checked application proves an external premise. No inhabitant of ClassicalExternalResults, custom axiom, sorry or circular construction grant is introduced.",
+  "certification_rule": "Kernel checks the two remaining explicit external statement parameters and their conditional applications, and separately verifies the exact closed proof inhabitants in proved_background. No inhabitant of ClassicalExternalResults, custom axiom, admission or circular construction grant is introduced.",
   "primary_goal": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
   "grants": [
     {
@@ -82,14 +82,71 @@
         "Native intrinsic-distance/metric-space compatibility packaging as a blocking prerequisite for the noncongruence argument"
       ],
       "proof_note": "Construct f=Y inverse composed with X through smooth embedded-submanifold inverses, differentiate Y composed with f=X, identify f as an isometry for the common actual induced metric, and use fixed-open rigidity. This is not an assumption of markedness or noncongruence."
+    }
+  ],
+  "already_proved_background": [
+    {
+      "result": "Annular degree and gradient global inverse",
+      "export": "TightVer401.annular_degree_planarGradient_global_diffeomorphism",
+      "policy": "Reuse actual proof; do not replace by a new grant."
     },
+    {
+      "result": "Relative saddle smoothing",
+      "export": "TightVer401.exists_relative_saddle_smoothing",
+      "policy": "Reuse actual proof and supply its application inputs."
+    },
+    {
+      "result": "Compact embedding stability",
+      "export": "TightVer401.nativeCompactEmbedding_exists_amplitude_threshold",
+      "policy": "Reuse actual proof."
+    },
+    {
+      "result": "Fixed-open isometry uniqueness with compatible Riemannian instances",
+      "export": "TightVer401.isometry_eq_id_of_fixed_open_compact",
+      "policy": "Retain audited proof; grant only the generic embedded-image corollary above to bypass additional compatibility infrastructure."
+    },
+    {
+      "result": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
+      "export": "TightVer401.classicalEmbeddedImageReparametrization_proved",
+      "policy": "Use the actual closed kernel proof; do not replace it by an external grant."
+    },
+    {
+      "result": "TightVer401.MarkerEllipseAxesRecognition",
+      "export": "TightVer401.markerEllipseAxesRecognition_proved",
+      "policy": "Use the actual closed kernel proof; do not replace it by an external grant."
+    }
+  ],
+  "classical_results_authorized_on_demand": [
+    "Ordinary inverse/implicit-function theorems, Jordan–Schoenflies, degree, compact C1 embedding openness, tubular neighborhoods, smooth bump functions and partitions of unity, Riemannian isometry uniqueness, Gauss-area and Gauss–Bonnet"
+  ],
+  "on_demand_rule": "Prefer existing OpenAI/Mathlib/engine exports. A needed missing theorem may be added only with its precise statement, valid published reference, application hypotheses and consumer; authorization is not proof credit and never grants the paper-specific exits/connector/completion/torus/pair.",
+  "optional_nonblocking_numeric_budget": {
+    "results": [
+      "Gauss–Bonnet",
+      "Gauss-area change of variables"
+    ],
+    "status": "authorized classical background; an exact actual area/integral interface is not yet registered",
+    "policy": "Do not define a dummy area measure or fabricate numerical 8π proof credit. This is not a first-pair dependency."
+  },
+  "forbidden_construction_grants": [
+    "exists_positive_exits_fixed_core",
+    "exists_visible_connector_radial_positive",
+    "full quadratic filling",
+    "two-sided support completion",
+    "existsCompletedSaddle",
+    "exists_protected_torus_embedding",
+    "affine marking of the chosen closure",
+    "exists_noncongruent_isometric_tight_tori_pair"
+  ],
+  "lean_additional_parameters": [],
+  "proved_background": [
     {
       "id": "E.embedded-image-reparametrization",
       "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
       "field": null,
       "parameter": "embeddedImageReparametrization",
       "lean_source": "TightVer401/ClassicalEmbeddedReparam.lean",
-      "status": "external_assumed",
+      "status": "kernel_proved",
       "reference_kind": "generic corollary of smooth embedded-submanifold inversion",
       "sources": [
         {
@@ -114,7 +171,10 @@
       "replaces": [
         "Further native embedded-submanifold inverse packaging as a first-pair blocker"
       ],
-      "proof_note": "Separate explicit theorem parameter; existing two-field ClassicalExternalResults bundle is unchanged. Grants no common metric, curvature, positive image, marking or noncongruence."
+      "proof_note": "Construct range homeomorphisms for the actual embeddings; local coordinate smoothness is recovered through the actual injective differential by a continuous-linear left inverse and the pinned inverse function theorem. Both directions are proved smooth. No external result parameter remains.",
+      "proof_declaration": "TightVer401.classicalEmbeddedImageReparametrization_proved",
+      "lean_proof_source": "TightVer401/ClassicalEmbeddedReparamProof.lean",
+      "certification_rule": "Exact closed proof inhabitant must occur in the current source-bound kernel audit; historical statement/application checks alone do not prove the claim."
     },
     {
       "id": "E.noncircular-ellipse-axes-recognition",
@@ -122,8 +182,7 @@
       "lean_source": "TightVer401/TorusAffineMarkerEllipseBasic.lean",
       "field": null,
       "parameter": "ellipseAxesRecognition",
-      "status": "external_assumed",
-      "typed_interface_status": "root_combined_PASS1325_16912_at2026-10-08T22:20:36UTC; definition and exact application consumers audited; no inhabitant asserted",
+      "status": "kernel_proved",
       "reference_kind": "generic elementary corollary of noncircular ellipse center and principal-axis recognition",
       "sources": [
         {
@@ -156,55 +215,10 @@
         "Actual entire positive image identification",
         "Actual original torus, B/C bending and new metric, marked curvature threshold and final pair"
       ],
-      "proof_note": "Elementary COROLLARY, not a verbatim named theorem. Isometry preserves unique long diameter endpoint pair and its center midpoint; distinct long/short extreme endpoint pairs identify both axis lines; orthogonality preserves their 1D normal complement. See overnight-ellipse-background-review.md. Exact ordinary type validated in worker audit a30f703 and reviewed in root; the root combined audit PASS1325/16912 checks its imported consumers; no inhabitant or original marker stabilizer is asserted."
+      "proof_note": "Elementary coordinate proof using the unique enclosing-ball center, longest-axis endpoints and preservation of norms and inner products. Unequal positive semiaxes force all three coordinate signs. No recognition assumption remains.",
+      "proof_declaration": "TightVer401.markerEllipseAxesRecognition_proved",
+      "lean_proof_source": "TightVer401/MarkerEllipseAxesRecognitionProof.lean",
+      "certification_rule": "Exact closed proof inhabitant must occur in the current source-bound kernel audit; historical statement/application checks alone do not prove the claim."
     }
-  ],
-  "already_proved_background": [
-    {
-      "result": "Annular degree and gradient global inverse",
-      "export": "TightVer401.annular_degree_planarGradient_global_diffeomorphism",
-      "policy": "Reuse actual proof; do not replace by a new grant."
-    },
-    {
-      "result": "Relative saddle smoothing",
-      "export": "TightVer401.exists_relative_saddle_smoothing",
-      "policy": "Reuse actual proof and supply its application inputs."
-    },
-    {
-      "result": "Compact embedding stability",
-      "export": "TightVer401.nativeCompactEmbedding_exists_amplitude_threshold",
-      "policy": "Reuse actual proof."
-    },
-    {
-      "result": "Fixed-open isometry uniqueness with compatible Riemannian instances",
-      "export": "TightVer401.isometry_eq_id_of_fixed_open_compact",
-      "policy": "Retain audited proof; grant only the generic embedded-image corollary above to bypass additional compatibility infrastructure."
-    }
-  ],
-  "classical_results_authorized_on_demand": [
-    "Ordinary inverse/implicit-function theorems, Jordan–Schoenflies, degree, compact C1 embedding openness, tubular neighborhoods, smooth bump functions and partitions of unity, Riemannian isometry uniqueness, Gauss-area and Gauss–Bonnet"
-  ],
-  "on_demand_rule": "Prefer existing OpenAI/Mathlib/engine exports. A needed missing theorem may be added only with its precise statement, valid published reference, application hypotheses and consumer; authorization is not proof credit and never grants the paper-specific exits/connector/completion/torus/pair.",
-  "optional_nonblocking_numeric_budget": {
-    "results": [
-      "Gauss–Bonnet",
-      "Gauss-area change of variables"
-    ],
-    "status": "authorized classical background; an exact actual area/integral interface is not yet registered",
-    "policy": "Do not define a dummy area measure or fabricate numerical 8π proof credit. This is not a first-pair dependency."
-  },
-  "forbidden_construction_grants": [
-    "exists_positive_exits_fixed_core",
-    "exists_visible_connector_radial_positive",
-    "full quadratic filling",
-    "two-sided support completion",
-    "existsCompletedSaddle",
-    "exists_protected_torus_embedding",
-    "affine marking of the chosen closure",
-    "exists_noncongruent_isometric_tight_tori_pair"
-  ],
-  "lean_additional_parameters": [
-    "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
-    "TightVer401.MarkerEllipseAxesRecognition"
   ]
 }

@@ -3,6 +3,7 @@ from pathlib import Path
 from collections import Counter
 from bisect import bisect_left
 import hashlib, json, re
+from inventory import reduced_pair_is_audited, PROVED_PAIR_BACKGROUND
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'blueprint'
 
@@ -549,11 +550,29 @@ def main():
     declarations={d['name']:d for d in audit['declarations']}
     registry=json.loads((ROOT/"classical-external-results.json").read_text(encoding="utf-8"))
     nodes=[dict(n) for n in OBJECTS+EXTERNAL+ROUTE]
+    proved_nodes = {
+        'E.embedded-image-reparametrization': ('TightVer401.classicalEmbeddedImageReparametrization_proved', 'TightVer401/ClassicalEmbeddedReparamProof.lean', 'Proved smooth equal-image reparameterization'),
+        'E.noncircular-ellipse-axes-recognition': ('TightVer401.markerEllipseAxesRecognition_proved', 'TightVer401/MarkerEllipseAxesRecognitionProof.lean', 'Proved elementary noncircular ellipse axes recognition'),
+    }
+    for n in nodes:
+        if n['id'] in proved_nodes:
+            proof, proof_file, title = proved_nodes[n['id']]
+            n.update(kind='background_theorem', lean_target=proof, lean_file=proof_file,
+                     lean_targets=[proof], title=title, expected_closed_type=PROVED_PAIR_BACKGROUND[proof])
+            n['statement']='Prove the EXACT closed claim '+PROVED_PAIR_BACKGROUND[proof]+' with no external parameters or construction assumptions. Certification requires CURRENT kernel theorem '+proof+' with precisely this type and no premise header. References supply context; the proof inhabitant supplies the result. Missing or conditional proof types remain pending.'
+            n['background_reference']=next((r for r in registry.get('proved_background',[])+registry['grants'] if r['id']==n['id']), None)
+        if n['id']=='R.ultimate-classical-first-pair-production':
+            n['title']='Produce actual global first pair under ONLY the two ClassicalExternalResults fields'
+            n['statement']='The exact ultimate theorem header is ONLY ClassicalExternalResults → before its first existential. Supply kernel-proved closed ellipse recognition and equal-image reparameterization inhabitants internally, alongside the D-only ordinary family. Retain SAME actual seed/FINAL Y/clocks/scalar/OWN H gradient inverse/completed tuple/FULL meridian and all pair conclusions. Current certification additionally checks BOTH closed proof types and reduced ultimate header; no source-only or historical credit. Full-paper/Cantor scope remains deferred.'
     selected={}
     for n in nodes:
         target=n['lean_target']
         required=n['lean_targets']
         n['interface_status']='audited' if required and all(t in declarations for t in required) else 'pending'
+        if n.get('expected_closed_type'):
+            row=declarations.get(target)
+            if not row or row['kind']!='theorem' or ' '.join(row['type'].split())!=n['expected_closed_type']:
+                n['interface_status']='pending'
         n['status']='external_assumed' if n['kind']=='external_result' else n['interface_status']
         n['scope']=n.get('scope','primary')
         if n['kind']=='external_result':
@@ -576,21 +595,26 @@ def main():
             n['target_signature']=n['proposed_interface'];n['signature_origin']='proposed_definition' if n['kind']=='object' else 'proposed_theorem'
     mapping={n['id']:n for n in nodes}
     assert len(mapping)==len(nodes)
+    if not reduced_pair_is_audited(list(declarations.values())):
+        for ident in ['R.pair-goal','R.ultimate-classical-first-pair-production']:
+            mapping[ident]['status']='pending'
+            mapping[ident]['interface_status']='pending'
+            mapping[ident]['audit_scope']='Pending reduced ultimate header and BOTH exact closed background proof inhabitants in CURRENT audit.'
     first_pair_complete = (
-        'TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical' in declarations
+        reduced_pair_is_audited(list(declarations.values()))
         and all(mapping[i]['status']=='audited' for i in ORIGINAL_GATES))
     pending_original_gates = [i for i in ORIGINAL_GATES if mapping[i]['status']!='audited']
     completion_prose = (
-        'The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the four registered statements: background.positiveGaussTightness, background.coincidentEmbeddingFixedOpen, reparam and axes. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.'
+        'The CURRENT exact combined kernel report certifies every original construction gate and the ultimate first-pair theorem. The first-pair objective is conditional-proved under ONLY the two registered statements: background.positiveGaussTightness and background.coincidentEmbeddingFixedOpen. Ellipse recognition and equal-image reparameterization have exact closed kernel proof inhabitants. No original construction assumption remains. SAME seed, FINAL Y, clocks, raw source E, one full-domain H with its OWN gradient inverse, completed scalar/beta/Q/Cdata tuple and ONE FULL meridian are retained. Full-paper and extension/Cantor-family scope remain incomplete or deferred.'
         if first_pair_complete else
-        'Current exact-audit certification remains pending for these original gates: '+', '.join(pending_original_gates)+'. Source implementations, frozen worker checks and historical certificates do not supply current kernel completion credit. The final H gradient inverse must be reconstructed from that SAME H; all four classical statements remain explicit assumptions. Full-paper and deferred scope remain incomplete.')
+        'Current exact-audit certification remains pending for these original gates: '+', '.join(pending_original_gates)+'. Source implementations, frozen worker checks and historical certificates do not supply current kernel completion credit. The final H gradient inverse must be reconstructed from that SAME H; only the two ClassicalExternalResults fields remain explicit assumptions; both background proof inhabitants and the reduced ultimate header require exact current kernel certification. Full-paper and deferred scope remain incomplete.')
     construction_order = (
-        'Closed actual route: premise-free SAME seed/FINAL Y → complete single selected prefix/source-core → D-only coherent eta/native e/one rho → D-only full Gin germ and ONE smoothing H → universal actual OrdinaryData → actual seed pair projection → exact ultimate first pair under four classical parameters.'
+        'Closed actual route: premise-free SAME seed/FINAL Y → complete single selected prefix/source-core → D-only coherent eta/native e/one rho → D-only full Gin germ and ONE smoothing H → universal actual OrdinaryData → actual seed pair projection → exact ultimate first pair under two classical background statements.'
         if first_pair_complete else
         'Audit-bound construction route: SAME selected seed/source-core → coherent eta/native e/one rho → full Gin germ and ONE full-domain H → universal OrdinaryData → actual seed pair projection → ultimate classical pair. Uncertified exact exports remain pending in the milestone list.')
     def gate_label(gate, title):
         return ('Checked ' if mapping[gate]['status']=='audited' else 'Pending ')+title
-    pair_label = ('Conditional-proved first pair under four statements' if first_pair_complete
+    pair_label = ('Conditional-proved first pair under two statements' if first_pair_complete
                   else 'Pending exact ultimate current-audit certification')
     if first_pair_complete:
         for n in nodes:
@@ -645,6 +669,7 @@ def main():
     assert coverage['claims']
     certificate={'audit_sha256':sha(ROOT/'kernel-report.json'),'audit_generated_at_utc':audit['generated_at_utc'],'manuscript_sha256':lock['sha256'],'upstream_commit':audit['upstream_commit'],'upstream_lock_sha256':audit['upstream_lock_sha256'],'lean':audit['version'],'mathlib_pin':audit['mathlib_pin'],'compiled_modules':len(audit['modules']),'audited_declarations':len(audit['declarations'])}
     result={'title':'ver503: first nonrigid tight-torus pair','target':'ver503','status':'INCOMPLETE','primary_objective':coverage['primary_objective'],'certificate':certificate,'numbered_claim_counts':counts,'nodes':nodes,'topological_order':order,'lean_bindings':selected,'current_ready_frontier':[n['id'] for n in nodes if n['ready_to_formalize']],'dependency_semantics':'Precise proposed proof prerequisites, not kernel implications or grants. Source signatures remain proposed until included in the full audit.','deferred_scope':lock['deferred'],'claims':coverage['claims'],'proof_scope_clarification':'At the quadratic-filling seam, relative smoothing preserves negative Hessian determinant. Auxiliary radial diagonal signs need only hold in the explicit filler and its retained radial germ.'}
+    result['proved_background']=PROVED_PAIR_BACKGROUND
     result['classical_external_registry']=registry
     result['classical_external_registry_sha256']=sha(ROOT/'classical-external-results.json')
     result['primary_route']=[i for i in order if mapping[i]['scope']=='primary']
@@ -654,11 +679,11 @@ def main():
     result['count_semantics']='Numbered manuscript coverage, not independent problems, weighted effort or a percentage of first-pair completion.'
     OUT.mkdir(exist_ok=True)
     for name in ['blueprint.json','lean-map.json']:(OUT/name).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    md=['# ver503: route to a nonrigid tight-torus pair','','The first objective is two noncongruent smooth embedded tight tori with exactly the same induced metric, agreement on a nonempty open set, and no open planar patch. The full Cantor-family assertion is deferred.','',completion_prose,'','The checked core retains the TightVer401 namespace in the publication engine lean. Exact current audit declarations control every completion status.','','## Construction order','',construction_order,'','```mermaid','flowchart TD','  Seed[Actual SAME seed FINAL field clocks] --> Selected['+gate_label('R.firstpair-selected-geometry','selected source and protected core')+']','  Seed --> Compatible['+gate_label('R.compatible-displacement-production','D-only eta native inverse and one rho')+']','  Compatible --> Gin['+gate_label('R.full-incoming-gin-production','FULL incoming open Gin germ')+']','  Gin --> H['+gate_label('R.final-smoothed-h-production','ONE final H on FULL fixed domain')+']','  H --> Ordinary['+gate_label('R.ordinary-connector-family-production','universal actual OrdinaryData')+']','  Ordinary --> Consumer[Actual seed pair projection]','  Selected --> Consumer','  Consumer --> Completion[Same completed scalar beta Q Cdata FULL meridian]','  Completion --> Pair['+pair_label+']','  Classical[Four explicit classical statements] --> Pair','```','','## Objects and exact interfaces','']
-    md += ['## Authorized classical and external results','','The user authorized granting classical and published external results on 2026-10-09. The first-pair target retains `background : ClassicalExternalResults` and the additional explicit `embeddedImageReparametrization : ClassicalEmbeddedImageReparametrizationClaim` and `ellipseAxesRecognition : MarkerEllipseAxesRecognition`. The exact registry is [classical-external-results.json](../classical-external-results.json); checked interfaces are [ClassicalExternal.lean](../TightVer401/ClassicalExternal.lean). External premises are explicitly assumed, while applications and novel constructions are kernel checked. There is no asserted inhabitant of the background bundle, custom axiom, or grant of the desired torus.','']
-    for grant in registry['grants']:
-        md += ['- `'+grant['id']+'`: `'+grant['lean_claim']+'`. Consumers: '+', '.join(grant['consumers'])+'. '+grant['proof_note']]
-        for reference in grant['sources']: md += ['  Source: ['+reference['title']+']('+reference['url']+').']
+    md=['# ver503: route to a nonrigid tight-torus pair','','The first objective is two noncongruent smooth embedded tight tori with exactly the same induced metric, agreement on a nonempty open set, and no open planar patch. The full Cantor-family assertion is deferred.','',completion_prose,'','The checked core retains the TightVer401 namespace in the publication engine lean. Exact current audit declarations control every completion status.','','## Construction order','',construction_order,'','```mermaid','flowchart TD','  Seed[Actual SAME seed FINAL field clocks] --> Selected['+gate_label('R.firstpair-selected-geometry','selected source and protected core')+']','  Seed --> Compatible['+gate_label('R.compatible-displacement-production','D-only eta native inverse and one rho')+']','  Compatible --> Gin['+gate_label('R.full-incoming-gin-production','FULL incoming open Gin germ')+']','  Gin --> H['+gate_label('R.final-smoothed-h-production','ONE final H on FULL fixed domain')+']','  H --> Ordinary['+gate_label('R.ordinary-connector-family-production','universal actual OrdinaryData')+']','  Ordinary --> Consumer[Actual seed pair projection]','  Selected --> Consumer','  Consumer --> Completion[Same completed scalar beta Q Cdata FULL meridian]','  Completion --> Pair['+pair_label+']','  Classical[Two explicit classical statements] --> Pair','```','','## Objects and exact interfaces','']
+    md += ['## Authorized classical and external results','','The user authorized granting classical and published external results on 2026-10-09. The reduced first-pair target retains ONLY `background : ClassicalExternalResults`. Equal-image reparameterization and ellipse recognition are supplied internally by their exact closed kernel proof inhabitants and are no longer external assumptions. Certification requires both proofs and the reduced ultimate header in the current audit. The exact registry is [classical-external-results.json](../classical-external-results.json); checked interfaces are [ClassicalExternal.lean](../TightVer401/ClassicalExternal.lean). External premises are explicitly assumed, while applications and novel constructions are kernel checked. There is no asserted inhabitant of the background bundle, custom axiom, or grant of the desired torus.','']
+    for grant in registry['grants']+registry.get('proved_background',[]):
+        md += ['- `'+grant['id']+'`: `'+grant['lean_claim']+'`. Consumers: '+', '.join(grant.get('consumers',[]))+'. '+grant.get('proof_note','Kernel-proved by '+str(grant.get('proof_declaration','')))]
+        for reference in grant.get('sources',[]): md += ['  Source: ['+reference['title']+']('+reference['url']+').']
     md += ['','## Work removed from the blocking route','','General height/component topology, native intrinsic-distance instance packaging, and a general surface-area/Gauss–Bonnet development are parked alternatives. Completed helpers are retained. Neither the external premises nor retained conditional helpers discharge the actual exits, full filling/completion, saddle annulus, exact torus positive locus, affine marking or final image noncongruence.','','## Construction milestones','']
     for milestone in result['construction_milestones']: md += ['- `'+milestone['id']+'`: '+milestone['status']+' — '+milestone['title']+'.']
     md += ['', '## Downstream conditional consumers', '', 'Each interface status comes from CURRENT exact declarations. Helper implications retain their own hypotheses; the separate actual seed, D-only ordinary-family and ultimate producers discharge the original first-pair inputs only when audited.', '']
@@ -671,14 +696,14 @@ def main():
         elif n['status']=='pending':md += ['The mathematical interface is specified here; a complete Lean signature still needs elaboration. This node is not counted as ready merely because its dependencies are mathematical prerequisites.','']
         for t,typ in n['additional_signatures'].items():md += ['Additional required audited interface: `'+t+'`.','','```lean',typ,'```','']
     md += ['## Current proof frontier','','Only a primary pending node with checked or explicitly externally granted prerequisites and a concrete proposed signature is listed:','']+[ '- `'+i+'`: '+mapping[i]['title'] for i in result['current_ready_frontier']]
-    md += ['','## Deferred results','','Complete cylinders, linking/Han–Khuri applications, general ruled extensions, Cantor families and quotient topology remain deferred. The full-paper coverage register remains incomplete.','','## Honest completion gates','',completion_prose,'','Original gate statuses are derived independently from exact current-audit declarations. The ultimate theorem supplies its universal family locally and retains precisely four classical parameters; no original construction grant is introduced.','','## Exact manuscript register','',f"The active manuscript contains {len(coverage['claims'])} numbered statements; counts are {counts}. This is a manuscript coverage register, not a first-pair completion percentage. External assumptions are not counted as proved.",'']
+    md += ['','## Deferred results','','Complete cylinders, linking/Han–Khuri applications, general ruled extensions, Cantor families and quotient topology remain deferred. The full-paper coverage register remains incomplete.','','## Honest completion gates','',completion_prose,'','Original gate statuses are derived independently from exact current-audit declarations. The ultimate theorem supplies its universal family locally and retains precisely two classical statements and internally supplies the proved background inhabitants; no original construction grant is introduced.','','## Exact manuscript register','',f"The active manuscript contains {len(coverage['claims'])} numbered statements; counts are {counts}. This is a manuscript coverage register, not a first-pair completion percentage. External assumptions are not counted as proved.",'']
     for c in coverage['claims']:
         scope='deferred from the first-pair route' if c['labels'][0] in DEFERRED else ('first pair required; Cantor clause deferred' if c['labels'][0]=='thm:main-fiber' else 'shared or torus construction')
         md += [f"- `{c['labels'][0]}`: {c['status']}; {scope}; manuscript line {c['source_line']}."]
     (OUT/'interfaces.md').write_text('\n'.join(md)+'\n',encoding='utf-8')
-    (OUT/'README.md').write_text('# ver503 formalization blueprint\n\nStart with [classical-route.md](classical-route.md) and [interfaces.md](interfaces.md). [lean-map.json](lean-map.json) binds exact declarations to the current audit; [mathematics.tex](mathematics.tex) preserves manuscript statements and scope.\n\n'+completion_prose+'\n\n'+construction_order+'\n\nThe [registry](../classical-external-results.json) gives all four named external statements, references and consumers. Their mathematical truth remains assumed. Actual proof types and original construction outputs receive credit only from the exact current kernel report. Keep SAME objects through the [consumer contract](../research/coordination/ver503-consumer-contract.md). The full-paper and Cantor-family assertions remain incomplete.\n',encoding='utf-8')
+    (OUT/'README.md').write_text('# ver503 formalization blueprint\n\nStart with [classical-route.md](classical-route.md) and [interfaces.md](interfaces.md). [lean-map.json](lean-map.json) binds exact declarations to the current audit; [mathematics.tex](mathematics.tex) preserves manuscript statements and scope.\n\n'+completion_prose+'\n\n'+construction_order+'\n\nThe [registry](../classical-external-results.json) records two remaining external statements and two proved background claims with their exact proof declarations. Only the former remain assumed; closed proof types and reduced ultimate header are verified from the current kernel report. Actual proof types and original construction outputs receive credit only from the exact current kernel report. Keep SAME objects through the [consumer contract](../research/coordination/ver503-consumer-contract.md). The full-paper and Cantor-family assertions remain incomplete.\n',encoding='utf-8')
     manuscript=source.read_text(encoding='utf-8-sig')
-    annotation=r'\section*{Formalization objective and route}'+'\n'+r'The first objective is the two-realization assertion of Theorem~\ref{thm:main-fiber}. Cantor-family, complete-cylinder and linking applications remain deferred. The first-pair construction status below is derived from exact current kernel declarations; the final theorem retains four named classical statements.'+'\n'+completion_prose+'\n'
+    annotation=r'\section*{Formalization objective and route}'+'\n'+r'The first objective is the two-realization assertion of Theorem~\ref{thm:main-fiber}. Cantor-family, complete-cylinder and linking applications remain deferred. The first-pair construction status below is derived from exact current kernel declarations; the final theorem retains only the two ClassicalExternalResults fields.'+'\n'+completion_prose+'\n'
     annotated=manuscript.replace(r'\maketitle',r'\maketitle'+'\n'+annotation,1)
     for c in coverage['claims']:
         statement=c['statement_tex'].replace('\r\n','\n')

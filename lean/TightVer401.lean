@@ -492,3 +492,9 @@ import TightVer401.VisibleConnectorOrdinaryFamilyCompletion
 import TightVer401.PositiveExitConstructionActualPair
 
 import TightVer401.NonrigidTorusPair
+
+import TightVer401.ClassicalEmbeddingSmoothFactor
+
+import TightVer401.ClassicalEmbeddedReparamProof
+
+import TightVer401.MarkerEllipseAxesRecognitionProof
