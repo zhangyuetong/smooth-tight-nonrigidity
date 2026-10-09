@@ -1,0 +1,30 @@
+{
+  "updated_at_utc": "2026-10-09T15:45:15.252521+00:00",
+  "integration_path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-integration",
+  "branch": "codex/ver503-integration",
+  "latest_published_checked_checkpoint": "4180e9d",
+  "active_audit_source_commit": "1e5e390",
+  "active_audit_session_id": 60414,
+  "active_audit_log": "lean/build-logs/ver503-source-parameters-checkpoint.log",
+  "backup": {
+    "automation_id": "ver503-proof-continuation",
+    "kind": "heartbeat",
+    "interval_minutes": 30,
+    "status": "ACTIVE",
+    "human_authorized": "2026-10-09: set a timer so you restart the session if it somehow close for too long",
+    "target_thread_id": "01a120fb-9b90-7310-9e32-127f2ef5dad6"
+  },
+  "queued_frozen_sources": [
+    "7be83a803e74fc147a0a0bfa39a6bd816e52cf8b",
+    "ce0002e14dd863c656f7155cb3e4bb5e63d56b51",
+    "a992b7c"
+  ],
+  "remaining_original_gates": [
+    "actual selected Jordan nesting and final protected-core placement",
+    "one coherent actual eta-first/e/rho Gin package for arbitrary incoming data",
+    "actual full-domain H using concrete height/seam inputs and both open boundary germs",
+    "universal ordinary-data family and ultimate first-pair existence theorem"
+  ],
+  "next_action": "Finish live root audit; publish its exact source-bound certificate; integrate only frozen checked queued leaves and run the next combined audit. Continue actual construction assembly with fresh workers from workers.json.",
+  "note": "Live process/Git/source evidence overrides historical session IDs. Old paused ver500 monitors and workers remain untouched. No worker-only Audit module enters production imports."
+}

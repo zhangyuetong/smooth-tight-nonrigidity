@@ -6,13 +6,15 @@ The first-pair construction remains **INCOMPLETE**. Neither the unconditional ex
 
 ## Current checked checkpoint
 
-A full current-source integration verification passed at 2026-10-09T15:27:24.948495+00:00 against source commit `1a33fdf7a5d6202a33fff5c2d7279e002764866a` and the exact ver503 manuscript. [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to source, target, toolchain and dependency hashes. The certified closure has no admissions or custom axioms; the first-pair construction remains incomplete.
+A full current-source integration verification passed at 2026-10-09T15:48:10.523604+00:00 against source commit `1e5e39090916ee3697757c10b8271aed92f8f0e6` and the exact ver503 manuscript. [Audit metadata](audit/snapshot.json) binds the [kernel report](audit/kernel-report.json) to source, target, toolchain and dependency hashes. The certified closure has no admissions or custom axioms; the first-pair construction remains incomplete.
 
 The retained original producers include the identity-holonomy band/nonzero supported bending, signed annular degree, full quadratic filling/inverse, normalized reflected saddle calculus, same-meridian convex closure/Gauss and affine marker applications. Checked downstream consumers produce the literal marked pair from actual completed support/saddle inputs, one chosen full meridian and explicit classical theorem parameters.
 
 Newly validated frozen results derive canonical source/reversed-gradient order from honest signed-degree premises, retain central fields for the SAME chosen displaced inverse, and rebase source/scalar/gradient simultaneously. The ver503 bridge proves the fixed affine normalization acts on vectors by negation and the transported field is exactly `-Y` on the SAME source chart; the existing extension is zero outside. These are useful checked exports, not completed original connector inputs.
 
 This checked checkpoint adds full smoothing-carrier/boundary/side producers, actual source chart and boundary-separation producers, and connections retaining the final protected field and the final scalar's own gradient inverse. The integrated Gin seam jets, raw scalar and once-only full-domain smoothing application retain their actual hypotheses. [The exact first-pair obligation audit](research/coordination/ver503-first-pair-obligations.md) lists the absent ultimate theorem, named external statements and remaining inputs. These close interface mismatches; the original geometry and parameter-choice gates below remain open.
+
+Further checked producers now give the actual full-band signed Gauss area and projected orientation, positive initial-height flow derivative, uniform selected label tubes and protected flow placement, full closed physical-band identity, and eta-first actual Gin coefficient/lower-determinant bounds. Strict selected Jordan nesting and protected Jordan placement are still pending. [Session state](research/coordination/ver503-session-state.json) records the human-authorized 30-minute continuation backup and next handoffs.
 
 ## Remaining original construction gates
 
