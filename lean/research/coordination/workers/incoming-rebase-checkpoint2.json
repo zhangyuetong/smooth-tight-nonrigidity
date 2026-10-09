@@ -1,0 +1,62 @@
+{
+  "previous_checkpoint": "4acaef7e8bdd1c13a83005bd0f3bcf0173870acf",
+  "validation": "fresh direct leaf compilation, jobs1, private outputs; explicit export/full audit follows",
+  "records": [
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersEta",
+      "source_sha256": "25d0e71cdbad5dbe2e0060ee013f0c852e99748dbf6ec10b75737fcaaaf7602c",
+      "object_sha256": "d311dc505eafa4ac6f2168417e69175ae8aaafe7a940c43eb00b97504ecd2a91",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 51.266
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersHeight",
+      "source_sha256": "de3de74367388570e0d41f274860b28d4bef7e296c9303501ff402efaabe95b5",
+      "object_sha256": "af3a1c676da281e7434d424007d36072a9b21b58bce5db5c179b2d946c5d073f",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 50.709
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersRho",
+      "source_sha256": "1a86a8af7cd41e6204253bba2a5004f3b1b216e69c889ded7f72452b0e305c4c",
+      "object_sha256": "69034c9a124cc9517d4f803be643df0e1102d632067ddabbb361870d2471e7f5",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 51.365
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersCoefficients",
+      "source_sha256": "bfa53392b6e92916e536a7b5ea2e1fc135d54a91b74e46e8373b0e7ff39a71fd",
+      "object_sha256": "a59866328871700bb0aac676ce228fa1e33dcabdfc73513ed00059c808dd44f5",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 49.939
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersDelta",
+      "source_sha256": "c0dd8af2692221d1f88d2f580d5eba68d559d41ec3e0dce9da9fa1e11b684a34",
+      "object_sha256": "46ea0e78bd41d29f555a5fde0457115e1fc9f7c8d17cb05fdf7a48ef3ad627a1",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 51.732
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersActualDelta",
+      "source_sha256": "4cc624543020034c2d55aa6d278885acb9a11a3ebda6a225f11f784e14997fc5",
+      "object_sha256": "55bdb6a58120655c80c41b3240dc0fe1e1720bcdc7112824552e1c79324a1d70",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 56.275
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersGinDelta",
+      "source_sha256": "35c72f038c81d2ed561a864d6709a1a5fdd48e79a0b992c99f9a651e3c266948",
+      "object_sha256": "5ac21028a1ed646cf4b467e7b5848661c8cd10430a99954bb62a4b7259bdb6b6",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 56.497
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingParametersSigns",
+      "source_sha256": "4e299eb9ab74676e07587cfa5a6c2a141f973326a6dafd9534776b1f8c0e8ba9",
+      "object_sha256": "ed095406f05ba6c7eac6a27a7c7dee1448f0290d7005364e3927f487c65a367c",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 58.968
+    }
+  ]
+}
