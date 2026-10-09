@@ -170,12 +170,16 @@ theorem positiveExitSelected_actual_traces_source_geometry
       (heq.symm ▸ mem_range_self (P2*s))
   have hi0' : ∀ t, Inner 0 t = positiveExitComplexTrace t1.p (P1*(t:ℝ)) := by
     intro t
-    rw [hi0 t, hgraph1]
-    rfl
+    rw [hi0 t]
+    change angularDescentComplex _ = positiveExitComplexPoint (t1.p (P1*(t:ℝ)))
+    rw [hgraph1]
+    apply Complex.ext <;> simp [angularDescentComplex, positiveExitComplexPoint]
   have ho0' : ∀ t, Outer 0 t = positiveExitComplexTrace t2.p (P2*(t:ℝ)) := by
     intro t
-    rw [ho0 t, hgraph2]
-    rfl
+    rw [ho0 t]
+    change angularDescentComplex _ = positiveExitComplexPoint (t2.p (P2*(t:ℝ)))
+    rw [hgraph2]
+    apply Complex.ext <;> simp [angularDescentComplex, positiveExitComplexPoint]
   obtain ⟨hselectedC, hnested⟩ := positiveExitSelected_protected_placement_and_nesting
     hro hri (visibleConnectorWitnessAssemblyTopology_positiveJordan hpo)
     (visibleConnectorWitnessAssemblyTopology_positiveJordan hpi) hne hrawC
