@@ -62,5 +62,19 @@
     }
   ],
   "producer_build_report_sha256": "2ee6d8f680a535b547335ab796c6acb9ca59f98bc0590382f5dd6fe76d646021",
-  "producer_axiom_log_sha256": "04f429738aba832aa9b2331c876fb3b3fe4e14c20737c6b2b6c710651b8adbc6"
+  "producer_axiom_log_sha256": "04f429738aba832aa9b2331c876fb3b3fe4e14c20737c6b2b6c710651b8adbc6",
+  "frozen_source_commit": "59f024bce7eb8ec02cb3d8b6687c37898b389cc2",
+  "retained_root_audit": {
+    "result": "PASS",
+    "generated_at_utc": "2026-10-09T15:09:30.336565+00:00",
+    "source_git_commit": "59f024bce7eb8ec02cb3d8b6687c37898b389cc2",
+    "source_closure_sha256": "b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9",
+    "target": "ver503"
+  },
+  "publication": {
+    "remote": "origin",
+    "branch": "codex/ver503-selected-source",
+    "source_commit_pushed": "59f024bce7eb8ec02cb3d8b6687c37898b389cc2",
+    "final_handoff_record": "local only"
+  }
 }

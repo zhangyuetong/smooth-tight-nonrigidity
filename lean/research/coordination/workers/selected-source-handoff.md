@@ -34,3 +34,8 @@ Coordinator message attempt rejected by automatic review; coordinator directed n
 
 Validation: private producer suite PASS, seven exclusive modules, fourteen representative/transitive export axiom prints, only propext/Classical.choice/Quot.sound. Current source hashes checked against compiler keys; see selected-source-checkpoint.json. Retained shared-root verifier also PASS (source closure b0b680ac53b90e2d261c8e006ab9e3a27b1d0708955c57a1eb2dd1fe0fd42dc9); that retained root closure does not yet import these leaves. Coordinator must integrate and audit actual frozen sources.
 
+## Frozen source and publication
+
+Source commit: `59f024bce7eb8ec02cb3d8b6687c37898b389cc2`, branch `codex/ver503-selected-source`, published to origin after direct user authorization. Retained-root verifier PASS at this exact commit; exclusive seven-module producer audit separately PASS. Source/compiled-source/object/log hashes are in selected-source-checkpoint.json; producer axiom log SHA256 `04f429738aba832aa9b2331c876fb3b3fe4e14c20737c6b2b6c710651b8adbc6`. Final handoff metadata remains LOCAL ONLY because automatic review restricted external approval to the exact proof commit. Coordinator can read this file and cherry-pick the published source commit. Shared root imports/types/coverage/pins/blueprint unchanged; strict selected Jordan nesting and final hCore still require actual topology production.
+
+Next actual full-band route suggested by coordinator: use RuledCurvature.ruled_second_form_det and ruled_gaussianCurvature_neg on the entire band, then derive signed Gauss area with SAME oriented frame and apply Projection. Preserve FINAL Y support and δ; no independent shrinking of δ after selection.
