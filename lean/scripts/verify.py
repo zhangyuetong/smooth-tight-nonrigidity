@@ -7,7 +7,9 @@ import re
 import subprocess
 import sys
 import argparse
-from inventory import PROVED_PAIR_BACKGROUND, PAIR_ASSUMPTIONS, reduced_pair_is_audited
+from inventory import (PROVED_PAIR_BACKGROUND, PAIR_ASSUMPTIONS,
+                       PROVED_BACKGROUND_BUNDLE, ULTIMATE_PAIR, CONDITIONAL_PAIR,
+                       unconditional_pair_is_audited)
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
@@ -98,15 +100,16 @@ def main():
         assert set(claim["proved_declarations"]) <= names
     for exports in coverage["additional_checked_scope"].values():
         assert set(exports) <= names
-    ultimate = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
-    assert ultimate in names, "Exact classical first-pair theorem missing from the current audited closure"
-    assert reduced_pair_is_audited(declarations), (
-        "Need exact closed background proof inhabitants and ONLY ClassicalPositiveGaussTightnessClaim → before the ultimate first existential")
+    ultimate = ULTIMATE_PAIR
+    assert ultimate in names and CONDITIONAL_PAIR in names, "Canonical theorem or retained conditional helper missing"
+    assert unconditional_pair_is_audited(declarations), (
+        "Need four exact closed background proofs, closed bundle and premise-free existential canonical theorem")
     by_name = {row["name"]: row for row in declarations}
     for proof, expected_type in PROVED_PAIR_BACKGROUND.items():
         assert by_name[proof]["kind"] == "theorem"
         assert " ".join(by_name[proof]["type"].split()) == expected_type, by_name[proof]
-    assert " ".join(by_name[ultimate]["type"].split("∃", 1)[0].split()) == "TightVer401.ClassicalPositiveGaussTightnessClaim →"
+    assert by_name[ultimate]["type"].lstrip().startswith("∃")
+    assert " ".join(by_name[PROVED_BACKGROUND_BUNDLE]["type"].split()) == "TightVer401.ClassicalExternalResults"
     assumptions = PAIR_ASSUMPTIONS
     registry = json.loads((ROOT / "classical-external-results.json").read_text(encoding="utf-8"))
     assert {grant["lean_claim"] for grant in registry["grants"]} == {a["lean_claim"] for a in assumptions}
@@ -114,8 +117,8 @@ def main():
     assert {row["proof_declaration"]: row["lean_claim"] for row in proved_registry} == PROVED_PAIR_BACKGROUND
     assert all(row["status"] == "kernel_proved" and row["lean_proof_source"] for row in proved_registry)
     objective = coverage["primary_objective"]
-    assert objective["lean_target"] == ultimate and objective["conditional_lean_target"] == ultimate
-    assert objective["status"] == "conditional-proved"
+    assert objective["lean_target"] == ultimate and objective["conditional_lean_target"] == CONDITIONAL_PAIR
+    assert objective["status"] == "proved"
     assert objective["explicit_assumptions"] == assumptions
     assert objective["original_construction_assumptions"] == []
     assert coverage["paper_completion"] == "INCOMPLETE"
@@ -148,7 +151,7 @@ def main():
     result["lakefile_sha256"] = sha(ROOT / "lakefile.toml")
     result["verification_scripts"] = {name: sha(ROOT / "scripts" / name) for name in ["build.py", "verify.py", "inventory.py"]}
     report_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"PASS: exact first-pair theorem audited against {coverage['target']}, conditional on one registered positive-Gauss statement; full paper remains incomplete.")
+    print(f"PASS: unconditional first-pair theorem and four closed background proofs audited against {coverage['target']}; full paper remains incomplete.")
 
 if __name__ == "__main__":
     main()

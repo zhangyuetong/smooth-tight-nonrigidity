@@ -9,28 +9,39 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8-sig"))
 SOURCE = ROOT.parent / TARGET["manuscript"]
 
-ULTIMATE_PAIR = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
-PAIR_ASSUMPTIONS = [
-    {"parameter": "positiveGaussTightness", "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"},
-]
+ULTIMATE_PAIR = "TightVer401.exists_noncongruent_isometric_tight_tori_pair"
+CONDITIONAL_PAIR = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+PAIR_ASSUMPTIONS = []
+PROVED_BACKGROUND_BUNDLE = "TightVer401.classicalExternalResults_proved"
 
 PROVED_PAIR_BACKGROUND = {
+    "TightVer401.classicalPositiveGaussTightness_proved": "TightVer401.ClassicalPositiveGaussTightnessClaim",
     "TightVer401.classicalCoincidentEmbeddingFixedOpen_proved": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim",
     "TightVer401.markerEllipseAxesRecognition_proved": "TightVer401.MarkerEllipseAxesRecognition",
     "TightVer401.classicalEmbeddedImageReparametrization_proved": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim",
 }
 
-def reduced_pair_is_audited(declarations):
-    """Exact kernel types: three closed proof inhabitants and only positive-Gauss header."""
+def unconditional_pair_is_audited(declarations):
+    """Four exact closed proofs, a proved bundle and a literal existential theorem."""
     by_name = {row["name"]: row for row in declarations}
     for name, expected_type in PROVED_PAIR_BACKGROUND.items():
         row = by_name.get(name)
         if not row or row["kind"] != "theorem" or " ".join(row["type"].split()) != expected_type:
             return False
     row = by_name.get(ULTIMATE_PAIR)
-    if not row or row["kind"] != "theorem" or "∃" not in row["type"]:
+    if not row or row["kind"] != "theorem" or not row["type"].lstrip().startswith("∃"):
         return False
-    return " ".join(row["type"].split("∃", 1)[0].split()) == "TightVer401.ClassicalPositiveGaussTightnessClaim →"
+    helper = by_name.get(CONDITIONAL_PAIR)
+    if not helper or helper["kind"] != "theorem" or "∃" not in helper["type"]:
+        return False
+    header, conclusion = helper["type"].split("∃", 1)
+    if " ".join(header.split()) != "TightVer401.ClassicalPositiveGaussTightnessClaim →":
+        return False
+    if " ".join(row["type"].split()) != " ".join(("∃" + conclusion).split()):
+        return False
+    bundle = by_name.get(PROVED_BACKGROUND_BUNDLE)
+    return bool(bundle and bundle["kind"] == "theorem" and
+                " ".join(bundle["type"].split()) == "TightVer401.ClassicalExternalResults")
 
 def main():
     parser = argparse.ArgumentParser()
@@ -42,7 +53,7 @@ def main():
         audited_declarations = [json.loads(line.removeprefix("VER401_AUDIT "))
                                 for line in args.audit_log.read_text(encoding="utf-8").splitlines()
                                 if line.startswith("VER401_AUDIT ")]
-    pair_status = "conditional-proved" if reduced_pair_is_audited(audited_declarations) else "pending"
+    pair_status = "proved" if unconditional_pair_is_audited(audited_declarations) else "pending"
     data = SOURCE.read_bytes()
     lock = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8-sig"))
     if hashlib.sha256(data).hexdigest() != lock["sha256"]:
@@ -349,12 +360,12 @@ def main():
                 "primary_objective": {"statement": TARGET["objective"], "status": pair_status,
                     "lean_target": ULTIMATE_PAIR,
                     "explicit_assumptions": PAIR_ASSUMPTIONS, "original_construction_assumptions": [],
-                    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; only positive-Gauss tightness remains an assumption; all three exact closed background proof inhabitants and the reduced ultimate header must also be audited",
+                    "certification_rule": "proved only when the current source-bound audit includes four exact closed background proof inhabitants, the closed background bundle, and the canonical theorem whose type starts with an existential and has no premises",
                     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
-                    "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-                    "accepted_background": "TightVer401.ClassicalPositiveGaussTightnessClaim", "additional_explicit_background": [], "proved_background": PROVED_PAIR_BACKGROUND},
+                    "conditional_lean_target": CONDITIONAL_PAIR,
+                    "accepted_background": [], "additional_explicit_background": [], "proved_background": PROVED_PAIR_BACKGROUND},
                 "deferred_scope": TARGET["deferred"], "claims": claims,
-                "classical_external_policy": {"mode": "explicit_named_theorem_parameters", "authorization_date": "2026-10-09", "registry": "classical-external-results.json", "registry_sha256": hashlib.sha256((ROOT / "classical-external-results.json").read_bytes()).hexdigest(), "conditional_final_pair_status": pair_status, "external_results_are_not_proved_claims": True},
+                "classical_external_policy": {"mode": "all_registered_background_proved", "authorization_date": "2026-10-09", "registry": "classical-external-results.json", "registry_sha256": hashlib.sha256((ROOT / "classical-external-results.json").read_bytes()).hexdigest(), "final_pair_status": pair_status, "external_results_are_not_proved_claims": True},
                 "additional_checked_scope": {
                     "actual-connector-same-potential-inner-outer-completion-branch-assembly": ["TightVer401.exists_dualRadialCompletion_branches_assembly", "TightVer401.exists_dualRadialCompletionConnectorInputs", "TightVer401.exists_dualRadialCompletion_filling_inputs"],
                     "actual-round-boundary-degree-from-proved-gradient-degree": ["TightVer401.dualRadialCompletionCircularDegree_of_gradientClaim"],
@@ -729,9 +740,9 @@ def main():
             "TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming",
             "TightVer401.visibleConnectorOrdinaryFamily_construction_statement",
             "TightVer401.visibleConnectorOrdinaryFamily_dual_radial_completion"],
-        "actual-seed-pair-and-ultimate-under-one-exact-classical-parameter": [
+        "actual-seed-pair-and-unconditional-ultimate": [
             "TightVer401.actualSeed_exists_markedTorus_pair_of_ordinary_connector_family",
-            ULTIMATE_PAIR]})
+            CONDITIONAL_PAIR, ULTIMATE_PAIR]})
     coverage["additional_checked_scope"]["proved-background-ellipse-and-smooth-embedded-reparameterization"] = [
         "TightVer401.markerEllipseAxesRecognition_proved",
         "TightVer401.classicalEmbedding_contDiffAt_factor",
@@ -748,7 +759,13 @@ def main():
         item.replace("global degree and surface completion remain pending.",
                      "actual degree and full quadratic filling are proved; the first-pair source constructions and exact classical theorem require current audited-name certification.")
         for item in coverage["limits"]]
-    coverage["limits"].append("The first-pair theorem is conditional on exactly one registered classical statement parameter, positive-Gauss tightness; its truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred.")
+    coverage["additional_checked_scope"]["proved-positive-gauss-tightness-and-regular-height-route"] = [
+        "TightVer401.classicalPositiveGaussTightness_proved", PROVED_BACKGROUND_BUNDLE,
+        "TightVer401.gaussTightness_critical_image_null",
+        "TightVer401.gaussTightness_dense_regular_values",
+        "TightVer401.gaussTightness_native_dense_regular_directions",
+        "TightVer401.gaussTightness_native_localMax_unique_of_regular_direction"]
+    coverage["limits"].append("The canonical first-pair theorem has no background or construction premises. Credit requires the exact theorem, four closed background proofs and closed bundle in the current source-bound audit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred.")
     (ROOT / "coverage.json").write_text(json.dumps(coverage, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Mapped {len(claims)} manuscript claims.")
 

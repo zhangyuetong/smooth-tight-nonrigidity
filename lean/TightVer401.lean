@@ -505,3 +505,5 @@ import TightVer401.SphereFiniteComplementConnected
 
 import TightVer401.LocalMaxSecondDerivative
 import TightVer401.ClassicalCoincidentEmbeddingFixedOpenProof
+
+import TightVer401.Library
