@@ -30,3 +30,7 @@ All four actual worktree HEADs were checked at `68996b72a5a3be36982cb90600ccec06
 | incoming-rebase | 01a12116-ef18-70b2-8818-7a1ddaab58de | codex/ver503-incoming-rebase |
 | final-smoothing | 01a12117-09d9-71c2-9281-9c0b6e6cd153 | codex/ver503-final-smoothing |
 | ordinary-family | 01a12117-305f-7ef1-aa69-bef839f9983f | codex/ver503-ordinary-family |
+
+## Active remaining-background proof phase
+
+Human authorization: continue for ten hours from 2026-10-09 18:43:29 UTC until 2026-10-10 04:43:29 UTC, stopping early only when the requested work is achieved. The first-pair construction and two simple background proofs are already certified. Fresh worker paths, branches, exact closed exports and chat IDs are in `lean/research/coordination/background-workers.json`. These workers own new proof leaves in private worktrees; root alone integrates and audits. No new grants or conditional substitutes count as completion. After both remaining proofs, root constructs the unconditional pair theorem, validates source closure, organizes results and publishes an honest formalization report.

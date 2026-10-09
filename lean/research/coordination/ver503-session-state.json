@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-09T18:34:16.923227+00:00",
+  "updated_at_utc": "2026-10-09T18:51:00+00:00",
   "integration_path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-integration",
   "branch": "codex/ver503-integration",
   "latest_published_checked_checkpoint": "3a8f551901af2d613bd0950df4ee11fff462f79f",
@@ -10,13 +10,13 @@
     "automation_id": "ver503-proof-continuation",
     "kind": "heartbeat",
     "interval_minutes": 30,
-    "status": "ACTIVE",
+    "status": "MISSING_IN_APP: replacement pending",
     "human_authorized": "2026-10-09: set a timer so you restart the session if it somehow close for too long",
     "target_thread_id": "01a120fb-9b90-7310-9e32-127f2ef5dad6"
   },
   "queued_frozen_sources": [],
   "remaining_original_gates": [],
-  "next_action": "Publish the final two-background certificate. Requested follow-up achieved. Stay quiet on unchanged completed state; remaining background proofs and extensions/Cantor require later human steering.",
+  "next_action": "Follow two fresh private background workers, collect frozen proofs, integrate closed proof bundle and unconditional first-pair theorem; full current-source audit before report publication.",
   "note": "Live process/Git/source evidence overrides historical session IDs. Old paused ver500 monitors and workers remain untouched. No worker-only Audit module enters production imports.",
   "latest_checked_source_commit": "3a8f551901af2d613bd0950df4ee11fff462f79f",
   "latest_audit_result": "PASS",
@@ -25,6 +25,11 @@
   "active_preflight_log": null,
   "first_pair_status": "conditional-proved-under-two",
   "exact_final_theorem": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
-  "active_followup": "COMPLETE: exact ellipse recognition and smooth equal-image reparametrization are kernel proved and supplied internally.",
-  "remaining_background_proof_gates": []
+  "active_followup": "ACTIVE: prove the exact remaining two background statements, assemble unconditional pair, audit, organize and publish formalization report.",
+  "remaining_background_proof_gates": [
+    "ClassicalPositiveGaussTightnessClaim",
+    "ClassicalCoincidentEmbeddingFixedOpenClaim"
+  ],
+  "authorization_start_utc": "2026-10-09T18:43:29Z",
+  "authorization_deadline_utc": "2026-10-10T04:43:29Z"
 }

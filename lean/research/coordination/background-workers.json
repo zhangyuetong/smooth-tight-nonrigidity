@@ -1,0 +1,22 @@
+{
+  "base_commit": "7483524",
+  "deadline_utc": "2026-10-10T04:43:29Z",
+  "workers": [
+    {
+      "role": "positive-gauss-tightness",
+      "thread_id": "01a121ff-f216-7442-8523-810ed63f9854",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-gauss-tightness",
+      "branch": "codex/ver503-gauss-tightness",
+      "exact_export": "classicalPositiveGaussTightness_proved : ClassicalPositiveGaussTightnessClaim",
+      "handoff": "lean/research/coordination/workers/gauss-tightness.md"
+    },
+    {
+      "role": "coincident-fixed-open",
+      "thread_id": "01a12200-0c1e-7681-94a1-6f3aff6c9ed1",
+      "path": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-fixed-open",
+      "branch": "codex/ver503-fixed-open",
+      "exact_export": "classicalCoincidentEmbeddingFixedOpen_proved : ClassicalCoincidentEmbeddingFixedOpenClaim",
+      "handoff": "lean/research/coordination/workers/fixed-open.md"
+    }
+  ]
+}

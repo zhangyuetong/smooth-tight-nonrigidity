@@ -39,6 +39,6 @@ The second statement remains assumed even though its smooth reparametrization in
 
 ## Scope and coordination
 
-Root owns integration, fixes and the sole current-source compiler/audit. Workers consume frozen same-object exports and maintain exclusive source ownership. The current original first-pair construction gates are closed; the remaining audit is certification of the reduced two-statement source snapshot.
+Root owns integration, fixes and the sole current-source compiler/audit. Workers consume frozen same-object exports and maintain exclusive source ownership. The current original first-pair construction gates are closed; the reduced two-statement snapshot is certified. The new human request is to prove both remaining statements, assemble an unconditional pair theorem, then audit and publish an organized formalization report. Fresh ownership is recorded in `research/coordination/background-workers.json`; deadline 2026-10-10 04:43:29 UTC.
 
 The 13 historical IncomingGin leaves in `pending/IncomingGin5176081` remain separately preserved without proof credit. The objective is the global nonrigid-torus first pair. Extension applications, Cantor families and broad alternative infrastructure remain deferred.
