@@ -3,12 +3,31 @@ from pathlib import Path
 import hashlib
 import json
 import re
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8-sig"))
 SOURCE = ROOT.parent / TARGET["manuscript"]
 
+ULTIMATE_PAIR = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+PAIR_ASSUMPTIONS = [
+    {"parameter": "background.positiveGaussTightness", "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"},
+    {"parameter": "background.coincidentEmbeddingFixedOpen", "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"},
+    {"parameter": "reparam", "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"},
+    {"parameter": "axes", "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"},
+]
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--audit-log", type=Path,
+                        help="Current hash-validated Audit log supplied by verify.py; source alone awards no proof credit.")
+    args = parser.parse_args()
+    audited_names = set()
+    if args.audit_log:
+        audited_names = {json.loads(line.removeprefix("VER401_AUDIT "))["name"]
+                         for line in args.audit_log.read_text(encoding="utf-8").splitlines()
+                         if line.startswith("VER401_AUDIT ")}
+    pair_status = "conditional-proved" if ULTIMATE_PAIR in audited_names else "pending"
     data = SOURCE.read_bytes()
     lock = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8-sig"))
     if hashlib.sha256(data).hexdigest() != lock["sha256"]:
@@ -312,13 +331,15 @@ def main():
     coverage = {"manuscript": str(Path(TARGET["manuscript"])),
                 "manuscript_sha256": hashlib.sha256(data).hexdigest(),
                 "paper_completion": "INCOMPLETE", "target": TARGET["target"],
-                "primary_objective": {"statement": TARGET["objective"], "status": "pending",
-                    "lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair",
+                "primary_objective": {"statement": TARGET["objective"], "status": pair_status,
+                    "lean_target": ULTIMATE_PAIR,
+                    "explicit_assumptions": PAIR_ASSUMPTIONS, "original_construction_assumptions": [],
+                    "certification_rule": "conditional-proved only when the exact ultimate declaration is in the current verifier-supplied audited names; all four statements remain assumptions",
                     "scope": "First assertion of thm:main-fiber only; the Cantor-family clause is deferred.",
                     "conditional_lean_target": "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical",
                     "accepted_background": "TightVer401.ClassicalExternalResults", "additional_explicit_background": ["TightVer401.ClassicalEmbeddedImageReparametrizationClaim", "TightVer401.MarkerEllipseAxesRecognition"]},
                 "deferred_scope": TARGET["deferred"], "claims": claims,
-                "classical_external_policy": {"mode": "explicit_named_theorem_parameters", "authorization_date": "2026-10-09", "registry": "classical-external-results.json", "registry_sha256": hashlib.sha256((ROOT / "classical-external-results.json").read_bytes()).hexdigest(), "conditional_final_pair_status": "pending", "external_results_are_not_proved_claims": True},
+                "classical_external_policy": {"mode": "explicit_named_theorem_parameters", "authorization_date": "2026-10-09", "registry": "classical-external-results.json", "registry_sha256": hashlib.sha256((ROOT / "classical-external-results.json").read_bytes()).hexdigest(), "conditional_final_pair_status": pair_status, "external_results_are_not_proved_claims": True},
                 "additional_checked_scope": {
                     "actual-connector-same-potential-inner-outer-completion-branch-assembly": ["TightVer401.exists_dualRadialCompletion_branches_assembly", "TightVer401.exists_dualRadialCompletionConnectorInputs", "TightVer401.exists_dualRadialCompletion_filling_inputs"],
                     "actual-round-boundary-degree-from-proved-gradient-degree": ["TightVer401.dualRadialCompletionCircularDegree_of_gradientClaim"],
@@ -681,11 +702,26 @@ def main():
     coverage["additional_checked_scope"]["ver503-literal-normalized-bending-sign"] = [
         "TightVer401.completedSaddleTorusBandAffine_linear_apply",
         "TightVer401.completedSaddleTorusBendingField_source_eq_neg"]
+    coverage["additional_checked_scope"].update({
+        "actual-premise-free-seed-and-complete-selected-source-core": [
+            "TightVer401.PositiveExitSinglePrefixGeometry",
+            "TightVer401.positiveExit_exists_single_prefix_source_geometry",
+            "TightVer401.actualSeed_exists_selected_single_prefix"],
+        "actual-D-only-universal-ordinary-family-and-completion": [
+            "TightVer401.visibleConnectorIncomingParametersChoice_nonempty",
+            "TightVer401.visibleConnectorOrdinaryFamily_exists_raw_from_incoming",
+            "TightVer401.visibleConnectorOrdinaryFamily_exists_scalar_from_incoming",
+            "TightVer401.visibleConnectorOrdinaryFamily_nonempty_from_incoming",
+            "TightVer401.visibleConnectorOrdinaryFamily_construction_statement",
+            "TightVer401.visibleConnectorOrdinaryFamily_dual_radial_completion"],
+        "actual-seed-pair-and-ultimate-under-four-exact-classical-parameters": [
+            "TightVer401.actualSeed_exists_markedTorus_pair_of_ordinary_connector_family",
+            ULTIMATE_PAIR]})
     coverage["limits"] = [
         item.replace("global degree and surface completion remain pending.",
-                     "actual degree and full quadratic filling are proved; original exits/full visible connector and ultimate original completion/pair caller remain pending.")
+                     "actual degree and full quadratic filling are proved; the first-pair source constructions and exact classical theorem require current audited-name certification.")
         for item in coverage["limits"]]
-    coverage["limits"].append("Completed-saddle marked-pair connections are conditional on actual SAME completed scalar/geometry inputs and exact registered classical parameters; they do not discharge original exits/connector or ultimate existence.")
+    coverage["limits"].append("The first-pair theorem is conditional on exactly four registered classical statement parameters; their truth is assumed, not proved. The exact ultimate declaration must be in the current audit before conditional-proved credit. Full-paper, extension and Cantor-family assertions remain incomplete/deferred.")
     (ROOT / "coverage.json").write_text(json.dumps(coverage, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Mapped {len(claims)} manuscript claims.")
 

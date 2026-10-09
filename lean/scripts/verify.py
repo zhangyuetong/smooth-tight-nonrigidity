@@ -90,19 +90,37 @@ def main():
     assert len(names) == len(declarations)
     for row in declarations:
         assert set(row["axioms"]) <= ALLOWED and row["kind"] != "axiom", row
-    subprocess.run([sys.executable, str(ROOT / "scripts/inventory.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts/inventory.py"),
+                    "--audit-log", str(ROOT / "build-logs/Audit.log")], check=True)
     coverage = json.loads((ROOT / "coverage.json").read_text(encoding="utf-8"))
     for claim in coverage["claims"]:
         assert set(claim["proved_declarations"]) <= names
     for exports in coverage["additional_checked_scope"].values():
         assert set(exports) <= names
+    ultimate = "TightVer401.exists_noncongruent_isometric_tight_tori_pair_of_classical"
+    assert ultimate in names, "Exact classical first-pair theorem missing from the current audited closure"
+    assumptions = [
+        {"parameter": "background.positiveGaussTightness", "lean_claim": "TightVer401.ClassicalPositiveGaussTightnessClaim"},
+        {"parameter": "background.coincidentEmbeddingFixedOpen", "lean_claim": "TightVer401.ClassicalCoincidentEmbeddingFixedOpenClaim"},
+        {"parameter": "reparam", "lean_claim": "TightVer401.ClassicalEmbeddedImageReparametrizationClaim"},
+        {"parameter": "axes", "lean_claim": "TightVer401.MarkerEllipseAxesRecognition"},
+    ]
+    registry = json.loads((ROOT / "classical-external-results.json").read_text(encoding="utf-8"))
+    assert {grant["lean_claim"] for grant in registry["grants"]} == {a["lean_claim"] for a in assumptions}
+    objective = coverage["primary_objective"]
+    assert objective["lean_target"] == ultimate and objective["conditional_lean_target"] == ultimate
+    assert objective["status"] == "conditional-proved"
+    assert objective["explicit_assumptions"] == assumptions
+    assert objective["original_construction_assumptions"] == []
+    assert coverage["paper_completion"] == "INCOMPLETE"
     lock = json.loads((ROOT / "upstream-lock.json").read_text())
     external_lock = ROOT / "schoenflies-lock.json"
     if any(row["module"].startswith("Schoenflies.") for row in build["modules"]):
         assert external_lock.exists() and sha(external_lock) == build["schoenflies_lock_sha256"]
     result = {"result": "PASS", "generated_at_utc": datetime.now(timezone.utc).isoformat(),
               "paper_completion": "INCOMPLETE", "target": coverage["target"],
-              "primary_objective": coverage["primary_objective"], "manuscript_sha256": coverage["manuscript_sha256"],
+              "primary_objective": objective, "explicit_first_pair_assumptions": assumptions,
+              "first_pair_exact_audited_declaration": ultimate, "manuscript_sha256": coverage["manuscript_sha256"],
               "upstream_commit": lock["commit"], "upstream_lock_sha256": sha(ROOT / "upstream-lock.json"),
               "schoenflies_lock_sha256": build.get("schoenflies_lock_sha256"),
               "build_profile": build["build_profile"], "version": build["version"],
@@ -124,7 +142,7 @@ def main():
     result["lakefile_sha256"] = sha(ROOT / "lakefile.toml")
     result["verification_scripts"] = {name: sha(ROOT / "scripts" / name) for name in ["build.py", "verify.py", "inventory.py"]}
     report_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"PASS: OpenAI foundation and retained exports compiled and audited against {coverage['target']}; full paper remains incomplete.")
+    print(f"PASS: exact first-pair theorem audited against {coverage['target']}, conditional on four registered classical statements; full paper remains incomplete.")
 
 if __name__ == "__main__":
     main()
