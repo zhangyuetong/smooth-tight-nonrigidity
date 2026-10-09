@@ -1,0 +1,41 @@
+{
+  "starting_commit": "68996b72a5a3be36982cb90600ccec06c194fb4d",
+  "validation": "current-source direct leaf compilation, jobs1; shared-root final audit remains coordinator-owned",
+  "records": [
+    {
+      "module": "TightVer401.VisibleConnectorIncomingSeamJets",
+      "source_sha256": "cb94a4b3c7f9763a48a88085d5d222b3ee96a8dda955473d0de2d88cf2369bd5",
+      "object_sha256": "e1ed69623fe23d18b7820dfca3e8c0813e364b671032a89627110678b113bd79",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 63.379
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingRebaseMatching",
+      "source_sha256": "16b153ae063fedb166b2f8fa91600443c4a67133517c1cd0ea8a538e26f294fb",
+      "object_sha256": "b94fcb645b7538670c06d288111774884de5c0f316b9175b8049fd624dd147f4",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 51.71
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingSeamEmbedding",
+      "source_sha256": "70452fa23e5ee8d49f162a7397727a2560ecb9cebc5e5f8ddf2446d8453b78ae",
+      "object_sha256": "9cb8da8bbc24ff7d65bcd1be472ec149433f6dffa61a986991917e56547b4dce",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 50.471
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalMargins",
+      "source_sha256": "da2eb84f1a012a4dd0e4a8a8eda464d98470873fd9eae83f8e0199edeb4f97ae",
+      "object_sha256": "319d0f0e8c484b6fbd8605e4c77e0723a9a86b1571a59f240700849fbddebbd0",
+      "build_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_seconds": 52.133
+    },
+    {
+      "module": "TightVer401.VisibleConnectorIncomingTerminalRebase",
+      "source_sha256": "6e88172986a73058b27aaf4100496807506bff930e2296c27ad9c8b20bb549fe",
+      "object_sha256": "ca98ed99d28dde3e3f60e58087884aa331b95996f85cbcfbde35a7637c4cf328",
+      "build_log_sha256": "c1565766f39cc5d70b42895ddb2e80bbdde8ec4ea4f17ed91b0fe3b4835410e4",
+      "compile_seconds": 53.48
+    }
+  ]
+}
