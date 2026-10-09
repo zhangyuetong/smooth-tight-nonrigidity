@@ -6,7 +6,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8-sig"))
-SOURCE = ROOT / "target/manuscript.tex"
+SOURCE = ROOT.parent / TARGET["manuscript"]
 
 def main():
     data = SOURCE.read_bytes()
@@ -212,7 +212,7 @@ def main():
                 "For arbitrary incoming local smooth representatives, every sufficiently small positive width admits actual radial smoothing preserving an open incoming collar and the exact terminal cap germ, with strict concavity throughout, positive first derivative before the endpoint and the stated endpoint derivatives.",
                 "The general relative join constructs actual positive acceleration, corrects both actual moments with internally constructed controls, integrates twice and proves both outer germs before pasting. No final smoothing or geometry package is assumed.",
                 "The actual radial Hessian determinant and induced intrinsic Gaussian curvature are also proved negative on the punctured capped interior."]
-        if TARGET["target"] == "ver500" and "lem:neck-adapter" in row["labels"]:
+        if TARGET["target"] in {"ver500", "ver503"} and "lem:neck-adapter" in row["labels"]:
             row["status"] = "proved"
             row["proof_origin"] = "new_ver500_construction"
             row["proved_declarations"] = [
@@ -227,7 +227,7 @@ def main():
                 "Positive slope is derived from strict concavity and the retained positive right derivative. The actual radial Hessian determinant, support differential injectivity and intrinsic Gaussian curvature are checked.",
                 "The Euclidean norm of the actual planar gradient equals the positive radial derivative on every ray and tends to infinity as r decreases to a. This is the Euclidean L2 norm, not the max norm on the coordinate representation.",
                 "The inverse Legendre formula is a separately proved refinement. Global gradient injectivity, the full two-sided completion and torus gluing remain separate pending claims."]
-        if TARGET["target"] == "ver500" and "prop:central-support" in row["labels"]:
+        if TARGET["target"] in {"ver500", "ver503"} and "prop:central-support" in row["labels"]:
             row["status"] = "proved"
             row["proof_origin"] = "new_ver500_construction"
             row["proved_declarations"] = [
@@ -238,7 +238,7 @@ def main():
                 "Constructs one corrected seed frame, actual two-sided Gauss-coordinate potential and final protected subband; its genuine supported bending is selected after the final width.",
                 "For that same potential the actual central Hessian pairing in the scaled Gauss-coordinate tangent basis is exactly [[0,a],[a,0]], with a positive. Actual support reconstruction and normal correspondence give the spherical support-tensor interpretation.",
                 "Positive noncharacteristic transverse directions and the actual signed tangential formula are derived. Positive exit perturbations, visible connectors and global torus completion remain separate pending constructions."]
-        if TARGET["target"] == "ver500" and "lem:smoothing" in row["labels"]:
+        if TARGET["target"] in {"ver500", "ver503"} and "lem:smoothing" in row["labels"]:
             row["status"] = "proved"
             row["proof_origin"] = "new_ver500_construction"
             row["proved_declarations"] = [
@@ -295,20 +295,20 @@ def main():
                 proved_declarations=["TightVer401.exists_parabolic_convex_closure"],
                 scope_notes=["From only RN, mu, h>0 constructs one same-meridian convex body and smooth embedded closed lateral annulus, actual strictly positive interior curvature, exact parabolic endpoint germs, outward twice-punctured-sphere Gauss diffeomorphism, exterior-cylinder/height separation and actual lateral-image asymmetry.",
                     "Includes actual registered interval-halfspace boundary smoothness/rank and body frontier/outward-support statements; no completed saddle, torus, marking, tightness or final pair is granted."])
-    if TARGET.get("previous_target_snapshot"):
-        baseline = json.loads((ROOT / "target/reuse-statements.json").read_text(encoding="utf-8"))
-        previous = {c["labels"][0]: c for c in baseline["claims"]}
-        for row in claims:
-            if row["status"] in {"proved", "partial"}:
-                if row.get("proof_origin") == "new_ver500_construction":
-                    assert TARGET["target"] == "ver500" and row["labels"][0] in {"lem:neck-adapter", "lem:smoothing", "prop:central-support", "lem:degree", "lem:convex", "lem:quadratic-filling"}
-                    assert row["proved_declarations"] and row["scope_notes"]
-                    row["proof_reuse_review"] = "New ver500 construction, not inherited by label; every exported conclusion is checked in the active full audit."
-                    continue
-                old = previous.get(row["labels"][0])
-                assert old is not None and old["status"] == row["status"], row["labels"]
-                assert old["statement_tex"].replace("\r\n", "\n") == row["statement_tex"].replace("\r\n", "\n"), row["labels"]
-                row["proof_reuse_review"] = "Exact numbered statement unchanged from the archived checked ver401 target; exports rechecked in the active audit."
+    # Reuse requires an exact reviewed current statement hash, not just matching labels.
+    review = json.loads((ROOT / "target/ver503-reuse-review.json").read_text(encoding="utf-8"))
+    assert review["target"] == TARGET["target"] and review["manuscript_sha256"] == lock["sha256"]
+    assert (ROOT / "target/manuscript.tex").read_bytes() == data
+    reviewed = {r["label"]: r for r in review["claims"]}
+    assert len(reviewed) == len(claims)
+    for row in claims:
+        entry = reviewed[row["labels"][0]]
+        current_hash = hashlib.sha256(row["statement_tex"].replace("\r\n", "\n").encode("utf-8")).hexdigest()
+        assert current_hash == entry["statement_sha256"], row["labels"]
+        assert entry["status"] == row["status"], row["labels"]
+        row["proof_reuse_review"] = entry["review"]
+        row["statement_sha256"] = current_hash
+        row["migration_review"] = "target/ver503-reuse-review.json"
     coverage = {"manuscript": str(Path(TARGET["manuscript"])),
                 "manuscript_sha256": hashlib.sha256(data).hexdigest(),
                 "paper_completion": "INCOMPLETE", "target": TARGET["target"],
@@ -677,6 +677,10 @@ def main():
             "TightVer401.exists_completedSaddleTorus_marked_pair"]})
     coverage["additional_checked_scope"].update({'actual-canonical-ordinary-connector-witness-assembly': ['TightVer401.VisibleConnectorWitnessAssemblyTerminalFacts', 'TightVer401.visibleConnectorWitnessAssembly_terminal_trace', 'TightVer401.visibleConnectorWitnessAssembly_incoming_germ', 'TightVer401.VisibleConnectorWitnessAssemblyOrdinaryData', 'TightVer401.visibleConnectorWitnessAssemblyTopology_complex_point', 'TightVer401.visibleConnectorWitnessAssemblyTopology_positiveJordan', 'TightVer401.visibleConnectorWitnessAssemblyTopology_positive_traces', 'TightVer401.visibleConnectorWitnessAssemblyTopology_physical_geometry', 'TightVer401.visibleConnectorWitnessAssemblyTopology_annulus_geometry', 'TightVer401.visibleConnectorWitnessAssembly_phase_surjective', 'TightVer401.visibleConnectorWitnessAssembly_terminal_circle_range', 'TightVer401.visibleConnectorWitnessAssembly_terminal_circle_subset', 'TightVer401.visibleConnectorWitnessAssembly_positiveExitJacobian_det', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_determinant', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_negative', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_gradient_positive', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_contDiffOn', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_periodic', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_endpoints', 'TightVer401.visibleConnectorWitnessAssembly_native_raw_source_mapsTo', 'TightVer401.visibleConnectorWitnessAssembly_complex_circle_trace', 'TightVer401.visibleConnectorWitnessAssembly_complex_physical_boundary', 'TightVer401.visibleConnectorWitnessAssembly_of_ordinary', 'TightVer401.visibleConnectorWitnessAssembly_statement', 'TightVer401.exists_dual_radial_support_completion_of_ordinary_connector_data'], 'actual-ordinary-connector-data-to-same-homotopy-pair': ['TightVer401.exists_markedTorus_pair_of_ordinary_connector_data']})
     coverage["additional_checked_scope"].update({'actual-negative-hessian-reversed-gradient-order': ['TightVer401.visibleConnector_actual_negative_map_reverses_jordan_order', 'TightVer401.visibleConnector_actual_negative_map_reverses_positive_jordan_order', 'TightVer401.visibleConnectorGradientOrder_planarGradient', 'TightVer401.visibleConnectorGradientOrder_physical'], 'actual-negative-gradient-order-to-same-marked-pair': ['TightVer401.exists_markedTorus_pair_of_negative_gradient_order'], 'actual-incoming-collar-terminal-positive-filling-Gin-family': ['TightVer401.visibleConnectorIncomingNative', 'TightVer401.visibleConnectorIncomingNative_chart', 'TightVer401.visibleConnectorIncomingNative_continuous', 'TightVer401.visibleConnectorIncoming_exists_source_chart', 'TightVer401.visibleConnectorIncoming_exists_actual_collar', 'TightVer401.visibleConnectorDisplacedNativePsi', 'TightVer401.visibleConnectorDisplacedNativeChart', 'TightVer401.visibleConnectorDisplacedNativeChart_apply', 'TightVer401.visibleConnectorDisplacedNativePsi_chart', 'TightVer401.visibleConnectorDisplaced_exists_compact_native_collar', 'TightVer401.visibleConnectorDisplacedNativeSolution', 'TightVer401.visibleConnectorDisplacedNativeSolutionDomain', 'TightVer401.visibleConnectorDisplaced_exists_native_open_image', 'TightVer401.visibleConnectorDisplacedPhaseDifference', 'TightVer401.visibleConnectorDisplacedRealPhase', 'TightVer401.visibleConnectorDisplacedRealPhaseDomain', 'TightVer401.visibleConnectorDisplacedRealPhase_projection', 'TightVer401.visibleConnectorDisplaced_exists_smooth_real_phase', 'TightVer401.visibleConnectorDisplaced_exists_uniform_phase_signs', 'TightVer401.visibleConnectorTerminalNormalizedTrace', 'TightVer401.visibleConnectorTerminalNormalizedTrace_hasDerivAt', 'TightVer401.visibleConnectorTerminalNormalizedTrace_fields', 'TightVer401.visibleConnectorTerminal_exists_positive_completion_trace', 'TightVer401.visibleConnector_periodic_actual_terminal_positive_trace', 'TightVer401.visibleConnectorGinDisplacedPosition', 'TightVer401.visibleConnectorGinDisplacedGradient', 'TightVer401.visibleConnectorGinDisplacedDomain', 'TightVer401.visibleConnectorGinDisplacedVisibilityDomain', 'TightVer401.visibleConnectorGinRotatedDirection', 'TightVer401.visibleConnectorGinRotatedRuling', 'TightVer401.visibleConnectorGinDisplacedRuling', 'TightVer401.visibleConnectorGinRotatedRuling_eq_shifted', 'TightVer401.visibleConnectorGinDisplacedFamily_properties', 'TightVer401.visibleConnector_complex_norm_le_twice_coord_norm', 'TightVer401.visibleConnector_uniform_actual_terminal_norm_gt', 'TightVer401.visibleConnector_jordan_closure_norm_le', 'TightVer401.visibleConnector_closedBall_subset_jordanInterior', 'TightVer401.visibleConnector_jordan_enclosure_of_frontier_norm_bounds']})
+    coverage["additional_checked_scope"].update({'frozen-canonical-gradient-order-witness': ['TightVer401.visibleConnectorGradientOrder_retained_incoming_terminal'], 'frozen-actual-positive-source-order': ['TightVer401.visibleConnector_actual_positive_map_preserves_positive_jordan_order', 'TightVer401.visibleConnector_actual_signed_map_orders_positive_jordan_fills', 'TightVer401.visibleConnectorSourceOrder_round', 'TightVer401.visibleConnectorSourceOrder_physical', 'TightVer401.visibleConnectorSourceOrder_retained_incoming_terminal'], 'frozen-same-inverse-central-fields-and-rebase': ['TightVer401.visibleConnectorDisplaced_exists_uniform_phase_signs', 'TightVer401.visibleConnectorRebaseParameter', 'TightVer401.visibleConnectorRebasedSource', 'TightVer401.visibleConnectorRebasedHeight', 'TightVer401.visibleConnectorRebasedRuling', 'TightVer401.visibleConnectorRebasedGradient', 'TightVer401.visibleConnector_rebase_source', 'TightVer401.visibleConnector_rebase_height', 'TightVer401.visibleConnector_rebase_smooth', 'TightVer401.visibleConnector_rebased_source_deriv', 'TightVer401.visibleConnector_rebased_ruling_deriv', 'TightVer401.visibleConnector_rebase_determinants', 'TightVer401.visibleConnector_rebase_value_deriv', 'TightVer401.visibleConnector_rebase_B', 'TightVer401.visibleConnector_rebase_positive', 'TightVer401.visibleConnector_rebase_gradient', 'TightVer401.visibleConnector_rebase_periodic']})
+    coverage["additional_checked_scope"]["ver503-literal-normalized-bending-sign"] = [
+        "TightVer401.completedSaddleTorusBandAffine_linear_apply",
+        "TightVer401.completedSaddleTorusBendingField_source_eq_neg"]
     coverage["limits"] = [
         item.replace("global degree and surface completion remain pending.",
                      "actual degree and full quadratic filling are proved; original exits/full visible connector and ultimate original completion/pair caller remain pending.")

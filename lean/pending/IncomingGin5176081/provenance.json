@@ -1,0 +1,206 @@
+{
+  "status": "PENDING SOURCE SNAPSHOT ONLY",
+  "certified_imports": [],
+  "validation": "No local compile or audit performed for these 13 leaves. Preservation grants no proof credit.",
+  "sources": [
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinCarrierAnalytic.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinCarrierAnalytic",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinCarrier_exists_ruling_strip",
+        "visibleConnectorIncomingGinCarrier_exists_height_bound",
+        "visibleConnectorIncomingGinCarrier_exists_negative_strip"
+      ],
+      "git_blob": "26cdc32cae0ad69d659741a801a6f7528100a7c7",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinCarrierAnalytic.lean",
+      "sha256": "c6fa4d2bc5bb7879434a3bfbbf1a3b3546948bfe0e0aac6075688f07031fbb47"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinCarrier.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinCarrier",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinCarrier_native_height_continuous",
+        "visibleConnectorIncomingGinCarrier_actual_inverse_negative_strip",
+        "visibleConnectorIncomingGinCarrier_rebased_negative",
+        "visibleConnectorIncomingGinCarrier",
+        "visibleConnectorIncomingGinCarrier_isOpen",
+        "visibleConnectorIncomingGinCarrier_negative_subset",
+        "visibleConnectorIncomingGinCarrier_contDiffOn",
+        "visibleConnectorIncomingGinCarrier_covers_closed_band"
+      ],
+      "git_blob": "bf29b18ab5edbfbc078ded363a36335a1c1681f3",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinCarrier.lean",
+      "sha256": "e06f12f7bbe8ca2203d92469b6b114fb4712f684cf4f6da6b239d9e436c88d8c"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinCarrierActual.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinCarrierActual",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinCarrier_actual_fixed_carrier"
+      ],
+      "git_blob": "a4e4a0a4032138473e9d9db091a42a0a3c45d240",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinCarrierActual.lean",
+      "sha256": "185edfee96ec2fb508bd9dd9dc28ec1d82206f3fafbe8667dd057823b5e9c244"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinGlobalSide.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinGlobalSide",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinGlobalPolarHeight",
+        "visibleConnectorIncomingGinGlobalHeight",
+        "visibleConnectorIncomingGinGlobalSide",
+        "visibleConnectorIncomingGinGlobalPolarHeight_contDiff",
+        "visibleConnectorIncomingGinGlobalPolarHeight_periodic",
+        "visibleConnectorIncomingGinGlobalHeight_contDiffOn",
+        "visibleConnectorIncomingGinGlobalHeight_inverse_formula",
+        "visibleConnectorIncomingGinGlobalHeight_pullback",
+        "visibleConnectorIncomingGinGlobalHeight_closed_band",
+        "visibleConnectorIncomingGinGlobalHeight_target_representation",
+        "visibleConnectorIncomingGinGlobalHeight_rebased_band",
+        "visibleConnectorIncomingGinGlobalHeight_zero_range",
+        "visibleConnectorIncomingGinGlobalSide_boundary"
+      ],
+      "git_blob": "c9f56367e548f2f24215c95622b315881e6a78d5",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinGlobalSide.lean",
+      "sha256": "8685af50aab3a709601bbb85248383ff516eaf92b3fdd3f56ab7fe59ca93062d"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinGlobalSideDerivatives.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinGlobalSideDerivatives",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinGlobalHeight_seam_derivatives",
+        "visibleConnectorIncomingGinGlobalHeight_seam_determinant",
+        "visibleConnectorIncomingGinGlobalHeight_normal_neg",
+        "visibleConnectorIncomingGinGlobalHeight_exists_side_threshold"
+      ],
+      "git_blob": "72707446be2361bd3a2ad3876e9692ebebff568d",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinGlobalSideDerivatives.lean",
+      "sha256": "d8a16c6dad0ef9dd4fd205b131120b4a3b13f66333937a00daef4c6a3fe9e2b7"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinSmoothing.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinSmoothing",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinHeight",
+        "visibleConnectorIncomingGinDomain",
+        "visibleConnectorIncomingGinSide",
+        "visibleConnectorIncomingGinDomain_isOpen",
+        "visibleConnectorIncomingGinHeight_contDiffOn",
+        "visibleConnectorIncomingGin_exists_inverse_height",
+        "visibleConnectorIncomingGin_exists_source_displacement_bound",
+        "visibleConnectorIncomingGinHeight_forward",
+        "visibleConnectorIncomingGinHeight_derivatives",
+        "visibleConnectorIncomingGin_normal_derivative",
+        "visibleConnectorIncomingGin_normal_derivative_neg",
+        "visibleConnectorIncomingGinHeight_normal_neg",
+        "visibleConnectorIncomingGin_exists_modification_neighborhood",
+        "visibleConnectorIncomingGin_retain_original_scalar_germ"
+      ],
+      "git_blob": "ce70fe87848d1452a591157a1cdf97e6ab7531d0",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinSmoothing.lean",
+      "sha256": "b1b5e4f603274b0b20c78c50e2c3520941aa36efb1e32f2b4887ab1f166a5ce2"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinSmoothingSide.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinSmoothingSide",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGin_sublevel_frontier_zero",
+        "visibleConnectorIncomingGinHeight_zero_range",
+        "visibleConnectorIncomingGinSide_boundary",
+        "visibleConnectorIncomingGin_exists_canonical_side_threshold",
+        "visibleConnectorIncomingGin_exists_actual_side_threshold"
+      ],
+      "git_blob": "b2a1e430a1a15534c32ca1f86eb3d409ed69c52c",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinSmoothingSide.lean",
+      "sha256": "5ec764f392af582475574933d5b067acd8b77a8251fd7f5d3ca4134538cb105a"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinGerm.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinGerm",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinGerm_exists_modification_avoiding_both",
+        "visibleConnectorIncomingGinGerm_retain_terminal_scalar",
+        "visibleConnectorIncomingGinGerm_exists_open_equality",
+        "visibleConnectorIncomingGinGerm_exists_open_branch_equality"
+      ],
+      "git_blob": "fb9c27dfa4e429271df001e73057b7ab0a8f9502",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinGerm.lean",
+      "sha256": "4a1fc2c1f91885c22cb8c2f3c89d32fbb3f356e4a0cafc8e5dfd454a3835c026"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinSmoothingApplication.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinSmoothingApplication",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinGerm_seam_range",
+        "visibleConnectorIncomingGin_exists_smoothed_full_carrier"
+      ],
+      "git_blob": "aeb5e2191d25282e8ecd7ffdd745e0ac75983011",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinSmoothingApplication.lean",
+      "sha256": "0b800762a6da1bbbc624c9f66697d3e8a18ca8a97869ef7c03535a8ed3e7f2e0"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinSmoothingApplicationActual.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinSmoothingApplicationActual",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGin_actual_global_height_smoothing"
+      ],
+      "git_blob": "616df0d529169fd2e7b89b3e087dad4c6c61da8e",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinSmoothingApplicationActual.lean",
+      "sha256": "f3a9278a85194ccdb01581194e300413f62fd459fae1a3275491f3d1389a71e6"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinFamilyStabilityCalculus.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinFamilyStabilityCalculus",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinFamilyPhaseDerivative",
+        "visibleConnectorIncomingGinFamilyA",
+        "visibleConnectorIncomingGinFamilyB",
+        "visibleConnectorIncomingGinFamilyC",
+        "visibleConnectorIncomingGinFamilyPhaseDerivative_actual",
+        "visibleConnectorIncomingGinFamilyPhaseDerivative_continuousOn",
+        "visibleConnectorIncomingGinFamily_coefficients_continuousOn",
+        "visibleConnectorIncomingGinFamily_coefficients_actual",
+        "visibleConnectorIncomingGinFamily_deriv_periodic"
+      ],
+      "git_blob": "ad11ea239bc29306caaee4fcd41ef72a20bca1d0",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinFamilyStabilityCalculus.lean",
+      "sha256": "75a8503827b8181ce9a1ac98154f35457b7964902d1942cced598a5a572b40c9"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinFamilyStability.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinFamilyStability",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinFamily_exists_coefficient_stability"
+      ],
+      "git_blob": "ecd96296aa0958c5192307b4404d94fdc45bbcae",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinFamilyStability.lean",
+      "sha256": "ede207551ffa6c4e3f1f9a9ab93ddd61a183ed5de7b374df0a79c0e2adbff577"
+    },
+    {
+      "status": "UNCOMPILED; not certified",
+      "file": "VisibleConnectorIncomingGinFamilyStabilityActual.lean",
+      "module": "TightVer401.VisibleConnectorIncomingGinFamilyStabilityActual",
+      "declared_public_exports": [
+        "visibleConnectorIncomingGinFamily_actual_fixed_eta_stability"
+      ],
+      "git_blob": "9e5387a34bba3b224aaed4930a17491dace43060",
+      "donor_path": "formalization/ver401/TightVer401/VisibleConnectorIncomingGinFamilyStabilityActual.lean",
+      "sha256": "567ee42448770ebb9ae48be117aea32d136885680f2c5ef0a6e19376720dfeff"
+    }
+  ],
+  "copy_method": "git cat-file blob to binary stream; SHA256 verified against final frozen checkpoint",
+  "source_commit": "517608135b817ed86f860776bbf0cf50b0a7f302",
+  "donor_repository": "C:/Users/gzhan/Documents/ChatGPT/tight_another_review/angular-descent"
+}

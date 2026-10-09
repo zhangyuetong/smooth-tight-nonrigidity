@@ -1,0 +1,18 @@
+{
+  "remote_url": "https://github.com/zhangyuetong/smooth-tight-nonrigidity",
+  "starting_commit": "a37ab10a84e607bc5962e8880a60544bad7af222",
+  "historical_audit_commit": "0d2e3fcfe73350a14d3734b6887dbda961190015",
+  "historical_snapshot_commit": "502220cc44850941449b848f7080e8828c731364",
+  "historical_target_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "publication_audited_source_mismatches": [],
+  "publication_lean_vs_old_integration_differences": [],
+  "portable_adaptations_retained": [
+    "scripts/build.py executable discovery",
+    "scripts/inventory.py bundled source/reuse lookup"
+  ],
+  "personal_files_preserved": [
+    "README.md",
+    "timestamp/"
+  ],
+  "new_validation": "pending"
+}

@@ -1,0 +1,18 @@
+# Incoming rebasing and seam matching — fresh ver503
+
+Assigned worktree: C:/Users/gzhan/Documents/ChatGPT/tight_another_review/ver503-incoming-rebase
+Branch: codex/ver503-incoming-rebase
+Exclusive new sources: lean/TightVer401/VisibleConnectorIncomingRebase*, VisibleConnectorIncomingSeam*, VisibleConnectorIncomingTerminal*, VisibleConnectorIncomingParameters*.lean
+
+Construct actual raw/incoming scalar VALUE and gradient matching, displaced seam embedding, terminal C1/Jordan/nonzero/norm margins and compatible parameter choices retaining SAME chosen inverse. Choose eta below original margins BEFORE fixing eta-dependent pc/w0; then rho below every same-e sign/carrier/coefficient-extension/b-smallness/displaced-terminal bound.
+
+Use frozen strengthened DisplacedSeamPhaseSigns and DisplacedSeamRebase, existing IncomingCollar/TerminalPositiveTrace/TerminalEnclosure. The uncompiled 13 IncomingGin5176081 leaves are preserved pending: review exact types and adapt useful arguments only after leaf validation, without treating snapshot as completed. No need to redo six RelativeSaddle sources (byte-identical and revalidated in root).
+
+Final consumers: worker3 exists_relative_saddle_smoothing_on_sides seam/domain/Hessian inputs and worker4 OrdinaryData terminal/source facts. Retain same native e for a,b and SAME Cartesian E for raw/B, d=tc(a)-b; independent existential choices cannot establish identities. Export one coherent parameter/witness selection plus literal value/gradient matches, not another wrapper taking desired Gin/source match as assumptions.
+Read repository/lean AGENTS.md, COORDINATION.md, SESSION_WORKTREES.md, rebuilt blueprint/interfaces.md, blueprint/classical-route.md, registry, target/toolchain/foundation locks and ver503-consumer-contract.md first. Active engine lean, target paper/paper.tex, namespace TightVer401. Record actual git HEAD and branch before edits; expected checkpoint is recorded in workers.json after integration validation.
+
+Before coding, record existing exact exports examined, final consumer, exclusive files, SAME-object inputs, real missing conclusions. Use scoped subagents for exclusive leaves or focused read-only review. Parent is sole compiler writer, jobs1; each worktree's outputs/logs/compatibility sources private. Dot-source scripts/worktree-environment.ps1; optional SeedCache/SeedEngine points only to the fresh integration engine. Never share writable outputs. Root owns shared types, root imports, coverage, pins and blueprint; propose changes via handoff rather than editing shared files.
+
+No custom axioms/circular imports/hidden admissions. Named temporary sorry only in tracked pending interfaces outside audited closure with owner/consumer and honest holes; actual source-producing work is preferred. Registered classical assumptions remain exact theorem parameters; never grant original geometry. Retain SAME corrected seed, clocks, protected field, selected graphs, scalar tuple and chosen full meridian. Native e and Cartesian E are distinct. Prioritize checked OpenAI/math/engine exports. Do not repeat completed degree/filling/Gauss/marker/bending proofs. Extension/Cantor remain deferred.
+
+Commit useful reviewed source progress, validate current sources (copied reports do not certify edits), publish validated checkpoints to your branch, and leave concise frozen handoff with source commit/audit/hash/consumer/SAME-object facts/remaining holes. Coordinator reviews integration into publication main. User authorizes messaging the coordinating chat for handoffs and fixes as part of this coordinated four-chat request. Continue sustained construction without monitoring automations or resuming old chats.

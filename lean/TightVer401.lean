@@ -363,3 +363,11 @@ import TightVer401.VisibleConnectorDisplacedSeamGinFamily
 import TightVer401.VisibleConnectorTerminalPositiveTrace
 
 import TightVer401.VisibleConnectorTerminalEnclosure
+
+import TightVer401.VisibleConnectorGradientOrderWitnessApplication
+
+import TightVer401.VisibleConnectorSourceOrderPhysical
+
+import TightVer401.VisibleConnectorDisplacedSeamRebase
+
+import TightVer401.CompletedSaddleTorusVer503Bending

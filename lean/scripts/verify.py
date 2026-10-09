@@ -52,6 +52,14 @@ def main():
     parser.add_argument("--fresh", action="store_true")
     parser.add_argument("--jobs", type=int, default=3)
     args = parser.parse_args()
+    target_lock = json.loads((ROOT / "target-lock.json").read_text(encoding="utf-8"))
+    active_manuscript = ROOT.parent / target_lock["manuscript"]
+    assert target_lock["active_formalization"] == "lean" and target_lock["target"] == "ver503"
+    assert sha(active_manuscript) == target_lock["sha256"]
+    assert active_manuscript.read_bytes() == (ROOT / "target/manuscript.tex").read_bytes()
+    review_path = ROOT / "target/ver503-reuse-review.json"
+    review = json.loads(review_path.read_text(encoding="utf-8"))
+    assert review["manuscript_sha256"] == target_lock["sha256"]
     report_path = ROOT / "kernel-report.json"
     if report_path.exists():
         report_path.unlink()
@@ -103,6 +111,18 @@ def main():
               "coverage_sha256": sha(ROOT / "coverage.json"),
               "declarations": sorted(declarations, key=lambda r: r["name"]),
               "warning": "Checks the declared Lean types and exact compiled closure; not full-paper completion."}
+    closure = [{"module": row["module"], "source_sha256": row["key"]["source_sha256"],
+                "compiled_source_sha256": row["key"]["compiled_source_sha256"],
+                "dependencies": row["key"]["dependencies"], "olean_sha256": row["olean_sha256"]}
+               for row in sorted(build["modules"], key=lambda r: r["module"])]
+    result["source_closure_sha256"] = hashlib.sha256(json.dumps(closure, sort_keys=True).encode()).hexdigest()
+    result["source_git_commit"] = subprocess.check_output(["git", "-C", str(ROOT), "rev-parse", "HEAD"], text=True).strip()
+    result["target_lock_sha256"] = sha(ROOT / "target-lock.json")
+    result["migration_review_sha256"] = sha(review_path)
+    result["classical_registry_sha256"] = sha(ROOT / "classical-external-results.json")
+    result["lean_toolchain_sha256"] = sha(ROOT / "lean-toolchain")
+    result["lakefile_sha256"] = sha(ROOT / "lakefile.toml")
+    result["verification_scripts"] = {name: sha(ROOT / "scripts" / name) for name in ["build.py", "verify.py", "inventory.py"]}
     report_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"PASS: OpenAI foundation and retained exports compiled and audited against {coverage['target']}; full paper remains incomplete.")
 

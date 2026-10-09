@@ -1,9 +1,9 @@
 {
-  "active_formalization": "formalization/ver401",
+  "active_formalization": "lean",
   "proof_namespace": "TightVer401",
-  "target": "ver500",
-  "sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
-  "manuscript": "counterexample_long/ver500/tight_tori_dual_radial_rewrite.tex",
+  "target": "ver503",
+  "sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "manuscript": "paper/paper.tex",
   "objective": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
   "deferred": [
     "complete-cylinder applications",
@@ -12,5 +12,6 @@
     "Cantor-family and orbit-space topology"
   ],
   "retained_checked_core": "ver401 band, bending and support calculus; exact prior snapshot archived",
-  "previous_target_snapshot": "archive/ver401-before-ver500-20261008"
+  "previous_target_snapshot": "target/ver500-coverage-historical.json",
+  "previous_target_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304"
 }

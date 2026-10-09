@@ -1,0 +1,50 @@
+[
+  {
+    "commit": "8d2768e8ab013d781077cca5cff1a0600399b6e7",
+    "git_blob": "652c441aeef304755743a140d3e91313579e9575",
+    "sha256": "a35ea9a98b980957fd39192ce37237a19280bd6cf2bd83c736b541412d94c4e0",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-domination",
+    "file": "domination-source-order-exports.json",
+    "path": "formalization/ver401/research/coordination/domination-source-order-exports.json"
+  },
+  {
+    "commit": "8d2768e8ab013d781077cca5cff1a0600399b6e7",
+    "git_blob": "bd50559ee4f42979aa5a0cd4a2da07bdb6a09e73",
+    "sha256": "7d52d7e23ba1aa100fc78988c858788e4963b70dc69e231e3ca388421b791d53",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-domination",
+    "file": "domination-gradient-order-witness-export.json",
+    "path": "formalization/ver401/research/coordination/domination-gradient-order-witness-export.json"
+  },
+  {
+    "commit": "8d2768e8ab013d781077cca5cff1a0600399b6e7",
+    "git_blob": "a50dc18ff925db51923fbbac07341530dff25485",
+    "sha256": "cadf62fee251ccc56ccad349c3ff8f6c1dea5e978e59227bd0a2e6ab05578f2a",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-domination",
+    "file": "domination-gradient-order-exports.json",
+    "path": "formalization/ver401/research/coordination/domination-gradient-order-exports.json"
+  },
+  {
+    "commit": "8d2768e8ab013d781077cca5cff1a0600399b6e7",
+    "git_blob": "54c41b2422725b37ae6a89e9d175a6eb4a7e08ae",
+    "sha256": "8aac7611899238912ca75775fc0e13c4ed30bc696e5e43a2617a9785e42c9607",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-domination",
+    "file": "domination-source-order-checkpoint.md",
+    "path": "formalization/ver401/research/coordination/domination-source-order-checkpoint.md"
+  },
+  {
+    "commit": "66bdc4e2445139ba9ba17f6d78c7c220cc4d283c",
+    "git_blob": "8c3580be3cd309f63cbefce144497a3dd2a8bb94",
+    "sha256": "943f665e6f588a8fa188890a1ed69f3cd8915dc4494c90e0daa5c2365ae3e646",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-descent",
+    "file": "descent-terminal-inverse-dependency-manifest.json",
+    "path": "formalization/ver401/research/coordination/descent-terminal-inverse-dependency-manifest.json"
+  },
+  {
+    "commit": "66bdc4e2445139ba9ba17f6d78c7c220cc4d283c",
+    "git_blob": "e24431fa11be0e689bd925f6d4ce59c433a48630",
+    "sha256": "fd1aa6938e42d77e12678c043ec11a4177539e66252f5bdc27c92df620bf256b",
+    "donor_repository": "C:\\Users\\gzhan\\Documents\\ChatGPT\\tight_another_review\\angular-descent",
+    "file": "descent-unvalidated-gin-source-checkpoint.json",
+    "path": "formalization/ver401/research/coordination/descent-unvalidated-gin-source-checkpoint.json"
+  }
+]

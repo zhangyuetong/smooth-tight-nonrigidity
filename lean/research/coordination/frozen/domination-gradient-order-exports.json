@@ -1,0 +1,79 @@
+{
+  "result": "PASS",
+  "generated_at_utc": "2026-10-09T01:13:39.230950+00:00",
+  "certificate_sha256": "6c93819c5f36dce6d90a0abe2a973029664b4bac07dc482c3bb904d33f5ec8c0",
+  "modules": 1152,
+  "declarations": 15254,
+  "prior_types_unchanged": 15249,
+  "public_export_count": 4,
+  "donor_commit": "e03acb10044e5a52ab303b4a49e228d2fd8a38ea",
+  "donor_sha256": "e2709d46d80137e440592008cab791e6c64ec4aa954b66797a6bffa51f5e1a4a",
+  "exact_source_reuse_commit": "6f48368",
+  "original_public_interfaces_unchanged": true,
+  "leaves": [
+    {
+      "module": "TightVer401.VisibleConnectorGradientOrder",
+      "proof_commit": "d41351418f387c01735a8382bc3b880db56080ee",
+      "source_sha256": "a65922e50afdf8067b182835d6b7c442fea9c162052f38d7d6c3697d856200d3",
+      "leaf_seconds": 57.406,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnector_actual_negative_map_reverses_jordan_order",
+          "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {γo γi : ℝ → ℂ},\n  OAI.CircleDomainRigidity.RegularJordanParametrization Ho γo →\n    OAI.CircleDomainRigidity.RegularJordanParametrization Hi γi →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        OAI.CircleDomainRigidity.circleFormIntegral (fun x => 1) (OAI.CircleDomainRigidity.centeredArgument (Ho 0)) γo =\n            1 →\n          OAI.CircleDomainRigidity.circleFormIntegral (fun x => 1) (OAI.CircleDomainRigidity.centeredArgument (Hi 0))\n                γi =\n              1 →\n            ∀ (F : ℂ → ℂ) (O : Set ℂ),\n              IsOpen O →\n                ContDiffOn ℝ (↑⊤) F O →\n                  TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                    (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, (fderiv ℝ F z).det < 0) →\n                      OAI.CircleDomainRigidity.RegularJordanParametrization To (F ∘ γo) →\n                        OAI.CircleDomainRigidity.RegularJordanParametrization Ti (F ∘ γi) →\n                          OAI.CircleDomainRigidity.planarFormIntegral (TightVer401.annularAngularFormP F (To 0))\n                                (TightVer401.annularAngularFormQ F (To 0)) γo =\n                              1 →\n                            Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                                (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                              ∀ {c : ℂ},\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                  c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                    closure (OAI.CircleDomainRigidity.jordanInterior To) ⊆\n                                      OAI.CircleDomainRigidity.jordanInterior Ti"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnector_actual_negative_map_reverses_positive_jordan_order",
+          "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {γo γi : ℝ → ℂ},\n  OAI.CircleDomainRigidity.RegularJordanParametrization Ho γo →\n    OAI.CircleDomainRigidity.RegularJordanParametrization Hi γi →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        OAI.CircleDomainRigidity.circleFormIntegral (fun x => 1) (OAI.CircleDomainRigidity.centeredArgument (Ho 0)) γo =\n            1 →\n          OAI.CircleDomainRigidity.circleFormIntegral (fun x => 1) (OAI.CircleDomainRigidity.centeredArgument (Hi 0))\n                γi =\n              1 →\n            ∀ (F : ℂ → ℂ) (O : Set ℂ),\n              IsOpen O →\n                ContDiffOn ℝ (↑⊤) F O →\n                  TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                    (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, (fderiv ℝ F z).det < 0) →\n                      OAI.CircleDomainRigidity.PositiveJordanParametrization To (F ∘ γo) →\n                        OAI.CircleDomainRigidity.PositiveJordanParametrization Ti (F ∘ γi) →\n                          Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                              (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                            ∀ {c : ℂ},\n                              c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                  closure (OAI.CircleDomainRigidity.jordanInterior To) ⊆\n                                    OAI.CircleDomainRigidity.jordanInterior Ti"
+        }
+      ]
+    },
+    {
+      "module": "TightVer401.VisibleConnectorGradientOrderApplication",
+      "proof_commit": "acc8c7616e7f87da8ff710d7833c39d0bbf92eb0",
+      "source_sha256": "3b2c9e0851c01b8fd5bc0387c3fbc4a2624249ba8f6ad797c37a32260071d368",
+      "leaf_seconds": 55.978,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnectorGradientOrder_planarGradient",
+          "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner etaOuter etaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      OAI.CircleDomainRigidity.PositiveJordanParametrization Ti etaOuter →\n        OAI.CircleDomainRigidity.PositiveJordanParametrization To etaInner →\n          closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n            ∀ {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n              IsOpen U →\n                ContDiffOn ℝ (↑⊤) G U →\n                  TightVer401.annularCoordJordanClosure Ho Hi ⊆ U →\n                    (∀ z ∈ TightVer401.annularCoordJordanInterior Ho Hi, (TightVer401.planarHessian G z).det < 0) →\n                      (∀ (t : ℝ),\n                          TightVer401.annularComplexConjugate (TightVer401.planarGradient G) (gammaOuter t) =\n                            etaOuter t) →\n                        (∀ (t : ℝ),\n                            TightVer401.annularComplexConjugate (TightVer401.planarGradient G) (gammaInner t) =\n                              etaInner t) →\n                          Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ti))\n                              (frontier (OAI.CircleDomainRigidity.jordanInterior To)) →\n                            ∀ {c : ℂ},\n                              c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                  closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                    OAI.CircleDomainRigidity.jordanInterior To"
+        }
+      ]
+    },
+    {
+      "module": "TightVer401.VisibleConnectorGradientOrderPhysical",
+      "proof_commit": "c01e5dd86f15002bdc303e7bedd0c3ea0540758a",
+      "source_sha256": "e6d530f7deb1deb0c64ec53cb023af06e5661439bbcd67c83f6f0560ff03d584",
+      "leaf_seconds": 60.561,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnectorGradientOrder_physical",
+          "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {pOuter pInner gammaOuter gammaInner : ℝ → OAI.SmoothLocal.Geometry.Coord} {Ho Hi To Ti : ℂ ≃ₜ ℂ},\n      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>\n          TightVer401.seamComplexCoord.symm (pOuter (L * t))) →\n        (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n            TightVer401.seamComplexCoord.symm (pInner (L * t))) →\n          (OAI.CircleDomainRigidity.PositiveJordanParametrization Ti fun t =>\n              TightVer401.seamComplexCoord.symm (gammaOuter (L * t))) →\n            (OAI.CircleDomainRigidity.PositiveJordanParametrization To fun t =>\n                TightVer401.seamComplexCoord.symm (gammaInner (L * t))) →\n              Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange pOuter) →\n                Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange pInner) →\n                  Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange gammaOuter) →\n                    Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange gammaInner) →\n                      closure (TightVer401.positiveExitInside pInner) ⊆ TightVer401.positiveExitInside pOuter →\n                        ∀ {G : OAI.SmoothLocal.Geometry.Coord → ℝ} {U : Set OAI.SmoothLocal.Geometry.Coord},\n                          IsOpen U →\n                            ContDiffOn ℝ (↑⊤) G U →\n                              closure\n                                    (TightVer401.positiveExitInside pOuter \\\n                                      closure (TightVer401.positiveExitInside pInner)) ⊆\n                                  U →\n                                (∀\n                                    q ∈\n                                      TightVer401.positiveExitInside pOuter \\\n                                        closure (TightVer401.positiveExitInside pInner),\n                                    (TightVer401.planarHessian G q).det < 0) →\n                                  (∀ (s : ℝ), TightVer401.planarGradient G (pOuter s) = gammaOuter s) →\n                                    (∀ (s : ℝ), TightVer401.planarGradient G (pInner s) = gammaInner s) →\n                                      Disjoint (Set.range gammaOuter) (Set.range gammaInner) →\n                                        ∀ {c : OAI.SmoothLocal.Geometry.Coord},\n                                          c ∈ TightVer401.positiveExitInside gammaOuter →\n                                            c ∈ TightVer401.positiveExitInside gammaInner →\n                                              closure (TightVer401.positiveExitInside gammaOuter) ⊆\n                                                TightVer401.positiveExitInside gammaInner"
+        }
+      ]
+    }
+  ]
+}

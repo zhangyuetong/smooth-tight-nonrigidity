@@ -1,0 +1,338 @@
+{
+  "target": "ver503",
+  "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "historical_target": "ver500",
+  "historical_manuscript_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "review_document": "research/coordination/ver503-mathematical-migration.md",
+  "claims": [
+    {
+      "label": "thm:main-fiber",
+      "historical_statement_sha256": "458524731eb3c198ee281185a185c55f2084f7e4e5471566020bee7e734ff2bf",
+      "statement_sha256": "458524731eb3c198ee281185a185c55f2084f7e4e5471566020bee7e734ff2bf",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:main-annulus",
+      "historical_statement_sha256": "49905daf56cec874716a16a0cb641780770090138615abfdedef529a67e1c1a7",
+      "statement_sha256": "49905daf56cec874716a16a0cb641780770090138615abfdedef529a67e1c1a7",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:complete-cylinder",
+      "historical_statement_sha256": "44fbbb466c0a53de15bce6207a112626424ba9924ebe73a98a4abd86ad9b59c3",
+      "statement_sha256": "44fbbb466c0a53de15bce6207a112626424ba9924ebe73a98a4abd86ad9b59c3",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:support",
+      "historical_statement_sha256": "5a0d08f76c438bafca2e700149100d95caafb99fcef34d8634009255da4608a3",
+      "statement_sha256": "f8d19fbc69093f6cfdab7bd0f9a0669dac9e3696834222d91dfa1dec07b95398",
+      "status": "proved",
+      "review": "Reviewed bilinear tensor sphereSupportTensor=covHessian+H*g; raised endomorphism sphereSupportEndomorphism=g-inverse*tensor. Existing actual induced metric tensor*g-inverse*tensor-transpose, second form -tensor and reciprocal endomorphism determinant match the clarified statement. Fresh kernel audit required.",
+      "numbered_statement_unchanged": false
+    },
+    {
+      "label": "prop:codazzi",
+      "historical_statement_sha256": "2a2fccd88ef391980da40438124a7d5245a05207ed2e6896c4a2cf6127eababb",
+      "statement_sha256": "2a2fccd88ef391980da40438124a7d5245a05207ed2e6896c4a2cf6127eababb",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:degree",
+      "historical_statement_sha256": "af9e30165b2a7a91f666a755a17158920e70cd921d191c99e75e882ce3378bb0",
+      "statement_sha256": "af9e30165b2a7a91f666a755a17158920e70cd921d191c99e75e882ce3378bb0",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:product-holonomy",
+      "historical_statement_sha256": "26e5c47d387ee4817fb6c8abc1ec90fe791b9016ebac09a5a5521f2d1daaa893",
+      "statement_sha256": "26e5c47d387ee4817fb6c8abc1ec90fe791b9016ebac09a5a5521f2d1daaa893",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:ruled",
+      "historical_statement_sha256": "21175ce2dbbfb88fb9cad08009e050cb7c543eb8eaf43551fddf57480ba61513",
+      "statement_sha256": "21175ce2dbbfb88fb9cad08009e050cb7c543eb8eaf43551fddf57480ba61513",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:holonomy-integral-new",
+      "historical_statement_sha256": "7c6f362827e268409843e1d079ac3a11af25f837e36780c7a9c0f0fcb4850895",
+      "statement_sha256": "375024b6fa46440a92f6017b5e2225b498a186cb333741e92436b7c28bd3dd9b",
+      "status": "pending",
+      "review": "Only title changes Intrinsic to Asymptotic return multiplier. General geometric multiplier/integral equality remains pending; scalar/projective multiplier exports do not discharge it.",
+      "numbered_statement_unchanged": false
+    },
+    {
+      "label": "lem:finite-moment-balance",
+      "historical_statement_sha256": "9f7b562e34897f98aac12867e31f47836fa8e8e022a67aef8afee75a0e59512d",
+      "statement_sha256": "9f7b562e34897f98aac12867e31f47836fa8e8e022a67aef8afee75a0e59512d",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:normal-loop-criterion",
+      "historical_statement_sha256": "e9a77545d10c23c7ab9ccca4e02bd890cb1e62cff1d331a1ebf5821d160c77dd",
+      "statement_sha256": "e9a77545d10c23c7ab9ccca4e02bd890cb1e62cff1d331a1ebf5821d160c77dd",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "cor:relative-holonomy-upgrade",
+      "historical_statement_sha256": "d85bfd72b660c939e8aba5cd7034e9e4dbea7877eb7df20a4411a2c776131b65",
+      "statement_sha256": "d85bfd72b660c939e8aba5cd7034e9e4dbea7877eb7df20a4411a2c776131b65",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:seed",
+      "historical_statement_sha256": "cbe00e9efe342e5a7995732f4869dbc14741c6623a8d5427f9ceae1c18f98418",
+      "statement_sha256": "cbe00e9efe342e5a7995732f4869dbc14741c6623a8d5427f9ceae1c18f98418",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:one-slowdown",
+      "historical_statement_sha256": "1a177948be86adf5c2ea82e761b41de2c0303d4ded550037267c42a06488c6e0",
+      "statement_sha256": "1a177948be86adf5c2ea82e761b41de2c0303d4ded550037267c42a06488c6e0",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:spike",
+      "historical_statement_sha256": "0cdde6a9f752e6f3f1fef0ed2762104e8d008b526c7a7ab522a97c3f8f2140aa",
+      "statement_sha256": "0cdde6a9f752e6f3f1fef0ed2762104e8d008b526c7a7ab522a97c3f8f2140aa",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:central-support",
+      "historical_statement_sha256": "98922cca32604520983b335c99877ec012df17b01da46138cc31099e9779ad85",
+      "statement_sha256": "98922cca32604520983b335c99877ec012df17b01da46138cc31099e9779ad85",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:exit",
+      "historical_statement_sha256": "f77f09e400e0127b944993a2028f1bf032c8e0c4e887e467072e0eeabb39d318",
+      "statement_sha256": "f77f09e400e0127b944993a2028f1bf032c8e0c4e887e467072e0eeabb39d318",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:smoothing",
+      "historical_statement_sha256": "4c92891bc792c89dd8f8cedae2c47bba957ce8015087855d79cb8352db66a16b",
+      "statement_sha256": "4c92891bc792c89dd8f8cedae2c47bba957ce8015087855d79cb8352db66a16b",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:connector",
+      "historical_statement_sha256": "3a30719a747462780c096e0e2d1dc78b7e6241b7500f1606e4b314882f6cdc8f",
+      "statement_sha256": "3a30719a747462780c096e0e2d1dc78b7e6241b7500f1606e4b314882f6cdc8f",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:quadratic-filling",
+      "historical_statement_sha256": "b0ce92c58014cd59b025a3c34c3e4237f80e86a71aeed1ff4cd69284fd535889",
+      "statement_sha256": "b0ce92c58014cd59b025a3c34c3e4237f80e86a71aeed1ff4cd69284fd535889",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:neck-adapter",
+      "historical_statement_sha256": "31cd939b3b29061556b4780d64cd24ae49d203baf44b9ff4ca3cff27d0022b7f",
+      "statement_sha256": "31cd939b3b29061556b4780d64cd24ae49d203baf44b9ff4ca3cff27d0022b7f",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:dual-radial-completion",
+      "historical_statement_sha256": "82e16e7dc8221f3864bf33303b308293e7ad1271fd38fe68012968dde2b3ae8a",
+      "statement_sha256": "82e16e7dc8221f3864bf33303b308293e7ad1271fd38fe68012968dde2b3ae8a",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:saddle",
+      "historical_statement_sha256": "09df40b94f9c94ef5f75df228ccd9c28407e1b0f5f344d860f6b7bfd96110a5e",
+      "statement_sha256": "09df40b94f9c94ef5f75df228ccd9c28407e1b0f5f344d860f6b7bfd96110a5e",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:convex",
+      "historical_statement_sha256": "b5511c93fac76b5bb4274690fc3f78c1a729e199d6b1b671ec9bea8aed344e3b",
+      "statement_sha256": "b5511c93fac76b5bb4274690fc3f78c1a729e199d6b1b671ec9bea8aed344e3b",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:ellipses-new",
+      "historical_statement_sha256": "36eeff937b0c9a0cf8159d620d543b975ace3acb9408315ba183d3473d369581",
+      "statement_sha256": "36eeff937b0c9a0cf8159d620d543b975ace3acb9408315ba183d3473d369581",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:protected-realization",
+      "historical_statement_sha256": "8208ae6f355c379bbd6be2e3cb9ced879c58f500dce574a7536d4d71a2afc40f",
+      "statement_sha256": "73752f7b4cc4e38a494ad5c59a9df68306b2f280a25b4cb35f104569d267919f",
+      "status": "pending",
+      "review": "Existing completedSaddleTorusBandChart_placement and BandAffine_apply prove SAME fixed normalized placement -d.bandMap+Q.verticalOffset*axis. The affine linear action gives -Y; checked zero extension uses that same chart and field. Retain conditional consumers; actual completed geometry output, full profile family and complete numbered realization remain pending.",
+      "numbered_statement_unchanged": false
+    },
+    {
+      "label": "cor:marked-module",
+      "historical_statement_sha256": "4bcc44fb7070c3b1904f02cc611bcaaa2113b996ea2008b26c28e96ea782d88e",
+      "statement_sha256": "4bcc44fb7070c3b1904f02cc611bcaaa2113b996ea2008b26c28e96ea782d88e",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:branch",
+      "historical_statement_sha256": "c9958dc4f0f25f76d6fb61ab8f74c66937dde04404c523ccf4bf4c9380810725",
+      "statement_sha256": "c9958dc4f0f25f76d6fb61ab8f74c66937dde04404c523ccf4bf4c9380810725",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:budget",
+      "historical_statement_sha256": "42b44f7925d6d50962811e7682e785c80e9a45f9ebd5522722edff51eae787e2",
+      "statement_sha256": "42b44f7925d6d50962811e7682e785c80e9a45f9ebd5522722edff51eae787e2",
+      "status": "partial",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:fixed-open",
+      "historical_statement_sha256": "ab7282e8b804864391b829fe354953774910a055fbddfdbac479e837221a0b63",
+      "statement_sha256": "ab7282e8b804864391b829fe354953774910a055fbddfdbac479e837221a0b63",
+      "status": "partial",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:finite-sign",
+      "historical_statement_sha256": "0047ce49e5fe63dfa02c31badcdd55c95af0d085c7095b4a87540a6ca59625be",
+      "statement_sha256": "0047ce49e5fe63dfa02c31badcdd55c95af0d085c7095b4a87540a6ca59625be",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:orbit-space",
+      "historical_statement_sha256": "33cd07341cc588d592bba6563b47227c6813ae7acb5eb40ae3c5fd3153955115",
+      "statement_sha256": "33cd07341cc588d592bba6563b47227c6813ae7acb5eb40ae3c5fd3153955115",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:localized-sign",
+      "historical_statement_sha256": "444f47221322558f914407e68004476c68822e2d087a0e6db83e1e15ef83beab",
+      "statement_sha256": "852b3ac3f4db906627c9e54381e2dec1f13e60422e6ee26ba63518046e699ca7",
+      "status": "partial",
+      "review": "Existing smooth-series metric identities and parametrized-map injectivity retained only as partial subclaims. Clarified entire positive-image stabilizer is required by noncongruence consumer; Cantor/quotient conclusion deferred.",
+      "numbered_statement_unchanged": false
+    },
+    {
+      "label": "cor:tight-nonrigidity",
+      "historical_statement_sha256": "42f666d5acb5a0742ed4c47b4fb888000a9424c8819784eb62e6f498130971ff",
+      "statement_sha256": "42f666d5acb5a0742ed4c47b4fb888000a9424c8819784eb62e6f498130971ff",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "cor:HK-degenerate",
+      "historical_statement_sha256": "7bd444f27e812901e031314b811f5abb12640c9e7dac438a8ac460fb3d8c6cdb",
+      "statement_sha256": "7bd444f27e812901e031314b811f5abb12640c9e7dac438a8ac460fb3d8c6cdb",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "cor:fixed-boundary-annuli",
+      "historical_statement_sha256": "ca649102454ee0fd48cd350cf9c7fec5900e6fc6cb3be7e163ea305108a3d805",
+      "statement_sha256": "ca649102454ee0fd48cd350cf9c7fec5900e6fc6cb3be7e163ea305108a3d805",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:complete-profile",
+      "historical_statement_sha256": "e65232a6198f5d45d14d6a38153285668e410641157d2d1fe45aae583a0fb7c5",
+      "statement_sha256": "e65232a6198f5d45d14d6a38153285668e410641157d2d1fe45aae583a0fb7c5",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "prop:general-ruled-return",
+      "historical_statement_sha256": "a73bbd3455eaf97b949f4d9ff6da56cfcd3fc584e6114bea3ea238907d8b6932",
+      "statement_sha256": "a73bbd3455eaf97b949f4d9ff6da56cfcd3fc584e6114bea3ea238907d8b6932",
+      "status": "proved",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "thm:general-ruled-kernel",
+      "historical_statement_sha256": "2f75e99e4b26f5306bc84dc1052083ed12a12ae6e28af846ae16e60a847bf183",
+      "statement_sha256": "2f75e99e4b26f5306bc84dc1052083ed12a12ae6e28af846ae16e60a847bf183",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    },
+    {
+      "label": "lem:visible-partner",
+      "historical_statement_sha256": "6e808d01d0b505981605b5699ddf1a7cec07e1b900e37c25e3094c6d849b6428",
+      "statement_sha256": "6e808d01d0b505981605b5699ddf1a7cec07e1b900e37c25e3094c6d849b6428",
+      "status": "pending",
+      "review": "Numbered statement unchanged after CRLF normalization; existing types, retained hypotheses and scope notes apply. Changed construction prose does not grant missing input geometry.",
+      "numbered_statement_unchanged": true
+    }
+  ],
+  "additional_obligations": [
+    "Compact closure convention V relatively compact in U",
+    "Same chosen global Legendre inverse and additive constant",
+    "Separate source-map, joined-gradient and dual-gradient degree consumers",
+    "Inner reflected source/gradient sides and double orientation reversal",
+    "Positive inverse-normal factor in affine second form",
+    "Smooth physical convex endpoint collars with integrable infinite slopes",
+    "Full fixed smoothing V, open incoming/terminal germs, actual closed-band Hessian, own final H inverse"
+  ]
+}

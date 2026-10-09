@@ -1,0 +1,86 @@
+{
+  "result": "PASS",
+  "generated_at_utc": "2026-10-09T01:39:22.747767+00:00",
+  "modules": 1156,
+  "declarations": 15261,
+  "certificate_sha256": "2af4e2f3bcfcadd552b3994fd8e737100a437dd67bdba93664f289a2549bbc2c",
+  "prior_types_unchanged": 15255,
+  "frozen_gradient_order_and_witness_sources_unchanged": true,
+  "public_export_count": 5,
+  "leaves": [
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrder",
+      "proof_commit": "77108914d607362c637104e80cdb9dc1f581abb7",
+      "source_sha256": "d915e6f10dc3018a8ce0b679770bebb87220b32eaf2a1a1d9fed5bc701efd2e2",
+      "leaf_seconds": 52.105,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnector_actual_positive_map_preserves_positive_jordan_order",
+          "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        ∀ (F : ℂ → ℂ) (O : Set ℂ),\n          IsOpen O →\n            ContDiffOn ℝ (↑⊤) F O →\n              TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, 0 < (fderiv ℝ F z).det) →\n                  OAI.CircleDomainRigidity.PositiveJordanParametrization To (F ∘ gammaOuter) →\n                    OAI.CircleDomainRigidity.PositiveJordanParametrization Ti (F ∘ gammaInner) →\n                      Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                          (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                        ∀ {c : ℂ},\n                          c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                            c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                              closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                OAI.CircleDomainRigidity.jordanInterior To"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnector_actual_signed_map_orders_positive_jordan_fills",
+          "type": "∀ {Ho Hi To Ti : ℂ ≃ₜ ℂ} {gammaOuter gammaInner : ℝ → ℂ},\n  OAI.CircleDomainRigidity.PositiveJordanParametrization Ho gammaOuter →\n    OAI.CircleDomainRigidity.PositiveJordanParametrization Hi gammaInner →\n      closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆ OAI.CircleDomainRigidity.jordanInterior Ho →\n        ∀ (F : ℂ → ℂ) (O : Set ℂ),\n          IsOpen O →\n            ContDiffOn ℝ (↑⊤) F O →\n              TightVer401.annularJordanClosure Ho Hi ⊆ O →\n                ∀ (s : ℤ),\n                  s = 1 ∨ s = -1 →\n                    (∀ z ∈ TightVer401.annularJordanInterior Ho Hi, 0 < ↑s * (fderiv ℝ F z).det) →\n                      OAI.CircleDomainRigidity.PositiveJordanParametrization To (F ∘ gammaOuter) →\n                        OAI.CircleDomainRigidity.PositiveJordanParametrization Ti (F ∘ gammaInner) →\n                          Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior To))\n                              (frontier (OAI.CircleDomainRigidity.jordanInterior Ti)) →\n                            ∀ {c : ℂ},\n                              c ∈ OAI.CircleDomainRigidity.jordanInterior To →\n                                c ∈ OAI.CircleDomainRigidity.jordanInterior Ti →\n                                  if s = 1 then\n                                    closure (OAI.CircleDomainRigidity.jordanInterior Ti) ⊆\n                                      OAI.CircleDomainRigidity.jordanInterior To\n                                  else\n                                    closure (OAI.CircleDomainRigidity.jordanInterior To) ⊆\n                                      OAI.CircleDomainRigidity.jordanInterior Ti"
+        }
+      ]
+    },
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrderRound",
+      "proof_commit": "2c1bc5b113fc891e7a77265355b240d09fa05dfc",
+      "source_sha256": "c710f55a4ab6462fee7e2d1ebe87a6330af4935708274e05bc05818b1221c3a1",
+      "leaf_seconds": 49.412,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnectorSourceOrder_round",
+          "type": "∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord} {O : Set OAI.SmoothLocal.Geometry.Coord}\n  {Ho Hi : ℂ ≃ₜ ℂ} {etaOuter etaInner : ℝ → ℂ},\n  IsOpen O →\n    ContDiffOn ℝ (↑⊤) F O →\n      {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n        (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n            1 ≤ TightVer401.planarRadius p → TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n          OAI.CircleDomainRigidity.PositiveJordanParametrization Ho etaOuter →\n            OAI.CircleDomainRigidity.PositiveJordanParametrization Hi etaInner →\n              (∀ (t : ℝ),\n                  TightVer401.annularComplexConjugate F (OAI.CircleDomainRigidity.unitCircleParam 0 2 t) = etaOuter t) →\n                (∀ (t : ℝ),\n                    TightVer401.annularComplexConjugate F (OAI.CircleDomainRigidity.unitCircleParam 0 1 t) =\n                      etaInner t) →\n                  Disjoint (frontier (OAI.CircleDomainRigidity.jordanInterior Ho))\n                      (frontier (OAI.CircleDomainRigidity.jordanInterior Hi)) →\n                    ∀ {c : ℂ},\n                      c ∈ OAI.CircleDomainRigidity.jordanInterior Ho →\n                        c ∈ OAI.CircleDomainRigidity.jordanInterior Hi →\n                          closure (OAI.CircleDomainRigidity.jordanInterior Hi) ⊆\n                            OAI.CircleDomainRigidity.jordanInterior Ho"
+        }
+      ]
+    },
+    {
+      "module": "TightVer401.VisibleConnectorSourceOrderPhysical",
+      "proof_commit": "f424885a65712589fd9dcecf30e01ca8d95d2c0f",
+      "source_sha256": "b3294e324d7b699aff309f6c2e4bfb02975d60b2810ef3e29e375896332faaae",
+      "leaf_seconds": 57.7,
+      "exports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnectorSourceOrder_physical",
+          "type": "∀ {L : ℝ},\n  0 < L →\n    ∀ {terminal incoming : ℝ → OAI.SmoothLocal.Geometry.Coord} {Ho Hi : ℂ ≃ₜ ℂ},\n      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t =>\n          TightVer401.seamComplexCoord.symm (terminal (L * t))) →\n        (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n            TightVer401.seamComplexCoord.symm (incoming (L * t))) →\n          Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange terminal) →\n            Schoenflies.IsJordanCurve (TightVer401.positiveExitJordanRange incoming) →\n              ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord}\n                {O : Set OAI.SmoothLocal.Geometry.Coord},\n                IsOpen O →\n                  ContDiffOn ℝ (↑⊤) F O →\n                    {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n                      (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                          1 ≤ TightVer401.planarRadius p →\n                            TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n                        (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = terminal s) →\n                          (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = incoming s) →\n                            Disjoint (Set.range incoming) (Set.range terminal) →\n                              ∀ {c : OAI.SmoothLocal.Geometry.Coord},\n                                c ∈ TightVer401.positiveExitInside terminal →\n                                  c ∈ TightVer401.positiveExitInside incoming →\n                                    closure (TightVer401.positiveExitInside incoming) ⊆\n                                      TightVer401.positiveExitInside terminal"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "kind": "theorem",
+          "name": "TightVer401.visibleConnectorSourceOrder_retained_incoming_terminal",
+          "type": "∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}\n  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)\n  (T : TightVer401.VisibleConnectorWitnessAssemblyTerminalFacts G U L) {Ho Hi : ℂ ≃ₜ ℂ},\n  (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t => TightVer401.seamComplexCoord.symm (T.p (L * t))) →\n    (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n        TightVer401.seamComplexCoord.symm (D.incoming.p (L * t))) →\n      ∀ {F : OAI.SmoothLocal.Geometry.Coord → OAI.SmoothLocal.Geometry.Coord} {O : Set OAI.SmoothLocal.Geometry.Coord},\n        IsOpen O →\n          ContDiffOn ℝ (↑⊤) F O →\n            {p | 1 ≤ TightVer401.planarRadius p ∧ TightVer401.planarRadius p ≤ 2} ⊆ O →\n              (∀ (p : OAI.SmoothLocal.Geometry.Coord),\n                  1 ≤ TightVer401.planarRadius p →\n                    TightVer401.planarRadius p ≤ 2 → 0 < TightVer401.annularJacobian F p) →\n                (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![2, 2 * Real.pi * s / L]) = T.p s) →\n                  (∀ (s : ℝ), F (TightVer401.saddlePolarChart ![1, 2 * Real.pi * s / L]) = D.incoming.p s) →\n                    Disjoint (Set.range D.incoming.p) (Set.range T.p) →\n                      closure (TightVer401.positiveExitInside D.incoming.p) ⊆ TightVer401.positiveExitInside T.p"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "generated_at_utc": "2026-10-09T01:21:36.628092+00:00",
+  "modules": 1153,
+  "declarations": 15255,
+  "certificate_sha256": "5ad5225c90162cac3f8eab032c243f70ff12f42de69b7bf3bebb24c0b22dfe80",
+  "prior_types_unchanged": 15254,
+  "frozen_three_sources_unchanged": true,
+  "proof_commit": "1bb393a397ecdf914a0d8b6fc5262fec2f776ec5",
+  "source_sha256": "cab7743cbe79cdd7640b29fcf2e86e8fe62d3e9687020be0b9cd06958231ae59",
+  "leaf_seconds": 57.839,
+  "export": {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "kind": "theorem",
+    "name": "TightVer401.visibleConnectorGradientOrder_retained_incoming_terminal",
+    "type": "∀ {Gin G : OAI.SmoothLocal.Geometry.Coord → ℝ} {Uin U N : Set OAI.SmoothLocal.Geometry.Coord} {L R : ℝ}\n  [inst : Fact (0 < L)] (D : TightVer401.VisibleConnectorIncomingData Gin Uin L R)\n  (T : TightVer401.PositiveExitTrace G U L) {Ho Hi To Ti : ℂ ≃ₜ ℂ},\n  (OAI.CircleDomainRigidity.PositiveJordanParametrization Ho fun t => TightVer401.seamComplexCoord.symm (T.p (L * t))) →\n    (OAI.CircleDomainRigidity.PositiveJordanParametrization Hi fun t =>\n        TightVer401.seamComplexCoord.symm (D.incoming.p (L * t))) →\n      (OAI.CircleDomainRigidity.PositiveJordanParametrization Ti fun t =>\n          TightVer401.seamComplexCoord.symm (T.gamma (L * t))) →\n        (OAI.CircleDomainRigidity.PositiveJordanParametrization To fun t =>\n            TightVer401.seamComplexCoord.symm (D.incoming.gamma (L * t))) →\n          closure (TightVer401.positiveExitInside D.incoming.p) ⊆ TightVer401.positiveExitInside T.p →\n            IsOpen U →\n              ContDiffOn ℝ (↑⊤) G U →\n                closure (TightVer401.positiveExitInside T.p \\ closure (TightVer401.positiveExitInside D.incoming.p)) ⊆\n                    U →\n                  (∀ q ∈ TightVer401.positiveExitInside T.p \\ closure (TightVer401.positiveExitInside D.incoming.p),\n                      (TightVer401.planarHessian G q).det < 0) →\n                    IsOpen N →\n                      Set.range D.incoming.p ⊆ N →\n                        Set.EqOn G Gin N →\n                          Disjoint (Set.range D.incoming.gamma) (Set.range T.gamma) →\n                            closure (TightVer401.positiveExitInside T.gamma) ⊆\n                              TightVer401.positiveExitInside D.incoming.gamma"
+  }
+}

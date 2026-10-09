@@ -58,6 +58,19 @@ theorem visibleConnectorDisplaced_exists_uniform_phase_signs {L : ℝ} [hL : Fac
         ∃ B : Set (ℝ × Coord), IsOpen B ∧ y ∈ B ∧
           B ⊆ e.target ∧ B ⊆ a.target ∧
           (∀ v ∈ B, e.symm v = visibleConnectorDisplacedNativeChart L s (a.symm v))) ∧
+      (∀ s, (0, p s) ∈ e.target ∧
+        visibleConnectorDisplacedNativeSolution e p (0, s) = (periodProjection L s, 0)) ∧
+      (∀ q : AddCircle L, (0, (q, 0)) ∈ e.source) ∧
+      IsOpen (visibleConnectorDisplacedRealPhaseDomain e p) ∧
+      ContDiffOn ℝ ∞ (visibleConnectorDisplacedRealPhase e p)
+        (visibleConnectorDisplacedRealPhaseDomain e p) ∧
+      ContDiffOn ℝ ∞ (fun z => (visibleConnectorDisplacedNativeSolution e p z).2)
+        (visibleConnectorDisplacedRealPhaseDomain e p) ∧
+      (∀ rho s, visibleConnectorDisplacedRealPhase e p (rho, s + L) =
+        visibleConnectorDisplacedRealPhase e p (rho, s) + L) ∧
+      (∀ rho, Periodic (fun s => (visibleConnectorDisplacedNativeSolution e p (rho, s)).2) L) ∧
+      (∀ s, visibleConnectorDisplacedRealPhase e p (0, s) = s) ∧
+      (∀ s, (visibleConnectorDisplacedNativeSolution e p (0, s)).2 = 0) ∧
       ∃ eta > 0, ∃ eps > 0, eps ≤ eta ∧
         Icc (-eta) eta ×ˢ (univ : Set ℝ) ⊆ visibleConnectorDisplacedRealPhaseDomain e p ∧
         (∀ rho s, |rho| < eps →
@@ -76,6 +89,25 @@ theorem visibleConnectorDisplaced_exists_uniform_phase_signs {L : ℝ} [hL : Fac
     _, hAs0, hBr0, eta, heta, hstrip⟩ :=
     visibleConnectorDisplaced_exists_smooth_real_phase hp hw0 hpL hw0L hwL
       hip hOmega hw haxis hwzero hdet
+  have hCentral (s : ℝ) : (0, p s) ∈ e.target ∧
+      visibleConnectorDisplacedNativeSolution e p (0, s) = (periodProjection L s, 0) := by
+    have hz : (0, s) ∈ visibleConnectorDisplacedRealPhaseDomain e p :=
+      hstrip ⟨⟨by linarith, by linarith⟩, mem_univ _⟩
+    refine ⟨hz.1, Prod.ext ?_ (hB0 s)⟩
+    have hproj := visibleConnectorDisplacedRealPhase_projection e p hz
+    rw [hA0 s] at hproj
+    exact hproj.symm
+  have hSource (q : AddCircle L) : (0, (q, 0)) ∈ e.source := by
+    obtain ⟨s, rfl⟩ := QuotientAddGroup.mk_surjective q
+    have ht := (hCentral s).1
+    have hr := congrArg Prod.fst (e.right_inv ht)
+    rw [hef] at hr
+    change (e.symm (0, p s)).1 = 0 at hr
+    have hi : e.symm (0, p s) = (0, (periodProjection L s, 0)) :=
+      Prod.ext hr (hCentral s).2
+    have hs := e.map_target ht
+    rw [hi] at hs
+    exact hs
   let D := visibleConnectorDisplacedRealPhaseDomain e p
   let a := visibleConnectorDisplacedRealPhase e p
   let b := fun z : ℝ × ℝ => (visibleConnectorDisplacedNativeSolution e p z).2
@@ -214,7 +246,8 @@ theorem visibleConnectorDisplaced_exists_uniform_phase_signs {L : ℝ} [hL : Fac
       rw [hs]
       have hi : a (rho, A.symm s) = s := A.apply_symm_apply s
       rw [hi]
-  refine ⟨e, hef, hLocal, eta, heta, eps, heps, hepsEta, hstrip, hsign, hnegative, hHomeo, ?_⟩
+  refine ⟨e, hef, hLocal, hCentral, hSource, hD, ha, hb, hShift, hPeriod, hA0, hB0,
+    eta, heta, eps, heps, hepsEta, hstrip, hsign, hnegative, hHomeo, ?_⟩
   intro rho s hρ
   apply hEquation
   apply hstrip

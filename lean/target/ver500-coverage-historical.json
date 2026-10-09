@@ -1,0 +1,308 @@
+{
+  "target": "ver500",
+  "manuscript_sha256": "0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304",
+  "claims": [
+    {
+      "labels": [
+        "thm:main-fiber"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{theorem}[Localized nonuniqueness for tight tori]\\label{thm:main-fiber}\nThere are a smooth metric $g$ on $T^2$ and two smooth tight embeddings\n$X_+,X_-:T^2\\to\\R^3$ such that\n\\[\n X_+^*g_{\\rm Euc}=X_-^*g_{\\rm Euc}=g.\n\\]\nTheir images are noncongruent, they agree on a nonempty open subset, and\nneither has an open planar subset.\n\nIn fact, the same metric can be chosen to admit a continuous family\n\\[\n \\varepsilon\\longmapsto X_\\varepsilon\\in\\Emb_g(T^2,\\R^3),\n \\qquad \\varepsilon\\in\\{-1,1\\}^{\\mathbb N},\n\\]\nof tight embeddings with pairwise noncongruent images. All members agree\non the same nonempty open set, have no open planar subset, and have total\nabsolute curvature $8\\pi$. The induced map into\n$\\Emb_g(T^2,\\R^3)/\\Isom(\\R^3)$ is a topological embedding.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "thm:main-annulus"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{theorem}[Closed asymptotic annulus]\\label{thm:main-annulus}\nThere is a smooth embedded compact annulus $N\\subset\\R^3$ with $K<0$\nin its interior and circular boundary components lying in tangent planes.\nFor a suitable normal, its Gauss map is a diffeomorphism\n\\[\n N^\\circ\\longrightarrow\\Sph^2\\setminus\\{\\pm e_3\\}.\n\\]\nAn open subannulus is foliated by embedded closed asymptotic curves.\nEach has linking number zero with a sufficiently small normal push-off.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "thm:complete-cylinder"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{theorem}[Complete embedded saddle cylinder]\\label{thm:complete-cylinder}\nThere is a smooth proper embedding $X_\\infty:S^1\\times\\R\\to\\R^3$\nwhose image $\\Sigma$ has complete induced metric and $K<0$ everywhere.\nIt contains an open annulus of embedded closed asymptotic curves with\nidentity return and zero normal linking. A choice of normal gives\n\\[\n n:\\Sigma\\longrightarrow\\Sph^2\\setminus\\{\\pm e_3\\}\n \\quad\\text{a diffeomorphism},\\qquad\n \\int_\\Sigma|K|\\,dA=4\\pi.\n\\]\nFor some nonempty interval $I$, there is an injective linear family of\ninfinitesimal bendings parametrized by $C_c^\\infty(I)$, all supported in\none fixed compact subset of $\\Sigma$.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "prop:support"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[Support reconstruction]\\label{prop:support}\nThe $\\R^3$-valued differential of $a_H$ is $B_H$. Where $B_H$ is\ninvertible, $a_H$ is an immersion with normal $q$, metric $B_H^2$,\nsecond fundamental form $-B_H$, and curvature $R_H^{-1}$. Every immersion\nwith an injective regular Gauss map has this representation on its Gauss\nimage.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "prop:codazzi"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{proposition}[Codazzi realization and periods]\\label{prop:codazzi}\nFor a smooth self-adjoint field $B$ on $\\Omega$, the vector-valued form\n$\\beta_B(v)=Bv$ is closed exactly when $B$ is Codazzi. On a simply\nconnected domain this is equivalent to $B=B_H$, with $H$ unique modulo\nambient linear functions. On a general domain one must also require\n\\[\n \\oint_\\gamma\\beta_B=0\\quad\\text{for every closed curve }\\gamma.\n\\]\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:degree"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Annular degree criterion]\\label{lem:degree}\nLet $F$ be a smooth map from a compact annulus to $\\R^2$. Suppose the\ninterior Jacobian has a constant nonzero sign, the boundary maps are\nhomeomorphisms onto disjoint nested Jordan curves, and their induced\nwinding numbers are opposite. Then $F$ is a diffeomorphism of interiors\nonto the intervening planar annulus and a homeomorphism of closures.\nThe boundary Jacobian may vanish.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:product-holonomy"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{proposition}[Product and first-integral criterion]\\label{prop:product-holonomy}\nFor a smooth nonsingular line foliation near an embedded closed leaf in\nan annulus, the following conditions are equivalent after shrinking the\nneighborhood: the return germ is the identity; the foliation is a product\n$S^1\\times J$ by circles; there is a smooth submersion whose connected\nfibers are the leaves. Equivalently, a nonvanishing defining one-form has\na nonvanishing integrating factor that makes it exact.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "thm:ruled",
+        "eq:yF"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Supported kernel on a ruled band]\\label{thm:ruled}\nOn a sufficiently thin one-sided band $0<u<b$, a nonzero compactly\nsupported infinitesimal bending exists exactly when $I_0=0$. In that\ncase choose periodic $\\omega$ with $\\omega_s=D/(2\\rho)$ and define\n\\[\n v(s,u)=\\frac1{\\rho(s)u}-\\omega(s),\\qquad\n c_b=\\max_s\\left(\\frac1{\\rho(s)b}-\\omega(s)\\right).\n\\]\nEvery supported bending has a unique expression\n\\begin{equation}\\label{eq:yF}\n y_F=\\frac{\\tau u}{2\\rho}F'(v)T+\n \\left[uF(v)-\\frac{1-ku}{2\\rho}F'(v)\\right]n,\n \\qquad F\\in C_c^\\infty((c_b,\\infty)).\n\\end{equation}\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "lem:holonomy-integral-new",
+        "eq:holonomy-integral-new"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[Intrinsic return multiplier]\\label{lem:holonomy-integral-new}\nLet $\\Gamma$ be an embedded closed asymptotic curve on an oriented\nsurface with $K<0$ near $\\Gamma$. Parametrize it by oriented arclength,\nwrite $T$ for its tangent and $Z$ for a unit perpendicular tangent, and set\n\\[\n k_g=\\langle\\nabla_TT,Z\\rangle,\\qquad k_n=\\II(Z,Z),\\qquad\n \\sigma=\\operatorname{sign}\\II(T,Z).\n\\]\nIf $\\mu$ is the derivative of the asymptotic return at $\\Gamma$, then\n\\begin{equation}\\label{eq:holonomy-integral-new}\n \\log\\mu=\\frac\\sigma2\\oint_\\Gamma k_gk_n|K|^{-1/2}\\,ds.\n\\end{equation}\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:finite-moment-balance",
+        "eq:finite-moment-balance"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Finite-moment period prescription]\\label{lem:finite-moment-balance}\nLet $f:S^1\\to\\R^m$ and $g:S^1\\to\\R$ be smooth, with $g$ taking both\nsigns. For every smooth $b>0$, $B_*\\in\\R$, and $\\eta>0$, there is a\nsmooth $a>0$ such that\n\\begin{equation}\\label{eq:finite-moment-balance}\n \\|a-b\\|_{L^1}<\\eta,\\qquad\n \\oint af=\\oint bf,\\qquad \\oint g/\\sqrt a=B_*.\n\\end{equation}\nIf $d=\\dim\\operatorname{span}f(S^1)$, the correction uses at most $d+1$\narbitrarily short intervals.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "thm:normal-loop-criterion"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Normal-loop existence criterion]\\label{thm:normal-loop-criterion}\nFor the loop in \\eqref{eq:structural-normal-frame}, the following are\nequivalent:\n\\begin{enumerate}[label=\\textup{(\\roman*)}]\n\\item $0$ belongs to the ordinary three-dimensional interior of\n$\\conv P(S^1)$;\n\\item a smooth positive speed $b$ satisfies $\\mathbf M(b)=0$;\n\\item a smooth positive speed $a$ satisfies both\n$\\mathbf M(a)=0$ and $\\mathscr B(a)=0$.\n\\end{enumerate}\nThis characterizes closed immersed principal-normal identity-return bands\nwith the prescribed normal loop. For every closing speed $b$, the balanced\nspeed $a$ can be chosen arbitrarily close to $b$ in $L^1$.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "cor:relative-holonomy-upgrade"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{corollary}[Relative upgrade of an embedded seed]\\label{cor:relative-holonomy-upgrade}\nIf a closing speed $b$ has an embedded primitive $\\Gamma_b$, the balanced\nprimitive can be chosen embedded and arbitrarily uniformly close to it.\nThe two are connected through embedded closed curves with the same oriented\ntangent and normal at each parameter value. Any specified regular embedded\nlinear projection remains embedded. If $\\zeta$ is embedded, the Gauss map\nof a sufficiently thin resulting band is injective.\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "lem:seed",
+        "eq:seed-data",
+        "eq:zero-action"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Corrugated analytic seed]\\label{lem:seed}\nFor every integer $N\\ge10^4$, $\\beta_N$ and $\\delta_N$ are real analytic\npositively oriented embedded curves enclosing the origin. If $Q_N$ is\nrotation through $2\\pi/N$, then\n\\begin{equation}\\label{eq:seed-data}\n \\beta_N(t+T_N)=Q_N\\beta_N(t),\\qquad\n \\delta_N(t+T_N)=Q_N\\delta_N(t),\\qquad\n \\delta_N'=m_N\\beta_N',\\quad m_N>0,\n\\end{equation}\nand\n\\begin{equation}\\label{eq:zero-action}\n \\int_0^{2\\pi}\\det(\\beta_N,\\delta_N')\\,dt=0.\n\\end{equation}\nThe pair $(\\beta_N,\\delta_N)$ is visible at $R_+=1/4$, and\n\\[\n (\\widetilde\\beta_N,\\widetilde\\delta_N)(t)\n =\\bigl(A_*\\delta_N(-t),A_*\\beta_N(-t)\\bigr)\n\\]\nis visible at $R_-=4/5$. The spherical lift\n\\[\n \\zeta_N(t)=\\frac{(\\beta_N(t),1)}{\\sqrt{1+|\\beta_N(t)|^2}}\n\\]\nis embedded in the northern hemisphere and its geodesic curvature takes\nboth signs.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:one-slowdown"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[One-slowdown holonomy correction]\\label{prop:one-slowdown}\nIf $b>0$ is $\\ell$-periodic with $M(b)=0$, $\\kappa$ is nonconstant,\nand $P_3\\not\\equiv0$, then for every $\\eta>0$ a positive smooth\n$\\ell$-periodic $a$ satisfies\n\\[\n \\|a-b\\|_{L^1(0,\\ell)}<\\eta,\\qquad M(a)=0,\n \\qquad\\mathscr B_\\ell(a)=0.\n\\]\nThe change is supported in at most two arbitrarily short intervals.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "thm:spike",
+        "lem:speed",
+        "eq:balanced-speed"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{theorem}[Balanced embedded speed]\\label{thm:spike}\\label{lem:speed}\nFor every $\\eta_0>0$, the seed admits a positive smooth $\\ell$-periodic\nspeed $a$ with\n\\begin{equation}\\label{eq:balanced-speed}\n \\|a-a_0\\|_{L^1(0,\\ell)}<\\eta_0,\\qquad\n M(a)=0,\\qquad\\mathscr B_\\ell(a)=0.\n\\end{equation}\nFor small enough $\\eta_0$, its spatial primitive and horizontal\nprojection are embedded, and both visibility conditions persist.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "prop:central-support",
+        "eq:central-B"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[Central support tensor]\\label{prop:central-support}\nIn Gauss coordinates, the support tensor along the central curve is\n\\begin{equation}\\label{eq:central-B}\n B_H=\\begin{pmatrix}0&a\\\\a&0\\end{pmatrix}\n\\end{equation}\nin the spherical orthonormal basis $(\\zeta_r,P)$. Its mixed entry is\nstrictly positive.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:exit"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[Exit perturbation]\\label{lem:exit}\nLet a saddle support in the northern hemisphere have a positively oriented\nembedded closed asymptotic curve enclosing the north pole. Suppose its\nreturn germ is the identity and the mixed support entry, evaluated on\nunit tangent and outward conormal, is positive. Inside any prescribed\ncollar, an arbitrarily small $C^2$ perturbation fixing the first jet on\nthe curve can make return attracting or repelling. The attracting choice\ngives arbitrarily close positive closed curves on the exterior side;\nthe repelling choice gives them on the interior side.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:smoothing"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Relative saddle smoothing]\\label{lem:smoothing}\nSuppose two smooth planar potentials have matching values and gradients\non a compact embedded closed seam. If their Hessians are indefinite and\ntheir common tangential quadratic form is positive, they admit a smooth\nsaddle interpolation equal to the old pieces outside any prescribed seam\nneighborhood and arbitrarily close to the piecewise potential in $C^1$.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:connector",
+        "eq:connector-data"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[From a visible trace to a circular gradient]\\label{lem:connector}\nLet $p,\\delta:\\R/T\\mathbb Z\\to\\R^2$ be positively oriented embedded\ncurves enclosing zero. Put $\\gamma=-J\\delta$ and assume\n\\begin{equation}\\label{eq:connector-data}\n p'\\cdot\\gamma'>0,\\qquad g'=\\gamma\\cdot p'\n\\end{equation}\nfor a periodic $g$. If $(p,\\delta)$ is visible at $R>0$, an exterior\nsource annulus carries a saddle potential with incoming value $g$ and\ngradient $\\gamma$, and outgoing gradient a positively parametrized\ncircle of radius $R$. Both boundaries are positive for the Hessian.\nThe source and gradient maps are diffeomorphisms of interiors onto their\nrespective planar annuli. If the terminal gradient is written\n$Re_\\theta$, its terminal source trace $P_\\mathrm{out}(\\theta)$ also\nsatisfies $P_\\mathrm{out}\\cdot e_\\theta>0$ for a sufficiently small\nconnector parameter. If an incoming saddle germ supplies the data,\nrelative smoothing retains a smaller incoming collar and the outgoing germ.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:quadratic-filling",
+        "eq:radial-fill-data",
+        "eq:quadratic-germ"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Quadratic filling at a circular seam]\n\\label{lem:quadratic-filling}\nLet $f$ be a smooth saddle potential on an exterior collar of\n$\\{|y|=R\\}$, with boundary traces\n\\[\n h(\\theta)=f(Re_\\theta),\\qquad b(\\theta)=f_r(Re_\\theta).\n\\]\nAssume\n\\begin{equation}\\label{eq:radial-fill-data}\n b(\\theta)>0,\\qquad h''(\\theta)+Rb(\\theta)>0.\n\\end{equation}\nThere is a smooth saddle extension into $0<|y|<R$, agreeing with $f$\noutside any prescribed seam neighborhood, and equal near the puncture to\n\\begin{equation}\\label{eq:quadratic-germ}\n f(y)=c|y|-\\frac M2|y|^2+d,\\qquad c=MR,\n\\end{equation}\nwhere $M>0$ can be arbitrarily large. If additionally the trace\n$\\nabla f(Re_\\theta)$ is a positively oriented Jordan curve enclosing\nzero, the extension can be chosen with globally injective gradient on\nthe attached annulus, and the radial inner-gradient circle can be made\nto enclose that Jordan curve.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:neck-adapter",
+        "eq:neck-adapter-constants",
+        "eq:sqrt-neck"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Square-root neck adapter]\\label{lem:neck-adapter}\nSuppose a radial saddle potential $f=f(r)$ has $f'>0$ and $f''<0$\nnear a circle $r=r_j>0$. Choose any $0<a<r_j$ and set\n\\begin{equation}\\label{eq:neck-adapter-constants}\n \\ell=r_j-a,\\quad B=f'(r_j)^2\\ell,\\quad\n C=f(r_j)-2f'(r_j)\\ell.\n\\end{equation}\nThen\n\\begin{equation}\\label{eq:sqrt-neck}\n f_{\\rm neck}(r)=C+2\\sqrt{B(r-a)},\\qquad a<r\\le r_j,\n\\end{equation}\nmatches the value and radial derivative of $f$ at $r_j$, and satisfies\n$f_{\\rm neck}'>0$, $f_{\\rm neck}''<0$. Relative radial smoothing gives\na smooth saddle continuation, unchanged near its original incoming\ncollar and exactly \\eqref{eq:sqrt-neck} near $r=a$. The radial gradient\nthere has norm tending to infinity as $r\\downarrow a$.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:dual-radial-completion",
+        "eq:radial-two-ends",
+        "eq:full-gradient-annulus"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{proposition}[Two-sided support completion]\\label{prop:dual-radial-completion}\nSuppose a compact saddle support annulus has injective source and\ngradient maps, nested positively oriented source and gradient boundary\ncurves enclosing zero, and positive boundary traces as in\n\\eqref{eq:positive-traces}. Assume its outer boundary pair and its\nreflected Legendre-dual inner pair obey the two visibility conditions\n\\eqref{eq:reflected-visible}. Then, after leaving an arbitrary\nprescribed smaller protected annulus unchanged, it admits a saddle\nsupport extension $\\widetilde G$ on $\\mathbb R^2\\setminus\\{0\\}$ with\n\\begin{equation}\\label{eq:radial-two-ends}\n \\begin{aligned}\n \\widetilde G(p)&=R_N|p|-\\frac\\mu2|p|^2+d_0\n     && (0<|p|\\ll1),\\\\\n \\widetilde G(p)&=A|p|-\\frac B{|p|}+d_\\infty\n     && (|p|\\gg1),\n \\end{aligned}\n\\end{equation}\nwhere $R_N>A>0$ and $\\mu,B>0$. The gradient is a\ndiffeomorphism\n\\begin{equation}\\label{eq:full-gradient-annulus}\n \\nabla\\widetilde G:\\mathbb R^2\\setminus\\{0\\}\n       \\longrightarrow \\{y\\in\\mathbb R^2:A<|y|<R_N\\}.\n\\end{equation}\nEvery smoothing takes place outside the protected region.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "prop:saddle",
+        "eq:ring-S",
+        "eq:ring-curvature"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{proposition}[Completed saddle annulus]\\label{prop:saddle}\nThe completed support compactifies, after reflection at its neck,\nto a smooth embedded annulus $N$ with $K<0$ in its interior. Its\nboundary circles have common radius $R_N$, at heights $\\pm h$ with\n$h>0$. Near them its collars are \\eqref{eq:ring-N} and\n\\begin{equation}\\label{eq:ring-S}\n F_S(\\theta,t)=(R_N+\\mu t)e_\\theta\n       +\\bigl(-h+\\tfrac\\mu2t^2\\bigr)e_3,\n \\qquad -\\delta<t\\le0.\n\\end{equation}\nOn either collar,\n\\begin{equation}\\label{eq:ring-curvature}\n K=\\frac{t}{\\mu(R_N+\\mu t)(1+t^2)^2}.\n\\end{equation}\nAll bending fields supported in the protected region extend by zero\nover the annulus, and vanish on full boundary collars.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:convex",
+        "eq:convex-gauss",
+        "eq:convex-exterior"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Convex closure]\\label{lem:convex}\nFor any $R_N,\\mu,h>0$, there exists a convex body whose boundary\nconsists of the disks\n\\[\n D_\\pm=\\{(v,\\pm h):|v|\\le R_N\\}\n\\]\nand a smooth annulus $U_{\\rm sp}$ with strictly positive curvature\nin its interior. The annulus agrees with \\eqref{eq:ring-N} and\n\\eqref{eq:ring-S} for $0\\le t<\\delta$, has outward Gauss map\n\\begin{equation}\\label{eq:convex-gauss}\n \\nu:U_{\\rm sp}^{\\circ}\\longrightarrow\n            \\mathbb S^2\\setminus\\{\\pm e_3\\}\n\\end{equation}\na diffeomorphism, and satisfies\n\\begin{equation}\\label{eq:convex-exterior}\n U_{\\rm sp}^{\\circ}\\subset\n      \\{\\rho_{\\rm spatial}>R_N,\\ |z|<h\\},\n \\qquad U_{\\rm sp}\\ne -U_{\\rm sp}.\n\\end{equation}\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "lem:ellipses-new"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[Small affine marking]\\label{lem:ellipses-new}\nFor every sufficiently small $\\epsilon>0$, the map\n\\[\n A_\\epsilon=\\begin{pmatrix}\n 1&0&\\epsilon\\\\0&1+\\epsilon&2\\epsilon\\\\0&0&1\n \\end{pmatrix}\n\\]\ntends to $\\Id$ and satisfies\n$\\Stab_{\\Isom(\\R^3)}A_\\epsilon(U_{\\rm sp}^\\circ)=\\{\\Id\\}$.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "thm:protected-realization"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{theorem}[Protected identity-return realization]\\label{thm:protected-realization}\nThere exist a smooth torus $M$, a tight embedding $X:M\\to\\R^3$, a\ncompact annulus $V\\Subset\\{K_X<0\\}$, an open annular neighborhood\n$W\\supset V$, and a nonempty interval $I$ such that:\n\\begin{enumerate}[label=\\textup{(\\roman*)}]\n\\item The Gauss map and horizontal projection are injective on $W$.\nIn planar support coordinates, $\\det D^2G<0$ and both the source and\ngradient maps are diffeomorphisms onto planar annuli.\n\\item Formula \\eqref{eq:yF} gives an injective linear map\n$F\\mapsto y_F$ from $C_c^\\infty(I)$ to bendings supported in $V$.\nDisjoint profile supports give disjoint bending supports.\n\\item Once the balanced speed is fixed, the completion leaves a prescribed\ncompact subannulus of that core unchanged. Every sufficiently small $L^1$\nspeed change preserving closure, period balance, and visibility admits\nthe same type of completion, with its own protected core.\n\\item The embedding has no open planar subset and total absolute curvature\n$8\\pi$.\n\\end{enumerate}\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "cor:marked-module"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{corollary}[Marked protected module]\\label{cor:marked-module}\nThere are a tight torus embedding $X:M\\to\\R^3$, a compact\n$V\\Subset\\{K_X<0\\}$, an interval $I\\ne\\varnothing$, and an injective\nlinear map $\\mathcal Y:C_c^\\infty(I)\\to C^\\infty(M,\\R^3)$ whose values\nare bendings supported in $V$, preserving disjointness of supports, such\nthat\n\\[\n \\Stab_{\\Isom(\\R^3)}X(\\{K_X>0\\})=\\{\\Id\\}.\n\\]\nThe torus has no open planar subset and total absolute curvature $8\\pi$.\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "thm:branch",
+        "eq:abstractsign"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Disjoint quadratic branching]\\label{thm:branch}\nIf $y_1,\\ldots,y_m\\in\\ker S_X$ have pairwise disjoint supports, then\n\\begin{equation}\\label{eq:abstractsign}\n g_{X+\\sum_{j=1}^m\\varepsilon_j a_jy_j}\n =g_X+\\sum_{j=1}^m a_j^2\\langle dy_j,dy_j\\rangle,\n \\qquad\\varepsilon_j\\in\\{-1,1\\}.\n\\end{equation}\nThe same identity holds for an infinite series converging in $C^\\infty$.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:budget"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{proposition}[Relative preservation of absolute curvature]\\label{prop:budget}\nLet $X$ be a closed embedded surface and $V\\Subset\\{K_X<0\\}$.\nEvery sufficiently small $C^2$ perturbation supported in $V$ remains an\nembedding and has the same total absolute curvature. If $X$ is tight,\nso is the perturbation.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:fixed-open"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{lemma}[An intrinsic isometry fixed on an open set]\\label{lem:fixed-open}\nAn isometry of a connected smooth Riemannian manifold which fixes a\nnonempty open set pointwise is the identity. The same holds for a connected\nmanifold with boundary when the fixed set meets its interior.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:finite-sign"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{proposition}[Finite sign families]\\label{prop:finite-sign}\nLet $X:M\\to\\R^3$ be a tight embedding of a closed connected surface,\nwith $P=\\{K_X>0\\}$ and $\\Stab_{\\Isom(\\R^3)}X(P)=\\{\\Id\\}$.\nLet $y_1,\\ldots,y_m$ be nonzero bendings with disjoint supports in one\ncompact $V\\Subset\\{K_X<0\\}$. For all sufficiently small positive\n$a_j$, the $2^m$ maps in \\eqref{eq:abstractsign} are tight embeddings\nwith a common metric, agree off $V$, and have pairwise noncongruent images.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "lem:orbit-space"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[Hausdorff Euclidean orbit space]\\label{lem:orbit-space}\nFor a closed Riemannian manifold $(M,g)$,\n$\\Emb_g(M,\\R^3)/\\Isom(\\R^3)$ is metrizable and hence Hausdorff.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "thm:localized-sign"
+      ],
+      "status": "partial",
+      "statement_tex": "\\begin{theorem}[Localized sign families on a marked tight surface]\n\\label{thm:localized-sign}\nUnder the marking hypothesis of Proposition~\\ref{prop:finite-sign}, let\n$y_j$, $j\\ge1$, be nonzero bendings with pairwise disjoint supports in\none compact $V\\Subset\\{K_X<0\\}$. Choose positive amplitudes such that\n\\[\n X_\\varepsilon=X+\\sum_{j\\ge1}\\varepsilon_ja_jy_j,\n \\qquad\\varepsilon\\in\\{-1,1\\}^{\\mathbb N},\n\\]\nconverges smoothly uniformly in the signs and is sufficiently small in\n$C^2$. Then the maps are tight embeddings with the common smooth metric\n\\[\n g=g_X+\\sum_{j\\ge1}a_j^2\\langle dy_j,dy_j\\rangle.\n\\]\nTheir images are pairwise noncongruent, and the sign map induces a\ntopological embedding into $\\Emb_g(M,\\R^3)/\\Isom(\\R^3)$.\nSuch amplitudes always exist.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "cor:tight-nonrigidity"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{corollary}[Smooth tight nonrigidity]\\label{cor:tight-nonrigidity}\nSmooth embedded tight tori are not determined up to congruence by their\nintrinsic metrics. One such metric has a Cantor family of noncongruent\nrealizations.\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "cor:HK-degenerate"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{corollary}[Degenerate asymptotic return on a tight torus]\n\\label{cor:HK-degenerate}\nA smooth embedded tight torus contains an open annulus of closed\nasymptotic curves in its negative-curvature region such that every leaf\nsatisfies\n\\[\n \\int_\\Gamma k_gk_n|K|^{-1/2}\\,ds=0.\n\\]\nHere $k_g=\\langle\\nabla_TT,Z\\rangle$ and $k_n=\\II(Z,Z)$, with $Z$\na unit tangent perpendicular to the oriented leaf tangent $T$.\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "cor:fixed-boundary-annuli"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{corollary}[Fixed-boundary isometric saddle annuli]\n\\label{cor:fixed-boundary-annuli}\nThere are two noncongruent smooth embedded annuli with strictly negative\nGaussian curvature, the same induced metric, and the same two convex\nplanar boundary curves. They agree on full boundary collars.\n\\end{corollary}"
+    },
+    {
+      "labels": [
+        "lem:complete-profile"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{lemma}[Strictly convex continuation of a radial profile]\n\\label{lem:complete-profile}\nSuppose $q_0$ is smooth near $H$, with $q_0(H)>0$, $q_0'(H)>0$,\nand $q_0''>0$ there. For every $\\beta>0$ there is a smooth $q$ on\n$[H,\\infty)$ equal to $q_0$ near $H$, with $q,q',q''>0$, and with\n$q''=\\beta$ eventually. In particular $q'(z)\\to\\infty$.\n\\end{lemma}"
+    },
+    {
+      "labels": [
+        "prop:general-ruled-return",
+        "eq:general-riccati",
+        "eq:general-return"
+      ],
+      "status": "proved",
+      "statement_tex": "\\begin{proposition}[Riccati return and a two-jet criterion]\n\\label{prop:general-ruled-return}\nLet $X(t,u)=c(t)+ue(t)$ with $|e|=1$, smooth $L$-periodic $c,e$, and\n$\\Delta=\\det(c',e,e')\\ne0$. Suppose $u=0$ is a closed nonruling\nasymptotic leaf. Then the nonruling characteristics satisfy\n\\begin{equation}\\label{eq:general-riccati}\n u'=q(t,u)=q_1(t)u+q_2(t)u^2,\n \\qquad q=-\\frac{\\langle c''+ue'',(c'+ue')\\times e\\rangle}{2\\Delta}.\n\\end{equation}\nWith\n\\[\n A(t)=\\int_0^tq_1(s)\\,ds,\\quad \\mu=e^{A(L)},\\quad\n \\nu=\\int_0^Lq_2(t)e^{A(t)}\\,dt,\n\\]\nthe local return is\n\\begin{equation}\\label{eq:general-return}\n \\mathcal R(u)=\\frac{\\mu u}{1-\\nu u}.\n\\end{equation}\nIdentity return is equivalent to $\\mu=1$, $\\nu=0$, or equivalently\n$\\mathcal R'(0)=1$ and $\\mathcal R''(0)=0$.\n\\end{proposition}"
+    },
+    {
+      "labels": [
+        "thm:general-ruled-kernel"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{theorem}[Ruled localization as transverse transport]\n\\label{thm:general-ruled-kernel}\nUnder the preceding hypotheses, a sufficiently thin one-sided band\n$0<u<b$ admits a nonzero compactly supported bending exactly when the\nreturn is the identity. In the identity case, the supported kernel on\nany saturated subband is parametrized by one arbitrary compactly supported\nsmooth function of its leaf parameter.\n\\end{theorem}"
+    },
+    {
+      "labels": [
+        "lem:visible-partner"
+      ],
+      "status": "pending",
+      "statement_tex": "\\begin{lemma}[Visible positive tangent partners]\\label{lem:visible-partner}\nLet $\\beta$ be a regular positively oriented Jordan curve, and let\n$\\delta$ be closed with $\\delta'=m\\beta'$, $m>0$. If $|\\delta|>R$\nand $\\beta'\\cdot V_R(\\delta)>0$, then $\\delta$ is a positively oriented\nJordan curve enclosing the disk $|z|\\le R$.\n\\end{lemma}"
+    }
+  ]
+}
