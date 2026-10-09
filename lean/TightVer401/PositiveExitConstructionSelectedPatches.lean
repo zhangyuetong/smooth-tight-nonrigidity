@@ -109,6 +109,15 @@ theorem positiveExit_exists_two_selected_visible_cartesian_patches {T δ w : ℝ
       let v2 := exitPositiveGraphProfile P2 (fermiSupportSeamSlope (normalLoopCurvature ζ2)
         (fermiPerturbedSupport B2.epsilon (normalLoopCurvature ζ2) (positiveExitFermiHeight G ζ2)
           (fermiExitCutoff D2.rho D2.rho_pos)))
+      (S1 : ℝ → ℝ) = rawPrimitive (positiveExitLeafSpeed d hb hinside vin) ∧
+      P1 = rawPrimitive (positiveExitLeafSpeed d hb hinside vin) T ∧
+      (S2 : ℝ → ℝ) = rawPrimitive (positiveExitLeafSpeed d hb hinside vout) ∧
+      P2 = rawPrimitive (positiveExitLeafSpeed d hb hinside vout) T ∧
+      (∀ p ∈ C,
+        1 / (ruledRho d.τ 0 * (vout : ℝ)) - ruledOmega d.k d.τ 0 <
+          positiveExitCartesianLabel d hb e p ∧
+        positiveExitCartesianLabel d hb e p <
+          1 / (ruledRho d.τ 0 * (vin : ℝ)) - ruledOmega d.k d.τ 0) ∧
       ∀ νGeom > 0, ∃ δ1 δ2 : ℝ, ∃ t1 : PositiveExitTrace Ge e.target P1,
       ∃ t2 : PositiveExitTrace Ge e.target P2,
         0 < |δ1| ∧ |δ1| < νGeom ∧ 0 < δ1 * B1.epsilon ∧
@@ -337,7 +346,7 @@ theorem positiveExit_exists_two_selected_visible_cartesian_patches {T δ w : ℝ
     S2,P2,hP2,ρMax2,hp2,D2,B2,hdis,hGe,B1.change_smooth.add B2.change_smooth,
     B1.change_compact.add B2.change_compact,(fun z => (hC2 z).trans_le (min_le_left _ _)),
     hprotectedOpen,hprotected,hprotectedEq,hprotectedGerm,hBending,hwhole,hpres1,hpres2,hEmbedded,
-    h,hhS,hhT,hhF,hhI,?_⟩
+    h,hhS,hhT,hhF,hhI,hS1,hLength1,hS2,hLength2,hlabels,?_⟩
   dsimp only
   intro νGeom hνGeom
   let ζ1 := positiveExitRawLeaf d hb hinside vin ∘ S1.symm
