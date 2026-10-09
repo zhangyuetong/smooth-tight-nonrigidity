@@ -1,0 +1,2934 @@
+\documentclass[11pt]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{booktabs,array,enumitem}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={An embedded band foliated by closed asymptotic lines and nonrigid smooth tight tori}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}\newcommand{\Sph}{\mathbb S}
+\newcommand{\dd}{\,\mathrm d}\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\e}{\mathrm e}\newcommand{\ee}{e_3}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}\newcommand{\norm}[1]{\lVert #1\rVert}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\conv}{conv}\DeclareMathOperator{\Stab}{Stab}
+
+
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Lk}{Lk}
+\DeclareMathOperator{\Isom}{Isom}\DeclareMathOperator{\Emb}{Emb}
+\newcommand{\II}{\mathrm{II}}\newcommand{\Gmap}{\mathcal G}
+
+
+\numberwithin{equation}{section}
+\setlist{nosep,leftmargin=1.7em}
+\setcounter{tocdepth}{2}
+\emergencystretch=1.5em
+\title[Closed asymptotic bands and tight tori]{An embedded band foliated by closed asymptotic lines\\and nonrigid smooth tight tori}
+\author{}
+\date{}
+\subjclass[2020]{Primary 53A05; Secondary 53C24}
+\keywords{Closed asymptotic lines, infinitesimal bending, tight torus, differential Legendre transform, radial saddle completion, complete saddle cylinder, asymptotic holonomy, rigidity}
+
+\begin{document}
+\begin{abstract}
+We construct a smooth embedded negatively curved band foliated by closed
+asymptotic curves. The full return map of its nonruling asymptotic family
+is the identity, and its compactly supported infinitesimal bendings are
+parametrized by arbitrary smooth functions of a transverse leaf coordinate.
+We complete the band to a smooth embedded tight torus while retaining
+its bending region. Opposite signs of one retained bending give two
+noncongruent tight embeddings with exactly the same intrinsic metric;
+they agree on a nonempty open set and have no open planar subset.
+Countably many disjoint bendings give a Cantor family with these properties.
+
+The construction separates spatial closure from cancellation of the
+asymptotic return period. A corrugated spherical normal loop and a
+positive speed provide an embedded identity-return band with two visible
+exits. Visible connectors, differential Legendre duality, and radial
+saddle filling then produce explicit end profiles. Compactification and
+convex attachment close the surface, and an affine marking removes its
+ambient symmetries. The same band also gives fixed-boundary isometric
+saddle annuli, an annulus with injective Gauss map and zero normal
+linking along its closed asymptotic curves, and a complete properly
+embedded negatively curved cylinder with total absolute curvature $4\pi$.
+These constructions connect the smooth tight-congruence question with
+the geometry and return dynamics of closed asymptotic curves.
+\end{abstract}
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+\subsection{Congruence, tightness, and the historical problem}
+When does the intrinsic metric of a surface determine its image in
+$\R^3$ up to a Euclidean motion? Convex-surface rigidity provides the
+classical model, but a surface with both positive and negative curvature
+poses a different problem. The negative-curvature region supports a
+hyperbolic system, and its asymptotic curves are the characteristics.
+Yau emphasizes this connection between metric uniqueness and asymptotic
+curves in his review of the global embedding problem
+\cite[pp.~235--236]{YauReview}.
+
+Tight surfaces form a natural class in which to test uniqueness beyond
+convexity. For a closed embedded surface, tightness is equivalent to the
+two-piece property and to attaining the topology-dependent lower bound
+for total absolute curvature. A tight torus has total absolute curvature
+$8\pi$. Aleksandrov proved congruence for analytic tight tori
+in 1938. Nirenberg's 1963 work obtained a smooth partial result.
+Its torus formulation assumes $C^5$ regularity and $\nabla K\ne0$ at
+$K=0$, together with an additional asymptotic-curve hypothesis. The two
+torus versions are recorded together in \cite[Theorem~1.6.1]{BK}; the original
+smooth argument is \cite{Nirenberg}.
+
+The distinction between smooth and polyhedral surfaces is already
+present in the earlier literature. Banchoff constructed noncongruent
+isometric tight polyhedral tori; Banchoff--K\"uhnel record these examples
+and then ask whether two isometric smooth tight tori must be congruent
+\cite[Example~1.6.2 and Question~11]{BK}. Ghomi's later survey states
+the smooth tight-rigidity problem and its fixed-boundary
+negative-curvature annulus counterpart \cite[Problems~1.2--1.3]{GhomiProblems}.
+Thus the smooth tight-congruence question has a specific history;
+nonuniqueness for arbitrary smooth surfaces is an older phenomenon.
+
+Han--Khuri subsequently proved two rigidity theorems that allow several
+closed asymptotic curves. Besides their hypotheses at the boundary of
+the negative-curvature region, both theorems require
+\[
+ \oint_\Gamma k_gk_n|K|^{-1/2}\,ds\ne0
+\]
+on every closed asymptotic curve; $k_n$ is the normal curvature in the
+tangent direction perpendicular to $\Gamma$. They also ask whether
+tightness itself forces this nonvanishing \cite[Theorems~1--2 and the
+following remark]{HK}. Our protected band has identity return, so this
+integral vanishes on every one of its leaves. The resulting example
+therefore lies outside the nondegeneracy hypothesis of those theorems.
+
+Our main result gives two smooth embedded tight tori with one common
+metric, noncongruent images, and an open region of pointwise agreement.
+The entire change is supported inside a compact negative-curvature
+region. We also obtain a Cantor family of such realizations.
+Here two embedded surfaces are \emph{congruent} if an ambient Euclidean
+isometry carries one image onto the other. The following statement therefore
+rules out congruence of images, as well as congruence of parametrized maps.
+Write $g_{\rm Euc}$ for the Euclidean metric.
+
+\begin{theorem}[Localized nonuniqueness for tight tori]\label{thm:main-fiber}
+There are a smooth metric $g$ on $T^2$ and two smooth tight embeddings
+$X_+,X_-:T^2\to\R^3$ such that
+\[
+ X_+^*g_{\rm Euc}=X_-^*g_{\rm Euc}=g.
+\]
+Their images are noncongruent, they agree on a nonempty open subset, and
+neither has an open planar subset.
+
+In fact, the same metric can be chosen to admit a continuous family
+\[
+ \varepsilon\longmapsto X_\varepsilon\in\Emb_g(T^2,\R^3),
+ \qquad \varepsilon\in\{-1,1\}^{\mathbb N},
+\]
+of tight embeddings with pairwise noncongruent images. All members agree
+on the same nonempty open set, have no open planar subset, and have total
+absolute curvature $8\pi$. The induced map into
+$\Emb_g(T^2,\R^3)/\Isom(\R^3)$ is a topological embedding.
+\end{theorem}
+
+Here $\Emb_g(M,\R^3)$ is the space of smooth embeddings inducing $g$, with
+the $C^\infty$ topology; $\Isom(\R^3)$ acts by postcomposition. The sign
+space has its product topology and is homeomorphic to the Cantor set.
+The open set in the theorem is fixed by the construction. The family
+is continuous on a Cantor parameter space, which is totally disconnected.
+It supplies no nonconstant path of isometric embeddings. In particular,
+the theorem does not settle the continuous smooth-flex problem stated
+in \cite[Problem~1.1]{GhomiProblems}.
+
+\subsection{Why localized bendings give exact pairs}
+The exact pair comes from a quadratic identity. For an immersion $X$ and a vector
+field $y:M\to\R^3$, the metric satisfies the exact identity
+\begin{equation}\label{eq:intro-quadratic}
+ g_{X+y}=g_X+S_Xy+\langle dy,dy\rangle,
+\end{equation}
+where $S_Xy$ is the linearized metric change. If $S_Xy=0$, then
+$g_{X+y}=g_{X-y}$. Thus a nonzero infinitesimal bending gives an exact
+sign ambiguity, provided both perturbed maps remain embeddings. Their
+common metric is generally different from $g_X$.
+
+If finitely many such fields have disjoint supports, then
+\[
+ g_{X+\sum_{j=1}^m\varepsilon_j a_jy_j}
+ =g_X+\sum_{j=1}^m a_j^2\langle dy_j,dy_j\rangle,
+ \qquad \varepsilon_j\in\{-1,1\}.
+\]
+This is the finite sign mechanism. The Cantor family follows by choosing
+countably many disjoint fields and rapidly decreasing amplitudes. The
+central issue is therefore geometric: construct a tight torus carrying
+localized bendings in a compact negatively curved region, and eliminate
+ambient symmetries on the region that stays fixed.
+
+\subsection{The band that carries the construction}
+Our bending region lies in a principal-normal ruled band
+\[
+ X(s,u)=\gamma(s)+uE(s).
+\]
+Here $s$ is arclength along a closed curve, and the periodic frame
+$(T,E,n)$ satisfies $T_s=kE$, $E_s=-kT+\tau n$, and $n_s=-\tau E$,
+with $\tau\ne0$. The band has strictly negative Gaussian curvature.
+Put $\rho=\sqrt{|\tau|}$ and $D=k_s-k\tau_s/\tau$. Its nonruling
+asymptotic curves have return map
+\begin{equation}\label{eq:intro-return}
+ \mathcal R(u)=\frac{u}{1+\rho(0)I_0u},
+ \qquad I_0=\oint\frac{D}{2\rho}\,ds.
+\end{equation}
+The multiplier $\mathcal R'(0)$ is always one. The stronger condition
+$I_0=0$ makes the full return map the identity, so nearby characteristics
+are closed and admit a single-valued transverse parameter.
+Theorem~\ref{thm:ruled} proves that this condition is exactly what permits
+compactly supported infinitesimal bendings on a thin one-sided band. In
+the identity case, every such bending comes from one arbitrary transverse
+test function.
+
+Producing that band and completing it are separate tasks. For a prescribed
+spherical normal loop, spatial closure is a vector moment condition,
+whereas identity return is one scalar period condition.
+Theorem~\ref{thm:normal-loop-criterion} separates them and cancels the
+period without losing closure. The explicit corrugated seed supplies
+additional embedding and two-sided visibility properties. We then protect
+a compact subannulus, alter the support only outside it, and attach the
+remaining geometry.
+
+
+Figure~\ref{fig:band} shows the thin balanced band in the saved numerical
+atlas and a local view of its protected region. On the unchanged region, its rescaled leaf label
+$c$ is related to the first integral used below by
+$v=(\sigma c)^{-1}$, with $\sigma=10^{-6}$ in this numerical model.
+The unrolled strip resolves leaves that cannot be separated in the full
+physical view. The explicit analytic seeds used in the proof are drawn
+separately in Figure~\ref{fig:seeds}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/01-band.pdf}
+\caption{The balanced numerical band used by the atlas's saved completion.
+(a) The complete band, with a protected closed leaf in blue. Its actual
+width is too small to resolve at this scale.
+(b) A rigidly rotated, uniformly magnified local patch: one displayed
+length unit equals $10^{-6}$ original units. Gold marks the unchanged
+closed-leaf region; blue and teal curves are its asymptotic leaves, and
+the short transverse lines are straight rulings there.
+(c) An unrolled parameter diagram, rather than a physical projection,
+with protected levels $0.35\le c\le0.65$ and the two ends identified.
+This saved balanced numerical example illustrates the construction;
+the analytic existence argument is Lemma~\ref{lem:seed} and
+Theorem~\ref{thm:spike}.}
+\label{fig:band}
+\end{figure}
+
+
+\subsection{Further consequences and earlier questions}
+The same protected band has two useful completions besides the tight torus.
+\begin{theorem}[Closed asymptotic annulus]\label{thm:main-annulus}
+There is a smooth embedded compact annulus $N\subset\R^3$ with $K<0$
+in its interior and circular boundary components lying in tangent planes.
+For a suitable normal, its Gauss map is a diffeomorphism
+\[
+ N^\circ\longrightarrow\Sph^2\setminus\{\pm e_3\}.
+\]
+An open subannulus is foliated by embedded closed asymptotic curves.
+Each has linking number zero with a sufficiently small normal push-off.
+\end{theorem}
+
+\begin{theorem}[Complete embedded saddle cylinder]\label{thm:complete-cylinder}
+There is a smooth proper embedding $X_\infty:S^1\times\R\to\R^3$
+whose image $\Sigma$ has complete induced metric and $K<0$ everywhere.
+It contains an open annulus of embedded closed asymptotic curves with
+identity return and zero normal linking. A choice of normal gives
+\[
+ n:\Sigma\longrightarrow\Sph^2\setminus\{\pm e_3\}
+ \quad\text{a diffeomorphism},\qquad
+ \int_\Sigma|K|\,dA=4\pi.
+\]
+For some nonempty interval $I$, there is an injective linear family of
+infinitesimal bendings parametrized by $C_c^\infty(I)$, all supported in
+one fixed compact subset of $\Sigma$.
+\end{theorem}
+
+The relation to the published questions is as follows.
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item Da Cruz--Garcia record the question of a cylindrical region
+foliated by closed asymptotic lines \cite[p.~17]{DaCruzGarcia}.
+The identity-return band provides such a region in a surface in $\R^3$.
+Their paper studies asymptotic lines of general plane fields; our
+construction is on an actual embedded surface.
+\item Nirenberg's annulus question concerns closed asymptotic curves
+on a negatively curved annulus with convex planar boundaries, as
+explained in \cite[\S1.2]{GhomiProblems}. Theorem~\ref{thm:main-annulus}
+provides an open band of closed leaves in an annulus of this type.
+\item Ghomi--Raffaelli ask whether an embedded negatively curved
+surface with injective Gauss map can have a closed asymptotic curve
+with zero normal linking \cite[Problem~1.1]{GR}. Our annulus has both
+properties. The normal along a leaf is a continuous generalized
+binormal, so it also gives the example asked about in
+\cite[Problem~1.4]{GhomiProblems}. Here inflections are permitted;
+a classical Frenet binormal need not be defined at every point.
+Ding's recent open-annulus construction also proves the zero-linking
+and regular-binormal conclusions \cite[Theorem~1.1 and
+Corollary~1.2]{Ding2026}. The boundary geometry and closed-leaf
+foliation in Theorem~\ref{thm:main-annulus} give additional conclusions.
+\item Theorem~\ref{thm:main-fiber} gives a negative answer to the
+smooth tight-torus congruence question \cite[Question~11]{BK}.
+Corollary~\ref{cor:fixed-boundary-annuli} gives noncongruent isometric
+negative-curvature annuli that agree on full boundary collars,
+addressing \cite[Problem~1.3]{GhomiProblems}.
+\item The continuum of closed leaves shows that the closed-curve
+restriction discussed by Yau \cite[p.~236]{YauReview} does not hold
+for all smooth tight tori. Corollary~\ref{cor:HK-degenerate} gives the
+vanishing integral relevant to the remark following Han--Khuri's
+rigidity theorems \cite[p.~464]{HK}.
+\item Ni--Zhang--Zhang construct a complete negatively curved immersed
+cylinder containing a closed asymptotic curve and explicitly leave
+embedded existence open \cite[Theorem~3.4 and the following paragraph]{NiZhangZhang}.
+Theorem~\ref{thm:complete-cylinder} provides a proper embedded example.
+\end{enumerate}
+
+These are questions and formulations in the cited works. The geometry
+needed to meet their hypotheses is proved below: embedding and global
+Gauss-map injectivity, full boundary collars, zero linking, and
+completeness are separate conclusions of the construction.
+
+\subsection{Relation to earlier constructions}
+Closed asymptotic curves and principal-normal ruled strips are established
+parts of surface theory. Kovaleva's 1968 construction gives a negatively
+curved tube-type surface containing a closed asymptotic line
+\cite{Kovaleva}; its role in the principal-normal strip construction
+is recalled in \cite[Note~2.1]{GR}. Garcia--Sotomayor study the qualitative behavior and
+structural stability of periodic asymptotic lines
+\cite{GarciaSotomayor}. Our use of principal-normal rulings builds on
+this earlier setting. The additional local requirement is identity of
+the full return germ, which gives a whole band of closed leaves and
+allows us to classify its compactly supported bending fields.
+
+The topological restrictions are equally important. Ghomi--Raffaelli
+relate normal linking to the writhe and rotation of projections of
+closed asymptotic curves. They discuss earlier examples with zero
+linking and noninjective Gauss map, and construct examples with
+injective Gauss map and nonzero linking \cite[\S\S1,4]{GR}.
+Their Problem~1.1 asks whether zero linking and Gauss-map injectivity
+can occur together. Their analysis also explains why injective normals
+force inflections \cite[Note~5.1]{GR}. This is why the signed frame in
+our ruled band allows $k=0$: requiring a classical Frenet frame
+everywhere would exclude the geometry under consideration.
+
+Smooth isometric nonuniqueness also predates the present construction.
+Sa Earp--Toubiana give closed smooth surfaces of arbitrary genus with
+nondiscrete isometric realizations, including families parametrized by
+nowhere dense compact sets \cite[Theorem~2]{SaEarpToubiana}. Their
+construction reflects pieces across planar seams at which the profile
+is flat to every order. A Cantor set of realizations is therefore not
+by itself a new phenomenon. Nor does a planar seam imply an open
+planar patch; the distinction between these conditions matters when
+comparing examples.
+
+Sabitov constructs two noncongruent isometric negatively curved
+surfaces with a common open set \cite{Sabitov2018}. His later work
+describes metrics of revolution with a discontinuum of noncongruent
+isometric immersions \cite{Sabitov2021}. Local agreement and large
+sets of isometric realizations thus have their own earlier examples.
+The contribution here is their realization inside smooth embedded
+\emph{tight tori}, with the changes supported in strict negative
+curvature, together with a band whose full asymptotic return and
+supported bending space are explicitly controlled. The absence of
+open planar patches is one of the proved geometric properties;
+it is not used as a blanket distinction from all earlier constructions.
+
+Ding's October 2026 preprint constructs an embedded open negatively
+curved annulus with injective Gauss map and a closed asymptotic curve
+of zero normal self-linking \cite[Theorem~1.1]{Ding2026}. It also gives
+a regular injective continuous binormal \cite[Corollary~1.2]{Ding2026}.
+Its planar curves are obtained by simultaneous polygonal rounding and
+mixed-integral cancellation; the theorem makes no completeness claim
+and prescribes no tangent-plane boundary geometry. The analytic seed
+used here supports a different continuation: we cancel the full return
+period, classify the supported kernel, and retain a closed-leaf band in
+the compact annulus, tight torus and complete cylinder. The overlapping
+open-annulus and binormal conclusions are therefore also stated in
+this recent preprint, alongside the older results described above.
+
+\subsection{Proof architecture}
+The construction has two layers. First we manufacture the localized
+bending region. Then we complete and use it. The dependencies are:
+\[
+ \begin{gathered}
+ \text{normal loop and closing speed}
+ \ \longrightarrow\ \text{period balance}
+ \ \longrightarrow\ \text{identity-return ruled band},\\
+ \text{corrugated seed}
+ \ \longrightarrow\ \text{embedding and two-sided visibility},\\
+ \text{protected band}
+ \ \longrightarrow\ \text{positive exits}
+ \ \longrightarrow\ \text{circular gradient seams},\\
+ \text{Legendre duality and radial filling}
+ \longrightarrow\ \text{parabolic end collars},\\
+ \text{saddle annulus}
+ \ \longrightarrow\ \text{asymmetric tight closure}
+ \ \longrightarrow\ \text{exact sign pairs and families}.
+ \end{gathered}
+\]
+Section~\ref{sec:theory} proves the local kernel theorem;
+Section~\ref{sec:structural-balance} handles closure and period balance.
+Section~\ref{sec:protected-core} uses the seed to build the embedded core,
+and Section~\ref{sec:exits} creates its positive exits.
+Sections~\ref{sec:completion} and~\ref{sec:model-saddle} complete the
+support and assemble the tight torus. Section~\ref{sec:reconstruction}
+first proves finite sign branching, then its countable extension.
+Section~\ref{sec:applications} proves the stated consequences.
+The general projective ruled theory and the quantitative seed estimates
+are in Appendices~\ref{sec:general-ruled} and~\ref{app:seed-estimates};
+neither interrupts the main construction.
+
+\section{Conventions and geometric tools}\label{sec:prelim}
+\subsection{Metrics, bendings, and tightness}
+All maps are smooth unless stated otherwise. A compact annulus includes
+its boundary; $A^\circ$ denotes its interior. For an open interval or
+surface, $C_c^\infty$ denotes smooth functions with compact support.
+Writing $V\Subset U$ means that the closure of $V$ is compact and
+contained in $U$. The torus $T^2$ is $S^1\times S^1$, with
+$S^1=\R/2\pi\mathbb Z$.
+Norms on compact sources use fixed smooth atlases or a fixed background
+metric. For an oriented immersion $X$ with unit normal $N$, we use
+\[
+ g_X(v,w)=\langle dX(v),dX(w)\rangle,\qquad
+ \II_X(v,w)=\langle D_v(dX(w)),N\rangle.
+\]
+Here $D$ is the Euclidean connection, applied to the ambient vector
+field $dX(w)$; the displayed normal component is independent of the
+extensions of $v,w$. The shape operator is defined by
+$g_X(A_Xv,w)=\II_X(v,w)$, so $dN(v)=-dX(A_Xv)$ and $K_X=\det A_X$.
+Changing the normal changes the sign of $\II_X$ and $A_X$, and leaves
+$K_X$ and the asymptotic directions unchanged. The strain is the symmetric tensor
+\[
+ S_Xy(v,w)=\langle dX(v),dy(w)\rangle+
+             \langle dX(w),dy(v)\rangle.
+\]
+An \emph{infinitesimal bending} is a field $y:M\to\R^3$ with $S_Xy=0$;
+this definition allows both tangential and normal components. We write
+$\Gmap(X)=g_X$ for the metric reconstruction map. The tensor
+$\langle dy,dy\rangle$ means $(v,w)\mapsto\langle dy(v),dy(w)\rangle$.
+
+An asymptotic direction is a nonzero vector $v$ with $\II_X(v,v)=0$.
+When $K<0$, these directions form two transverse smooth line fields.
+A \emph{return map} follows one such field once around a closed leaf,
+starting and ending on a short transverse arc. Identity return means
+identity of the whole germ, rather than only its first derivative.
+
+A closed connected embedded surface is \emph{tight} if its intersection
+with each open half-space is connected whenever nonempty. Its total
+absolute curvature satisfies \cite[\S1.1]{BK}
+\begin{equation}\label{eq:tight-bound}
+ \int_M|K|\,dA\ge2\pi(4-\chi(M)),
+ \qquad\text{with equality exactly for tight embeddings}.
+\end{equation}
+For a torus the equality value is $8\pi$.
+
+We repeatedly use openness of compact embeddings in the $C^1$ topology.
+Local projections to tangent planes exclude collisions between nearby
+source points, uniformly on a finite cover; compactness separates the
+remaining pairs. The same argument shows that an immersion injective on
+a compact embedded curve is injective on a sufficiently thin neighborhood
+of that curve.
+
+For an embedded closed curve $\Gamma$ and a nonzero field $\nu$ transverse
+to its tangent, define
+\[
+ \Lk(\Gamma,\nu)=\Lk(\Gamma,\Gamma+\epsilon\nu)
+\]
+for small $\epsilon>0$. We compute linking by intersection with an
+oriented spanning surface \cite{Rolfsen}.
+
+\subsection{Support coordinates}\label{sec:support}
+The completion is easiest to control by using the normal as the source
+coordinate. Let $q\in\Omega\subset\Sph^2$, with round metric $g_0$, and
+let $H:\Omega\to\R$. Define
+\begin{equation}\label{eq:support}
+ a_H=\nabla H+Hq,\qquad B_H=\nabla^2H+H\Id,
+ \qquad R_H=\det B_H.
+\end{equation}
+The gradient and Hessian in this formula use the round metric $g_0$.
+In the sum with $H\Id$, $\nabla^2H$ denotes the endomorphism obtained
+by raising one index of the covariant Hessian. Equivalently, the
+associated bilinear form is $\operatorname{Hess}_{g_0}H+Hg_0$.
+We write $B_H(v,w)=g_0(B_Hv,w)$ when a bilinear evaluation is needed.
+The determinant $R_H$ is computed in a $g_0$-orthonormal frame.
+
+\begin{proposition}[Support reconstruction]\label{prop:support}
+The $\R^3$-valued differential of $a_H$ is $B_H$. Where $B_H$ is
+invertible, $a_H$ is an immersion with normal $q$, metric
+$g_{a_H}(v,w)=g_0(B_Hv,B_Hw)$, second fundamental form
+$\II_{a_H}(v,w)=-g_0(B_Hv,w)$, and curvature $R_H^{-1}$.
+The shorthand $B_H^2$ for its metric refers to this bilinear form. Every immersion
+with an injective regular Gauss map has this representation on its Gauss
+image.
+\end{proposition}
+\begin{proof}
+Differentiating $\nabla H$ in $\R^3$ produces the normal term
+$-dH\,q$, which cancels the corresponding term from $d(Hq)$.
+The remaining differential is $\nabla^2H+H\Id$. It is tangent to
+$q^\perp$, so $q$ is normal. Differentiating $da_H(w)\cdot q=0$ gives
+$\II(v,w)=-\langle B_Hw,v\rangle$. Thus the shape operator is
+$-B_H^{-1}$ and its determinant is $R_H^{-1}$.
+Conversely, in Gauss coordinates set $H=X\cdot q$. Then
+$dH(v)=X\cdot v$, because $dX(v)\cdot q=0$, and the tangential and normal
+parts of $X$ are $\nabla H$ and $Hq$.
+\end{proof}
+
+A self-adjoint field is \emph{Codazzi} when
+$(\nabla_vB)w=(\nabla_wB)v$ for all tangent vectors $v,w$.
+\begin{proposition}[Codazzi realization and periods]\label{prop:codazzi}
+For a smooth self-adjoint field $B$ on $\Omega$, the vector-valued form
+$\beta_B(v)=Bv$ is closed exactly when $B$ is Codazzi. On a simply
+connected domain this is equivalent to $B=B_H$, with $H$ unique modulo
+ambient linear functions. On a general domain one must also require
+\[
+ \oint_\gamma\beta_B=0\quad\text{for every closed curve }\gamma.
+\]
+\end{proposition}
+\begin{proof}
+The normal part of $d\beta_B(v,w)$ is
+$-\langle v,Bw\rangle+\langle w,Bv\rangle=0$ by self-adjointness.
+Its tangential part is $(\nabla_vB)w-(\nabla_wB)v$, the Codazzi defect.
+If the form has a primitive $a$, put $H=a\cdot q$. Since $da$ is tangent,
+$dH(v)=a\cdot v$, hence $a=\nabla H+Hq$ and $B=B_H$.
+The primitive is unique up to a constant vector, which changes $H$ by a
+linear function. Vanishing periods are precisely the obstruction to a
+global primitive.
+\end{proof}
+
+On the northern hemisphere introduce \emph{gnomonic coordinates}
+\[
+ q(z)=\frac{(z,1)}{w(z)},\qquad w(z)=\sqrt{1+|z|^2},
+ \qquad G(z)=w(z)H(q(z)).
+\]
+In these planar source coordinates the immersion is
+\begin{equation}\label{eq:planar}
+ X_G(z)=\bigl(\nabla G(z),G(z)-z\cdot\nabla G(z)\bigr),
+ \qquad K_{X_G}=\frac1{w^4\det D^2G}.
+\end{equation}
+Indeed, writing $A=D^2G$ gives
+\[
+ dX_G(\xi)=(A\xi,-z\cdot A\xi),\qquad
+ g_{X_G}=A^T(I+zz^T)A,\qquad \II=-A/w.
+\]
+Thus $R_H(q(z))=w^4\det D^2G$. A \emph{saddle support} means
+$R_H<0$, equivalently $\det D^2G<0$. Planar gradients below are
+Euclidean, in contrast with the spherical gradient in \eqref{eq:support}.
+
+If $p$ is a planar source curve, let $\gamma=\nabla G\circ p$ be its
+gradient trace and $g=G\circ p$ its value trace. Then
+\begin{equation}\label{eq:action}
+ g'=\gamma\cdot p',\qquad \oint\gamma\cdot dp=0,
+\end{equation}
+and, along the spherical curve $\widehat q(s)=q(p(s))$,
+\begin{equation}\label{eq:tangent-sign}
+ B_H(\widehat q',\widehat q')=\frac{p'\cdot\gamma'}{w(p)}.
+\end{equation}
+We call a trace \emph{positive} when $p'\cdot\gamma'>0$.
+Such a curve is noncharacteristic. A collar is an open tubular
+neighborhood of a specified curve (or a one-sided neighborhood at an
+actual boundary). A germ is a function on a collar, considered up to restriction
+to a smaller collar. Retaining a germ means agreement on an open overlap,
+so all derivatives agree at the eventual join.
+
+\subsection{Global injectivity, duality, and affine transport}
+Local negative determinant will give local inversion. The following
+degree argument is what upgrades it to global injectivity.
+\begin{lemma}[Annular degree criterion]\label{lem:degree}
+Let $F$ be a smooth map from a compact annulus to $\R^2$. Suppose the
+interior Jacobian has a constant nonzero sign, the boundary maps are
+homeomorphisms onto disjoint nested Jordan curves, and their induced
+winding numbers are opposite. Then $F$ is a diffeomorphism of interiors
+onto the intervening planar annulus and a homeomorphism of closures.
+The boundary Jacobian may vanish.
+\end{lemma}
+\begin{proof}
+For a target off the boundary images, all preimages are interior and the
+degree is defined by compactness. The boundary winding sum has absolute
+value one between the curves and is zero in the complementary regions.
+All local degrees have the same sign, so there is exactly one preimage
+between the curves and none outside. No interior point maps to a boundary
+image: local openness there would produce a target on the forbidden side.
+Together with the boundary hypotheses this gives a continuous bijection
+of compact closures, hence a homeomorphism. Local inversion gives the
+smooth interior inverse.
+\end{proof}
+
+If $\nabla G$ is a diffeomorphism, its \emph{differential Legendre transform}
+is
+\[
+ G^*(y)=z\cdot y-G(z),\qquad y=\nabla G(z).
+\]
+If $z=(\nabla G)^{-1}(y)$, differentiation gives
+$\nabla G^*(y)=z$ and $D^2G^*(y)=(D^2G(z))^{-1}$.
+In particular, $\det D^2G^*(y)=1/\det D^2G(z)<0$ on a saddle domain.
+The transform is defined on the gradient image, and its inverse
+transform recovers $G$ with the chosen additive constant. This use of
+Legendre duality requires a global gradient inverse on the domain in
+question; negative determinant alone supplies only a local inverse.
+
+We fix the planar maps and unit vectors
+\[
+ J(x_1,x_2)=(-x_2,x_1),\qquad S(x_1,x_2)=(x_1,-x_2),
+ \qquad A_*=JS,\qquad e_\theta=(\cos\theta,\sin\theta).
+\]
+Thus $e_\theta'=Je_\theta$ and $SJ=-JS$.
+For an invertible affine map $x\mapsto Ax+b$, the correct transport of
+a bending is
+\begin{equation}\label{eq:affine-transport}
+ \widetilde X=AX+b,\qquad \widetilde y=A^{-T}y.
+\end{equation}
+Derivative pairings are unchanged, so $S_{\widetilde X}\widetilde y=S_Xy$.
+With $\widetilde N=A^{-T}N/|A^{-T}N|$, the second fundamental form is
+$\II_{\widetilde X}=\II_X/|A^{-T}N|$. Its scalar factor is positive.
+An affine change therefore preserves curvature signs and asymptotic
+directions, while generally changing the metric and the curvature values.
+The formula for $\widetilde y$ preserves the strain equation; it does
+not claim that $AX$ and $X$ have the same metric. Affine maps also preserve
+tightness, since inverse images of half-spaces are half-spaces.
+See \cite{IzmProj} for the broader projective rigidity correspondence.
+
+\section{Identity return and localized bendings}\label{sec:theory}
+\label{sec:ruled}
+This section isolates the local mechanism. Holonomy here means return of
+an asymptotic line field, not Levi--Civita parallel transport. Identity
+return is compatible with strictly negative curvature. It supplies a
+transverse leaf parameter, and the ruled equations turn that parameter
+into the full supported bending space.
+
+\subsection{A transverse coordinate for closed leaves}
+\begin{proposition}[Product and first-integral criterion]\label{prop:product-holonomy}
+For a smooth nonsingular line foliation near an embedded closed leaf in
+an annulus, the following conditions are equivalent after shrinking the
+neighborhood: the return germ is the identity; the foliation is a product
+$S^1\times J$ by circles; there is a smooth submersion whose connected
+fibers are the leaves. Equivalently, a nonvanishing defining one-form has
+a nonvanishing integrating factor that makes it exact.
+\end{proposition}
+\begin{proof}
+Start with a coordinate on a short transversal and extend it by transport
+along leaves. It is single-valued after one circuit exactly when return
+is the identity. It then defines the submersion and the local product.
+A product has identity return. The differential of the submersion is a
+nonzero multiple of any defining form. Conversely, an exact nonvanishing
+defining form is the differential of a transverse coordinate; near the
+original compact leaf, its level sets are circles.
+\end{proof}
+The proposition concerns only the foliation. A general saddle surface
+need not have a supported bending for every transverse function. The
+ruled model below provides that additional fact.
+
+\subsection{The principal-normal model and its return}
+Let $\gamma(s)$ be a unit-speed closed curve of period $L$. Assume its
+periodic positively oriented frame $(T,E,n)$ satisfies
+\begin{equation}\label{eq:frame}
+ T_s=kE,\qquad E_s=-kT+\tau n,\qquad n_s=-\tau E,
+ \qquad \tau\ne0.
+\end{equation}
+The curvature $k$ is signed and may vanish. Here $\tau$ is the
+smooth frame coefficient in \eqref{eq:frame}. It agrees with Frenet
+torsion where $k\ne0$; the frame equations define it through the
+inflection points. Set
+\[
+ X(s,u)=\gamma(s)+uE(s),\quad \rho=\sqrt{|\tau|},\quad
+ \lambda=\tau_s/\tau,\quad D=k_s-k\lambda.
+\]
+For the normal determined by $X_s\times X_u$, differentiation gives
+\begin{align}\label{eq:ruled-II}
+ g_X&=\mathcal E\,ds^2+du^2,
+ &\mathcal E&=(1-ku)^2+\tau^2u^2,\\
+ \II_{ss}&=\frac{u\tau(\lambda+uD)}{\sqrt{\mathcal E}},
+ &\II_{su}&=\frac\tau{\sqrt{\mathcal E}},
+ &\II_{uu}&=0.\nonumber
+\end{align}
+In particular $K=-\tau^2/\mathcal E^2<0$. One asymptotic family consists
+of the rulings. The other satisfies
+\[
+ u_s=-\frac u2(\lambda+uD),\qquad
+ \frac d{ds}\frac1{\rho u}=\frac D{2\rho}.
+\]
+The reciprocal coordinate turns the return calculation into a single
+period. Put
+\[
+ I_0=\int_0^L\frac D{2\rho}\,ds.
+\]
+Periodicity of $\rho$ gives
+\begin{equation}\label{eq:return}
+ \mathcal R(u)=\frac{u}{1+\rho(0)I_0u}.
+\end{equation}
+Thus $\mathcal R'(0)=1$ in every case, but the full return is the identity
+only if $I_0=0$.
+
+There is also a transverse coordinate regular at the central leaf.
+Choose periodic $\omega$ with $\omega_s=D/(2\rho)-I_0/L$. Then
+\begin{equation}\label{eq:regular-holonomy-coordinate}
+ z=\frac{\rho u}{1-\rho u\omega(s)}
+\end{equation}
+has $z_u(s,0)=\rho(s)>0$ and changes the characteristic field to
+$\partial_s-(I_0/L)z^2\partial_z$. When $I_0=0$, $z$ is a smooth first
+integral across $u=0$; on a one-sided band, $v=z^{-1}$ is more convenient.
+
+\begin{remark}[What the period measures]\label{rem:period-holonomy}
+The form $(D/(2\rho))\,ds$ has one cohomological obstruction to a
+periodic primitive: its integral $I_0$. In this principal-normal class,
+$\mathcal R''(0)=-2\rho(0)I_0$, so the quadratic jet detects the whole
+return. Along the central curve,
+$\II=\left(\begin{smallmatrix}0&\tau\\\tau&0\end{smallmatrix}\right)$
+in the orthonormal basis $(T,E)$. The transverse normal curvature is zero,
+which explains the automatic multiplier one. This does not say that the
+whole band is minimal.
+\end{remark}
+
+\subsection{Classification of the supported kernel}
+\begin{theorem}[Supported kernel on a ruled band]\label{thm:ruled}
+On a sufficiently thin one-sided band $0<u<b$, a nonzero compactly
+supported infinitesimal bending exists exactly when $I_0=0$. In that
+case choose periodic $\omega$ with $\omega_s=D/(2\rho)$ and define
+\[
+ v(s,u)=\frac1{\rho(s)u}-\omega(s),\qquad
+ c_b=\max_s\left(\frac1{\rho(s)b}-\omega(s)\right).
+\]
+Every supported bending has a unique expression
+\begin{equation}\label{eq:yF}
+ y_F=\frac{\tau u}{2\rho}F'(v)T+
+ \left[uF(v)-\frac{1-ku}{2\rho}F'(v)\right]n,
+ \qquad F\in C_c^\infty((c_b,\infty)).
+\end{equation}
+\end{theorem}
+\begin{proof}
+\emph{Step 1: reduce the strain to transport.}
+Write $y=\alpha T+\chi E+\beta n$. The $uu$ equation is $\chi_u=0$;
+compact support therefore gives $\chi=0$. The remaining equations are
+\[
+ (1-ku)\alpha_s+u\tau\beta_s=0,\qquad
+ (1-ku)\alpha_u+u\tau\beta_u+k\alpha-\tau\beta=0.
+\]
+For $p=(1-ku)\alpha+u\tau\beta$, these are equivalent to
+\begin{equation}\label{eq:transport-p}
+ \alpha=p-\frac u2p_u,\qquad
+ \beta=\frac{kp+(1-ku)p_u/2}{\tau},\qquad
+ p_s-\frac u2(\lambda+uD)p_u=-uDp.
+\end{equation}
+Consequently $f=p/(\tau u^2)$ is constant along the nonruling
+characteristics.
+
+\emph{Step 2: support forces identity return.}
+Extend the field by zero to $u>0$. A characteristic on which $f\ne0$
+cannot leave the compact support: transport preserves its nonzero value.
+It exists for all $s$ and stays in a compact interval bounded away from
+$u=0$. But $(\rho u)^{-1}$ gains $I_0$ on every circuit, which is
+incompatible with this boundedness unless $I_0=0$.
+
+\emph{Step 3: reconstruct all supported fields.}
+When $I_0=0$, the complete leaves lying in the band are
+\begin{equation}\label{eq:closed-leaves}
+ u_c(s)=\frac1{\rho(s)(c+\omega(s))},\qquad c>c_b.
+\end{equation}
+Taking $p=\tau u^2F(v)$ in \eqref{eq:transport-p} gives \eqref{eq:yF}.
+A compact set of levels gives a compact subannulus, so every displayed
+field is supported. Conversely, if a field is supported in
+$u_-\le u\le u_+$ with $0<u_-<u_+<b$, every nonzero level satisfies
+\[
+ \max_s\left(\frac1{\rho(s)u_+}-\omega(s)\right)
+ \le c\le
+ \min_s\left(\frac1{\rho(s)u_-}-\omega(s)\right).
+\]
+The left endpoint is greater than $c_b$ and the right endpoint is finite.
+Evaluation of $f$ at $s=0$ therefore gives a smooth compactly supported
+function $F$ on $(c_b,\infty)$. Transport proves reconstruction, and every
+such level occurs on a complete leaf, proving uniqueness.
+\end{proof}
+We call a subband \emph{saturated} when it is a union of complete leaves.
+Disjoint transverse supports in \eqref{eq:yF} give disjoint surface
+supports. This feature, rather than just the dimension of the kernel,
+is what will permit exact independent sign choices.
+
+
+Figure~\ref{fig:bending} gives a geometric reading of
+\eqref{eq:yF}. A test function of $v$ selects whole closed leaves,
+so the support is an annulus rather than a segment of one characteristic.
+Its derivative also enters the field: $y_F$ is a coupled tangential and
+normal displacement, with no ruling component. The strain vanishes,
+but the quadratic metric correction need not vanish. Consequently the
+opposite signs give the common metric described in
+\eqref{eq:intro-quadratic}, rather than an isometric path through $X$.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/04-bending-map.pdf}
+\caption{The bending map $F\mapsto y_F$ in Theorem~\ref{thm:ruled}.
+(a) Cutting the band at $s=0$ gives a cylinder diagram with $s=0$ and
+$s=L$ identified. Horizontal curves have constant first integral $v$;
+vertical curves correspond to rulings at fixed $s$.
+(b) A smooth function supported between $v_1$ and $v_2$ selects the gold
+subannulus; the field is zero outside it.
+(c) At each point the exact field has components
+$\langle y_F,T\rangle=\tau uF'(v)/(2\rho)$ and
+$\langle y_F,n\rangle=uF(v)-(1-ku)F'(v)/(2\rho)$, while
+$\langle y_F,E\rangle=0$.
+The displayed arrow illustrates this decomposition; its length and angle
+are schematic. The characteristic transport equation, not the arrow,
+establishes the bending identity.}
+\label{fig:bending}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{The return multiplier and the Han--Khuri integral}
+For later applications we record what the linear return measures on an
+arbitrary saddle surface.
+\begin{lemma}[Asymptotic return multiplier]\label{lem:holonomy-integral-new}
+Let $\Gamma$ be an embedded closed asymptotic curve on an oriented
+surface with $K<0$ near $\Gamma$. Parametrize it by oriented arclength,
+write $T$ for its tangent and $Z$ for a unit perpendicular tangent, and set
+\[
+ k_g=\langle\nabla_TT,Z\rangle,\qquad k_n=\II(Z,Z),\qquad
+ \sigma=\operatorname{sign}\II(T,Z).
+\]
+If $\mu$ is the derivative of the asymptotic return at $\Gamma$, then
+\begin{equation}\label{eq:holonomy-integral-new}
+ \log\mu=\frac\sigma2\oint_\Gamma k_gk_n|K|^{-1/2}\,ds.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Choose Fermi coordinates $(s,t)$ with metric $h^2ds^2+dt^2$ and
+$h(s,0)=1$, and write $\II=L\,ds^2+2M\,ds\,dt+N\,dt^2$.
+On $t=0$ we have $L=0$, $N=k_n$, and $M=\sigma\sqrt{-K}$.
+Codazzi gives $L_t=M_s-k_gN$. If the asymptotic slope is $t_s=f(s,t)$,
+then $f(s,0)=0$ and $L+2Mf+Nf^2=0$ implies $f_t=-L_t/(2M)$ on the
+leaf. The variational equation yields
+\[
+ \log\mu=-\frac12\oint\frac{L_t}{M}\,ds
+ =-\frac12\oint\frac{M_s}{M}\,ds+
+   \frac12\oint\frac{k_gN}{M}\,ds.
+\]
+The first integral is zero by periodicity. Substitution of $M$ and $N$
+in the second gives the assertion.
+\end{proof}
+The integral in \cite{HK} detects the linear multiplier. Equation
+\eqref{eq:return} explains why multiplier one alone does not imply full
+identity return.
+
+
+The identity-return mechanism also produces the visibly broader examples
+in Figure~\ref{fig:alternative-bands}. In spherical arclength $r$,
+constant spatial speed $a=1$ gives
+$I_0=\tfrac12\oint\kappa_r\,dr=0$. Closure still requires the separate
+vector moment $\oint aP\,dr=0$. These examples have different normal
+tracks from the hemispherical seed used for the torus; they illustrate
+the return calculation without supplying its visibility and completion
+package.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/02-alternative-bands.pdf}
+\caption{Three-, four-, and five-lobed constant-speed ruled bands from
+the numerical atlas. All axes in each model use equal physical units;
+the broad strips come from actual ruling widths, not a transverse
+stretch. Gold is the closed spatial center, colored curved traces show
+the closed nonruling asymptotic family, and pale straight segments show
+the ruling family. Traces are overlaid to make the foliation visible.
+With $a=1$, the nonruling equation is $u_r=-\kappa_r u^2/2$, whose
+reciprocal gains zero over a period. These are illustrations by immersed
+bands: self-intersections are allowed in the saved models. They are not
+asserted to be embedded protected cores or completed tight tori.}
+\label{fig:alternative-bands}
+\end{figure}
+
+
+\section{Closing a normal loop and cancelling its return period}
+\label{sec:structural-balance}
+We now construct the frame used in Section~\ref{sec:theory}. The input is
+a loop of normals, not a spatial curve. A positive speed determines the
+spatial primitive. Closure and return then become two explicit conditions
+on that speed, which can be solved separately.
+
+\subsection{The two conditions on speed}
+Let $\zeta:\R/\mathcal L\mathbb Z\to\Sph^2$ be a regular spherical loop
+parametrized by spherical arclength $r$. Define
+\begin{equation}\label{eq:structural-normal-frame}
+ P=-\zeta\times\zeta_r,\qquad
+ \zeta_{rr}=-\zeta-\kappa P,\qquad P_r=\kappa\zeta_r.
+\end{equation}
+These formulas fix the sign of its geodesic curvature $\kappa$.
+A positive function $a$ determines $\Gamma_r=aP$. If $ds=a\,dr$,
+then the frame $(P,\zeta_r,\zeta)$ has $k=\kappa/a$ and $\tau=-1/a$.
+Thus
+\begin{equation}\label{eq:structural-moments}
+ \mathbf M(a)=\oint aP\,dr=0,\qquad
+ \mathscr B(a)=\oint\frac{\kappa_r}{\sqrt a}\,dr=0,
+ \qquad I_0=\frac12\mathscr B(a).
+\end{equation}
+The first equation closes the spatial curve; the second cancels the full
+return period. Using $-aP$ gives the other torsion sign with the same
+conditions.
+
+\subsection{A local speed correction that preserves moments}
+The next lemma makes an arbitrarily small positional change while
+prescribing a possibly large nonlinear period. Its smallness is in $L^1$
+for the speed, rather than in curvature or torsion norms.
+\begin{lemma}[Finite-moment period prescription]\label{lem:finite-moment-balance}
+Let $f:S^1\to\R^m$ and $g:S^1\to\R$ be smooth, with $g$ taking both
+signs. For every smooth $b>0$, $B_*\in\R$, and $\eta>0$, there is a
+smooth $a>0$ such that
+\begin{equation}\label{eq:finite-moment-balance}
+ \|a-b\|_{L^1}<\eta,\qquad
+ \oint af=\oint bf,\qquad \oint g/\sqrt a=B_*.
+\end{equation}
+If $d=\dim\operatorname{span}f(S^1)$, the correction uses at most $d+1$
+arbitrarily short intervals.
+\end{lemma}
+\begin{proof}
+\emph{Choose a slowdown and compensating controls.}
+If the period already equals $B_*$, take $a=b$. Otherwise choose a short
+interval $K$ where $g$ has the sign of $B_*-\oint g/\sqrt b$.
+Choose $d$ disjoint control intervals $O_j$ away from $K$, with smooth
+bumps $\psi_j$ whose moments $\oint\psi_jf$ form a basis of
+$\operatorname{span}f(S^1)$. One can first choose independent sample
+values of $f$, then a center for $K$ in the required sign region away
+from those finitely many points, and finally shrink all intervals.
+Let $0\le\chi\le1$ be supported in $K$ and equal one on a smaller arc.
+Solve
+\[
+ \sum_{j=1}^d c_j\oint\psi_jf=\oint\chi bf,
+\]
+and set, for $0\le t<1$,
+\[
+ a_t=b-t\chi b+t\sum_{j=1}^d c_j\psi_j.
+\]
+This path preserves every linear moment. The argument also covers $d=0$,
+when there are no controls.
+
+\emph{Keep the correction small and prescribe the period.}
+Fixing the controls and shortening $K$ gives $c_j=O(|K|)$. Thus $a_t$
+is positive on the controls and $\|a_t-b\|_{L^1}<\eta$, uniformly in
+$t$. On $K$, positivity follows from $t<1$. On the plateau,
+$a_t=(1-t)b$, so the contribution of $g/\sqrt{a_t}$ diverges with the
+chosen sign as $t\uparrow1$. All contributions on $K$ have that sign;
+those on the complement stay bounded. Continuity therefore attains $B_*$
+at some $t_*<1$. Take $a=a_{t_*}$.
+\end{proof}
+
+\subsection{The structural existence criterion}
+\begin{theorem}[Normal-loop existence criterion]\label{thm:normal-loop-criterion}
+For the loop in \eqref{eq:structural-normal-frame}, the following are
+equivalent:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item $0$ belongs to the ordinary three-dimensional interior of
+$\conv P(S^1)$;
+\item a smooth positive speed $b$ satisfies $\mathbf M(b)=0$;
+\item a smooth positive speed $a$ satisfies both
+$\mathbf M(a)=0$ and $\mathscr B(a)=0$.
+\end{enumerate}
+This characterizes closed immersed principal-normal identity-return bands
+with the prescribed normal loop. For every closing speed $b$, the balanced
+speed $a$ can be chosen arbitrarily close to $b$ in $L^1$.
+\end{theorem}
+\begin{proof}
+\emph{From the convex hull to a closing speed.}
+Assume (i) and consider
+\[
+ \Phi(\lambda)=\oint e^{\lambda\cdot P(r)}\,dr,
+ \qquad \lambda\in\R^3.
+\]
+Its Hessian is positive definite because $P$ spans $\R^3$. The interior
+condition gives a uniform positive lower bound for
+$\max_r v\cdot P(r)$ as $v$ ranges over unit vectors. Uniform continuity
+then gives arcs of uniformly positive length on which this scalar product
+is bounded below. Hence $\Phi$ is coercive. At its unique minimizer
+$\lambda_*$, the positive speed $b=e^{\lambda_*\cdot P}$ has
+$\mathbf M(b)=\nabla\Phi(\lambda_*)=0$.
+
+\emph{Why positive closure forces the interior condition.}
+Assume (ii). If (i) fails, separation gives a nonzero $v$ with
+$v\cdot P\ge0$. Since $b>0$ and the moment is zero, $v\cdot P=0$
+everywhere. Differentiation gives $\kappa v\cdot\zeta_r=0$.
+On any interval where $\kappa\ne0$, $v$ is perpendicular to both
+$P$ and $\zeta_r$, so $\zeta$ is parallel to $v$. This contradicts
+$|\zeta_r|=1$. Thus $\kappa=0$ everywhere, making $P$ constant;
+a positive speed along a constant unit vector cannot close. This proves (i).
+
+\emph{Cancel the period without changing closure.}
+A closing speed also forces $\kappa$ to be nonconstant. Indeed, if
+$\kappa=c$, then $C=P-c\zeta$ is constant and $P\cdot C=1$, giving
+$\mathbf M(b)\cdot C=\oint b>0$. Therefore $\kappa_r$ takes both signs.
+Apply Lemma~\ref{lem:finite-moment-balance} with $f=P$, $g=\kappa_r$,
+and $B_*=0$. This gives (iii) with arbitrary $L^1$ control; (iii) implies
+(ii) immediately. The frame formulas and \eqref{eq:structural-moments}
+then produce the asserted immersed band, whose curvature is negative.
+\end{proof}
+
+\begin{corollary}[Relative upgrade of an embedded seed]\label{cor:relative-holonomy-upgrade}
+If a closing speed $b$ has an embedded primitive $\Gamma_b$, the balanced
+primitive can be chosen embedded and arbitrarily uniformly close to it.
+The two are connected through embedded closed curves with the same oriented
+tangent and normal at each parameter value. Any specified regular embedded
+linear projection remains embedded. If $\zeta$ is embedded, the Gauss map
+of a sufficiently thin resulting band is injective.
+\end{corollary}
+\begin{proof}
+Use the same initial point for all primitives. Their uniform distance is
+bounded by the $L^1$ change of speed. On a short parameter arc, some fixed
+linear functional is strictly increasing along every positive-speed
+primitive of $P$; this excludes nearby collisions. Compact separation for
+$\Gamma_b$ excludes all other collisions under a small uniform change.
+The argument holds along the whole correcting path and for a specified
+regular embedded projection. Tangent and normal directions are fixed.
+Finally the ruled Gauss map is locally invertible and injective on the
+compact central curve; it is injective on a thin neighborhood.
+\end{proof}
+An embedded closed asymptotic curve on an oriented $K<0$ surface has
+nonzero geodesic torsion \cite[\S2.2]{GR}. Its normal, parametrized by
+spherical arclength, gives the frame above with one torsion sign. The
+corollary upgrades it to an identity-return ruled band without changing
+its knot type or normal self-linking. It does not deform the original
+surface isometrically. The global completion still needs the two visible
+traces supplied in the next section.
+
+\begin{remark}[The signed action of speed and curvature]\label{rem:holonomy-action}
+With $\rho=a^{-1/2}$, the return period is $2I_0=\oint\rho\,d\kappa$.
+We call this the return action of the closed planar curve
+$r\mapsto(\kappa(r),\rho(r))$. It equals the negative of its oriented
+algebraic area for the standard orientation $d\kappa\wedge d\rho$.
+A positive speed law $a=A(\kappa)$ cancels
+this action automatically, but need not solve the independent closing
+equation $\oint A(\kappa)P\,dr=0$. The correction lemma can prescribe
+any return period while preserving closure; adding $1$ to the linear
+moments also preserves total length. The positional control remains
+$C^0$, obtained from $L^1$ control of speed.
+\end{remark}
+
+\section{Constructing the embedded protected core}\label{sec:protected-core}
+The structural criterion guarantees an immersed identity-return band.
+For completion we need more: embedded spatial and normal curves, an
+embedded horizontal projection, and two visible planar traces. The seed
+below supplies these together. Its long quantitative verification is
+deferred to Appendix~\ref{app:seed-estimates}.
+
+\subsection{Visibility and the seed package}\label{sec:corrugated-seed}
+For $|z|>R>0$ define the unit vector
+\begin{equation}\label{eq:visibility}
+ V_R(z)=\frac{Rz+\sqrt{|z|^2-R^2}\,Jz}{|z|^2}.
+\end{equation}
+Its numerator consists of perpendicular vectors with squared lengths
+summing to $|z|^4$.
+\begin{definition}\label{def:visible}
+Regular closed planar curves $(p,\delta)$ with a common parameter are
+\emph{visible at radius $R$} if
+\begin{equation}\label{eq:visible-pair}
+ |\delta|>R,\qquad p'\cdot V_R(\delta)>0,
+ \qquad \delta'\cdot V_R(\delta)>0.
+\end{equation}
+\end{definition}
+These conditions persist under common orientation-preserving
+reparametrization. On a compact parameter circle their strict margins
+also persist under small $C^1$ changes, or small positional changes with
+oriented tangent directions fixed. The connector construction will use
+visibility to replace a complicated gradient trace by a circle.
+
+Identify $\R^2$ with $\mathbb C$. For $N\ge2$, set
+$\epsilon=N^{-1}$, $T_N=2\pi/N$, and $\xi_N=e^{iT_N}$. Define
+\begin{equation}\label{eq:corrugated-beta}
+ \beta_N(t)=(1+\epsilon\sin Nt)
+          \exp\bigl(i[t+2\epsilon\sin Nt]\bigr).
+\end{equation}
+Choose $k_N$ as the unique root of
+\begin{equation}\label{eq:corrugated-root}
+ \int_0^{2\pi}e^{-k\cos x}(1+\epsilon\sin x)^2(1+2\cos x)\,dx=0,
+\end{equation}
+and put
+\[
+ Z_N=\frac1{2\pi}\int_0^{2\pi}e^{-k_N\cos x}\,dx,
+ \qquad m_N(t)=Z_N^{-1}e^{-k_N\cos Nt}.
+\]
+The partner curve is defined by integrating a positive multiple of the
+same tangent, with an initial point chosen for rotational covariance:
+\begin{equation}\label{eq:corrugated-delta}
+ I_N=\int_0^{T_N}m_N\beta_N'\,dt,
+ \qquad
+ \delta_N(t)=\frac{I_N}{\xi_N-1}+\int_0^t m_N(s)\beta_N'(s)\,ds.
+\end{equation}
+
+\begin{lemma}[Corrugated analytic seed]\label{lem:seed}
+For every integer $N\ge10^4$, $\beta_N$ and $\delta_N$ are real analytic
+positively oriented embedded curves enclosing the origin. If $Q_N$ is
+rotation through $2\pi/N$, then
+\begin{equation}\label{eq:seed-data}
+ \beta_N(t+T_N)=Q_N\beta_N(t),\qquad
+ \delta_N(t+T_N)=Q_N\delta_N(t),\qquad
+ \delta_N'=m_N\beta_N',\quad m_N>0,
+\end{equation}
+and
+\begin{equation}\label{eq:zero-action}
+ \int_0^{2\pi}\det(\beta_N,\delta_N')\,dt=0.
+\end{equation}
+The pair $(\beta_N,\delta_N)$ is visible at $R_+=1/4$, and
+\[
+ (\widetilde\beta_N,\widetilde\delta_N)(t)
+ =\bigl(A_*\delta_N(-t),A_*\beta_N(-t)\bigr)
+\]
+is visible at $R_-=4/5$. The spherical lift
+\[
+ \zeta_N(t)=\frac{(\beta_N(t),1)}{\sqrt{1+|\beta_N(t)|^2}}
+\]
+is embedded in the northern hemisphere and its geodesic curvature takes
+both signs.
+\end{lemma}
+\begin{proof}
+Appendix~\ref{app:seed-estimates} verifies the root, covariance, action,
+embedding, visibility, and curvature assertions in that order.
+\end{proof}
+
+\begin{remark}[The role of corrugation]\label{rem:corrugation-mechanism}
+The curves satisfy $\beta_N=e^{it}+O(N^{-1})$ and
+$\delta_N=(i/2)e^{it}+O(N^{-1})$ in position, while their common unit
+tangent has order-one oscillations. This allows signed angular backtracking
+and zero mixed action without losing nearly circular positional geometry.
+The latter makes both visibility estimates uniform. The exact threshold
+$10^4$ is only a convenient sufficient bound.
+\end{remark}
+
+
+The three views in Figure~\ref{fig:seeds} separate the positional and
+tangent effects of corrugation. A modest value of $N$ makes the global
+shape legible, whereas a uniformly enlarged single cell at $N=10^4$
+shows the small-scale motion within the sufficient analytic range.
+The partner is computed from a positive multiple of the same tangent;
+its closed primitive is a different curve, not a scaled copy of $\beta_N$.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/03-seeds.pdf}
+\caption{The seed formulas \eqref{eq:corrugated-beta}--\eqref{eq:corrugated-delta}.
+(a) Blue is $\beta_N$ and teal is $\delta_N$ at $N=16$.
+(b) The corresponding northern spherical lift $\zeta_N$.
+These two panels make corrugation visible; $N=16$ is below the sufficient
+range of Lemma~\ref{lem:seed}, so they are illustrations of the formulas.
+(c) One full cell at $N=10^4$: each curve is translated to its own initial
+point, and both coordinate differences are multiplied by $N$.
+This is an isotropic magnification, not a common placement of the two
+curves. Arrows show the parameter direction. The oriented tangents agree
+at corresponding parameters because $\delta_N'=m_N\beta_N'$ with
+$m_N>0$. The root defining $m_N$ cancels the mixed action, while the
+covariant initial point closes the partner. The seed estimates are
+proved in Appendix~\ref{app:seed-estimates}.}
+\label{fig:seeds}
+\end{figure}
+
+
+\subsection{From planar traces to a closed framed curve}\label{sec:model-curve}
+Fix one seed and suppress its subscript $N$. Let $Q$ denote rotation by
+$2\pi/N$, extended to $\R^3$ by fixing the third coordinate. The
+coordinate transitions used in this section are summarized here:
+\[
+\begin{array}{c|l}
+ t & \text{original seed parameter, of period }2\pi\\
+ r & \text{spherical arclength of }\zeta,\text{ of period }N\ell\\
+ a(r) & \text{positive spatial speed: }\Gamma_r=aP\\
+ s & \text{spatial arclength: }ds=a\,dr,\text{ of period }L\\
+ u & \text{distance along the ruling }E=\zeta_r\\
+ v & \text{transverse first integral labelling closed leaves}
+\end{array}
+\]
+Reparametrize $\zeta$ by $r$; covariance gives
+$\zeta(r+\ell)=Q\zeta(r)$. Its frame is
+\begin{equation}\label{eq:spherical-frame}
+ P=-\zeta\times\zeta_r,\qquad
+ \zeta_{rr}=-\zeta-\kappa P,\qquad P_r=\kappa\zeta_r.
+\end{equation}
+Both $\kappa$ and $|\beta|$ are $\ell$-periodic. With
+$w=\sqrt{1+|\beta|^2}$, the planar expression is
+\begin{equation}\label{eq:P-formula}
+ P=\frac{(-J\beta_r,-\det(\beta,\beta_r))}{w^2}.
+\end{equation}
+Define the spatial lift by
+\begin{equation}\label{eq:spatial-lift}
+ \Gamma_h=-J\delta,\qquad
+ (\Gamma_3)_t=-\det(\beta,\delta_t),
+\end{equation}
+where $h$ denotes horizontal components. The vertical integrand is
+cell-periodic. Its total integral is zero by \eqref{eq:zero-action}, so
+each of the $N$ equal cell integrals is zero. Thus the vertical primitive
+is periodic on every cell. Fix its additive constant. Since
+$\delta_r=m\beta_r$, \eqref{eq:P-formula} gives
+\begin{equation}\label{eq:initial-speed}
+ \Gamma_r=a_0P,\qquad a_0=mw^2>0.
+\end{equation}
+Its horizontal projection is embedded, so $\Gamma$ is embedded.
+
+For any positive $\ell$-periodic speed $a$, closure reduces to the scalar
+moment
+\begin{equation}\label{eq:closing-moment}
+ M(a)=\int_0^\ell aP_3\,dr=0.
+\end{equation}
+Indeed, the horizontal cell increments are successive rotations and
+sum to zero; the vertical increments are all equal. Choose the horizontal
+initial point by
+\begin{equation}\label{eq:covariant-start}
+ (Q-I)\Gamma_h(0)=\int_0^\ell aP_h\,dr.
+\end{equation}
+Then $\Gamma(r+\ell)=Q\Gamma(r)$. The new planar trace
+$\delta_a=J\Gamma_h$ satisfies $(\delta_a)_r=(a/w^2)\beta_r$:
+changing speed preserves its oriented tangent direction. The initial
+speed recovers $\delta$ and satisfies $M(a_0)=0$.
+
+The return balance over one cell is
+\begin{equation}\label{eq:balance-moment}
+ \mathscr B_\ell(a)=\int_0^\ell\frac{\kappa_r}{\sqrt a}\,dr.
+\end{equation}
+We use $\mathscr B_\ell$ here to distinguish this scalar from the support
+tensor $B_H$.
+
+\begin{proposition}[One-slowdown holonomy correction]\label{prop:one-slowdown}
+If $b>0$ is $\ell$-periodic with $M(b)=0$, $\kappa$ is nonconstant,
+and $P_3\not\equiv0$, then for every $\eta>0$ a positive smooth
+$\ell$-periodic $a$ satisfies
+\[
+ \|a-b\|_{L^1(0,\ell)}<\eta,\qquad M(a)=0,
+ \qquad\mathscr B_\ell(a)=0.
+\]
+The change is supported in at most two arbitrarily short intervals.
+\end{proposition}
+\begin{proof}
+Apply Lemma~\ref{lem:finite-moment-balance} on the cell circle with
+$f=P_3$, $g=\kappa_r$, and $B_*=0$. The moment rank is one, and the
+periodic nonconstant $\kappa$ has derivative of both signs. One slowdown
+and one compensating control suffice.
+\end{proof}
+
+\begin{theorem}[Balanced embedded speed]\label{thm:spike}\label{lem:speed}
+For every $\eta_0>0$, the seed admits a positive smooth $\ell$-periodic
+speed $a$ with
+\begin{equation}\label{eq:balanced-speed}
+ \|a-a_0\|_{L^1(0,\ell)}<\eta_0,\qquad
+ M(a)=0,\qquad\mathscr B_\ell(a)=0.
+\end{equation}
+For small enough $\eta_0$, its spatial primitive and horizontal
+projection are embedded, and both visibility conditions persist.
+\end{theorem}
+\begin{proof}
+The seed has nonconstant $\kappa$. Also $P_3\not\equiv0$: otherwise
+$\det(\beta,\beta_r)=0$ would prevent $\beta$ from winding around zero.
+The proposition therefore gives the speed. For fixed $N$, the initial
+point in \eqref{eq:covariant-start} varies continuously with the cell
+integral, and integration of $aP$ gives uniform closeness of primitives.
+On short parameter arcs, a fixed linear functional is monotone along all
+positive-speed primitives; on the remaining pairs, the original embedded
+curve has positive separation. This proves embedding for the spatial
+curve and its horizontal projection. Visibility, after division by positive
+speeds, depends on positions and the fixed oriented tangent directions.
+Its strict margins therefore survive the uniform positional change.
+The seed parameter $N$ is fixed before choosing the speed correction.
+The band width is chosen only after the final positive speed $a$ is
+fixed; the $L^1$ estimate does not give uniform bounds for its curvature
+or torsion.
+\end{proof}
+
+\begin{remark}[Why a constant speed does not suffice]\label{rem:constant-speed-obstruction}
+A constant $a$ cancels the return period, but cannot close this
+hemispherical normal loop. If $D$ is the spherical disk bounded by
+$\zeta$, then
+\[
+ \oint\Gamma_r\,dr=-a\oint\zeta\times d\zeta
+ =-2a\int_D\zeta\,dA.
+\]
+The vertical component of the last integral is positive. Thus speed
+redistribution solves a real closure obstruction.
+\end{remark}
+
+\subsection{The balanced band and its support tensor}
+Fix the final speed and set $ds=a\,dr$, with
+$L=\int_0^{N\ell}a\,dr$. In physical arclength the frame is
+$T=P$, $E=\zeta_r$, $n=\zeta$, and
+\begin{equation}\label{eq:frame-speed}
+ k=\frac\kappa a,\qquad \tau=-\frac1a,\qquad
+ \lambda=-\frac{a_r}{a^2},\qquad D=\frac{\kappa_r}{a^2}.
+\end{equation}
+These identities follow from $\partial_s=a^{-1}\partial_r$; in particular
+the subscripts defining $\lambda$ and $D$ are $s$ derivatives. Hence
+\[
+ I_0=\int_0^{N\ell}\frac{\kappa_r}{2\sqrt a}\,dr
+ =\frac N2\mathscr B_\ell(a)=0.
+\]
+Theorem~\ref{thm:ruled} supplies the localized kernel.
+
+The ruled Gauss map is locally invertible because $K<0$, and its central
+restriction is the embedded curve $\zeta$. It is therefore injective on
+a thin band. Shrink the band so that its normals remain in the northern
+hemisphere. Horizontal projection is then locally invertible and is
+injective on the central curve, so it too is injective on a thin band.
+Fix a width satisfying both requirements.
+
+\begin{proposition}[Central support tensor]\label{prop:central-support}
+In Gauss coordinates, the support tensor along the central curve is
+\begin{equation}\label{eq:central-B}
+ B_H=\begin{pmatrix}0&a\\a&0\end{pmatrix}
+\end{equation}
+in the spherical orthonormal basis $(\zeta_r,P)$. Its mixed entry is
+strictly positive.
+\end{proposition}
+\begin{proof}
+The central derivative is $\Gamma_r=aP$, so $B_H\zeta_r=aP$.
+At $u=0$, the ruled normal has $N_u=P/a$, while $X_u=\zeta_r$.
+Consequently $B_HP=a\zeta_r$, giving the second column.
+\end{proof}
+
+\section{Positive exits without changing the bending region}\label{sec:exits}
+The ruled core has closed characteristics, whereas the completion needs
+positive noncharacteristic seams. We create those seams in two collars
+where all retained bendings vanish. The core itself stays fixed.
+
+\subsection{Changing return and finding a positive curve}
+\begin{lemma}[Exit perturbation]\label{lem:exit}
+Let a saddle support in the northern hemisphere have a positively oriented
+embedded closed asymptotic curve enclosing the north pole. Suppose its
+return germ is the identity and the mixed support entry, evaluated on
+unit tangent and outward conormal, is positive. Inside any prescribed
+collar, an arbitrarily small $C^2$ perturbation fixing the first jet on
+the curve can make return attracting or repelling. The attracting choice
+gives arbitrarily close positive closed curves on the exterior side;
+the repelling choice gives them on the interior side.
+\end{lemma}
+\begin{proof}
+\emph{Step 1: express the multiplier through the normal second jet.}
+Parametrize the curve $q_0(r)$ by spherical arclength, of period
+$\mathcal L$, and let $P=-q_0\times(q_0)_r$ be its outward conormal.
+The Fermi map and metric are
+\[
+ q(r,t)=\cos t\,q_0(r)+\sin t\,P(r),\qquad
+ h^2dr^2+dt^2,\qquad h=\cos t+\kappa(r)\sin t.
+\]
+Here $t>0$ is exterior and $(q_0)_{rr}=-q_0-\kappa P$.
+Write $B_H=L\,dr^2+2M\,dr\,dt+N\,dt^2$, with
+$(L,M,N)|_{t=0}=(0,a,c)$ and $a>0$. The coordinate expressions are
+\[
+ L=H_{rr}-\frac{h_r}{h}H_r+hh_tH_t+Hh^2,
+ \quad M=H_{rt}-\frac{h_t}{h}H_r,\quad N=H_{tt}+H.
+\]
+On the seam they give
+\begin{equation}\label{eq:seam-derivative}
+ L_t=a_r+\kappa c.
+\end{equation}
+For clarity, $a_r=H_{rrt}-\kappa_rH_r-\kappa H_{rr}$ there;
+subtracting this from $L_t$ leaves
+$\kappa(H_{rr}+\kappa H_t+H)+\kappa(H_{tt}+H)=\kappa c$.
+The asymptotic slope vanishing on the seam is
+\[
+ t_r=f(r,t)=-\frac{L}{M+\sqrt{M^2-LN}},\qquad
+ f_t(r,0)=-\frac{a_r+\kappa c}{2a}.
+\]
+Integrating its variational equation gives
+\begin{equation}\label{eq:multiplier}
+ \mu=\exp\left(-\frac12\int_0^{\mathcal L}\frac{\kappa c}{a}\,dr\right),
+\end{equation}
+because the period of $a_r/a$ is zero.
+
+\emph{Step 2: change that jet while retaining the curve.}
+Choose a cutoff $\chi(t)$ supported in the prescribed collar and equal
+one near zero. Put
+\[
+ H_\epsilon=H+\frac\epsilon2a(r)\kappa(r)t^2\chi(t).
+\]
+The first jet is unchanged; $L=0$ and $M=a$ remain, while $c$ changes
+to $c+\epsilon a\kappa$. Since the original multiplier is one,
+\begin{equation}\label{eq:perturbed-multiplier}
+ \mu_\epsilon=\exp\left(-\frac\epsilon2
+                  \int_0^{\mathcal L}\kappa^2\,dr\right).
+\end{equation}
+The integral is positive: otherwise the curve would be a great circle,
+which cannot lie in an open hemisphere. Thus $\epsilon>0$ gives
+attraction and $\epsilon<0$ repulsion. For fixed collar and cutoff, small
+$\epsilon$ preserves the saddle determinant by $C^2$ continuity.
+
+\emph{Step 3: produce a positive closed graph on the chosen side.}
+Fix such a nonzero $\epsilon$, set $b(r)=f_t(r,0)$ for the perturbed
+support, and let $\bar b=(\log\mu_\epsilon)/\mathcal L$.
+The zero-mean equation $v_r=(b-\bar b)v$ has a positive periodic solution.
+For the graph $t=\delta v(r)$, uniform Taylor expansion gives
+\[
+ B_{H_\epsilon}(\partial_r+t_r\partial_t,
+                       \partial_r+t_r\partial_t)
+ =-2ab\delta v+2a\delta v_r+O(\delta^2)
+ =-2a\bar b\delta v+O(\delta^2).
+\]
+This is positive for small $\delta>0$ in the attracting case and small
+$\delta<0$ in the repelling case. The graphs are embedded closed curves
+in the collar and converge smoothly to the seam.
+\end{proof}
+
+\subsection{Fixing the protected annulus and both exits}
+Choose $I=(c_-,c_+)$ with compact closure in the complete-leaf interval
+of Theorem~\ref{thm:ruled}. Let $V_0$ be the compact annulus swept out
+by the levels $c\in[c_-,c_+]$. All fields from $C_c^\infty(I)$ are
+supported in $V_0$. Choose levels
+$c_b<c_1<c_-<c_+<c_2$. Their leaves bound a larger annulus, and their
+disjoint collars can be chosen separated from a neighborhood of $V_0$.
+Every retained bending vanishes on those collars.
+
+In the Gauss domain, the leaves are nested positively oriented curves
+around the north pole. Their mixed entries remain positive by
+\eqref{eq:central-B} and thinness. Apply the exit lemma with attraction
+on the outer leaf and repulsion on the inner leaf. Choose the perturbations
+small enough to preserve embedding of the support immersion and its
+horizontal projection; then choose the positive graphs sufficiently close
+to the perturbed seams.
+
+In planar coordinates denote the resulting source traces by $p_-,p_+$,
+and their gradient traces by $\gamma_-,\gamma_+$. They satisfy
+\begin{equation}\label{eq:positive-traces}
+ p_\pm'\cdot\gamma_\pm'>0.
+\end{equation}
+Both source and gradient maps are embeddings on a neighborhood of the
+annulus between them. The individual traces are positively oriented and
+enclose zero. The outer pair $(p_+,J\gamma_+)$ is visible at $R_+$;
+the inner pair needed after duality is
+\begin{equation}\label{eq:reflected-visible}
+ \bigl(S\gamma_-(-s),JS p_-(-s)\bigr),
+\end{equation}
+visible at $R_-$. These follow by continuity from the seed inequalities:
+the central source and gradient are $\beta$ and $-J\delta$, and
+$SJ=-JS$ identifies the reflected central pair with the one in
+Lemma~\ref{lem:seed}.
+
+The source order is $p_-$ inside $p_+$. The gradient order is reversed:
+$\gamma_+$ lies inside $\gamma_-$. Indeed, the gradient is an
+orientation-reversing diffeomorphism, while both gradient boundary
+curves are parametrized counterclockwise; the induced boundary
+orientations determine which one is inner. Thus the minus sign in a
+trace name refers to its source boundary, not to its gradient position. We fix all these choices in order: final speed, thin
+band, protected levels and collars, small exit perturbations, then close
+positive exit graphs. Every required margin is strict on a compact set.
+From this point onward, an open neighborhood of $V_0$ is kept unchanged.
+
+\section{Support completion by dual radial filling}\label{sec:completion}
+The protected band has two positive noncharacteristic exit curves.
+The only nonradial extension tool we retain is a visible connector: it
+makes an outgoing \emph{gradient} trace circular. A differential Legendre
+transform then makes that circle a \emph{source} seam, where a large
+radial quadratic term controls the saddle Hessian. On one end we continue
+to a polar circle; on the other we attach a square-root Legendre profile
+which becomes a reflectable parabolic neck. The same radial lemma treats
+both ends, but the roles of source and gradient are exchanged at each
+Legendre transform. We record those domains explicitly in the final
+completion proof. All changes to the support occur outside the
+protected core. A single ambient normalization, applied also to the
+retained fields, is recorded in Section~\ref{sec:model-saddle}.
+
+
+Figure~\ref{fig:completion} follows the completion in two complementary
+views. The physical windows retain the actual band and its attachments;
+the domain diagram records which circular trace is a gradient and which
+is a source. At the final common physical scale the band and neck are
+microscopic, so the global cutaway serves to show the assembly, while
+the local windows show the attachment geometry.
+
+
+
+\subsection{Relative smoothing at a positive seam}
+\begin{lemma}[Relative saddle smoothing]\label{lem:smoothing}
+Suppose two smooth planar potentials have matching values and gradients
+on a compact embedded closed seam. If their Hessians are indefinite and
+their common tangential quadratic form is positive, they admit a smooth
+saddle interpolation equal to the old pieces outside any prescribed seam
+neighborhood and arbitrarily close to the piecewise potential in $C^1$.
+\end{lemma}
+\begin{proof}
+\emph{The allowed second jets form a convex interval.}
+Use tubular coordinates $(s,t)$ with seam $t=0$ and denote the piecewise
+function by $G_{\rm pw}$. Matching first jets makes it $C^1$ with locally
+Lipschitz first derivatives. Differentiating the common gradient along
+the seam shows that the tangential and mixed Hessian entries agree.
+In a tangent-normal orthonormal frame the limiting Hessians are
+\[
+ H_\pm(s)=\begin{pmatrix}a(s)&b(s)\\b(s)&c_\pm(s)\end{pmatrix},
+ \qquad a>0,\quad c_\pm<b^2/a.
+\]
+There is a uniform strict margin, and every convex combination remains
+indefinite because only the normal entry varies.
+
+\emph{Mollify and retain the old germs.}
+Extend the coordinate cylinder periodically in $s$ and convolve with a
+symmetric nonnegative mollifier of radius $\delta$. Since the gradient
+has no jump, the distributional Hessian has no seam measure. Close to
+the seam, the mollified Hessian is a weighted average of nearby one-sided
+Hessians, uniformly $o(1)$ from the displayed convex segments. Conversion
+from coordinate Hessians to Euclidean Hessians adds only $o(1)$ errors,
+since the gradients converge uniformly. Thus the determinant stays negative.
+Away from the seam, ordinary $C^2$ convergence gives the same conclusion.
+
+Patch the mollified function to $G_{\rm pw}$ with a cutoff equal one for
+$|t|\le h$ and zero for $|t|\ge2h$, where $h=\sqrt\delta$.
+On the transition strips the mollifier stays on one smooth side.
+Its value and gradient errors are $O(\delta^2)$ and $O(\delta)$.
+The additional Hessian terms are therefore
+$O(\delta^2h^{-2}+\delta h^{-1})=o(1)$. The saddle margin survives,
+the $C^1$ error tends to zero, and the old pieces are unchanged for
+$|t|\ge2h$. Taking $\delta$ small places all changes inside the prescribed
+neighborhood.
+\end{proof}
+When using this lemma we cut the retained boundary inside an unchanged
+incoming subcollar. Local smoothing gives no automatic global injectivity;
+we verify it from the unchanged boundary images and the degree criterion.
+
+\subsection{A connector with circular outgoing gradient}
+The design is to draw a family of straight source segments from $p$,
+choose their lengths so the terminal gradient is a circle, and then use
+degree to rule out overlaps in both source and gradient.
+\begin{lemma}[From a visible trace to a circular gradient]\label{lem:connector}
+Let $p,\delta:\R/T\mathbb Z\to\R^2$ be positively oriented embedded
+curves enclosing zero. Put $\gamma=-J\delta$ and assume
+\begin{equation}\label{eq:connector-data}
+ p'\cdot\gamma'>0,\qquad g'=\gamma\cdot p'
+\end{equation}
+for a periodic $g$. If $(p,\delta)$ is visible at $R>0$, an exterior
+source annulus carries a saddle potential with incoming value $g$ and
+gradient $\gamma$, and outgoing gradient a positively parametrized
+circle of radius $R$. Both boundaries are positive for the Hessian.
+The source and gradient maps are diffeomorphisms of interiors onto their
+respective planar annuli. If the terminal gradient is written
+$Re_\theta$, its terminal source trace $P_\mathrm{out}(\theta)$ also
+satisfies $P_\mathrm{out}\cdot e_\theta>0$ for a sufficiently small
+connector parameter. If an incoming saddle germ supplies the data,
+relative smoothing retains a smaller incoming collar and the outgoing germ.
+\end{lemma}
+\begin{proof}
+\emph{Step 1: choose the segment directions and lengths.}
+Set $\kappa_0=\sqrt{|\delta|^2-R^2}$ and choose an angular lift with
+\begin{equation}\label{eq:visibility-angle}
+ e_\varphi=V_R(\delta),\qquad
+ \delta=Re_\varphi-\kappa_0Je_\varphi.
+\end{equation}
+Differentiation gives $\varphi'=\delta'\cdot e_\varphi/\kappa_0>0$.
+The argument of $\delta$ differs from $\varphi$ by the periodic angle
+$-\arctan(\kappa_0/R)$, so $\varphi(s+T)=\varphi(s)+2\pi$.
+Choose a small constant $\eta>0$, put $\psi=\varphi-\eta$ and
+$w=\delta-Re_\psi$, and define
+\begin{equation}\label{eq:connector-scalars}
+ E_0=\delta\cdot e_\psi-R,\quad
+ A_0=\det(w,p'),\quad B_0=\det(w,\delta'),\quad
+ C_0=E_0R\psi',\quad \ell=A_0/C_0.
+\end{equation}
+All four scalars are positive for small $\eta$, uniformly in $s$:
+$E_0=\kappa_0\sin\eta-R(1-\cos\eta)$,
+$A_0\to\kappa_0p'\cdot e_\varphi>0$, and
+$B_0\to\kappa_0\delta'\cdot e_\varphi>0$.
+
+\emph{Step 2: verify local potential and saddle determinant.}
+On $0\le u\le\ell(s)$ put
+\begin{equation}\label{eq:connector-map}
+ P(s,u)=p+uw,\qquad \Delta=A_0+u(B_0-C_0),\qquad
+ \widehat G(s,u)=g+u\gamma\cdot w.
+\end{equation}
+At the endpoints $\Delta=A_0$ and $\Delta=\ell B_0$, hence $\Delta>0$.
+Since $\det(w,w')=B_0-C_0$,
+\begin{equation}\label{eq:connector-jacobian}
+ \det(P_s,P_u)=-\Delta<0.
+\end{equation}
+In a local inverse chart $G=\widehat G\circ P^{-1}$ has gradient
+\begin{equation}\label{eq:connector-gradient}
+ Y=\gamma+\frac{uB_0}{\Delta}Jw,
+ \qquad Y_u=\frac{A_0B_0}{\Delta^2}Jw.
+\end{equation}
+Indeed, $Y\cdot P_u=\widehat G_u$; also $Jw\cdot P_s=\Delta$ and
+$\gamma'\cdot w=B_0$, so $Y\cdot P_s=\widehat G_s$.
+The pulled-back Hessian has $uu$ entry zero and mixed entry
+$A_0B_0/\Delta$. Dividing its determinant by the square of the source
+Jacobian gives
+\begin{equation}\label{eq:connector-det}
+ \det D^2G=-\frac{A_0^2B_0^2}{\Delta^4}<0.
+\end{equation}
+At $u=\ell$ the fraction in \eqref{eq:connector-gradient} is one, hence
+\begin{equation}\label{eq:connector-terminal}
+ Y(s,\ell(s))=-RJ e_{\psi(s)}.
+\end{equation}
+
+\emph{Step 3: prove global source injectivity.}
+As $\eta\downarrow0$, convergence in each fixed smooth norm gives
+\begin{equation}\label{eq:connector-limit}
+ \eta\ell\longrightarrow z_0:=\frac{p'\cdot e_\varphi}{R\varphi'}>0,
+ \qquad \eta P(s,\ell(s))\longrightarrow-z_0\kappa_0Je_\varphi.
+\end{equation}
+For $\theta=\psi-\pi/2$, the same limit gives
+$\eta P(s,\ell(s))\cdot e_\theta\longrightarrow
+z_0\kappa_0>0$. This is the radial-derivative condition needed after
+Legendre duality. The limit is a radial graph with positive radius and
+strictly increasing polar angle $\varphi-\pi/2$. Its radius and angular derivative have
+positive minima. For small $\eta$ the terminal source curve is therefore
+embedded, positively oriented, and star-shaped, and its unscaled radius
+tends uniformly to infinity. It encloses $p$. The induced orientations
+of the two boundary curves are opposite. Lemma~\ref{lem:degree}, together
+with \eqref{eq:connector-jacobian}, gives global injectivity of $P$ and a
+single well-defined potential on its source annulus.
+
+\emph{Step 4: check the seams and global gradient injectivity.}
+Differentiating \eqref{eq:connector-limit} and pairing with $e_\psi$ yields
+\[
+ \eta\frac d{ds}P(s,\ell(s))\cdot e_\psi
+ \longrightarrow z_0\kappa_0\varphi'>0.
+\]
+The outgoing gradient derivative is $R\psi'e_\psi$, so its tangential
+Hessian is positive. The incoming one is positive by hypothesis.
+The incoming gradient curve $\gamma=-J\delta$ encloses the disk of
+radius $R$: it is embedded, surrounds zero, and stays outside that disk.
+Thus the gradient boundary curves are disjoint and nested. Equation
+\eqref{eq:connector-det} and the degree criterion give global gradient
+injectivity. Finally the incoming first jet is exactly $(g,\gamma)$.
+Relative saddle smoothing attaches any incoming germ while retaining
+both an unchanged incoming subcollar and the outgoing germ. The boundary
+images still provide the same degree argument on the joined annulus.
+\end{proof}
+
+
+\subsection{Quadratic filling of a circular source seam}
+The next lemma replaces the separate straightening, logarithmic, and cap
+constructions. Its proof uses two \emph{linear} inequalities within the
+nonconvex saddle condition. For a function in polar coordinates,
+\begin{equation}\label{eq:polar-hessian}
+ D^2 f\big|_{(e_\theta,Je_\theta)}=
+ \begin{pmatrix}
+ f_{rr}& f_{r\theta}/r-f_\theta/r^2\\
+ f_{r\theta}/r-f_\theta/r^2&(f_{\theta\theta}+rf_r)/r^2
+ \end{pmatrix}.
+\end{equation}
+Thus $f_{rr}<0$ and $f_{\theta\theta}+rf_r>0$ imply
+$\det D^2f<0$, regardless of the mixed derivative.
+
+\begin{lemma}[Quadratic filling at a circular seam]
+\label{lem:quadratic-filling}
+Let $f$ be a smooth saddle potential on an exterior collar of
+$\{|y|=R\}$, with boundary traces
+\[
+ h(\theta)=f(Re_\theta),\qquad b(\theta)=f_r(Re_\theta).
+\]
+Assume
+\begin{equation}\label{eq:radial-fill-data}
+ b(\theta)>0,\qquad h''(\theta)+Rb(\theta)>0.
+\end{equation}
+There is a smooth saddle extension into $0<|y|<R$, agreeing with $f$
+outside any prescribed seam neighborhood, and equal near the puncture to
+\begin{equation}\label{eq:quadratic-germ}
+ f(y)=c|y|-\frac M2|y|^2+d,\qquad c=MR,
+\end{equation}
+where $M>0$ can be arbitrarily large. If additionally the trace
+$\nabla f(Re_\theta)$ is a positively oriented Jordan curve enclosing
+zero, the extension can be chosen with globally injective gradient on
+the attached annulus, and the radial inner-gradient circle can be made
+to enclose that Jordan curve.
+\end{lemma}
+\begin{proof}
+Choose a smooth function $\chi:[0,R]\to[0,1]$ equal to zero for
+$r\le R/2$ and one for $r\ge3R/4$. On $0<r\le R$ put
+\begin{equation}\label{eq:quadratic-filling}
+ f_M(r,\theta)=-\frac M2(r-R)^2
+   +\chi(r)\bigl[h(\theta)+(r-R)b(\theta)\bigr].
+\end{equation}
+At $r=R$ this has exactly the prescribed value and first derivatives.
+All the angular terms and their derivatives are bounded independently
+of $M$, while
+\begin{equation}\label{eq:quadratic-radial-signs}
+ (f_M)_{rr}=-M+O(1),\qquad
+ (f_M)_{\theta\theta}+r(f_M)_r
+     =Mr(R-r)+O(1).
+\end{equation}
+At $r=R$, the full second expression is $h''+Rb>0$ by
+\eqref{eq:radial-fill-data}. By continuity and the nonnegative
+leading term, it remains positive in a fixed narrow collar below
+$R$ for large $M$. Off that collar the leading term
+$Mr(R-r)$ is positive; on $r<R/2$ the angular error vanishes altogether.
+Hence both strict inequalities preceding the lemma hold throughout the
+punctured disk. Near $r=0$ formula \eqref{eq:quadratic-filling} is
+exactly \eqref{eq:quadratic-germ} with $d=-MR^2/2$.
+
+The two potentials have a common first jet on $r=R$, indefinite
+Hessians, and positive common tangential Hessian
+$(h''+Rb)/R^2$. Lemma~\ref{lem:smoothing} gives a smooth
+interpolation confined to an arbitrarily small seam collar, retaining
+both the exterior original germ and the radial inner germ. First fix
+$M$, then take that collar sufficiently small. The smoothing preserves
+negative Hessian determinant and positive tangential quadratic form;
+it need not preserve the sufficient inequality $(f_M)_{rr}<0$ on the
+incoming side of the seam.
+
+For the injectivity assertion, write $P(\theta)=\nabla f(Re_\theta)$.
+The positive Jordan curve $P$ persists on a nearby unchanged exterior
+circle. Take a fixed small inner circle $r=r_0<R/2$. There
+\[
+ \nabla f_M(r_0e_\theta)=(MR-Mr_0)e_\theta.
+\]
+For large $M$ this circle surrounds $P$. Between the two boundaries
+$\det D^2f<0$, the boundary maps are embedded and nested, and their
+induced winding numbers are opposite. The annular degree criterion,
+Lemma~\ref{lem:degree}, gives global gradient injectivity, also after
+relative smoothing. The same argument applies to any shorter compact
+annulus within the extension.
+\end{proof}
+
+\subsection{A radial neck adapter}
+The quadratic germ can be ended at the puncture, or it can be joined
+radially to a square-root germ. The latter has a particularly simple
+inverse Legendre transform.
+
+\begin{lemma}[Square-root neck adapter]\label{lem:neck-adapter}
+Suppose a radial saddle potential $f=f(r)$ has $f'>0$ and $f''<0$
+near a circle $r=r_j>0$. Choose any $0<a<r_j$ and set
+\begin{equation}\label{eq:neck-adapter-constants}
+ \ell=r_j-a,\quad B=f'(r_j)^2\ell,\quad
+ C=f(r_j)-2f'(r_j)\ell.
+\end{equation}
+Then
+\begin{equation}\label{eq:sqrt-neck}
+ f_{\rm neck}(r)=C+2\sqrt{B(r-a)},\qquad a<r\le r_j,
+\end{equation}
+matches the value and radial derivative of $f$ at $r_j$, and satisfies
+$f_{\rm neck}'>0$, $f_{\rm neck}''<0$. Relative radial smoothing gives
+a smooth saddle continuation, unchanged near its original incoming
+collar and exactly \eqref{eq:sqrt-neck} near $r=a$. The radial gradient
+there has norm tending to infinity as $r\downarrow a$.
+\end{lemma}
+\begin{proof}
+The derivative is $\sqrt{B/(r-a)}$, and the second derivative is
+$-\sqrt B/(2(r-a)^{3/2})$. The constants in
+\eqref{eq:neck-adapter-constants} give the matching first jet. In a
+radial interpolation, the second derivative may be smoothed through
+negative functions while the first derivative remains positive; this
+is the one-dimensional special case of Lemma~\ref{lem:smoothing}.
+The radial Hessian eigenvalues $f''$ and $f'/r$ keep opposite signs.
+On the square-root segment the radial gradient is strictly monotone
+and becomes unbounded at $a$.
+\end{proof}
+
+\subsection{The two-sided extension theorem}
+We now state explicitly what the global construction takes as input.
+Neither the identity-return property nor a ruling is used in this
+step. They were needed to create the protected band and its bendings,
+not to extend a positive boundary jet.
+
+\begin{proposition}[Two-sided support completion]\label{prop:dual-radial-completion}
+Suppose a compact saddle support annulus has injective source and
+gradient maps, nested positively oriented source and gradient boundary
+curves enclosing zero, and positive boundary traces as in
+\eqref{eq:positive-traces}. Assume its outer boundary pair and its
+reflected Legendre-dual inner pair obey the two visibility conditions
+\eqref{eq:reflected-visible}. Then, after leaving an arbitrary
+prescribed smaller protected annulus unchanged, it admits a saddle
+support extension $\widetilde G$ on $\mathbb R^2\setminus\{0\}$ with
+\begin{equation}\label{eq:radial-two-ends}
+ \begin{aligned}
+ \widetilde G(p)&=R_N|p|-\frac\mu2|p|^2+d_0
+     && (0<|p|\ll1),\\
+ \widetilde G(p)&=A|p|-\frac B{|p|}+d_\infty
+     && (|p|\gg1),
+ \end{aligned}
+\end{equation}
+where $R_N>A>0$ and $\mu,B>0$. The gradient is a
+diffeomorphism
+\begin{equation}\label{eq:full-gradient-annulus}
+ \nabla\widetilde G:\mathbb R^2\setminus\{0\}
+       \longrightarrow \{y\in\mathbb R^2:A<|y|<R_N\}.
+\end{equation}
+Every smoothing takes place outside the protected region.
+\end{proposition}
+\begin{proof}
+\emph{The exterior end.}
+Apply Lemma~\ref{lem:connector} to $(p_+,J\gamma_+)$, retaining an
+incoming collar. Its terminal gradient is $Re_\theta$, and the
+terminal source trace $P(\theta)$ is a positive Jordan curve with
+$P\cdot e_\theta>0$. Apply the differential Legendre transform
+$f=G^*$ on the gradient image. Its source seam is the circle
+$y=Re_\theta$ and
+\[
+ f_r(Re_\theta)=P\cdot e_\theta>0,\qquad
+ h''+Rf_r=R P_\theta\cdot Je_\theta>0.
+\]
+The last inequality is precisely positivity of the connector's
+outgoing seam. Lemma~\ref{lem:quadratic-filling} therefore continues
+$f$ radially inward, with injective gradient. Stop within the
+quadratic radial region at $r=r_j$, and apply
+Lemma~\ref{lem:neck-adapter}; choose its inner radius $a=A>0$.
+The gradient of this dual continuation tends radially to infinity at
+$r=A$. Inverse Legendre transformation consequently extends the
+original potential toward $|p|=\infty$. Indeed, on the terminal
+square-root germ $|p|=f_{\rm neck}'(r)$, so
+$r=A+B/|p|^2$ and
+\[
+ p\cdot y-f_{\rm neck}(y)=A|p|-B/|p|-C.
+\]
+This is the second germ in \eqref{eq:radial-two-ends}.
+For clarity, the three domains in this exterior construction are
+$ p $-space for $G$, $y=\nabla G(p)$-space for $f=G^*$, and
+$p=\nabla f(y)$-space when we return to the original potential.
+Moving inward in the $y$-source annulus makes the $p$-gradient
+circles expand. The square-root endpoint $|y|=A$ therefore becomes
+the unbounded original-source end. Each relative smoothing retains
+an open incoming collar and the exact terminal radial germ.
+
+\emph{The interior end.}
+Use reflected differential duality: put $K(x)=G^*(Sx)$. In terms
+of the original inner traces $(p_-,\gamma_-)$, the new source and
+gradient traces, with reversed parameter, are respectively
+\[
+ p^-(s)=S\gamma_-(-s),\qquad \gamma^-(s)=Sp_-(-s).
+\]
+The action period still vanishes, since
+$\oint p_-\cdot d\gamma_-=-\oint\gamma_-\cdot dp_-=0$.
+The original gradient curve $\gamma_-$ is the outer boundary
+of the gradient annulus, so $S\gamma_-$ is the outer source boundary
+for $K$. Reflection reverses planar orientation and $s\mapsto-s$
+reverses it again; both new trace parametrizations are therefore
+positive. The connector extends $K$ on its exterior side. After
+taking $K^*$, this added region lies on the bounded source side of
+the original $p_-$ boundary. This is the interior end we need. Its trace meets the same connector
+hypotheses by \eqref{eq:reflected-visible}. Run the connector, then
+take $f=K^*$ and use Lemma~\ref{lem:quadratic-filling} down to the
+puncture. On the unchanged initial collar
+\[
+ K^*(y)=G(Sy),
+\]
+so the inverse reflection recovers the original $G$. The radial
+quadratic germ of $K^*$ is invariant under $S$, giving the first
+germ in \eqref{eq:radial-two-ends}. Its leading radius
+$R_N=\mu R$ can be made arbitrarily large; we choose it larger than
+$A$ and than the bounded intermediate gradient traces.
+
+\emph{Global geometry and periods.}
+We apply the degree criterion to different maps at different stages.
+First, the connector source map $P$ has an embedded large outer
+boundary enclosing its incoming source curve; its negative Jacobian
+therefore proves source injectivity. Second, on the retained support
+plus connector, the gradient has nested boundary images: the retained
+original gradient boundary and the new radius-$R$ circle. Degree gives
+a global inverse on this joined annulus, so the first dual potential
+is single-valued.
+
+Third, in each dual filling, retain the far incoming boundary in an
+unchanged collar. The newly added small source circle is inside it,
+whereas its gradient is a large circle enclosing the incoming gradient
+trace. The coefficient in Lemma~\ref{lem:quadratic-filling} is chosen
+after those traces are fixed. Degree makes the continued dual gradient
+injective on every such compact annulus. The radial neck has strictly
+monotone, expanding gradient radii, so the same argument persists down
+to any circle above its inner endpoint. These are the global inverse
+domains used to transform back. Relative smoothing changes no
+retained boundary germ in these degree applications.
+
+Finally, the original inner and outer extensions agree with $G$ on
+open collars on their respective sides. They thus define one potential
+$\widetilde G$ on the punctured plane. Its global gradient image is
+verified separately by the following exhaustion. On the inner and outer radial collars,
+for sufficiently small $\varepsilon>0$ and large $L$,
+\[
+ \nabla\widetilde G(\varepsilon e_\theta)
+       =(R_N-\mu\varepsilon)e_\theta,
+ \qquad
+ \nabla\widetilde G(Le_\theta)
+       =(A+B/L^2)e_\theta.
+\]
+The boundary circles are disjoint and nested, and the Hessian
+Jacobian is negative on the intervening source annulus.
+Lemma~\ref{lem:degree} proves that its gradient is a
+diffeomorphism onto the intervening planar annulus. Exhausting the
+punctured plane establishes \eqref{eq:full-gradient-annulus}.
+All Legendre transformations are genuine differentials of globally
+injective gradients on the relevant compact annuli; they therefore
+introduce no missing periods. The inner and outer potentials recover
+the original value and gradient on unchanged overlaps, so they
+assemble into one globally defined support.
+\end{proof}
+
+
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/05-completion.pdf}
+\caption{Completion of the saved balanced numerical band and the proof's
+domain changes. (a) The unchanged protected band is gold; the initial
+outer and inner attachments are teal and purple.
+(b) The blue patch begins the radial filling beyond the outer connector.
+Both windows have the same physical bounds and scale.
+(c) A positive exit feeds a visible connector with circular outgoing
+gradient. Legendre duality turns that trace into a circular source seam
+for quadratic radial filling. The two ends then receive the polar and
+neck profiles described in Proposition~\ref{prop:dual-radial-completion}.
+(d) A cutaway of the northern assembly, its reflection, and the gray
+convex exterior, all under one common similarity. Gold location markers
+are enlarged for visibility: the band is approximately
+$1.17\times10^{-12}$ of the total height in this saved assembly.
+The mesh matches first jets at internal interfaces and is shown before
+relative smoothing; it does not certify a smooth tight torus.
+Lemma~\ref{lem:smoothing} and Section~\ref{sec:model-saddle} supply the
+smooth geometric completion in the proof.}
+\label{fig:completion}
+\end{figure}
+
+\section{From the radial support to a tight torus}\label{sec:model-saddle}
+Proposition~\ref{prop:dual-radial-completion} gives two explicit end
+germs without passing through a logarithmic support. One end resolves
+into a circular boundary, the other into a reflectable parabolic neck.
+We then close the resulting negative-curvature annulus by a convex
+annulus. This stage uses only the support geometry. It transports the
+protected bending region by one fixed ambient isometry.
+
+\subsection{Circular compactification and reflection}
+Let $\widetilde G$ be the completed potential in
+\eqref{eq:radial-two-ends}, and put $r=|p|$.
+Using \eqref{eq:planar}, its image near the puncture is
+\begin{equation}\label{eq:new-polar-immersion}
+ X_{\widetilde G}(r,\theta)=
+ ((R_N-\mu r)e_\theta,\ d_0+\tfrac\mu2r^2).
+\end{equation}
+Near infinity it is
+\begin{equation}\label{eq:new-neck-immersion}
+ X_{\widetilde G}(r,\theta)=
+ ((A+B/r^2)e_\theta,\ d_\infty-2B/r).
+\end{equation}
+Apply the ambient isometry $T(x)=-x+d_\infty e_3$ to the whole
+immersion, and shift the angular parameter by $\pi$. We use this same
+normalization for the protected core and its bending fields: if their
+original restrictions are $X|_V$ and $y|_V$, their restrictions after
+normalization are $T\circ X|_V$ and $dT(y)|_V=-y|_V$. Thus subsequent
+relative statements are literal in the normalized coordinates. At the
+puncture, write $t=-r$;
+then the northern boundary collar is
+\begin{equation}\label{eq:ring-N}
+ F_N(\theta,t)=(R_N+\mu t)e_\theta
+       +\bigl(h-\tfrac\mu2t^2\bigr)e_3,
+ \qquad -\delta<t\le0,
+\end{equation}
+where $h=d_\infty-d_0$. At the other end put $\eta=1/r$.
+The neck is
+\begin{equation}\label{eq:new-parabolic-neck}
+ X(\theta,\eta)=(A+B\eta^2)e_\theta+2B\eta e_3,
+ \qquad \eta\ge0,
+\end{equation}
+so its radius and height satisfy
+\begin{equation}\label{eq:parabolic-profile}
+ \rho_{\rm spatial}=A+\frac{z^2}{4B}.
+\end{equation}
+It is therefore smoothly reflected across $z=0$.
+
+The puncture $p=0$ is \emph{not} filled by one surface point: it
+resolves into a whole boundary circle. In \eqref{eq:ring-N}, the
+angular and transverse derivatives at $t=0$ are
+$R_NJe_\theta$ and $\mu e_\theta$, so the immersion is regular.
+The neck \eqref{eq:new-parabolic-neck} is also regular at $\eta=0$,
+where the corresponding derivatives are $AJe_\theta$ and $2Be_3$.
+
+\begin{proposition}[Completed saddle annulus]\label{prop:saddle}
+The completed support compactifies, after reflection at its neck,
+to a smooth embedded annulus $N$ with $K<0$ in its interior. Its
+boundary circles have common radius $R_N$, at heights $\pm h$ with
+$h>0$. Near them its collars are \eqref{eq:ring-N} and
+\begin{equation}\label{eq:ring-S}
+ F_S(\theta,t)=(R_N+\mu t)e_\theta
+       +\bigl(-h+\tfrac\mu2t^2\bigr)e_3,
+ \qquad -\delta<t\le0.
+\end{equation}
+On either collar,
+\begin{equation}\label{eq:ring-curvature}
+ K=\frac{t}{\mu(R_N+\mu t)(1+t^2)^2}.
+\end{equation}
+All bending fields supported in the protected region extend by zero
+over the annulus, and vanish on full boundary collars.
+\end{proposition}
+\begin{proof}
+\emph{Embeddedness of the upper half.}
+By \eqref{eq:full-gradient-annulus} its horizontal projection is
+globally injective on the punctured source. The two displayed end
+germs show that projection extends to nested disjoint boundary
+circles of radii $A<R_N$, with regular full surface collars.
+Consequently the compactified upper half is embedded.
+
+\emph{Height separation.}
+The interior Gauss normal is represented by
+$q(p)=(p,1)/\sqrt{1+|p|^2}$, up to orientation, and is never vertical
+for $0<|p|<\infty$. Hence the vertical height has no interior
+critical point. Formula \eqref{eq:new-parabolic-neck} gives strictly
+positive height close to the lower neck circle, while
+\eqref{eq:ring-N} gives height strictly below $h$ near the upper
+circle. The maximum and minimum on the compact annulus therefore
+occur at these boundary components. It follows that
+\[
+ h>0,\qquad 0<X_3<h\quad\text{in the upper interior}.
+\]
+The reflection at the even neck \eqref{eq:parabolic-profile} is
+smooth; the two halves have disjoint interiors, so their union is
+embedded and has negative curvature throughout the interior.
+
+\emph{Boundary curvature and retained fields.}
+For \eqref{eq:ring-N}, set $r(t)=R_N+\mu t$ and
+$z(t)=h-\mu t^2/2$. A unit normal is
+$(t e_\theta+e_3)/\sqrt{1+t^2}$; the metric coefficients are
+$r(t)^2$ and $\mu^2(1+t^2)$, and the second fundamental
+coefficients are $-r(t)t/\sqrt{1+t^2}$ and
+$-\mu/\sqrt{1+t^2}$. This proves \eqref{eq:ring-curvature}.
+Reflection gives the same intrinsic formula at the southern end.
+Every change was outside the protected region, where all retained
+bendings vanish on a collar; extension by zero is therefore smooth
+and preserves their linearized metric equations.
+\end{proof}
+
+\subsection{Convex closure}\label{sec:model-convex}
+The two boundary circles of the saddle annulus have radius $R_N$
+and heights $\pm h$. We join them by a positive-curvature annulus
+lying outside the cylinder of radius $R_N$. A concave radius as a
+function of height gives a convex lateral surface. At each end we
+prescribe the entire parabolic germ, so the final join is smooth.
+
+\begin{lemma}[Convex closure]\label{lem:convex}
+For any $R_N,\mu,h>0$, there exists a convex body whose boundary
+consists of the disks
+\[
+ D_\pm=\{(v,\pm h):|v|\le R_N\}
+\]
+and a smooth annulus $U_{\rm sp}$ with strictly positive curvature
+in its interior. The annulus agrees with \eqref{eq:ring-N} and
+\eqref{eq:ring-S} for $0\le t<\delta$, has outward Gauss map
+\begin{equation}\label{eq:convex-gauss}
+ \nu:U_{\rm sp}^{\circ}\longrightarrow
+            \mathbb S^2\setminus\{\pm e_3\}
+\end{equation}
+a diffeomorphism, and satisfies
+\begin{equation}\label{eq:convex-exterior}
+ U_{\rm sp}^{\circ}\subset
+      \{\rho_{\rm spatial}>R_N,\ |z|<h\},
+ \qquad U_{\rm sp}\ne -U_{\rm sp}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Choose a strictly concave, even function $r_0$ on $[-h,h]$ with
+$r_0(\pm h)=R_N$, $r_0>R_N$ in the interior, and near the endpoints
+\begin{equation}\label{eq:meridian-radius}
+ r_0(z)=R_N+\sqrt{2\mu(h-z)}\quad(z\text{ near }h),
+ \qquad
+ r_0(z)=R_N+\sqrt{2\mu(h+z)}\quad(z\text{ near }-h).
+\end{equation}
+For completeness, on $[0,h)$ choose a smooth function $v=-r_0'$
+with $v'>0$, $v(z)=\epsilon z$ near zero, and
+$v(z)=\sqrt{\mu/[2(h-z)]}$ near $h$. Choose the endpoint
+neighborhoods small enough to interpolate with $v'>0$ between
+these germs, and set
+$r_0(z)=R_N+\int_z^h v(s)\,ds$ for $z<h$, with $r_0(h)=R_N$.
+The endpoint singularity of $v$ is integrable. The expression is smooth
+after even reflection at zero, and its lateral surface is smooth at
+the endpoints in the $t$ coordinate used below. In the height
+coordinate, $r_0$ is continuous on $[-h,h]$ and smooth on $(-h,h)$;
+its endpoint slopes are infinite. It is strictly concave and agrees with
+\eqref{eq:meridian-radius} at the upper endpoint.
+
+Choose a nonzero smooth $b\ge0$ supported in $(0,h)$ and set
+$r=r_0+\lambda b$. For sufficiently small $\lambda>0$ it remains
+strictly concave, has unchanged end germs, and is no longer even.
+The body $\mathcal K=\{(v,z):|z|\le h,\ |v|\le r(z)\}$ is convex,
+since $r$ is concave. Its lateral annulus $(r(z)e_\theta,z)$ has
+\[
+ \nu=\frac{(e_\theta,-r'(z))}{\sqrt{1+r'(z)^2}},\qquad
+ K=-\frac{r''(z)}{r(z)(1+r'(z)^2)^2}>0.
+\]
+As $z$ increases, $r'$ decreases from $+\infty$ to $-\infty$,
+which gives the stated Gauss diffeomorphism. The upper equality in
+\eqref{eq:meridian-radius}, together with
+$z=h-\mu t^2/2$, gives $r=R_N+\mu t$ for $t\ge0$;
+the southern equality works identically. Thus the joins preserve
+full smooth germs. Since $r(z)>R_N$ for $|z|<h$, the lateral annulus
+lies outside the prescribed cylinder, and non-evenness excludes
+central symmetry. The disks close the auxiliary convex body. Smoothness
+of its boundary across the disk rims is not needed: the smooth torus
+is obtained by joining the lateral annulus to the saddle collars.
+\end{proof}
+
+The global gradient image in \eqref{eq:full-gradient-annulus} gives
+$\rho_{\rm spatial}<R_N$ on $N^\circ$, and the height separation
+in Proposition~\ref{prop:saddle} gives $|z|<h$ there. Hence
+\[
+ N\subset\mathcal C:=\{\rho_{\rm spatial}\le R_N,\ |z|\le h\},
+\]
+with strict inclusion for interior points. By
+\eqref{eq:convex-exterior}, $U_{\rm sp}$ meets $N$ only along their
+two boundary circles. Their parabolic germs coincide for negative
+and positive $t$, producing a smooth embedded torus.
+The curvature signs are negative on $N^\circ$, positive on
+$U_{\rm sp}^\circ$, and zero exactly on the two joining circles.
+By the Gauss area formula and \eqref{eq:convex-gauss},
+\begin{equation}\label{eq:positive-integral}
+ \int_{U_{\rm sp}^\circ}K\,dA=4\pi.
+\end{equation}
+Gauss--Bonnet gives total absolute curvature $8\pi$, hence
+tightness. This uses the standard tightness characterization in
+terms of total absolute curvature \cite{BK}.
+
+
+\subsection{An asymmetric fixed region}
+In this paper a \emph{marked} surface means that the unchanged
+positive-curvature region has trivial ambient Euclidean stabilizer.
+This geometric condition rules out congruence of images; it does not
+merely restrict allowed parametrizations. For a set $A\subset\R^3$,
+$\Stab_{\Isom(\R^3)}A$ is the group of Euclidean isometries carrying
+$A$ onto itself.
+
+\begin{lemma}[Small affine marking]\label{lem:ellipses-new}
+For every sufficiently small $\epsilon>0$, the map
+\[
+ A_\epsilon=\begin{pmatrix}
+ 1&0&\epsilon\\0&1+\epsilon&2\epsilon\\0&0&1
+ \end{pmatrix}
+\]
+tends to $\Id$ and satisfies
+$\Stab_{\Isom(\R^3)}A_\epsilon(U_{\rm sp}^\circ)=\{\Id\}$.
+\end{lemma}
+\begin{proof}
+An isometry preserving the open annulus preserves its closure and permutes
+its two boundary ellipses. Their centers are
+$\pm h(\epsilon,2\epsilon,1)$; their planes are horizontal; their unequal
+semiaxes lie along $e_1,e_2$ and have lengths $R_N,(1+\epsilon)R_N$.
+The midpoint of the centers is fixed, so the translation is zero.
+The planes and principal axes force the orthogonal part to be diagonal
+with entries $\pm1$. If both centers are fixed, all entries are $+1$,
+because each coordinate of $(\epsilon,2\epsilon,1)$ is nonzero.
+If they are exchanged, all are $-1$. This would give central inversion
+of the annulus and hence $U_{\rm sp}=-U_{\rm sp}$, contrary to
+Lemma~\ref{lem:convex}. Only the identity remains.
+\end{proof}
+
+\subsection{The completed protected module}\label{sec:realization}
+\begin{theorem}[Protected identity-return realization]\label{thm:protected-realization}
+There exist a smooth torus $M$, a tight embedding $X:M\to\R^3$, a
+compact annulus $V\Subset\{K_X<0\}$, an open annular neighborhood
+$W\supset V$, and a nonempty interval $I$ such that:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item The Gauss map and horizontal projection are injective on $W$.
+In planar support coordinates, $\det D^2G<0$ and both the source and
+gradient maps are diffeomorphisms onto planar annuli.
+\item Under the fixed source identification with the protected ruled
+band, the transported field $\bar y_F=-y_F$, with $y_F$ given by
+\eqref{eq:yF}, defines an injective linear map from $C_c^\infty(I)$
+to bendings supported in $V$. It is extended by zero outside that band.
+Disjoint profile supports give disjoint bending supports.
+\item Once the balanced speed is fixed and the core has undergone the
+fixed ambient normalization of Section~\ref{sec:model-saddle}, the
+completion leaves a prescribed compact subannulus unchanged. Every sufficiently small $L^1$
+speed change preserving closure, period balance, and visibility admits
+the same type of completion, with its own protected core.
+\item The embedding has no open planar subset and total absolute curvature
+$8\pi$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\emph{Build and protect the local module.}
+Lemma~\ref{lem:seed} and Theorem~\ref{thm:spike} give a balanced embedded
+frame with visible traces. Equation \eqref{eq:frame-speed} gives $I_0=0$,
+so Theorem~\ref{thm:ruled} provides the kernel. Shrink the band for Gauss
+and projection injectivity, and choose the protected level annulus $V_0$.
+Enlarge it slightly to a compact $V$, still separated from both exit
+collars. All fields from $C_c^\infty(I)$ are supported there.
+
+\emph{Complete outside the protected neighborhood.}
+The central mixed-entry formula and exit lemma give two positive seams.
+The connector and quadratic radial filling lemma, combined with
+Legendre duality and the neck adapter, give the two-sided support
+of Proposition~\ref{prop:dual-radial-completion}.
+Proposition~\ref{prop:saddle} yields the embedded saddle annulus, and
+Lemma~\ref{lem:convex} closes it into an embedded torus. Apart from the
+one ambient normalization applied uniformly to the core and fields,
+every change is outside a neighborhood of $V$, so the transported
+bendings extend smoothly by zero.
+The positive curvature integral is $4\pi$; Gauss--Bonnet gives $8\pi$
+absolute curvature and tightness. Curvature vanishes only on two circles,
+so no planar open set exists.
+
+\emph{Record the relative scope of the construction.}
+Small $L^1$ speed changes give small positional changes with tangent
+directions fixed. Embedding and visibility persist as in
+Theorem~\ref{thm:spike}. For each final balanced speed we choose its thin
+band and exit collars and repeat the completion, leaving its prescribed
+normalized core fixed. This asserts existence of the same type of completion, not
+an identification of different cores or a common exterior for all speeds.
+\end{proof}
+
+\begin{corollary}[Marked protected module]\label{cor:marked-module}
+There are a tight torus embedding $X:M\to\R^3$, a compact
+$V\Subset\{K_X<0\}$, an interval $I\ne\varnothing$, and an injective
+linear map $\mathcal Y:C_c^\infty(I)\to C^\infty(M,\R^3)$ whose values
+are bendings supported in $V$, preserving disjointness of supports, such
+that
+\[
+ \Stab_{\Isom(\R^3)}X(\{K_X>0\})=\{\Id\}.
+\]
+The torus has no open planar subset and total absolute curvature $8\pi$.
+\end{corollary}
+\begin{proof}
+Apply $A_\epsilon$ to the preceding torus and transport fields by
+\eqref{eq:affine-transport}. On the protected band the resulting map is
+$\mathcal Y(F)=A_\epsilon^{-T}\bar y_F=-A_\epsilon^{-T}y_F$,
+using the same source identification, and is extended by zero.
+This preserves embedding, curvature signs,
+tightness, strain, and supports. Lemma~\ref{lem:ellipses-new} marks the
+positive-curvature region. The equality case of \eqref{eq:tight-bound}
+gives the same absolute curvature value after the affine change.
+\end{proof}
+
+\section{Exact metric branching}\label{sec:reconstruction}
+Fix the marked tight torus from Corollary~\ref{cor:marked-module}.
+Its reference metric is $g_X$. The sign branches constructed in this
+section induce a new common metric $g$, given by a positive quadratic
+correction to $g_X$. We first make one exact pair, then choose finitely
+or countably many independent signs. Tightness follows from the
+unchanged positive-curvature region, and image noncongruence follows
+from its marking together with intrinsic isometry rigidity.
+
+\subsection{Finite independent signs}
+The metric reconstruction map has the exact quadratic expansion
+\begin{equation}\label{eq:metricquad}
+ \Gmap(X+y)=\Gmap(X)+S_Xy+\langle dy,dy\rangle.
+\end{equation}
+\begin{lemma}[Disjoint quadratic branching]\label{thm:branch}
+If $y_1,\ldots,y_m\in\ker S_X$ have pairwise disjoint supports, then
+\begin{equation}\label{eq:abstractsign}
+ g_{X+\sum_{j=1}^m\varepsilon_j a_jy_j}
+ =g_X+\sum_{j=1}^m a_j^2\langle dy_j,dy_j\rangle,
+ \qquad\varepsilon_j\in\{-1,1\}.
+\end{equation}
+The same identity holds for an infinite series converging in $C^\infty$.
+\end{lemma}
+\begin{proof}
+Every linear term vanishes by the strain equation. A derivative is zero
+off its field's support, so disjoint supports kill every mixed quadratic
+term pointwise. This proves the finite formula. Smooth convergence allows
+passage to the limit in the metric and its derivatives.
+\end{proof}
+
+Two separate issues remain: tightness of the perturbed embeddings, and
+noncongruence of their images. Both are controlled by the unchanged region.
+\begin{proposition}[Relative preservation of absolute curvature]\label{prop:budget}
+Let $X$ be a closed embedded surface and $V\Subset\{K_X<0\}$.
+Every sufficiently small $C^2$ perturbation supported in $V$ remains an
+embedding and has the same total absolute curvature. If $X$ is tight,
+so is the perturbation.
+\end{proposition}
+\begin{proof}
+Compactness and smallness preserve negative curvature on $V$ and preserve
+embedding. Off $V$ the map is unchanged, so the positive-curvature region
+$P$ and its curvature integral are unchanged. For either surface,
+Gauss--Bonnet gives
+\[
+ \int_M|K|\,dA=2\int_P K\,dA-2\pi\chi(M).
+\]
+Thus the absolute curvature is unchanged, and equality in
+\eqref{eq:tight-bound} preserves tightness.
+\end{proof}
+
+\begin{lemma}[An intrinsic isometry fixed on an open set]\label{lem:fixed-open}
+An isometry of a connected smooth Riemannian manifold which fixes a
+nonempty open set pointwise is the identity. The same holds for a connected
+manifold with boundary when the fixed set meets its interior.
+\end{lemma}
+\begin{proof}
+In the interior, the set of points fixed with identity differential is
+nonempty and closed. It is open by the exponential-map relation
+$f(\exp_pv)=\exp_{f(p)}(df_pv)$. Connectedness propagates the identity.
+For a manifold with boundary, apply this to its connected interior and
+then use continuity at the boundary.
+\end{proof}
+
+\begin{proposition}[Finite sign families]\label{prop:finite-sign}
+Let $X:M\to\R^3$ be a tight embedding of a closed connected surface,
+with $P=\{K_X>0\}$ and $\Stab_{\Isom(\R^3)}X(P)=\{\Id\}$.
+Let $y_1,\ldots,y_m$ be nonzero bendings with disjoint supports in one
+compact $V\Subset\{K_X<0\}$. For all sufficiently small positive
+$a_j$, the $2^m$ maps in \eqref{eq:abstractsign} are tight embeddings
+with a common metric, agree off $V$, and have pairwise noncongruent images.
+\end{proposition}
+\begin{proof}
+The quadratic lemma gives the common metric and the curvature proposition
+gives tight embeddings. Suppose an ambient isometry carries one image
+onto another. Gaussian curvature is preserved, so it must carry the
+unchanged positive region $X(P)$ onto itself. The stabilizer hypothesis
+makes that ambient isometry the identity.
+
+The images therefore coincide. If their parametrizations are $X_\varepsilon$
+and $X_\delta$, then $\varphi=X_\delta^{-1}\circ X_\varepsilon$ is an
+isometry of the common intrinsic metric. It fixes $P$ pointwise because
+both maps equal $X$ there. The fixed-open-set lemma gives $\varphi=\Id$.
+Thus the maps coincide pointwise. On a point where $y_j\ne0$, all other
+fields vanish, so $\varepsilon_j=\delta_j$. This holds for every $j$.
+\end{proof}
+For $m=1$, this is already the exact nonuniqueness assertion. Increasing
+$m$ repeats the same localized mechanism independently.
+
+
+Figure~\ref{fig:cantor} sketches the passage from independent local
+supports to the infinite sign space. Disjoint intervals in the leaf
+coordinate give disjoint bending supports on the surface. The metric
+sees the square of each amplitude and loses its sign. Rapid decay in
+every derivative order makes the infinite series smooth, including at
+an accumulation of the supports. The fixed marked region then separates
+the resulting congruence classes.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/06-cantor-family.pdf}
+\caption{The Cantor family as independent sign choices.
+(a) Schematic weighted test profiles on disjoint transverse intervals
+$J_j\Subset I$ accumulating at an interior leaf label. Their supports
+select disjoint annuli for $y_j=\mathcal YF_j$.
+The plotted heights only illustrate decay; the proof chooses amplitudes
+controlling all required $C^k$ norms.
+(b) Three finite levels show $2$, $4$, and $8$ choices; continuing gives
+$\{-1,1\}^{\mathbb N}$ with the product topology.
+Disjoint supports eliminate mixed metric terms, and therefore every
+branch has the same metric
+$g_X+\sum_j a_j^2\langle dy_j,dy_j\rangle$.
+Theorem~\ref{thm:localized-sign} proves smooth convergence, tightness,
+noncongruence, and the embedding into the metric fiber modulo Euclidean
+isometries. This totally disconnected parameter family is not a
+continuous isometric flex.}
+\label{fig:cantor}
+\end{figure}
+
+
+\subsection{Countably many signs and the quotient topology}
+\begin{lemma}[Hausdorff Euclidean orbit space]\label{lem:orbit-space}
+For a closed Riemannian manifold $(M,g)$,
+$\Emb_g(M,\R^3)/\Isom(\R^3)$ is metrizable and hence Hausdorff.
+\end{lemma}
+\begin{proof}
+Subtract the mean of each embedding with respect to the Riemannian
+volume $d\mu_g$. Centering removes
+translations, so the quotient is the quotient of centered embeddings by
+$O(3)$. On that space use the invariant metric
+\[
+ d(f,h)=\sum_{k\ge0}2^{-k-1}\min\{1,\|f-h\|_{C^k(g)}\}.
+\]
+Since $O(3)$ is compact, the orbit distance
+$\bar d([f],[h])=\min_{Q\in O(3)}d(f,Qh)$ is a metric. Invariant metric
+balls show that it induces the quotient topology.
+\end{proof}
+
+\begin{theorem}[Localized sign families on a marked tight surface]
+\label{thm:localized-sign}
+Let $X:M\to\R^3$ be a tight embedding of a closed connected surface
+whose positive-curvature image has the trivial ambient stabilizer
+required in Proposition~\ref{prop:finite-sign}. Let $y_j$, $j\ge1$,
+be nonzero bendings with pairwise disjoint supports in
+one compact $V\Subset\{K_X<0\}$. Choose positive amplitudes such that
+\[
+ X_\varepsilon=X+\sum_{j\ge1}\varepsilon_ja_jy_j,
+ \qquad\varepsilon\in\{-1,1\}^{\mathbb N},
+\]
+converges smoothly uniformly in the signs and is sufficiently small in
+$C^2$. Then the maps are tight embeddings with the common smooth metric
+\[
+ g=g_X+\sum_{j\ge1}a_j^2\langle dy_j,dy_j\rangle.
+\]
+Their images are pairwise noncongruent, and the sign map induces a
+topological embedding into $\Emb_g(M,\R^3)/\Isom(\R^3)$.
+Such amplitudes always exist.
+\end{theorem}
+\begin{proof}
+\emph{Choose a uniformly smooth and small series.}
+For a prescribed small $\epsilon>0$, require
+\[
+ a_j\max_{0\le k\le j+2}\|y_j\|_{C^k}<\epsilon2^{-j}.
+\]
+For each derivative order the tail is uniformly summable, independently
+of the signs. The full sum is also uniformly small in $C^2$.
+The quadratic identity and the curvature proposition give the common
+metric and tight embeddings, with the positive region unchanged.
+
+\emph{Rule out congruence and reparametrization.}
+The argument in Proposition~\ref{prop:finite-sign} applies verbatim:
+an ambient congruence preserves $X(P)$ and is the identity; the resulting
+intrinsic reparametrization fixes $P$ and is the identity. At a point
+where $y_j\ne0$, disjointness then determines its sign. Thus every sign
+sequence gives a different congruence class.
+
+\emph{Verify the Cantor topology.}
+Agreement of sufficiently many initial signs makes the difference of two
+maps a uniformly small tail in each $C^k$ norm. Hence the sign map is
+continuous for the product topology. Its domain is compact and its
+quotient target is Hausdorff by Lemma~\ref{lem:orbit-space}. A continuous
+injection from a compact space into a Hausdorff space is a topological
+embedding.
+\end{proof}
+
+\section{Consequences of the protected band}\label{sec:applications}
+\subsection{The tight metric fiber}\label{sec:tight-main}
+\begin{proof}[Proof of Theorem~\ref{thm:main-fiber}]
+Use the marked module in Corollary~\ref{cor:marked-module}. Choose disjoint
+intervals $J_j\Subset I$ and nonzero $F_j\in C_c^\infty(J_j)$, and let
+$y_j=\mathcal YF_j$. The module preserves disjoint supports. Choose the
+amplitudes as in Theorem~\ref{thm:localized-sign}. It gives a common metric,
+tight embeddings, noncongruent images, and the Cantor embedding into the
+quotient. All maps equal $X$ off $V$, in particular on the same nonempty
+positive-curvature open set.
+
+The reference curvature vanishes only on the two joining circles.
+The perturbed curvature remains negative on $V$ and is unchanged elsewhere,
+so no member has an open planar subset. Tightness gives total absolute
+curvature $8\pi$. Selecting any two distinct sign sequences proves the
+first assertion with the same metric. The finite proposition also proves
+the two-realization phenomenon directly from one nonzero field.
+\end{proof}
+
+\begin{corollary}[Smooth tight nonrigidity]\label{cor:tight-nonrigidity}
+Smooth embedded tight tori are not determined up to congruence by their
+intrinsic metrics. One such metric has a Cantor family of noncongruent
+realizations.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:main-fiber}.
+\end{proof}
+
+\subsection{Closed asymptotic curves and zero linking}
+\begin{proof}[Proof of Theorem~\ref{thm:main-annulus}]
+Take $N$ from Proposition~\ref{prop:saddle}. The collar formulas give
+its circular tangent-plane boundaries and negative interior curvature.
+The northern Gauss coordinates cover the northern hemisphere with its
+pole removed. Reflection covers the southern hemisphere with its pole
+removed; the smooth neck maps to the equator. Each half is parametrized
+by its normal, and the neck has nonzero curvature. Together these give
+a Gauss diffeomorphism onto the twice-punctured sphere.
+
+The protected leaves in \eqref{eq:closed-leaves} remain embedded and
+asymptotic. To compute their normal linking, cap $N$ by the planar disks
+$D_\pm$ at heights $\pm h$. The height bounds show that
+$S=N\cup D_+\cup D_-$ is an embedded topological sphere.
+A small normal push-off of a protected leaf is disjoint from $S$:
+near the leaf this follows from a tubular neighborhood, and away from
+the leaf from compact separation. The leaf bounds a disk in $S$ disjoint
+from the push-off. Intersection with that disk computes linking zero.
+\end{proof}
+
+\begin{corollary}[Degenerate asymptotic return on a tight torus]
+\label{cor:HK-degenerate}
+A smooth embedded tight torus contains an open annulus of closed
+asymptotic curves in its negative-curvature region such that every leaf
+satisfies
+\[
+ \int_\Gamma k_gk_n|K|^{-1/2}\,ds=0.
+\]
+Here $k_g=\langle\nabla_TT,Z\rangle$ and $k_n=\II(Z,Z)$, with $Z$
+a unit tangent perpendicular to the oriented leaf tangent $T$.
+\end{corollary}
+\begin{proof}
+Use the unmarked torus in Theorem~\ref{thm:protected-realization}.
+Its protected return is the identity, so each leaf has multiplier one.
+Lemma~\ref{lem:holonomy-integral-new} gives the integral's vanishing.
+\end{proof}
+
+\begin{corollary}[Fixed-boundary isometric saddle annuli]
+\label{cor:fixed-boundary-annuli}
+There are two noncongruent smooth embedded annuli with strictly negative
+Gaussian curvature, the same induced metric, and the same two convex
+planar boundary curves. They agree on full boundary collars.
+\end{corollary}
+\begin{proof}
+\emph{Choose strictly negative boundaries and eliminate their symmetries.}
+Cut the northern and southern collars of $N$ at $t=-\eta_+$ and
+$t=-\eta_-$, where $0<\eta_+\ne\eta_-\ll1$. Retain the protected
+support. These cuts give strictly negative curvature even at the boundary
+and distinct circular radii. Apply $A_\epsilon$ from
+Lemma~\ref{lem:ellipses-new} and transport the bendings by
+\eqref{eq:affine-transport}. The new boundary curves are noncircular
+ellipses in parallel planes with different semiaxes, so an isometry
+preserving their union must preserve each individually.
+
+Their principal axes force the orthogonal part of such an isometry to
+be diagonal. Their centers are distinct multiples of
+$(\epsilon,2\epsilon,1)$. Fixing both centers forces all three diagonal
+signs to be $+1$, and then the translation is zero. Thus their union
+has trivial ambient stabilizer.
+
+\emph{Construct the exact pair and exclude identical images.}
+Let $\widetilde X$ be the truncated affine embedding and $y\ne0$ a
+retained bending. For small $t>0$, $\widetilde X\pm ty$ are embedded
+strictly negative-curvature annuli. They agree on full boundary collars,
+and \eqref{eq:metricquad} gives a common metric.
+Any ambient congruence must preserve the boundary union and is therefore
+the identity. If the images coincided, their induced reparametrization
+would be an intrinsic isometry fixing the common collar pointwise.
+Lemma~\ref{lem:fixed-open} would make it the identity on the whole annulus,
+forcing $y=0$. This contradiction proves noncongruence.
+\end{proof}
+
+\subsection{Complete negatively curved ends}\label{sec:complete-cylinder}
+For a complete cylinder we cut the saddle annulus before its zero-curvature
+boundary circles and attach strictly convex radial profiles. Agreement of
+full germs at the cuts preserves smoothness and the compact bending module.
+
+\begin{lemma}[Strictly convex continuation of a radial profile]
+\label{lem:complete-profile}
+Suppose $q_0$ is smooth near $H$, with $q_0(H)>0$, $q_0'(H)>0$,
+and $q_0''>0$ there. For every $\beta>0$ there is a smooth $q$ on
+$[H,\infty)$ equal to $q_0$ near $H$, with $q,q',q''>0$, and with
+$q''=\beta$ eventually. In particular $q'(z)\to\infty$.
+\end{lemma}
+\begin{proof}
+Choose $d>0$ with $q_0''>0$ on $[H,H+2d]$. A smooth cutoff from zero
+near $H$ to one for $z\ge H+d$ gives a positive smooth function $b$
+equal to $q_0''$ near $H$ and to $\beta$ for $z\ge H+d$.
+Define
+\begin{equation}\label{eq:complete-profile}
+ q(z)=q_0(H)+q_0'(H)(z-H)+\int_H^z(z-v)b(v)\,dv.
+\end{equation}
+Then $q''=b>0$, so $q'$ and $q$ stay positive. Near $H$ the second
+derivative and initial first jet agree with those of $q_0$, giving full
+agreement there. Eventually $q$ is quadratic with positive second derivative.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:complete-cylinder}]
+\emph{Step 1: cut at strictly negatively curved circles.}
+Use the unmarked $N$ of Proposition~\ref{prop:saddle} and choose sufficiently small $0<\eta<\delta$ so that cutting both
+collars at $t=-\eta$ retains the protected support and $H>0$. Put
+\begin{equation}\label{eq:complete-cut}
+ R_\eta=R_N-\mu\eta>0,\qquad
+ H=h-\frac\mu2\eta^2>0.
+\end{equation}
+The retained annulus $N_\eta$ has boundary circles at heights $\pm H$
+and radius $R_\eta$, with $K<0$ everywhere up to those boundaries.
+Its interior lies between these heights because the height function has
+no interior critical point.
+
+\emph{Step 2: extend the circular germs to convex ends.}
+The northern collar, solved for radius as a function of height, is
+\begin{equation}\label{eq:complete-collar}
+ \begin{gathered}
+ q_0(z)=R_N-\sqrt{2\mu(h-z)},\\
+ q_0'(z)=\frac{\mu}{\sqrt{2\mu(h-z)}},\qquad
+ q_0''(z)=\frac{\mu^2}{[2\mu(h-z)]^{3/2}}.
+ \end{gathered}
+\end{equation}
+At $z=H$ one has $q_0=R_\eta$, $q_0'=1/\eta>0$, and
+$q_0''=1/(\mu\eta^3)>0$.
+The continuation lemma gives $q$ with the same germ and eventually
+quadratic growth. Attach
+\begin{equation}\label{eq:complete-ends}
+ E_\pm(\theta,z)=q(z)e_\theta\pm ze_3,
+ \qquad z\in[H,\infty).
+\end{equation}
+Full-germ agreement makes both joins smooth. The resulting source is
+$S^1\times\R$ with no boundary.
+
+\emph{Step 3: verify curvature, embedding, and completeness.}
+For the upper end,
+\begin{equation}\label{eq:complete-end-metric}
+ g=q^2d\theta^2+(1+(q')^2)dz^2,\qquad
+ n_+=\frac{-e_\theta+q'e_3}{\sqrt{1+(q')^2}}.
+\end{equation}
+Its second fundamental coefficients are $q/\sqrt{1+(q')^2}$ and
+$-q''/\sqrt{1+(q')^2}$, with zero mixed coefficient, so
+\begin{equation}\label{eq:complete-end-curvature}
+ K=-\frac{q''}{q(1+(q')^2)^2}<0.
+\end{equation}
+Reflection gives the same result below, including at both smooth seams.
+Height determines $z$ on each end and its positive radius determines
+$\theta$, so each end is embedded. Their interiors lie strictly above
+or below the core's height range, excluding all intersections.
+
+The embedding is proper: a compact ambient set bounds height and hence
+bounds the end parameters, leaving only a compact part of the source.
+An intrinsic Cauchy sequence has bounded Euclidean image, since induced
+distance dominates ambient distance. Properness gives a subsequence
+converging on the surface, and local smooth coordinates turn this into
+intrinsic convergence. The Cauchy sequence therefore converges, proving
+completeness.
+
+\emph{Step 4: identify the Gauss map and curvature integral.}
+At the upper join $n_+=(-\eta e_\theta+e_3)/\sqrt{1+\eta^2}$,
+matching the core normal. Along the end,
+\[
+ \frac d{dz}\frac{q'}{\sqrt{1+(q')^2}}
+ =\frac{q''}{(1+(q')^2)^{3/2}}>0,
+ \qquad\frac{q'}{\sqrt{1+(q')^2}}\longrightarrow1.
+\]
+Writing $\zeta_\eta=(1+\eta^2)^{-1/2}$, the upper end covers the
+punctured cap $\zeta_\eta\le n_3<1$ once, and reflection covers
+$-1<n_3\le-\zeta_\eta$ below. The retained core covers
+$|n_3|\le\zeta_\eta$ once by
+Theorem~\ref{thm:main-annulus}. The descriptions agree at the seams,
+where $K\ne0$, so the global normal is a diffeomorphism onto the
+twice-punctured sphere. Its area gives $\int_\Sigma|K|\,dA=4\pi$.
+For comparison, each end contributes
+\[
+ 2\pi\int_H^\infty\frac{q''}{(1+(q')^2)^{3/2}}\,dz
+ =2\pi(1-\zeta_\eta).
+\]
+
+\emph{Step 5: retain the characteristic and bending module.}
+The surface is unchanged near the protected band, so its closed leaves,
+identity return, and normal fields along the leaves are unchanged.
+Their linking remains zero. All bendings vanish near the cuts and extend
+by zero to the ends, retaining their strain equations, injectivity, and
+common compact support.
+\end{proof}
+The eventual quadratic profiles have $K\to0$ at infinity. Completeness
+therefore comes with strict negativity everywhere, but no uniform negative
+upper bound. The result addresses the embedded-existence question in
+\cite[after Theorem~3.4]{NiZhangZhang}; their plane-topology obstruction
+does not apply to a cylinder.
+
+\appendix
+\section{General ruled bands and projective return}\label{sec:general-ruled}
+This appendix generalizes the principal-normal theory. It is not needed
+for the explicit core or its completion. The general return has two
+projective parameters rather than the single period $I_0$, and the bending
+equation transports a transverse vector field rather than a scalar alone.
+
+\begin{proposition}[Riccati return and a two-jet criterion]
+\label{prop:general-ruled-return}
+Let $X(t,u)=c(t)+ue(t)$ with $|e|=1$, smooth $L$-periodic $c,e$, and
+$\Delta=\det(c',e,e')\ne0$. Suppose $u=0$ is a closed nonruling
+asymptotic leaf. Then the nonruling characteristics satisfy
+\begin{equation}\label{eq:general-riccati}
+ u'=q(t,u)=q_1(t)u+q_2(t)u^2,
+ \qquad q=-\frac{\langle c''+ue'',(c'+ue')\times e\rangle}{2\Delta}.
+\end{equation}
+With
+\[
+ A(t)=\int_0^tq_1(s)\,ds,\quad \mu=e^{A(L)},\quad
+ \nu=\int_0^Lq_2(t)e^{A(t)}\,dt,
+\]
+the local return is
+\begin{equation}\label{eq:general-return}
+ \mathcal R(u)=\frac{\mu u}{1-\nu u}.
+\end{equation}
+Identity return is equivalent to $\mu=1$, $\nu=0$, or equivalently
+$\mathcal R'(0)=1$ and $\mathcal R''(0)=0$.
+\end{proposition}
+\begin{proof}
+Put $W=|(c'+ue')\times e|$. The mixed second fundamental coefficient
+is $\Delta/W$ and the $uu$ coefficient is zero. The $tt$ numerator
+is the quadratic polynomial in \eqref{eq:general-riccati}, whose constant
+term vanishes because $u=0$ is asymptotic. This gives the characteristic
+equation and $K=-\Delta^2/W^4<0$. Substitution $u=e^{A(t)}z$ gives
+$z'=q_2e^Az^2$, and integration yields the displayed return.
+\end{proof}
+Without a chosen closed leaf there is also a constant term $q_0(t)$.
+The Riccati equation is the projectivization $u=x/y$ of
+\[
+ \binom{x}{y}'=
+ \begin{pmatrix}q_1/2&q_0\\-q_2&-q_1/2\end{pmatrix}\binom{x}{y}.
+\]
+Its monodromy, the linear solution map over one period, is in
+$\mathrm{SL}(2,\R)$; projective identity means that
+matrix is $\pm\Id$. To obtain an affine band one must also have a finite
+periodic leaf, since a projective solution can pass through $u=\infty$.
+Near the finite leaf in the proposition this issue does not arise.
+For principal-normal rulings, $q_1=-\lambda/2$, $q_2=-D/2$, so
+$\mu=1$ automatically and $\nu=-\rho(0)I_0$.
+
+\begin{theorem}[Ruled localization as transverse transport]
+\label{thm:general-ruled-kernel}
+Under the preceding hypotheses, a sufficiently thin one-sided band
+$0<u<b$ admits a nonzero compactly supported bending exactly when the
+return is the identity. In the identity case, the supported kernel on
+any saturated subband is parametrized by one arbitrary compactly supported
+smooth function of its leaf parameter.
+\end{theorem}
+\begin{proof}
+\emph{Reconstruct the field from one scalar.}
+The $uu$ equation and support imply $\langle e,y\rangle=0$.
+For $p=\langle X_t,y\rangle$, the mixed equation becomes
+$\langle e',y\rangle=p_u/2$. Thus
+\begin{equation}\label{eq:general-bending-reconstruction}
+ \langle e,y\rangle=0,\qquad \langle X_t,y\rangle=p,
+ \qquad\langle e',y\rangle=p_u/2
+\end{equation}
+uniquely determines $y$, since $\Delta\ne0$. The remaining equation is
+\[
+ p_t+qp_u=\left(q_u+\tfrac12(\log|\Delta|)'\right)p.
+\]
+For an explicit verification, write $e'=vf$, $n=e\times f$,
+$c'=\alpha e+\beta f+\gamma n$, and $f'=-ve+\omega n$.
+Then $\Delta=v\gamma$, and the right-hand coefficient is
+$(\beta\omega+\gamma'+uv\omega)/\gamma$, which agrees with the formula.
+Setting $h=p/\sqrt{|\Delta|}$ gives
+\begin{equation}\label{eq:transverse-vector-transport}
+ h_t+qh_u=q_uh,
+ \qquad[\partial_t+q\partial_u,h\partial_u]=0.
+\end{equation}
+
+\emph{Identify the return condition.}
+If $u=\phi_t(v)$ is the characteristic flow, then
+\[
+ h(t,\phi_t(v))=\partial_v\phi_t(v)h(0,v),\qquad
+ h(0,\mathcal R(v))=\mathcal R'(v)h(0,v).
+\]
+Thus the transported object is the transverse vector field $h\partial_u$.
+For identity return any compactly supported initial function on a
+complete-leaf interval descends smoothly. Reconstruction gives every
+supported bending on that saturated subband.
+
+If return is not the identity, shrink $b$ to remove all fixed points in
+$(0,b)$: the displayed projective return has at most one other fixed
+point besides zero. A characteristic carrying nonzero $h$ remains nonzero
+and must stay in a compact subset of the band. Its successive returns
+are a monotone sequence in a compact interval, and their limit would be
+an interior fixed point. This contradiction forces $h=0$ and hence $y=0$.
+\end{proof}
+Three distinct nearby closed nonruling leaves crossing a common ruling
+once force a general projective return to be the identity. In the
+principal-normal class the central leaf and one additional leaf suffice.
+These finite tests depend on the projective form and do not apply to
+arbitrary smooth surface foliations.
+
+\section{Verification of the corrugated seed}\label{app:seed-estimates}
+We prove the package in Lemma~\ref{lem:seed}. The estimates serve only
+to give uniform visibility margins. The root and action calculations
+provide closure, while visibility will also imply embedding of the
+partner curve.
+
+\subsection{Visibility implies embedding of a positive tangent partner}
+\begin{lemma}[Visible positive tangent partners]\label{lem:visible-partner}
+Let $\beta$ be a regular positively oriented Jordan curve, and let
+$\delta$ be closed with $\delta'=m\beta'$, $m>0$. If $|\delta|>R$
+and $\beta'\cdot V_R(\delta)>0$, then $\delta$ is a positively oriented
+Jordan curve enclosing the disk $|z|\le R$.
+\end{lemma}
+\begin{proof}
+The unit tangent $U=\beta'/|\beta'|$ has degree one by the turning-number
+theorem. Its positive scalar product with $V_R(\delta)$ makes those
+circle-valued maps homotopic, so $V_R(\delta)$ has degree one.
+Write $\delta=\rho e^{i\alpha}$ on the universal cover. An angle for the
+visibility vector is $\varphi=\alpha+\arccos(R/\rho)$, whose second
+summand is periodic. Thus $\delta$ winds once around zero. Moreover
+\begin{equation}\label{eq:visibility-embedding}
+ \varphi'=\frac{\delta'\cdot V_R(\delta)}{\sqrt{\rho^2-R^2}}>0.
+\end{equation}
+The angle increases strictly by $2\pi$ in one period. Equal positions at
+distinct parameters would give equal angles modulo $2\pi$, a contradiction.
+Hence $\delta$ is embedded and positively oriented. The disk is connected,
+contains zero, and misses the curve, so it lies in the bounded component.
+\end{proof}
+
+\subsection{Root, first curve, covariance, and action}
+For fixed $N$, consider the probability density proportional to
+$(1+\epsilon\sin x)^2e^{-k\cos x}$. Equation
+\eqref{eq:corrugated-root} is $\mathbb E_k[\cos x]=-1/2$, and
+\[
+ \frac d{dk}\mathbb E_k[\cos x]=-\operatorname{Var}_k(\cos x)<0.
+\]
+Concentration at the extrema of $\cos x$ gives limits $1$ as
+$k\to-\infty$ and $-1$ as $k\to\infty$. Thus the root exists uniquely.
+
+The radius of $\beta_N$ is positive. If two positions agree, their radii
+give equal $\sin Nt$ values, after which their arguments give equal
+parameters modulo $2\pi$. Thus $\beta_N$ is embedded. With
+$c=\cos Nt$ and $s=\sin Nt$,
+\begin{equation}\label{eq:corrugated-derivative}
+ \beta_N'=e^{i(t+2\epsilon s)}
+       \bigl(c+i(1+\epsilon s)(1+2c)\bigr).
+\end{equation}
+The real and imaginary components cannot vanish together, proving
+regularity. Its angle lift increases by $2\pi$ over the period, proving
+positive orientation and enclosure of zero.
+
+The derivative $\delta_N'=m_N\beta_N'$ is covariant because $m_N$ is
+cell-periodic. The chosen initial value gives
+$\delta_N(T_N)=\xi_N\delta_N(0)$, hence covariance for the whole curve
+and closure after $N$ cells. Finally
+\[
+ \det(\beta_N,\delta_N')
+ =m_N(1+\epsilon\sin Nt)^2(1+2\cos Nt),
+\]
+so the scalar root cancels the mixed action on each cell and on the full
+period.
+
+\subsection{Position and tangent bounds}
+Put
+\[
+ L(c)=\sqrt{c^2+(1+2c)^2},\qquad
+ U_0=e^{it}\frac{c+i(1+2c)}{L(c)},\qquad
+ U_N=\frac{\beta_N'}{|\beta_N'|}.
+\]
+For $N\ge10$ we claim
+\begin{equation}\label{eq:corrugated-estimates}
+ |\beta_N-e^{it}|\le3/N,\qquad
+ |U_N-U_0|<50/N,\qquad
+ |\delta_N-(i/2)e^{it}|<60/N.
+\end{equation}
+The first uses $|e^{iu}-1|\le|u|$. Since
+$1/\sqrt5\le L(c)\le\sqrt{10}$, the unnormalized tangent in
+\eqref{eq:corrugated-derivative} differs from
+$e^{it}(c+i(1+2c))$ by less than $10/N$. The bound
+\[
+ \left|\frac z{|z|}-\frac w{|w|}\right|\le\frac{2|z-w|}{|w|}
+\]
+therefore gives the tangent estimate.
+
+To control the partner, use the normalized weighted average
+\[
+ \langle f\rangle_N=\frac1{2\pi}\int_0^{2\pi}
+                Z_N^{-1}e^{-k_N\cos x}f(x)\,dx.
+\]
+Odd functions of $\sin x$ have zero average. With $y=1+2\cos x$,
+the root identity gives
+\[
+ \langle y\rangle_N=-\epsilon^2\langle\sin^2x\,y\rangle_N,
+ \quad |\langle y\rangle_N|\le3\epsilon^2,
+ \quad\left|\langle\cos x+iy\rangle_N+\tfrac12\right|
+          \le\tfrac92\epsilon^2.
+\]
+The one-cell average
+\[
+ J_N=\left\langle e^{i\epsilon(x+2\sin x)}
+       \bigl(\cos x+i(1+\epsilon\sin x)y\bigr)\right\rangle_N
+\]
+satisfies $|J_N+1/2|<25\epsilon$: use
+$0\le x+2\sin x\le2\pi$ and the preceding average bounds.
+For $\alpha=2\pi\epsilon$, write $Q(\alpha)=\alpha/(e^{i\alpha}-1)$.
+For $\epsilon\le1/10$, $|Q|<11/10$ and $|Q+i|<4\epsilon$.
+Since $\delta_N(0)=Q(\alpha)J_N$, it follows that
+$|\delta_N(0)-i/2|<30\epsilon$.
+Over one cell,
+\[
+ |\delta_N(t)-\delta_N(0)|
+ \le2\pi\epsilon(\sqrt{10}+3\epsilon)<22\epsilon,
+ \qquad |(i/2)e^{it}-i/2|<4\epsilon.
+\]
+Their sum is less than $60\epsilon$. Covariance extends this estimate
+to the full period, completing \eqref{eq:corrugated-estimates}.
+
+\subsection{The two visibility margins}
+At $\delta_0=(i/2)e^{it}$,
+\[
+ V_{1/4}(\delta_0)=e^{it}(-\sqrt3/2+i/2).
+\]
+Thus
+\begin{equation}\label{eq:outer-limit-visibility}
+ U_0\cdot V_{1/4}(\delta_0)
+ =\frac{1+(2-\sqrt3)c}{2L(c)}
+ \ge\frac{\sqrt3-1}{2\sqrt{10}}>\frac1{10}.
+\end{equation}
+For the reflected reversed pair, the identity $A_*J=-JA_*$ reduces
+visibility to positivity of
+\[
+ U_N\cdot\frac{-R_-\beta_N+
+             \sqrt{|\beta_N|^2-R_-^2}\,J\beta_N}{|\beta_N|^2}.
+\]
+At $\beta_0=e^{it}$ and $R_-=4/5$ the limiting expression is
+\begin{equation}\label{eq:inner-limit-visibility}
+ \frac{-4c+3(1+2c)}{5L(c)}
+ =\frac{3+2c}{5L(c)}\ge\frac1{5\sqrt{10}}>\frac1{16}.
+\end{equation}
+The differential norm of either direction map
+$z\mapsto(\pm Rz+\sqrt{|z|^2-R^2}Jz)/|z|^2$ is
+$1/\sqrt{|z|^2-R^2}$. For $N\ge10^4$, the comparison segments in
+\eqref{eq:corrugated-estimates} have radii at least $0.494$ for the
+outer test and $0.9997$ for the inner test. A Lipschitz bound of $3$
+therefore suffices. The respective errors are at most
+$50/N+3(60/N)=230/N$ and $50/N+3(3/N)=59/N$.
+Both are smaller than their displayed margins, and both radius
+inequalities hold. Since the velocities in each pair are positive
+multiples, both required tangent inequalities follow. The positive-partner
+lemma proves embedding and enclosure for $\delta_N$.
+
+\subsection{The spherical curvature is nonconstant}
+The gnomonic lift is embedded and stays in the northern hemisphere.
+With the sign convention \eqref{eq:spherical-frame}, its geodesic
+curvature has the sign of $\det(\beta_N',\beta_N'')$. Writing
+$r=1+\epsilon\sin Nt$, $c=\cos Nt$, and $s=\sin Nt$, differentiation gives
+\[
+ \det(\beta_N',\beta_N'')
+ =Nr s+2c^2(1+2c)+r^2(1+2c)^3.
+\]
+The values at $Nt=0$ and $Nt=\pi$ are $33$ and $-3$.
+The curvature therefore takes both signs. This finishes every assertion
+of Lemma~\ref{lem:seed}.
+
+\begin{thebibliography}{99}
+\bibitem{GhomiProblems}
+M.~Ghomi, ``Open problems in geometry of curves and surfaces,'' 2019,
+Problems 1.1--1.4,
+\href{https://ghomi.math.gatech.edu/Papers/op.pdf}{author's survey}.
+
+\bibitem{Kovaleva}
+G.~A.~Kovaleva, ``Example of a surface that is homotopic to a tube and has a
+closed asymptotic line,'' \emph{Mathematical Notes} \textbf{3} (1968),
+257--263, \href{https://www.mathnet.ru/eng/mzm6695}{MathNet}.
+
+\bibitem{GarciaSotomayor}
+R.~Garcia and J.~Sotomayor, ``Structural stability of parabolic points and
+periodic asymptotic lines,'' \emph{Matem\'atica Contempor\^anea}
+\textbf{12} (1997), 83--102,
+\href{https://repositorio.bc.ufg.br/items/02c6dfb8-0487-4267-a20d-4d97c54decf0}{repository}.
+
+\bibitem{DaCruzGarcia}
+D.~H.~da Cruz and R.~A.~Garcia, ``Finite type $\xi$-asymptotic lines of plane
+fields in $\mathbb R^3$,'' \emph{Journal of Singularities} \textbf{22} (2020),
+17--27, \href{https://doi.org/10.5427/jsing.2020.22b}{doi:10.5427/jsing.2020.22b}.
+
+\bibitem{SaEarpToubiana}
+R.~Sa Earp and E.~Toubiana, ``Discrete and nondiscrete isometric deformations
+of surfaces in $\mathbb R^3$,'' \emph{Siberian Mathematical Journal}
+\textbf{43} (2002), 714--718,
+\href{https://doi.org/10.1023/A:1016384521524}{doi:10.1023/A:1016384521524};
+\href{https://m.mathnet.ru/eng/smj1338}{MathNet}.
+
+\bibitem{Sabitov2018}
+I.~Kh.~Sabitov, ``On a problem in the bendings theory of negatively curved
+surfaces,'' \emph{Siberian Electronic Mathematical Reports} \textbf{15} (2018),
+890--893,
+\href{https://doi.org/10.17377/semi.2018.15.076}{doi:10.17377/semi.2018.15.076}.
+
+\bibitem{Sabitov2021}
+I.~Kh.~Sabitov, ``On metrics admitting a discontinuum set of non-congruent
+immersions in $\mathbb R^3$,'' \emph{Siberian Electronic Mathematical Reports}
+\textbf{18} (2021), 1023--1026,
+\href{https://www.mathnet.ru/eng/semr1418}{MathNet}.
+
+\bibitem{Ding2026}
+W.~Ding, ``A solution to a problem of Ghomi and Raffaelli on closed
+asymptotic curves,'' 2026, preprint (version~1, October~6),
+\href{https://arxiv.org/abs/2610.08050}{arXiv:2610.08050}.
+
+\bibitem{NiZhangZhang}
+L.~Ni, W.~Zhang, and Y.~Zhang, ``On questions of Pogorelov and Toponogov,''
+2026, preprint (version~1, June~28),
+\href{https://arxiv.org/abs/2606.29231}{arXiv:2606.29231}.
+
+\bibitem{BK}
+T. F. Banchoff and W. K\"uhnel,
+\emph{Tight submanifolds, smooth and polyhedral}, in T. E. Cecil and S.-S. Chern (eds.), \emph{Tight and Taut Submanifolds}, MSRI Publications \textbf{32}, Cambridge University Press, 1997, 51--118.
+\href{https://doi.org/10.1017/9781009701815.003}{doi:10.1017/9781009701815.003}.
+
+\bibitem{Nirenberg}
+L. Nirenberg,
+\emph{Rigidity of a class of closed surfaces}, in \emph{Nonlinear Problems (Proc. Sympos., Madison, Wis., 1962)}, University of Wisconsin Press, Madison, 1963, 177--193.
+
+\bibitem{YauReview}
+S.-T. Yau, ``Review of geometry and analysis,'' \emph{Asian Journal of
+Mathematics} \textbf{4} (2000), no.~1, 235--278,
+\href{https://archive.intlpress.com/site/pub/files/_fulltext/journals/ajm/2000/0004/0001/AJM-2000-0004-0001-a016.pdf}{publisher PDF}.
+
+\bibitem{GR}
+M. Ghomi and M. Raffaelli,
+\emph{Topology of closed asymptotic curves on negatively curved surfaces}, Journal of Geometric Analysis \textbf{35} (2025), article 381.
+\href{https://doi.org/10.1007/s12220-025-02200-3}{doi:10.1007/s12220-025-02200-3};
+\href{https://arxiv.org/abs/2412.19266}{arXiv:2412.19266}.
+
+\bibitem{HK}
+Q. Han and M. Khuri,
+\emph{Rigidity in the class of orientable compact surfaces of minimal total absolute curvature}, Differential Geometry and its Applications \textbf{29} (2011), 463--472.
+\href{https://doi.org/10.1016/j.difgeo.2011.04.035}{doi:10.1016/j.difgeo.2011.04.035};
+\href{https://arxiv.org/abs/1104.0474}{arXiv:1104.0474}.
+
+\bibitem{IzmProj}
+I. Izmestiev,
+\emph{Projective background of the infinitesimal rigidity of frameworks}, arXiv:0804.2694 (2008), revised 2009.
+\href{https://doi.org/10.48550/arXiv.0804.2694}{doi:10.48550/arXiv.0804.2694}.
+
+\bibitem{Rolfsen}
+D.~Rolfsen, \emph{Knots and Links}, AMS Chelsea Publishing \textbf{346}, American Mathematical Society, Providence, RI, 2003; reprint of the 1976 original.
+\end{thebibliography}
+
+\end{document}

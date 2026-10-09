@@ -1,0 +1,21 @@
+# Temporary TeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.dvi
+*.xdv
+*.bcf
+*.run.xml
+*.blg
+*.bbl
+# Local numerical caches and temporary files
+*.npz
+*.npy
+*.tmp
+__pycache__/
+.DS_Store
+Thumbs.db
