@@ -76,5 +76,29 @@
     "branch": "codex/ver503-selected-source",
     "source_commit_pushed": "59f024bce7eb8ec02cb3d8b6687c37898b389cc2",
     "final_handoff_record": "local only"
+  },
+  "full_band_source_commit": "24d15909ed047f243b3906476a01a9511aad5161",
+  "full_band_audit": {
+    "result": "PASS",
+    "audited_exports": 4,
+    "source_commit": "24d15909ed047f243b3906476a01a9511aad5161",
+    "published": false,
+    "axiom_log_sha256": "e6376479c11daf4cc0d6ae3d9f68326218facec7b39af460eb3a6719c7dcd91b",
+    "sources": [
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryGaussBand",
+        "source_sha256": "f64e6318bf7e3422a054dafce51dd62fa5d0a822087a7f85b4bc64e8a8b962b8",
+        "compiled_source_sha256": "f64e6318bf7e3422a054dafce51dd62fa5d0a822087a7f85b4bc64e8a8b962b8",
+        "olean_sha256": "501c3b577c8b3ecc345a6126ee19439c9fb6386633ed5fc7f5ce05a41169a0ac",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "module": "TightVer401.PositiveExitConstructionSelectedSourceGeometryGaussBandAudit",
+        "source_sha256": "1f011543fbc3a317ff3f7667b99f6145b8926f5e259840a0ea1f8bb76158d98b",
+        "compiled_source_sha256": "1f011543fbc3a317ff3f7667b99f6145b8926f5e259840a0ea1f8bb76158d98b",
+        "olean_sha256": "fadf58b0bf3c0998e886cf57b5cdb83135ae04d52a15b2cfa2dc6ca8a2e29bfe",
+        "log_sha256": "e6376479c11daf4cc0d6ae3d9f68326218facec7b39af460eb3a6719c7dcd91b"
+      }
+    ]
   }
 }
