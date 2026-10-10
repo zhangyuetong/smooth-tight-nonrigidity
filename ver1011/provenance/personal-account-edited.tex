@@ -1,0 +1,121 @@
+\section*{AI usage and my personal words}
+This paper was written with ``assistance'' from (in fact, entirely by)
+ChatGPT-5.6-Sol, ChatGPT-6-Astra, and ChatGPT-6.1-Sol.
+
+As of October 10, 2026, I now claim the correctness of the paper because
+the most important theorem compiles without \texttt{sorry} or extra axioms.
+See the repository for details. The remaining risks are:
+\begin{enumerate}
+\item I have only falsified the rigidity conjecture; I have not done the
+other propositions, such as the Cantor family.
+\item The translation of the theorem might not be entirely risk-free.
+AI has checked it, and it is highly unlikely to mislead us, but one can
+never be certain.
+\item Mistranslations might occur during the process, and the manuscript's
+lemmas and exact proof details might not be entirely correct. The
+formalization guarantees the existence of the band and the counterexample,
+but the other steps might not be accurately represented. The manuscript
+will undergo many edits after the formalization, and these edits might
+deviate further from the formalization's route. In fact, this faces the
+same problem as the Navier--Stokes equation proof. Yet, if we treat
+natural-language manuscripts as sketches and roadmaps, guiding a correct
+Lean proof already guarantees their trustworthiness. You can always ask
+an AI to fill a gap if you find one; having a correct roadmap gives you
+confidence that a way to fill it can be found.
+\item The Lean kernel might contain bugs. I do not think this is likely
+to be a problem, and if there really is a problem, it is hardly mine
+alone. If the sky falls, the tall guys will hold it up.
+\end{enumerate}
+
+I had not noticed this problem until Levent Alpoge produced a
+counterexample to the Carath\'eodory conjecture, followed almost immediately
+by YTD and $S^6$. At that point, I began to believe that AI could solve
+problems in differential geometry. I began asking GPT which problem on
+Ghomi's list of open problems could be next (Carath\'eodory was on the
+list). GPT suggested this one because the analytic case is true, the
+polyhedral case is false, and the smooth case is unsolved. This resembled
+the Carath\'eodory conjecture, where the analytic case is also true but the
+smooth case was ultimately shown to be false. I then asked chat mode to
+solve the problem. It found a counterexample to Problem~1.1 in Ghomi's
+2025 paper, showing that the simple route toward proving rigidity was
+false. It did not give any other promising result. Several days later,
+I decided to make an all-out effort and downloaded Danus, running it for
+28 hours and using about 140\% of the weekly allowance on the \$200 Pro
+plan. Then Astra came out, and it took two hours and 25\% of the Pro
+allowance to find the counterexample. Although the counterexample has
+changed considerably, its idea has survived into the final result.
+Evidence of this timeline can be found in the
+\href{https://github.com/zhangyuetong/smooth-tight-nonrigidity/blob/6a0758c99077e2c7fd31c3de6ee3452b3f6df8d3/timestamp/README.md}{timestamp archive}.
+
+I was shocked, so I asked it to write out the result and considered
+giving it to my mentor or publishing it quickly. Yet the paper was not
+a clean formula like the Carath\'eodory result: it was over 300 pages
+long and practically impossible to read. The main construction and
+proof involved PDEs, and I had not even taken a course in PDEs as an
+undergraduate. For the next several weeks, I worked continuously to
+make the paper simpler, more readable, and more rigorous:
+\begin{itemize}
+\item Around this time, I also learned that the mathematics community
+advocates building mathematical theories and regards open problems as
+golden geese. I therefore tried asking AI to ``generalize the theorems
+introduced into lemmas and `theories'.'' The point was to make AI find
+the ``essence'' of the new theorems, simplify and generalize their
+conditions, and identify where they share the same proof. This could
+have four outcomes: the theories might actually be useful; the paper
+might become more reusable because the ``theories'' would remain even
+if part of the construction failed; the theorems might become more
+trustworthy because fewer conditions could reduce the cognitive burden
+on both AI and humans; and, if AI actually built theories from scratch,
+it might think more logically and reduce errors. Yet this approach
+essentially failed. Most of the construction was too specific, and
+the work did not produce useful theories. It also expanded the paper
+to 400 pages.
+\item I read a story online about someone who made substantial progress
+and had various AI systems check it, but the AI overlooked a fatal gap,
+leaving a month's effort in vain. This made me think that I might need
+to formalize my paper. Yet I did not have enough tokens, and the
+infrastructure for differential geometry was inadequate. The AI made
+no progress with the formalization. This was the situation in September.
+After OpenAI released the new infrastructure, I succeeded.
+\item The final successful route was consulting ChatGPT Pro in chat
+mode. This led to significant simplification, rewriting, and checking
+of the paper. First, I asked it to rewrite the paper to remove the
+branches, which brought it to 200 pages. Then I asked it to brainstorm
+simplifications, which brought it to 100 pages. Next, I asked it to
+brainstorm more intensively and find a good route, and then let it
+choose one; this brought the paper to 16 pages. Finally, I asked it
+to fill in the gaps, which brought it to around 30 pages. Its length
+has not changed much since then.
+\end{itemize}
+
+For now, I do not know how I should take credit. In fact, I did not
+do anything---or perhaps I have become one of those black-hearted
+mentors exposed online who suppress their students and take all the
+credit. I am an undergraduate who could not even understand the paper's
+basic tools, yet buying a \$200 GPT subscription gave me a paper that
+solved a long-standing open problem, one I might never have been able
+to reach in a lifetime without AI. Previously, this result might have
+earned me a paper in JDG, but now I do not even think anyone cares:
+more important problems are being solved every day, and by the time
+I wrote this, OpenAI had released over 700 results more important than
+this one.
+
+Yet, as an undergraduate without an original paper (and perhaps without
+one ever, since we do not know what AI will do next year), I care about
+receiving credit for at least doing something. I also care about the
+effort I put into this paper, although it was not much. This feels
+ironic because my dilemma somehow has the same structure as mathematics
+itself. For the reasons above, every day that I delay publishing the
+paper is another day when someone else might obtain the result with
+a stronger model, leaving my month's effort in vain. In fact, Ding's
+paper of October 6 might be a sign that he has been attacking this
+problem with AI as well. Without me, he could use the same AI to
+publish this result within a month, or even within days. Yet, for
+a mathematician like Ghomi, a year of effort on this problem since
+2025 might also be rendered vain by the publication of my paper.
+
+The accompanying GitHub repository contains the manuscript sources and
+figures, interactive numerical visualizations, Lean sources and
+formalization reports, and the timestamp archive:
+
+\noindent\url{https://github.com/zhangyuetong/smooth-tight-nonrigidity}

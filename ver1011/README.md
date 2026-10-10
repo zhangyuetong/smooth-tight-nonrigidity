@@ -11,8 +11,9 @@ Contact: **gzhangyuetong@gmail.com** (permanent), **2300010810@stu.pku.edu.cn** 
 - [Original GitHub wording and provenance](provenance/)
 
 This version includes the full definition review, the acknowledgement to
-Xiang Ma, the AI-use disclosure, and the complete personal account from the
-GitHub README as Appendix C. The earlier illustrated paper is preserved in
+Xiang Ma, the AI-use account from the GitHub README, with grammar and
+formatting corrected and its October 10 update replacing the earlier
+correctness statement. The account appears before the technical appendices. The earlier illustrated paper is preserved in
 [ver1009](../ver1009/README.md).
 
 ## Submit to arXiv
@@ -23,7 +24,7 @@ GitHub README as Appendix C. The earlier illustrated paper is preserved in
 3. Copy the title, author and abstract from `metadata.txt`. A non-exclusive
    arXiv distribution license is the minimal distribution option; choose and
    accept the license in your own submission account.
-4. Inspect the PDF produced by arXiv, including every figure and Appendix C,
+4. Inspect the PDF produced by arXiv, including every figure and the AI-use account,
    then complete the remaining account, endorsement and submission steps.
 
 `paper.pdf` here is a preview. Upload the source ZIP rather than that PDF

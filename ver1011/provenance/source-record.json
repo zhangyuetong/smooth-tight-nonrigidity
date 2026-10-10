@@ -12,5 +12,17 @@
   "emails": [
     "2300010810@stu.pku.edu.cn",
     "gzhangyuetong@gmail.com"
-  ]
+  ],
+  "ver505_copyedit": {
+    "date": "2026-10-11",
+    "base_release_commit": "9cb76046b77ded421e14f358ac5bdb334bbe3933",
+    "changes": [
+      "Replace the independently written AI disclosure with a grammar-and-format copyedit of the author's README account.",
+      "The October 10 correctness update replaces the superseded October 9 statement.",
+      "Move the personal account before the technical appendices; remove Appendix C.",
+      "Print the full GitHub URL and retain a short repository introduction."
+    ],
+    "original_account_preserved_in": "personal-account-original.md",
+    "edited_account_in": "personal-account-edited.tex"
+  }
 }
