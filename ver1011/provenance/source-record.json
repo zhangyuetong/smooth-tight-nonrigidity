@@ -1,0 +1,16 @@
+{
+  "version": "ver505",
+  "original_github_commit": "6a0758c99077e2c7fd31c3de6ee3452b3f6df8d3",
+  "original_paper_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
+  "reviewed_manuscript_basis_sha256": "7f85354c58c0c2787310582b56b9aba87651b6946b000e31510a46f3e9043bc1",
+  "github_readme_sha256": "7d55db158ae1f516f3cb8950d41f414bb34816c5c92922c6522f0df6a40c9f03",
+  "personal_account_text_sha256": "ad8bb2baa79fdd29b3ab363a3d1786bb7c03c0158539dfd77f3605989999019a",
+  "personal_account_source": "https://github.com/zhangyuetong/smooth-tight-nonrigidity/blob/6a0758c99077e2c7fd31c3de6ee3452b3f6df8d3/README.md#ai-usage-and-my-personal-words",
+  "acknowledgements": "I thank my mentor Xiang Ma for communicating with me about this passage.",
+  "author": "Yuetong Zhang",
+  "affiliation": "Peking University",
+  "emails": [
+    "2300010810@stu.pku.edu.cn",
+    "gzhangyuetong@gmail.com"
+  ]
+}

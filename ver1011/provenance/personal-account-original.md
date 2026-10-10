@@ -1,24 +1,3 @@
-# Smooth tight nonrigidity
-
-| Content | Location |
-|---|---|
-| Current manuscript, ver505, and arXiv submission package | [ver1011](ver1011/README.md) |
-| Original illustrated manuscript and figures | [ver1009](ver1009/README.md) |
-| Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
-| Formalized results and contributions to Lean | [formalization report](lean/formalization-report.md) |
-| Reusable entry points across mathematics | [library catalog](lean/TightVer401/Library/README.md) |
-| Interactive numerical geometry and illustrated construction | [visualization](visualization/README.md) |
-
-Lean now proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. The current source-bound audit passed with no admissions or custom axioms. The full manuscript remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
-
-To explore the visualization, serve this repository root:
-
-```sh
-python -m http.server 8000 --bind 127.0.0.1
-```
-
-Then open **http://127.0.0.1:8000/visualization/index.html**. Detailed build and usage instructions are in each directory's README.
-
 ## AI usage and my personal words
 
 This paper is written "assisted" by (in fact JUST BY) ChatGPT-5.6-Sol, ChatGPT-6-Astra and ChatGPT-6.1-Sol. 
@@ -43,4 +22,4 @@ I was shocked, so I asked it to output the result and thought about giving this 
 
 For now, I don't know how I should take the credit. I in fact didn't do anything - or say, I've become one of those blackhearted mentors who get revealed on the internet who supresses students and take all the credit. I'm an undergraduate who couldn't even understand the paper's basic tools, yet my buying a $200 worth subscription of GPT gave me a paper that solved a long-standing open problem that throughout my life I might not be able to reach in another timeline without AI. Previously with this result I might be able to get myself a JDG paper, but now I don't even think anyone cares, since everyday there are more important problems being solved, and by the time I wrote this OpenAI has released 700+ results more important than this one.
 
-Yet me as an undergrad who didn't have (or maybe won't ever have, since we don't know what AI would do next year) an actual original paper, I care about the credit of at least doing something, and I do care about the effort I put into this paper - although not much. Somehow this becomes very ironic because somehow my dilemma shares the same structure as math itself. Because of above reasons, one day I don't publish the paper one day another person might take it with a stronger model, my one-month effort in vain (I fact, Ding's paper on Oct 6 might be a sign that he's been attacking this problem with AI as well. Without me, he having the very same AI could publish this result within a month or even within days). Yet as a mathematician like Ghomi, a year (since 2025) of effort on this problem might still be in vain on the publishing of my paper. 
+Yet me as an undergrad who didn't have (or maybe won't ever have, since we don't know what AI would do next year) an actual original paper, I care about the credit of at least doing something, and I do care about the effort I put into this paper - although not much. Somehow this becomes very ironic because somehow my dilemma shares the same structure as math itself. Because of above reasons, one day I don't publish the paper one day another person might take it with a stronger model, my one-month effort in vain (I fact, Ding's paper on Oct 6 might be a sign that he's been attacking this problem with AI as well. Without me, he having the very same AI could publish this result within a month or even within days). Yet as a mathematician like Ghomi, a year (since 2025) of effort on this problem might still be in vain on the publishing of my paper.

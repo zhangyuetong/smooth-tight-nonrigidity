@@ -1,0 +1,10 @@
+Title: An embedded band foliated by closed asymptotic lines and nonrigid smooth tight tori
+Authors: Yuetong Zhang (Peking University)
+Contact: gzhangyuetong@gmail.com; 2300010810@stu.pku.edu.cn
+Primary category: math.DG
+MSC (2020): 53A05; 53C24
+Comments: 42 pages, 6 figures; manuscript ver505.
+License: Select and accept a license in your arXiv account; the non-exclusive arXiv distribution license is available.
+
+Abstract:
+We construct a smooth embedded negatively curved band foliated by closed asymptotic curves. The full return map of its nonruling asymptotic family is the identity, and its compactly supported infinitesimal bendings are parametrized by arbitrary smooth functions of a transverse leaf coordinate. We complete the band to a smooth embedded tight torus while retaining its bending region. Opposite signs of one retained bending give two noncongruent tight embeddings with exactly the same intrinsic metric; they agree on a nonempty open set and have no open planar subset. Countably many disjoint bendings give a Cantor family with these properties. The construction separates spatial closure from cancellation of the asymptotic return period. A corrugated spherical normal loop and a positive speed provide an embedded identity-return band with two visible exits. Visible connectors, differential Legendre duality, and radial saddle filling then produce explicit end profiles. Compactification and convex attachment close the surface, and an affine marking removes its ambient symmetries. The same band also gives fixed-boundary isometric saddle annuli, an annulus with injective Gauss map and zero normal linking along its closed asymptotic curves, and a complete properly embedded negatively curved cylinder with total absolute curvature 4pi. These constructions connect the smooth tight-congruence question with the geometry and return dynamics of closed asymptotic curves.
