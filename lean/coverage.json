@@ -1,5 +1,5 @@
 {
-  "manuscript": "paper\\paper.tex",
+  "manuscript": "paper/ver1009/paper.tex",
   "manuscript_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "paper_completion": "INCOMPLETE",
   "target": "ver503",

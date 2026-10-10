@@ -48,5 +48,5 @@ or external rendering commands are required. See [arXiv source instructions](htt
 [author metadata rules](https://info.arxiv.org/help/prep.html), and
 [generative-AI policy](https://info.arxiv.org/help/moderation/index.html#policy-for-authors-use-of-generative-ai-language-tools).
 
-The existing Lean audit targets the frozen manuscript under `paper/`.
+The existing Lean audit targets the frozen manuscript under `paper/ver1009/`.
 It is retained as the original source snapshot; it is not a new audit of ver505.

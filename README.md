@@ -2,8 +2,8 @@
 
 | Content | Location |
 |---|---|
-| Current manuscript, ver505, and arXiv submission package | [ver1011](ver1011/README.md) |
-| Original illustrated manuscript and figures | [ver1009](ver1009/README.md) |
+| Current manuscript, ver505, and arXiv submission package | [ver1011](paper/ver1011/README.md) |
+| Original illustrated manuscript and figures | [ver1009](paper/ver1009/README.md) |
 | Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
 | Formalized results and contributions to Lean | [formalization report](lean/formalization-report.md) |
 | Reusable entry points across mathematics | [library catalog](lean/TightVer401/Library/README.md) |

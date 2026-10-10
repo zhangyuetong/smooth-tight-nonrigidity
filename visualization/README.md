@@ -46,7 +46,7 @@ The [current paper](../paper/README.md) is ver503. This saved numerical atlas re
 - `assets/catalog.js`, the viewer and only the current model geometry assets.
 - Local Plotly, KaTeX styles/fonts and third-party notices.
 - Linked numerical audit data and still images that the chapters use.
-- Six ver503 figure previews, linked to their vector PDFs under `paper/figures`.
+- Six ver503 figure previews, linked to their vector PDFs under `paper/ver1009/figures`.
 
 Raw experiment archives, numerical work arrays, duplicate manuscripts, obsolete hashed meshes, generator caches and old site-validation reports are excluded. [manifest.json](manifest.json) records the source reference and packaged resource hashes. Geometry vertices are unchanged from the saved atlas; publication edits fix navigation, add usage/proof-status explanations and link the current paper.
 

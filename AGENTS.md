@@ -1,6 +1,6 @@
 # Shared ver503 first-pair formalization
 
-- Active engine: `lean`; manuscript: `paper/paper.tex`, exact bytes pinned by `lean/target-lock.json`. Namespace: `TightVer401`.
+- Active engine: `lean`; manuscript: `paper/ver1009/paper.tex`, exact bytes pinned by `lean/target-lock.json`. Namespace: `TightVer401`.
 - Read `lean/AGENTS.md`, `COORDINATION.md`, `SESSION_WORKTREES.md`, `lean/blueprint/interfaces.md` and `lean/blueprint/classical-route.md` before proof work.
 - Prioritize pinned OpenAI/math exports. Keep the first noncongruent isometric tight-torus pair objective; extension and Cantor applications remain deferred.
 - Each parent chat uses its assigned fresh Git worktree and branch, exclusive source files and one compiler writer. Scoped subagents write exclusive leaves or review read-only. Never share writable build outputs, compatibility sources or audit logs.

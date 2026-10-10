@@ -1,6 +1,8 @@
 # ver503 formalization
 
-Active proof engine: `/lean`; manuscript target: [`paper/paper.tex`](../paper/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
+Active proof engine: `/lean`; manuscript target: [`paper/ver1009/paper.tex`](../paper/ver1009/paper.tex), exact bytes pinned by [target-lock.json](target-lock.json). Namespace remains `TightVer401`.
+
+The manuscript was relocated to `paper/ver1009/paper.tex` without changing its bytes or pinned hash. Historical audit snapshots retain the paths recorded at their source commits.
 
 The canonical [`exists_noncongruent_isometric_tight_tori_pair`](TightVer401/NonrigidTorusPair.lean) is **unconditionally proved**, with no background or construction premises. All four background propositions have closed proofs. It constructs two smooth tight embedded tori with one common smooth positive induced metric, noncongruent images, nonempty open agreement and no open planar patches. The full manuscript remains **INCOMPLETE**; Cantor-family and extension applications are deferred.
 

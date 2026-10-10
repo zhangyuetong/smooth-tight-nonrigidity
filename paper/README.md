@@ -1,23 +1,12 @@
-# An embedded band foliated by closed asymptotic lines and nonrigid smooth tight tori
+# Paper versions
 
-Manuscript version: **ver503**.
+- [ver1011: current manuscript ver505 and arXiv submission files](ver1011/README.md)
+  - [Read the revised paper](ver1011/paper.pdf)
+  - [Download the arXiv source package](ver1011/ver505-arxiv-source.zip)
+- [ver1009: original illustrated manuscript ver503](ver1009/README.md)
+  - [Read the original paper](ver1009/paper.pdf)
+  - [Original LaTeX source](ver1009/paper.tex)
+  - [Six original figures](ver1009/figures/)
 
-- [Read the paper](paper.pdf).
-- [LaTeX source](paper.tex).
-- `figures/` contains the six PDF figures required by the source.
-
-The figures show the balanced band and its local geometry, the bending map,
-other identity-return bands, the seed curves, the completion process, and
-the Cantor sign family. Captions distinguish numerical illustrations and
-schematic sketches from the analytic construction.
-
-## Build
-
-From this directory, with a TeX distribution and `latexmk` installed:
-
-```sh
-latexmk -pdf -interaction=nonstopmode -halt-on-error paper.tex
-```
-
-The bibliography is included in `paper.tex`; no separate bibliography file
-or running web interface is needed.
+Each version contains its own sources and figures. The Lean manuscript lock
+points to the unchanged ver503 source in `ver1009/`.

@@ -82,23 +82,23 @@ The following complete numbered statements are recorded as proved under their re
 
 | Reviewed statement | Manuscript label | Representative Lean export |
 |---|---|---|
-| [Support reconstruction](../paper/paper.tex#L470) | `prop:support` | `sphere_gauss_decomposition` |
-| [Annular degree criterion](../paper/paper.tex#L551) | `lem:degree` | `annular_degree_global_diffeomorphism` |
-| [Supported kernel on a ruled band](../paper/paper.tex#L697) | `thm:ruled` | `ruled_supported_kernel` |
-| [Finite-moment period prescription](../paper/paper.tex#L882) | `lem:finite-moment-balance` | `finite_moment_period_prescription` |
-| [Normal-loop existence criterion](../paper/paper.tex#L925) | `thm:normal-loop-criterion` | `normalLoop_existence_criterion` |
-| [Relative upgrade of an embedded seed](../paper/paper.tex#L973) | `cor:relative-holonomy-upgrade` | `normalLoop_relative_holonomy_upgrade` |
-| [Corrugated analytic seed](../paper/paper.tex#L1064) | `lem:seed` | `corrugated_analytic_seed` |
-| [One-slowdown holonomy correction](../paper/paper.tex#L1193) | `prop:one-slowdown` | `one_slowdown_holonomy_correction` |
-| [Balanced embedded speed](../paper/paper.tex#L1210) | `thm:spike` | `corrugatedSeed_exists_balanced_embedded_speed` |
-| [Central support tensor](../paper/paper.tex#L1273) | `prop:central-support` | `identityBand_central_support_tensor` |
-| [Relative saddle smoothing](../paper/paper.tex#L1439) | `lem:smoothing` | `exists_relative_saddle_smoothing` |
-| [Quadratic filling at a circular seam](../paper/paper.tex#L1607) | `lem:quadratic-filling` | `exists_quadratic_radial_filling` |
-| [Square-root neck adapter](../paper/paper.tex#L1682) | `lem:neck-adapter` | `dualRadialNeck_actual_first_jet` |
-| [Convex closure](../paper/paper.tex#L1988) | `lem:convex` | `exists_parabolic_convex_closure` |
-| [Disjoint quadratic branching](../paper/paper.tex#L2194) | `thm:branch` | `Manifold.finite_sign_metric` |
-| [Strictly convex continuation of a radial profile](../paper/paper.tex#L2468) | `lem:complete-profile` | `exists_completeProfile` |
-| [Riccati return and a two-jet criterion](../paper/paper.tex#L2586) | `prop:general-ruled-return` | `general_ruled_return` |
+| [Support reconstruction](../paper/ver1009/paper.tex#L470) | `prop:support` | `sphere_gauss_decomposition` |
+| [Annular degree criterion](../paper/ver1009/paper.tex#L551) | `lem:degree` | `annular_degree_global_diffeomorphism` |
+| [Supported kernel on a ruled band](../paper/ver1009/paper.tex#L697) | `thm:ruled` | `ruled_supported_kernel` |
+| [Finite-moment period prescription](../paper/ver1009/paper.tex#L882) | `lem:finite-moment-balance` | `finite_moment_period_prescription` |
+| [Normal-loop existence criterion](../paper/ver1009/paper.tex#L925) | `thm:normal-loop-criterion` | `normalLoop_existence_criterion` |
+| [Relative upgrade of an embedded seed](../paper/ver1009/paper.tex#L973) | `cor:relative-holonomy-upgrade` | `normalLoop_relative_holonomy_upgrade` |
+| [Corrugated analytic seed](../paper/ver1009/paper.tex#L1064) | `lem:seed` | `corrugated_analytic_seed` |
+| [One-slowdown holonomy correction](../paper/ver1009/paper.tex#L1193) | `prop:one-slowdown` | `one_slowdown_holonomy_correction` |
+| [Balanced embedded speed](../paper/ver1009/paper.tex#L1210) | `thm:spike` | `corrugatedSeed_exists_balanced_embedded_speed` |
+| [Central support tensor](../paper/ver1009/paper.tex#L1273) | `prop:central-support` | `identityBand_central_support_tensor` |
+| [Relative saddle smoothing](../paper/ver1009/paper.tex#L1439) | `lem:smoothing` | `exists_relative_saddle_smoothing` |
+| [Quadratic filling at a circular seam](../paper/ver1009/paper.tex#L1607) | `lem:quadratic-filling` | `exists_quadratic_radial_filling` |
+| [Square-root neck adapter](../paper/ver1009/paper.tex#L1682) | `lem:neck-adapter` | `dualRadialNeck_actual_first_jet` |
+| [Convex closure](../paper/ver1009/paper.tex#L1988) | `lem:convex` | `exists_parabolic_convex_closure` |
+| [Disjoint quadratic branching](../paper/ver1009/paper.tex#L2194) | `thm:branch` | `Manifold.finite_sign_metric` |
+| [Strictly convex continuation of a radial profile](../paper/ver1009/paper.tex#L2468) | `lem:complete-profile` | `exists_completeProfile` |
+| [Riccati return and a two-jet criterion](../paper/ver1009/paper.tex#L2586) | `prop:general-ruled-return` | `general_ruled_return` |
 
 The unconditional first-pair theorem is an additional completed assertion within `thm:main-fiber`. The whole numbered statement remains pending because it also contains the Cantor family, common agreement across that family, numerical total absolute curvature 8π, and a topological embedding into the quotient of embeddings by Euclidean isometries.
 

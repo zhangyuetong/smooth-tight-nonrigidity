@@ -4,7 +4,7 @@ Review date: 2026-10-09. This is a read-only source/type review, not a proof cer
 
 ## Target and comparison
 
-Current manuscript: `paper/paper.tex`, exact SHA256 `a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a`. Historical target metadata: `lean/target/ver500-coverage-historical.json`, ver500 SHA256 `0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304`.
+Current manuscript: `paper/ver1009/paper.tex`, exact SHA256 `a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a`. Historical target metadata: `lean/target/ver500-coverage-historical.json`, ver500 SHA256 `0af363cb3372b6f24c0492efc378f41139731c8ab0e6cb2844dd9ecebf0ce304`.
 
 After normalizing line endings solely for the textual comparison, four numbered statement bodies differ: `prop:support`, `lem:holonomy-integral-new`, `thm:protected-realization`, and `thm:localized-sign`. Other numbered statement bodies match. This does not certify unchanged dependencies: conventions and construction prose also change. Exact target pinning and audits must use source bytes, without newline normalization.
 

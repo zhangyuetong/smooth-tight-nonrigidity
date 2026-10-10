@@ -28,5 +28,5 @@
   existence theorems in `coverage.json`. Keep full-paper status incomplete until
   every required argument has a faithful compiled proof.
 
-- Active target source is `../paper/paper.tex`; preserve portable build adaptations.
+- Active target source is `../paper/ver1009/paper.tex`; preserve portable build adaptations.
 - Before awarding migrated claim credit, consult `target/ver503-reuse-review.json`.

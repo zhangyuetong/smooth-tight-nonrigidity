@@ -3,7 +3,7 @@
   "proof_namespace": "TightVer401",
   "target": "ver503",
   "sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
-  "manuscript": "paper/paper.tex",
+  "manuscript": "paper/ver1009/paper.tex",
   "objective": "Two noncongruent smooth embedded tight tori with exactly the same metric, agreeing on a nonempty open set, with no open planar patch.",
   "deferred": [
     "complete-cylinder applications",
