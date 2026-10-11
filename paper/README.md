@@ -1,8 +1,8 @@
 # Paper versions
 
-- [ver1011: current manuscript ver506 and arXiv submission files](ver1011/README.md)
+- [ver1011: current manuscript ver507 and arXiv submission files](ver1011/README.md)
   - [Read the revised paper](ver1011/paper.pdf)
-  - [Download the arXiv source package](ver1011/ver506-arxiv-source.zip)
+  - [Download the arXiv source package](ver1011/ver507-arxiv-source.zip)
 - [ver1009: original illustrated manuscript ver503](ver1009/README.md)
   - [Read the original paper](ver1009/paper.pdf)
   - [Original LaTeX source](ver1009/paper.tex)

@@ -1,9 +1,9 @@
 {
-  "version": "ver506",
+  "version": "ver507",
   "original_github_commit": "6a0758c99077e2c7fd31c3de6ee3452b3f6df8d3",
   "original_paper_sha256": "a809ad8ef4810fcdf61fd2511cb389b1ba4816478f309b42c729a69ed586bf9a",
   "reviewed_manuscript_basis_sha256": "7f85354c58c0c2787310582b56b9aba87651b6946b000e31510a46f3e9043bc1",
-  "github_readme_sha256": "114f156617926dc1714f9ae6647765abe3fc60a94cbeb02d130093296dcd54bc",
+  "github_readme_sha256": "85a68e83e3bd9afa37834b72046a0d48d495ec74dcf61aef2503d8cc6db2ac38",
   "personal_account_text_sha256": "2f4b789018f7431afe2c15c0e29f3d4de357ea23947839b43b10540797427158",
   "personal_account_source": "https://github.com/zhangyuetong/smooth-tight-nonrigidity/blob/main/README.md#ai-usage-and-my-personal-words",
   "acknowledgements": "I thank my mentor Xiang Ma for communicating with me about this passage.",
@@ -35,5 +35,11 @@
       "Use the updated timestamp README link."
     ],
     "timestamp_archive_sha256": "9ee0a6aedb509cfd66b6b5752f020c5587e5c602cf658c1ae68824d6b23f5c14"
+  },
+  "ver507_abstract_revision": {
+    "date": "2026-10-11",
+    "base_commit": "752c552b1e41797a52b0402b08c852cf78043200",
+    "change": "Replace the abstract with the exact two paragraphs supplied by the author.",
+    "abstract_sha256": "c224fd54f90e0b0d5c304f48beda10ed28fdb81349371b825c037b98561c2b82"
   }
 }

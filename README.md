@@ -2,7 +2,7 @@
 
 | Content | Location |
 |---|---|
-| Current manuscript, ver506, and arXiv submission package | [ver1011](paper/ver1011/README.md) |
+| Current manuscript, ver507, and arXiv submission package | [ver1011](paper/ver1011/README.md) |
 | Original illustrated manuscript and figures | [ver1009](paper/ver1009/README.md) |
 | Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
 | Formalized results and contributions to Lean | [formalization report](lean/formalization-report.md) |

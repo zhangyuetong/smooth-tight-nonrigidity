@@ -1,10 +1,11 @@
 {
-  "version": "ver506",
+  "version": "ver507",
   "pdf_pages": 42,
   "figures": 6,
   "labels": 160,
   "bibliography_entries": 16,
-  "mathematical_body_matches_ver505": true,
+  "body_after_abstract_matches_ver506": true,
+  "abstract_matches_author_supplied_text": true,
   "named_speculation_removed_from_personal_account": true,
   "readme_and_personal_accounts_revised_consistently": true,
   "timestamp_readme_revised": true,
@@ -22,16 +23,15 @@
     "figures/06-cantor-family.pdf"
   ],
   "tex_engine": "pdfTeX-1.40.27 (TeX Live 2025), shell escape disabled",
-  "source_sha256": "df8b5622a23a8b99278763046c95c08f34f813f28942e70647eed1b49144d252",
-  "pdf_sha256": "64577f8e642a31b34d8d8f224227618388664794abac7854fdeff5114f0a547b",
-  "zip_sha256": "96749aeaadbaee87e45253c7f290b9825d0f31b5896828fe01d12dc45ae3b0bc",
+  "source_sha256": "2ca65c347c352537de1e4dfd666e6408e19fbd1c05347dbc514875bd2082b356",
+  "pdf_sha256": "dcacfc3178164518102a9f64793f1fbda24d29ff6d17162ce0c05eaaf3f0748a",
+  "zip_sha256": "4b752034f86785dfda7d4e4d1f8772eb8bcec33ad9d40f1ccbcb949e1ba6ab1f",
   "layout_log_notes": [
-    "Package epstopdf Warning: Shell escape feature is not enabled.",
-    "Underfull \\vbox (badness 4752) has occurred while \\output is active []"
+    "Package epstopdf Warning: Shell escape feature is not enabled."
   ],
   "scope": "Editorial revision, publication preparation and rendering checks; no new Lean certification.",
   "clean_archive_rebuild": "passed; two pdfLaTeX passes with shell escape disabled",
   "clean_rebuild_matches_preview_text_and_pagination": true,
-  "visual_review": "All 42 pages rendered and inspected; revised paragraph and transition to Appendix A checked individually. No clipping or overlap.",
+  "visual_review": "All 42 pages rendered and inspected; new abstract, first-page layout and section transitions checked individually. No clipping or overlap.",
   "arxiv_submission_performed": false
 }
