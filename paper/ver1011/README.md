@@ -1,14 +1,14 @@
-# ver505: arXiv submission files
+# ver506: arXiv submission files
 
 Author: **Yuetong Zhang**, Peking University.
 Contact: **gzhangyuetong@gmail.com** (permanent), **2300010810@stu.pku.edu.cn** (university).
 
-- [Read ver505](paper.pdf)
-- [Download the arXiv source ZIP](ver505-arxiv-source.zip)
+- [Read ver506](paper.pdf)
+- [Download the arXiv source ZIP](ver506-arxiv-source.zip)
 - [LaTeX source and six required figures](source/)
 - [Submission metadata](metadata.txt)
 - [Preparation checks](validation.json)
-- [Original GitHub wording and provenance](provenance/)
+- [README source account, copyedited text and provenance](provenance/)
 
 This version includes the full definition review, the acknowledgement to
 Xiang Ma, the AI-use account from the GitHub README, with grammar and
@@ -19,7 +19,7 @@ correctness statement. The account appears before the technical appendices. The 
 ## Submit to arXiv
 
 1. Start a new mathematics submission; the relevant category is `math.DG`.
-2. Upload **ver505-arxiv-source.zip**. Its root contains `paper.tex` and
+2. Upload **ver506-arxiv-source.zip**. Its root contains `paper.tex` and
    `figures/`; choose **pdfLaTeX**, **TeX Live 2025**, and `paper.tex` as the main file.
 3. Copy the title, author and abstract from `metadata.txt`. A non-exclusive
    arXiv distribution license is the minimal distribution option; choose and
@@ -49,4 +49,4 @@ or external rendering commands are required. See [arXiv source instructions](htt
 [generative-AI policy](https://info.arxiv.org/help/moderation/index.html#policy-for-authors-use-of-generative-ai-language-tools).
 
 The existing Lean audit targets the frozen manuscript under `paper/ver1009/`.
-It is retained as the original source snapshot; it is not a new audit of ver505.
+It is retained as the original source snapshot; it is not a new audit of ver506.

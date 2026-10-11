@@ -3,7 +3,7 @@ Authors: Yuetong Zhang (Peking University)
 Contact: gzhangyuetong@gmail.com; 2300010810@stu.pku.edu.cn
 Primary category: math.DG
 MSC (2020): 53A05; 53C24
-Comments: 42 pages, 6 figures; manuscript ver505.
+Comments: 42 pages, 6 figures; manuscript ver506.
 License: Select and accept a license in your arXiv account; the non-exclusive arXiv distribution license is available.
 
 Abstract:
