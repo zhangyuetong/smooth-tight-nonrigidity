@@ -1,0 +1,45 @@
+{
+  "version": 617,
+  "baseline_version": 616,
+  "date": "2026-10-31",
+  "source_sha256": "b0f873bf2d789eac340e52e50c0e20c381069a2331faa0223a3eb03a38e9c7a5",
+  "baseline_source_sha256": "281179ef081224eac84a56a027e8564b6c6974c1d9aec28037cf436c1babe550",
+  "scope": "Reorganize ver617 into seven introductory roadmap theorems with brief methods and a short preliminaries section. Preserve the original constructions and proofs.",
+  "changes": [
+    "Introduction now contains exactly Theorems 1.1 through 1.7: main result, starting torus, preparation, periodic ruled annuli, exact insertion, supported band bending, and the isometric pair.",
+    "Each construction/deformation theorem is followed by a brief method explanation; remove the separate prose proof sketch.",
+    "Move elementary metric, second fundamental form, torus, connection, tightness, bending, asymptotic-curve, support and norm conventions to a short preliminaries section.",
+    "Add geometric preparation and ruled-annulus interfaces with proofs applying the existing detailed propositions.",
+    "Relocate insertion and band statements to the introduction, retain their proofs in the body, and make the final composition result Corollary 9.2.",
+    "Retain all 32 numbered equations from ver616, modulo the already-reviewed preparation-arclength rename, and all original proof steps."
+  ],
+  "review": {
+    "status": "PASS",
+    "scope": "Primary-agent source and layout review, two independent mathematical comparison reviews of the new roadmap interfaces, and visual inspection of all final pages. Not a formal proof certificate."
+  },
+  "validation": {
+    "algebra_and_source_checks": 39,
+    "numbered_equations_preserved": 32,
+    "introductory_theorems": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "preliminaries_source_words": 237,
+    "latex_build": "PASS",
+    "latex_warnings_and_box_warnings": [],
+    "pdf_pages": 17,
+    "bibliography_entries": 11,
+    "labels": 62,
+    "references": 81,
+    "visual_review": "All 17 final pages rendered by Poppler at 110 dpi and inspected.",
+    "pdf_filename": "isometric_tight_tori_ver617_roadmap.pdf",
+    "pdf_sha256": "8c740c5a6023cddc135a03c42f60161559eddebed02a92146d5a2b276884bdf1"
+  },
+  "editorial_revision": 2,
+  "previous_ver617_source_sha256": "a0c318f05b53491a3549b5c979654b16c0694b2fb7dcaa183a76cc1020156015"
+}

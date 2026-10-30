@@ -2,7 +2,7 @@
 
 | Content | Location |
 |---|---|
-| Current manuscript, ver614 published as ver1030, and arXiv source package | [ver1030](paper/ver1030/README.md) |
+| Current manuscript, ver617 published as ver1031, and arXiv source package | [ver1031](paper/ver1031/README.md) |
 | Earlier manuscript, ver507, and arXiv submission package | [ver1011](paper/ver1011/README.md) |
 | Original illustrated manuscript and figures | [ver1009](paper/ver1009/README.md) |
 | Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
@@ -10,9 +10,9 @@
 | Reusable entry points across mathematics | [library catalog](lean/TightVer401/Library/README.md) |
 | Interactive numerical geometry and illustrated construction | [visualization](visualization/README.md) |
 
-The current paper, **Isometric tight tori with different enclosed volumes**, is [ver1030](paper/ver1030/README.md), the unchanged local ver614 manuscript dated October 30, 2026. It uses a closed asymptotic curve from the annulus of Banks, Ghomi, Qiu, and Raffaelli, a shorter geometric tight-torus completion using BGQR's curvature argument and Gauss--Bonnet, and a supported infinitesimal bending with nonzero normal flux. The package includes the PDF, LaTeX source, arXiv source archive, and 14 passing exact algebra and source-consistency checks. These checks do not certify the global proof.
+The current paper, **Isometric tight tori with different enclosed volumes**, is [ver1031](paper/ver1031/README.md), the unchanged local ver617 manuscript dated October 31, 2026. It presents seven introductory roadmap theorems and a short preliminaries section. The construction starts with a closed asymptotic curve from the annulus of Banks, Ghomi, Qiu, and Raffaelli, completes the annulus to a tight torus, and uses a periodic ruled annulus and a Codazzi-based bending formula. A differentiated area identity gives nonzero normal flux, and opposite small multiples of the supported bending produce the proposed isometric pair with different enclosed volumes. The package includes the PDF, LaTeX source, arXiv source archive, and 39 passing exact algebra and source-consistency checks. These checks do not certify the global proof.
 
-The existing Lean audit concerns the frozen ver503 manuscript in [ver1009](paper/ver1009/README.md), and is not an audit of ver1030. For that earlier route, Lean proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. Its source-bound audit passed with no admissions or custom axioms. Full-manuscript formalization remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
+The existing Lean audit concerns the frozen ver503 manuscript in [ver1009](paper/ver1009/README.md), and is not an audit of ver1031. For that earlier route, Lean proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. Its source-bound audit passed with no admissions or custom axioms. Full-manuscript formalization remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
 
 To explore the visualization, serve this repository root:
 
@@ -50,7 +50,7 @@ Yet, as an undergraduate without an original paper (and perhaps without one ever
 
 Edit 20261015: Sangwon Lee at https//doi.org/10.5281/zenodo.23187616 seem to have done most of my result and published it on Oct 7. I still claim that we're completely independent, but this is worth noting. 
 
-Edit 20261030: Recently A new version has been created with a big change of methodolody (see ver1030). The mechanism involves making a singular closed asymptotic line into a band of asymptotic line in its neighborhood. The new paper is 15 pages, but it's very detailed and the key content might be around 5 pages, because this is usually the length when I let AI compress the paper. Many of the technical methods of the old versions are considered not necessary and removed.
+Edit 20261030: Recently A new version has been created with a big change of methodolody (see ver1031). The mechanism involves making a singular closed asymptotic line into a band of asymptotic line in its neighborhood. The new paper is 15 pages, but it's very detailed and the key content might be around 5 pages, because this is usually the length when I let AI compress the paper. Many of the technical methods of the old versions are considered not necessary and removed.
 
 The new version also uses the change of volume to test the nonrigidity. As a side effect, this gives a result that might be about the bellow problem (asking if the infinitesimal bending can give a nonzero first variation of the volume). While the smooth case is trivially false when it comes to planar regions, this made the bending support on the negatively curved regions, and are therefore probably of interest. 
 

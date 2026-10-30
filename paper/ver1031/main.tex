@@ -1,0 +1,1528 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\Vol}{Vol}
+\emergencystretch=2em
+\title{Isometric tight tori with different enclosed volumes}
+\author{Yuetong Zhang}
+\address{Peking University}
+\email{2300010810@stu.pku.edu.cn}
+\email{gzhangyuetong@gmail.com}
+\date{October 31, 2026}
+\hypersetup{pdftitle={Isometric tight tori with different enclosed volumes},pdfauthor={Yuetong Zhang}}
+\begin{document}
+\begin{abstract}
+We construct two smooth embedded tight tori in Euclidean three-space
+with identical induced metrics and different enclosed volumes.
+Starting with a closed asymptotic curve in the annulus of Banks,
+Ghomi, Qiu, and Raffaelli, we complete the annulus to a tight torus.
+More generally, any tight torus containing a closed asymptotic curve
+in negative curvature can be modified near the curve to admit a
+compactly supported infinitesimal bending with nonzero normal flux.
+The key steps are a periodic ruled-annulus construction and a
+Codazzi-based bending formula. Nonzero flux follows from a
+differentiated area identity. Opposite small multiples of the
+bending produce the required pair.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+The main result follows from the geometric constructions below.
+Conventions are collected in Section~\ref{sec:preliminaries};
+all maps and fields are smooth.
+
+\begin{theorem}[Main result]\label{thm:main}
+There exist a smooth tight embedding $X:T^2\to\R^3$ and an
+infinitesimal bending $Y:T^2\to\R^3$ such that
+\[
+ \supp Y\Subset\{K_X<0\},
+ \qquad \int_{T^2}\langle Y,\nu_X\rangle\,dA_X\ne0.
+\]
+There is $a_0>0$ such that for every $0<a<a_0$ the maps
+$X_\pm=X\pm aY$ are smooth tight embeddings satisfying
+\begin{equation}\label{eq:main-pair}
+ g_{X_+}=g_{X_-},\qquad \Vol(X_+)\ne\Vol(X_-).
+\end{equation}
+Consequently their images are noncongruent. Both maps agree with $X$
+outside $\supp Y$, and in particular on a nonempty open set.
+\end{theorem}
+
+The construction starts with the annulus of Banks, Ghomi, Qiu, and
+Raffaelli and ends with opposite multiples of one supported
+infinitesimal bending.
+
+\begin{theorem}[Existence of a starting torus]\label{thm:seed}
+There exist a smooth tight embedding $X_0:T^2\to\R^3$ and a smooth
+embedding $c:S^1\to T^2$ such that $X_0\circ c$ is asymptotic and
+$K_{X_0}<0$ on $c(S^1)$.
+\end{theorem}
+
+\emph{Method.} Flatten the ends of the BGQR annulus to infinite order
+and attach it to a convex sphere along planar caps. The retained
+asymptotic curve lies in negative curvature, and total positive
+curvature $4\pi$ gives tightness (Section~\ref{sec:seed}).
+
+\begin{theorem}[One asymptotic curve gives a prepared core]
+\label{thm:prepared-core}
+Let $X_0:T^2\to\R^3$ be a tight embedding and let $c:S^1\to T^2$
+be an embedded asymptotic curve in $\{K_{X_0}<0\}$. For every open
+$U$ with $c(S^1)\subset U\subset\{K_{X_0}<0\}$ and every
+$\varepsilon>0$, there is a tight embedding $X_1:T^2\to\R^3$ such that
+\[
+ \supp(X_1-X_0)\Subset U,\qquad
+ \|X_1-X_0\|_{C^2}<\varepsilon,\qquad K_{X_1}<0\text{ on }U.
+\]
+The curve $X_1\circ c$ remains asymptotic. There are $\ell>0$ and a
+reparametrization $c_1:\R/\ell\mathbb Z\to T^2$ of $c$ such that
+$\gamma=X_1\circ c_1$ is unit speed. Put $n=\nu_{X_1}\circ c_1$
+and $\rho=(-K_{X_1}\circ c_1)^{-1/4}$. At some $s_0$,
+\[
+ \gamma_{ss}(s_0)=0,\qquad (\rho n)_{ss}(s_0)\ne0.
+\]
+\end{theorem}
+
+\emph{Method.} Injectivity of the negative Gauss map, spherical
+Gauss--Bonnet, and Fenchel's theorem force an inflection. A local
+change of speed, corrected to preserve closedness, makes the
+curvature-weighted normal accelerate there
+(Sections~\ref{sec:frame}--\ref{sec:preparation}).
+
+\begin{theorem}[A prepared core gives periodic ruled annuli]
+\label{thm:ruled-interface}
+Let $\ell>0$ and let $\gamma:\R/\ell\mathbb Z\to\R^3$ be a
+unit-speed embedded asymptotic curve in negative curvature on an
+oriented immersed surface. Let $n$ be its surface unit normal and put
+$\rho=(-K)^{-1/4}$ along the curve. Suppose that at some $s_0$,
+\[
+ \gamma_{ss}(s_0)=0,\qquad (\rho n)_{ss}(s_0)\ne0.
+\]
+There are a smooth periodic field $V$ and $a>0$ such that
+$R(s,u)=\gamma(s)+uV(s)$ is an embedded negatively curved strip on
+$|u|<a$, with tangent plane $n(s)^\perp$ along the core.
+For every open neighborhood $N$ of the core in $\R^3$, there are a
+nonempty bounded open interval $I$ and an embedded negatively curved annulus
+$B:(\R/\ell\mathbb Z)\times I\to\R^3$ whose image lies in
+$N\cap R((\R/\ell\mathbb Z)\times(-a,a))$, whose constant-$c$
+circles are asymptotic, and whose constant-$s$ curves are straight.
+\end{theorem}
+
+\emph{Method.} Choose the transverse ruling so that the asymptotic
+return map is the identity. Concentrating the period correction near
+the inflection keeps the ruling transverse
+(Section~\ref{sec:ruled}).
+
+\begin{theorem}[Replacement along an asymptotic core]
+\label{prop:insert}
+Let $\ell>0$, and let $X_0:M\to\R^3$ be a smooth embedding of a closed
+oriented surface. Let $c:\R/\ell\mathbb Z\to M$ be an embedded asymptotic
+curve with image $\gamma=X_0\circ c$, and let $U$ be an open
+neighborhood of $c(\R/\ell\mathbb Z)$ contained in
+$\{K_{X_0}<0\}$.
+Suppose $b>0$ and
+$Z:(\R/\ell\mathbb Z)\times(-b,b)\to\R^3$ is a smooth embedding
+such that $Z(s,0)=\gamma(s)$ and the tangent plane spanned by
+$Z_s(s,0),Z_u(s,0)$ equals $dX_0(T_{c(s)}M)$.
+For every $\varepsilon>0$ there is a smooth embedding
+$\widetilde X:M\to\R^3$ such that
+\[
+ \supp(\widetilde X-X_0)\Subset U,\qquad
+ \|\widetilde X-X_0\|_{C^1}<\varepsilon,\qquad
+ K_{\widetilde X}<0\text{ on }U,
+\]
+and there exist $0<a<b$ and a smooth embedding
+$q:(\R/\ell\mathbb Z)\times(-a,a)\to U$ with
+\[
+ q(s,0)=c(s),\qquad \widetilde X(q(s,u))=Z(s,u).
+\]
+If $X_0$ is tight, $\widetilde X$ is tight.
+\end{theorem}
+
+\emph{Method.} Express the new strip as a quadratic normal
+displacement and cut it off in a narrow collar. An estimate of the
+second fundamental form preserves negative curvature through the
+transition (Section~\ref{sec:insertion}).
+
+\begin{theorem}[Geometric band theorem]\label{thm:band-bending}
+Let $\ell>0$, let $I\subset\R$ be a nonempty open interval, and let
+\[
+ B:(\R/\ell\mathbb Z)\times I\longrightarrow\R^3
+\]
+be a smooth embedding with $K_B<0$. Suppose each constant-$c$
+circle is asymptotic, and each constant-$s$ curve lies on a straight
+line. Then, for every nonempty open subinterval $I_0\subset I$,
+there is an infinitesimal bending $Y$ of $B$ such that
+\[
+ \supp Y\Subset(\R/\ell\mathbb Z)\times I_0,\qquad
+ \int_{(\R/\ell\mathbb Z)\times I}
+                \det(Y,B_s,B_c)\,ds\,dc\ne0.
+\]
+\end{theorem}
+
+\emph{Method.} The Codazzi identities give a family of supported
+bendings; differentiated area identities show that its flux
+functional is nonzero (Section~\ref{sec:bending}). On an inserted
+band, extension by zero gives a global bending
+(Lemma~\ref{lem:globalize}).
+
+\begin{theorem}[A supported bending implies an isometric pair]
+\label{prop:pair}
+Suppose $X:M\to\R^3$ is a smooth tight embedding of a closed surface,
+and $Y$ is an infinitesimal bending with
+\[
+ \supp Y\Subset\{K_X<0\},\qquad
+ \int_M\langle Y,\nu_X\rangle\,dA_X\ne0.
+\]
+Then, for all sufficiently small $a>0$, $X_\pm=X\pm aY$ are tight
+embeddings with unequal enclosed volumes and
+\begin{equation}\label{eq:exact-metric}
+ g_{X_\pm}=g_X+a^2\langle dY,dY\rangle,
+ \quad
+ \langle dY,dY\rangle(v,w)=\langle dY(v),dY(w)\rangle.
+\end{equation}
+\end{theorem}
+
+\emph{Method.} The bending equation cancels the linear metric term,
+while nonzero flux gives a nonzero first volume variation.
+Small amplitudes preserve embeddedness and tightness
+(Section~\ref{sec:reductions}). The volume-stationarity problem is
+discussed by V.~A.~Aleksandrov \cite{Aleksandrov}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main} from the roadmap]
+Theorem~\ref{thm:seed} gives the starting torus and curve.
+The preparation, ruling, insertion, and band theorems yield the
+global supported bending, as assembled in
+Corollary~\ref{thm:one-curve}. Apply Theorem~\ref{prop:pair}.
+The positive-curvature locus is nonempty by
+Theorem~\ref{thm:tightness} and remains fixed, giving the common
+open set.
+\end{proof}
+
+\section{Preliminaries}\label{sec:preliminaries}
+
+All objects are $C^\infty$. A closed surface is compact, connected,
+and without boundary, and $T^2=(\R/2\pi\mathbb Z)^2$.
+For an immersion $X$, write $g_X=\langle dX,dX\rangle$, $K_X$,
+and $dA_X$ for its induced metric, Gaussian curvature, and area
+measure. Our sign convention is
+$\mathrm{II}_{ij}=\langle X_{ij},n\rangle$ for a chosen unit normal.
+The Gauss equation is
+\begin{equation}\label{eq:gauss-curvature}
+ K_X=\frac{\mathrm{II}_{11}\mathrm{II}_{22}
+                 -\mathrm{II}_{12}^2}{g_{11}g_{22}-g_{12}^2}.
+\end{equation}
+See \cite[\S3-3 and \S4-3]{doCarmo}. We use the Levi--Civita
+connection $\nabla$ and its Christoffel coefficients $\Gamma^k_{ij}$;
+repeated coordinate indices are summed.
+
+\begin{definition}\label{def:tight}
+An embedding of a closed surface is \emph{tight} if its image meets
+every open half-space in an empty or connected set.
+\end{definition}
+
+For a closed embedded surface, $\Vol(X)$ is the volume of its bounded
+complementary component and $\nu_X$ is the outward unit normal.
+Equal induced metrics give an isometry by the identity on the source;
+images are congruent if related by a Euclidean isometry.
+
+\begin{definition}\label{def:bending}
+A field $Y:M\to\R^3$ along $X$ is an \emph{infinitesimal bending} if
+\begin{equation}\label{eq:strain}
+ \langle dX_p(v),dY_p(w)\rangle+
+ \langle dX_p(w),dY_p(v)\rangle=0
+ \quad(p\in M,\ v,w\in T_pM).
+\end{equation}
+Its outward normal flux is $\int_M\langle Y,\nu_X\rangle\,dA_X$.
+\end{definition}
+
+\begin{definition}\label{def:asymptotic}
+A regular curve $c$ is \emph{asymptotic} if
+$\mathrm{II}(c',c')=0$, equivalently if $(X\circ c)''$ is tangent
+to the surface. This is independent of the regular parameter.
+\end{definition}
+
+Supports are closures in the source; $A\Subset U$ means that
+$\overline A$ is compact and contained in the open set $U$.
+Differences of embeddings are taken on the same source.
+All $C^r$ norms use a fixed smooth background metric on that source.
+
+\section{Classical reductions and the volume argument}
+\label{sec:reductions}
+
+\begin{theorem}[Classical curvature criterion for tightness]
+\label{thm:tightness}
+For a smooth embedding $X:M\to\R^3$ of a closed surface, the two-piece
+property of Definition~\ref{def:tight} is equivalent to
+\begin{equation}\label{eq:tightness}
+ \int_M\max(K_X,0)\,dA_X=4\pi.
+\end{equation}
+\end{theorem}
+
+We use this classical theorem as an external result; see
+Banchoff--K\"uhnel \cite[Definition~1.1.1, p.~57]{BK}.
+By Gauss--Bonnet, its equivalent
+total-absolute-curvature formulation is
+$\int_M|K_X|\,dA_X=8\pi-2\pi\chi(M)$.
+This criterion is useful here because it reduces preservation of
+tightness to preservation of the positive-curvature part. It allows
+zero-curvature regions.
+
+\begin{lemma}[Preservation under a negative-curvature modification]
+\label{lem:tight-preservation}
+Suppose $X_0:M\to\R^3$ is a tight embedding of a closed surface,
+$U\subset\{K_{X_0}<0\}$ is open, and $X:M\to\R^3$ is an embedding
+with $\supp(X-X_0)\Subset U$ and $K_X<0$ on $U$.
+Then $X$ is tight.
+In particular these conditions hold for every sufficiently small
+$C^2$ perturbation supported in a fixed compact subset of
+$\{K_{X_0}<0\}$.
+\end{lemma}
+\begin{proof}
+On $U$ both positive curvature densities vanish. Outside the compact
+support of $X-X_0$, the maps agree on a neighborhood and hence have
+the same metric and curvature. Thus their total positive curvatures
+are equal, and Theorem~\ref{thm:tightness} applies.
+For the last assertion choose a compact neighborhood of the prescribed
+support contained in $\{K_{X_0}<0\}$. On this neighborhood the original
+curvature has a strictly negative upper bound. Formula
+\eqref{eq:gauss-curvature} and continuity in the first two derivatives
+preserve that bound under a sufficiently small $C^2$ change.
+Embeddings of a compact source form an open set in the $C^1$
+topology \cite[Chapter~2, \S1, Theorem~1.4]{Hirsch}.
+\end{proof}
+
+\begin{lemma}[First variation of enclosed volume]\label{lem:volume}
+For an embedding $X:M\to\R^3$ of a closed surface and a smooth field
+$Y:M\to\R^3$, the maps $X+tY$ are embeddings for sufficiently small
+$|t|$, and
+\begin{equation}\label{eq:volume-variation}
+ \left.\frac{d}{dt}\right|_{t=0}\Vol(X+tY)
+ =\int_M\langle Y,\nu_X\rangle\,dA_X.
+\end{equation}
+For small $t$, the enclosed volume is a polynomial in $t$ of degree
+at most three.
+\end{lemma}
+\begin{proof}
+The assertion about embeddings follows from the openness just cited.
+Orient $M$ so that $X$ has outward normal. On $\R^3$ define the
+two-form
+\[
+ \beta=\tfrac13(x\,dy\wedge dz+y\,dz\wedge dx+z\,dx\wedge dy),
+ \qquad d\beta=dx\wedge dy\wedge dz.
+\]
+Set $X_t=X+tY$ and $\mathcal V(t)=\int_M X_t^*\beta$.
+The divergence theorem gives $\mathcal V(0)=\Vol(X)>0$.
+For every embedded $X_t$ it also gives
+$\mathcal V(t)=\Vol(X_t)$ or $-\Vol(X_t)$, according to orientation.
+Continuity and positivity at zero select the positive sign for
+all sufficiently small $|t|$.
+In positively oriented local coordinates,
+\[
+ X_t^*\beta=\tfrac13
+       \det(X+tY,X_u+tY_u,X_v+tY_v)\,du\wedge dv.
+\]
+The integrand is a polynomial of degree at most three, proving
+the polynomial assertion globally.
+
+Extend the field $Y$ off $X(M)$ by a tubular projection and use
+Cartan's formula for the derivative of pullback at zero.
+The exact term has integral zero by Stokes' theorem on the
+closed source. The remaining term is
+\[
+ \mathcal V'(0)=\int_M X^*(\iota_Y d\beta)
+       =\int_M\langle Y,\nu_X\rangle\,dA_X.
+\]
+Here $\iota_Y$ denotes contraction with the extended velocity field;
+its restriction to the surface is independent of the extension.
+This proves \eqref{eq:volume-variation}. The classical ingredients
+are Cartan's formula, Stokes' theorem, and the divergence theorem;
+see \cite[Theorem~14.35 and Chapter~16, including Theorem~16.32]{Lee}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{prop:pair}]
+For arbitrary tangent vectors $v,w$, expand
+\[
+ \langle d(X+tY)(v),d(X+tY)(w)\rangle.
+\]
+The linear term vanishes by \eqref{eq:strain}, leaving
+$g_X(v,w)+t^2\langle dY(v),dY(w)\rangle$. This proves the exact
+identity \eqref{eq:exact-metric} at $t=\pm a$.
+By Lemma~\ref{lem:volume},
+\begin{equation}\label{eq:odd-volume}
+ \Vol(X+aY)-\Vol(X-aY)
+ =2a\int_M\langle Y,\nu_X\rangle\,dA_X+O(a^3).
+\end{equation}
+The coefficient of $a$ is nonzero; hence the difference is nonzero
+for every sufficiently small $a>0$.
+
+Choose a compact neighborhood of $\supp Y$ inside $\{K_X<0\}$.
+For fixed $Y$, $X+tY\to X$ in $C^2$, so its curvature stays negative
+on that neighborhood for small $|t|$. Outside it the embedding is
+unchanged. Lemma~\ref{lem:tight-preservation} proves tightness.
+Euclidean isometries preserve enclosed volume, so unequal volumes
+exclude congruence of the images.
+\end{proof}
+
+\section{The BGQR annulus and completion to a tight torus}
+\label{sec:seed}
+
+We prove Theorem~\ref{thm:seed} by using the annulus of
+Banks--Ghomi--Qiu--Raffaelli, with a flatter choice of their end profile.
+
+\begin{proof}[Proof of Theorem~\ref{thm:seed}]
+Use the first closed asymptotic curve $\Gamma_1$ in \cite{BGQR}.
+In their Section~2.4, replace the height profile on $[-200,200]$ by
+\[
+ H(r)=\int_0^r q(t)\,dt,
+\]
+where $q:\R\to[0,1]$ is smooth and even, equals one on $[-175,175]$,
+is positive on $(-200,200)$, vanishes for $|r|\ge200$, and is
+nonincreasing for $r\ge0$. Such a cutoff is obtained from the
+normalized tail integral of a positive bump on $(175,200)$,
+reflected evenly.
+Then $H'>0$ in the interior, $rH''\le0$, and all positive-order
+endpoint derivatives of $H$ vanish. The proofs of
+\cite[Propositions~3.2--3.3]{BGQR} apply with this profile:
+embeddedness uses the unchanged horizontal sections and strictly
+increasing height, while their equation~(13) and end estimates~(14)
+preserve $K<0$. Boundary immersion and strict convexity use only
+the unchanged horizontal data. Thus we obtain a smooth embedded
+annulus $S$ in $\R^2\times[-h,h]$, where $h=H(200)>0$, with
+horizontal boundary tangent planes and strictly convex boundary
+curves. Its interior lies in $|z|<h$. By the first paragraph of
+\cite[Section~4]{BGQR}, $\Gamma_1$ lies in $|r|<175$; hence its
+neighborhood there is unchanged.
+
+Let $D_\pm$ be the planar disks bounded by $\partial S$.
+Horizontal projection is a diffeomorphism on sufficiently small
+boundary collars, since the boundary tangent planes are horizontal.
+Each projected collar lies either inside or outside its disk;
+the corresponding boundary integral of geodesic curvature, measured
+against the inward conormal, is $2\pi$ or $-2\pi$.
+Gauss--Bonnet gives their sum as $-\int_S K\,dA>0$ because
+$\chi(S)=0$. Both collars therefore lie inside their disks.
+In these graph coordinates, flat endpoint derivatives of $H$
+give infinite-order contact with the boundary planes.
+
+Choose $R$ larger than the horizontal extent of $S$ and $D_\pm$.
+To provide the outer surface explicitly, choose a smooth convex
+function $\phi:\R\to[0,\infty)$, zero on $(-\infty,0]$, with
+$\phi',\phi''>0$ on $(0,\infty)$ and $\phi(t)\to\infty$.
+For instance take the zero extension of
+$\int_0^t(t-u)e^{-1/u}\,du$. The body
+\[
+ \Omega=\{(x,z):\phi(|x|^2-R^2)+z^2/h^2\le1\}
+\]
+is compact and convex, with nonempty interior and nonvanishing
+defining gradient on its boundary. The boundary is a smooth
+convex sphere and contains the planar caps $|x|\le R$, $z=\pm h$.
+Outside these caps the defining Hessian is positive definite:
+its horizontal block is $2\phi'I+4\phi''x\otimes x$ and its
+vertical entry is $2/h^2$. The interior of $S$ lies strictly
+inside $\Omega$, since its horizontal term is zero and $|z|<h$.
+Remove the interiors of $D_\pm$ from $\partial\Omega$ and
+attach $S$. At each seam the two pieces form the graph of the
+annular height function on the inside and zero on the outside;
+infinite-order contact makes it smooth. Strict interiority excludes
+other intersections. The resulting closed embedded surface is
+orientable and has Euler characteristic zero, being the union of
+two annuli, hence is a torus. The removed disks were flat,
+so Gauss--Bonnet on the convex sphere leaves total positive curvature
+$4\pi$; $S$ adds none. Theorem~\ref{thm:tightness} proves tightness.
+The retained curve remains embedded and asymptotic in $K<0$.
+A parametrization by $T^2$ gives $X_0$ and $c$ as required.
+\end{proof}
+
+\section{A geometric annulus implies a supported bending}
+\label{sec:bending}
+
+We first construct the bending on a negatively curved annulus
+foliated by closed asymptotic curves and straight transverse curves.
+
+
+Straightness of the transverse curves supplies the vanishing
+connection coefficient used below.
+
+\subsection{The linearized metric equation in asymptotic coordinates}
+
+For the remainder of this section use the metric $g=g_B$ and set
+\[
+ \mathcal W=|B_s\times B_c|=\sqrt{\det(g_{ij})}>0,\qquad
+ n=\frac{B_s\times B_c}{\mathcal W}.
+\]
+Here $s$ is the periodic coordinate and $c$ is the transverse coordinate.
+Derivatives in $s$ mean derivatives of periodic lifts; $ds$ is the
+global one-form on $\R/\ell\mathbb Z$ induced by the standard one-form
+on $\R$. Coordinate indices in this section range over $\{s,c\}$.
+The Gauss formula and the Mainardi--Codazzi equations in these
+conventions are the classical identities
+\[
+ B_{ij}=\Gamma^k_{ij}B_k+\mathrm{II}_{ij}n,\qquad
+ (\nabla_i\mathrm{II})_{jk}=(\nabla_j\mathrm{II})_{ik};
+\]
+see \cite[\S4-3]{doCarmo}.
+
+The hypotheses imply
+\begin{equation}\label{eq:band-geometry}
+ \mathrm{II}_{ss}=\mathrm{II}_{cc}=0,\qquad
+ \sigma:=\mathrm{II}_{sc}\ne0,\qquad \Gamma^s_{cc}=0.
+\end{equation}
+Indeed the first diagonal entry vanishes by asymptoticity.
+Since $B_c\ne0$, a transverse curve is straight precisely when
+$B_{cc}$ is parallel to $B_c$; comparing with the Gauss formula
+gives the other diagonal entry and the last equality.
+The Gauss equation gives $K_B=-\sigma^2/\mathcal W^2$,
+so $\sigma$ is nowhere zero.
+
+Decompose a field along $B$ uniquely as
+\[
+ Y=dB(U)+hn,\qquad \beta=g(U,\cdot),
+\]
+where $U$ is a tangent vector field on the parameter annulus and
+$h=Y\cdot n$. The metric dual $\beta^\sharp$ means the unique vector
+field $U$ with $g(U,v)=\beta(v)$ for every tangent vector $v$.
+Differentiating $\beta_j=\langle Y,B_j\rangle$ and using the
+Gauss formula gives
+\[
+ \langle Y_i,B_j\rangle=(\nabla_i\beta)_j-h\,\mathrm{II}_{ij}.
+\]
+Thus the infinitesimal bending equation is exactly
+\begin{equation}\label{eq:linearized-metric}
+ (\nabla_i\beta)_j+(\nabla_j\beta)_i
+                          -2h\,\mathrm{II}_{ij}=0.
+\end{equation}
+This is the classical tangential--normal formulation of the
+linearized metric equation. For background on infinitesimal
+bendings see \cite[Chapter~12]{Spivak}; the calculation above fixes
+the formula and sign used here.
+
+We choose $\beta=p(s,c)\,ds$. This sets the transverse covector
+component to zero, leaving one scalar unknown and the normal
+displacement. By \eqref{eq:band-geometry}, the three equations
+in \eqref{eq:linearized-metric} become
+\begin{equation}\label{eq:reduced-strain}
+ p_s=\Gamma^s_{ss}p,\qquad
+ 0=\Gamma^s_{cc}p,\qquad
+ h=\frac{p_c-2\Gamma^s_{sc}p}{2\sigma}.
+\end{equation}
+The middle equation is already satisfied by straightness.
+The mixed equation determines $h$ algebraically.
+Only the first equation remains to be solved around each circle.
+
+\begin{proposition}[The bending family and its volume functional]
+\label{prop:codazzi-family}
+Under the hypotheses of Theorem~\ref{thm:band-bending}, put
+\begin{equation}\label{eq:geometric-factor}
+ Q=\sqrt{|\sigma|\mathcal W}=(-K_B)^{1/4}\mathcal W>0.
+\end{equation}
+For every $F\in C_c^\infty(I)$, define
+\begin{equation}\label{eq:geometric-field}
+ p=QF(c),\qquad \beta=p\,ds,\qquad
+ h=\frac{p_c-2\Gamma^s_{sc}p}{2\sigma},\qquad
+ Y_F=dB(\beta^\sharp)+hn.
+\end{equation}
+Then $Y_F$ is a smooth infinitesimal bending with
+$\supp Y_F\subset(\R/\ell\mathbb Z)\times\supp F$.
+Its signed normal flux is
+\begin{equation}\label{eq:geometric-flux}
+ \int\det(Y_F,B_s,B_c)\,ds\,dc
+       =-\int_I F(c)J(c)\,dc,\qquad
+ J(c)=\int_0^\ell Q\,\partial_c(\mathcal W/\sigma)\,ds.
+\end{equation}
+In this family a member with nonzero flux exists if and only if
+$J$ is not identically zero on $I$.
+\end{proposition}
+\begin{proof}
+The first Codazzi equation and the area-density identity give
+\[
+ \partial_s\log|\sigma|=\Gamma^s_{ss}-\Gamma^c_{sc},
+ \qquad
+ \partial_s\log\mathcal W=\Gamma^s_{ss}+\Gamma^c_{sc}.
+\]
+For example, the Codazzi identity
+$(\nabla_s\mathrm{II})_{cs}=(\nabla_c\mathrm{II})_{ss}$,
+after using the zero diagonal coefficients, reads
+\[
+ \sigma_s-(\Gamma^c_{sc}+\Gamma^s_{ss})\sigma
+                                      =-2\Gamma^c_{sc}\sigma.
+\]
+The area identity follows by differentiating
+$\mathcal W=\sqrt{\det g}$ and using the metric connection.
+Adding the logarithmic identities yields
+\[
+ Q_s/Q=\Gamma^s_{ss}.
+\]
+Consequently $p=QF(c)$ solves the first equation in
+\eqref{eq:reduced-strain}. The other two equations hold by
+construction, so \eqref{eq:linearized-metric} proves zero strain.
+The factor $Q$ is smooth, positive, and periodic.
+
+All coefficients are smooth and periodic, and $h$ involves only
+$F$ and $F'$, proving the support assertion. The cutoff belongs in
+the free profile $F$; multiplying a bending by an arbitrary cutoff
+would introduce extra strain terms.
+
+For the flux, the second Codazzi equation gives
+\[
+ \partial_c\log|\sigma|=\Gamma^c_{cc}-\Gamma^s_{sc},\qquad
+ \partial_c\log\mathcal W=\Gamma^s_{sc}+\Gamma^c_{cc}.
+\]
+Its first equality follows by expanding
+$(\nabla_c\mathrm{II})_{sc}=(\nabla_s\mathrm{II})_{cc}$.
+Subtracting gives
+\[
+ \partial_c(\mathcal W/\sigma)
+             =2\Gamma^s_{sc}(\mathcal W/\sigma).
+\]
+The normal displacement in \eqref{eq:geometric-field} therefore
+satisfies
+\[
+ h\mathcal W=\tfrac12\left\{
+       \frac{\mathcal W}{\sigma}p_c
+       -\partial_c\left(\frac{\mathcal W}{\sigma}\right)p
+                         \right\}.
+\]
+Integrating by parts in $c$ removes the total derivative, because
+$p$ has compact support in that direction. We obtain
+\[
+ \int h\,dA_B
+       =-\int p\,\partial_c(\mathcal W/\sigma)\,ds\,dc,
+\]
+which is \eqref{eq:geometric-flux}.
+
+If $J\equiv0$, every member of this family has zero flux.
+If $J(c_*)\ne0$, choose a nonnegative smooth cutoff $\chi$
+supported in a neighborhood of $c_*$ and positive at $c_*$.
+The profile $F=\chi J$ then gives flux
+$-\int_I\chi J^2\,dc<0$. This proves the final equivalence.
+\end{proof}
+
+Nonzero normal displacement need not give nonzero flux.
+The second Codazzi identity also gives
+\[
+ h(-K_B)\mathcal W
+      =\tfrac12\partial_c(p\sigma/\mathcal W).
+\]
+Its integral along each ruling vanishes by compact support.
+We next show that the unweighted flux is nonzero for some profile.
+
+\subsection{Nonzero flux}
+
+\begin{proof}[Proof of Theorem~\ref{thm:band-bending}]
+Fix the prescribed open subinterval $I_0$ and choose a reference
+leaf inside it. Choose $s=0$ as one fixed ruling. Relabel nearby
+leaves by signed Euclidean distance along that straight ruling,
+with the reference leaf labeled $c=0$ and the positive direction
+agreeing with the original transverse orientation.
+Restrict to a neighborhood $|c|<\varepsilon$ whose closure is
+inside the chosen subband, for some $\varepsilon>0$.
+This change of leaf label is smooth, increasing, and independent
+of $s$, because the ruling is regular and straight.
+It preserves the hypotheses, compact supports, and signed flux
+under change of variables. We retain the notation $B(s,c)$;
+all quantities below, including $J$, are computed in these labels.
+
+Put $\gamma(s)=B(s,0)$ and $V(s)=B_c(s,0)$.
+Straightness gives a unique smooth affine ruling coefficient $u$:
+\[
+ B(s,c)=\gamma(s)+u(s,c)V(s),\qquad
+ u(s,0)=0,\quad u_c(s,0)=1.
+\]
+For example $u=\langle B-\gamma,V\rangle/|V|^2$.
+After decreasing $\varepsilon$, compactness of the $s$-circle
+gives $u_c>0$ throughout the band.
+The normalization on the selected ruling gives
+$|V(0)|=1$ and $u(0,c)=c$.
+The distance normalization applies only at $s=0$.
+
+Set $\Delta(s)=\det(\gamma_s,V,V_s)$.
+At $c=0$ the mixed second coefficient has unnormalized value
+$\Delta$, and the two diagonal coefficients vanish. Hence
+\[
+ K_B(s,0)=-\frac{\Delta(s)^2}{|\gamma_s\times V|^4}<0,
+\]
+so $\Delta$ is nowhere zero. Its sign is constant on the circle.
+
+Expanding the asymptotic condition
+$\det(B_{ss},B_s,V)=0$ gives
+\[
+ \det(\gamma_{ss}+uV_{ss},\,\gamma_s+uV_s,\,V)
+                                  +2\Delta u_s=0.
+\]
+The first determinant is a polynomial of degree at most two in $u$.
+Its constant coefficient is zero because $\gamma$ is asymptotic.
+Differentiate the displayed equality in $c$ at $c=0$.
+Since $u_c(s,0)=1$ and $u_{sc}(s,0)=0$, its linear
+coefficient is also zero.
+Consequently, on $c>0$, $u_s/u^2$ depends only on $s$.
+Commutation of mixed derivatives now gives
+\[
+ \partial_s(u_c/u^2)=\partial_c(u_s/u^2)=0.
+\]
+Evaluate this $s$-independent quantity at $s=0$, where
+$u(0,c)=c$ and $u_c(0,c)=1$. We obtain the geometric
+normalization identity
+\begin{equation}\label{eq:ruling-normalization}
+ c^2u_c=u^2\qquad(0<c<\varepsilon).
+\end{equation}
+
+Use the squared area vector in the affine ruling parameter:
+\[
+ S(s,u)=|(\gamma_s+uV_s)\times V|^2,\qquad
+ S_u(s,u)=S_1(s)+2S_2(s)u,\qquad
+ S_2=|V_s\times V|^2>0.
+\]
+Here $S$ is quadratic in $u$, and $S_1(s)=S_u(s,0)$;
+the strict positivity follows from $\Delta\ne0$.
+From $B_c=u_cV$ and $B_{sc}=u_{cs}V+u_cV_s$,
+\[
+ \mathcal W^2=u_c^2S,\qquad
+ \sigma=\frac{u_c^2\Delta}{\mathcal W},\qquad
+ \frac{\mathcal W}{\sigma}=\frac S\Delta,\qquad
+ Q=\sqrt{|\Delta|}\,u_c .
+\]
+Thus the flux kernel from \eqref{eq:geometric-flux}
+satisfies, for $0<c<\varepsilon$,
+\begin{equation}\label{eq:direct-flux}
+ \begin{aligned}
+ J(c)&=\operatorname{sign}(\Delta)
+       \int_0^\ell\frac{u_c^2S_u}{\sqrt{|\Delta|}}\,ds\\
+ &=\frac{\operatorname{sign}(\Delta)}{c^4}
+       \int_0^\ell
+       \frac{u^4}{\sqrt{|\Delta|}}(S_1+2S_2u)\,ds .
+ \end{aligned}
+\end{equation}
+
+Suppose $J$ vanished identically on this positive subinterval.
+The last integral would then be zero for every such $c$.
+Repeatedly apply $c^2\partial_c$ and use
+\eqref{eq:ruling-normalization}. We obtain by induction
+\begin{equation}\label{eq:vanishing-moments}
+ \int_0^\ell\frac{u^{n+4}}{\sqrt{|\Delta|}}
+       \left(S_1+\frac{n+4}{2}S_2u\right)\,ds=0,
+ \qquad n=0,1,2,\ldots .
+\end{equation}
+For clarity, applying $c^2\partial_c$ to the expression with
+index $n$ gives $n+4$ times the expression with index $n+1$.
+The coefficient functions depend only on $s$.
+Smoothness and compactness of the circle
+justify differentiation under the integral.
+
+Fix any one leaf with $0<c<\varepsilon$.
+On its compact circle, $u>0$ and $S_2>0$, while $S_1$ is
+bounded. Choose an integer $n$ large enough that
+\[
+ (n+4)\min_s(S_2u)>2\max_s|S_1|.
+\]
+The parenthesis in \eqref{eq:vanishing-moments} is then strictly
+positive at every $s$, and so is the integral, a contradiction.
+
+It follows that $J$ is not identically zero.
+Choose a nonnegative smooth cutoff $\chi$, compactly supported
+inside $(0,\varepsilon)$ and positive at a point where $J\ne0$,
+and set $F=\chi J$ there, extended by zero.
+Proposition~\ref{prop:codazzi-family} gives a bending with flux
+$-\int\chi J^2\,dc<0$ and compact support in the selected subband.
+Return to the original leaf labels and extend the field by zero
+over the rest of the original annulus. Compact support makes
+this extension smooth; the chain rule preserves zero strain,
+and the orientation-preserving change of variables preserves
+the signed flux. Its support lies compactly inside the original
+$(\R/\ell\mathbb Z)\times I_0$, as required.
+\end{proof}
+
+\section{The Darboux frame and the forced inflection}\label{sec:frame}
+
+We now construct the annulus needed for
+Corollary~\ref{thm:one-curve}, starting with its given asymptotic curve.
+
+Let $\gamma:\R/\ell\mathbb Z\to\R^3$, $\ell>0$, be the given curve
+parametrized by arclength, and let $n(s)$ be the unit normal of
+the surface along it. Put $T=\gamma_s$ and $E=n\times T$.
+Then $(T,E,n)$ is a positively oriented orthonormal frame.
+All derivatives in $s$ are derivatives of periodic lifts.
+
+\begin{lemma}[Frame equations]\label{lem:frame}
+There are smooth real periodic functions $k,\tau$ satisfying
+\begin{equation}\label{eq:darboux}
+ T_s=kE,\qquad E_s=-kT+\tau n,\qquad n_s=-\tau E.
+\end{equation}
+They are given by $k=\langle T_s,E\rangle$ and
+$\tau=\langle E_s,n\rangle$. Moreover $K=-\tau^2$ along $\gamma$.
+\end{lemma}
+\begin{proof}
+Unit speed gives $T_s\perp T$, and asymptoticity gives
+$T_s\perp n$, proving the first equation.
+Differentiating orthonormality gives the other two, with the
+$T$ component of $n_s$ equal to
+$-\langle n,T_s\rangle=0$.
+In the orthonormal tangent basis $(T,E)$, the second fundamental
+form has first entry zero and mixed entry $\tau$.
+Its determinant is therefore $-\tau^2$, which proves the curvature
+identity by \eqref{eq:gauss-curvature}.
+\end{proof}
+
+Here $k$ is the signed geodesic curvature and $\tau$ is the signed
+geodesic torsion. Negative Gaussian curvature implies $\tau\ne0$;
+hence its sign is constant on the circle. Define
+\begin{equation}\label{eq:rho}
+ \rho=|\tau|^{-1/2}>0.
+\end{equation}
+This smooth periodic function equals the negative Gaussian curvature
+along the core raised to the power $-1/4$.
+We use this surface frame even
+at points where the curve's curvature vanishes, where a Frenet
+normal need not be defined.
+The exponent is chosen so that
+$\rho_s/\rho=-\tau_s/(2\tau)$, the integrating factor relation
+in the asymptotic return equation of Section~\ref{sec:ruled}.
+
+\begin{definition}\label{def:inflection}
+An \emph{inflection} of the unit-speed curve $\gamma$ is a point
+$s_0$ where $\gamma_{ss}(s_0)=0$. By \eqref{eq:darboux} this is
+equivalent to $k(s_0)=0$. No prescribed order of vanishing is
+included in this definition.
+\end{definition}
+
+\begin{lemma}[Injectivity of the negative Gauss map]\label{lem:gauss}
+For a smooth embedded tight torus with outward normal $n$, the
+restriction of $n$ to $\{K<0\}$ is injective.
+\end{lemma}
+\begin{proof}
+For a regular value $u\in S^2$ of $n$, let $m_+(u)$ and $m_-(u)$
+be the numbers of preimages with positive and negative curvature.
+They are finite because the source is compact and each preimage
+is isolated. A maximum of the height function $\langle X,u\rangle$
+has outward normal $u$. At that point its Hessian is negative
+semidefinite; regularity of $u$ makes the Hessian nondegenerate,
+so it is negative definite and the Gaussian curvature is positive.
+Thus $m_+(u)\ge1$ for every regular value.
+
+The change-of-variables formula for the Gauss map, whose absolute
+Jacobian is $|K|$, and Theorem~\ref{thm:tightness} give
+\[
+ \int_{S^2}m_+(u)\,dA(u)=\int_{\{K>0\}}K\,dA=4\pi .
+\]
+Sard's theorem makes the set of nonregular values have measure zero.
+Since $S^2$ has area $4\pi$, it follows that $m_+=1$ almost
+everywhere. The signed-degree formula gives
+\[
+ m_+(u)-m_-(u)=\deg n
+ =\frac1{4\pi}\int_{T^2}K\,dA=\frac{\chi(T^2)}2=0.
+\]
+Here the equality for the degree follows either from
+$n^*(dA_{S^2})=K\,dA$ or the usual integration formula for degree,
+and the next equality is Gauss--Bonnet. Thus $m_-=1$ almost
+everywhere as well. Change of variables, Sard's theorem, and the
+degree formula are used in their ordinary smooth-manifold forms;
+see \cite[Chapters~6 and~17]{Lee}.
+
+If two different points in $\{K<0\}$ had the same normal, the inverse
+function theorem would provide disjoint neighborhoods mapped
+diffeomorphically onto overlapping open subsets of $S^2$.
+Every regular value in their nonempty open overlap would have at
+least two negative-curvature preimages. This contradicts $m_-=1$
+almost everywhere, since a nonempty open subset of $S^2$ has
+positive area.
+\end{proof}
+
+\begin{proposition}[One loop supplies an inflection]\label{prop:inflection}
+Every regular embedded closed asymptotic curve in $\{K<0\}$ on
+a smooth embedded tight torus has an inflection. In fact its
+signed geodesic curvature $k$ takes both positive and negative values.
+\end{proposition}
+\begin{proof}
+Lemma~\ref{lem:gauss} shows that $s\mapsto n(s)$ is injective.
+It is regular because $|n_s|=|\tau|>0$. It is therefore a simple
+regular closed curve on the unit sphere.
+
+We use the Gauss--Bonnet--Fenchel argument recorded by
+Ghomi--Raffaelli \cite[Note~5.2, equations~(10)--(12)]{GR}, where
+it is attributed to Kovaleva \cite{Kovaleva}. We give the calculation
+to specify its orientations and its application here.
+Let $\sigma$ be arclength on the spherical normal curve, and
+let $\kappa_{\mathrm{sph}}$ be its signed geodesic curvature
+for the outward orientation of $S^2$.
+The frame equations give
+\[
+ n_{ss}=-\tau_sE+\tau kT-\tau^2n,\qquad
+ n\times n_s=\tau T.
+\]
+Consequently
+\[
+ \kappa_{\mathrm{sph}}
+ =\frac{\langle n_{ss},n\times n_s\rangle}{|n_s|^3}
+ =\frac{k}{|\tau|},\qquad d\sigma=|\tau|\,ds,
+\]
+and therefore $\int\kappa_{\mathrm{sph}}\,d\sigma=\int_0^\ell k\,ds$.
+
+Choose the disk on the sphere lying to the left of the oriented
+normal curve, and let its area be $A$. The Jordan curve theorem
+on the sphere gives two disks with nonempty open interiors, so
+$0<A<4\pi$. The sphere has curvature one and this disk has Euler
+characteristic one. Gauss--Bonnet with boundary gives
+\[
+ \int\kappa_{\mathrm{sph}}\,d\sigma+A=2\pi,
+ \qquad
+ \left|\int_0^\ell k\,ds\right|=|2\pi-A|<2\pi .
+\]
+Gauss--Bonnet with boundary is used in its standard smooth-boundary
+form \cite[\S4-5]{doCarmo}. No convexity or hemisphere condition
+on the spherical disk is required.
+
+On the other hand Fenchel's theorem \cite{Fenchel} for a regular
+closed space curve gives
+\[
+ \int_0^\ell|\gamma_{ss}|\,ds
+ =\int_0^\ell|k|\,ds\ge2\pi.
+\]
+If $k$ had only one sign, including the possibility of zeros,
+the last integral would equal $|\int k\,ds|$, a contradiction.
+Thus $k$ has both signs, and continuity gives a zero.
+\end{proof}
+
+The role of the inflection is to permit a correction concentrated
+near a point where $k=0$ without significantly changing the
+transverse component of a ruling. Before choosing that ruling,
+we arrange one further derivative condition. The frame
+equations and $\tau_s/\tau=-2\rho_s/\rho$ give
+\[
+ (\rho n)_{ss}=(\rho_{ss}-\rho^{-3})n+\rho\tau kT.
+\]
+Thus at an inflection the condition
+$\rho_{ss}\ne\rho^{-3}$ means exactly that the scaled normal
+curve $\rho n$ has nonzero acceleration. Here the scaled normal
+is the surface normal multiplied by the curvature weight
+$(-K)^{-1/4}$ along the core. The next section arranges the
+nonzero-acceleration condition by a local modification.
+
+\section{Local preparation of the curve}\label{sec:preparation}
+
+\begin{proposition}[An inflection implies a prepared curve]
+\label{prop:prepare}
+Let $\ell>0$, let $X_0:M\to\R^3$ be a smooth embedding of a closed
+oriented surface, and let $c:\R/\ell\mathbb Z\to M$ be a smooth embedding
+such that $\gamma=X_0\circ c$ is a unit-speed asymptotic curve
+in $\{K_{X_0}<0\}$. Use its frame from
+Section~\ref{sec:frame}, and suppose $k(s_0)=0$.
+For every open neighborhood $U$ of $c(\R/\ell\mathbb Z)$ with
+$U\subset\{K_{X_0}<0\}$ and every $\varepsilon>0$, there is a
+smooth embedding $\widetilde X:M\to\R^3$ such that
+\[
+ \supp(\widetilde X-X_0)\Subset U,\quad
+ \|\widetilde X-X_0\|_{C^2}<\varepsilon,\quad
+ K_{\widetilde X}<0\text{ on }U.
+\]
+The curve $\widetilde X\circ c$ is closed, embedded, and
+asymptotic. In its own arclength $\widetilde s$, chosen to be zero at
+$c(s_0)$, its frame functions satisfy
+\begin{equation}\label{eq:prepared}
+ \widetilde k(0)=0,\qquad
+ \widetilde\rho_{\widetilde s\widetilde s}(0)\ne\widetilde\rho(0)^{-3}.
+\end{equation}
+Here $\widetilde\rho=|\widetilde\tau|^{-1/2}$ for the new curve.
+If $X_0$ is tight, $\widetilde X$ is tight.
+\end{proposition}
+\begin{proof}
+We change the curve while retaining its tangent directions
+and its normal directions. Prescribe a new velocity $v(s)T(s)$
+with $v>0$. To keep the curve closed it is necessary and sufficient
+that
+\begin{equation}\label{eq:closure-moment}
+ \int_0^\ell(v-1)T\,ds=0,
+\end{equation}
+because $\int_0^\ell T\,ds=0$. We construct a family $v=v_\delta$,
+$\delta\downarrow0$, with
+\begin{equation}\label{eq:speed-jets}
+ v(s_0)=1,\quad v_s(s_0)=0,\quad v_{ss}(s_0)=d,
+ \qquad \|v-1\|_{C^1}\longrightarrow0,
+\end{equation}
+where the fixed real number $d$ will be chosen below.
+
+There is an interval disjoint from $s_0$ on which $k\ne0$.
+Indeed $k\equiv0$ would make $T$ constant, contradicting
+$\int T\,ds=0$ and $|T|=1$; a nonzero value has an open
+neighborhood away from the zero at $s_0$. On such an interval,
+\[
+ T_s=kE,\quad T_{ss}=-k^2T+k_sE+k\tau n,\quad
+ \det(T,T_s,T_{ss})=k^2\tau\ne0.
+\]
+It follows that the vectors $T(s)$ on that interval span $\R^3$:
+otherwise they and their first two derivatives would lie in a
+fixed proper linear subspace, contradicting the determinant.
+Choose three points with linearly independent tangent vectors,
+and choose smooth bumps $b_1,b_2,b_3$ of integral one in
+disjoint sufficiently small neighborhoods of those points.
+The three vectors $\int b_iT\,ds$ are then linearly independent.
+
+Choose a smooth cutoff $\chi$ on $\R$, equal to one near zero
+and supported in $(-1,1)$, and set in a coordinate interval at $s_0$
+\[
+ h_\delta(s)=\tfrac d2(s-s_0)^2
+                        \chi((s-s_0)/\delta),
+\]
+extended by zero periodically. Its value and first derivative at
+$s_0$ are zero, and its second derivative there is $d$.
+Moreover $\|h_\delta\|_{C^1}=O(\delta)$ and
+$|\int h_\delta T\,ds|=O(\delta^3)$.
+Solve the invertible three-dimensional linear system
+\[
+ \sum_{i=1}^3 a_i\int b_iT\,ds=-\int h_\delta T\,ds.
+\]
+Its matrix is fixed, so $a_i=O(\delta^3)$.
+Then $v=1+h_\delta+\sum_i a_i b_i$ satisfies
+\eqref{eq:closure-moment} and \eqref{eq:speed-jets}.
+For small $\delta$ it is positive.
+
+Integrate $\widetilde\gamma_s=vT$ with
+$\widetilde\gamma(s_0)=\gamma(s_0)$. The moment condition proves
+periodicity; estimates on $v-1$ and $v_s$ show
+$\widetilde\gamma-\gamma\to0$ in $C^2$.
+Since the surface is oriented, its embedded source circle has a
+two-sided smooth collar. Choose coordinates $(s,w)$ in such a
+collar, with $X_0(s,0)=\gamma(s)$, whose closure lies in $U$.
+For a fixed cutoff $\chi_0(w)$ equal to one near zero and
+supported in the collar, define
+\[
+ \widetilde X(s,w)=X_0(s,w)+
+              \chi_0(w)(\widetilde\gamma(s)-\gamma(s)),
+\]
+and put $\widetilde X=X_0$ elsewhere.
+This tends to $X_0$ in $C^2$. Embedding and negative curvature
+persist, and Lemma~\ref{lem:tight-preservation} preserves
+tightness when present.
+
+At $w=0$, the two tangent vectors of $\widetilde X$ are $vT$
+and the original transverse tangent. Their span and orientation
+are unchanged; hence the normal is exactly $n(s)$.
+The new acceleration
+$\widetilde\gamma_{ss}=v_sT+vkE$ is tangent to this plane,
+so the new curve is asymptotic.
+Let $\widetilde s$ be its arclength, with $\widetilde s(s_0)=0$.
+Its new period is $\widetilde\ell=\int_0^\ell v(s)\,ds$.
+Then
+\[
+ d\widetilde s=v\,ds,\qquad
+ \widetilde k=k/v,\qquad
+ \widetilde\tau=\tau/v,\qquad
+ \widetilde\rho=\sqrt v\,\rho.
+\]
+At $s_0$, where $v=1$ and $v_s=0$, differentiating twice yields
+\[
+ \widetilde k=0,\qquad
+ \widetilde\rho_{\widetilde s\widetilde s}=\rho_{ss}+\tfrac12\rho d,
+ \qquad
+ \widetilde\rho^{-3}-\widetilde\rho_{\widetilde s\widetilde s}
+ =\rho^{-3}-\rho_{ss}-\tfrac12\rho d .
+\]
+Choose $d$ different from
+$2(\rho^{-3}-\rho_{ss})(s_0)/\rho(s_0)$.
+The last expression is then nonzero, proving
+\eqref{eq:prepared} in the new arclength.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:prepared-core}]
+Reparametrize the original core by arclength.
+Proposition~\ref{prop:inflection} gives an inflection, and
+Proposition~\ref{prop:prepare} gives the required tight embedding
+$X_1$. Reparametrize the new curve by its own arclength to obtain
+$c_1$. Along an asymptotic curve, $\rho=(-K)^{-1/4}$ and the frame
+equations give
+$(\rho n)_{ss}=(\rho_{ss}-\rho^{-3})n+\rho\tau kT$.
+Thus the conclusion of Proposition~\ref{prop:prepare} gives
+$\gamma_{ss}=0$ and $(\rho n)_{ss}\ne0$ at the selected point.
+\end{proof}
+
+\section{From a prepared curve to a periodic ruled annulus}
+\label{sec:ruled}
+
+We construct a ruled strip around the prepared curve, then insert
+it into the surface in Section~\ref{sec:insertion}.
+
+\begin{proposition}[Prepared curve implies periodic ruled annuli]
+\label{prop:ruled}
+Let $\ell>0$, and suppose $\gamma:\R/\ell\mathbb Z\to\R^3$ is a smooth embedded
+unit-speed curve with a smooth positively oriented orthonormal frame
+$(T,E,n)$ satisfying $T=\gamma_s$, \eqref{eq:darboux}, and
+$\tau\ne0$. Put $\rho=|\tau|^{-1/2}$.
+If for some $s_0$
+\[
+ k(s_0)=0,\qquad
+ \rho(s_0)^{-3}-\rho_{ss}(s_0)\ne0,
+\]
+then there exist smooth periodic functions $f>0$, $g$, and $\omega$
+such that, for $V=gT+fE$:
+\begin{enumerate}
+ \item $R(s,u)=\gamma(s)+uV(s)$ is an embedded negatively curved
+ ruled strip on $|u|<a$ for some $a>0$, with the prescribed tangent
+ plane $\operatorname{span}(T,E)$ along $u=0$;
+ \item $\det(\gamma_s,V,V_s)=f^2\tau\ne0$;
+ \item for all sufficiently large $c$,
+ \[
+ B(s,c)=\gamma(s)+\frac{\rho(s)}{c+\omega(s)}V(s)
+ \]
+ has closed asymptotic constant-$c$ curves.
+ For every bounded nonempty open interval of such $c$, this is an embedding of
+ the corresponding open annulus. Its constant-$c$ leaves
+  converge uniformly to $\gamma$ as $c\to+\infty$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Write a transverse vector in the prescribed tangent plane as
+$V=gT+fE$, where $f>0$. We choose its direction and scale
+jointly. Allowing the transverse component $f$ to vary will turn
+the period correction into linear equations. Impose
+\begin{equation}\label{eq:ruling-constraint}
+ f_s=-kg.
+\end{equation}
+This removes the $E$ component of $V_s$. It will also remove
+the multiplicative obstruction in the return map calculated below.
+For the moment $f,g$ are unspecified. Define the geometric component
+$\xi=\langle V_s,T\rangle=g_s-kf$. Then
+\[
+ V_s=\xi T+f\tau n,\qquad
+ V_{ss}=\xi_sT+(k\xi-f\tau^2)E+(f_s\tau+f\tau_s)n.
+\]
+In particular
+\begin{equation}\label{eq:delta}
+ \Delta:=\det(T,V,V_s)=f^2\tau\ne0.
+\end{equation}
+At $u=0$ the ruling is transverse to the core, so $R$ is an
+immersion near it. Its mixed unnormalized second coefficient is
+$\langle R_{su},R_s\times R_u\rangle=\Delta$ and $R_{uu}=0$.
+Formula \eqref{eq:gauss-curvature} therefore gives
+\begin{equation}\label{eq:ruled-curvature}
+ K_R=-\frac{\Delta^2}{|R_s\times R_u|^4}<0
+\end{equation}
+where $R$ is immersed.
+
+We determine the conditions for the nonruling asymptotic curves to
+close. Their graphs are $s\mapsto R(s,u(s))$.
+The acceleration has normal component equal to that of
+$R_{ss}+2u_sR_{su}$: the $u_{ss}R_u$ term is tangent and
+$R_{uu}=0$. Set
+\[
+ 2A=\xi_s-\frac{\tau_s}{\tau}\xi+g\tau^2 .
+\]
+The frame equations give the two unnormalized coefficients
+\[
+ \langle R_{ss},R_s\times V\rangle
+     =f^2\tau_su-2f^2\tau Au^2,\qquad
+ \langle R_{su},R_s\times V\rangle=f^2\tau.
+\]
+Thus the asymptotic equation is the Riccati equation
+\begin{equation}\label{eq:riccati}
+ u_s=\frac{\rho_s}{\rho}u+Au^2.
+\end{equation}
+Here $\tau_s/\tau=-2\rho_s/\rho$ follows from
+$\rho=|\tau|^{-1/2}$. For $u\ne0$, taking the reciprocal gives
+\begin{equation}\label{eq:reciprocal}
+ (\rho/u)_s=-\rho A.
+\end{equation}
+The reciprocal substitution is the standard Bernoulli reduction
+\cite[\S1.4]{Teschl}. It also identifies the exact return map.
+Take $s=0$ as base point and let $\mathcal P(u_0)$ be the value
+at $s=\ell$ of the solution with initial value $u_0$.
+For all sufficiently small $u_0$, integration of
+\eqref{eq:reciprocal} gives
+\begin{equation}\label{eq:return-map}
+ \mathcal P(u_0)=
+ \frac{u_0}{1-\dfrac{u_0}{\rho(0)}
+                      \int_0^\ell\rho A\,ds}.
+\end{equation}
+Small initial values keep the denominator nonzero throughout
+one period. The value at $u_0=0$ is defined by continuity.
+The imposed condition $f_s+kg=0$ has made the linear coefficient
+in \eqref{eq:riccati} equal to $\rho_s/\rho$, so its return
+multiplier is one. Accordingly $\mathcal P'(0)=1$ even when
+the displayed integral is nonzero.
+The whole return map is the identity on an interval precisely
+when $\int_0^\ell\rho A\,ds=0$, whereas a unit multiplier
+alone does not imply periodicity of neighboring solutions.
+
+It follows that periodicity of the neighboring nonzero solutions
+is equivalent to that single remaining integral condition. Indeed integration over a period proves
+necessity; if this integral vanishes, a periodic function $\omega$
+with $\omega_s=-\rho A$ exists, and every nonzero solution with
+positive denominator is
+\begin{equation}\label{eq:leaves}
+ u(s,c)=\frac{\rho(s)}{c+\omega(s)}.
+\end{equation}
+The parameter $c$ is the additive constant in $\rho/u$; adding a
+constant to $\omega$ only changes this label.
+
+It remains to choose $f,g$ so that both
+\eqref{eq:ruling-constraint} and the period condition hold.
+The point of retaining the scale $f$ is that these requirements
+become linear. Since $\tau^2=\rho^{-4}$ and
+$\tau_s/\tau=-2\rho_s/\rho$, two integrations by parts give
+\begin{equation}\label{eq:period-identity}
+ \begin{aligned}
+ 2\int_0^\ell\rho A\,ds
+ &=\int_0^\ell(\rho\xi_s+2\rho_s\xi+g\rho^{-3})\,ds\\
+ &=\int_0^\ell\{\rho_s(g_s-kf)+g\rho^{-3}\}\,ds\\
+ &=\int_0^\ell\{g(\rho^{-3}-\rho_{ss})-fk\rho_s\}\,ds .
+ \end{aligned}
+\end{equation}
+There are no boundary terms because every function is periodic.
+Consequently it suffices to solve
+\begin{equation}\label{eq:linear-periods}
+ f_s+kg=0,\qquad
+ \int_0^\ell\{g(\rho^{-3}-\rho_{ss})-fk\rho_s\}\,ds=0,
+ \qquad f>0.
+\end{equation}
+
+The prepared inflection separates the effects of a local correction.
+Changing $g$ changes $f$ through $f_s=-kg$; if the change is
+concentrated near $k(s_0)=0$, its accumulated effect on $f$
+tends to zero. In the second equation of
+\eqref{eq:linear-periods}, the same concentration is weighted
+by $\rho^{-3}-\rho_{ss}$, whose value at $s_0$ is nonzero.
+Thus a finite correction of the period can coexist with $f$
+remaining uniformly close to one and positive.
+The following construction implements these two effects.
+
+Since a closed unit-speed curve
+cannot have constant tangent, $\int_0^\ell k^2\,ds>0$.
+Let $\varphi_\delta$ be a nonnegative smooth function of integral
+one supported in the $\delta$-neighborhood of $s_0$ on the circle.
+Define
+\[
+ b_\delta=\varphi_\delta-
+       \frac{\int_0^\ell k\varphi_\delta\,ds}
+            {\int_0^\ell k^2\,ds}\,k,\qquad
+ (P_\delta)_s=kb_\delta,\qquad P_\delta(s_*)=0,
+\]
+where $s_*$ is any fixed base point.
+The integral of $kb_\delta$ is zero, so $P_\delta$ is periodic.
+Since $k(s_0)=0$,
+\[
+ \int_0^\ell|kb_\delta|\,ds\longrightarrow0,\quad
+ \|P_\delta\|_\infty\longrightarrow0,\quad
+ \int_0^\ell b_\delta F\,ds\longrightarrow F(s_0)
+\]
+for every fixed continuous periodic $F$.
+The first assertion follows by bounding the bump contribution by
+$\sup_{|s-s_0|<\delta}|k(s)|$ and the correction by a constant
+times $|\int k\varphi_\delta|$; both tend to zero.
+The second follows by integration, and the third follows from
+concentration of $\varphi_\delta$ and the vanishing correction.
+
+Set
+\begin{equation}\label{eq:balance}
+ \lambda_\delta=
+ -\frac{\int_0^\ell k\rho_s\,ds}
+ {\int_0^\ell\{b_\delta(\rho^{-3}-\rho_{ss})
+                         +P_\delta k\rho_s\}\,ds},
+ \qquad
+ f=1+\lambda_\delta P_\delta,\quad g=-\lambda_\delta b_\delta .
+\end{equation}
+The denominator converges to
+$\rho(s_0)^{-3}-\rho_{ss}(s_0)\ne0$.
+Thus $\lambda_\delta$ is bounded for small $\delta$, and
+$f\to1$ uniformly, giving $f>0$. The first equality in
+\eqref{eq:linear-periods} follows by differentiating $f$.
+The second follows by substitution of \eqref{eq:balance}.
+Fix one such $\delta$ once and for all. This fixes the smooth
+ruling $V$, all its derivatives, and a periodic $\omega$.
+
+Compactness first gives a uniform width on
+which $R$ is immersed. It is a local embedding at every $(s,0)$
+by transversality. If no narrower strip were injective, there would
+be pairs of distinct parameters with $|u|,|u'|\to0$ and equal
+images. Subsequences of their circle coordinates converge.
+Equality of the limiting core points and embeddedness of $\gamma$
+force both limits to be the same $s$. A local embedding near
+$(s,0)$ then excludes those pairs, a contradiction.
+After narrowing once more, injectivity on the compact closed
+cylinder gives a homeomorphism onto its image. Its restriction
+to the interior is therefore an embedded strip of some width $a>0$.
+
+Finally, for $c$ sufficiently large, $c+\omega>0$ and
+$0<u(s,c)<a$, uniformly in $s$. The map
+$(s,c)\mapsto(s,u(s,c))$ is a diffeomorphism onto its image because
+\[
+ u_c=-\frac{\rho}{(c+\omega)^2}<0
+\]
+and its inverse is $c=\rho(s)/u-\omega(s)$.
+Composing with $R$ proves the asserted annular embedding.
+Equation \eqref{eq:reciprocal} proves that its constant-$c$ circles
+are asymptotic. Their distance from the core tends uniformly to
+zero as $c\to+\infty$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:ruled-interface}]
+Use the Darboux frame of $\gamma$. Lemma~\ref{lem:frame} gives
+$|\tau|=\sqrt{-K}$, so the curvature weight is
+$\rho=|\tau|^{-1/2}$. At an inflection,
+$(\rho n)_{ss}=(\rho_{ss}-\rho^{-3})n$.
+The hypotheses therefore imply those of Proposition~\ref{prop:ruled},
+which supplies the strip. Its constant-$c$ leaves converge uniformly
+to the core, so a sufficiently large bounded leaf interval gives
+the asserted annulus in any prescribed neighborhood $N$.
+\end{proof}
+
+\section{Insertion and passage to a global bending}
+\label{sec:insertion}
+
+The ruled strip just constructed has the correct core and tangent
+planes, but need not already be part of the original surface.
+We state the replacement step for an arbitrary embedded strip
+with those first-order data. Straightness is needed in the
+construction of the bending annulus, but not in this replacement
+argument. The curvature estimate is needed because cutting off
+a quadratic normal displacement need not be small in $C^2$.
+
+\begin{proof}[Proof of Theorem~\ref{prop:insert}]
+Use an ambient tubular neighborhood of $X_0(M)$ with its normal
+projection $\pi$ onto $X_0(M)$; see
+\cite[Theorem~6.24]{Lee}. After narrowing the strip, define
+\[
+ q=X_0^{-1}\circ\pi\circ Z .
+\]
+At $u=0$, $q(s,0)=c(s)$, and $dq$ is invertible because
+$Z_s,Z_u$ span the original tangent plane.
+Thus $q$ is a local diffeomorphism near the core. It is a
+diffeomorphism onto a source neighborhood for a sufficiently
+narrow uniform strip. For uniform injectivity, any pairs of equal images with strip
+widths tending to zero would have limiting points on the same
+embedded core. Those limits must coincide, and the inverse
+function theorem at that point excludes the pairs.
+After a further restriction to a smaller closed strip, compactness
+also gives the required homeomorphism onto the image.
+By the definition of normal projection, in that neighborhood
+\[
+ Z\circ q^{-1}=X_0+hn
+\]
+for a smooth scalar function $h$ and the original surface normal
+$n$. Equality of points and tangent planes along the core gives
+$h=dh=0$ there.
+
+Fix an original-source collar $(s,w)$ of the core with compact
+closure in $U$. Narrow it to lie in the image of $q$. Here $s$
+agrees with the given core parameter on $w=0$.
+Taylor's formula with integral remainder gives
+\[
+ h(s,w)=w^2b_0(s,w)
+\]
+with $b_0$ smooth. Take a fixed smooth cutoff $\chi$ equal to one
+on $[-1,1]$ and zero outside $(-2,2)$. For small $\eta>0$ put
+\[
+ h_\eta(s,w)=\chi(w/\eta)w^2b_0(s,w),\qquad
+ X_\eta=X_0+h_\eta n
+\]
+on the collar and $X_\eta=X_0$ elsewhere.
+For $\eta$ small the support lies compactly in $U$.
+All the following estimates are uniform on the collar, with constants
+depending on the already fixed strip:
+\[
+ h_\eta=O(\eta^2),\quad
+ (h_\eta)_s=O(\eta^2),\quad(h_\eta)_w=O(\eta),
+\]
+\[
+ (h_\eta)_{ss}=O(\eta^2),\quad
+ (h_\eta)_{sw}=O(\eta),\quad(h_\eta)_{ww}=O(1).
+\]
+Thus $X_\eta\to X_0$ in $C^1$, giving immersion and global
+embedding for small $\eta$. Its consistently chosen unit normal
+satisfies $n_\eta-n=O(\eta)$.
+
+Let $L_\eta,M_\eta,N_\eta$ be the second fundamental coefficients
+of $X_\eta$ in the fixed collar. For the original surface
+$L_0(s,0)=0$ by asymptoticity, so $L_0(s,w)=O(w)$.
+Also $M_0(s,0)$ is nowhere zero, because at the core the
+determinant of the second fundamental form is
+$-M_0(s,0)^2<0$. The derivative estimates just stated and
+$n_\eta-n=O(\eta)$ imply on $|w|\le2\eta$
+\[
+ L_\eta=O(\eta),\qquad
+ M_\eta=M_0(s,0)+O(\eta),\qquad N_\eta=O(1).
+\]
+For example the $ss$ derivative of the added normal displacement
+is $O(\eta^2)$, and the change of normal in the bounded original
+$ss$ coefficient contributes $O(\eta)$; the mixed and $ww$
+estimates follow in the same way. Hence
+\[
+ L_\eta N_\eta-M_\eta^2
+     =-M_0(s,0)^2+O(\eta)<0
+\]
+uniformly for small $\eta$, since $\min_s|M_0(s,0)|>0$.
+The first fundamental determinant stays bounded below by a
+positive constant by $C^1$ convergence. Formula
+\eqref{eq:gauss-curvature} proves $K_{X_\eta}<0$ on the
+modified collar. Outside it the surface is unchanged, so the
+curvature is negative on all of $U$.
+
+Fix $\eta$ small enough for all the preceding conclusions and for
+$\|X_\eta-X_0\|_{C^1}<\varepsilon$.
+On $|w|<\eta$, $X_\eta=X_0+hn=Z\circ q^{-1}$ exactly.
+By compactness of the core, there is $a>0$ such that the image
+under $q$ of $|u|<a$ lies in $|w|<\eta$. Restricting $q$ to
+this strip gives exactly the inclusion asserted in the statement.
+If $X_0$ is tight, Lemma~\ref{lem:tight-preservation} applies.
+\end{proof}
+
+\begin{lemma}[A supported band gives a global bending]
+\label{lem:globalize}
+Let $X:M\to\R^3$ be an embedding of a closed surface, let
+$\ell>0$, let $I\subset\R$ be a nonempty open interval, and put
+$A=(\R/\ell\mathbb Z)\times I$. Let $\iota:A\to M$ be a smooth
+annular embedding, and set $B=X\circ\iota$.
+If $B$ has an infinitesimal bending $Y_A$ compactly supported in $A$
+and with $\int_A\det(Y_A,B_s,B_c)\,ds\,dc\ne0$, then $X$ has an
+infinitesimal bending $Y$ supported in $\iota(\supp Y_A)$ and
+with nonzero outward normal flux.
+\end{lemma}
+\begin{proof}
+An embedding of equal-dimensional manifolds has open image, by
+the inverse function theorem. Define $Y\circ\iota=Y_A$ on that
+image and $Y=0$ outside it.
+The image of $\supp Y_A$ is a compact subset of the open set
+$\iota(A)$. Every point outside $\iota(A)$ therefore has a
+neighborhood disjoint from this image, on which the extended
+field is zero. Thus the extension is smooth.
+The chain rule and the identity $X\circ\iota=B$ transfer
+\eqref{eq:strain} to $\iota(A)$; outside the support it is zero.
+On this connected annulus the outward normal of $X$ is either
+the parameter normal $(B_s\times B_c)/|B_s\times B_c|$
+or its negative, with a single constant sign. The
+change-of-variables formula therefore gives
+\[
+ \int_M\langle Y,\nu_X\rangle\,dA_X
+      =\pm\int_A\det(Y_A,B_s,B_c)\,ds\,dc\ne0.
+\]
+\end{proof}
+
+\begin{corollary}[One curve implies a supported bending]\label{thm:one-curve}
+Suppose $X_0:T^2\to\R^3$ is a smooth tight embedding and
+$c:S^1\to T^2$ is a smooth embedding such that $X_0\circ c$ is
+asymptotic and $K_{X_0}<0$ along $c(S^1)$.
+For every open set $U$ with
+\[
+ c(S^1)\subset U\subset\{K_{X_0}<0\},
+\]
+and every $\varepsilon>0$, there exist a smooth tight embedding
+$X:T^2\to\R^3$ and an infinitesimal bending $Y$ of $X$ such that
+\begin{equation}\label{eq:one-curve-output}
+ \begin{gathered}
+ \supp(X-X_0)\Subset U,\qquad K_X<0\ \hbox{on }U,\qquad
+ \|X-X_0\|_{C^1}<\varepsilon,\\
+ \supp Y\Subset U,\qquad
+ \int_{T^2}\langle Y,\nu_X\rangle\,dA_X\ne0.
+ \end{gathered}
+\end{equation}
+\end{corollary}
+
+\begin{proof}[Proof of Corollary~\ref{thm:one-curve}]
+Reparametrize the original core and its source embedding $c$ by
+arclength. Choose a collar with compact closure in $U$.
+Proposition~\ref{prop:inflection} supplies an inflection on the
+original curve. Apply Proposition~\ref{prop:prepare}, with
+$C^2$ error as small as needed, supported in that collar.
+Call the resulting tight embedding $X_1$.
+Reparametrize its new core and the source embedding $c$ by
+arclength, and equip the curve with its Darboux frame. Write $s$ and
+$\ell$ for this arclength and its period. The curve satisfies the
+hypotheses of Proposition~\ref{prop:ruled}.
+
+Fix the ruling supplied by that proposition.
+Apply Theorem~\ref{prop:insert} to $X_1$ with $Z=R$,
+again with support compactly in $U$, to obtain $X$.
+Choose the errors in the two modifications so that their sum
+in $C^1$ is less than the prescribed $\varepsilon$.
+The surface remains negatively curved on all of $U$ and is tight.
+The inclusion of a neighborhood of the ruled core is exact.
+
+Let $q$ and $a>0$ be supplied by Theorem~\ref{prop:insert}.
+Only now choose a bounded nonempty open interval $I$ of sufficiently
+large leaf parameters $c$ so that $c+\omega(s)>0$ and
+$0<u(s,c)<a$ for every $(s,c)\in(\R/\ell\mathbb Z)\times I$.
+The annulus
+$B(s,c)=\gamma(s)+\rho(s)V(s)/(c+\omega(s))$
+lies inside that exact neighborhood.
+Set $\iota(s,c)=q(s,u(s,c))$.
+Then $\iota$ is an annular embedding and
+$X\circ\iota=B$. Its constant-$c$ circles are closed and
+asymptotic by Proposition~\ref{prop:ruled}; its constant-$s$
+curves are straight, and its curvature is negative by
+\eqref{eq:ruled-curvature}.
+Thus Theorem~\ref{thm:band-bending} supplies a field
+on this annulus with compact support and nonzero signed
+flux. Lemma~\ref{lem:globalize} produces the desired global
+field $Y$. Its compact support lies in $U$.
+
+This proves \eqref{eq:one-curve-output}. The ruling is fixed before
+the insertion width, the leaf interval, and the bending profile
+are chosen.
+\end{proof}
+
+\section*{Acknowledgements}
+I thank my mentor Xiang Ma for helpful discussions and encouragement.
+AI-assisted tools were used in the preparation of this manuscript.
+
+\begin{thebibliography}{99}
+\bibitem{Aleksandrov}
+V.~A.~Aleksandrov,
+\emph{Sabitov's conjecture that volume is stationary under infinitesimal
+bending of a surface}, Siberian Math. J. \textbf{30} (1989), 678--684,
+\href{https://doi.org/10.1007/BF00971257}{doi:10.1007/BF00971257}.
+\bibitem{BK}
+T.~F.~Banchoff and W.~K\"uhnel,
+\emph{Tight submanifolds, smooth and polyhedral}, in
+\emph{Tight and Taut Submanifolds}, MSRI Publications \textbf{32},
+Cambridge University Press, 1997, 51--118,
+\href{https://library.slmath.org/books/Book32/files/banchoff.pdf}{available from SLMath}.
+\bibitem{BGQR}
+H.~Banks, M.~Ghomi, H.~Qiu, and M.~Raffaelli,
+\emph{A counterexample to Nirenberg's conjecture on closed asymptotic
+curves}, \href{https://arxiv.org/abs/2610.13848v2}{arXiv:2610.13848v2},
+21 October 2026.
+\bibitem{doCarmo}
+M.~P.~do Carmo, \emph{Differential Geometry of Curves and Surfaces},
+Prentice-Hall, 1976.
+\bibitem{Fenchel}
+W.~Fenchel, \emph{\"Uber Kr\"ummung und Windung geschlossener Raumkurven},
+Math. Ann. \textbf{101} (1929), 238--252,
+\href{https://doi.org/10.1007/BF01454836}{doi:10.1007/BF01454836}.
+\bibitem{GR}
+M.~Ghomi and M.~Raffaelli,
+\emph{Topology of closed asymptotic curves on negatively curved surfaces},
+J. Geom. Anal. \textbf{35} (2025), article 381,
+\href{https://doi.org/10.1007/s12220-025-02200-3}{doi:10.1007/s12220-025-02200-3};
+\href{https://arxiv.org/abs/2412.19266v2}{arXiv:2412.19266v2}.
+\bibitem{Hirsch}
+M.~W.~Hirsch, \emph{Differential Topology},
+Graduate Texts in Mathematics \textbf{33}, Springer, 1976,
+\href{https://doi.org/10.1007/978-1-4684-9449-5}{doi:10.1007/978-1-4684-9449-5}.
+\bibitem{Kovaleva}
+G.~A.~Kovaleva,
+\emph{Absence of closed asymptotic lines on tubes of negative Gaussian
+curvature with a one-to-one spherical mapping},
+Fundam. Prikl. Mat. \textbf{1} (1995), no.~4, 953--977 (Russian).
+\bibitem{Lee}
+J.~M.~Lee, \emph{Introduction to Smooth Manifolds}, second edition,
+Graduate Texts in Mathematics \textbf{218}, Springer, 2013,
+\href{https://doi.org/10.1007/978-1-4419-9982-5}{doi:10.1007/978-1-4419-9982-5}.
+\bibitem{Spivak}
+M.~Spivak, \emph{A Comprehensive Introduction to Differential Geometry},
+Vol.~V, third edition, Publish or Perish, 1999, Chapter~12.
+\bibitem{Teschl}
+G.~Teschl, \emph{Ordinary Differential Equations and Dynamical Systems},
+Graduate Studies in Mathematics \textbf{140}, American Mathematical
+Society, 2012,
+\href{https://www.mat.univie.ac.at/~gerald/ftp/book-ode/ode.pdf}{author-hosted text}.
+\end{thebibliography}
+\end{document}
+
+

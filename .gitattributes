@@ -2,3 +2,4 @@
 lean/** -text whitespace=cr-at-eol
 visualization/** -text whitespace=cr-at-eol
 paper/ver1030/** -text whitespace=cr-at-eol
+paper/ver1031/** -text whitespace=cr-at-eol,-blank-at-eof
