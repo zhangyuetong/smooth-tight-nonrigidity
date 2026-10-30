@@ -1,6 +1,6 @@
 {
   "source": "main.tex",
-  "sha256": "694e1fd0c965e43580f06f23ce388c29d4dd54c0fc37231c11b5ac2149f9e9b7",
+  "sha256": "37b11d55d4ae5f901f969a00a510e8b82cd779ecd70eebcf2d5ea5b0c74cec8a",
   "checks": {
     "scaled ruling determinant": "PASS",
     "scaled ruling derivative E component": "PASS",
@@ -14,11 +14,8 @@
     "normalization curvature-scale derivative": "PASS",
     "normalization preparation condition": "PASS",
     "closure moments from tangent span": "PASS",
-    "completion area squared": "PASS",
-    "completion curvature numerator": "PASS",
-    "radial flat-cap shell Hessian determinant": "PASS",
-    "BGQR endpoint height": "PASS",
-    "source references and replacement scope": "PASS"
+    "source references and replacement scope": "PASS",
+    "unchanged mathematical source outside seed section": "PASS"
   },
   "scope": "Exact algebra and source consistency only. Analytic, topological, and existence arguments are in the manuscript. No Lean certificate is asserted."
 }

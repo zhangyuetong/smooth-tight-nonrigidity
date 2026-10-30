@@ -1,10 +1,10 @@
 # Paper versions
 
-- [ver1029: current manuscript ver613, published under the ver1029 name](ver1029/README.md)
-  - [Read the revised paper](ver1029/paper.pdf)
-  - [LaTeX source](ver1029/main.tex)
-  - [Download the arXiv source package](ver1029/ver1029-arxiv-source.tar.gz)
-  - [Exact algebra and source-consistency checks](ver1029/verification.json)
+- [ver1030: current manuscript ver614, published under the ver1030 name](ver1030/README.md)
+  - [Read the revised paper](ver1030/paper.pdf)
+  - [LaTeX source](ver1030/main.tex)
+  - [Download the arXiv source package](ver1030/ver1030-arxiv-source.tar.gz)
+  - [Exact algebra and source-consistency checks](ver1030/verification.json)
 - [ver1011: earlier manuscript ver507 and arXiv submission files](ver1011/README.md)
   - [Read the revised paper](ver1011/paper.pdf)
   - [Download the arXiv source package](ver1011/ver507-arxiv-source.zip)

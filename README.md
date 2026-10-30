@@ -2,7 +2,7 @@
 
 | Content | Location |
 |---|---|
-| Current manuscript, ver613 published as ver1029, and arXiv source package | [ver1029](paper/ver1029/README.md) |
+| Current manuscript, ver614 published as ver1030, and arXiv source package | [ver1030](paper/ver1030/README.md) |
 | Earlier manuscript, ver507, and arXiv submission package | [ver1011](paper/ver1011/README.md) |
 | Original illustrated manuscript and figures | [ver1009](paper/ver1009/README.md) |
 | Latest integrated Lean sources and exact proof status | [lean](lean/README.md) |
@@ -10,9 +10,9 @@
 | Reusable entry points across mathematics | [library catalog](lean/TightVer401/Library/README.md) |
 | Interactive numerical geometry and illustrated construction | [visualization](visualization/README.md) |
 
-The current paper, **Isometric tight tori with different enclosed volumes**, is [ver1029](paper/ver1029/README.md), the unchanged local ver613 manuscript dated October 29, 2026. It uses a closed asymptotic curve from the annulus of Banks, Ghomi, Qiu, and Raffaelli, a tight-torus completion, and a supported infinitesimal bending with nonzero normal flux. The package includes the PDF, LaTeX source, arXiv source archive, and 17 passing exact algebra and source-consistency checks. These checks do not certify the global proof.
+The current paper, **Isometric tight tori with different enclosed volumes**, is [ver1030](paper/ver1030/README.md), the unchanged local ver614 manuscript dated October 30, 2026. It uses a closed asymptotic curve from the annulus of Banks, Ghomi, Qiu, and Raffaelli, a shorter geometric tight-torus completion using BGQR's curvature argument and Gauss--Bonnet, and a supported infinitesimal bending with nonzero normal flux. The package includes the PDF, LaTeX source, arXiv source archive, and 14 passing exact algebra and source-consistency checks. These checks do not certify the global proof.
 
-The existing Lean audit concerns the frozen ver503 manuscript in [ver1009](paper/ver1009/README.md), and is not an audit of ver1029. For that earlier route, Lean proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. Its source-bound audit passed with no admissions or custom axioms. Full-manuscript formalization remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
+The existing Lean audit concerns the frozen ver503 manuscript in [ver1009](paper/ver1009/README.md), and is not an audit of ver1030. For that earlier route, Lean proves the **first noncongruent isometric tight-torus pair unconditionally**, including a common smooth positive metric, nonempty open agreement and no open planar patch. Its source-bound audit passed with no admissions or custom axioms. Full-manuscript formalization remains **incomplete**, with Cantor-family and extension applications deferred. The numerical meshes illustrate the construction and do not certify it.
 
 To explore the visualization, serve this repository root:
 
