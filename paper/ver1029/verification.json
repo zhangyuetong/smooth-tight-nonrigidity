@@ -1,0 +1,24 @@
+{
+  "source": "main.tex",
+  "sha256": "694e1fd0c965e43580f06f23ce388c29d4dd54c0fc37231c11b5ac2149f9e9b7",
+  "checks": {
+    "scaled ruling determinant": "PASS",
+    "scaled ruling derivative E component": "PASS",
+    "scaled ruling mixed second coefficient": "PASS",
+    "scaled ruling ss second coefficient": "PASS",
+    "linear period exact derivative": "PASS",
+    "spherical normal speed squared": "PASS",
+    "spherical geodesic curvature numerator": "PASS",
+    "asymptotic curve curvature squared": "PASS",
+    "flux integration by parts": "PASS",
+    "normalization curvature-scale derivative": "PASS",
+    "normalization preparation condition": "PASS",
+    "closure moments from tangent span": "PASS",
+    "completion area squared": "PASS",
+    "completion curvature numerator": "PASS",
+    "radial flat-cap shell Hessian determinant": "PASS",
+    "BGQR endpoint height": "PASS",
+    "source references and replacement scope": "PASS"
+  },
+  "scope": "Exact algebra and source consistency only. Analytic, topological, and existence arguments are in the manuscript. No Lean certificate is asserted."
+}

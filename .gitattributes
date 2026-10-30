@@ -1,3 +1,4 @@
 # Preserve pinned source bytes and their recorded SHA-256 hashes.
 lean/** -text whitespace=cr-at-eol
 visualization/** -text whitespace=cr-at-eol
+paper/ver1029/** -text whitespace=cr-at-eol
